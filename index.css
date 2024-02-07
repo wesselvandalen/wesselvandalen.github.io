@@ -111,7 +111,7 @@ a:hover {
 }
 
 .form {
-    background: url("bilder/pfbilde.jpg");
+    background: url("src/main/webapp/bilder/pfbilde.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
