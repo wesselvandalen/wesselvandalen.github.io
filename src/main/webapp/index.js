@@ -47,6 +47,7 @@ function changeLanguageDutch() {
     document.getElementById('kpn-title').textContent = "KPN Reisbewegingen";
 
     //document.getElementById('blackjack-description').textContent = "";
+    document.documentElement.lang = 'nl';
 
     document.getElementById('popup-bachelor').textContent = "Bachelor • 4 jaar";
 }
@@ -69,6 +70,8 @@ function changeLanguageEnglish() {
                     Password: managerPass`;
     document.getElementById('kpn-title').textContent = "KPN Travel movements";
 
+    document.documentElement.lang = 'en';
+
     //document.getElementById('blackjack-description').textContent = "";
 
     document.getElementById('popup-bachelor').textContent = "Bachelor • 4 years";
@@ -90,6 +93,8 @@ function changeLanguageNorwegianBokmal() {
     document.getElementById('kpn-description').innerHTML = `Som en del av et spesialisert front-end-team samarbeidet jeg med fire andre medlemmer for et høyskoleprosjekt for å utvikle et nettsted for KPN, et fremtredende telekommunikasjonsselskap i Nederland. Prosjektet hadde som mål å gjøre det lettere for ansatte å registrere sine reisedetaljer for beregning av CO2-utslipp, i samsvar med lovkravene skissert i Besluit CO2 reductie werkgebonden personen mobiliteit.<br><br>E-post adres: managerPass1@gmail.com<br>Passord: managerPass`;
     document.getElementById('kpn-title').textContent = "KPN Reisebevegelser";
 
+    document.documentElement.lang = 'no';
+
     //document.getElementById('blackjack-description').textContent = "";
 
     document.getElementById('popup-bachelor').textContent = "Bachelor • 4 år";
@@ -106,6 +111,8 @@ function changeLanguageNorwegianNynorsk() {
     document.getElementById('job-title').textContent = "Erfaren full-stack ingeniør med ferdigheiter i PostgreSQL, SCRUM (Agile) og diagrammodellering.";
 
     document.getElementById('personal-description').textContent = `Eg er ein ${calculateAge()} år gammal mann frå Nederland som er glad i kroppsbygging, det å lære norsk (språket & kulturen), og det å gå på tur med hunden min (Rowdy, Golden Retriever) 🌿`;
+
+    document.documentElement.lang = 'no';
 
     document.getElementById('kpn-description').innerHTML = `Som en del av et spesialisert front-end-team samarbeidet jeg med fire andre medlemmer for et høyskoleprosjekt for å utvikle et nettsted for KPN, et fremtredende telekommunikasjonsselskap i Nederland. Prosjektet hadde som mål å gjøre det lettere for ansatte å registrere sine reisedetaljer for beregning av CO2-utslipp, i samsvar med lovkravene skissert i Besluit CO2 reductie werkgebonden personen mobiliteit.<br><br>
         E-post adres: managerPass1@gmail.com<br>
