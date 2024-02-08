@@ -25,9 +25,41 @@ document.addEventListener('DOMContentLoaded', function () {
     const popup = document.getElementById('popup');
     const closeBtn = document.getElementById('closeBtn');
 
+    addEventListeners();
     popupBtn.addEventListener('click', openPopup);
     closeBtn.addEventListener('click', closePopup);
 });
+
+function addEventListeners() {
+    const hamburgerMenuIcon = this.querySelector('.ham-menu');
+
+    if (hamburgerMenuIcon) {
+        hamburgerMenuIcon.addEventListener('click', () => this.toggleMenu());
+    }
+}
+
+function toggleMenu() {
+    const directoryList = document.querySelector('#directory-list');
+    if (directoryList) {
+        directoryList.classList.toggle('show');
+    }
+}
+
+function handleKeyPress(event) {
+    if (event.key === 'Enter' || event.keyCode === 13) {
+        this.toggleMenu();
+    }
+    if (event.key === 'Esc' || event.key === 'Escape') {
+        this.closeMenu();
+    }
+}
+
+function closeMenu() {
+    const directoryList = document.querySelector('#directory-list');
+    if (directoryList) {
+        directoryList.classList.toggle('hide');
+    }
+}
 
 function changeLanguageDutch() {
     document.getElementById('my-projects-a').textContent = "MIJN PROJECTEN";
@@ -60,7 +92,7 @@ function changeLanguageEnglish() {
     document.getElementById('cv-a').textContent = "DOWNLOAD MY CV";
     document.getElementById('language-a').textContent = "LANGUAGES";
 
-    document.getElementById('job-title').textContent = "Experienced full-stack engineer with proficiency in PostgreSQL, SCRUM (Agile) and diagram modeling.";
+    document.getElementById('job-title').textContent = "Experienced full-stack engineer with proficiency in PostgreSQL, SCRUM (Agile) and diagram modelling.";
 
     document.getElementById('personal-description').textContent = `I am a ${calculateAge()} year old man from the Netherlands with a passion for bodybuilding, learning Norwegian (language & culture), and going on adventure with my dog (Rowdy, Golden Retriever) 🌿`;
 

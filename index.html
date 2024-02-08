@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wessel van Dalen portfolio</title>
     <link rel="icon" type="image/x-icon" href="src/main/webapp/bilder/wvd-logo-hvitt.png">
     <link rel="stylesheet" href="index.css">
@@ -9,7 +10,7 @@
 </head>
 <body>
 <div class="top-div">
-    <div>
+    <div id="directory-list">
         <img src="src/main/webapp/bilder/wvd-logo-hvitt-bredt.png" alt="Logoen til wesselvandalen" id="wvd-logo">
         <a href="index.html#home" class="chapter" id="home-a">HOME</a>
         <a href="index.html#projects" class="chapter" id="my-projects-a">MY PROJECTS</a>
@@ -17,6 +18,7 @@
         <a href="#" id="popupBtn" class="chapter">MY DEGREE</a>
         <a href="mailto:wesselvandalen@gmail.com" class="chapter" id="mail-a">MAIL ME</a>
         <a href="src/main/webapp/files/CV%20Wessel%20van%20Dalen.pdf" download="CV Wessel van Dalen" class="chapter" id="cv-a">DOWNLOAD MY CV</a>
+
         <div class="dropdown">
             <a href="#" class="chapter" id="language-a">LANGUAGE</a>
             <div class="dropdown-content">
@@ -36,7 +38,7 @@
             <div id="home-box-text">
 
                 <h1 id="home-box-name">Wessel van Dalen</h1>
-                <h3 id="job-title">Experienced full-stack engineer with proficiency in PostgreSQL, SCRUM (Agile) and diagram modeling.</h3>
+                <h3 id="job-title">Experienced full-stack engineer with proficiency in PostgreSQL, SCRUM (Agile) and diagram modelling.</h3>
                 <p id="personal-description">I am a 20 year old man from the Netherlands with a passion for bodybuilding, learning Norwegian (language & culture), and going on adventure with my dog (Rowdy, Golden Retriever)🌿</p>
                 <div class="languages-container">
                     <div class="language">JAVA</div>
@@ -53,36 +55,41 @@
 
         </div>
     </div>
-    <!--
-       <div class="projects">
-           <div class="project-box">
-               <div class="image-container "><a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="project-image"><img src="bilder/Blackjack-promotion.png" alt="Picture of Blackjack logo" class="project-box-picture"></a></div>
-               <div class="project-box-info">
+    <div id="projects">
+        <!--
+      <div class="projects">
+          <div class="project-box">
+              <div class="image-container "><a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="project-image"><img src="bilder/Blackjack-promotion.png" alt="Picture of Blackjack logo" class="project-box-picture"></a></div>
+              <div class="project-box-info">
 
-                   <h1><a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="project-title" id="blackjack-title">Blackjack</a></h1>
-                   <p class="project-description" id="blackjack-description">
-                       Blackjack description about it.
-                   </p>
+                  <h1><a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="project-title" id="blackjack-title">Blackjack</a></h1>
+                  <p class="project-description" id="blackjack-description">
+                      Blackjack description about it.
+                  </p>
 
-               </div>
-           </div>
-       </div>-->
-    <div class="projects">
-        <div class="project-box">
-            <div class="image-container "><a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="project-image"><img src="src/main/webapp/bilder/KPN-promotion.png" alt="Picture of KPN logo" class="project-box-picture"></a></div>
-            <div class="project-box-info">
-
-                <h1><a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="project-title" id="kpn-title">KPN Travel movements</a></h1>
-                <p class="project-description" id="kpn-description">
-                    As part of a specialized front-end team, I collaborated with four other members for a college project to develop a website for KPN, a prominent telecommunications company in the Netherlands. The project aimed to facilitate employees in recording their travel details for the calculation of CO2 emissions, in compliance with the legal requirements outlined in the Besluit CO2 reductie werkgebonden personen mobiliteit.
-                    <br><br>
-                    Email address: manager1@gmail.com <br>
-                    Password: managerPass
-                </p>
-
+              </div>
+          </div>
+      </div>-->
+        <div class="projects">
+            <div class="project-box">
+                <div class="image-container">
+                    <a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="project-image">
+                        <img src="src/main/webapp/bilder/KPN-promotion.png" alt="Picture of KPN logo" class="project-box-picture">
+                    </a>
+                </div>
+                <div class="project-box-info">
+                    <h1><a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="project-title" id="kpn-title">KPN Travel movements</a></h1>
+                    <p class="project-description" id="kpn-description">
+                        As part of a specialized front-end team, I collaborated with four other members for a college project to develop a website for KPN, a prominent telecommunications company in the Netherlands. The project aimed to facilitate employees in recording their travel details for the calculation of CO2 emissions, in compliance with the legal requirements outlined in the Besluit CO2 reductie werkgebonden personen mobiliteit.
+                        <br><br>
+                        Email address: manager1@gmail.com <br>
+                        Password: managerPass
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+
 
     <div id="popup" class="popup">
         <div class="popup-content">

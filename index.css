@@ -375,3 +375,51 @@ button {
 .project-image:hover {
     transform: translate3d(10px, 10px, 10px);
 }
+
+@media only screen and (max-width: 1170px) {
+    main {
+        margin-top: 400px;
+    }
+
+    .form {
+        height: 500px;
+        width: 500px;
+    }
+
+    .home-box {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #home-box-text {
+        margin-bottom: 20px;
+    }
+
+    #home-box-picture {
+        margin-top: 20px;
+    }
+
+    .project-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container {
+        margin-bottom: 10px;
+    }
+
+    .project-box-info {
+        width: 60vw;
+    }
+}
+
+#ham-icon {
+    width: 20px;
+}
+
+#menu-ham {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #0d0d0d;
+}
