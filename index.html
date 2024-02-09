@@ -11,13 +11,22 @@
 <body>
 <div class="top-div">
     <div id="directory-list">
-        <img src="src/main/webapp/bilder/wvd-logo-hvitt-bredt.png" alt="Logoen til wesselvandalen" id="wvd-logo">
-        <a href="index.html#home" class="chapter" id="home-a">HOME</a>
-        <a href="index.html#projects" class="chapter" id="my-projects-a">MY PROJECTS</a>
-        <a href="https://github.com/wesselvandalen" target="_blank" class="chapter">GITHUB</a>
-        <a href="#" id="popupBtn" class="chapter">MY DEGREE</a>
-        <a href="mailto:wesselvandalen@gmail.com" class="chapter" id="mail-a">MAIL ME</a>
-        <a href="src/main/webapp/files/CV%20Wessel%20van%20Dalen.pdf" download="CV Wessel van Dalen" class="chapter" id="cv-a">DOWNLOAD MY CV</a>
+        <div id="image-div">
+            <img src="src/main/webapp/bilder/wvd-logo-hvitt-bredt.png" alt="Logoen til wesselvandalen" id="wvd-logo">
+        </div>
+        <div id="list-div" class="navigation-holder">
+            <button id="hamburger-button" class="mobile-hamburger-menu" onclick="toggleMenu()" onkeydown="handleKeyPress(event)" tabindex="0">
+                <img id="ham-icon" src="src/main/webapp/bilder/hamburger-icon.png" alt="Hamburger icon">
+            </button>
+            <ul id="directory-ul">
+                <a href="index.html#home" class="chapter" id="home-a">HOME</a>
+                <a href="index.html#projects" class="chapter" id="my-projects-a">MY PROJECTS</a>
+                <a href="https://github.com/wesselvandalen" target="_blank" class="chapter">GITHUB</a>
+                <a href="#" id="popupBtn" class="chapter">MY DEGREE</a>
+                <a href="mailto:wesselvandalen@gmail.com" class="chapter" id="mail-a">MAIL ME</a>
+                <a href="src/main/webapp/files/CV%20Wessel%20van%20Dalen.pdf" download="CV Wessel van Dalen" class="chapter" id="cv-a">DOWNLOAD MY CV</a>
+            </ul>
+        </div>
 
         <div class="dropdown">
             <a href="#" class="chapter" id="language-a">LANGUAGE</a>

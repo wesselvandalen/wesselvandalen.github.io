@@ -8,7 +8,7 @@ body {
     left: 0;
     width: 100%;
     background-color: #0d0d0d;
-    padding: 18px;
+    padding: 12px;
 }
 
 #wvd-logo {
@@ -382,8 +382,8 @@ button {
     }
 
     .form {
-        height: 500px;
-        width: 500px;
+        height: 40vw;
+        width: 40vw;
     }
 
     .home-box {
@@ -421,5 +421,98 @@ button {
     width: 20px;
     height: 20px;
     border: none;
-    background-color: #0d0d0d;
+}
+
+#ham-icon {
+    width: 20px;
+}
+
+.mobile-hamburger-menu {
+    background-color: black;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.holder {
+    width: 25px;
+    height: 2px;
+    margin: 3px 0;
+}
+
+#directory-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#directory-list p {
+    margin-right: 20px;
+}
+
+#directory-list a {
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1170px) {
+    .top-div {
+        float:left;
+        display: inline-grid;
+        padding: 12px;
+    }
+
+    #list-div {
+        float:left;
+        display:inline;
+    }
+
+    #directory-list {
+        flex-direction: column;
+        float:left;
+        display: block;
+        align-items: center;
+    }
+
+    #popupBtn {
+        width: 400px;
+        float: left;
+        display: inline;
+    }
+
+    .chapter {
+        width: 400px;
+        float: left;
+        display: inline;
+    }
+
+    .mobile-hamburger-menu {
+        display: flex;
+        border: none;
+        background-color: black;
+        margin-top: 10px;
+    }
+
+    #directory-ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #directory-list.show #directory-ul {
+        display: flex;
+    }
+
+    .mobile-hamburger-menu:hover #directory-ul {
+        display: flex;
+    }
+
+    #directory-ul a {
+        text-align: center;
+        margin: 10px 0;
+    }
 }

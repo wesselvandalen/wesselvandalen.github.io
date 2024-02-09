@@ -1,5 +1,8 @@
 addEventListener("DOMContentLoaded", (event) => {
     changeLanguageEnglish();
+    setTimeout(() => {
+        buildSomething();
+    }, 100);
 });
 
 function calculateAge() {
@@ -20,44 +23,38 @@ function closePopup() {
     popup.style.display = 'none';
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+function buildSomething() {
     const popupBtn = document.getElementById('popupBtn');
     const popup = document.getElementById('popup');
     const closeBtn = document.getElementById('closeBtn');
+    const hamburgerBtn = document.getElementById('hamburger-button');
 
-    addEventListeners();
+    hamburgerBtn.addEventListener('click', (ev) => {
+
+    });
+
     popupBtn.addEventListener('click', openPopup);
     closeBtn.addEventListener('click', closePopup);
-});
-
-function addEventListeners() {
-    const hamburgerMenuIcon = this.querySelector('.ham-menu');
-
-    if (hamburgerMenuIcon) {
-        hamburgerMenuIcon.addEventListener('click', () => this.toggleMenu());
-    }
 }
 
 function toggleMenu() {
-    const directoryList = document.querySelector('#directory-list');
-    if (directoryList) {
-        directoryList.classList.toggle('show');
-    }
+    var menu = document.getElementById("directory-list");
+    menu.classList.toggle("show");
 }
 
 function handleKeyPress(event) {
     if (event.key === 'Enter' || event.keyCode === 13) {
-        this.toggleMenu();
+        toggleMenu();
     }
-    if (event.key === 'Esc' || event.key === 'Escape') {
-        this.closeMenu();
+    if (event.key === 'Escape') {
+        closeMenu();
     }
 }
 
 function closeMenu() {
-    const directoryList = document.querySelector('#directory-list');
+    const directoryList = document.getElementById('directory-list');
     if (directoryList) {
-        directoryList.classList.toggle('hide');
+        directoryList.classList.remove('show');
     }
 }
 
