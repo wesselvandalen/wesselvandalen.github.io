@@ -1,9 +1,50 @@
 addEventListener("DOMContentLoaded", (event) => {
-    changeLanguageEnglish();
+    handleCookies();
     setTimeout(() => {
         buildSomething();
     }, 100);
 });
+
+function handleCookies(lang) {
+    const result = checkForCookies();
+
+    if (lang === '' || lang === null) {
+        changeLanguage('en');
+    }
+
+    if (result === false) {
+        changeLanguage('en'); // Standard language of the website is english
+    } else {
+        changeLanguage(lang);
+    }
+}
+
+function changeLanguage(lang) {
+    document.cookie = `language=${lang}`;
+
+    switch (lang) {
+        case 1: 'nl'
+            changeLanguageDutch();
+        case 2: 'en'
+            changeLanguageEnglish();
+        case 3: 'nobm'
+            changeLanguageNorwegianBokmal();
+        case 4: 'nony'
+            changeLanguageNorwegianNynorsk();
+    }
+}
+
+function checkForCookies() {
+    const existingLanguageCookie = document.cookie.split('; ').find(cookie => cookie.startsWith('language='));
+    const languageFromCookie = existingLanguageCookie ? existingLanguageCookie.split('=')[1] : null;
+    console.log(languageFromCookie);
+
+    if (languageFromCookie === undefined) {
+        return false;
+    } else {
+        return languageFromCookie;
+    }
+}
 
 function calculateAge() {
     var dob = new Date("01/20/2004");
@@ -59,6 +100,7 @@ function closeMenu() {
 }
 
 function changeLanguageDutch() {
+    handleCookies('nl');
     document.getElementById('my-projects-a').textContent = "MIJN PROJECTEN";
     document.getElementById('home-a').textContent = "THUISPAGINA";
     document.getElementById('popupBtn').textContent = "MIJN OPLEIDING";
@@ -82,6 +124,7 @@ function changeLanguageDutch() {
 }
 
 function changeLanguageEnglish() {
+    handleCookies('en');
     document.getElementById('my-projects-a').textContent = "MY PROJECTS";
     document.getElementById('home-a').textContent = "HOME";
     document.getElementById('popupBtn').textContent = "MY DEGREE";
@@ -107,6 +150,7 @@ function changeLanguageEnglish() {
 }
 
 function changeLanguageNorwegianBokmal() {
+    handleCookies('nobm');
     document.getElementById('my-projects-a').textContent = "PROSJEKTENE MINE";
     document.getElementById('home-a').textContent = "HJEM";
     document.getElementById('popupBtn').textContent = "UTDANNINGEN MIN";
@@ -130,6 +174,7 @@ function changeLanguageNorwegianBokmal() {
 }
 
 function changeLanguageNorwegianNynorsk() {
+    handleCookies('nony');
     document.getElementById('my-projects-a').textContent = "PROSJEKTA MINE";
     document.getElementById('home-a').textContent = "HEIM";
     document.getElementById('popupBtn').textContent = "UTDANNINGA MI";
