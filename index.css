@@ -460,6 +460,13 @@ button {
 }
 
 @media only screen and (max-width: 1170px) {
+
+
+    #hamburger-button {
+        color: #0d0d0d;
+        background-color: #0d0d0d;
+    }
+
     .top-div {
         float:left;
         display: inline-grid;
@@ -482,6 +489,7 @@ button {
         width: 400px;
         float: left;
         display: inline;
+        background-color: #0d0d0d;
     }
 
     .chapter {
