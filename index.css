@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@800&display=swap');
+
 body {
     background-color: #fff;
 }
@@ -440,12 +442,16 @@ button {
     }
 
     #home-box-text h1 {
+        font-family: 'Prompt', sans-serif;
         margin-bottom: 10px;
-        font-size: 92px;
+        font-size: 102px;
     }
 
     .chapter {
-        font-size: 28px;
+        width: 400px;
+        float: left;
+        display: inline;
+        font-size: 34px;
     }
 
     #home-box-text h3 {
@@ -478,7 +484,7 @@ button {
 
     .project-box-picture {
         margin-left: 75px;
-        margin-top: 300px;
+        margin-top: 500px;
         width: 90vw;
     }
 
@@ -509,7 +515,7 @@ button {
 
     .form {
         margin-left: 100px;
-        margin-top: 500px;
+        margin-top: 800px;
         height: 80vw;
         width: 80vw;
     }
@@ -548,7 +554,6 @@ button {
         height: auto;
     }
 
-
     #image-div,
     #list-div,
     .dropdown {
@@ -564,8 +569,6 @@ button {
         color: #0d0d0d;
         background-color: #0d0d0d;
     }
-
-
 
     .top-div {
         float:left;
@@ -585,18 +588,15 @@ button {
         background-color: #0d0d0d;
     }
 
-    .chapter {
-        width: 400px;
-        float: left;
-        display: inline;
-    }
-
-    .project-box-info h1 {
-        font-size: 40px;
-    }
-
     .project-box-info p {
-        font-size: 35px;
+        font-size: 42px;
+        width: 100%;
+        line-height: 50px;
+    }
+
+    #kpn-title {
+        font-size: 86px;
+        font-family: 'Prompt', sans-serif;
     }
 
     #wvd-logo {
@@ -628,6 +628,7 @@ button {
     }
 
     #directory-ul a {
+        height: 60px;
         text-align: center;
         margin: 10px 0;
     }
