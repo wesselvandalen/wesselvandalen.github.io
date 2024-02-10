@@ -210,24 +210,6 @@ a:hover {
     border-radius: 5px;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    height: 30px;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-
 #popupBtn {
     border: none;
     background-color: #000;
@@ -357,7 +339,8 @@ button {
 }
 
 .project-title {
-    color: #363333;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
 }
 
 .project-title:hover {
@@ -465,7 +448,6 @@ button {
     }
 
     .project-box-info a {
-        width: 100%;
         font-size: 56px;
     }
 
@@ -489,7 +471,7 @@ button {
     }
 
     .project-box-info {
-        margin-right: 100px;
+        margin-right: 75px;
     }
 
     .project-box-info h1 {
@@ -504,7 +486,6 @@ button {
         display: flex;
         margin-right: -100px;
         float: left;
-
     }
 
     main {
@@ -538,7 +519,7 @@ button {
 
     .project-box-info {
         margin-left: 175px;
-        width: 100%;
+        width: 90%;
     }
 
     #image-div,
@@ -598,7 +579,7 @@ button {
     }
 
     #wvd-logo {
-        width: 80px;
+        width: 100px;
         margin-left: 15px;
         margin-right: -20px;
     }
