@@ -373,10 +373,6 @@ button {
     transform: translate3d(10px, 10px, 10px);
 }
 
-#ham-icon {
-    width: 20px;
-}
-
 #menu-ham {
     width: 20px;
     height: 20px;
@@ -384,7 +380,7 @@ button {
 }
 
 #ham-icon {
-    width: 20px;
+    width: 60px;
 }
 
 .mobile-hamburger-menu {
@@ -445,11 +441,15 @@ button {
 
     #home-box-text h1 {
         margin-bottom: 10px;
-        font-size: 78px;
+        font-size: 92px;
+    }
+
+    .chapter {
+        font-size: 28px;
     }
 
     #home-box-text h3 {
-        font-size: 32px;
+        font-size: 42px;
         width: 100%;
     }
 
@@ -468,16 +468,18 @@ button {
     }
 
     #home-box-text p {
-        font-size: 28px;
+        font-size: 36px;
         width: 100%;
     }
 
     .languages-container div {
-        font-size: 18px;
+        font-size: 28px;
     }
 
     .project-box-picture {
-        margin-left: 175px;
+        margin-left: 75px;
+        margin-top: 300px;
+        width: 90vw;
     }
 
     .project-box-info {
@@ -506,10 +508,10 @@ button {
     }
 
     .form {
-        margin-left: 200px;
-        margin-top: 300px;
-        height: 60vw;
-        width: 60vw;
+        margin-left: 100px;
+        margin-top: 500px;
+        height: 80vw;
+        width: 80vw;
     }
 
     .home-box {
@@ -568,7 +570,7 @@ button {
     .top-div {
         float:left;
         display: inline-grid;
-        padding: 12px;
+        padding: 26px;
     }
 
     #list-div {
@@ -587,6 +589,20 @@ button {
         width: 400px;
         float: left;
         display: inline;
+    }
+
+    .project-box-info h1 {
+        font-size: 40px;
+    }
+
+    .project-box-info p {
+        font-size: 35px;
+    }
+
+    #wvd-logo {
+        width: 80px;
+        margin-left: 15px;
+        margin-right: -20px;
     }
 
     .mobile-hamburger-menu {
