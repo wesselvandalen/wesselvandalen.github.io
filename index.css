@@ -56,7 +56,6 @@ a:hover {
 }
 
 .chapter {
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
     font-family: 'Catamaran', sans-serif;
     margin-left: 17px;
     text-underline: #000;
@@ -81,15 +80,13 @@ a:hover {
 }
 
 #home-box-text h1 {
-@import url('https://fonts.googleapis.com/css2?family=Futura:wght@900&display=swap');
-    font-family: 'Futura', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 900;
     font-size: 50px;
     margin-bottom: 5px;
 }
 
 #home-box-text p {
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
     font-family: 'Catamaran', sans-serif;
     font-weight: 20;
     margin-top: 5px;
@@ -97,7 +94,6 @@ a:hover {
 }
 
 #home-box-text h3 {
-    @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
     font-family: 'Catamaran', sans-serif;
     font-weight: 500;
     margin-top: 5px;
@@ -377,43 +373,6 @@ button {
     transform: translate3d(10px, 10px, 10px);
 }
 
-@media only screen and (max-width: 1170px) {
-    main {
-        margin-top: 400px;
-    }
-
-    .form {
-        height: 60vw;
-        width: 60vw;
-    }
-
-    .home-box {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    #home-box-text {
-        margin-bottom: 20px;
-    }
-
-    #home-box-picture {
-        margin-top: 20px;
-    }
-
-    .project-box {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .image-container {
-        margin-bottom: 10px;
-    }
-
-    .project-box-info {
-        width: 60vw;
-    }
-}
-
 #ham-icon {
     width: 20px;
 }
@@ -460,12 +419,151 @@ button {
 }
 
 @media only screen and (max-width: 1170px) {
+    * {
+        width: 100%;
+    }
 
+    #personal-description {
+        width: 100%;
+    }
+
+    #projects {
+        margin-top: 300px;
+    }
+
+    p {
+        font-size: 29px;
+    }
+
+    #home-box-text {
+        width: 100vw;
+    }
+
+    #home-box-name {
+        font-size: 56px;
+    }
+
+    #home-box-text h1 {
+        margin-bottom: 10px;
+        font-size: 78px;
+    }
+
+    #home-box-text h3 {
+        font-size: 32px;
+        width: 100%;
+    }
+
+    .project-box-picture {
+        margin-top: 100px;
+        width: 70vw;
+    }
+
+    .project-box-info a {
+        width: 100%;
+        font-size: 56px;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    #home-box-text p {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .languages-container div {
+        font-size: 18px;
+    }
+
+    .project-box-picture {
+        margin-left: 175px;
+    }
+
+    .project-box-info {
+        margin-right: 100px;
+    }
+
+    .project-box-info h1 {
+        width: 80vw;
+        font-size: 38px;
+    }
+
+    .project-box-info p {
+        width: 80vw;
+        font-size: 28px;
+    }
+
+    #directory-list {
+        display: flex;
+        margin-right: -100px;
+        float: left;
+
+    }
+
+    main {
+        margin-top: 400px;
+    }
+
+    .form {
+        margin-left: 200px;
+        margin-top: 300px;
+        height: 60vw;
+        width: 60vw;
+    }
+
+    .home-box {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #home-box-text {
+        margin-bottom: 20px;
+    }
+
+    .project-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container {
+        margin-bottom: 10px;
+    }
+
+    .project-box-info {
+        width: 60vw;
+    }
+
+    #image-div,
+    #list-div,
+    .dropdown {
+        flex: 1 1 30%;
+        max-width: 30%;
+    }
+
+    #image-div img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    #image-div,
+    #list-div,
+    .dropdown {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .languages-container {
+        font-size: 56px;
+    }
 
     #hamburger-button {
         color: #0d0d0d;
         background-color: #0d0d0d;
     }
+
+
 
     .top-div {
         float:left;
@@ -476,13 +574,6 @@ button {
     #list-div {
         float:left;
         display:inline;
-    }
-
-    #directory-list {
-        flex-direction: column;
-        float:left;
-        display: block;
-        align-items: center;
     }
 
     #popupBtn {
@@ -513,6 +604,7 @@ button {
 
     #directory-list.show #directory-ul {
         display: flex;
+        background-color: #0d0d0d;
     }
 
     .mobile-hamburger-menu:hover #directory-ul {
