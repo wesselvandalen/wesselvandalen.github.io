@@ -426,7 +426,7 @@ button {
     }
 
     #projects {
-        margin-top: 300px;
+        margin-top: 450px;
     }
 
     p {
@@ -493,12 +493,10 @@ button {
     }
 
     .project-box-info h1 {
-        width: 80vw;
         font-size: 38px;
     }
 
     .project-box-info p {
-        width: 80vw;
         font-size: 28px;
     }
 
@@ -539,7 +537,8 @@ button {
     }
 
     .project-box-info {
-        width: 60vw;
+        margin-left: 175px;
+        width: 100%;
     }
 
     #image-div,
@@ -590,7 +589,6 @@ button {
 
     .project-box-info p {
         font-size: 42px;
-        width: 100%;
         line-height: 50px;
     }
 
@@ -607,9 +605,18 @@ button {
 
     .mobile-hamburger-menu {
         display: flex;
+        margin-top: 15px;
         border: none;
         background-color: black;
-        margin-top: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .dropdown-content a {
+        height: 80px;
+        background-color: #0d0d0d;
+        color: white;
+        font-size: 32px;
     }
 
     #directory-ul {
@@ -628,7 +635,7 @@ button {
     }
 
     #directory-ul a {
-        height: 60px;
+        height: 90px;
         text-align: center;
         margin: 10px 0;
     }

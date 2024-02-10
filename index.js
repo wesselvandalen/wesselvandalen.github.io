@@ -5,39 +5,34 @@ addEventListener("DOMContentLoaded", (event) => {
     }, 100);
 });
 
-function handleCookies(lang) {
-    const result = checkForCookies();
+function handleCookies() {
+    const languageFromCookie = checkForCookies();
 
-    if (lang === '' || lang === null) {
+    if (languageFromCookie === '' || languageFromCookie === null) {
         changeLanguage('en');
-    }
-
-    if (result === false) {
-        changeLanguage('en'); // Standard language of the website is english
     } else {
-        changeLanguage(lang);
+        changeLanguage(languageFromCookie);
     }
 }
 
 function changeLanguage(lang) {
     document.cookie = `language=${lang}`;
 
-    switch (lang) {
-        case 1: 'nl'
-            changeLanguageDutch();
-        case 2: 'en'
-            changeLanguageEnglish();
-        case 3: 'nobm'
-            changeLanguageNorwegianBokmal();
-        case 4: 'nony'
-            changeLanguageNorwegianNynorsk();
+    if (lang === 'nl') {
+        changeLanguageDutch();
+    } else if (lang === 'nobm') {
+        changeLanguageNorwegianBokmal();
+    } else if (lang === 'nony') {
+        changeLanguageNorwegianNynorsk();
+    } else {
+        changeLanguageEnglish();
     }
 }
+
 
 function checkForCookies() {
     const existingLanguageCookie = document.cookie.split('; ').find(cookie => cookie.startsWith('language='));
     const languageFromCookie = existingLanguageCookie ? existingLanguageCookie.split('=')[1] : null;
-    console.log(languageFromCookie);
 
     if (languageFromCookie === undefined) {
         return false;
@@ -69,10 +64,32 @@ function buildSomething() {
     const popup = document.getElementById('popup');
     const closeBtn = document.getElementById('closeBtn');
     const hamburgerBtn = document.getElementById('hamburger-button');
+    const nlKnop = document.querySelector('#nlknop');
+    const enknop = document.querySelector('#enknop');
+    const nonbknop = document.querySelector('#nonbknop');
+    const nonyknop = document.querySelector('#nonyknop');
 
-    hamburgerBtn.addEventListener('click', (ev) => {
-
+    nlKnop.addEventListener('click', (ev) => {
+        changeLanguageDutch();
+        changeLanguage('nl');
     });
+
+    enknop.addEventListener('click', (ev) => {
+        changeLanguageEnglish();
+        changeLanguage('en');
+    });
+
+    nonyknop.addEventListener('click', (ev) => {
+        changeLanguageNorwegianNynorsk();
+        changeLanguage('nony');
+    });
+
+    nonbknop.addEventListener('click', (ev) => {
+        changeLanguageNorwegianBokmal();
+        changeLanguage('nobm');
+    });
+
+
 
     popupBtn.addEventListener('click', openPopup);
     closeBtn.addEventListener('click', closePopup);
@@ -100,7 +117,6 @@ function closeMenu() {
 }
 
 function changeLanguageDutch() {
-    handleCookies('nl');
     document.getElementById('my-projects-a').textContent = "MIJN PROJECTEN";
     document.getElementById('home-a').textContent = "THUISPAGINA";
     document.getElementById('popupBtn').textContent = "MIJN OPLEIDING";
@@ -124,7 +140,6 @@ function changeLanguageDutch() {
 }
 
 function changeLanguageEnglish() {
-    handleCookies('en');
     document.getElementById('my-projects-a').textContent = "MY PROJECTS";
     document.getElementById('home-a').textContent = "HOME";
     document.getElementById('popupBtn').textContent = "MY DEGREE";
@@ -150,7 +165,6 @@ function changeLanguageEnglish() {
 }
 
 function changeLanguageNorwegianBokmal() {
-    handleCookies('nobm');
     document.getElementById('my-projects-a').textContent = "PROSJEKTENE MINE";
     document.getElementById('home-a').textContent = "HJEM";
     document.getElementById('popupBtn').textContent = "UTDANNINGEN MIN";
@@ -174,7 +188,6 @@ function changeLanguageNorwegianBokmal() {
 }
 
 function changeLanguageNorwegianNynorsk() {
-    handleCookies('nony');
     document.getElementById('my-projects-a').textContent = "PROSJEKTA MINE";
     document.getElementById('home-a').textContent = "HEIM";
     document.getElementById('popupBtn').textContent = "UTDANNINGA MI";
