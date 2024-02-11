@@ -370,6 +370,7 @@ button {
 
 .mobile-hamburger-menu {
     background-color: black;
+    margin-left: -70px;
     cursor: pointer;
     display: none;
     flex-direction: column;
@@ -390,12 +391,7 @@ button {
     align-items: center;
 }
 
-#directory-list p {
-
-}
-
 #directory-list a {
-    margin-right: 20px;
     text-decoration: none;
 }
 
@@ -482,10 +478,8 @@ button {
         font-size: 28px;
     }
 
-    #directory-list {
-        display: flex;
-        margin-right: -100px;
-        float: left;
+    .dropdown-content a:hover{
+        background-color: #0d0d0d;
     }
 
     main {
@@ -522,13 +516,6 @@ button {
         width: 90%;
     }
 
-    #image-div,
-    #list-div,
-    .dropdown {
-        flex: 1 1 30%;
-        max-width: 30%;
-    }
-
     #image-div img {
         max-width: 100%;
         height: auto;
@@ -537,8 +524,8 @@ button {
     #image-div,
     #list-div,
     .dropdown {
-        flex: 1 1 100%;
-        max-width: 100%;
+        flex: 1 1;
+        width: 500px;
     }
 
     .languages-container {
@@ -558,7 +545,21 @@ button {
 
     #list-div {
         float:left;
-        display:inline;
+    }
+
+    #list-div {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+    }
+
+    #directory-list {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #image-div, #list-div, .dropdown {
+        flex-grow: 1;
     }
 
     #popupBtn {
@@ -580,7 +581,7 @@ button {
 
     #wvd-logo {
         width: 100px;
-        margin-left: 15px;
+        margin-left: 35px;
         margin-right: -20px;
     }
 
@@ -593,11 +594,19 @@ button {
         text-align: center;
     }
 
+    button#hamburger-button.mobile-hamburger-menu {
+        width: 20px;
+    }
+
     .dropdown-content a {
         height: 80px;
         background-color: #0d0d0d;
         color: white;
         font-size: 32px;
+    }
+
+    div#list-div.navigation-holder {
+        width: 20px;
     }
 
     #directory-ul {
@@ -613,6 +622,25 @@ button {
 
     .mobile-hamburger-menu:hover #directory-ul {
         display: flex;
+    }
+
+    div.dropdown {
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    #directory-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown {
+        align-content: end;
+        text-align: left;
+    }
+
+    a#language-a.chapter {
+        margin-left: 50px;
     }
 
     #directory-ul a {
