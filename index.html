@@ -12,7 +12,7 @@
 <div class="top-div">
     <div id="directory-list">
         <div id="image-div">
-            <img src="src/main/webapp/bilder/wvd-logo-hvitt-bredt.png" alt="Logoen til wesselvandalen" id="wvd-logo">
+            <img src="src/main/webapp/bilder/wvd-logo-svart.png" alt="Logoen til wesselvandalen" id="wvd-logo">
         </div>
         <div id="list-div" class="navigation-holder">
             <button id="hamburger-button" class="mobile-hamburger-menu" onclick="toggleMenu()" onkeydown="handleKeyPress(event)" tabindex="0">
@@ -20,6 +20,7 @@
             </button>
             <ul id="directory-ul">
                 <a href="index.html#home" class="chapter" id="home-a">HOME</a>
+                <a href="index.html#skill-section" class="chapter" id="skills-a">SKILLS</a>
                 <a href="index.html#projects" class="chapter" id="my-projects-a">MY PROJECTS</a>
                 <a href="https://github.com/wesselvandalen" target="_blank" class="chapter">GITHUB</a>
                 <a href="#" id="popupBtn" class="chapter">MY DEGREE</a>
@@ -31,10 +32,11 @@
         <div class="dropdown">
             <a href="#" class="chapter" id="language-a">LANGUAGE</a>
             <div class="dropdown-content">
-                <a id="nlknop" href="#" onclick="">Nederlands</a>
-                <a id="enknop" href="#" onclick="">English</a>
-                <a id="nonbknop" href="#" onclick="">Norsk bokmål</a>
-                <a id="nonyknop" href="#" onclick="">Norsk nynorsk</a>
+                <a id="nlknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/netherlands.png" alt="Dutch flag">Nederlands</a>
+                <a id="enknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/united-kingdom.png" alt="English flag">English</a>
+                <a id="nonbknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/norway.png" alt="Norwegian flag">Norsk bokmål</a>
+                <a id="nonyknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/norway.png" alt="Norwegian flag">Norsk nynorsk</a>
+                <!--<a id="swknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/sweden.png" alt="Swedish flag">Svensk</a>-->
             </div>
         </div>
     </div>
@@ -45,17 +47,9 @@
 
         <div class="home-box">
             <div id="home-box-text">
-
                 <h1 id="home-box-name">Wessel van Dalen</h1>
-                <h3 id="job-title">Experienced full-stack engineer with proficiency in PostgreSQL, SCRUM (Agile) and diagram modelling.</h3>
+                <h3 id="job-title">Making the invisible visible, line by line.</h3>
                 <p id="personal-description">I am a 20 year old man from the Netherlands with a passion for bodybuilding, learning Norwegian (language & culture), and going on adventure with my dog (Rowdy, Golden Retriever)🌿</p>
-                <div class="languages-container">
-                    <div class="language">JAVA</div>
-                    <div class="language">HTML</div>
-                    <div class="language">CSS</div>
-                    <div class="language">JAVASCRIPT</div>
-                    <div class="language">PYTHON</div>
-                </div>
             </div>
 
             <div id="home-box-picture">
@@ -64,6 +58,49 @@
 
         </div>
     </div>
+
+    <section id="skill-section">
+        <div class="skill">
+            <h2 id="skill-programming-language-h2">Programming Languages</h2>
+            <ul class="skill-list">
+                <li><img class="skill-icon" src="src/main/webapp/bilder/skillicons/java-4-logo-png-transparent.png" alt="Java logo">Java</li>
+                <li><img class="skill-icon" src="src/main/webapp/bilder/skillicons/htmllogo.png" alt="HTML logo">HTML</li>
+                <li><img class="skill-icon" src="src/main/webapp/bilder/skillicons/csslogo.png" alt="CSS logo">CSS</li>
+                <li><img class="skill-icon" src="src/main/webapp/bilder/skillicons/JavaScript-logo.png" alt="JavaScript logo">JavaScript</li>
+                <li><img class="skill-icon" src="src/main/webapp/bilder/skillicons/pythonlogo.png" alt="Python logo">Python</li>
+            </ul>
+            <p id="skill-programming-language-p" class="skill-text">
+                Experience with Java for over 2 years on all kinds of different Back end projects, with frameworks such as <a target="_blank" class="skill-a" href="https://hibernate.org/"> <img class="skill-a-image" src="src/main/webapp/bilder/skillicons/hibernatelogo.png" alt="Hibernate logo">Hibernate</a> and <a target="_blank" class="skill-a" href="https://spring.io/"> <img class="skill-a-image" src="src/main/webapp/bilder/skillicons/springlogo.png" alt="Spring logo">Spring</a>.
+                I have built all kinds of websites using Vanilla JS, CSS and HTML, using frameworks and libraries like <a target="_blank" class="skill-a" href="https://react.dev/"><img class="skill-a-image" src="src/main/webapp/bilder/skillicons/reactlogo.png" alt="React logo">React</a> and <a target="_blank" class="skill-a" href="https://lit.dev/"><img class="skill-a-image" src="src/main/webapp/bilder/skillicons/litlogo.png" alt="Lit logo">Lit</a>.
+                Also a bit experience with Python, since that was my first programming language, having created simple applications with Tkinter.
+            </p>
+        </div>
+
+        <div class="skill">
+            <h2 id="skill-databases-h2">Database / persistence</h2>
+            <ul class="skill-list">
+                <li><img class="skill-icon" src="src/main/webapp/bilder/skillicons/postgresqllogo.png" alt="PostgreSQL logo">PostgreSQL</li>
+                <li><img class="skill-icon" src="src/main/webapp/bilder/skillicons/hibernatelogo.png" alt="Hibernate logo">H2 Hibernate (annotations)</li>
+            </ul>
+            <p id="skill-databases-p" class="skill-text">With PostgreSQL I have learned how to set up / create a database from scratch.
+            I can write statements to create, edit, retrieve and delete data from a database, as well as laying a
+            connection between databases and software.</p>
+        </div>
+
+        <div class="skill">
+            <p id="skill-info-p" class="skill-text">
+                Furthermore have I used tools like <a class="skill-a" target="_blank" href="https://www.postman.com/"><img class="skill-a-image" src="src/main/webapp/bilder/skillicons/postmanlogo.png" alt="Postman logo">Postman</a>
+                and <a target="_blank" class="skill-a" href="https://www.docker.com/"><img class="skill-a-image" src="src/main/webapp/bilder/skillicons/Docker-Logo.png" alt="Docker logo">Docker</a> througout a lot of my projects.
+                I've worked with IDE's like <a target="_blank" class="skill-a" href="https://www.jetbrains.com/idea/"><img class="skill-a-image" src="src/main/webapp/bilder/skillicons/inteallijidealogo.png" alt="Inteallij IDEA logo">Inteallij IDEA</a>
+                and <a target="_blank" class="skill-a" href="https://code.visualstudio.com/"><img class="skill-a-image" src="src/main/webapp/bilder/skillicons/visualstudiocode.png" alt="Visual Studio Code logo">Visual Studio Code</a>, and have
+                drawn UML diagrams (class-diagrams, sequence-diagrams and logical component models) with
+                <a target="_blank" class="skill-a" href="https://www.visual-paradigm.com/"><img class="skill-a-image" src="src/main/webapp/bilder/skillicons/visualparadigmlogo.png" alt="Visual Paradigm logo">Visual Paradigm</a>.
+            </p>
+        </div>
+
+    </section>
+
+
     <div id="projects">
         <!--
       <div class="projects">
@@ -115,5 +152,10 @@
         </div>
     </div>
 </main>
+
+<div class="footer">
+    <p id="footer-text">If you have any questions / are interested, feel free to <a id="footer-a" href="mailto:wesselvandalen@gmail.com">mail me</a></p>
+</div>
+
 </body>
 </html>

@@ -1,7 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@800&display=swap');
 
+:root {
+    --blå: #007bff;
+    --hvitt: #fff;
+    --lys-hvitt: #fbfbfb;
+    --svart: #000;
+    --mørk-grått: #8F8A8A;
+    --extra-mørk-grått: #2B2929;
+}
+
+#skill-section {
+    margin-top: 200px;
+}
+
+.skill-icon {
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+    margin-bottom: -1px;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: var(--svart);
+}
+
+.skill {
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.skill h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.skill-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: var(--blå);
+    color: #fff;
+    border-radius: 4px;
+}
+
+.skill-text {
+    font-style: italic;
+    color: var(--extra-mørk-grått);
+    font-weight: 100;
+}
+
+.footer {
+    background-color: var(--lys-hvitt);
+    color: var(--svart);
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+}
+
 body {
-    background-color: #fff;
+    background-color: var(--hvitt);
 }
 
 .top-div {
@@ -9,23 +79,32 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #0d0d0d;
-    padding: 12px;
+    background-color: var(--lys-hvitt);
+    padding: 8px;
+}
+
+.skill-a {
+    color: var(--blå);
+}
+
+.skill-a:hover {
+    color: #02b0ff;
 }
 
 #wvd-logo {
+    margin-top: 4px;
     width: 40px;
-    margin-left: 15px;
-    margin-right: -20px;
+    margin-left: 25px;
+    margin-right: -35px;
 }
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--svart);
 }
 
 a:hover {
-    color: #dddddd;
+    color: var(--mørk-grått);
 }
 
 .dropdown {
@@ -33,24 +112,39 @@ a:hover {
     display: inline-block;
 }
 
+.skill-a-image {
+    width: 15px;
+    height: auto;
+}
+
 .dropdown-content {
     display: none;
+    color: #fff;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
+    background-color: #fff;
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
+#footer-a {
+    text-underline: var(--blå);
+    color: var(--blå);
+}
+
+#footer-a:hover {
+    color: #02b0ff;
+}
+
 .dropdown-content a {
-    color: black;
+    color: #000;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #fbfbfb;
 }
 
 .dropdown:hover .dropdown-content {
@@ -58,8 +152,9 @@ a:hover {
 }
 
 .chapter {
+    font-size: smaller;
     font-family: 'Catamaran', sans-serif;
-    margin-left: 17px;
+    margin-left: 35px;
     text-underline: #000;
 }
 
@@ -109,13 +204,20 @@ a:hover {
     margin-top: -300px;
 }
 
+.small-lang-icon {
+    width: 20px;
+    height: auto;
+    margin-bottom: -4px;
+    margin-right: 5px;
+}
+
 .form {
-    background: url("src/main/webapp/bilder/pfbilde.jpg");
+    background: url("src/main/webapp/bilder/skilpadder.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
-    height: 18vw;
-    width: 18vw;
+    height: 19vw;
+    width: 19vw;
     box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
     animation: animate 5s ease-in-out infinite;
     transition: all 5s ease-in-out;
@@ -163,13 +265,14 @@ a:hover {
 
 .project-box-picture {
     border-radius: 10px;
-    width: 450px;
+    width: 350px;
     margin-right: 50px;
+    margin-top: 25px;
 }
 
 .project-box-picture-left {
     border-radius: 10px;
-    width: 450px;
+    width: 350px;
     margin-left: 50px;
 }
 
@@ -178,7 +281,7 @@ a:hover {
 }
 
 .project-box-info p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
 }
 
@@ -212,13 +315,13 @@ a:hover {
 
 #popupBtn {
     border: none;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     width: 8.2vw;
 }
 
 #popupBtn:hover {
-    color: #dddddd;
+    color: #363333;
 }
 
 
@@ -369,7 +472,7 @@ button {
 }
 
 .mobile-hamburger-menu {
-    background-color: black;
+    background-color: #fff;
     margin-left: -70px;
     cursor: pointer;
     display: none;
@@ -396,6 +499,24 @@ button {
 }
 
 @media only screen and (max-width: 1170px) {
+
+    #skill-section {
+        margin-top: 900px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    li {
+        font-size: 30px;
+    }
+
+    .skill-a-image {
+        width: 30px;
+        height: auto;
+    }
+
     * {
         width: 100%;
     }
@@ -478,8 +599,13 @@ button {
         font-size: 28px;
     }
 
+    .small-lang-icon {
+        width: 50px;
+        height: auto;
+    }
+
     .dropdown-content a:hover{
-        background-color: #0d0d0d;
+        background-color: var(--lys-hvitt);
     }
 
     main {
@@ -528,13 +654,18 @@ button {
         width: 500px;
     }
 
+    .small-lang-icon {
+        margin-bottom: -12px;
+        margin-right: 10px;
+    }
+
     .languages-container {
         font-size: 56px;
     }
 
     #hamburger-button {
         color: #0d0d0d;
-        background-color: #0d0d0d;
+        background-color: var(--lys-hvitt);
     }
 
     .top-div {
@@ -566,7 +697,7 @@ button {
         width: 400px;
         float: left;
         display: inline;
-        background-color: #0d0d0d;
+        background-color: var(--lys-hvitt);
     }
 
     .project-box-info p {
@@ -589,7 +720,7 @@ button {
         display: flex;
         margin-top: 15px;
         border: none;
-        background-color: black;
+        background-color: var(--lys-hvitt);
         align-items: center;
         text-align: center;
     }
@@ -600,8 +731,8 @@ button {
 
     .dropdown-content a {
         height: 80px;
-        background-color: #0d0d0d;
-        color: white;
+        background-color: var(--lys-hvitt);
+        color: #000;
         font-size: 32px;
     }
 
@@ -617,7 +748,7 @@ button {
 
     #directory-list.show #directory-ul {
         display: flex;
-        background-color: #0d0d0d;
+        background-color: var(--lys-hvitt);
     }
 
     .mobile-hamburger-menu:hover #directory-ul {
