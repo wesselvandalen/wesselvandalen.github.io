@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@800&display=swap');
+@font-face {
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
 
 :root {
     --blå: #007bff;
@@ -71,7 +74,7 @@ h2 {
 }
 
 body {
-    background-color: var(--hvitt);
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
 }
 
 .top-div {
@@ -153,7 +156,6 @@ a:hover {
 
 .chapter {
     font-size: smaller;
-    font-family: 'Catamaran', sans-serif;
     margin-left: 35px;
     text-underline: #000;
 }
@@ -173,27 +175,27 @@ a:hover {
     align-items: center;
     margin-right: 2vw;
     margin-bottom: 3vw;
+    text-align: left;
     padding: 20px;
 }
 
 #home-box-text h1 {
-    font-family: 'Open Sans', sans-serif;
+    margin-right: 46px;
     font-weight: 900;
     font-size: 50px;
     margin-bottom: 5px;
 }
 
 #home-box-text p {
-    font-family: 'Catamaran', sans-serif;
     font-weight: 20;
     margin-top: 5px;
     width: 470px;
 }
 
 #home-box-text h3 {
-    font-family: 'Catamaran', sans-serif;
     font-weight: 500;
     margin-top: 5px;
+    margin-right: 5px;
     width: 470px;
 }
 
@@ -236,8 +238,6 @@ a:hover {
 }
 
 .projects {
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
-    font-family: 'Catamaran', sans-serif;
     font-weight: 500;
     font-size: 20px;
     padding-top: 2vw;
@@ -254,8 +254,6 @@ a:hover {
     margin-top: 250px;
     align-items: center;
 
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
-    font-family: 'Catamaran', sans-serif;
     font-weight: 500;
     font-size: 20px;
 
@@ -302,8 +300,6 @@ a:hover {
 }
 
 .language {
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
-    font-family: 'Catamaran', sans-serif;
     font-weight: 500;
     background-color: #007bff;
     color: #fff;
@@ -357,7 +353,6 @@ a:hover {
 }
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -374,8 +369,6 @@ button {
 }
 
 .study-title {
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
-    font-family: 'Catamaran', sans-serif;
     font-weight: 790;
     color: #272525;
 }
@@ -442,7 +435,6 @@ button {
 }
 
 .project-title {
-    font-family: 'Open Sans', sans-serif;
     color: black;
 }
 
@@ -535,6 +527,8 @@ button {
 
     #home-box-text {
         width: 100vw;
+
+        text-align: left;
     }
 
     #home-box-name {
@@ -542,7 +536,6 @@ button {
     }
 
     #home-box-text h1 {
-        font-family: 'Prompt', sans-serif;
         margin-bottom: 10px;
         font-size: 102px;
     }
@@ -707,7 +700,6 @@ button {
 
     #kpn-title {
         font-size: 86px;
-        font-family: 'Prompt', sans-serif;
     }
 
     #wvd-logo {
