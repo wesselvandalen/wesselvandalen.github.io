@@ -10,6 +10,79 @@
     --svart: #000;
     --mørk-grått: #8F8A8A;
     --extra-mørk-grått: #2B2929;
+
+    --aqua: #307B7E;
+    --mørk-blå: #0E1427;
+}
+
+body {
+    /* background-color: var(--mørk-blå); */
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+}
+
+.container {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+.block {
+    width: 225px;
+    height: 300px;
+    flex: 1;
+    justify-content: flex-start;
+    background-color: var(--aqua);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.block p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.block img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.block li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.tech-icon {
+    width: 20px;
+    height: auto;
+}
+
+#tech-h2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 #skill-section {
@@ -70,11 +143,8 @@ h2 {
     color: var(--svart);
     text-align: center;
     padding: 20px;
+    margin-top: 8vh;
     bottom: 0;
-}
-
-body {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont;
 }
 
 .top-div {
@@ -82,7 +152,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--lys-hvitt);
+    border: black solid 2px;
+    background-color: var(--hvitt);
     padding: 8px;
 }
 
@@ -158,6 +229,10 @@ a:hover {
     font-size: smaller;
     margin-left: 35px;
     text-underline: #000;
+}
+
+#home {
+    margin-bottom: 100px;
 }
 
 .home-box {
@@ -237,11 +312,14 @@ a:hover {
     }
 }
 
+#projects {
+    margin-top: 200px;
+}
+
 .projects {
     font-weight: 500;
     font-size: 20px;
     padding-top: 2vw;
-    margin-top: 8vw;
 
     display: flex;
     flex-direction: column;
@@ -251,14 +329,13 @@ a:hover {
 
 .project-box {
     width: 1000px;
-    margin-top: 250px;
     align-items: center;
 
     font-weight: 500;
     font-size: 20px;
 
     display: flex;
-    margin-bottom: 300px;
+    margin-bottom: 15vh;
 }
 
 .project-box-picture {
@@ -266,6 +343,10 @@ a:hover {
     width: 350px;
     margin-right: 50px;
     margin-top: 25px;
+}
+
+.project-description {
+    font-weight: normal;
 }
 
 .project-box-picture-left {

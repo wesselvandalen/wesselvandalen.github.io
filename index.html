@@ -20,7 +20,7 @@
             </button>
             <ul id="directory-ul">
                 <a href="index.html#home" class="chapter" id="home-a">HOME</a>
-                <a href="index.html#skill-section" class="chapter" id="skills-a">SKILLS</a>
+                <a href="index.html#tech-h2" class="chapter" id="skills-a">SKILLS</a>
                 <a href="index.html#projects" class="chapter" id="my-projects-a">MY PROJECTS</a>
                 <a href="https://github.com/wesselvandalen" target="_blank" class="chapter">GITHUB</a>
                 <a href="#" id="popupBtn" class="chapter">MY DEGREE</a>
@@ -28,7 +28,6 @@
                 <a href="src/main/webapp/files/CV%20Wessel%20van%20Dalen.pdf" download="CV Wessel van Dalen" class="chapter" id="cv-a">DOWNLOAD MY CV</a>
             </ul>
         </div>
-
         <div class="dropdown">
             <a href="#" class="chapter" id="language-a">LANGUAGE</a>
             <div class="dropdown-content">
@@ -36,11 +35,10 @@
                 <a id="enknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/united-kingdom.png" alt="English flag">English</a>
                 <a id="nonbknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/norway.png" alt="Norwegian flag">Norsk bokmål</a>
                 <a id="nonyknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/norway.png" alt="Norwegian flag">Norsk nynorsk</a>
-                <!--<a id="swknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/sweden.png" alt="Swedish flag">Svensk</a>-->
+                <a id="isknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/iceland.png" alt="Icelandic flag">Íslenska</a>
             </div>
         </div>
     </div>
-
 </div>
 <main>
     <div id="home" class="section">
@@ -59,63 +57,76 @@
         </div>
     </div>
 
-    <section id="skill-section">
-        <div class="skill">
-            <h2 id="skill-programming-language-h2">Programming Languages</h2>
-            <ul class="skill-list">
-                <li><img class="skill-icon" src="src/main/webapp/bilder/skillicons/java-4-logo-png-transparent.png" alt="Java logo">Java</li>
-                <li><img class="skill-icon" src="src/main/webapp/bilder/skillicons/htmllogo.png" alt="HTML logo">HTML</li>
-                <li><img class="skill-icon" src="src/main/webapp/bilder/skillicons/csslogo.png" alt="CSS logo">CSS</li>
-                <li><img class="skill-icon" src="src/main/webapp/bilder/skillicons/JavaScript-logo.png" alt="JavaScript logo">JavaScript</li>
-                <li><img class="skill-icon" src="src/main/webapp/bilder/skillicons/pythonlogo.png" alt="Python logo">Python</li>
+    <div id="tech-h2">
+        <h2>Technologies I've used</h2>
+    </div>
+
+    <div class="container">
+
+        <div class="block">
+
+            <img src="src/main/webapp/bilder/techicons/coding.png" alt="Back End Image" class="tech-icon">
+            <p>BACK END</p>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Spring</li>
+                <li>Hibernate</li>
             </ul>
-            <p id="skill-programming-language-p" class="skill-text">
-                Experience with Java for over 2 years on all kinds of different Back end projects, with frameworks such as <a target="_blank" class="skill-a" href="https://hibernate.org/"> <img class="skill-a-image" src="src/main/webapp/bilder/skillicons/hibernatelogo.png" alt="Hibernate logo">Hibernate</a> and <a target="_blank" class="skill-a" href="https://spring.io/"> <img class="skill-a-image" src="src/main/webapp/bilder/skillicons/springlogo.png" alt="Spring logo">Spring</a>.
-                I have built all kinds of websites using Vanilla JS, CSS and HTML, using frameworks and libraries like <a target="_blank" class="skill-a" href="https://react.dev/"><img class="skill-a-image" src="src/main/webapp/bilder/skillicons/reactlogo.png" alt="React logo">React</a> and <a target="_blank" class="skill-a" href="https://lit.dev/"><img class="skill-a-image" src="src/main/webapp/bilder/skillicons/litlogo.png" alt="Lit logo">Lit</a>.
-                Also a bit experience with Python, since that was my first programming language, having created simple applications with Tkinter.
-            </p>
         </div>
 
-        <div class="skill">
-            <h2 id="skill-databases-h2">Database / persistence</h2>
-            <ul class="skill-list">
-                <li><img class="skill-icon" src="src/main/webapp/bilder/skillicons/postgresqllogo.png" alt="PostgreSQL logo">PostgreSQL</li>
-                <li><img class="skill-icon" src="src/main/webapp/bilder/skillicons/hibernatelogo.png" alt="Hibernate logo">H2 Hibernate (annotations)</li>
+        <div class="block">
+            <img src="src/main/webapp/bilder/techicons/monitor.png" alt="Back End Image" class="tech-icon">
+
+            <p>FRONT END</p>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Lit + Vite</li>
             </ul>
-            <p id="skill-databases-p" class="skill-text">With PostgreSQL I have learned how to set up / create a database from scratch.
-            I can write statements to create, edit, retrieve and delete data from a database, as well as laying a
-            connection between databases and software.</p>
         </div>
 
-        <div class="skill">
-            <p id="skill-info-p" class="skill-text">
-                Furthermore have I used tools like <a class="skill-a" target="_blank" href="https://www.postman.com/"><img class="skill-a-image" src="src/main/webapp/bilder/skillicons/postmanlogo.png" alt="Postman logo">Postman</a>
-                and <a target="_blank" class="skill-a" href="https://www.docker.com/"><img class="skill-a-image" src="src/main/webapp/bilder/skillicons/Docker-Logo.png" alt="Docker logo">Docker</a> througout a lot of my projects.
-                I've worked with IDE's like <a target="_blank" class="skill-a" href="https://www.jetbrains.com/idea/"><img class="skill-a-image" src="src/main/webapp/bilder/skillicons/inteallijidealogo.png" alt="Inteallij IDEA logo">Inteallij IDEA</a>
-                and <a target="_blank" class="skill-a" href="https://code.visualstudio.com/"><img class="skill-a-image" src="src/main/webapp/bilder/skillicons/visualstudiocode.png" alt="Visual Studio Code logo">Visual Studio Code</a>, and have
-                drawn UML diagrams (class-diagrams, sequence-diagrams and logical component models) with
-                <a target="_blank" class="skill-a" href="https://www.visual-paradigm.com/"><img class="skill-a-image" src="src/main/webapp/bilder/skillicons/visualparadigmlogo.png" alt="Visual Paradigm logo">Visual Paradigm</a>.
-            </p>
+        <div class="block">
+            <img src="src/main/webapp/bilder/techicons/database.png" alt="Back End Image" class="tech-icon">
+
+            <p>DATABASE</p>
+            <ul>
+                <li>PostgreSQL</li>
+            </ul>
         </div>
 
-    </section>
+        <div class="block">
+            <img src="src/main/webapp/bilder/techicons/agile-methodology.png" alt="Back End Image" class="tech-icon">
 
+            <p>SCRUM</p>
+            <ul>
+                <li>Scrum Master</li>
+                <li>Extreme Programming</li>
+            </ul>
+        </div>
+
+    </div>
 
     <div id="projects">
-        <!--
-      <div class="projects">
-          <div class="project-box">
-              <div class="image-container "><a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="project-image"><img src="src/main/webapp/bilder/Blackjack-promotion.png" alt="Picture of Blackjack logo" class="project-box-picture"></a></div>
-              <div class="project-box-info">
 
-                  <h1><a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="project-title" id="blackjack-title">Blackjack</a></h1>
-                  <p class="project-description" id="blackjack-description">
-                      Blackjack description about it.
-                  </p>
+        <div class="projects">
+            <div class="project-box">
+                <div class="image-container">
+                    <a href="#" target="_blank" class="project-image">
+                        <img src="src/main/webapp/bilder/elektriker.no-promotion.png" alt="Picture of Elektriker.no logo" class="project-box-picture">
+                    </a>
+                </div>
+                <div class="project-box-info">
+                    <h1><a href="#" target="_blank" class="project-title" id="elektriker.no-title">Elektriker.no</a></h1>
+                    <p class="project-description" id="elektriker.no-description">
+                        Elektriker.no (*Elektriker is Norwegian for electrician) is a platform connecting Norwegians with skilled electricians for various electrical tasks, from fixing power outlets to installing lighting systems. It simplifies the process of finding reliable help for electrical needs. This project demonstrates my expertise in both the front- and back-end, including testing for quality assurance.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-              </div>
-          </div>
-      </div>-->
         <div class="projects">
             <div class="project-box">
                 <div class="image-container">
@@ -128,12 +139,14 @@
                     <p class="project-description" id="kpn-description">
                         As part of a specialized front-end team, I collaborated with four other members for a college project to develop a website for KPN, a prominent telecommunications company in the Netherlands. The project aimed to facilitate employees in recording their travel details for the calculation of CO2 emissions, in compliance with the legal requirements outlined in the Besluit CO2 reductie werkgebonden personen mobiliteit.
                         <br><br>
+                        *Use these and try the site out! <br>
                         Email address: manager1@gmail.com <br>
                         Password: managerPass
                     </p>
                 </div>
             </div>
         </div>
+
     </div>
 
 
