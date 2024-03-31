@@ -4,38 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1000">
     <title>Wessel van Dalen portfolio</title>
-    <link rel="icon" type="image/x-icon" href="src/main/webapp/bilder/wvd-logo-hvitt.png">
+    <link rel="icon" type="image/x-icon" href="bilder/wvd-logo-hvitt.png">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
 </head>
 <body>
 <div class="top-div">
     <div id="directory-list">
+        <!--
         <div id="image-div">
             <img src="src/main/webapp/bilder/wvd-logo-svart.png" alt="Logoen til wesselvandalen" id="wvd-logo">
-        </div>
+        </div>  -->
         <div id="list-div" class="navigation-holder">
             <button id="hamburger-button" class="mobile-hamburger-menu" onclick="toggleMenu()" onkeydown="handleKeyPress(event)" tabindex="0">
-                <img id="ham-icon" src="src/main/webapp/bilder/hamburger-icon.png" alt="Hamburger icon">
+                <img id="ham-icon" src="bilder/hamburger-icon.png" alt="Hamburger icon">
             </button>
             <ul id="directory-ul">
-                <a href="index.html#home" class="chapter" id="home-a">HOME</a>
-                <a href="index.html#tech-h2" class="chapter" id="skills-a">SKILLS</a>
-                <a href="index.html#projects" class="chapter" id="my-projects-a">MY PROJECTS</a>
                 <a href="https://github.com/wesselvandalen" target="_blank" class="chapter">GITHUB</a>
-                <a href="#" id="popupBtn" class="chapter">MY DEGREE</a>
                 <a href="mailto:wesselvandalen@gmail.com" class="chapter" id="mail-a">MAIL ME</a>
-                <a href="src/main/webapp/files/CV%20Wessel%20van%20Dalen.pdf" download="CV Wessel van Dalen" class="chapter" id="cv-a">DOWNLOAD MY CV</a>
+                <a href="files/CV%20Wessel%20van%20Dalen.pdf" target="_blank" class="chapter" id="cv-a">VIEW MY CV</a><a href="#" id="popupBtn" class="chapter">MY DEGREE</a>
             </ul>
         </div>
         <div class="dropdown">
-            <a href="#" class="chapter" id="language-a">LANGUAGE</a>
+            <a href="#" class="chapter" id="language-a">LANGUAGES</a>
             <div class="dropdown-content">
-                <a id="nlknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/netherlands.png" alt="Dutch flag">Nederlands</a>
-                <a id="enknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/united-kingdom.png" alt="English flag">English</a>
-                <a id="nonbknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/norway.png" alt="Norwegian flag">Norsk bokmål</a>
-                <a id="nonyknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/norway.png" alt="Norwegian flag">Norsk nynorsk</a>
-                <a id="isknop" href="#" onclick=""><img class="small-lang-icon" src="src/main/webapp/bilder/langicons/iceland.png" alt="Icelandic flag">Íslenska</a>
+                <a id="nlknop" href="#" onclick=""><img class="small-lang-icon" src="bilder/langicons/netherlands.png" alt="Dutch flag">Nederlands</a>
+                <a id="enknop" href="#" onclick=""><img class="small-lang-icon" src="bilder/langicons/united-kingdom.png" alt="English flag">English</a>
+                <a id="nonbknop" href="#" onclick=""><img class="small-lang-icon" src="bilder/langicons/norway.png" alt="Norwegian flag">Norsk bokmål</a>
+                <a id="nonyknop" href="#" onclick=""><img class="small-lang-icon" src="bilder/langicons/norway.png" alt="Norwegian flag">Norsk nynorsk</a>
             </div>
         </div>
     </div>
@@ -57,6 +53,11 @@
         </div>
     </div>
 
+    <div id="arrows-box">
+        <img id="arrows" src="bilder/arrows-pointing-down.png" alt="Arrows pointing down">
+        <p id="arrows-text">SCROLL DOWN</p>
+    </div>
+
     <div id="tech-h2">
         <h2>Technologies I've used</h2>
     </div>
@@ -65,7 +66,7 @@
 
         <div class="block">
 
-            <img src="src/main/webapp/bilder/techicons/coding.png" alt="Back End Image" class="tech-icon">
+            <img src="bilder/techicons/coding.png" alt="Back End Image" class="tech-icon">
             <p>BACK END</p>
             <ul>
                 <li>Java</li>
@@ -76,7 +77,7 @@
         </div>
 
         <div class="block">
-            <img src="src/main/webapp/bilder/techicons/monitor.png" alt="Back End Image" class="tech-icon">
+            <img src="bilder/techicons/monitor.png" alt="Back End Image" class="tech-icon">
 
             <p>FRONT END</p>
             <ul>
@@ -89,21 +90,23 @@
         </div>
 
         <div class="block">
-            <img src="src/main/webapp/bilder/techicons/database.png" alt="Back End Image" class="tech-icon">
+            <img src="bilder/techicons/database.png" alt="Back End Image" class="tech-icon">
 
             <p>DATABASE</p>
             <ul>
                 <li>PostgreSQL</li>
+                <li>H2</li>
             </ul>
         </div>
 
         <div class="block">
-            <img src="src/main/webapp/bilder/techicons/agile-methodology.png" alt="Back End Image" class="tech-icon">
+            <img src="bilder/techicons/agile-methodology.png" alt="Back End Image" class="tech-icon">
 
             <p>SCRUM</p>
             <ul>
                 <li>Scrum Master</li>
                 <li>Extreme Programming</li>
+                <li>Agile</li>
             </ul>
         </div>
 
@@ -114,12 +117,12 @@
         <div class="projects">
             <div class="project-box">
                 <div class="image-container">
-                    <a href="#" target="_blank" class="project-image">
-                        <img src="src/main/webapp/bilder/elektriker.no-promotion.png" alt="Picture of Elektriker.no logo" class="project-box-picture">
+                    <a href="https://wesselvandalen.github.io/elektriker.no/" target="_blank" class="project-image">
+                        <img src="bilder/elektriker.no-promotion.png" alt="Picture of Elektriker.no logo" class="project-box-picture">
                     </a>
                 </div>
                 <div class="project-box-info">
-                    <h1><a href="#" target="_blank" class="project-title" id="elektriker.no-title">Elektriker.no</a></h1>
+                    <h1><a href="https://wesselvandalen.github.io/elektriker.no/" target="_blank" class="project-title" id="elektriker.no-title">Elektriker.no</a></h1>
                     <p class="project-description" id="elektriker.no-description">
                         Elektriker.no (*Elektriker is Norwegian for electrician) is a platform connecting Norwegians with skilled electricians for various electrical tasks, from fixing power outlets to installing lighting systems. It simplifies the process of finding reliable help for electrical needs. This project demonstrates my expertise in both the front- and back-end, including testing for quality assurance.
                     </p>
@@ -131,15 +134,14 @@
             <div class="project-box">
                 <div class="image-container">
                     <a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="project-image">
-                        <img src="src/main/webapp/bilder/KPN-promotion.png" alt="Picture of KPN logo" class="project-box-picture">
+                        <img src="bilder/KPN-promotion.png" alt="Picture of KPN logo" class="project-box-picture">
                     </a>
                 </div>
                 <div class="project-box-info">
                     <h1><a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="project-title" id="kpn-title">KPN Travel movements</a></h1>
                     <p class="project-description" id="kpn-description">
                         As part of a specialized front-end team, I collaborated with four other members for a college project to develop a website for KPN, a prominent telecommunications company in the Netherlands. The project aimed to facilitate employees in recording their travel details for the calculation of CO2 emissions, in compliance with the legal requirements outlined in the Besluit CO2 reductie werkgebonden personen mobiliteit.
-                        <br><br>
-                        *Use these and try the site out! <br>
+                        <br>
                         Email address: manager1@gmail.com <br>
                         Password: managerPass
                     </p>
@@ -154,7 +156,7 @@
         <div class="popup-content">
             <span class="close" id="closeBtn">&times;</span>
             <div class="popup-picture">
-                <img src="src/main/webapp/bilder/diploma.png" alt="Diploma icon" class="picture">
+                <img src="bilder/diploma.png" alt="Diploma icon" class="picture">
             </div>
             <div class="popup-info">
                 <h1 class="study-title"><a href="https://www.hu.nl/voltijd-opleidingen/hbo-ict" target="_blank" id="studie-link">HBO ICT</a></h1>
