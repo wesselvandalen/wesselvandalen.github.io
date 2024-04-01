@@ -11,7 +11,11 @@
     --mørk-grått: #8F8A8A;
     --extra-mørk-grått: #2B2929;
 
-    --aqua: #307B7E;
+    --burnt-umber: #6E260E;
+    --burgundy: #800020;
+    --chestnut: #954535;
+    --cognac: #834333;
+    --cordovan: #814141;
     --mørk-blå: #0E1427;
 }
 
@@ -23,6 +27,14 @@ body {
     width: 25px;
     height: 25px;
     margin-right: 25px;
+}
+
+#last-text {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: -10px;
+    color: #8F8A8A;
+    opacity: .6;
 }
 
 .container {
@@ -45,6 +57,7 @@ body {
     flex-direction: column;
     padding: 20px;
     margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .block p {
@@ -78,46 +91,38 @@ body {
 .tech-icon {
     width: 20px;
     height: auto;
+    margin-bottom: 10px;
 }
 
-#tech-h2 {
-    text-align: center;
+.text-label {
+    text-align: left;
+    margin-left: 10vw;
     justify-content: center;
     align-items: center;
-    font-size: 17px;
-    font-weight: bolder;
+    font-size: 13px;
     text-transform: uppercase;
-    margin-top: 150px;
-}
-
-#skill-section {
     margin-top: 200px;
 }
 
-.skill-icon {
-    width: 20px;
-    height: 15px;
-    margin-right: 5px;
-    margin-bottom: -1px;
+
+#tech-h2-text {
+    margin-top: 250px;
 }
 
-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.h2-label {
+    color: var(--extra-mørk-grått);
+}
+
+.description-label {
+    margin-top: -10px;
+    font-weight: lighter;
+    font-size: 18px;
+    color: var(--extra-mørk-grått);
+    text-transform: none;
 }
 
 h2 {
     color: var(--svart);
-}
-
-.footer {
-    background-color: var(--lys-hvitt);
-    color: var(--svart);
-    text-align: center;
-    padding: 10px;
-    margin-top: 8vh;
-    bottom: 0;
 }
 
 .top-div {
@@ -270,7 +275,7 @@ a:hover {
 }
 
 #projects {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .projects {
@@ -285,14 +290,25 @@ a:hover {
 }
 
 .project-box {
-    width: 1000px;
+    width: 87%;
     align-items: center;
-
+    padding-right: 50px;
+    padding-left: 9px;
     font-weight: 500;
     font-size: 20px;
+    line-height: 1;
 
     display: flex;
     margin-bottom: 15vh;
+
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-box:hover {
+    transform: translateY(-5px); /* Optional: Add a hover effect */
 }
 
 .project-box-picture {
@@ -557,11 +573,15 @@ button {
     }
 
     #projects {
-        margin-top: -400px;
+        margin-top: 200px;
     }
 
     p {
         font-size: 29px;
+    }
+
+    #home {
+        margin-bottom: 1200px;
     }
 
     #home-box-text {
@@ -588,8 +608,6 @@ button {
         display: inline;
         font-size: 34px;
     }
-
-
 
     #home-box-text h3 {
         font-size: 50px;
@@ -661,8 +679,9 @@ button {
     }
 
     .block {
-        margin-bottom: 450px; /* Ruimte tussen blokken */
+        margin-bottom: 100px; /* Ruimte tussen blokken */
         width: 100%;
+        height: 85%;
     }
 
     .block .tech-icon {

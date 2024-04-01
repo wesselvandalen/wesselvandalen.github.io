@@ -138,9 +138,11 @@ function changeLanguageDutch() {
     document.getElementById('personal-description').textContent = `Ik ben een gast van ${calculateAge()} jaar geboren in Nederland. Ik heb als hobbies bodybuilden, het leren van Noors (taal & cultuur) en op avontuur gaan met mijn hond (Rowdy, Golden Retriever)!`;
 
     // tech
-    document.getElementById('tech-h2-text').textContent = "TECHNOLOGIEËN WAARMEE IK GEWERKT HEB";
+    document.getElementById('tech-stack').textContent = "Een collectie van technologiën die ik in mijn projecten heb gebruikt💡";
 
     // projects
+    document.getElementById('projects-h2-text').textContent = "MIJN PROJECTEN";
+    document.getElementById('project-p').textContent = "Ieder project is een uniek stuk development🎨";
     document.getElementById('kpn-title').textContent = "KPN Reisbewegingen";
     document.getElementById('kpn-description').innerHTML = `KPN had een website nodig waar haar medewerkers hun kilometers konden registreren, omdat de Nederlandse overheid coöperaties hierom vroeg vanwege <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm">deze wet</a>.
                     De applicatie berekent vervolgens de co2-uitstoot en toont dit op een dashboard, zodat de managers dit kunnen zien. Ook wordt er een Excel-sheetrapport aangemaakt met daarin alle co2-uitstoot van alle medewerkers, die KPN kan aanleveren.Email adres: manager1@gmail.com <br>
@@ -149,9 +151,7 @@ function changeLanguageDutch() {
 
     // degree
     document.getElementById('popup-bachelor').textContent = "Bachelor • 4 jaar";
-
-    // footer
-    document.getElementById('footer-text').innerHTML = 'Als je vragen hebt / geïnteresseerd bent, kun je mij altijd <a id="footer-a" href="mailto:wesselvandalen@gmail.com">een mail sturen</a>';
+    document.getElementById('last-text').textContent = "En meer projecten nog te gaan...";
 }
 
 function changeLanguageEnglish() {
@@ -167,9 +167,11 @@ function changeLanguageEnglish() {
     document.getElementById('personal-description').textContent = `I am a ${calculateAge()} year old guy born in the Netherlands. My hobbies are bodybuilding, learning Norwegian (language & culture) and going on adventure with my dog (Rowdy, Golden Retriever)!`;
 
     // tech
-    document.getElementById('tech-h2-text').textContent = "TECHNOLOGIES I'VE WORKED WITH";
+    document.getElementById('tech-stack').textContent = "A collection of technologies I've used throughout my projects💡";
 
     // projects
+    document.getElementById('projects-h2-text').textContent = "MY PROJECTS";
+    document.getElementById('project-p').textContent = "Each project is a unique piece of development🎨";
     document.getElementById('kpn-title').textContent = "KPN Travel movements";
     document.getElementById('kpn-description').innerHTML = `
                     KPN needed a website for its employees to register their kilometers, due to the Dutch government asking coorperations to do so because of <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm"> this law</a>. 
@@ -181,9 +183,7 @@ function changeLanguageEnglish() {
 
     // degree
     document.getElementById('popup-bachelor').textContent = "Bachelor • 4 years";
-
-    // footer
-    document.getElementById('footer-text').innerHTML = 'If you have any questions / are interested, feel free to <a id="footer-a" href="mailto:wesselvandalen@gmail.com">mail me</a>';
+    document.getElementById('last-text').textContent = "And many more projects to come...";
 }
 
 function changeLanguageNorwegianBokmal() {
@@ -199,9 +199,11 @@ function changeLanguageNorwegianBokmal() {
     document.getElementById('personal-description').textContent = `Jeg er en ${calculateAge()} år gammel fyr født i Nederland. Hobbyene mine er kroppsbygging, det å lære meg norsk (språket & kulturen) og det å dra på tur med hunden min (Rowdy, Golden Retriever)!`;
 
     // tech
-    document.getElementById('tech-h2-text').textContent = "TEKNOLOGIER JEG HAR JOBBA MED";
+    document.getElementById('tech-stack').textContent = "En kolleksjon av teknologier som jeg har brukt i prosjektene mine💡";
 
     // projects
+    document.getElementById('projects-h2-text').textContent = "PROSJEKTENE MINE";
+    document.getElementById('project-p').textContent = "Hvert prosjekt er et unikt stykke utvikling🎨";
     document.getElementById('kpn-title').textContent = "KPN Reisebevegelser";
     document.getElementById('kpn-description').innerHTML = `
                     KPN trengte en nettside til sine ansatte for å registrere kilometerne sine. Dette var på grunn av at den nederlandske regjeringen spurte alle nederlandske bedrifter å gjøre det på grunn av <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm">denne loven</a>.
@@ -213,9 +215,7 @@ function changeLanguageNorwegianBokmal() {
 
     // degree
     document.getElementById('popup-bachelor').textContent = "Bachelor • 4 år";
-
-    // footer
-    document.getElementById('footer-text').innerHTML = 'Hvis du har noen spørsmål / er interessert, kan du alltid <a id="footer-a" href="mailto:wesselvandalen@gmail.com">sende meg en e-post</a>';
+    document.getElementById('last-text').textContent = "Og mange flere prosjekter som kommer...";
 }
 
 function changeLanguageNorwegianNynorsk() {
@@ -231,9 +231,11 @@ function changeLanguageNorwegianNynorsk() {
     document.getElementById('personal-description').textContent = `Eg er ein ${calculateAge()} år gammal fyr født i Nederland. Hobbyane mine er kroppsbygging, det å lære meg norsk (språket & kulturen) og det å dra på tur med hunden min (Rowdy, Golden Retriever)!`;
 
     // tech
-    document.getElementById('tech-h2-text').textContent = "TEKNOLOGIER EG HAR JOBBA MED";
+    document.getElementById('tech-stack').textContent = "Ein kolleksjon av teknologiar som eg har brukt i prosjektane mine💡";
 
     // projects
+    document.getElementById('projects-h2-text').textContent = "PROSJEKTANE MINE";
+    document.getElementById('project-p').textContent = "Kvert prosjekt er eit unikt stykke utvikling🎨";
     document.getElementById('kpn-title').textContent = "KPN Reisebevegelsar";
     document.getElementById('kpn-description').innerHTML = `
                     KPN trengte ein nettside til sine ansatte for å registrere kilometerne sine. Dette grunna den nederlandske regjeringen som spurte alle nederlandske bedriftar å gjere det grunna <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm">denne loven</a>.
@@ -245,7 +247,5 @@ function changeLanguageNorwegianNynorsk() {
 
     // degree
     document.getElementById('popup-bachelor').textContent = "Bachelor • 4 år";
-
-    // footer
-    document.getElementById('footer-text').innerHTML = 'Om du har nokon spørsmål / er interessert, kan du alltid <a id="footer-a" href="mailto:wesselvandalen@gmail.com">sende meg ein e-post</a>';
+    document.getElementById('last-text').textContent = "Og mange fleire prosjektar som kjem...";
 }
