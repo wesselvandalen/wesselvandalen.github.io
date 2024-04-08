@@ -1,26 +1,18 @@
-@font-face {
-    font-weight: 400;
-    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap'); /* https://fonts.google.com/specimen/Poppins */
 
 :root {
     --blå: #007bff;
-    --hvitt: #fff;
     --lys-hvitt: #fbfbfb;
-    --svart: #000;
     --mørk-grått: #8F8A8A;
     --extra-mørk-grått: #2B2929;
 
-    --burnt-umber: #6E260E;
-    --burgundy: #800020;
-    --chestnut: #954535;
-    --cognac: #834333;
-    --cordovan: #814141;
-    --mørk-blå: #0E1427;
+    --background-color: #f9f9f9;
+    --dark-gray: #2d2e32;
 }
 
 body {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
 }
 
 .taskbar-img {
@@ -48,7 +40,7 @@ body {
 
 .block {
     width: 225px;
-    height: 300px;
+    height: 325px;
     flex: 1;
     justify-content: flex-start;
     border-radius: 10px;
@@ -122,7 +114,25 @@ body {
 }
 
 h2 {
-    color: var(--svart);
+    color: #000;
+}
+
+.navigation-holder {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-aligned {
+    margin-left: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wvd-logo {
+    width: 50px;
+    height: auto;
+    margin-left: 30px;
 }
 
 .top-div {
@@ -130,13 +140,14 @@ h2 {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--hvitt);
-    padding: 8px;
+    background-color: #fff;
+    padding: 13px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 a {
     text-decoration: none;
-    color: var(--svart);
+    color: #000;
 }
 
 a:hover {
@@ -153,24 +164,18 @@ a:hover {
     height: auto;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 .dropdown-content {
     display: none;
-    color: #fff;
     position: absolute;
-    background-color: #fff;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
-    border-radius: 10px;
-}
-
-#footer-a {
-    text-underline: var(--blå);
-    color: var(--blå);
-}
-
-#footer-a:hover {
-    color: #02b0ff;
 }
 
 .dropdown-content a {
@@ -189,7 +194,8 @@ a:hover {
 }
 
 .chapter {
-    font-size: smaller;
+    font-weight: bold;
+    font-size: medium;
     margin-right: 35px;
     text-underline: #000;
 }
@@ -207,17 +213,32 @@ a:hover {
     align-items: center;
 }
 
+.main-box {
+    position: relative;
+    display: inline-block;
+}
+
+#home-box-name {
+    display: inline;
+}
+
+#main-image {
+    position: absolute;
+    width: 75px;
+    height: auto;
+    margin-left: -40px;
+}
+
 #home-box-text {
-    display: flex;
+    width: 30%;
     flex-direction: column;
-    align-items: center;
     margin-right: 2vw;
-    margin-bottom: 3vw;
     text-align: left;
     padding: 20px;
 }
 
 #home-box-text h1 {
+    width: 100%;
     margin-right: 46px;
     font-weight: 900;
     font-size: 50px;
@@ -227,7 +248,7 @@ a:hover {
 #home-box-text p {
     font-weight: normal;
     margin-top: 5px;
-    width: 470px;
+    width: 100%;
 }
 
 #home-box-text h3 {
@@ -237,15 +258,52 @@ a:hover {
     width: 470px;
 }
 
-#projects-h2-text {
-    margin-top: 450px;
+.icon-container {
+    display: flex;
+    align-items: flex-start !important;
 }
 
-.home-box-picture {
+.home-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+footer {
+    color: #fff;
+    padding: 20px 0;
+    background-color: var(--dark-gray);
+    text-align: center;
+}
+
+.footer-div {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.footer-links {
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
-    align-items: flex-start;
-    height: 13vw;
-    margin-top: -300px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #c1c1c1;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+#projects-h2-text {
+    margin-top: 450px;
 }
 
 .small-lang-icon {
@@ -256,15 +314,14 @@ a:hover {
 }
 
 .form {
-    background: url("bilder/mallorcabilde.png");
+    background: url("photos/mallorcabilde.png");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
-    width: 300px;
-    height: 300px;
+    width: 25rem;
+    height: 25rem;
     box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
     animation: animate 5s ease-in-out infinite;
-    transition: all 5s ease-in-out;
 }
 
 @keyframes animate {
@@ -540,10 +597,11 @@ button {
 }
 
 #directory-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
     padding: 0;
-    display: flex;
-    align-items: center;
 }
 
 #directory-list a {
@@ -798,7 +856,7 @@ button {
         width: 400px;
         float: left;
         display: inline;
-        background-color: var(--hvitt);
+        background-color: #fff;
     }
 
     .project-box-info p {
@@ -825,7 +883,7 @@ button {
         margin-top: 15px;
         margin-left: 50px;
         border: none;
-        background-color: var(--hvitt);
+        background-color: #fff;
         align-items: center;
         text-align: center;
     }
@@ -853,7 +911,7 @@ button {
 
     .dropdown-content a {
         height: 80px;
-        background-color: var(--hvitt);
+        background-color: #fff;
         color: #000;
         font-size: 32px;
     }
@@ -870,7 +928,7 @@ button {
 
     #directory-list.show #directory-ul {
         display: flex;
-        background-color: var(--hvitt);
+        background-color: #fff;
     }
 
     .mobile-hamburger-menu:hover #directory-ul {

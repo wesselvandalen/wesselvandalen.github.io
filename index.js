@@ -20,10 +20,10 @@ function changeLanguage(lang) {
 
     if (lang === 'nl') {
         changeLanguageDutch();
-    } else if (lang === 'nobm') {
-        changeLanguageNorwegianBokmal();
-    } else if (lang === 'nony') {
-        changeLanguageNorwegianNynorsk();
+    } else if (lang === 'no') {
+        changeLanguageNorwegian();
+    } else if (lang === 'es') {
+        changeLanguageSpanish();
     } else {
         changeLanguageEnglish();
     }
@@ -61,20 +61,20 @@ function closePopup() {
 
 function buildSomething() {
     const popupBtn = document.getElementById('popupBtn');
-    const popup = document.getElementById('popup');
-    const closeBtn = document.getElementById('closeBtn');
-    const hamburgerBtn = document.getElementById('hamburger-button');
+    // const popup = document.getElementById('popup');
+    // const closeBtn = document.getElementById('closeBtn');
+    // const hamburgerBtn = document.getElementById('hamburger-button');
     const nlKnop = document.querySelector('#nlknop');
     const enknop = document.querySelector('#enknop');
-    const nonbknop = document.querySelector('#nonbknop');
-    const nonyknop = document.querySelector('#nonyknop');
+    const noknop = document.querySelector('#noknop');
+    const esknop = document.querySelector('#esknop');
 
     // https://phuoc.ng/collection/html-dom/change-the-favicon-dynamically-based-on-user-color-scheme-preference/
     const setFavicon = () => {
         const favicon = document.querySelector('link[rel="icon"]');
         favicon.href = (window.matchMedia('(prefers-color-scheme: dark)').matches)
-            ? 'bilder/wvd-logo-hvitt.png'
-            : 'bilder/wvd-logo-svart.png';
+            ? 'photos/wvd-logo-hvitt.png'
+            : 'photos/wvd-logo-svart.png';
     };
     setFavicon();
 
@@ -88,20 +88,18 @@ function buildSomething() {
         changeLanguage('en');
     });
 
-    nonyknop.addEventListener('click', (ev) => {
-        changeLanguageNorwegianNynorsk();
-        changeLanguage('nony');
+    noknop.addEventListener('click', (ev) => {
+        changeLanguageNorwegian();
+        changeLanguage('no');
     });
 
-    nonbknop.addEventListener('click', (ev) => {
-        changeLanguageNorwegianBokmal();
-        changeLanguage('nobm');
+    esknop.addEventListener('click', () => {
+        changeLanguageSpanish();
+        changeLanguage('es');
     });
 
-
-
-    popupBtn.addEventListener('click', openPopup);
-    closeBtn.addEventListener('click', closePopup);
+    // popupBtn.addEventListener('click', openPopup);
+    // closeBtn.addEventListener('click', closePopup);
 }
 
 function toggleMenu() {
@@ -147,7 +145,7 @@ function changeLanguageDutch() {
     document.getElementById('kpn-description').innerHTML = `KPN had een website nodig waar haar medewerkers hun kilometers konden registreren, omdat de Nederlandse overheid coöperaties hierom vroeg vanwege <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm">deze wet</a>.
                     De applicatie berekent vervolgens de co2-uitstoot en toont dit op een dashboard, zodat de managers dit kunnen zien. Ook wordt er een Excel-sheetrapport aangemaakt met daarin alle co2-uitstoot van alle medewerkers, die KPN kan aanleveren.Email adres: manager1@gmail.com <br>
     Wachtwoord: managerPass`;
-    document.getElementById('elektriker.no-description').innerHTML = `Elektriker.no (*Elektriker is Noors voor elektricien) is een platform dat Noren verbindt met ervaren elektriciens voor verschillende elektrische taken, van het repareren van stopcontacten tot het installeren van verlichtingssystemen. Het vereenvoudigt het proces van het vinden van betrouwbare hulp voor elektrische behoeften. Dit project toont mijn expertise in zowel de front- als back-end, inclusief testen voor kwaliteitsborging.`;
+    document.getElementById('bilrent-description').innerHTML = `Bilrent offers a convenient and reliable solution for car rental in several Norwegian cities, including Oslo, Bergen and Stavanger. With a simple and user-friendly web interface, we provide customers the opportunity to find and book cars at a suitable location and time.`;
 
     // degree
     document.getElementById('popup-bachelor').textContent = "Bachelor • 4 jaar";
@@ -158,13 +156,16 @@ function changeLanguageEnglish() {
     document.documentElement.lang = 'en';
 
     // top div
-    document.getElementById('popupBtn').textContent = "VIEW MY DEGREE";
-    document.getElementById('mail-a').textContent = "MAIL ME";
-    document.getElementById('cv-a').textContent = "VIEW MY CV";
-    document.getElementById('language-a').textContent = "LANGUAGES";
+    document.getElementById('home-a').textContent = 'Home';
+    document.getElementById('projects-a').textContent = 'Projects';
+    document.getElementById('contact-a').textContent = 'Contact';
+    document.getElementById('language-a').textContent = 'Languages';
 
     // home box
-    document.getElementById('personal-description').textContent = `I am a ${calculateAge()} year old guy born in the Netherlands. My hobbies are bodybuilding, learning Norwegian (language & culture) and going on adventure with my dog (Rowdy, Golden Retriever)!`;
+    document.getElementById('personal-description').textContent = `
+    ¡Hola! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands. 
+    I like taking walks in the forest with my dog, going to the gym & designing and building web applications.
+    `;
 
     // tech
     document.getElementById('tech-stack').textContent = "A collection of technologies I've used throughout my projects💡";
@@ -186,11 +187,11 @@ function changeLanguageEnglish() {
     document.getElementById('last-text').textContent = "And many more projects to come...";
 }
 
-function changeLanguageNorwegianBokmal() {
+function changeLanguageNorwegian() {
     document.documentElement.lang = 'no';
 
     // top div
-    document.getElementById('popupBtn').textContent = "SE UTDANINGEN MIN";
+    document.getElementById('popupBtn').textContent = "SE UTDANNINGEN MIN";
     document.getElementById('mail-a').textContent = "SEND MEG EN E-POST";
     document.getElementById('cv-a').textContent = "SE CV-EN MIN";
     document.getElementById('language-a').textContent = "SPRÅK";
@@ -211,41 +212,41 @@ function changeLanguageNorwegianBokmal() {
                     <br>
                     E-post adres: manager1@gmail.com<br>
                     Passord: managerPass`;
-    document.getElementById('elektriker.no-description').innerHTML = `Elektriker.no er en plattform som forbinder nordmenn med dyktige elektrikere for ulike elektriske oppgaver, fra å fikse strømuttak til å installere lysanlegg. Det forenkler prosessen med å finne pålitelig hjelp til elektriske behov. Dette prosjektet demonstrerer min ekspertise innen både front- og back-end, inkludert testing for kvalitetssikring.`;
+    document.getElementById('bilrent-description').innerHTML = `Elektriker.no er en plattform som forbinder nordmenn med dyktige elektrikere for ulike elektriske oppgaver, fra å fikse strømuttak til å installere lysanlegg. Det forenkler prosessen med å finne pålitelig hjelp til elektriske behov. Dette prosjektet demonstrerer min ekspertise innen både front- og back-end, inkludert testing for kvalitetssikring.`;
 
     // degree
     document.getElementById('popup-bachelor').textContent = "Bachelor • 4 år";
     document.getElementById('last-text').textContent = "Og mange flere prosjekter som kommer...";
 }
 
-function changeLanguageNorwegianNynorsk() {
-    document.documentElement.lang = 'no';
+function changeLanguageSpanish() {
+    document.documentElement.lang = 'es';
 
     // top div
-    document.getElementById('popupBtn').textContent = "SJÅ UTDANNINGA MI";
-    document.getElementById('mail-a').textContent = "SEND MEG EIN E-POST";
-    document.getElementById('cv-a').textContent = "SJÅ CV-EN MIN";
-    document.getElementById('language-a').textContent = "SPRÅK";
+    document.getElementById('popupBtn').textContent = "VER MI EDUCACIÓN";
+    document.getElementById('mail-a').textContent = "ENVÍAME UN CORREO ELECTRÓNICO";
+    document.getElementById('cv-a').textContent = "VER MI CV";
+    document.getElementById('language-a').textContent = "IDIOMAS";
 
     // home box
-    document.getElementById('personal-description').textContent = `Eg er ein ${calculateAge()} år gammal fyr født i Nederland. Hobbyane mine er kroppsbygging, det å lære meg norsk (språket & kulturen) og det å dra på tur med hunden min (Rowdy, Golden Retriever)!`;
+    document.getElementById('personal-description').textContent = `Jeg er en ${calculateAge()} år gammel fyr født i Nederland. Hobbyene mine er kroppsbygging, det å lære meg norsk (språket & kulturen) og det å dra på tur med hunden min (Rowdy, Golden Retriever)!`;
 
     // tech
-    document.getElementById('tech-stack').textContent = "Ein kolleksjon av teknologiar som eg har brukt i prosjektane mine💡";
+    document.getElementById('tech-stack').textContent = "En kolleksjon av teknologier som jeg har brukt i prosjektene mine💡";
 
     // projects
-    document.getElementById('projects-h2-text').textContent = "PROSJEKTANE MINE";
-    document.getElementById('project-p').textContent = "Kvert prosjekt er eit unikt stykke utvikling🎨";
-    document.getElementById('kpn-title').textContent = "KPN Reisebevegelsar";
+    document.getElementById('projects-h2-text').textContent = "PROSJEKTENE MINE";
+    document.getElementById('project-p').textContent = "Hvert prosjekt er et unikt stykke utvikling🎨";
+    document.getElementById('kpn-title').textContent = "KPN Reisebevegelser";
     document.getElementById('kpn-description').innerHTML = `
-                    KPN trengte ein nettside til sine ansatte for å registrere kilometerne sine. Dette grunna den nederlandske regjeringen som spurte alle nederlandske bedriftar å gjere det grunna <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm">denne loven</a>.
-                    Applikasjonen beregner deretter co2-utslippane, og viser dette på eit dashbord som managerne kan sjå. Den lager óg Excel-arkrapport som inneholder alle co2-utslippene til alle ansatte som KPN kan levere.
+                    KPN trengte en nettside til sine ansatte for å registrere kilometerne sine. Dette var på grunn av at den nederlandske regjeringen spurte alle nederlandske bedrifter å gjøre det på grunn av <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm">denne loven</a>.
+                    Applikasjonen beregner deretter co2-utslippene, og viser dette på et dashbord som managerne kan se. Den lager også Excel-arkrapport som inneholder alle co2-utslippene til alle ansatte som KPN kan levere.
                     <br>
-                    E-post adres: managerPass1@gmail.com<br>
+                    E-post adres: manager1@gmail.com<br>
                     Passord: managerPass`;
-    document.getElementById('elektriker.no-description').innerHTML = `Elektriker.no er ein plattform som forbinder nordmenn med dyktige elektrikare for ulike elektriske oppgavar, frå å fikse strømuttak til å installere lysanlegg. Det forenkler prosessen med å finne pålitelig hjelp til elektriske behov. Dette prosjektet demonstrerar min ekspertise innen både front- og back-end, inkludert testing for kvalitetssikring.`;
+    document.getElementById('bilrent-description').innerHTML = `Elektriker.no er en plattform som forbinder nordmenn med dyktige elektrikere for ulike elektriske oppgaver, fra å fikse strømuttak til å installere lysanlegg. Det forenkler prosessen med å finne pålitelig hjelp til elektriske behov. Dette prosjektet demonstrerer min ekspertise innen både front- og back-end, inkludert testing for kvalitetssikring.`;
 
     // degree
     document.getElementById('popup-bachelor').textContent = "Bachelor • 4 år";
-    document.getElementById('last-text').textContent = "Og mange fleire prosjektar som kjem...";
+    document.getElementById('last-text').textContent = "Og mange flere prosjekter som kommer...";
 }
