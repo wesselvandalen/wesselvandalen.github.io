@@ -179,7 +179,7 @@ function changeLanguageEnglish() {
                     <br>
                     Email address: manager1@gmail.com<br>
                     Password: managerPass`;
-    document.getElementById('elektriker.no-description').innerHTML = `Elektriker.no (*Elektriker is Norwegian for electrician) is a platform connecting Norwegians with skilled electricians for various electrical tasks, from fixing power outlets to installing lighting systems. It simplifies the process of finding reliable help for electrical needs. This project demonstrates my expertise in both the front- and back-end, including testing for quality assurance.`;
+    document.getElementById('bilrent-description').innerHTML = `Bilrent offers a convenient and reliable solution for car rental in several Norwegian cities, including Oslo, Bergen and Stavanger. With a simple and user-friendly web interface, we provide customers the opportunity to find and book cars at a suitable location and time.`;
 
     // degree
     document.getElementById('popup-bachelor').textContent = "Bachelor • 4 years";
