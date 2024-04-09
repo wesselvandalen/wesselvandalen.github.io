@@ -347,11 +347,6 @@ footer {
         width: 100%;
     }
 
-    .form {
-        width: 20rem;
-        height: 20rem;
-    }
-
     .ad123 {
         flex-direction: column;
         align-content: center;
@@ -480,75 +475,6 @@ footer {
     color: #666666;
 }
 
-.project-image img {
-    width: 100%;
-    height: auto;
-}
-
-.project-box {
-    width: 40%;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    /*
-    width: 80%;
-    align-items: center;
-    padding-left: 9px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1;
-
-    display: flex;
-    margin-bottom: 15vh;
-
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-
-     */
-}
-
-.project-box-picture {
-    border-radius: 10px;
-    width: 400px;
-    margin-right: 50px;
-    margin-top: 25px;
-}
-
-.project-description {
-    font-weight: normal;
-    font-size: 16px;
-    color: #666;
-    line-height: 1.5;
-}
-
-.project-box-info {
-    margin-right: 25px;
-    padding: 20px;
-    text-align: center;
-}
-
-.project-box-info h1 {
-    font-weight: 990;
-}
-
-.project-box-info p {
-    font-size: 16px;
-    line-height: 30px;
-}
-
-.project-box-code-button {
-    background-color: #fff;
-    border: none;
-    width: 34px;
-}
-
-.button {
-    width: 32px;
-}
-
 .languages-container {
     display: flex;
     align-items: center;
@@ -663,52 +589,6 @@ button {
     text-decoration: underline;
 }
 
-.project-box-button-box {
-    display: flex;
-    align-items: center;
-}
-
-.project-box-buttons {
-    margin: 20px;
-    font-size: 20px;
-    left: 0;
-    display: flex;
-    align-items: center;
-}
-
-.project-box-text {
-    color: #363333;
-}
-
-.project-box-text:hover {
-    color: #007bff;
-    text-decoration: underline;
-    text-underline: #007bff;
-}
-
-.project-title {
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: black;
-}
-
-.project-title:hover {
-    color: #007bff;
-    text-underline: #007bff;
-    text-decoration: underline;
-}
-
-.project-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.project-image:hover {
-    transform: translate3d(10px, 10px, 10px);
-}
-
 #menu-ham {
     width: 20px;
     height: 20px;
@@ -748,6 +628,142 @@ button {
 }
 
 @media only screen and (max-width: 1170px) {
+
+    .form {
+        justify-content: center;
+        align-items: center;
+        margin-left: 240px;
+        margin-top: 800px;
+        margin-bottom: 50px;
+        width: 40rem;
+        height: 40rem;
+    }
+
+    .main-box {
+        position: relative;
+        display: inline-block;
+        margin-left: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .main-box #main-image {
+        width: 90px;
+        height: 90px;
+        margin-top: 20px;
+    }
+
+    .main-box #home-box-name {
+        font-size: 89px;
+    }
+
+    #home-box-text #personal-description {
+        width: 90%;
+        margin-left: 110px;
+        font-size: 40px;
+        text-align: justify;
+    }
+
+    .text-label #tech-h2-text {
+        margin-top: 1400px;
+    }
+
+    .text-label #tech-stack {
+        font-size: 36px;
+        width: 90%;
+    }
+
+    .container {
+        margin-top: 100px;
+        display: block;
+        width: 100%;
+    }
+
+    .container .block {
+        width: 85%;
+        margin-left: 85px;
+    }
+
+    .text-label #project-p {
+        font-size: 36px;
+        width: 90%;
+        margin-bottom: 100px;
+    }
+
+    .ad123 {
+        width: 110%;
+    }
+
+    .ik87 .huj564 {
+        display: block;
+    }
+
+    .ik87 .huj564 .project-details .title {
+        font-size: 52px;
+    }
+
+    .ik87 .huj564 .project-details .description {
+        font-size: 36px;
+    }
+
+    .ad123 .ik87 .huj564 .project-buttons {
+        width: 100%;
+        overflow: hidden !important;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Creates 2 columns with equal width */
+        grid-gap: 10px; /* Optional: add some space between the elements */
+    }
+
+    .ik87 .huj564 .project-buttons div {
+        font-size: 36px;
+        font-weight: bold;
+        width: 80%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .ik87 .huj564 .project-buttons .pr896 {
+        width: 40px;
+        height: 40px;
+        margin-top: -38px !important;
+    }
+
+    .ik87 .huj564 .project-buttons .pr897 {
+        width: 40px;
+        height: 40px;
+        margin-top: -38px !important;
+    }
+
+    #last-text {
+        margin-left: 60px;
+        font-size: 34px;
+    }
+
+    #contact {
+        width: 110%;
+    }
+
+    #footer-p {
+        font-size: 34px;
+    }
+
+    .footer-links a {
+        font-size: 26px;
+    }
+
+    .footer-links #popupBtn {
+        color: #c1c1c1;
+        background: none;
+        margin-left: -145px;
+    }
+
+    #copyright {
+        width: 140%;
+        margin-left: -90px;
+    }
+
+    /* ============================== */
 
     #skill-section {
         margin-top: 900px;
@@ -881,12 +897,6 @@ button {
         font-size: 56px;
     }
 
-    .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
     .block {
         margin-bottom: 100px;
         width: 100%;
@@ -904,13 +914,6 @@ button {
 
     .block ul li {
         font-size: 46px;
-    }
-
-    .form {
-        margin-left: 100px;
-        margin-top: 800px;
-        height: 80vw;
-        width: 80vw;
     }
 
     .home-box {
@@ -1025,19 +1028,6 @@ button {
 
     button#hamburger-button.mobile-hamburger-menu {
         width: 20px;
-    }
-
-    .footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .footer #footer-text {
-        width: 90%;
-        font-size: 44px;
     }
 
     .dropdown-content {
