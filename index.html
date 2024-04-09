@@ -21,12 +21,9 @@
                 </button>
 
                 <ul id="directory-ul" class="right-aligned">
-                    <!-- <a href="https://github.com/wesselvandalen" target="_blank" class="chapter">GITHUB</a>
-                    <a href="https://stackoverflow.com/users/24017710/kaffe" target="_blank" class="chapter">STACK OVERFLOW</a>
-                    <a href="#" id="popupBtn" class="chapter">VIEW MY DEGREE</a> -->
                     <a href="#home" class="chapter" id="home-a">Home</a>
                     <a href="#tech-stack" class="chapter">Tech Stack</a>
-                    <a href="#projects" class="chapter" id="projects-a">Projects</a>
+                    <a href="#project" class="chapter" id="projects-a">Projects</a>
                     <a href="#contact" class="chapter" id="contact-a">Contact</a>
 
                     <div class="dropdown">
@@ -35,7 +32,6 @@
                             <a id="nlknop" href="#" onclick=""><img class="small-lang-icon" src="photos/langicons/netherlands.png" alt="Dutch flag">Nederlands</a>
                             <a id="enknop" href="#" onclick=""><img class="small-lang-icon" src="photos/langicons/united-kingdom.png" alt="English flag">English</a>
                             <a id="noknop" href="#" onclick=""><img class="small-lang-icon" src="photos/langicons/norway.png" alt="Norwegian flag">Norsk</a>
-                            <a id="esknop" href="#" onclick=""><img class="small-lang-icon" src="photos/langicons/spain.png" alt="Spanish flag">Español</a>
                         </div>
                     </div>
 
@@ -47,9 +43,7 @@
     <main>
 
         <div id="home" class="section">
-
             <div class="home-box">
-
                 <div id="home-box-text">
                     <div class="main-box">
                         <h1 id="home-box-name">Scrum Master & Full Stack Developer</h1>
@@ -58,19 +52,10 @@
                     <p id="personal-description">
                         ¡Hola! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.
                     </p>
-                    <!--
-                    <div class="icon-container">
-                        <img src="photos/github.png" alt="GitHub logo" class="home-icon">
-                        <img src="photos/linkedin.png" alt="LinkedIn logo" class="home-icon">
-                        <img src="photos/stack_overflow.png" alt="Stack Overflow logo" class="home-icon">
-                    </div>
-                    -->
                 </div>
-
                 <div id="home-box-picture">
                     <div class="form"></div>
                 </div>
-
             </div>
         </div>
 
@@ -130,41 +115,65 @@
             <p class="description-label" id="project-p">Each project is a unique piece of development🎨</p>
         </div>
 
-        <div id="projects">
-            <div class="projects">
-                <div class="project-box">
-                    <div class="image-container">
-                        <a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="project-image">
-                            <img src="photos/KPN.png" alt="Picture of KPN logo" class="project-box-picture">
-                        </a>
-                    </div>
-                    <div class="project-box-info">
-                        <h1><a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="project-title" id="kpn-title">KPN Travel movements</a></h1>
-                        <p class="project-description" id="kpn-description">
-                            As part of a specialized front-end team, I collaborated with four other members for a college project to develop a website for KPN, a prominent telecommunications company in the Netherlands. The project aimed to facilitate employees in recording their travel details for the calculation of CO2 emissions, in compliance with the legal requirements outlined in the Besluit CO2 reductie werkgebonden personen mobiliteit.
+        <div class="ad123" id="project">
+
+            <div class="ik87">
+                <img src="photos/KPN_travel_movements.png" alt="Project 1 Image">
+                <div class="huj564">
+                    <div class="project-details">
+                        <div class="title" id="kpn-title">KPN Travel Movements</div>
+                        <div class="description" id="kpn-description">
+                            KPN needed a website for its employees to register their kilometers, due to the Dutch government asking coorperations to do so because of <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm"> this law</a>.
+                            The application then calculates the co2 emissions, and shows this on a dashboard for the managers to see. It also creates an Excel sheet report containing all the co2 emissions of all employees for KPN to deliver.
                             <br>
-                            Email address: manager1@gmail.com <br>
+                            Email address: manager1@gmail.com<br>
                             Password: managerPass
-                        </p>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <div>
+                            <a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank">
+                                <img src="photos/play.png" alt="Live demo icon" class="pr896">
+                                View live
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="inactiveLink">
+                                Code not public
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="projects">
-                <div class="project-box">
-                    <div class="image-container">
-                        <a href="https://wesselvandalen.github.io/Bilrent/" target="_blank" class="project-image">
-                            <img src="photos/Bilrent.png" alt="Picture of Bilrent logo" class="project-box-picture">
-                        </a>
-                    </div>
-                    <div class="project-box-info">
-                        <h1><a href="https://wesselvandalen.github.io/Bilrent/" target="_blank" class="project-title" id="elektriker.no-title">Bilrent</a></h1>
-                        <p class="project-description" id="bilrent-description">
+            <div class="ik87">
+                <img src="photos/bilrent.png" alt="Project 2 Image">
+                <div class="huj564">
+                    <div class="project-details">
+                        <div class="title">Bilrent</div>
+                        <div class="description" id="bilrent-description">
                             Bilrent offers a convenient and reliable solution for car rental in several Norwegian cities, including Oslo, Bergen and Stavanger. With a simple and user-friendly web interface, we provide customers the opportunity to find and book cars at a suitable location and time.
-                        </p>
+                            <br><br>
+                            *This project is being worked on...
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <div>
+                            <a href="https://wesselvandalen.github.io/Bilrent/" target="_blank">
+                                <img src="photos/play.png" alt="Live demo icon" class="pr896">
+                                View live
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://github.com/wesselvandalen/Bilrent" target="_blank">
+                                <img src="photos/github.png" alt="Github logo" class="pr897">
+                                See code
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div id="popup" class="popup">
@@ -190,14 +199,16 @@
 
     <footer id="contact">
         <div class="footer-div">
-            <p>Interested in working together?</p>
+            <p id="footer-p">Interested?</p>
             <div class="footer-links">
-                <a href="mailto:wesselvandalen@gmail.com">Send me an email</a>
-                <a href="files/cv.pdf" target="_blank">View my CV</a>
+                <a href="mailto:wesselvandalen@gmail.com" id="mail-a">Send me an email</a>
+                <a href="files/cv.pdf" target="_blank" id="cv-a">View my CV</a>
+                <a href="#" id="popupBtn">View my study</a>
                 <a href="https://github.com/wesselvandalen" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/wesselvandalen/" target="_blank">LinkedIn</a>
                 <a href="https://stackoverflow.com/users/24017710/kaffe" target="_blank">Stack Overflow</a>
             </div>
+            <p id="copyright"></p>
         </div>
     </footer>
 
