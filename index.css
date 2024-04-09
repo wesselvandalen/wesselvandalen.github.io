@@ -143,6 +143,7 @@ h2 {
     background-color: #fff;
     padding: 13px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 a {
@@ -216,6 +217,7 @@ a:hover {
 .main-box {
     position: relative;
     display: inline-block;
+    z-index: 2;
 }
 
 #home-box-name {
@@ -227,6 +229,7 @@ a:hover {
     width: 75px;
     height: auto;
     margin-left: -40px;
+    z-index: 3;
 }
 
 #home-box-text {
@@ -336,7 +339,15 @@ footer {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1920px) {
+    #home-box-text {
+        width: 45%;
+    }
+
+    .home-box {
+        width: 100%;
+    }
+
     .form {
         width: 20rem;
         height: 20rem;
