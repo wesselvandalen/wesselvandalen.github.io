@@ -350,6 +350,11 @@ footer {
         width: 100%;
     }
 
+    .form {
+        width: 20rem;
+        height: 20rem;
+    }
+
     .ad123 {
         flex-direction: column;
         align-content: center;
