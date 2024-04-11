@@ -146,7 +146,7 @@ function changeLanguageDutch() {
                     Email address: manager1@gmail.com<br>
                     Password: managerPass`;
 
-    document.getElementById('bilrent-description').innerHTML = `Bilrent offers a convenient and reliable solution for car rental in several Norwegian cities, including Oslo, Bergen and Stavanger. With a simple and user-friendly web interface, we provide customers the opportunity to find and book cars at a suitable location and time.`;
+    // document.getElementById('bilrent-description').innerHTML = `Bilrent offers a convenient and reliable solution for car rental in several Norwegian cities, including Oslo, Bergen and Stavanger. With a simple and user-friendly web interface, we provide customers the opportunity to find and book cars at a suitable location and time.`;
 
     document.getElementById('last-text').textContent = "En meer projecten nog te gaan...";
 
@@ -190,7 +190,7 @@ function changeLanguageEnglish() {
                     Email address: manager1@gmail.com<br>
                     Password: managerPass`;
 
-    document.getElementById('bilrent-description').innerHTML = `Bilrent offers a convenient and reliable solution for car rental in several Norwegian cities, including Oslo, Bergen and Stavanger. With a simple and user-friendly web interface, we provide customers the opportunity to find and book cars at a suitable location and time.`;
+    // document.getElementById('bilrent-description').innerHTML = `Bilrent offers a convenient and reliable solution for car rental in several Norwegian cities, including Oslo, Bergen and Stavanger. With a simple and user-friendly web interface, we provide customers the opportunity to find and book cars at a suitable location and time.`;
 
     document.getElementById('last-text').textContent = "And many more projects to come...";
 
@@ -234,7 +234,7 @@ function changeLanguageNorwegian() {
                     E-post adres: manager1@gmail.com<br>
                     Passord: managerPass`;
 
-    document.getElementById('bilrent-description').innerHTML = `Bilrent tilbyr en praktisk og pålitelig løsning for bilutleie i flere norske byer, inkludert Oslo, Bergen og Stavanger. Med et enkelt og brukervennlig webgrensesnitt gir vi kundene muligheten til å finne og bestille biler på passende sted og tidspunkt.`;
+    // document.getElementById('bilrent-description').innerHTML = `Bilrent tilbyr en praktisk og pålitelig løsning for bilutleie i flere norske byer, inkludert Oslo, Bergen og Stavanger. Med et enkelt og brukervennlig webgrensesnitt gir vi kundene muligheten til å finne og bestille biler på passende sted og tidspunkt.`;
 
     document.getElementById('last-text').textContent = "Og mange flere prosjekt som kommer...";
 
