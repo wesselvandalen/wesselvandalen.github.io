@@ -3,147 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1000">
-    <title>Wessel van Dalen | Scrum Master & Full Stack Developer</title>
+    <title>Wessel van Dalen</title>
     <link rel="icon" type="image/x-icon" href="photos/wvd-logo-svart.png">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
 </head>
 <body>
 
-    <div class="top-div">
-
-        <div id="directory-list">
-
-            <nav id="list-div" class="navigation-holder">
-
-                <button id="hamburger-button" class="mobile-hamburger-menu" onclick="toggleMenu()" onkeydown="handleKeyPress(event)" tabindex="0">
-                    <img id="ham-icon" src="photos/menu.png" alt="Hamburger icon">
-                </button>
-
-                <ul id="directory-ul" class="right-aligned">
-                    <a href="#home" class="chapter" id="home-a">Home</a>
-                    <a href="#tech-stack" class="chapter">Tech Stack</a>
-                    <a href="#project" class="chapter" id="projects-a">Projects</a>
-                    <a href="#contact" class="chapter" id="contact-a">Contact</a>
-
-                    <div class="dropdown">
-                        <a href="#" class="chapter" id="language-a">Languages</a>
-                        <div class="dropdown-content">
-                            <a id="nlknop" href="#" onclick=""><img class="small-lang-icon" src="photos/langicons/netherlands.png" alt="Dutch flag">Nederlands</a>
-                            <a id="enknop" href="#" onclick=""><img class="small-lang-icon" src="photos/langicons/united-kingdom.png" alt="English flag">English</a>
-                            <a id="noknop" href="#" onclick=""><img class="small-lang-icon" src="photos/langicons/norway.png" alt="Norwegian flag">Norsk</a>
-                            <a id="esknop" href="#" onclick=""><img class="small-lang-icon" src="photos/langicons/spain.png" alt="Spanish flag">Español</a>
-                        </div>
-                    </div>
-
-                </ul>
-            </nav>
-        </div>
-    </div>
-
     <main>
+        <!--
+        <div class="dropdown">
+            <a href="#" class="chapter" id="language-a">Languages ></a>
+            <div class="dropdown-content">
+                <a id="enknop" href="#" onclick="">English</a>
+                <a id="nlknop" href="#" onclick="">Nederlands</a>
+                <a id="esknop" href="#" onclick="">Español</a>
+                <a id="noknop" href="#" onclick="">Norsk</a>
+            </div>
+        </div> -->
 
-        <div id="home" class="section">
-            <div class="home-box">
-                <div id="home-box-text">
-                    <div class="main-box">
-                        <h1 id="home-box-name">Scrum Master & Full Stack Developer</h1>
-                        <img src="photos/rocket.png" alt="Rocket emoji" id="main-image">
+        <section class="section top-section">
+            <div class="content-container content-theme-dark">
+                <div class="content-inner">
+                    <div class="content-center">
+                        <h1>Wessel van Dalen</h1>
+                        <p id="top-p">¡Hola! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.</p>
                     </div>
-                    <p id="personal-description">
-                        ¡Hola! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.
-                    </p>
-                </div>
-                <div id="home-box-picture">
-                    <div class="form"></div>
+                    <div class="mouse-div">
+                        <p id="arrows">^^^</p>
+                        <p>Scroll down</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="section bottom-section">
+            <div class="content-container content-theme-light">
+                <div class="content-inner">
+                    <div class="content-center">
+                        <h1>Wessel van Dalen</h1>
+                        <p id="bottom-p">¡Hola! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="text-label">
             <h2 class="h2-label" id="tech-h2-text">TECH STACK</h2>
-            <p class="description-label" id="tech-stack">A collection of technologies I've used throughout my projects💡</p>
+            <p class="description-label" id="tech-stack">A showcase of my knowledge and tools</p>
         </div>
 
-        <div class="container">
+        <div class="grid-container fade-in">
 
-            <div class="block">
-                <img src="photos/techicons/gear.png" alt="Back End Image" class="tech-icon">
-                <p>BACK END</p>
-                <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>Spring</li>
-                    <li>JUnit5 Testing</li>
-                </ul>
+            <div class="grid-container">
+                <div class="portfolio-grid" id="tech">
+                    <div class="stack">
+                        <h2>Back End</h2>
+                        <ul>
+                            <li>Java</li>
+                            <li>Spring</li>
+                            <li>Python</li>
+                            <li>JUnit5</li>
+                        </ul>
+                    </div>
+                    <div class="stack">
+                        <h2>Front End</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Lit + Vite</li>
+                        </ul>
+                    </div>
+                    <div class="stack">
+                        <h2>Database</h2>
+                        <ul>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                    <div class="stack">
+                        <h2>Process</h2>
+                        <ul>
+                            <li>Scrum Master</li>
+                            <li>Extreme Programming</li>
+                            <li>Continious Integration</li>
+                            <li>Agile Workflow</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-            <div class="block">
-                <img src="photos/techicons/phone.png" alt="Back End Image" class="tech-icon">
-                <p>FRONT END</p>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Lit + Vite</li>
-                </ul>
-            </div>
-
-            <div class="block">
-                <img src="photos/techicons/box.png" alt="Back End Image" class="tech-icon">
-                <p>DATABASE</p>
-                <ul>
-                    <li>PostgreSQL</li>
-                    <li>Hibernate</li>
-                </ul>
-            </div>
-
-            <div class="block">
-                <img src="photos/techicons/paper.png" alt="Back End Image" class="tech-icon">
-                <p>PROCESS</p>
-                <ul>
-                    <li>Scrum Master</li>
-                    <li>Extreme Programming</li>
-                    <li>Continious Integration</li>
-                    <li>Agile Workflow</li>
-                </ul>
-            </div>
-
         </div>
 
         <div class="text-label">
             <h2 class="h2-label" id="projects-h2-text">PROJECTS</h2>
-            <p class="description-label" id="project-p">Each project is a unique piece of development🎨</p>
+            <p class="description-label" id="project-p">All projects I've worked on / am working on</p>
         </div>
 
-        <div class="ad123" id="project">
+        <div class="ad123 fade-in" id="project">
 
             <div class="ik87">
-                <img src="photos/img.png" alt="Project 1 Image">
                 <div class="huj564">
                     <div class="project-details">
                         <div class="title" id="kpn-title">KPN Travel Movements</div>
                         <div class="description" id="kpn-description">
-                            KPN needed a website for its employees to register their kilometers, due to the Dutch government asking coorperations to do so because of <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm"> this law</a>.
-                            The application then calculates the co2 emissions, and shows this on a dashboard for the managers to see. It also creates an Excel sheet report containing all the co2 emissions of all employees for KPN to deliver.
+                            KPN needed a website for its employees to register their kilometers, due to the Dutch government asking corporations to do so because of <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm"> this law</a>.
+                            The application then calculates the CO2 emissions and shows this on a dashboard for the managers to see. It also creates an Excel sheet report containing all the CO2 emissions of all employees for KPN to deliver.
                             <br>
                             Email address: manager1@gmail.com<br>
                             Password: managerPass
                         </div>
+                        <div class="project-buttons">
+                            <div>
+                                <a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank">
+                                    <img src="photos/play.png" alt="Live demo icon" class="pr896">
+                                    View live
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" class="inactiveLink">
+                                    Code not public
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-buttons">
-                        <div>
-                            <a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank">
-                                <img src="photos/play.png" alt="Live demo icon" class="pr896">
-                                View live
-                            </a>
-                        </div>
-                        <div>
-                            <a href="" class="inactiveLink">
-                                Code not public
-                            </a>
-                        </div>
+                    <div class="image-container">
+                        <img src="photos/kpn.png" alt="Project 1 Image">
                     </div>
                 </div>
             </div>
@@ -222,19 +207,25 @@
             </div>
         </div>
 
-        <div class="container-last-text">
-            <p id="last-text">And many more projects to come...</p>
+
+        <div class="application">
+            <div class="text-label">
+                <h2 class="h2-label">REACH OUT TO ME</h2>
+                <p class="description-label">Send me an email if you're interested</p>
+            </div>
+            <div class="application-form">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRt9Lz6TaG7LVV_sihrpLhlinHWDcOSdG2aYz3r3XUTp1E8A/viewform?embedded=true" width="640" height="774" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
         </div>
 
     </main>
 
     <footer id="contact">
         <div class="footer-div">
-            <p id="footer-p">Interested?</p>
             <div class="footer-links">
-                <a href="mailto:wesselvandalen@gmail.com" id="mail-a">Send me an email</a>
+                <!-- <a href="mailto:wesselvandalen@gmail.com" id="mail-a">Send me an email</a> -->
                 <a href="files/cv.pdf" target="_blank" id="cv-a">View my CV</a>
-                <a href="#" id="popupBtn">View my study</a>
+                <!-- <a href="#" id="popupBtn">View my study</a> -->
                 <a href="https://github.com/wesselvandalen" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/wesselvandalen/" target="_blank">LinkedIn</a>
                 <a href="https://stackoverflow.com/users/24017710/kaffe" target="_blank">Stack Overflow</a>

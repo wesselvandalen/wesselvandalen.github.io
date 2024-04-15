@@ -18,6 +18,7 @@ function handleCookies() {
 function changeLanguage(lang) {
     document.cookie = `language=${lang}`;
     document.querySelector('#copyright').textContent = `© ${new Date().getFullYear()} Wessel van Dalen, Some rights reserved.`; // https://www.termsfeed.com/blog/sample-copyright-notices/
+    document.documentElement.lang = lang;
 
     if (lang === 'nl') {
         changeLanguageDutch();
@@ -79,6 +80,95 @@ function buildSomething() {
     };
     setFavicon();
 
+    let gridContainer = document.querySelector(".grid-container");
+    let isVisible = false;
+
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function checkFade() {
+        if (isElementInViewport(gridContainer)) {
+            if (!isVisible) {
+                isVisible = true;
+                gridContainer.classList.add("active");
+            }
+        } else {
+            if (isVisible) {
+                isVisible = false;
+                gridContainer.classList.remove("active");
+            }
+        }
+    }
+
+    checkFade();
+    document.addEventListener("scroll", checkFade);
+
+    let textLabel = document.querySelector(".text-label");
+    let projectContainer = document.querySelector(".ad123");
+    let isVis = false;
+
+    function inVP(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function cFade() {
+        if (inVP(textLabel) || inVP(projectContainer)) {
+            if (!isVis) {
+                isVis = true;
+                textLabel.classList.add("active");
+                projectContainer.classList.add("active");
+            }
+        } else {
+            if (isVis) {
+                isVis = false;
+                textLabel.classList.remove("active");
+                projectContainer.classList.remove("active");
+            }
+        }
+    }
+
+    cFade();
+    document.addEventListener("scroll", cFade);
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        let formData = new FormData(this);
+
+        fetch('send_email.php', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => {
+                if (response.ok) {
+                    return response.text();
+                }
+                throw new Error('Network response was not ok.');
+            })
+            .then(data => {
+                console.log(data);
+                alert(data);
+            })
+            .catch(error => {
+                console.error('There was a problem with your fetch operation:', error);
+                alert('Oops! Something went wrong. Please try again later.');
+            });
+    });
+
+    /*
     nlKnop.addEventListener('click', (ev) => {
         changeLanguageDutch();
         changeLanguage('nl');
@@ -97,7 +187,9 @@ function buildSomething() {
     esknop.addEventListener('click', (ev) => {
         changeLanguageEspanol();
         changeLanguage('es');
-    });
+    })
+    ;
+     */
 
     popupBtn.addEventListener('click', openPopup);
     closeBtn.addEventListener('click', closePopup);
@@ -125,14 +217,6 @@ function closeMenu() {
 }
 
 function changeLanguageDutch() {
-    document.documentElement.lang = 'nl';
-
-    // top div
-    document.getElementById('home-a').textContent = 'Thuispagina';
-    document.getElementById('projects-a').textContent = 'Projecten';
-    document.getElementById('contact-a').textContent = 'Contact';
-    document.getElementById('language-a').textContent = 'Talen';
-
     // home box
     document.getElementById('personal-description').textContent = `
     ¡Hola! Mijn naam is Wessel en ik ben een ${calculateAge()} jaar oude gast uit Nederland. 
@@ -162,32 +246,20 @@ function changeLanguageDutch() {
 
     // footer
     document.querySelector('#footer-p').textContent = 'Geïnteresseerd?';
-    document.querySelector('#mail-a').textContent = 'Stuur me een email';
     document.querySelector('#cv-a').textContent = 'Bekijk mijn CV';
-    document.querySelector('#popupBtn').textContent = 'Bekijk mijn studie';
 }
 
 function changeLanguageEnglish() {
-    document.documentElement.lang = 'en';
-
-    // top div
-    document.getElementById('home-a').textContent = 'Home';
-    document.getElementById('projects-a').textContent = 'Projects';
-    document.getElementById('contact-a').textContent = 'Contact';
-    document.getElementById('language-a').textContent = 'Languages';
-
     // home box
-    document.getElementById('personal-description').textContent = `
-    ¡Hola! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands. 
-    I like taking walks in the forest with my dog, going to the gym & designing and building web applications.
-    `;
+    document.getElementById('top-p').textContent = `¡Hola! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.`;
+    document.getElementById('bottom-p').textContent = `¡Hola! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.`;
 
     // tech
-    document.getElementById('tech-stack').textContent = "A collection of technologies I've used throughout my projects💡";
+    document.getElementById('tech-stack').textContent = "A showcase of my knowledge and tools";
 
     // projects
     document.getElementById('projects-h2-text').textContent = "PROJECTS";
-    document.getElementById('project-p').textContent = "Each project is a unique piece of development🎨";
+    document.getElementById('project-p').textContent = "All projects I've worked on / am working on";
 
     document.getElementById('kpn-description').innerHTML = `
                     KPN needed a website for its employees to register their kilometers, due to the Dutch government asking coorperations to do so because of <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm"> this law</a>. 
@@ -196,29 +268,13 @@ function changeLanguageEnglish() {
                     Email address: manager1@gmail.com<br>
                     Password: managerPass`;
 
-    // document.getElementById('bilrent-description').innerHTML = `Bilrent offers a convenient and reliable solution for car rental in several Norwegian cities, including Oslo, Bergen and Stavanger. With a simple and user-friendly web interface, we provide customers the opportunity to find and book cars at a suitable location and time.`;
-
-    document.getElementById('last-text').textContent = "And many more projects to come...";
-
-    // degree
-    document.getElementById('popup-bachelor').textContent = "Bachelor • 4 years";
 
     // footer
     document.querySelector('#footer-p').textContent = 'Interested?';
-    document.querySelector('#mail-a').textContent = 'Send me an email';
     document.querySelector('#cv-a').textContent = 'View my CV';
-    document.querySelector('#popupBtn').textContent = 'View my study';
 }
 
 function changeLanguageNorwegian() {
-    document.documentElement.lang = 'no';
-
-    // top div
-    document.getElementById('home-a').textContent = 'Hjem';
-    document.getElementById('projects-a').textContent = 'Prosjekt';
-    document.getElementById('contact-a').textContent = 'Kontakt';
-    document.getElementById('language-a').textContent = 'Språk';
-
     // home box
     document.getElementById('personal-description').textContent = `
     ¡Hola! Jeg heter Wessel og jeg er en ${calculateAge()} år gammel fyr fra Nederland. 
@@ -253,14 +309,6 @@ function changeLanguageNorwegian() {
     document.querySelector('#popupBtn').textContent = 'Se på studien min';
 }
 function changeLanguageEspanol() {
-    document.documentElement.lang = 'es';
-
-    // top div
-    document.getElementById('home-a').textContent = 'Página principal';
-    document.getElementById('projects-a').textContent = 'Proyectos';
-    document.getElementById('contact-a').textContent = 'Contacto';
-    document.getElementById('language-a').textContent = 'Idiomas';
-
     // home box
     document.getElementById('personal-description').textContent = `
     ¡Hola! Mi nombre es Wessel y soy un chico holandés de ${calculateAge()} años. 
