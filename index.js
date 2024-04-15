@@ -19,14 +19,34 @@ function changeLanguage(lang) {
     document.cookie = `language=${lang}`;
     document.querySelector('#copyright').textContent = `© ${new Date().getFullYear()} Wessel van Dalen, Some rights reserved.`; // https://www.termsfeed.com/blog/sample-copyright-notices/
     document.documentElement.lang = lang;
+    const NLLI = document.getElementById('nlli');
+    const NOLI = document.getElementById('noli');
+    const ESLI = document.getElementById('esli');
+    const ENLI = document.getElementById('enli');
 
     if (lang === 'nl') {
+        NLLI.classList.add('active');
+        NOLI.classList.remove('active');
+        ESLI.classList.remove('active');
+        ENLI.classList.remove('active');
         changeLanguageDutch();
     } else if (lang === 'no') {
+        NLLI.classList.remove('active');
+        NOLI.classList.add('active');
+        ESLI.classList.remove('active');
+        ENLI.classList.remove('active');
         changeLanguageNorwegian();
     } else if (lang === 'es') {
+        NLLI.classList.remove('active');
+        NOLI.classList.remove('active');
+        ESLI.classList.add ('active');
+        ENLI.classList.remove('active');
         changeLanguageEspanol();
     } else {
+        NLLI.classList.remove('active');
+        NOLI.classList.remove('active');
+        ESLI.classList.remove('active');
+        ENLI.classList.add('active');
         changeLanguageEnglish();
     }
 }
@@ -143,32 +163,6 @@ function buildSomething() {
     cFade();
     document.addEventListener("scroll", cFade);
 
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        let formData = new FormData(this);
-
-        fetch('send_email.php', {
-            method: 'POST',
-            body: formData
-        })
-            .then(response => {
-                if (response.ok) {
-                    return response.text();
-                }
-                throw new Error('Network response was not ok.');
-            })
-            .then(data => {
-                console.log(data);
-                alert(data);
-            })
-            .catch(error => {
-                console.error('There was a problem with your fetch operation:', error);
-                alert('Oops! Something went wrong. Please try again later.');
-            });
-    });
-
-    /*
     nlKnop.addEventListener('click', (ev) => {
         changeLanguageDutch();
         changeLanguage('nl');
@@ -189,10 +183,9 @@ function buildSomething() {
         changeLanguage('es');
     })
     ;
-     */
 
-    popupBtn.addEventListener('click', openPopup);
-    closeBtn.addEventListener('click', closePopup);
+    //popupBtn.addEventListener('click', openPopup);
+    //closeBtn.addEventListener('click', closePopup);
 }
 
 function toggleMenu() {
@@ -218,17 +211,17 @@ function closeMenu() {
 
 function changeLanguageDutch() {
     // home box
-    document.getElementById('personal-description').textContent = `
-    ¡Hola! Mijn naam is Wessel en ik ben een ${calculateAge()} jaar oude gast uit Nederland. 
-    Ik vind het leuk om boswandelingen te maken met mijn hond, naar de sportschool te gaan & web applicaties te designen en bouwen.
-    `;
+    document.getElementById('top-p').textContent = `¡Hola! Mijn naam is Wessel en ik ben een ${calculateAge()} jaar oude gast uit Nederland.`;
+    document.getElementById('bottom-p').textContent = `¡Hola! Mijn naam is Wessel en ik ben een ${calculateAge()} jaar oude gast uit Nederland.`;
+    document.getElementById('my-desc').textContent = 'Ik maak graag een wandeling in het bos met mijn hond, sport in de sportschool,' +
+        'leer talen (Noors en Spaans) & ga graag naar festivalen.';
 
     // tech
-    document.getElementById('tech-stack').textContent = "Een collectie van technologien die ik in mijn projecten heb gebruikt💡";
+    document.getElementById('tech-stack').textContent = "Een overzicht van mijn vaardigheden";
 
     // projects
     document.getElementById('projects-h2-text').textContent = "PROJECTEN";
-    document.getElementById('project-p').textContent = "Ieder project is een uniek stuk development🎨";
+    document.getElementById('project-p').textContent = "Alle projecten waar ik aan gewerkt heb / aan werk";
 
     document.getElementById('kpn-description').innerHTML = `
                     KPN had een website nodig waar haar medewerkers hun kilometers konden registreren, omdat de Nederlandse overheid coöperaties hierom vroeg vanwege <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm">deze wet</a>. 
@@ -236,16 +229,13 @@ function changeLanguageDutch() {
                     <br>
                     Email address: manager1@gmail.com<br>
                     Wachtwoord: managerPass`;
+    document.getElementById('todss').textContent = "'TODSS' is een applicatie gemaakt voor de afdeling Business en Finance van de Hogeschool Utrecht. Het is gemaakt om financiële studenten te helpen bij het oefenen van allerlei verschillende financiële rapporten (winst- en verliesrekeningen, balansrekeningen, kasstromen) voor zowel hun examens als hun persoonlijke training. De opdrachten moesten elke keer willekeurig worden gegenereerd en de leerling moest feedback krijgen op zijn opdracht om het oefenen ten volle te kunnen benutten.";
 
-    // document.getElementById('bilrent-description').innerHTML = `Bilrent offers a convenient and reliable solution for car rental in several Norwegian cities, including Oslo, Bergen and Stavanger. With a simple and user-friendly web interface, we provide customers the opportunity to find and book cars at a suitable location and time.`;
-
-    document.getElementById('last-text').textContent = "En meer projecten nog te gaan...";
-
-    // degree
-    document.getElementById('popup-bachelor').textContent = "Bachelor • 4 jaar";
+    document.getElementById('scroll').textContent = 'Scroll naar beneden';
+    document.getElementById('contact-h2').textContent = 'ZOEK CONTACT MET ME';
+    document.getElementById('contact-p').textContent = 'Stuur me een email als je geïnteresseerd bent';
 
     // footer
-    document.querySelector('#footer-p').textContent = 'Geïnteresseerd?';
     document.querySelector('#cv-a').textContent = 'Bekijk mijn CV';
 }
 
@@ -253,9 +243,10 @@ function changeLanguageEnglish() {
     // home box
     document.getElementById('top-p').textContent = `¡Hola! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.`;
     document.getElementById('bottom-p').textContent = `¡Hola! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.`;
+    document.getElementById('my-desc').textContent = 'I like to go for a hike in the forest with my dog, train at the gym, learn languages (Norwegian and Spanish) & go to festivals.';
 
     // tech
-    document.getElementById('tech-stack').textContent = "A showcase of my knowledge and tools";
+    document.getElementById('tech-stack').textContent = "A showcase of my knowledge";
 
     // projects
     document.getElementById('projects-h2-text').textContent = "PROJECTS";
@@ -267,26 +258,28 @@ function changeLanguageEnglish() {
                     <br>
                     Email address: manager1@gmail.com<br>
                     Password: managerPass`;
+    document.getElementById('todss').textContent = "'TODSS' is an application made for the Business and Finance department at the Hogeschool Utrecht. It was made to help finance students practice all kinds of different financial rapports (profit and loss accounts, balance sheet accounts, cash flows) for both their exams and their personal training. The assignments had to be randomly generated each time, and the student had to get feedback on their assignment to fully benefit the practicing.";
 
+    document.getElementById('scroll').textContent = 'Scroll down';
+    document.getElementById('contact-h2').textContent = 'REACH OUT TO ME';
+    document.getElementById('contact-p').textContent = "Send me an email if you're interested";
 
     // footer
-    document.querySelector('#footer-p').textContent = 'Interested?';
     document.querySelector('#cv-a').textContent = 'View my CV';
 }
 
 function changeLanguageNorwegian() {
     // home box
-    document.getElementById('personal-description').textContent = `
-    ¡Hola! Jeg heter Wessel og jeg er en ${calculateAge()} år gammel fyr fra Nederland. 
-    Jeg liker å gå på tur med hunden min til skogen, å dra på treningssenteret & å designe og bygge web applikasjoner.
-    `;
+    document.getElementById('top-p').textContent = `¡Hola! Jeg heter Wessel og jeg er en ${calculateAge()} år gammel fyr fra Nederland.`;
+    document.getElementById('bottom-p').textContent = `¡Hola! Jeg heter Wessel og jeg er en ${calculateAge()} år gammel fyr fra Nederland.`;
+    document.getElementById('my-desc').textContent = 'Jeg liker å gå på tur med hunden min, trene meg på treningssenteret, lære språk (norsk og spansk) & dra på festival.';
 
     // tech
-    document.getElementById('tech-stack').textContent = "En kolleksjon av teknologier som jeg har brukt i prosjektene mine💡";
+    document.getElementById('tech-stack').textContent = "En oversikt av alt kunskap jeg har";
 
     // projects
     document.getElementById('projects-h2-text').textContent = "PROSJEKT";
-    document.getElementById('project-p').textContent = "Hvert prosjekt er et unikt stykke utvikling🎨";
+    document.getElementById('project-p').textContent = "Alle prosjekt jeg har jobbet på / jobber på";
 
     document.getElementById('kpn-description').innerHTML = `
                     KPN trengte et nettsted for sine ansatte for å registrere kilometerne sine, på grunn av at den nederlandske regjeringen ba samarbeid om å gjøre det på grunn av <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm"> denne loven</a>. 
@@ -294,33 +287,27 @@ function changeLanguageNorwegian() {
                     <br>
                     E-post adres: manager1@gmail.com<br>
                     Passord: managerPass`;
+    document.getElementById('todss').textContent = "'TODSS' er en søknad laget for Business and Finance-avdelingen ved Hogeschool Utrecht. Den ble laget for å hjelpe finansstudenter med å praktisere alle slags forskjellige økonomiske rapporter (resultat- og tapskontoer, balansekontoer, kontantstrømmer) for både eksamen og personlig trening. Oppgavene måtte genereres tilfeldig hver gang, og studenten måtte få tilbakemelding på oppgaven for å få fullt utbytte av øvingen.";
 
-    // document.getElementById('bilrent-description').innerHTML = `Bilrent tilbyr en praktisk og pålitelig løsning for bilutleie i flere norske byer, inkludert Oslo, Bergen og Stavanger. Med et enkelt og brukervennlig webgrensesnitt gir vi kundene muligheten til å finne og bestille biler på passende sted og tidspunkt.`;
-
-    document.getElementById('last-text').textContent = "Og mange flere prosjekt som kommer...";
-
-    // degree
-    document.getElementById('popup-bachelor').textContent = "Bachelor • 4 år";
+    document.getElementById('scroll').textContent = 'Scroll ned';
+    document.getElementById('contact-h2').textContent = 'TA KONTAKT MED MEG';
+    document.getElementById('contact-p').textContent = 'Send meg en e-post hvis du er interessert';
 
     // footer
-    document.querySelector('#footer-p').textContent = 'Interesert?';
-    document.querySelector('#mail-a').textContent = 'Send meg en e-post';
-    document.querySelector('#cv-a').textContent = 'Se på CV-en min';
-    document.querySelector('#popupBtn').textContent = 'Se på studien min';
+    document.querySelector('#cv-a').textContent = 'Se på min CV';
 }
 function changeLanguageEspanol() {
     // home box
-    document.getElementById('personal-description').textContent = `
-    ¡Hola! Mi nombre es Wessel y soy un chico holandés de ${calculateAge()} años. 
-    Me gusta pasear por el bosque con mi perro, ir al gimnasio y diseñar y crear aplicaciones web.
-    `;
+    document.getElementById('top-p').textContent = `¡Hola! Mi nombre es Wessel y soy un chico holandés de ${calculateAge()} años.`;
+    document.getElementById('bottom-p').textContent = `¡Hola! Mi nombre es Wessel y soy un chico holandés de ${calculateAge()} años.`;
+    document.getElementById('my-desc').textContent = 'Me gusta ir de excursión al bosque con mi perro, entrenar en el gimnasio, aprender idiomas (noruego y español) e ir a festivales.';
 
     // tech
-    document.getElementById('tech-stack').textContent = "Una colección de tecnologías que he utilizado a lo largo de mis proyectos💡";
+    document.getElementById('tech-stack').textContent = "Una muestra de mis conocimientos y herramientas.";
 
     // projects
     document.getElementById('projects-h2-text').textContent = "PROYECTOS";
-    document.getElementById('project-p').textContent = "Cada proyecto es una pieza única de desarrollo🎨";
+    document.getElementById('project-p').textContent = "Todos los proyectos en los que he trabajado/estoy trabajando";
 
     document.getElementById('kpn-description').innerHTML = `
                     KPN necesitaba un sitio web para que sus empleados registraran sus kilómetros, debido a que el gobierno holandés pidió a las cooperativas que lo hicieran debido a <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm">esta ley</a>. 
@@ -328,15 +315,12 @@ function changeLanguageEspanol() {
                     <br>
                     Dirección de correo electrónico: manager1@gmail.com<br>
                     Contraseña: managerPass`;
+    document.getElementById('todss').textContent = "TODSS' es una solicitud realizada para el departamento de Negocios y Finanzas de la Hogeschool Utrecht. Fue creado para ayudar a los estudiantes de finanzas a practicar todo tipo de relaciones financieras diferentes (cuentas de pérdidas y ganancias, cuentas de balance, flujos de efectivo) tanto para sus exámenes como para su formación personal. Las tareas debían generarse aleatoriamente cada vez y el estudiante tenía que recibir comentarios sobre su tarea para beneficiar plenamente la práctica.";
 
-    document.getElementById('last-text').textContent = "Y muchos más proyectos por venir...";
-
-    // degree
-    document.getElementById('popup-bachelor').textContent = "Bachelor • 4 años";
+    document.getElementById('scroll').textContent = 'Desplácese hacia abajo';
+    document.getElementById('contact-h2').textContent = 'LLEGAR A MÍ';
+    document.getElementById('contact-p').textContent = 'Envíame un correo electrónico si estás interesado';
 
     // footer
-    document.querySelector('#footer-p').textContent = '¿Interesado?';
-    document.querySelector('#mail-a').textContent = 'Envíame un correo electrónico';
     document.querySelector('#cv-a').textContent = 'Mira mi CV';
-    document.querySelector('#popupBtn').textContent = 'Ver mi estudio';
 }

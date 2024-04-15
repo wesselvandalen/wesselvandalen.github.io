@@ -9,18 +9,15 @@
     <script src="index.js"></script>
 </head>
 <body>
-
     <main>
-        <!--
-        <div class="dropdown">
-            <a href="#" class="chapter" id="language-a">Languages ></a>
-            <div class="dropdown-content">
-                <a id="enknop" href="#" onclick="">English</a>
-                <a id="nlknop" href="#" onclick="">Nederlands</a>
-                <a id="esknop" href="#" onclick="">Español</a>
-                <a id="noknop" href="#" onclick="">Norsk</a>
-            </div>
-        </div> -->
+        <div class="lang">
+            <ul class="menu">
+                <li class="active" id="enli"><a href="#" id="enknop">EN</a></li>
+                <li id="nlli"><a href="#" id="nlknop">NL</a></li>
+                <li id="noli"><a href="#" id="noknop">NO</a></li>
+                <li id="esli"><a href="#" id="esknop">ES</a></li>
+            </ul>
+        </div>
 
         <section class="section top-section">
             <div class="content-container content-theme-dark">
@@ -31,7 +28,7 @@
                     </div>
                     <div class="mouse-div">
                         <p id="arrows">^^^</p>
-                        <p>Scroll down</p>
+                        <p id="scroll">Scroll down</p>
                     </div>
                 </div>
             </div>
@@ -43,6 +40,11 @@
                     <div class="content-center">
                         <h1>Wessel van Dalen</h1>
                         <p id="bottom-p">¡Hola! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.</p>
+                    </div>
+                    <div class="personal-description">
+                        <p id="my-desc">
+                            I like to go for a hike in the forest with my dog, train at the gym, learn languages (Norwegian and Spanish) & go to festivals.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -100,7 +102,7 @@
             <p class="description-label" id="project-p">All projects I've worked on / am working on</p>
         </div>
 
-        <div class="ad123 fade-in" id="project">
+        <div class="ad123" id="project">
 
             <div class="ik87">
                 <div class="huj564">
@@ -129,6 +131,36 @@
                     </div>
                     <div class="image-container">
                         <img src="photos/kpn.png" alt="Project 1 Image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ik87">
+                <div class="huj564">
+                    <div class="project-details">
+                        <div class="title">TODSS</div>
+                        <div class="description" id="todss">
+                            'TODSS' is an application made for the Business and Finance department at the Hogeschool Utrecht.
+                            It was made to help finance students practice all kinds of different financial rapports (profit and loss accounts,
+                            balance sheet accounts, cash flows) for both their exams and their personal training. The assignments had to be
+                            randomly generated each time, and the student had to get feedback on their assignment to fully benefit the
+                            practicing.
+                        </div>
+                        <div class="project-buttons">
+                            <div>
+                                <a href="" class="inactiveLink">
+                                    Project not online yet
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" class="inactiveLink">
+                                    Code not public
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="photos/TODSS.png" alt="Project 1 Image">
                     </div>
                 </div>
             </div>
@@ -210,8 +242,8 @@
 
         <div class="application">
             <div class="text-label">
-                <h2 class="h2-label">REACH OUT TO ME</h2>
-                <p class="description-label">Send me an email if you're interested</p>
+                <h2 class="h2-label" id="contact-h2">REACH OUT TO ME</h2>
+                <p class="description-label" id="contact-p">Send me an email if you're interested</p>
             </div>
             <div class="application-form">
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRt9Lz6TaG7LVV_sihrpLhlinHWDcOSdG2aYz3r3XUTp1E8A/viewform?embedded=true" width="640" height="774" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
