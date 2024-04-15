@@ -15,6 +15,8 @@ body {
     font-family: 'Poppins', sans-serif;
     color: var(--standard-text-color);
     background-color: var(--standard-background-color);
+    margin: 0;
+    padding: 0;
 }
 
 /* HOME BOX */
@@ -52,7 +54,6 @@ a{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     will-change: transform;
-
     pointer-events: all;
 }
 .content-center{
@@ -426,117 +427,14 @@ h2 {
     justify-content: center;
 }
 
-#wvd-logo {
-    width: 50px;
-    height: auto;
-    margin-left: 30px;
-}
-
-.top-div {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    padding: 13px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
 a {
     text-decoration: none;
     color: #000;
 }
 
-a:hover {
-    color: var(--mørk-grått);
-}
-
-.skill-a {
-    text-decoration: underline;
-    text-decoration-color: #02b0ff;
-}
-
-.skill-a-image {
-    width: 15px;
-    height: auto;
-}
-
-.chapter {
-    font-weight: bold;
-    font-size: medium;
-    margin-right: 35px;
-    text-underline: #000;
-}
-
-#home {
-    margin-bottom: 100px;
-}
-
-.home-box {
-    display: flex;
-    justify-content: center;
-    height: 35vw;
-    margin-top: 100px;
-    align-items: center;
-}
-
-.main-box {
-    position: relative;
-    display: inline-block;
-    z-index: 2;
-}
-
-.home-box-name-class {
-    display: inline;
-}
-
-.main-image {
-    position: absolute;
-    width: 75px;
-    height: auto;
-    margin-left: -40px;
-    z-index: 3;
-}
-
-#home-box-text {
-    width: 30%;
-    flex-direction: column;
-    margin-right: 2vw;
-    text-align: left;
-    padding: 20px;
-}
-
-#home-box-text h1 {
-    width: 100%;
-    margin-right: 46px;
-    font-weight: 900;
-    font-size: 50px;
-    margin-bottom: 5px;
-}
-
-#home-box-text p {
-    font-weight: normal;
-    margin-top: 5px;
-    width: 100%;
-}
-
-#home-box-text h3 {
-    font-weight: 500;
-    margin-top: 5px;
-    margin-right: 5px;
-    width: 470px;
-}
-
 .icon-container {
     display: flex;
     align-items: flex-start !important;
-}
-
-.home-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
 }
 
 footer {
@@ -573,17 +471,7 @@ footer {
     text-decoration: underline;
 }
 
-#projects-h2-text {
-    margin-top: 400px;
-}
-
-.small-lang-icon {
-    width: 20px;
-    height: auto;
-    margin-bottom: -4px;
-    margin-right: 5px;
-}
-
+/*
 .form {
     background: url("photos/pfbilde.jpg");
     -webkit-background-size: cover;
@@ -594,6 +482,8 @@ footer {
     box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
     animation: animate 5s ease-in-out infinite;
 }
+
+ */
 
 @keyframes animate {
     0% {
@@ -608,17 +498,42 @@ footer {
 }
 
 @media screen and (max-width: 1920px) {
-    #home-box-text {
-        width: 45%;
+    .section .content-inner .content-center h1 {
+        font-size: 90px;
     }
 
-    .home-box {
+    .section .content-inner .content-center p {
+        font-size: 16px;
+    }
+
+    .section .content-center {
+        margin-top: -30px;
+    }
+
+    .section .content-center p {
+        font-size: 16px;
+        margin-top: -50px;
+    }
+
+    .section .content-inner .personal-description {
+        margin-top: -70px;
+        text-align: center;
+        margin-left: 0;
         width: 100%;
     }
 
-    .form {
-        width: 20rem;
-        height: 20rem;
+    .mouse-div {
+        font-size: 16px;
+        margin-top: -60px;
+    }
+
+    .content-inner .personal-description #my-desc {
+        margin-top: -210px;
+    }
+
+    .portfolio-grid {
+        gap: 100px;
+        margin-left: 310px;
     }
 
     .ad123 {
@@ -627,6 +542,7 @@ footer {
     }
 
     .ik87 {
+        margin-left: 160px !important;
         width: 77% !important;
     }
 
@@ -637,16 +553,6 @@ footer {
     .project-buttons {
         margin-top: 4% !important;
     }
-}
-
-.project-container {
-    margin-bottom: 20px;
-}
-
-.projects {
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* ======================= */
@@ -764,159 +670,7 @@ footer {
     color: #666666;
 }
 
-.languages-container {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-}
-
-.language {
-    font-weight: 500;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 14px;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-#popupBtn {
-    color: #c1c1c1;
-}
-
-#popupBtn:hover {
-    text-decoration: underline;
-}
-
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.popup-content {
-    width: 400px;
-    position: absolute;
-    display: flex;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-button {
-    margin: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.picture {
-    width: 130px;
-}
-
-.study-title {
-    font-weight: 790;
-    color: #272525;
-}
-
-.popup-picture, .popup-info {
-    width: 50%;
-    float: left;
-    color: #363333;
-}
-
-.popup-picture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 150px;
-}
-
-.popup-info {
-    line-height: 12px;
-}
-
-#studie-link {
-    color: #363333;
-}
-
-#studie-link:hover {
-    color: #007bff;
-    text-underline: #007bff;
-    text-decoration: underline;
-}
-
-#studie-locatie {
-    color: #363333;
-}
-
-#studie-locatie:hover {
-    color: #007bff;
-    text-underline: #007bff;
-    text-decoration: underline;
-}
-
-#menu-ham {
-    width: 20px;
-    height: 20px;
-    border: none;
-}
-
-#ham-icon {
-    width: 60px;
-}
-
-.mobile-hamburger-menu {
-    background-color: #fff;
-    margin-left: -70px;
-    cursor: pointer;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-
-.holder {
-    width: 25px;
-    height: 2px;
-    margin: 3px 0;
-}
-
-#directory-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-}
-
-#directory-list a {
-    text-decoration: none;
-}
-
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1170px) { /* Phone */
 
     .navigation-holder {
         display: flex;

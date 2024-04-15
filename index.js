@@ -51,7 +51,6 @@ function changeLanguage(lang) {
     }
 }
 
-
 function checkForCookies() {
     const existingLanguageCookie = document.cookie.split('; ').find(cookie => cookie.startsWith('language='));
     const languageFromCookie = existingLanguageCookie ? existingLanguageCookie.split('=')[1] : null;
@@ -72,20 +71,7 @@ function calculateAge() {
     return age;
 }
 
-function openPopup(event) {
-    event.preventDefault();
-    popup.style.display = 'block';
-}
-
-function closePopup() {
-    popup.style.display = 'none';
-}
-
 function buildSomething() {
-    const popupBtn = document.getElementById('popupBtn');
-    const popup = document.getElementById('popup');
-    const closeBtn = document.getElementById('closeBtn');
-    const hamburgerBtn = document.getElementById('hamburger-button');
     const nlKnop = document.querySelector('#nlknop');
     const enknop = document.querySelector('#enknop');
     const noknop = document.querySelector('#noknop');
@@ -104,7 +90,7 @@ function buildSomething() {
     let isVisible = false;
 
     function isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
+        let rect = el.getBoundingClientRect();
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
@@ -183,30 +169,6 @@ function buildSomething() {
         changeLanguage('es');
     })
     ;
-
-    //popupBtn.addEventListener('click', openPopup);
-    //closeBtn.addEventListener('click', closePopup);
-}
-
-function toggleMenu() {
-    var menu = document.getElementById("directory-list");
-    menu.classList.toggle("show");
-}
-
-function handleKeyPress(event) {
-    if (event.key === 'Enter' || event.keyCode === 13) {
-        toggleMenu();
-    }
-    if (event.key === 'Escape') {
-        closeMenu();
-    }
-}
-
-function closeMenu() {
-    const directoryList = document.getElementById('directory-list');
-    if (directoryList) {
-        directoryList.classList.remove('show');
-    }
 }
 
 function changeLanguageDutch() {
@@ -221,7 +183,7 @@ function changeLanguageDutch() {
 
     // projects
     document.getElementById('projects-h2-text').textContent = "PROJECTEN";
-    document.getElementById('project-p').textContent = "Alle projecten waar ik aan gewerkt heb / aan werk";
+    document.getElementById('project-p').textContent = "Alle projecten waar ik aan gewerkt heb/aan werk";
 
     document.getElementById('kpn-description').innerHTML = `
                     KPN had een website nodig waar haar medewerkers hun kilometers konden registreren, omdat de Nederlandse overheid coöperaties hierom vroeg vanwege <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm">deze wet</a>. 
@@ -250,7 +212,7 @@ function changeLanguageEnglish() {
 
     // projects
     document.getElementById('projects-h2-text').textContent = "PROJECTS";
-    document.getElementById('project-p').textContent = "All projects I've worked on / am working on";
+    document.getElementById('project-p').textContent = "All projects I've worked on/am working on";
 
     document.getElementById('kpn-description').innerHTML = `
                     KPN needed a website for its employees to register their kilometers, due to the Dutch government asking coorperations to do so because of <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm"> this law</a>. 
@@ -279,7 +241,7 @@ function changeLanguageNorwegian() {
 
     // projects
     document.getElementById('projects-h2-text').textContent = "PROSJEKT";
-    document.getElementById('project-p').textContent = "Alle prosjekt jeg har jobbet på / jobber på";
+    document.getElementById('project-p').textContent = "Alle prosjekt jeg har jobbet på/jobber på";
 
     document.getElementById('kpn-description').innerHTML = `
                     KPN trengte et nettsted for sine ansatte for å registrere kilometerne sine, på grunn av at den nederlandske regjeringen ba samarbeid om å gjøre det på grunn av <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm"> denne loven</a>. 
@@ -303,7 +265,7 @@ function changeLanguageEspanol() {
     document.getElementById('my-desc').textContent = 'Me gusta ir de excursión al bosque con mi perro, entrenar en el gimnasio, aprender idiomas (noruego y español) e ir a festivales.';
 
     // tech
-    document.getElementById('tech-stack').textContent = "Una muestra de mis conocimientos y herramientas.";
+    document.getElementById('tech-stack').textContent = "Una muestra de mis conocimientos y herramientas";
 
     // projects
     document.getElementById('projects-h2-text').textContent = "PROYECTOS";
