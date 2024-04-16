@@ -671,57 +671,7 @@ footer {
 }
 
 @media only screen and (max-width: 1170px) { /* Phone */
-
-    .navigation-holder {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .right-aligned {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #f9f9f9;
-        width: 100%;
-    }
-
-    .right-aligned.active {
-        display: flex;
-    }
-
-    .right-aligned a {
-        padding: 10px;
-    }
-
-    .mobile-hamburger-menu {
-        z-index: 1005;
-    }
-
-    #ham-icon {
-        width: 75px;
-        height: auto;
-        margin-left: 50px;
-    }
-
-    #directory-ul .dropdown #language-a {
-        margin-left: 45px;
-    }
-
-    #directory-ul .dropdown .dropdown-content {
-        width: 500px;
-    }
-
-    #directory-ul .dropdown .dropdown-content a {
-        width: 90%;
-        margin-left: 15px;
-        background-color: #f9f9f9;
-        display: block;
-        margin-top: 20px;
-    }
-
+    /*
     .form {
         justify-content: center;
         align-items: center;
@@ -731,40 +681,100 @@ footer {
         width: 40rem;
         height: 40rem;
     }
+     */
 
-    .main-box {
-        position: relative;
-        display: inline-block;
-        margin-left: 50px;
-        text-align: center;
-        margin-bottom: 20px;
+    /* LANG */
+
+    .lang {
+        padding: 45px;
+        border-radius: 100px;
+        top: 0;
     }
 
-    .main-box #main-image {
-        width: 90px;
-        height: 90px;
-        margin-top: 20px;
+    .lang:hover {
+        padding: 45px;
     }
 
-    .main-box .home-box-name-class {
-        font-size: 89px;
+    .lang .menu li a {
+        font-size: 34px;
+        margin-left: -15px;
     }
 
-    #home-box-text #personal-description {
+    .lang:hover .menu {
+        height: 270px;
+    }
+
+    .menu li {
+        margin: 15px;
+    }
+
+    /* OTHER */
+
+    .section {
+        height: 110vh !important;
+        width: 110vw !important;
+    }
+
+    .section .content-container .content-inner .content-center {
+        width: 100% !important;
+
+    }
+
+    #my-desc {
+        opacity: 0;
+    }
+
+    .section .content-container {
+        width: 100% !important;
+    }
+
+    .section .content-container .content-inner .content-center h1 {
+        font-size: 250px;
         width: 90%;
-        margin-left: 110px;
-        font-size: 40px;
-        text-align: justify;
     }
 
-    .text-label #tech-h2-text {
-        margin-top: 1400px;
-    }
-
-    .text-label #tech-stack {
-        font-size: 36px;
+    .section .content-container .content-inner .content-center p {
+        font-size: 38px;
         width: 90%;
     }
+
+    /* LABELS */
+
+    .text-label {
+        margin-left: 75px;
+    }
+
+    .text-label .h2-label {
+        width: 100%;
+        font-size: 56px;
+    }
+
+    .text-label .description-label {
+        width: 100%;
+        font-size: 38px !important;
+    }
+
+    /* PROJECTS */
+
+    .ik87 .huj564 .description {
+        width: 100%;
+    }
+
+    .grid-container {
+        margin-left: -45px;
+    }
+
+    .application-form {
+        margin-left: 75px;
+    }
+
+    footer .footer-links {
+        display: block;
+        width: 90%;
+        margin-left: 75px;
+    }
+
+    /* ==================== */
 
     .container {
         margin-top: 100px;
@@ -775,12 +785,6 @@ footer {
     .container .block {
         width: 85%;
         margin-left: 85px;
-    }
-
-    .text-label #project-p {
-        font-size: 36px;
-        width: 90%;
-        margin-bottom: 100px;
     }
 
     .ad123 {
@@ -840,7 +844,7 @@ footer {
     }
 
     #contact {
-        width: 110%;
+        width: 100%;
     }
 
     #footer-p {
@@ -864,10 +868,6 @@ footer {
     }
 
     /* ============================== */
-
-    #skill-section {
-        margin-top: 900px;
-    }
 
     h2 {
         font-size: 50px;
@@ -987,10 +987,6 @@ footer {
 
     #tech-h2 {
         margin-top: 1000px;
-    }
-
-    main {
-        margin-top: 400px;
     }
 
     #tech-h2-text {
