@@ -527,10 +527,6 @@ footer {
         margin-top: -60px;
     }
 
-    .content-inner .personal-description #my-desc {
-        margin-top: -210px;
-    }
-
     .portfolio-grid {
         gap: 100px;
         margin-left: 310px;
@@ -718,10 +714,6 @@ footer {
     .section .content-container .content-inner .content-center {
         width: 100% !important;
 
-    }
-
-    #my-desc {
-        opacity: 0;
     }
 
     .section .content-container {

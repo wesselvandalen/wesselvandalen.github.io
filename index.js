@@ -173,10 +173,8 @@ function buildSomething() {
 
 function changeLanguageDutch() {
     // home box
-    document.getElementById('top-p').textContent = `¡Hola! Mijn naam is Wessel en ik ben een ${calculateAge()} jaar oude gast uit Nederland.`;
-    document.getElementById('bottom-p').textContent = `¡Hola! Mijn naam is Wessel en ik ben een ${calculateAge()} jaar oude gast uit Nederland.`;
-    document.getElementById('my-desc').textContent = 'Ik maak graag een wandeling in het bos met mijn hond, sport in de sportschool,' +
-        'leer talen (Noors en Spaans) & ga graag naar festivalen.';
+    document.getElementById('top-p').textContent = `Hoi hoi! Mijn naam is Wessel en ik ben een ${calculateAge()} jaar oude gast uit Nederland.`;
+    document.getElementById('bottom-p').textContent = `Ik ben een full stack software developer & Scrum Master die graag leert.`;
 
     // tech
     document.getElementById('tech-stack').textContent = "Een overzicht van mijn vaardigheden";
@@ -203,9 +201,8 @@ function changeLanguageDutch() {
 
 function changeLanguageEnglish() {
     // home box
-    document.getElementById('top-p').textContent = `¡Hola! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.`;
-    document.getElementById('bottom-p').textContent = `¡Hola! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.`;
-    document.getElementById('my-desc').textContent = 'I like to go for a hike in the forest with my dog, train at the gym, learn languages (Norwegian and Spanish) & go to festivals.';
+    document.getElementById('top-p').textContent = `Hey there! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.`;
+    document.getElementById('bottom-p').textContent = `I'm a full stack software developer & Scrum Master eager to learn.`;
 
     // tech
     document.getElementById('tech-stack').textContent = "A showcase of my knowledge";
@@ -232,9 +229,8 @@ function changeLanguageEnglish() {
 
 function changeLanguageNorwegian() {
     // home box
-    document.getElementById('top-p').textContent = `¡Hola! Jeg heter Wessel og jeg er en ${calculateAge()} år gammel fyr fra Nederland.`;
-    document.getElementById('bottom-p').textContent = `¡Hola! Jeg heter Wessel og jeg er en ${calculateAge()} år gammel fyr fra Nederland.`;
-    document.getElementById('my-desc').textContent = 'Jeg liker å gå på tur med hunden min, trene meg på treningssenteret, lære språk (norsk og spansk) & dra på festival.';
+    document.getElementById('top-p').textContent = `Heisann! Jeg heter Wessel og jeg er en ${calculateAge()} år gammel fyr fra Nederland.`;
+    document.getElementById('bottom-p').textContent = `Jeg er en full stack software developer & Scrum Master og ivrig til å lære.`;
 
     // tech
     document.getElementById('tech-stack').textContent = "En oversikt av alt kunskap jeg har";
@@ -261,8 +257,7 @@ function changeLanguageNorwegian() {
 function changeLanguageEspanol() {
     // home box
     document.getElementById('top-p').textContent = `¡Hola! Mi nombre es Wessel y soy un chico holandés de ${calculateAge()} años.`;
-    document.getElementById('bottom-p').textContent = `¡Hola! Mi nombre es Wessel y soy un chico holandés de ${calculateAge()} años.`;
-    document.getElementById('my-desc').textContent = 'Me gusta ir de excursión al bosque con mi perro, entrenar en el gimnasio, aprender idiomas (noruego y español) e ir a festivales.';
+    document.getElementById('bottom-p').textContent = `Soy un full stack software developer & Scrum Master con ganas de aprender.`;
 
     // tech
     document.getElementById('tech-stack').textContent = "Una muestra de mis conocimientos y herramientas";
