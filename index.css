@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Raleway:700,900');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
     --blå: #007bff;
@@ -9,116 +8,67 @@
     --dark-gray: #2d2e32;
     --standard-background-color: #F9F9F9;
     --standard-text-color: #2D2C31;
+    --background-color: #fef9f9;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Inter, sans-serif;
     color: var(--standard-text-color);
     background-color: var(--standard-background-color);
     margin: 0;
     padding: 0;
 }
 
-/* HOME BOX */
-
-a{
-    text-decoration: none;
-}
-
-.section{
+.person-container {
     height: 100vh;
-    min-height: 500px;
-    position: relative;
-}
-
-.content-container{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    clip: rect(auto, auto, auto, auto);
-    pointer-events: none;
-}
-.content-inner{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    padding: 0;
-    z-index: 99;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    will-change: transform;
-    pointer-events: all;
-}
-.content-center{
-    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    align-content: center;
 }
 
-.top-section{
-    background: linear-gradient(135deg, #f4583a 0%,#cd1e38 100%);
-}
-/*
-.bottom-section{
-    background: #d4fef2;
-}
- */
-.section h1{
-    font-family: 'Raleway', sans-serif;
-    font-size: 150px;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
+.text-container {
+    justify-content: center;
+    align-content: center;
 }
 
-.section .content-center {
-    margin-top: -100px;
+.profile-container {
+    align-content: center;
 }
 
-.section .content-center p {
-    margin-top: -100px;
+#person-title {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--blå);
 }
 
-.section p,
-.section a{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    letter-spacing: 7px;
-    text-transform: uppercase;
-    text-align: center;
+#coding-man {
+    width: 350px;
+    height: auto;
+    margin-left: 40px;
 }
 
-.content-theme-dark h1{
-    color: #E33E39;
-    text-shadow: 0 20px 40px rgba(0,0,0,.5);
-}
-.content-theme-dark p,
-.content-theme-dark a{
-    color: #FEA98D;
-}
-.content-theme-light h1{
-    color:#062930;
-    text-shadow: 0 20px 40px rgba(0,0,0,.5);
-}
-.content-theme-light p,
-.content-theme-light a{
-    color: #728E93;
+/* ================================================== */
+
+#skills {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
-.section .content-inner .personal-description {
-    margin-top: -490px;
-    text-align: center;
-    margin-left: 635px;
+.skill-container {
     width: 50%;
+    align-content: center;
+}
+
+.text-label {
+    width: 50%;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 
 /* LANGUAGE MENU */
@@ -198,6 +148,10 @@ a{
 }
 
 /* MOUSE BOX */
+
+.project-image {
+    width: 60%;
+}
 
 .mouse-div {
     display: flex;
@@ -388,15 +342,6 @@ a{
     width: 20px;
     height: auto;
     margin-bottom: 10px;
-}
-
-.text-label {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    text-transform: uppercase;
-    margin-top: 200px;
 }
 
 

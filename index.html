@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="photos/wvd-logo-svart.png">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/5c897c0d05.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
@@ -15,39 +16,35 @@
                 <li class="active" id="enli"><a href="#" id="enknop">EN</a></li>
                 <li id="nlli"><a href="#" id="nlknop">NL</a></li>
                 <li id="noli"><a href="#" id="noknop">NO</a></li>
-                <li id="esli"><a href="#" id="esknop">ES</a></li>
             </ul>
         </div>
 
-        <section class="section top-section">
-            <div class="content-container content-theme-dark">
-                <div class="content-inner">
-                    <div class="content-center">
-                        <h1>Wessel van Dalen</h1>
-                        <p id="top-p">My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.</p>
-                    </div>
-                    <div class="mouse-div">
-                        <p id="arrows">^^^</p>
-                        <p id="scroll">Scroll down</p>
-                    </div>
+        <div class="person-container">
+            <div class="text-container">
+                <p>Hi there! I'm</p>
+                <h2 id="person-title">Wessel van Dalen</h2>
+                <p>I'm a full stack software developer based in the Netherlands</p>
+            </div>
+            <div class="profile-container">
+                <img id="coding-man" src="photos/coding-illustration.png" alt="A picture of a man coding">
+            </div>
+        </div>
+
+        <div id="skills">
+            <div class="text-label">
+                <h2 class="h2-label" id="tech-h2-text">SKILLS</h2>
+            </div>
+
+            <div class="skill-container">
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <p>Java</p>
                 </div>
             </div>
-        </section>
-
-        <section class="section bottom-section">
-            <div class="content-container content-theme-light">
-                <div class="content-inner">
-                    <div class="content-center">
-                        <h1>Wessel van Dalen</h1>
-                        <p id="bottom-p">I'm a full stack software developmer & Scrum Master eager to learn.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="text-label">
-            <h2 class="h2-label" id="tech-h2-text">TECH STACK</h2>
-            <p class="description-label" id="tech-stack">A showcase of my knowledge and tools</p>
         </div>
 
         <div class="grid-container ">
@@ -93,8 +90,7 @@
         </div>
 
         <div class="text-label">
-            <h2 class="h2-label" id="projects-h2-text">PROJECTS</h2>
-            <p class="description-label" id="project-p">All projects I've worked on / am working on</p>
+            <h2 class="h2-label" id="projects-label">PROJECTS</h2>
         </div>
 
         <div class="ad123" id="project">
@@ -117,11 +113,6 @@
                                     View live
                                 </a>
                             </div>
-                            <div>
-                                <a href="" class="inactiveLink">
-                                    Code not public
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div class="image-container">
@@ -133,7 +124,7 @@
             <div class="ik87">
                 <div class="huj564">
                     <div class="project-details">
-                        <div class="title">TODSS</div>
+                        <div class="title">HU Smart Teaching</div>
                         <div class="description" id="todss">
                             'TODSS' is an application made for the Business and Finance department at the Hogeschool Utrecht.
                             It was made to help finance students practice all kinds of different financial rapports (profit and loss accounts,
@@ -147,11 +138,6 @@
                                     Project not online yet
                                 </a>
                             </div>
-                            <div>
-                                <a href="" class="inactiveLink">
-                                    Code not public
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div class="image-container">
@@ -160,16 +146,13 @@
                 </div>
             </div>
 
-            <!--
             <div class="ik87">
-                <img src="photos/TODSS.png" alt="Project 3 Image">
+                <img class="project-image" src="photos/domainfltr.png" alt="Project 3 Image">
                 <div class="huj564">
                     <div class="project-details">
-                        <div class="title">TODSS</div>
+                        <div class="title">DomainFltr</div>
                         <div class="description" id="todss-description">
-                            Bilrent offers a convenient and reliable solution for car rental in several Norwegian cities, including Oslo, Bergen and Stavanger. With a simple and user-friendly web interface, we provide customers the opportunity to find and book cars at a suitable location and time.
-                            <br><br>
-                            *This project is being worked on...
+                            Hallo dit is een beschrijving
                         </div>
                     </div>
                     <div class="project-buttons">
@@ -179,15 +162,11 @@
                                 View live
                             </a>
                         </div>
-                        <div>
-                            <a href="" class="inactiveLink">
-                                Code not public
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
 
+            <!--
             <div class="ik87">
                 <img src="photos/bilrent.png" alt="Project 2 Image">
                 <div class="huj564">
