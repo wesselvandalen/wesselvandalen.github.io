@@ -21,32 +21,31 @@ function changeLanguage(lang) {
     document.documentElement.lang = lang;
     const NLLI = document.getElementById('nlli');
     const NOLI = document.getElementById('noli');
-    const ESLI = document.getElementById('esli');
     const ENLI = document.getElementById('enli');
 
     if (lang === 'nl') {
+        /*
         NLLI.classList.add('active');
         NOLI.classList.remove('active');
-        ESLI.classList.remove('active');
         ENLI.classList.remove('active');
+
+         */
         changeLanguageDutch();
     } else if (lang === 'no') {
+        /*
         NLLI.classList.remove('active');
         NOLI.classList.add('active');
-        ESLI.classList.remove('active');
         ENLI.classList.remove('active');
+
+         */
         changeLanguageNorwegian();
-    } else if (lang === 'es') {
-        NLLI.classList.remove('active');
-        NOLI.classList.remove('active');
-        ESLI.classList.add ('active');
-        ENLI.classList.remove('active');
-        changeLanguageEspanol();
     } else {
+        /*
         NLLI.classList.remove('active');
         NOLI.classList.remove('active');
-        ESLI.classList.remove('active');
         ENLI.classList.add('active');
+
+         */
         changeLanguageEnglish();
     }
 }
@@ -72,19 +71,30 @@ function calculateAge() {
 }
 
 function buildSomething() {
-    const nlKnop = document.querySelector('#nlknop');
-    const enknop = document.querySelector('#enknop');
-    const noknop = document.querySelector('#noknop');
-    const esknop = document.querySelector('#esknop');
+    //const nlKnop = document.querySelector('#nlknop');
+    //const enknop = document.querySelector('#enknop');
+    //const noknop = document.querySelector('#noknop');
+    let slideIndex = 0;
+    showSlides(slideIndex);
 
-    // https://phuoc.ng/collection/html-dom/change-the-favicon-dynamically-based-on-user-color-scheme-preference/
-    const setFavicon = () => {
-        const favicon = document.querySelector('link[rel="icon"]');
-        favicon.href = (window.matchMedia('(prefers-color-scheme: dark)').matches)
-            ? 'photos/wvd-logo-hvitt.png'
-            : 'photos/wvd-logo-svart.png';
-    };
-    setFavicon();
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("about-image");
+        if (n > slides.length - 1) {slideIndex = 0}
+        if (n < 0) {slideIndex = slides.length - 1}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex].style.display = "block";
+    }
 
     let gridContainer = document.querySelector(".grid-container");
     let isVisible = false;
@@ -149,6 +159,7 @@ function buildSomething() {
     cFade();
     document.addEventListener("scroll", cFade);
 
+    /*
     nlKnop.addEventListener('click', (ev) => {
         changeLanguageDutch();
         changeLanguage('nl');
@@ -164,11 +175,7 @@ function buildSomething() {
         changeLanguage('no');
     });
 
-    esknop.addEventListener('click', (ev) => {
-        changeLanguageEspanol();
-        changeLanguage('es');
-    })
-    ;
+     */
 }
 
 function changeLanguageDutch() {
@@ -200,6 +207,7 @@ function changeLanguageDutch() {
 }
 
 function changeLanguageEnglish() {
+    /*
     // home box
     document.getElementById('top-p').textContent = `Hey there! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.`;
     document.getElementById('bottom-p').textContent = `I'm a full stack software developer & Scrum Master eager to learn.`;
@@ -225,6 +233,8 @@ function changeLanguageEnglish() {
 
     // footer
     document.querySelector('#cv-a').textContent = 'View my CV';
+
+     */
 }
 
 function changeLanguageNorwegian() {
@@ -253,31 +263,4 @@ function changeLanguageNorwegian() {
 
     // footer
     document.querySelector('#cv-a').textContent = 'Se på min CV';
-}
-function changeLanguageEspanol() {
-    // home box
-    document.getElementById('top-p').textContent = `¡Hola! Mi nombre es Wessel y soy un chico holandés de ${calculateAge()} años.`;
-    document.getElementById('bottom-p').textContent = `Soy un full stack software developer & Scrum Master con ganas de aprender.`;
-
-    // tech
-    document.getElementById('tech-stack').textContent = "Una muestra de mis conocimientos y herramientas";
-
-    // projects
-    document.getElementById('projects-h2-text').textContent = "PROYECTOS";
-    document.getElementById('project-p').textContent = "Todos los proyectos en los que he trabajado/estoy trabajando";
-
-    document.getElementById('kpn-description').innerHTML = `
-                    KPN necesitaba un sitio web para que sus empleados registraran sus kilómetros, debido a que el gobierno holandés pidió a las cooperativas que lo hicieran debido a <a target="_blank" class="skill-a" href="https://www.rvo.nl/onderwerpen/rapportage-wpm">esta ley</a>. 
-                    Luego, la aplicación calcula las emisiones de CO2 y las muestra en un panel para que las vean los gerentes. También crea un informe en hoja de Excel que contiene todas las emisiones de CO2 de todos los empleados para que KPN lo entregue.
-                    <br>
-                    Dirección de correo electrónico: manager1@gmail.com<br>
-                    Contraseña: managerPass`;
-    document.getElementById('todss').textContent = "TODSS' es una solicitud realizada para el departamento de Negocios y Finanzas de la Hogeschool Utrecht. Fue creado para ayudar a los estudiantes de finanzas a practicar todo tipo de relaciones financieras diferentes (cuentas de pérdidas y ganancias, cuentas de balance, flujos de efectivo) tanto para sus exámenes como para su formación personal. Las tareas debían generarse aleatoriamente cada vez y el estudiante tenía que recibir comentarios sobre su tarea para beneficiar plenamente la práctica.";
-
-    document.getElementById('scroll').textContent = 'Desplácese hacia abajo';
-    document.getElementById('contact-h2').textContent = 'LLEGAR A MÍ';
-    document.getElementById('contact-p').textContent = 'Envíame un correo electrónico si estás interesado';
-
-    // footer
-    document.querySelector('#cv-a').textContent = 'Mira mi CV';
 }
