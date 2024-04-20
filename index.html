@@ -10,25 +10,49 @@
     <script src="https://kit.fontawesome.com/5c897c0d05.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header id="header">
+        <div class="header-content">
+            <a href="#header"><img id="header-logo" src="photos/wvd-logo-svart.png" alt="Personal logo of Wessel van Dalen"></a>
+            <div class="header-links">
+                <a href="#home-page">Home page</a>
+                <a href="#about">About me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
     <main>
+        <!--
         <div class="lang">
             <ul class="menu">
                 <li class="active" id="enli"><a href="#" id="enknop">EN</a></li>
                 <li id="nlli"><a href="#" id="nlknop">NL</a></li>
                 <li id="noli"><a href="#" id="noknop">NO</a></li>
             </ul>
+        </div> -->
+
+        <div id="home-page" class="home-container">
+            <div class="text-container">
+                <p id="home-text-top">Hi there! I'm</p>
+                <h2 id="home-text-title">Wessel van Dalen</h2>
+                <p id="home-text-description">A Full Stack Developer with experience as Scrum Master</p>
+                <a id="resume-a" href="files/cv.pdf" target="_blank">Check my resume<img class="resume-ref" src="photos/ref-icon.png" alt="Pointing arrow"></a>
+            </div>
+            <div class="home-image-container">
+                <div class="form"></div>
+            </div>
         </div>
 
-        <div class="person-container">
-            <div class="text-container">
-                <p>Hi there! I'm</p>
-                <h2 id="person-title">Wessel van Dalen</h2>
-                <p>I'm a full stack software developer based in the Netherlands</p>
-            </div>
-            <div class="profile-container">
-                <img id="coding-man" src="photos/coding-illustration.png" alt="A picture of a man coding">
+        <div id="about">
+            <div class="text-label">
+                <h2 class="h2-label" id="about-h2-text">ABOUT ME</h2>
             </div>
         </div>
+
+
+
 
         <div id="skills">
             <div class="text-label">
@@ -93,7 +117,7 @@
             <h2 class="h2-label" id="projects-label">PROJECTS</h2>
         </div>
 
-        <div class="ad123" id="project">
+        <div class="ad123" id="projects">
 
             <div class="ik87">
                 <div class="huj564">
@@ -166,56 +190,14 @@
                 </div>
             </div>
 
-            <!--
-            <div class="ik87">
-                <img src="photos/bilrent.png" alt="Project 2 Image">
-                <div class="huj564">
-                    <div class="project-details">
-                        <div class="title">Bilrent</div>
-                        <div class="description" id="bilrent-description">
-                            Bilrent offers a convenient and reliable solution for car rental in several Norwegian cities, including Oslo, Bergen and Stavanger. With a simple and user-friendly web interface, we provide customers the opportunity to find and book cars at a suitable location and time.
-                            <br><br>
-                            *This project is being worked on...
-                        </div>
-                    </div>
-                    <div class="project-buttons">
-                        <div>
-                            <a href="https://wesselvandalen.github.io/Bilrent/" target="_blank">
-                                <img src="photos/play.png" alt="Live demo icon" class="pr896">
-                                View live
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://github.com/wesselvandalen/Bilrent" target="_blank">
-                                <img src="photos/github.png" alt="Github logo" class="pr897">
-                                See code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
-
         </div>
 
-        <div class="application">
-            <div class="text-label">
-                <h2 class="h2-label" id="contact-h2">REACH OUT TO ME</h2>
-                <p class="description-label" id="contact-p">Send me an email if you're interested</p>
-            </div>
-            <div class="application-form">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRt9Lz6TaG7LVV_sihrpLhlinHWDcOSdG2aYz3r3XUTp1E8A/viewform?embedded=true" width="640" height="774" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            </div>
-        </div>
 
     </main>
 
     <footer id="contact">
         <div class="footer-div">
             <div class="footer-links">
-                <!-- <a href="mailto:wesselvandalen@gmail.com" id="mail-a">Send me an email</a> -->
-                <a href="files/cv.pdf" target="_blank" id="cv-a">View my CV</a>
-                <!-- <a href="#" id="popupBtn">View my study</a> -->
                 <a href="https://github.com/wesselvandalen" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/wesselvandalen/" target="_blank">LinkedIn</a>
                 <a href="https://stackoverflow.com/users/24017710/kaffe" target="_blank">Stack Overflow</a>

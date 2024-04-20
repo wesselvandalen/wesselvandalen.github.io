@@ -1,77 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-    --blå: #007bff;
-    --lys-hvitt: #fbfbfb;
-    --mørk-grått: #8F8A8A;
-
-    --dark-gray: #2d2e32;
-    --standard-background-color: #F9F9F9;
-    --standard-text-color: #2D2C31;
-    --background-color: #fef9f9;
+    --darkest-gray: #222831;
+    --darker_gray: #31363F;
+    --light-white: #EEEEEE;
+    --navy-blue: #567DFD;
 }
 
 body {
     font-family: Inter, sans-serif;
-    color: var(--standard-text-color);
-    background-color: var(--standard-background-color);
+    color: var(--darkest-gray);
+    background-color: #fff;
     margin: 0;
     padding: 0;
 }
 
-.person-container {
-    height: 100vh;
+/* Header */
+
+header {
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-.text-container {
-    justify-content: center;
-    align-content: center;
+.header-content {
+    display: block;
+    width: 70%;
 }
 
-.profile-container {
-    align-content: center;
-}
-
-#person-title {
-    margin-top: -10px;
-    margin-bottom: -10px;
-    font-size: 36px;
-    font-weight: bold;
-    color: var(--blå);
-}
-
-#coding-man {
-    width: 350px;
+#header-logo {
+    width: 50px;
     height: auto;
     margin-left: 40px;
+    margin-top: 10px;
+    margin-right: 35px;
 }
 
-/* ================================================== */
-
-#skills {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+.header-links {
+    display: inline;
+    float: right;
+    margin-top: 25px;
+    font-weight: bold;
 }
 
-.skill-container {
-    width: 50%;
-    align-content: center;
+.header-links a {
+    margin-right: 35px;
 }
 
-.text-label {
-    width: 50%;
-    text-align: right;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    text-transform: uppercase;
+.header-links a:hover {
+    color: var(--navy-blue);
+    text-decoration: underline;
 }
 
-/* LANGUAGE MENU */
+/* Language menu */
 
 .lang {
     margin-left: 35px;
@@ -146,6 +129,134 @@ body {
 .menu li.active a {
     color: #000;
 }
+
+/* Personal part */
+
+.home-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#home-text-top {
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#home-text-title {
+    color: var(--navy-blue) !important;
+    font-size: 56px;
+    font-weight: 990;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+#home-text-description {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+#resume-a {
+    font-weight: 700;;
+}
+
+#resume-a:hover {
+    color: var(--navy-blue);
+    text-decoration: underline;
+}
+
+.resume-ref {
+    width: 15px;
+    height: auto;
+    margin-left: 5px;
+    margin-bottom: -4px;
+    rotate: 180deg;
+}
+
+.home-image-container {
+    justify-content: center;
+    align-content: center;
+    margin-left: 100px;
+}
+
+.form {
+    background: url("photos/man-working-illustration.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    width: 25rem;
+    height: 25rem;
+    box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
+    animation: animate 5s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60% ;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
+    }
+}
+
+/* About me */
+
+#about {
+    border: red solid 2px;
+}
+
+
+/* Other */
+
+#skills {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.skill-container {
+    width: 50%;
+    align-content: center;
+}
+
+.text-label {
+    width: 50%;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+
+.person-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.text-container {
+    justify-content: center;
+    align-content: center;
+}
+
+.profile-container {
+    align-content: center;
+}
+
+#coding-man {
+    width: 600px;
+    height: auto;
+    margin-left: 40px;
+}
+
+
 
 /* MOUSE BOX */
 
@@ -416,32 +527,6 @@ footer {
     text-decoration: underline;
 }
 
-/*
-.form {
-    background: url("photos/pfbilde.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    width: 25rem;
-    height: 25rem;
-    box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
-    animation: animate 5s ease-in-out infinite;
-}
-
- */
-
-@keyframes animate {
-    0% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
-    }
-    50% {
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60% ;
-    }
-    100% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
-    }
-}
-
 @media screen and (max-width: 1920px) {
     .section .content-inner .content-center h1 {
         font-size: 90px;
@@ -581,10 +666,6 @@ footer {
     text-align: center;
     border-radius: 5px;
     text-decoration: none;
-}
-
-.project-button:hover {
-    color: var(--dark-gray);
 }
 
 .pr896 {
@@ -918,10 +999,6 @@ footer {
         height: auto;
     }
 
-    .dropdown-content a:hover{
-        background-color: var(--lys-hvitt);
-    }
-
     #tech-h2 {
         margin-top: 1000px;
     }
@@ -999,7 +1076,6 @@ footer {
 
     #hamburger-button {
         color: #0d0d0d;
-        background-color: var(--lys-hvitt);
     }
 
     .top-div {
