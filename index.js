@@ -1,7 +1,9 @@
+let slideIndex = 1;
+
 addEventListener("DOMContentLoaded", (event) => {
     setTimeout(() => {
         changeLanguage('en');
-        buildSomething();
+        showDivs(slideIndex);
     }, 100);
 });
 
@@ -18,13 +20,6 @@ function changeLanguage(lang) {
     }
 }
 
-let slideIndex = 1;
-showDivs(slideIndex);
-setTimeout(() => {
-    console.log("hallo");
-    plusDivs(+1);
-}, 400);
-
 function plusDivs(n) {
     showDivs(slideIndex += n);
 }
@@ -32,12 +27,18 @@ function plusDivs(n) {
 function showDivs(n) {
     let i;
     let x = document.getElementsByClassName("slide");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
+    if (n > x.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = x.length;
+    }
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-    x[slideIndex-1].style.display = "block";
+
+    let indexToShow = (slideIndex - 1 + x.length) % x.length;
+    x[indexToShow].style.display = "block";
 }
 
 function calculateAge() {
