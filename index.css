@@ -207,9 +207,116 @@ header {
 /* About me */
 
 #about {
-    border: red solid 2px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
+.about-content {
+    width: 45%;
+    display: flex;
+}
+
+.about-text-container {
+    margin-left: 10px;
+    width: 70%;
+}
+
+.h2-label {
+    color: var(--navy-blue);
+    text-align: left;
+}
+
+.about-a {
+    font-style: italic;
+}
+
+.about-a:hover {
+    text-decoration: var(--navy-blue) underline;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 125px;
+    width: 40%;
+}
+
+.about-image {
+    border-radius: 10px;
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.about-image.active {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Skills */
+
+#skills {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.skills-content {
+    width: 45%;
+    display: block;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    filter: brightness(0) invert(.5);
+}
+
+.skill-icon {
+    margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.skill:hover {
+    filter: brightness(0) invert(0);
+}
+
+.skillrow {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
 
 /* Other */
 
@@ -217,11 +324,6 @@ header {
     display: flex;
     align-content: center;
     justify-content: center;
-}
-
-.skill-container {
-    width: 50%;
-    align-content: center;
 }
 
 .text-label {
