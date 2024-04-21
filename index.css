@@ -318,13 +318,47 @@ header {
     flex-wrap: wrap-reverse;
 }
 
+/* Projects */
+
+#projects {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.projects-container {
+    margin-top: 500px;
+    width: 45%;
+}
+
+.project-container {
+    margin-bottom: 100px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.project-ref {
+    width: 15px;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: -4px;
+    rotate: 180deg;
+}
+
+.project-a {
+    font-style: italic;
+}
+
 /* Other */
 
-#skills {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
 
 .text-label {
     width: 50%;
@@ -352,19 +386,8 @@ header {
     align-content: center;
 }
 
-#coding-man {
-    width: 600px;
-    height: auto;
-    margin-left: 40px;
-}
-
-
 
 /* MOUSE BOX */
-
-.project-image {
-    width: 60%;
-}
 
 .mouse-div {
     display: flex;
