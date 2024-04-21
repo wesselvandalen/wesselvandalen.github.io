@@ -230,7 +230,6 @@ header {
 
 .about-text-container {
     margin-left: 10px;
-    width: 70%;
 }
 
 .h2-label {
@@ -246,42 +245,27 @@ header {
     text-decoration: var(--navy-blue) underline;
 }
 
-.about-images {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-left: 125px;
-    width: 40%;
+.img-container {
+    margin-left: 100px;
+    margin-top: 50px;
 }
 
-.about-image {
-    border-radius: 10px;
-    display: none;
-    width: 100%;
-    height: auto;
-}
-
-.about-image.active {
-    display: block;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
+.slide {
+    width: 400px;
+    height: 250px;
     border-radius: 5px;
 }
 
-.prev {
-    left: 10px;
+.img-buttons button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: #fdfdfd;
+    color: #222831;
 }
 
-.next {
-    right: 10px;
+.img-buttons .w3-display-right {
+    float: right;
 }
 
 /* Skills */

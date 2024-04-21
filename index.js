@@ -1,64 +1,43 @@
 addEventListener("DOMContentLoaded", (event) => {
-    handleCookies();
     setTimeout(() => {
+        changeLanguage('en');
         buildSomething();
     }, 100);
 });
 
-function handleCookies() {
-    const languageFromCookie = checkForCookies();
-
-    if (languageFromCookie === '' || languageFromCookie === null) {
-        changeLanguage('en');
-    } else {
-        changeLanguage(languageFromCookie);
-    }
-}
-
 function changeLanguage(lang) {
-    document.cookie = `language=${lang}`;
     document.querySelector('#copyright').textContent = `© ${new Date().getFullYear()} Wessel van Dalen, Some rights reserved.`; // https://www.termsfeed.com/blog/sample-copyright-notices/
     document.documentElement.lang = lang;
-    const NLLI = document.getElementById('nlli');
-    const NOLI = document.getElementById('noli');
-    const ENLI = document.getElementById('enli');
 
     if (lang === 'nl') {
-        /*
-        NLLI.classList.add('active');
-        NOLI.classList.remove('active');
-        ENLI.classList.remove('active');
-
-         */
         changeLanguageDutch();
     } else if (lang === 'no') {
-        /*
-        NLLI.classList.remove('active');
-        NOLI.classList.add('active');
-        ENLI.classList.remove('active');
-
-         */
         changeLanguageNorwegian();
     } else {
-        /*
-        NLLI.classList.remove('active');
-        NOLI.classList.remove('active');
-        ENLI.classList.add('active');
-
-         */
         changeLanguageEnglish();
     }
 }
 
-function checkForCookies() {
-    const existingLanguageCookie = document.cookie.split('; ').find(cookie => cookie.startsWith('language='));
-    const languageFromCookie = existingLanguageCookie ? existingLanguageCookie.split('=')[1] : null;
+let slideIndex = 1;
+showDivs(slideIndex);
+setTimeout(() => {
+    console.log("hallo");
+    plusDivs(+1);
+}, 400);
 
-    if (languageFromCookie === undefined) {
-        return false;
-    } else {
-        return languageFromCookie;
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    let i;
+    let x = document.getElementsByClassName("slide");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
     }
+    x[slideIndex-1].style.display = "block";
 }
 
 function calculateAge() {
@@ -74,90 +53,6 @@ function buildSomething() {
     //const nlKnop = document.querySelector('#nlknop');
     //const enknop = document.querySelector('#enknop');
     //const noknop = document.querySelector('#noknop');
-    let slideIndex = 0;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("about-image");
-        if (n > slides.length - 1) {slideIndex = 0}
-        if (n < 0) {slideIndex = slides.length - 1}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slides[slideIndex].style.display = "block";
-    }
-
-    let gridContainer = document.querySelector(".grid-container");
-    let isVisible = false;
-
-    function isElementInViewport(el) {
-        let rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    function checkFade() {
-        if (isElementInViewport(gridContainer)) {
-            if (!isVisible) {
-                isVisible = true;
-                gridContainer.classList.add("active");
-            }
-        } else {
-            if (isVisible) {
-                isVisible = false;
-                gridContainer.classList.remove("active");
-            }
-        }
-    }
-
-    checkFade();
-    document.addEventListener("scroll", checkFade);
-
-    let textLabel = document.querySelector(".text-label");
-    let projectContainer = document.querySelector(".ad123");
-    let isVis = false;
-
-    function inVP(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    function cFade() {
-        if (inVP(textLabel) || inVP(projectContainer)) {
-            if (!isVis) {
-                isVis = true;
-                textLabel.classList.add("active");
-                projectContainer.classList.add("active");
-            }
-        } else {
-            if (isVis) {
-                isVis = false;
-                textLabel.classList.remove("active");
-                projectContainer.classList.remove("active");
-            }
-        }
-    }
-
-    cFade();
-    document.addEventListener("scroll", cFade);
 
     /*
     nlKnop.addEventListener('click', (ev) => {
