@@ -375,7 +375,7 @@ header {
 /* Footer */
 
 footer {
-    margin-top: 200px;
+    margin-top: 50px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -627,6 +627,10 @@ footer {
         height: 40px;
     }
 
+    .project-container {
+        margin-bottom: 700px;
+    }
+
     .title-box {
         width: 150%;
     }
@@ -660,7 +664,7 @@ footer {
 
     #copyright {
         text-align: center;
-        margin: 0 0 120px 0 !important;
+        margin: -300px 0 120px 0 !important;
         font-size: 32px;
         width: 140%;
     }

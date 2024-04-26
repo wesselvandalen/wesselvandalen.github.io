@@ -29,10 +29,10 @@ function showDivs(n) {
 }
 
 function calculateAge() {
-    var dob = new Date("01/20/2004");
-    var month_diff = Date.now() - dob.getTime();
-    var age_dt = new Date(month_diff);
-    var year = age_dt.getUTCFullYear();
+    let dob = new Date("01/20/2004");
+    let month_diff = Date.now() - dob.getTime();
+    let age_dt = new Date(month_diff);
+    let year = age_dt.getUTCFullYear();
     const age = Math.abs(year - 1970);
     return age;
 }
