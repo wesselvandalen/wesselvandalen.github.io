@@ -192,7 +192,7 @@ header {
 }
 
 .form {
-    background: url("photos/personal-pictures/pfbilde.jpg");
+    background: url("photos/personal-pictures/IMG_0967.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -445,7 +445,7 @@ footer {
     .form {
         justify-content: center;
         align-items: center;
-        margin-top: 25px;
+        margin-bottom: -15px;
         width: 18rem;
         height: 18rem;
     }
