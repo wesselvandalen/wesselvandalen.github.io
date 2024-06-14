@@ -224,7 +224,7 @@ header {
 }
 
 .about-content {
-    width: 50%;
+    width: 45%;
     display: flex;
 }
 
@@ -453,7 +453,7 @@ footer {
     /* About me */
 
     .about-content {
-        width: 80%;
+        width: 75%;
     }
 
     /* Skills */
