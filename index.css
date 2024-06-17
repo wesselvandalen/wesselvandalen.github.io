@@ -32,7 +32,12 @@ header {
 
 .header-content {
     display: block;
-    width: 70%;
+    width: 80%;
+}
+
+.language-holder {
+    text-transform: uppercase;
+    margin-top: -15px;
 }
 
 #header-logo {
@@ -288,22 +293,22 @@ header {
     display: block;
 }
 
-.skill {
+.skill-new {
     display: flex;
     flex-direction: column;
     padding: 10px;
     text-align: center;
-    filter: brightness(0) invert(.5);
+    filter: brightness(0) invert(.4);
 }
 
-.skill-icon {
+.skill-new:hover {
+    filter: none;
+}
+
+.skill-icon-new {
     margin-bottom: 5px;
     width: 50px;
     height: 50px;
-}
-
-.skill:hover {
-    filter: brightness(0) invert(0);
 }
 
 .skillrow {
