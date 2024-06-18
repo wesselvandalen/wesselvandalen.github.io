@@ -614,13 +614,13 @@ footer {
         grid-gap: 20px;
     }
 
-    .skill {
+    .skill-new {
         display: flex;
         align-items: center;
         font-size: 46px;
     }
 
-    .skill-icon {
+    .skill-icon-new {
         width: 130px;
         height: 130px;
     }
