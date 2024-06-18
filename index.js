@@ -52,3 +52,16 @@ function translate() {
                             <br><br>
                             Fun fact: my highest Duolingo streak was around ~580 days!`;
 }
+
+function displayMessage() {
+    const languageSelect = document.getElementById('language-select');
+    const selectedLanguage = languageSelect.value;
+
+    const messages = {
+        en: "Hello!",
+        nl: "Hoi!",
+        no: "Heisann!"
+    };
+
+    console.log(selectedLanguage);
+}
