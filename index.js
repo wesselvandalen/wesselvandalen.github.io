@@ -33,8 +33,7 @@ function calculateAge() {
     let month_diff = Date.now() - dob.getTime();
     let age_dt = new Date(month_diff);
     let year = age_dt.getUTCFullYear();
-    const age = Math.abs(year - 1970);
-    return age;
+    return Math.abs(year - 1970);
 }
 
 function translate() {
@@ -51,17 +50,4 @@ function translate() {
                             do I love to go out in the woods with my dog, game with friends & cook meals.
                             <br><br>
                             Fun fact: my highest Duolingo streak was around ~580 days!`;
-}
-
-function displayMessage() {
-    const languageSelect = document.getElementById('language-select');
-    const selectedLanguage = languageSelect.value;
-
-    const messages = {
-        en: "Hello!",
-        nl: "Hoi!",
-        no: "Heisann!"
-    };
-
-    console.log(selectedLanguage);
 }
