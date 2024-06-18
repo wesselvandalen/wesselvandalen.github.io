@@ -368,6 +368,10 @@ footer {
 
 @media screen and (max-width: 1920px) { /* Laptop */
 
+    header .header-content {
+        width: 82%;
+    }
+
     /* Home page */
 
     #home-page {
@@ -420,6 +424,10 @@ footer {
 
     .projects-container {
         width: 75%;
+    }
+
+    footer .footer-content {
+        width: 75%; !important;
     }
 }
 
