@@ -249,6 +249,7 @@ option {
 
 .skill-new {
     display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 10px;
     text-align: center;
@@ -272,10 +273,22 @@ option {
     justify-content: center;
 }
 
+/*
+        margin-top: 120px;
+        margin-bottom: 120px;
+        width: 160%;
+        margin-left: -100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+ */
+
 .skill-container {
     display: flex;
     flex-wrap: wrap-reverse;
 }
+
+
 
 /* Projects */
 
