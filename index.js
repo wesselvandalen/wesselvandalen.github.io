@@ -38,16 +38,12 @@ function calculateAge() {
 
 function translate() {
     document.getElementById('copyright').textContent = `© ${new Date().getFullYear()} Wessel van Dalen, Some rights reserved.`;
-    document.getElementById('about-description').innerHTML = `Hello! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.
+    document.getElementById('about-description').innerHTML = `Heisann! <a class="special-text" target="_blank" href="https://en.wikipedia.org/wiki/Norwegian_language">*Heisann is Norwegian for hello</a><br><br>
+                            My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands.
                             I have a great passion for both webdevelopment and server applications
                             having studied <a class="about-a" href="https://www.hu.nl/voltijd-opleidingen/hbo-ict" target="_blank">HBO ICT</a> at the <a class="about-a" href="https://www.hu.nl/" target="_blank">Hogeschool Utrecht</a>.
                             <br><br>
-                            My favorite country in the world is Norway, and I would love to live
-                            there someday. Because of that, I have learned to speak fluent Norwegian
-                            and learn a lot about the culture and country itself.
+                            In my freetime I love to learn Norwegian. Norway is my favorite country in the world and I travel there a lot. I love to learn about the culture, customs, dialects etc. My longest Norwegian Duolingo streak was 674 days in a row!
                             <br><br>
-                            I also love bodybuilding, having trained for more than 3 years. Furthermore
-                            do I love to go out in the woods with my dog, game with friends & cook meals.
-                            <br><br>
-                            Fun fact: my highest Duolingo streak was around ~580 days!`;
+                            To get a better impression of me, just take a look between my pictures!`;
 }

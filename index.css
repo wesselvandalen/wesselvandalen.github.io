@@ -145,7 +145,7 @@ option {
 }
 
 .form {
-    background: url("photos/personal-pictures/IMG_0967.jpg");
+    background: url("photos/personal-pictures/IMG_4044.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -192,12 +192,17 @@ option {
     text-align: left;
 }
 
-.about-a {
+.special-text {
     font-style: italic;
 }
 
-.about-a:hover {
+.about-a {
+    font-style: italic;
     text-decoration: var(--navy-blue) underline;
+}
+
+.about-a:hover {
+    color: #333333;
 }
 
 .img-container {
@@ -309,6 +314,8 @@ option {
 
 .project-a {
     font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: var(--navy-blue);
 }
 
 .project-utils {
