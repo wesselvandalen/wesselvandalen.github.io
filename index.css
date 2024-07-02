@@ -421,10 +421,10 @@ footer {
     .form {
         justify-content: center;
         align-items: center;
-        width: 50rem;
-        height: 50rem;
+        width: 48rem;
+        height: 48rem;
         margin-top: -150px;
-        margin-left: 300px;
+        margin-left: 230px;
     }
 
     #home-page {
@@ -524,7 +524,7 @@ footer {
     }
 
     .img-container {
-        width: 130% !important;
+        width: 126% !important;
         height: 40%;
         margin: 100px 5px 0 0;
     }
@@ -546,7 +546,7 @@ footer {
 
     #skills {
         width: 100vw;
-        margin-left: -10px;
+        margin-left: -40px;
     }
 
     .skillrow div h2 {
