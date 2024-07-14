@@ -39,10 +39,9 @@ function calculateAge() {
 function renderText() {
     document.querySelector('#copyright').textContent = `© ${new Date().getFullYear()} Wessel van Dalen, Some rights reserved.`; // https://www.termsfeed.com/blog/sample-copyright-notices/
     document.getElementById('about-description').innerHTML = `Heisann! <a class="special-text" target="_blank" href="https://en.wikipedia.org/wiki/Norwegian_language">*Heisann is Noors voor hallo</a><br><br>
-                            Mijn naam is Wessel en ik ben een ${calculateAge()} jaar oude gast geboren in Houten, Nederland.
-                            Ik heb een grootte passie voor webdevelopment en server applicaties door wat ik geleerd heb op mijn studie <a class="extern-link" href="https://www.hu.nl/voltijd-opleidingen/hbo-ict" target="_blank">HBO ICT</a> op de <a class="extern-link" href="https://www.hu.nl/" target="_blank">Hogeschool Utrecht</a>.
+                            Mijn naam is Wessel, ik ben ${calculateAge()} jaar, en geboren in Houten, Nederland.
+                            Ik heb <a class="special-text" href="https://www.hu.nl/voltijd-opleidingen/hbo-ict" target="_blank">HBO ICT</a> gestudeerd op de <a class="special-text" href="https://www.hu.nl/" target="_blank">Hogeschool Utrecht</a>
+                            om een full-stack developer te worden gespecialiseerd in back-end.
                             <br><br>
-                            Qua hobbies ga ik graag op pad met mijn hond Rowdy (Golden Retriever), game ik met vrienden en leer ik Noors (taal, cultuur, etc.). 
-                            <br><br>
-                            Neem gerust een kijkje tussen mijn foto's om een beter beeld van me te krijgen!`;
+                            Ik ga graag naar het bos met mijn hond Rowdy (Golden Retriever), vind het leuk om te schaken, game graag met vrienden en leer graag Noors (taal, cultuur, etc.).`;
 }

@@ -157,6 +157,7 @@ a {
 
 .about-text-container {
     margin-left: 10px;
+    margin-top: 25px;
     width: 100%;
 }
 
@@ -350,6 +351,16 @@ footer {
     text-transform: uppercase;
 }
 
+/* Special block */
+.special-block {
+    transform: translateX(-50%);
+    border: #e0ffe2 solid 1px;
+    border-radius: 4px;
+    background-color: #e0ffe2;
+    color: #0d7045;
+    padding: 3px;
+}
+
 @media screen and (max-width: 1920px) { /* Laptop */
 
     header .header-content {
@@ -407,6 +418,7 @@ footer {
     /* Projects */
 
     .projects-container {
+        
         width: 75%;
     }
 
