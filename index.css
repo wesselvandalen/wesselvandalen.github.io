@@ -286,7 +286,7 @@ a {
 
 .project-container {
     background-color: #fff; /* White background */
-    display: flex;
+    display: flex; /* Side by side layout */
     border: 1px solid #e0e0e0; /* Light gray border */
     border-radius: 2px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -294,12 +294,15 @@ a {
 }
 
 .project-image {
-    width: 50%;
+    width: 50%; /* Adjust as needed */
     height: auto;
 }
 
 .project-content {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
     padding: 20px;
+    flex: 1; /* Take up remaining space */
 }
 
 .project-tags {
@@ -318,8 +321,9 @@ a {
 }
 
 .project-tags .premium {
-    background-color: #c7596c; /* Blue background for premium */
-    color: white; /* White text color */
+    background-color: #C7454F; /* Blue background for premium */
+    opacity: .7;
+    color: #ffeff2; /* White text color */
 }
 
 .project-title {
@@ -336,8 +340,8 @@ a {
 
 .project-footer {
     display: flex;
-    margin-top: auto;
     align-items: center;
+    margin-top: auto; /* Pushes footer to bottom */
 }
 
 .project-footer img {
@@ -363,8 +367,6 @@ a {
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    border: #C73D52 solid;
-    border-width: thin;
 }
 
 .view-challenge:hover {
