@@ -5,7 +5,7 @@
     --darker_gray: #31363F;
     --light-white: #EEEEEE;
     --navy-blue: #567DFD;
-    --red: #e56b6f;
+    --red: #C7454F;
 }
 
 body {
@@ -32,7 +32,7 @@ a {
 .home-container {
     display: flex;
     justify-content: center;
-    width: 45%;
+    width: 55%;
     height: 85vh;
 }
 
@@ -56,6 +56,10 @@ a {
     font-size: 18px;
 }
 
+.about-description {
+    width: 50%;
+}
+
 .text-container {
     justify-content: center;
     align-content: center;
@@ -63,7 +67,7 @@ a {
 }
 
 #home-text-title {
-    color: var(--red) !important;
+    color: #dc4d57 !important;
     font-size: 56px;
     font-weight: 990;
     margin-top: -10px;
@@ -119,12 +123,12 @@ a {
 }
 
 .form {
-    background: url("photos/personal-pictures/new.jpg");
+    background: url("assets/personal-pictures/preikestolen.png");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
-    width: 25rem;
-    height: 25rem;
+    width: 27em;
+    height: 27em;
     box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
     animation: animate 5s ease-in-out infinite;
 }
@@ -151,7 +155,7 @@ a {
 }
 
 .about-content {
-    width: 45%;
+    width: 55%;
     display: flex;
 }
 
@@ -172,7 +176,6 @@ a {
 }
 
 .about-a {
-    font-style: bold;
     text-decoration: var(--red) underline;
 }
 
@@ -207,18 +210,17 @@ a {
 /* Skills */
 
 #skills {
-    margin-top: 200px;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
 #tech-h2-text {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 .skills-content {
-    width: 45%;
+    width: 55%;
     display: block;
 }
 
@@ -229,86 +231,146 @@ a {
     padding: 10px;
     text-align: center;
     filter: brightness(0) invert(.4);
+    font-size: 15px;
 }
 
 .skill-new:hover {
+    transform: scale(1.02);
     filter: none;
 }
 
 .skill-icon-new {
     margin-bottom: 5px;
-    width: 50px;
-    height: 50px;
+    width: 47px;
+    height: 47px;
 }
 
 .skillrow {
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+}
+
+.skillrow h2 {
+    font-size: 20px;
 }
 
 .skill-container {
     display: flex;
     flex-wrap: wrap-reverse;
+    gap: 2px;
 }
-
-
 
 /* Projects */
 
 #projects {
     display: flex;
     justify-content: center;
-    align-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 .projects-container {
-    margin-top: 500px;
-    width: 45%;
+    width: 55%;
+}
+
+#projects-label {
+    margin-bottom: 20px;
+}
+
+.projects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Adjust this for the number of columns */
+    gap: 30px; /* Adjust the gap between the project cards */
 }
 
 .project-container {
-    margin-bottom: 300px;
+    background-color: #fff; /* White background */
+    display: flex;
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth transform on hover */
 }
 
 .project-image {
-    width: 100%;
+    width: 50%;
     height: auto;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.project-tags span {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+.project-tags .premium {
+    background-color: #c7596c; /* Blue background for premium */
+    color: white; /* White text color */
 }
 
 .project-title {
-    font-weight: bold;
-    font-size: 22px;
+    font-size: 1.5em;
+    color: #333;
+    margin: 0 0 10px 0;
 }
 
-.project-ref {
-    width: 15px;
-    height: auto;
-    margin-left: 0;
-    margin-bottom: -4px;
-    rotate: 180deg;
+.project-description {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0 0 20px 0;
 }
 
-.project-a {
-    font-style: italic;
-    text-decoration: underline;
-    text-decoration-color: var(--red);
-}
-
-.project-utils {
+.project-footer {
     display: flex;
-    margin-top: 5px;
-    margin-bottom: -10px;
-    margin-left: -10px;
+    margin-top: auto;
+    align-items: center;
 }
 
-.project-utils p {
-    padding: 5px 15px 5px 15px;
-    color: var(--darker_gray);
-    margin: 10px;
-    border-radius: 2px;
-    background-color: #fbfbfb;
+.project-footer img {
+    opacity: .8;
+    width: 16px;
+    height: 16px;
+    margin-bottom: -3px;
+    margin-right: 4px;
+    margin-left: -5px;
+    filter: invert(1);
+}
+
+.view-challenge {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: .9em;
+    width: 30%;
+    border-radius: 4px;
+    color: white; /* Darker purple text */
+    background-color: #C73D52; /* Light purple background */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: #C73D52 solid;
+    border-width: thin;
+}
+
+.view-challenge:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 60, 0.1); /* Purple glow effect */
+    background-color: var(--red);
+    transform: translateY(-2px);
 }
 
 /* Footer */
@@ -322,7 +384,7 @@ footer {
 }
 
 .footer-content {
-    width: 45%;
+    width: 55%;
 }
 
 .footer-links-container {
@@ -332,7 +394,6 @@ footer {
 
 .footer-links-container a {
     margin-left: 40px;
-    font-weight: bold;
 }
 
 .footer-links-container a:hover {
@@ -349,16 +410,6 @@ footer {
     align-items: center;
     font-size: 13px;
     text-transform: uppercase;
-}
-
-/* Special block */
-.special-block {
-    transform: translateX(-50%);
-    border: #e0ffe2 solid 1px;
-    border-radius: 4px;
-    background-color: #e0ffe2;
-    color: #0d7045;
-    padding: 3px;
 }
 
 @media screen and (max-width: 1920px) { /* Laptop */
@@ -379,7 +430,7 @@ footer {
         display: flex;
         align-content: center;
         justify-content: center;
-        width: 74%;
+        width: 85%; /* width of home screen */
     }
 
     #home-text-top {
@@ -406,29 +457,34 @@ footer {
     /* About me */
 
     .about-content {
-        width: 75%;
+        width: 85%;
     }
 
     /* Skills */
 
     .skills-content {
-        width: 75%;
+        width: 85%;
     }
 
     /* Projects */
 
     .projects-container {
-        
-        width: 75%;
+        width: 85%;
     }
 
     footer .footer-content {
-        width: 75%; !important;
+        width: 85%; !important;
     }
 }
 
 @media only screen and (max-width: 1170px) { /* Phone */
     /* Home page */
+
+    .projects-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Adjust this for the number of columns */
+        gap: 20px; /* Adjust the gap between the project cards */
+    }
 
     .form {
         justify-content: center;
