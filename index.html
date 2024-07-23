@@ -5,24 +5,108 @@
     <meta name="viewport" content="width=1000">
     <title>Wessel van Dalen</title>
     <link rel="icon" type="image/x-icon" href="./assets/logo.png">
-    <link href="./index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
     <script src="./index.js"></script>
 </head>
 <body>
     <main>
         <div id="home-page">
-            <div class="profile-card">
-                <div class="card-image">
-                    <img src="assets/personal-pictures/preikestolen.png" alt="Preikestolen picture">
+            <div class="home-container">
+                <div class="profile-card">
+                    <div class="profile-info">
+                        <img class="profile-image" src="./assets/personal-pictures/preikestolen.png" alt="Bonnie Green"/>
+                        <h5 class="profile-name">Wessel van Dalen</h5>
+                        <span class="profile-role">Full Stack Software Developer</span>
+
+                    </div>
                 </div>
-                <div class="category"> @wesselvandalen </div>
-                <div class="heading"> Een Full Stack Software Developer met een Noorse touch
-                    <div class="author"> By <span class="name">Wessel</span> 4 days ago</div>
+
+                <div class="section-card">
+                    <a href="#" class="badge code" id="code">
+                        <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"/>
+                        </svg>
+                        About me
+                    </a>
+                    <h2 class="subtitle">Een Full Stack Software Developer met een Noorse touch</h2>
+                    <p class="text">
+                        Heisann! *Heisann is Noors voor hallo
+                        <br><br>
+                        Mijn naam is Wessel, ik ben 20 jaar en ben geboren in Houten, Nederland. Ik heb HBO ICT gestudeerd op de Hogeschool Utrecht om een Full Stack Software Developer te worden gespecialiseerd in back-end.
+                        <br><br>
+                        Ik ga graag naar het bos met mijn hond Rowdy (Golden Retriever), vind het leuk om te schaken, train graag een paar keer per week in de sportschool, game regelmatig met vrienden en houdt erg veel van Noors (taal, cultuur, etc.).
+                    </p>
                 </div>
+
+                <!-- <div class="info-container">
+                    <h5 class="title">Contact en informatie</h5>
+                    <p class="description">Klik hieronder voor mijn CV, LinkedIn, GitHub of om een e-mail te sturen.</p>
+                    <ul class="wallet-list">
+                        <li class="wallet-item">
+                            <a href="files/resume.pdf" target="_blank" class="wallet-link">
+                                <img src="assets/icons/paper.png" alt="MetaMask" class="wallet-icon">
+                                <span class="wallet-name">CV</span>
+                                <span class="badge">Popular</span>
+                            </a>
+                        </li>
+                        <li class="wallet-item">
+                            <a href="mailto:wesselvandalen@gmail.com" class="wallet-link">
+                                <img src="assets/icons/mail.png" alt="WalletConnect" class="wallet-icon">
+                                <span class="wallet-name">Mail</span>
+                            </a>
+                        </li>
+                        <li class="wallet-item">
+                            <a href="https://www.github.com/wesselvandalen/" target="_blank" class="wallet-link">
+                                <img src="assets/icons/github.png" alt="GitHub" class="wallet-icon">
+                                <span class="wallet-name">GitHub</span>
+                            </a>
+                        </li>
+                        <li class="wallet-item">
+                            <a href="https://www.linkedin.com/in/wesselvandalen/" target="_blank" class="wallet-link">
+                                <img src="assets/icons/linkedin.png" alt="LinkedIn" class="wallet-icon">
+                                <span class="wallet-name">LinkedIn</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
             </div>
         </div>
 
-        <div id="about">
+        <div class="timeline-container">
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <h3 class="timeline-title">Application UI code in Tailwind CSS</h3>
+                    <p class="timeline-description">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                    <a href="#" class="timeline-link">Learn more
+                        <svg class="timeline-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <h3 class="timeline-title">Marketing UI design in Figma</h3>
+                    <p class="timeline-description">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <h3 class="timeline-title">E-Commerce UI code in Tailwind CSS</h3>
+                    <p class="timeline-description">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="chapter">
+            <div class="inner-chapter">
+                <h2 class="heading">Tech stack</h2>
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+        <!--
+            <div id="about">
 
             <div class="task">
                 <div class="tags">
@@ -48,184 +132,109 @@
             </div>
 
         </div>
+        -->
 
         <div id="skills">
             <div class="skills-content">
-                <div class="text-label">
-                    <h2 class="h2-label" id="tech-h2-text">SKILLS</h2>
+
+                <div class="table-container">
+                    <table class="table">
+                        <thead class="table-header">
+                            <tr>
+                                <th scope="col" class="table-header-cell">Front end</th>
+                                <th scope="col" class="table-header-cell">Back end</th>
+                                <th scope="col" class="table-header-cell">Other</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr class="table-row">
+                                <th class="table-cell" >Svelte</th>
+                                <td class="table-cell">Java</td>
+                                <td class="table-cell">Git</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th class="table-cell" >React</th>
+                                <td class="table-cell">Spring</td>
+                                <td class="table-cell">Agile</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th class="table-cell" >Lit</th>
+                                <td class="table-cell">JUnit5</td>
+                                <td class="table-cell">Scrum</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th class="table-cell" >HTML</th>
+                                <td class="table-cell">Python</td>
+                                <td class="table-cell">Continous Integration</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th class="table-cell" >CSS</th>
+                                <td class="table-cell">SQL</td>
+                                <td class="table-cell">Azure</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th class="table-cell" >Javascript</th>
+                                <td class="table-cell">PostgreSQL</td>
+                                <td class="table-cell">Software Architecture</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th class="table-cell" ></th>
+                                <td class="table-cell">Salesforce</td>
+                                <td class="table-cell"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <div class="skillrow">
-                    <div class="skills-backend">
-                        <h2>Back end</h2>
-                        <div class="skill-container">
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/java.png" alt="Java logo">
-                                Java
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/spring.png" alt="Spring logo">
-                                Spring
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/junit5.png" alt="JUnit5 logo">
-                                JUnit5
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/python.png" alt="Python logo">
-                                Python
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/sql.png" alt="SQL logo">
-                                SQL
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/postgreql.png" alt="PostgreSQL logo">
-                                Postgres
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/salesforce.png" alt="Salesforce logo">
-                                Salesforce
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skillrow">
-                        <h2>Front end</h2>
-                        <div class="skill-container">
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/svelte.png" alt="Svelte logo">
-                                Svelte
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/react.png" alt="React logo">
-                                React
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/lit.png" alt="Lit logo">
-                                Lit
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/html.png" alt="HTML logo">
-                                HTML
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/css.png" alt="CSS logo">
-                                CSS
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/javascript.png" alt="Javascript logo">
-                                Javascript
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skillrow">
-                        <h2>Other</h2>
-                        <div class="skill-container">
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/git.png" alt="Git logo">
-                                Git
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/Agile.png" alt="Agile logo">
-                                Agile
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/scrum.png" alt="Scrum logo">
-                                SCRUM
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/CICD.png" alt="Continious Integration logo">
-                                CI/CD
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/intellij.png" alt="Intellij logo">
-                                Intellij
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/azure.png" alt="Azure logo">
-                                Azure
-                            </div>
-                            <div class="skill-new">
-                                <img class="skill-icon-new" src="assets/icons/stack.png" alt="Software Architecture logo">
-                                Architecture
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
         <div id="projects">
             <div class="projects-container">
-                <div class="text-label">
-                    <h2 class="h2-label" id="projects-label">PROJECTS</h2>
-                </div>
-
                 <div class="projects-wrapper">
-
                     <!--
-                        <div class="project-container">
-                        <div class="project-content">
-                            <div class="project-tags">
-                                <span class="premium">HTML</span>
-                                <span class="premium">CSS</span>
-                                <span class="premium">Javascript</span>
-                                <span class="premium">React</span>
-                                <span class="premium">Java</span>
-                                <span class="premium">Spring</span>
-                                <span class="premium">PostgreSQL</span>
-                                <span class="premium">Azure</span>
-                            </div>
-                            <h3 class="project-title">SmartFinance</h3>
-                            <p class="project-description">
-                                SmartFinance is een oefentool voor jaarrekening-onderdelen (winst-verlies, balans, kas etc.). De tool geeft feedback op je antwoorden, en je kunt verschillende thema's selecteren voor het oefenen.
-                            </p>
-                            <div class="project-footer">
-                                <a class="view-challenge" href="http://159.223.223.166:8080/" target="_blank">
-                                    <img src="assets/icons/web.png" alt="Web icon">
-                                    Bezoek website
-                                </a>
-                            </div>
-                        </div>
-                        <img class="project-image" src="assets/todss.png" alt="HU Smart Teaching picture">
-                    </div>
-
-                    <div class="project-container">
-                        <div class="project-content">
-                            <div class="project-tags">
-                                <span class="premium">HTML</span>
-                                <span class="premium">CSS</span>
-                                <span class="premium">Javascript</span>
-                                <span class="premium">Lit</span>
-                            </div>
-                            <h3 class="project-title">KPN Reisbewegingen</h3>
-                            <p class="project-description">
-                                KPN Reisbewegingen is de website waar KPN medewerkers hun dagelijkse reisafstanden opgeven. Deze berekent vervolgens de CO2 uitstoot per medewerker en zet dit in een groot Excel rapport voor de managers.                            </p>
-                            <div class="project-footer">
-                                <a class="view-challenge" href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank">
-                                    <img src="assets/icons/web.png" alt="Web icon">
-                                    Bezoek website
-                                </a>
-                            </div>
-                        </div>
-                        <img class="project-image" src="assets/kpn.png" alt="KPN picture">
-                    </div>
-                     -->
-
-
-                    <div class="card">
-                        <img class="card-image" alt="Card Image" src="assets/projects/todss.png">
+                        <div class="project-card">
+                        <img class="card-image" src="assets/projects/nas.png" alt="NjordAirlines project card"/>
                         <div class="card-content">
-                            <h2 class="card-title">SmartFinance</h2>
-                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis ante sit amet tellus ornare tincidunt.</p>
-                            <div class="card-footer">
-                                <button class="card-button">Bezoek site</button>
-                            </div>
+                            <h5 class="card-title">NjordAirlines</h5>
+                            <p class="card-description">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                            <a href="/" target="_blank" class="card-button">
+                                Bekijk meer
+                                <svg class="card-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    -->
+
+                    <div class="project-card">
+                        <img class="card-image" src="assets/projects/todss.png" alt="SmartFinance project card"/>
+                        <div class="card-content">
+                            <h5 class="card-title">SmartFinance</h5>
+                            <p class="card-description">SmartFinance is een oefentool voor jaarrekening-onderdelen (winst-verlies, balans, kas etc.). De tool geeft feedback op je antwoorden, en je kunt verschillende thema's selecteren voor het oefenen.</p>
+                            <a href="http://159.223.223.166:8080/" target="_blank" class="card-button">
+                                Bekijk meer
+                                <svg class="card-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
 
+                    <div class="project-card">
+                        <img class="card-image" src="assets/projects/kpn.png" alt="KPN project card"/>
+                        <div class="card-content">
+                            <h5 class="card-title">KPN Reisbewegingen</h5>
+                            <p class="card-description">KPN Reisbewegingen is de website waar KPN medewerkers hun dagelijkse reisafstanden opgeven. Deze berekent vervolgens de CO2 uitstoot per medewerker en zet dit in een groot Excel rapport voor de managers. </p>
+                            <a href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank" class="card-button">
+                                Bekijk meer
+                                <svg class="card-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
