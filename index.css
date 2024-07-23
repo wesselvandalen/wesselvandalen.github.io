@@ -764,25 +764,27 @@ body {
 @media only screen and (max-width: 1170px) { /* Phone */
     /* Nav */
     .navbar {
-        margin-left: 50px;
+        margin-left: 30px;
         width: 100%;
+        margin-bottom: 60px;
     }
 
     .container {
-        max-width: 100%;
+        min-width: 100%;
         width: 100vw;
         gap: 10px;
     }
 
     .menu-items li {
-        font-size: 30px;
-        margin-right: 20px;
+        font-size: 28px;
+        margin-right: -50px;
     }
 
     /* Home page */
     #home-page {
         width: 100vw; !important;
         margin-bottom: 600px;
+        margin-left: -20px;
     }
 
     .home-container {
@@ -845,6 +847,7 @@ body {
 
     #code path {
         padding: .5rem;
+        margin-top: -1px;
     }
 
     .icon {
@@ -882,10 +885,12 @@ body {
     /* Skills */
 
     #skills {
+        margin-left: -20px;
         width: 100vw;
     }
 
     #skill-chapter {
+        margin-top: 150px;
         margin-left: -170px;
     }
 
@@ -910,7 +915,7 @@ body {
     }
 
     .toast {
-        max-width: 90%;
+        max-width: 93%;
     }
 
     .toast-message {
@@ -928,6 +933,7 @@ body {
     #projects {
         width: 100vw;
         margin-bottom: 70px;
+        margin-left: 40px;
     }
 
     #project-chapter {
