@@ -363,6 +363,13 @@ body {
     margin-bottom: 1.5rem; /* Equivalent to mb-6 */
 }
 
+.text a {
+    font-family: "Graphik Trial", sans-serif;
+    font-size: 16px;
+    color: #6B7280;
+    text-decoration: none;
+}
+
 .button {
     display: inline-flex;
     align-items: center;
@@ -712,7 +719,7 @@ body {
 @media screen and (max-width: 1920px) { /* Laptop */
     /* Nav */
     .navbar {
-        margin: 0;
+        margin-left: 10px;
     }
 
     .container {
@@ -772,19 +779,18 @@ body {
     .container {
         min-width: 100%;
         width: 100vw;
-        gap: 10px;
     }
 
     .menu-items li {
         font-size: 28px;
-        margin-right: -50px;
+        margin-right: -10px;
     }
 
     /* Home page */
     #home-page {
         width: 100vw; !important;
         margin-bottom: 600px;
-        margin-left: -20px;
+        margin-left: -10px;
     }
 
     .home-container {
@@ -863,7 +869,7 @@ body {
     .section-card #code .icon {
         width: 2rem;
         height: 2rem;
-        margin-bottom: -4px;
+        margin-bottom: -2px;
         margin-left: 3px;
     }
 
@@ -885,7 +891,7 @@ body {
     /* Skills */
 
     #skills {
-        margin-left: -20px;
+        margin-left: -10px;
         width: 100vw;
     }
 
@@ -933,7 +939,7 @@ body {
     #projects {
         width: 100vw;
         margin-bottom: 70px;
-        margin-left: 40px;
+        margin-left: 50px;
     }
 
     #project-chapter {
