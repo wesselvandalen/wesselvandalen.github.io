@@ -1,32 +1,8 @@
-let slideIndex = 1;
-
 addEventListener("DOMContentLoaded", (event) => {
     setTimeout(() => {
         renderText();
-        showDivs(slideIndex);
     }, 100);
 });
-
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-    let i;
-    let x = document.getElementsByClassName("slide");
-    if (n > x.length) {
-        slideIndex = 1;
-    }
-    if (n < 1) {
-        slideIndex = x.length;
-    }
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-
-    let indexToShow = (slideIndex - 1 + x.length) % x.length;
-    x[indexToShow].style.display = "block";
-}
 
 function calculateAge() {
     let dob = new Date("01/20/2004");
@@ -37,7 +13,6 @@ function calculateAge() {
 }
 
 function renderText() {
-    document.querySelector('#copyright').textContent = `© ${new Date().getFullYear()} Wessel van Dalen, Some rights reserved.`; // https://www.termsfeed.com/blog/sample-copyright-notices/
     document.getElementById('about-description').innerHTML =
         `Heisann! <a class="special-text" target="_blank" href="https://en.wikipedia.org/wiki/Norwegian_language">*Heisann is Noors voor hallo</a><br><br>
         Mijn naam is Wessel, ik ben ${calculateAge()} jaar en ben geboren in Houten, Nederland.
