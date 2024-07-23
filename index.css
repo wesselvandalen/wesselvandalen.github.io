@@ -950,7 +950,11 @@ body {
     }
 
     #project-chapter {
-        margin-left: -170px;
+        margin-left: -200px; !important;
+    }
+
+    .tag {
+        padding: 1rem;
     }
 
     .projects-wrapper {
