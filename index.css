@@ -775,36 +775,47 @@ body {
 }
 
 @media only screen and (max-width: 1170px) { /* Phone */
+    /* Nav */
+    .navbar {
+        margin-left: 50px;
+        width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100vw;
+        gap: 10px;
+    }
+
+    .menu-items li {
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
     /* Home page */
-
-    .projects-wrapper {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); /* Adjust this for the number of columns */
-        gap: 20px; /* Adjust the gap between the project cards */
-    }
-
-    .form {
-        justify-content: center;
-        align-items: center;
-        width: 48rem;
-        height: 48rem;
-        margin-top: -150px;
-        margin-left: 230px;
-    }
-
     #home-page {
-        display: flex;
         width: 100vw; !important;
-        justify-items: center;
-        align-content: center;
-        margin-bottom: 800px;
+        margin-bottom: 600px;
     }
 
     .home-container {
-        position: relative;
-        text-align: left;
-        height: 100vh;
-        width: 100vw;
+        height: 60vh;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .profile-card {
+        width: 100%;
+        margin-left: 50px;
+        margin-top: -250px;
+    }
+
+    .section-card {
+        margin-top: 30px;
+        width: 94%;
+        margin-left: 50px;
     }
 
     .text-container {
@@ -819,136 +830,149 @@ body {
         margin-left: 0;
     }
 
-    #home-text-top {
-        font-size: 58px;
+    .profile-image {
+        width: 35rem;
+        height: 35rem;
     }
 
-    #home-text-title {
-        font-size: 104px;
+    .profile-name {
+        margin-top: 80px;
+        font-size: 5rem;
+        margin-left: 0;
     }
 
-    #home-text-description {
-        font-size: 60px;
+    .profile-role {
+        margin-left: 10px;
+        font-size: 3rem;
     }
 
-    .home-attributes {
-        display: block;
-        font-size: 50px;
+    .social-container {
+        gap: 70px;
+        margin-top: 50px;
     }
 
-    .resume-icon {
-        width: 50px;
-        height: 50px;
+    .social-container a img {
+        width: 3.5rem;
+        height: 3.5rem;
     }
 
-    .location-icon {
-        margin-left: -20px;
-        width: 75px;
-        height: 75px;
+    #code path {
+        padding: .5rem;
     }
 
-    .home-text-location-container {
-        margin-top: 30px;
+    .icon {
+        width: 1rem;
+        height: 1rem;
     }
 
-    .home-text-location {
-        margin-top: 8px;
+    .section-card #code {
+        font-size: 2rem;
+        width: 12rem;
     }
 
-    .home-text-resume {
-        margin-bottom: 8px;
-        margin-top: 5px;
+    .section-card #code .icon {
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: -4px;
+        margin-left: 3px;
     }
 
-    #resume-a {
-        font-size: 36px;
+    .subtitle {
+        font-size: 4rem;
+        margin-top: 10px;
     }
 
-    .resume-ref {
-        width: 40px;
-        height: 40px;
-        margin-bottom: -13px;
+    .text {
+        font-size: 2rem;
     }
 
-    /* About me */
+    /* Chapter */
 
-    .about-content {
-        width: 85vw;
-        margin-left: -10px;
-        display: block;
-    }
-
-    .about-description {
-        font-size: 46px;
-        width: 100vw;
-    }
-
-    .text-label .h2-label {
-        font-size: 68px !important;
-        margin-left: -80px;
-    }
-
-    .img-container {
-        width: 126% !important;
-        height: 40%;
-        margin: 100px 5px 0 0;
-    }
-
-    .slide {
-        width: 100%;
-        height: 100%;
-        border-radius: 25px;
-    }
-
-    .img-buttons button {
-        margin-top: 20px;
-        width: 75px;
-        height: 75px;
-        font-size: 50px;
+    .chapter {
+        font-size: 2.7rem;
     }
 
     /* Skills */
 
     #skills {
         width: 100vw;
-        margin-left: -40px;
     }
 
-    .skillrow div h2 {
-        font-size: 68px;
+    #skill-chapter {
+        margin-left: -170px;
     }
 
-    .skill-container {
-        margin-top: 120px;
-        margin-bottom: 120px;
-        width: 160%;
-        margin-left: -100px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+    .skill-card {
+        margin: 0 0 0 120px;
+        padding: 0;
+        min-width: 100vw;
+        max-width: 100%;
     }
 
-    .skill-new {
-        display: flex;
-        align-items: center;
-        font-size: 46px;
+    .heading {
+        font-size: 2rem;
     }
 
-    .skill-icon-new {
-        width: 130px;
-        height: 130px;
+    .skills-wrapper {
+        display: block;
+        width: 100%;
+    }
+
+    .skill-row div {
+        width: 100%;
+    }
+
+    .toast {
+        max-width: 90%;
+    }
+
+    .toast-message {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .toast-icon {
+        width: 2rem;
+        height: 2rem;
     }
 
     /* Projects */
 
     #projects {
         width: 100vw;
-        margin-left: -40px;
+        margin-bottom: 70px;
     }
 
-    .project-ref {
-        width: 40px;
-        height: 40px;
+    #project-chapter {
+        margin-left: -170px;
+    }
+
+    .projects-wrapper {
+        width: 100vw;
+        margin-left: -10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Adjust this for the number of columns */
+        gap: 70px; /* Adjust the gap between the project cards */
+    }
+
+    .card-title {
+        font-size: 2.2rem;
+    }
+
+    .card-button {
+        width: 30%;
+        padding: 10px;
+        font-size: 2rem;
+    }
+
+    .card-icon {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 10px;
+    }
+
+    .project-grid {
+        display: flex;
     }
 
     .project-container {
@@ -978,284 +1002,5 @@ body {
         display: inline-block;
         padding: 15px;
         font-size: 42px;
-    }
-
-    /* Footer */
-
-    .footer-content {
-        display: block;
-    }
-
-    #copyright {
-        text-align: center;
-        margin: -300px 0 120px 0 !important;
-        font-size: 40px;
-        width: 130%;
-    }
-
-    .footer-links-container {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin-right: -125px;
-        margin-bottom: 100px;
-    }
-
-    .footer-links-container a {
-        font-size: 38px !important;
-        text-align: center;
-    }
-
-    /* Labels */
-
-    .text-label {
-        margin-left: 75px;
-    }
-
-    .text-label .h2-label {
-        width: 100%;
-        font-size: 56px;
-    }
-
-    .text-label .description-label {
-        width: 100%;
-        font-size: 38px !important;
-    }
-
-    /* ============================== */
-
-    #projects {
-        margin-top: 200px;
-    }
-
-    #home {
-        margin-bottom: 1200px;
-    }
-
-    #home-box-text {
-        width: 100vw;
-
-        text-align: left;
-    }
-
-    .home-box-name-class {
-        text-align: center;
-        font-size: 56px;
-    }
-
-    #home-box-text h1 {
-        text-align: center;
-        margin-left: 50px;
-        margin-bottom: 10px;
-        font-size: 102px;
-    }
-
-    #home-box-text h3 {
-        font-size: 50px;
-        width: 100%;
-    }
-
-    .project-box-picture {
-        margin-top: 100px;
-        width: 70vw;
-    }
-
-    .image-container {
-        width: 100%;
-    }
-
-    #home-box-text p {
-        font-size: 44px;
-        font-weight: normal;
-        width: 100%;
-    }
-
-    .languages-container div {
-        font-size: 28px;
-    }
-
-    .project-box-picture {
-        margin-left: 75px;
-        margin-top: 500px;
-        width: 90vw;
-    }
-
-    .project-box-info {
-        margin-right: 75px;
-    }
-
-    .project-box-info h1 {
-        font-size: 38px;
-    }
-
-    .project-box-info p {
-        font-size: 28px;
-    }
-
-    .small-lang-icon {
-        width: 50px;
-        height: auto;
-    }
-
-    #tech-h2 {
-        margin-top: 1000px;
-    }
-
-    #tech-h2-text {
-        font-size: 56px;
-    }
-
-    .block {
-        margin-bottom: 100px;
-        width: 100%;
-        height: 85%;
-    }
-
-    .block .tech-icon {
-        width: 40%;
-        height: auto;
-    }
-
-    .block p {
-        font-size: 56px;
-    }
-
-    .block ul li {
-        font-size: 46px;
-    }
-
-    .home-box {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    #home-box-text {
-        margin-bottom: 20px;
-    }
-
-    .project-box {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .image-container {
-        margin-bottom: 10px;
-    }
-
-    .projects {
-        margin-bottom: -600px;
-    }
-
-    .project-box-info {
-        margin-left: 165px;
-        width: 90%;
-    }
-
-    #image-div img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    #image-div,
-    #list-div,
-    .dropdown {
-        flex: 1 1;
-        width: 500px;
-    }
-
-    .small-lang-icon {
-        margin-bottom: -12px;
-        margin-right: 10px;
-    }
-
-    #popupBtn {
-        width: 400px;
-        float: left;
-        display: inline;
-        background-color: #fff;
-    }
-
-    .project-box-info p {
-        font-size: 42px;
-        line-height: 50px;
-    }
-
-    .project-title {
-        font-size: 86px;
-    }
-
-    #wvd-logo {
-        width: 100px;
-        margin-left: 35px;
-        margin-right: -20px;
-    }
-
-    .mobile-hamburger-menu {
-        display: flex;
-        margin-top: 15px;
-        margin-left: 50px;
-        border: none;
-        background-color: #fff;
-        align-items: center;
-        text-align: center;
-    }
-
-    button#hamburger-button.mobile-hamburger-menu {
-        width: 20px;
-    }
-
-    .dropdown-content {
-        width: 300px;
-    }
-
-    .dropdown-content a {
-        height: 80px;
-        background-color: #fff;
-        color: #000;
-        font-size: 32px;
-    }
-
-    div#list-div.navigation-holder {
-        width: 20px;
-    }
-
-    #directory-ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #directory-list.show #directory-ul {
-        display: flex;
-        background-color: #fff;
-    }
-
-    .mobile-hamburger-menu:hover #directory-ul {
-        display: flex;
-    }
-
-    div.dropdown {
-        text-align: center;
-    }
-
-    #directory-list {
-        display: flex;
-        align-items: center;
-    }
-
-    .dropdown {
-        align-content: end;
-        text-align: left;
-    }
-
-    #job-title {
-        text-align: center;
-        margin-left: 20px;
-    }
-
-    #directory-ul a {
-        height: 90px;
-        text-align: center;
-        margin: 10px 0;
     }
 }
