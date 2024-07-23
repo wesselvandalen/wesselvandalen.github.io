@@ -710,13 +710,16 @@ body {
 }
 
 @media screen and (max-width: 1920px) { /* Laptop */
+    /* Nav */
+    .navbar {
+        margin: 0;
+    }
 
-    header .header-content {
-        width: 82%;
+    .container {
+        max-width: 82vw;
     }
 
     /* Home page */
-
     #home-page {
         display: flex;
         justify-content: center;
@@ -730,47 +733,31 @@ body {
         width: 85%; /* width of home screen */
     }
 
-    #home-text-top {
-        font-size: 18px;
-    }
-
-    #home-text-title {
-        font-size: 46px;
-    }
-
-    #home-text-description {
-        width: 90%;
-        font-size: 20px;
-    }
-
-    .form {
-        justify-content: center;
-        align-items: center;
-        margin-bottom: -15px;
-        width: 19rem;
-        height: 19rem;
-    }
-
-    /* About me */
-
-    .about-content {
-        width: 85%;
-    }
-
     /* Skills */
 
-    .skills-content {
-        width: 85%;
+    .skill-card {
+        min-width: 78vw;
+        margin: 0;
+    }
+
+    #skill-chapter {
+        margin-left: -200px;
     }
 
     /* Projects */
 
-    .projects-container {
-        width: 85%;
+    #projects {
+        margin-top: -300px;
+        margin-bottom: 80px;
     }
 
-    footer .footer-content {
-        width: 85%; !important;
+    #project-chapter {
+        margin-left: -200px;
+    }
+
+    .projects-wrapper {
+        min-width: 84vw;
+        margin-left: 10px;
     }
 }
 
