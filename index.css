@@ -312,6 +312,19 @@ body {
     gap: 30px;
 }
 
+.social-container a {
+    padding: 5px;
+}
+
+.social-container a img {
+    margin-top: 2px;
+}
+
+.social-container a:hover {
+    background-color: #f4f4f4;
+    border-radius: 7px;
+}
+
 /* Personal text block */
 
 .section-card {
