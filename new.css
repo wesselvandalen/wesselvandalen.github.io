@@ -78,6 +78,28 @@ nav ul li a {
     line-height: 20px; /* Vertically centers the text */
 }
 
+@media screen and (max-width: 1170px) {
+    header {
+        height: 60px;
+    }
+
+    .header-content {
+        width: 95%;
+    }
+
+    .branding h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-content nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    .social-links ul li a {
+        font-size: 1.5rem;
+    }
+}
+
 /* W SCREEN */
 
 .main-screen-holder {
@@ -229,6 +251,62 @@ nav ul li a {
     }
 }
 
+@media screen and (max-width: 1170px) {
+
+    .welcome-message-container {
+        margin-bottom: 150px;
+    }
+
+    .welcome-message-container img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .welcome-message-text-container {
+        margin-top: 6px;
+        height: 120px;
+    }
+
+    .welcome-message-text-container p {
+        font-size: 3.5rem;
+        margin-top: 35px;
+    }
+
+    .flex-balk h1 {
+        font-size: 7rem;
+    }
+
+    .flex-balk {
+        margin-top: -70px;
+        margin-bottom: -120px;
+    }
+
+    .flex-balk-text-block-left {
+        font-size: 2rem;
+        margin-top: 90px;
+    }
+
+    .flex-balk-text-block-right {
+        font-size: 2rem;
+        margin-top: 90px;
+    }
+
+    .quote-balk {
+        width: 100%;
+    }
+
+    .quote-balk-content {
+        width: 90%;
+    }
+
+    .quote-balk-content p {
+        margin-top: 180px;
+        line-height: 4.5rem;
+        font-size: 3.5rem;
+    }
+
+}
+
 /* TECH STACK */
 
 .tech-stack {
@@ -351,6 +429,30 @@ nav ul li a {
     }
 }
 
+@media screen and (max-width: 1170px) {
+    .tech-stack-container h2 {
+        font-size: 3rem;
+    }
+
+    .tech-stack-container p {
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    .tech-stack-container {
+        width: 100%;
+    }
+
+    .logos {
+        width: 80%;
+    }
+
+    .logos-container img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 /* PROJECTS */
 
 .project-container {
@@ -417,6 +519,24 @@ nav ul li a {
     margin: 0;
     font-size: 1em;
     color: #BBBBBB;
+}
+
+@media screen and (max-width: 1170px) {
+    .project-container h2 {
+        font-size: 3rem;
+    }
+
+    .project-title p {
+        font-size: 2.5rem;
+    }
+
+    .project-details h3 {
+        font-size: 2.5rem;
+    }
+
+    .project-details p {
+        font-size: 1.5rem;
+    }
 }
 
 /* FOOTER */
@@ -502,6 +622,34 @@ nav ul li a {
     font-size: 14px;
 }
 
+@media screen and (max-width: 1170px) {
+
+    .left .logo {
+        font-size: 2.5rem;
+    }
+
+    .center h3 {
+        font-size: 2.25rem;
+    }
+
+    .right h3 {
+        font-size: 2.25rem;
+    }
+
+    .center nav a {
+        font-size: 2rem;
+    }
+
+    .right a {
+        font-size: 2rem;
+    }
+
+    .right a img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
 /* BELOW FOOTER */
 
 .below-footer-container {
@@ -522,4 +670,15 @@ nav ul li a {
 .location-container {
     width: 50%;
     text-align: right;
+}
+
+@media screen and (max-width: 1170px) {
+
+    .copyright-container p {
+        font-size: 1.5rem;
+    }
+
+    .location-container p {
+        font-size: 1.5rem;
+    }
 }
