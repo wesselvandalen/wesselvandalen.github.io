@@ -13,6 +13,7 @@ function calculateAge() {
 }
 
 function renderText() {
+    //document.getElementById('footer-rights').innerHTML = `&copy; ${new Date().getFullYear()} Wessel. All rights reserved.`;
     document.getElementById('about-description').innerHTML =
         `Heisann! *Heisann is Noors voor hallo<br><br>
         Mijn naam is Wessel, ik ben ${calculateAge()} jaar oud en ik ben geboren in Houten, Nederland.
@@ -30,4 +31,28 @@ document.addEventListener('DOMContentLoaded', () => {
         const clone = slide.cloneNode(true);
         slideTrack.appendChild(clone);
     });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const scroller = document.querySelector(".scroller");
+    const scrollerInner = scroller.querySelector(".scroller-inner");
+
+    const speed = scroller.getAttribute("data-speed");
+    const direction = scroller.getAttribute("data-direction");
+
+    let animationDuration = 20; // Default speed
+
+    if (speed === "fast") {
+        animationDuration = 10;
+    } else if (speed === "slow") {
+        animationDuration = 30;
+    }
+
+    scrollerInner.style.animationDuration = `${animationDuration}s`;
+
+    if (direction === "right") {
+        scrollerInner.style.animationName = "scrollReverse";
+    } else {
+        scrollerInner.style.animationName = "scroll";
+    }
 });
