@@ -21,3 +21,13 @@ function renderText() {
         Ik ga graag naar het bos met mijn hond Rowdy (Golden Retriever), vind het leuk om te schaken, train graag een paar keer per week in de sportschool, game regelmatig met vrienden en houdt erg veel van Noors (taal, cultuur, etc.). 
        `;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slideTrack = document.querySelector('.slide-track');
+    const slides = Array.from(slideTrack.children);
+
+    slides.forEach(slide => {
+        const clone = slide.cloneNode(true);
+        slideTrack.appendChild(clone);
+    });
+});
