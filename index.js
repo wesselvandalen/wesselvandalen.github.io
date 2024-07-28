@@ -13,7 +13,7 @@ function calculateAge() {
 }
 
 function renderText() {
-    //document.getElementById('footer-rights').innerHTML = `&copy; ${new Date().getFullYear()} Wessel. All rights reserved.`;
+    document.getElementById('footer-rights').innerHTML = `&copy; ${new Date().getFullYear()} Wessel. All rights reserved.`;
     document.getElementById('about-description').innerHTML =
         `Heisann! *Heisann is Noors voor hallo<br><br>
         Mijn naam is Wessel, ik ben ${calculateAge()} jaar oud en ik ben geboren in Houten, Nederland.
