@@ -47,6 +47,17 @@ body {
     }
 }
 
+@media screen and (max-width: 1170px) {
+    .main-screen-container {
+        margin-top: -230px;
+        width: 90%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 columns of equal width */
+        grid-template-rows: 50% 35% 35%; /* 3 rows with automatic height based on content */
+    }
+}
+
 /* PROFILE CARD */
 
 .profile-card {
@@ -201,6 +212,53 @@ body {
     }
 }
 
+@media screen and (max-width: 1170px) {
+    .profile-card-container {
+        grid-column: 1 / 3; /* Span across both columns */
+        grid-row: 1; /* Occupy the first row */
+    }
+
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro p {
+        font-size: 1.225rem;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .social-icons a {
+        margin-left: 25px;
+        margin-right: 5px;
+        padding: 18px 10px 4px 10px
+    }
+
+    .content {
+        margin-top: -140px;
+    }
+
+    .content h2 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.5rem;
+    }
+
+    .cv-container a {
+        font-size: 1.5rem;
+    }
+}
+
 /* PHOTOS CARD */
 
 .photos-card {
@@ -270,6 +328,17 @@ body {
     }
 }
 
+@media screen and (max-width: 1170px) {
+    .photos-card-container {
+        grid-column: 1; /* First column */
+        grid-row: 2; /* Second row */
+    }
+
+    .photos-card-img-container p {
+        font-size: 1.225rem;
+    }
+}
+
 /* STATS CARD */
 
 .stats-card {
@@ -309,7 +378,8 @@ body {
 .stats-item {
     display: inline-block;
     align-items: flex-start;
-    padding: 5px;
+    padding: 7px;
+    margin: 2px;
 }
 
 .stats-item p {
@@ -332,7 +402,36 @@ body {
 
 @media screen and (max-width: 1920px) {
     .stats-item img {
-        margin-left: -125px;
+        margin-left: -145px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .stats-card-container {
+        grid-column: 2; /* Second column */
+        grid-row: 2; /* Second row */
+    }
+
+    .stats-title-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .stats-item img {
+        width: 35px;
+        height: 35px;
+        margin-left: -180px;
+    }
+
+    .stats-item p {
+        font-size: 1.5rem;
+    }
+
+    .stats-item {
+        padding: 6px;
+    }
+
+    .stats-item-container {
+        margin: 25px -60px 25px 30px;
     }
 }
 
@@ -342,7 +441,7 @@ body {
     background-color: rgba(0, 0, 0, .92);
     backdrop-filter: saturate(180%) blur(20px);
     grid-column: 1;
-    height: 81%;
+    height: 84%;
     grid-row: 2;
     background-color: #5e5e5e;
     padding: 20px;
@@ -375,7 +474,7 @@ body {
 .bottom-card-part {
     display: flex;
     position: absolute;
-    margin-top: 120px;
+    margin-top: 155px;
 }
 
 .next-up-card h2 {
@@ -396,6 +495,7 @@ body {
     width: 30px;
     height: 30px;
     z-index: 2;
+    margin-top: -3px;
     filter: brightness(0) invert(1);
 }
 
@@ -410,7 +510,7 @@ body {
     }
 
     .bottom-card-part {
-        margin-top: 140px;
+        margin-top: 160px;
     }
 
     .next-up-card h2 {
@@ -420,6 +520,29 @@ body {
 
     .bottom-card-part h5 {
         font-size: 1rem;
+        margin-top: 4px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .next-up-card-container {
+        grid-column: 1; /* First column */
+        grid-row: 3; /* Third row */
+    }
+
+    .bottom-card-part {
+        position: absolute;
+        margin-top: 200px;
+    }
+
+    .bottom-card-part h5 {
+        font-size: 1.4rem;
+    }
+
+    .bottom-card-part img {
+        width: 30px;
+        height: 30px;
+        margin-top: 0;
     }
 }
 
@@ -503,7 +626,6 @@ body {
 }
 
 .earnings {
-    opacity: .6;
     margin-bottom: -17px;
     font-size: .875rem;
 }
@@ -517,7 +639,31 @@ body {
     .finance-graph-container img {
         width: 100%;
     }
+}
 
+@media screen and (max-width: 1170px) {
+    .finance-container {
+        grid-column: 2; /* Second column */
+        grid-row: 3; /* Third row */
+        height: 95%;
+    }
+
+    .finance-graph-container img {
+        width: 80%;
+    }
+
+    .finance-title-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .finance-title-container img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .information-wrapper p {
+        font-size: 1.225rem;
+    }
 }
 
 /* TECH STACK */
@@ -551,8 +697,8 @@ body {
 }
 
 .tech-stack-row img {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     margin-right: 10px;
     margin-left: 10px;
     width: 40px;
@@ -636,7 +782,7 @@ body {
 }
 
 .project-inner-content {
-    width: 65vw;
+    width: 62vw;
 }
 
 .project-element-a {
@@ -712,12 +858,11 @@ body {
 
 @media screen and (max-width: 1920px) {
     .projects-container {
-        margin-top: 200px;
         margin-bottom: 200px;
     }
 
     .project-element {
-        width: 80%;
+        width: 100%
     }
 
     .project-inner-content {
@@ -746,6 +891,10 @@ body {
 
     .project-inner-content {
         width: 100%;
+    }
+
+    .project-element {
+        width: 80%;
     }
 }
 
