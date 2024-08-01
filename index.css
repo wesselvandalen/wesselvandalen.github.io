@@ -370,6 +370,12 @@ body {
     font-size: 1.225rem;
 }
 
+@media screen and (max-width: 1920px) {
+    .about-content {
+        width: 75vw;
+    }
+}
+
 @media screen and (max-width: 1170px) {
     .about-container {
         margin-top: 100px;
@@ -429,6 +435,12 @@ body {
 .education-info a {
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width: 1920px) {
+    .education-content {
+        width: 75vw;
+    }
 }
 
 @media screen and (max-width: 1170px) {
@@ -527,7 +539,7 @@ body {
 
 @media screen and (max-width: 1920px) {
     .tech-content {
-        width: 80%;
+        width: 75vw;
     }
 
 }
@@ -646,7 +658,7 @@ body {
 
 @media screen and (max-width: 1920px) {
     .projects-content {
-        width: 80vw;
+        width: 75vw;
     }
 
     .project-element {
@@ -704,6 +716,12 @@ body {
 
 .contact-info p {
     font-size: 1.25rem;
+}
+
+@media screen and (max-width: 1920px) {
+    .contact-content {
+        width: 75vw;
+    }
 }
 
 @media screen and (max-width: 1170px) {
