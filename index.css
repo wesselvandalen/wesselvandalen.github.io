@@ -329,7 +329,7 @@ body {
 }
 
 .about-content {
-    width: 80vw;
+    width: 60vw;
 }
 
 .about-info {
@@ -364,7 +364,10 @@ body {
     line-height: 20px; /* Vertically center text in progress bar */
     color: white;
     border-radius: 40px;
+}
 
+.progress-container p {
+    font-size: 1.225rem;
 }
 
 @media screen and (max-width: 1170px) {
@@ -410,7 +413,7 @@ body {
 }
 
 .education-content {
-    width: 80vw;
+    width: 60vw;
 }
 
 .education-info img {
@@ -572,7 +575,7 @@ body {
 }
 
 .projects-content {
-    width: 80%;
+    width: 60vw;
 }
 
 .project-element-a {
@@ -606,7 +609,7 @@ body {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
     color: white;
     padding: 20px 40px 20px 40px;
-    width: 70%;
+    width: 100%;
 }
 
 .project-title {
@@ -696,7 +699,7 @@ body {
 }
 
 .contact-content {
-    width: 80vw;
+    width: 60vw;
 }
 
 .contact-info p {
