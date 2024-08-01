@@ -278,7 +278,7 @@ body {
     }
 
     .intro-image-container {
-        margin: 600px 0 50px 0;
+        margin: -200px 0 50px 0;
         width: 100%;
     }
 
@@ -369,7 +369,7 @@ body {
 
 @media screen and (max-width: 1170px) {
     .about-container {
-        margin-top: 800px;
+        margin-top: 100px;
     }
 
     .about-content {
@@ -377,7 +377,7 @@ body {
     }
 
     #about {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .about-info-container {
@@ -429,6 +429,9 @@ body {
         width: 90vw;
     }
 
+    .education-container {
+        margin-top: -300px;
+    }
 }
 
 /* tech */
@@ -524,7 +527,7 @@ body {
 
 @media screen and (max-width: 1170px) {
     .tech-container {
-        margin: 400px 0 0 0;
+        margin: -900px 0 0 0;
     }
 
     .tech-content {
@@ -646,7 +649,7 @@ body {
 
 @media screen and (max-width: 1170px) {
     .projects-container {
-        margin: 100px 0 75px 0;
+        margin: -700px 0 75px 0;
     }
 
     .projects-content {
@@ -697,7 +700,6 @@ body {
 }
 
 @media screen and (max-width: 1170px) {
-
     .contact-info p {
         font-size: 2rem;
     }
@@ -706,10 +708,14 @@ body {
         width: 90vw;
     }
 
+    .contact-container {
+        margin-top: -1100px;
+        margin-bottom: -300px;
+    }
+
     .intro-social-container {
         display: flex;
     }
-
 }
 
 /* footer */
