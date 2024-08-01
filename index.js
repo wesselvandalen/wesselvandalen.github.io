@@ -5,8 +5,12 @@ addEventListener("DOMContentLoaded", (event) => {
         document.getElementById('about').innerHTML = `
             Hei hei! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands. 
             <br><br>
-            My hobbies are learning Norwegian, work out in the gym, hangout / play games with friends, 
-            play chess & go on a hike in the forest with my dog (Rowdy, Golden Retriever).
+            My hobbies are:<br>
+            <img src="assets/icons/norwegian.png" alt="Norwegian"> Learning Norwegian<br>
+            🏅 Work out in the gym<br>
+            🎮 Hangout / game with friends<br>
+            <img src="assets/icons/chess.png" alt="Chess"> Play chess<br>
+            🐶 Go on a hike in the forest with my dog (Rowdy, Golden Retriever)
         `;
     }, 100);
 });

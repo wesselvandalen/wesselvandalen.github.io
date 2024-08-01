@@ -17,6 +17,7 @@ body {
 /* header */
 
 .navbar {
+    z-index: 2;
     background-color: #ffffff; /* bg-white */
     border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
     margin-left: -50px;
@@ -302,20 +303,11 @@ body {
     }
 
     .description {
-        font-size: 2.750rem;
+        font-size: 2.75rem;
     }
 
     .resume {
         font-size: 2.5rem;
-    }
-
-    .intro-social-container {
-        margin-top: 50px;
-    }
-
-    .intro-social-container img {
-        width: 175px;
-        margin-right: 30px;
     }
 }
 
@@ -370,6 +362,13 @@ body {
     font-size: 1.225rem;
 }
 
+.about-info img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: -3px;
+    margin-left: 2px;
+}
+
 @media screen and (max-width: 1920px) {
     .about-content {
         width: 75vw;
@@ -377,8 +376,14 @@ body {
 }
 
 @media screen and (max-width: 1170px) {
+    .about-info img {
+        width: 40px;
+        height: 40px;
+        margin: 0 0 0 10px;
+    }
+
     .about-container {
-        margin-top: 100px;
+        margin-top: 400px;
     }
 
     .about-content {
@@ -734,8 +739,8 @@ body {
     }
 
     .contact-container {
-        margin-top: -1100px;
-        margin-bottom: -300px;
+        margin-top: -1000px;
+        margin-bottom: -400px;
     }
 
     .intro-social-container {
@@ -767,7 +772,7 @@ body {
 
 @media screen and (max-width: 1170px) {
     .footer-content p  {
-        margin-bottom: -25px;
+        margin-bottom: -75px;
         font-size: 1.5rem;
     }
 }
