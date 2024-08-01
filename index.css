@@ -278,15 +278,15 @@ body {
     }
 
     .intro-image-container {
-        margin: -200px 0 50px 0;
+        margin: 200px 0 100px 0;
         width: 100%;
     }
 
     .form {
         justify-content: center;
         align-items: center;
-        width: 38rem;
-        height: 38rem;
+        width: 40rem;
+        height: 40rem;
     }
 
     .intro-text-container {
@@ -393,6 +393,10 @@ body {
     .progress-container {
         width: 100%;
         margin: 0;
+    }
+
+    .progress-container p {
+        font-size: 2rem;
     }
 }
 
@@ -662,23 +666,23 @@ body {
 
     .project-element {
         width: 100%;
-        margin-top: 50px;
+        padding: 30px;
     }
 
     .project-title h2 {
-        font-size: 2.225em;
+        font-size: 2.875em;
     }
 
     .project-title p {
-        font-size: 1.5rem;
+        font-size: 1.875rem;
     }
 
     .project-details-content h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .project-details-content p {
-        font-size: 1.225rem;
+        font-size: 1.875rem;
     }
 }
 
@@ -701,7 +705,7 @@ body {
 
 @media screen and (max-width: 1170px) {
     .contact-info p {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .contact-content {
@@ -715,6 +719,7 @@ body {
 
     .intro-social-container {
         display: flex;
+        justify-content: space-evenly;
     }
 }
 
@@ -741,6 +746,7 @@ body {
 
 @media screen and (max-width: 1170px) {
     .footer-content p  {
+        margin-bottom: -25px;
         font-size: 1.5rem;
     }
 }
