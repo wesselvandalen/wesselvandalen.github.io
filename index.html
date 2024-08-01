@@ -9,18 +9,30 @@
         <script src="./index.js"></script>
     </head>
     <body>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="/"><img src="assets/logo.png" alt="Logo"></a>
+                </div>
+                <div class="menu" id="navbar-default">
+                    <ul class="menu-items">
+                        <li><a href="#about-me">About me</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#tech-stack">Tech stack</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <div class="intro-container">
             <div class="intro-content">
                 <div class="intro-text-container">
                     <p class="introduction">Hei hei, my name is</p>
                     <h2 class="title">Wessel van Dalen</h2>
-                    <p class="description">I'm a Full Stack Software Developer with a Norwegian touch.</p>
+                    <p class="description" id="description"></p>
                     <a class="resume" href="files/resume.pdf" target="_blank">View my resume</a>
-                    <div class="intro-social-container">
-                        <a href="https://www.github.com/wesselvandalen/" target="_blank"><img src="assets/icons/github.png" alt="GitHub"></a>
-                        <a href="https://www.linkedin.com/in/wesselvandalen/" target="_blank"><img src="assets/icons/linkedin.png" alt="LinkedIn"></a>
-                        <a href="mailto:wesselvandalen@gmail.com"><img src="assets/icons/gmail.png" alt="Gmail"></a>
-                    </div>
                 </div>
                 <div class="intro-image-container">
                     <div class="form"></div>
@@ -28,10 +40,60 @@
             </div>
         </div>
 
-        <div class="tech-container">
+        <div class="about-container" id="about-me">
+            <div class="about-content">
+                <div class="headline">
+                    <h2><span class="headline-highlight">#</span> About me</h2>
+                </div>
+                <div class="about-info-container">
+                    <div class="about-info">
+                        <p id="about"></p>
+                    </div>
+                    <div class="progress-container">
+                        <p>Solution-oriented</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%; background-color: #91f5a2"></div>
+                        </div>
+                        <p>Communicative</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%; background-color: #91f5a2"></div>
+                        </div>
+                        <p>Perseverance</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%; background-color: #91f5a2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-container" id="education">
+            <div class="education-content">
+                <div class="headline">
+                    <h2><span class="headline-highlight">#</span> Education</h2>
+                </div>
+                <div class="education-info">
+                    <div class="project-inner-content">
+                        <div class="project-element">
+                            <div class="project-title">
+                                <h2>HBO ICT - Software Development</h2>
+                                <p>Hogeschool Utrecht</p>
+                            </div>
+                            <div class="project-details">
+                                <div class="project-details-content">
+                                    <h3>2022 - 2026</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-container" id="tech-stack">
             <div class="tech-content">
                 <div class="headline">
-                    <h2>Tech stack</h2>
+                    <h2><span class="headline-highlight">#</span> Tech stack</h2>
                 </div>
                 <div class="tech-row-container">
                     <div class="tech-row-content">
@@ -82,10 +144,10 @@
             </div>
         </div>
 
-        <div class="projects-container">
+        <div class="projects-container" id="projects">
             <div class="projects-content">
                 <div class="headline">
-                    <h2>My projects</h2>
+                    <h2><span class="headline-highlight">#</span> My projects</h2>
                 </div>
                 <a class="project-element-a" href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target="_blank">
                     <div class="project-inner-content">
@@ -119,6 +181,23 @@
                         </div>
                     </div>
                 </a>
+            </div>
+        </div>
+
+        <div class="contact-container" id="contact">
+            <div class="contact-content">
+                <div class="headline">
+                    <h2><span class="headline-highlight">#</span> Contact me</h2>
+                </div>
+                <div class="contact-info">
+                    <p>Interested in me / my work? Don't be shy to reach out to me!</p>
+                    <div class="intro-social-container">
+                        <a href="https://www.github.com/wesselvandalen/" target="_blank"><img src="assets/icons/github.png" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/wesselvandalen/" target="_blank"><img src="assets/icons/linkedin.png" alt="LinkedIn"></a>
+                        <a href="mailto:wesselvandalen@gmail.com"><img src="assets/icons/gmail.png" alt="Gmail"></a>
+                        <a href="https://www.discordapp.com/users/bjarndal" target="_blank"><img src="assets/icons/discord.png" alt="Discord"></a>
+                    </div>
+                </div>
             </div>
         </div>
 
