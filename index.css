@@ -378,7 +378,7 @@ body {
     .about-info img {
         width: 40px;
         height: 40px;
-        margin: 0 0 -4px 10px;
+        margin: 0 0 -2px 10px;
     }
 
     .about-container {
@@ -772,6 +772,8 @@ body {
 @media screen and (max-width: 1170px) {
     #footer-rights  {
         margin-bottom: -125px;
+        margin-top: 0;
         font-size: 1.5rem;
+        padding-bottom: 0;
     }
 }
