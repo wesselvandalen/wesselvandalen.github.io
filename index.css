@@ -257,7 +257,7 @@ body {
     }
 
     .intro-social-container img {
-        width: 100px;
+        width: 200px;
         margin-right: 30px;
     }
 }
@@ -740,6 +740,10 @@ body {
     .contact-container {
         margin-top: -1000px;
         margin-bottom: -400px;
+    }
+
+    .contact-content {
+
     }
 
     .intro-social-container {
