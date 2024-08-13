@@ -1,16 +1,13 @@
 addEventListener("DOMContentLoaded", (event) => {
     setTimeout(() => {
         document.getElementById('footer-rights').innerHTML = `&copy; ${new Date().getFullYear()} Wessel. All rights reserved.`;
-        document.getElementById('description').textContent = `I'm a ${calculateAge()} year old Full Stack Software Developer with a Norwegian touch.`;
+        document.getElementById('description').textContent = `A social ${calculateAge()} year old Full Stack Software Developer with a Norwegian touch, eager to learn.`;
         document.getElementById('about').innerHTML = `
-            Hei hei! My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands. 
+            Hei hei!<br> My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands. I'm social, hard-working and serious, but always down for a laugh. 
             <br><br>
-            My hobbies are:<br>
-            <img src="assets/icons/norwegian.png" alt="Norwegian"> Learning Norwegian<br>
-            🏅 Work out in the gym<br>
-            🎮 Hangout / game with friends<br>
-            <img src="assets/icons/chess.png" alt="Chess"> Play chess<br>
-            🐶 Go on a hike in the forest with my dog (Rowdy, Golden Retriever)
+            I am a Full Stack Software Engineer specialized in front end. I have a great passion for software development, having studied the bachelor <a class="about-a" href="https://www.hu.nl/voltijd-opleidingen/hbo-ict" target="_blank">HBO ICT - Software Development</a> at the Hogeschool Utrecht (2022 - 2026).
+            <br><br>
+            My hobbies are learning Norwegian, working out in the gym, hanging out / gaming with friends, playing chess & going on a hike in the forest with my dog (Rowdy, Golden Retriever).
         `;
     }, 100);
 });
