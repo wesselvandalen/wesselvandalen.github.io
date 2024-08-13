@@ -351,6 +351,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 .about-info {
@@ -448,7 +449,7 @@ body {
 
 .tech-container {
     height: 100vh;
-    margin: 10000px 0 100px 0;
+    margin: 100px 0 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -676,7 +677,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 250px 0 100px 0;
+    margin: 50px 0 100px 0;
+}
+
+.prosjekt-container {
+    margin-top: -50px;
 }
 
 .prosjekt-content {
@@ -842,34 +847,5 @@ body {
 
     .prosjekt-tekst-container {
         width: 100%;
-    }
-}
-
-/* footer */
-
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-content p {
-    display: inline-block;
-    line-height: 1;
-    color: #27272a;
-    opacity: .6;
-    margin: 50px 0 25px 0;
-    font-size: .875rem;
-    font-weight: bold;
-    text-decoration: none;
-    padding-bottom: 10px;
-}
-
-@media screen and (max-width: 1170px) {
-    #footer-rights  {
-        margin-bottom: -125px;
-        margin-top: 0;
-        font-size: 1.5rem;
-        padding-bottom: 0;
     }
 }

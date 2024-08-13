@@ -1,6 +1,5 @@
 addEventListener("DOMContentLoaded", (event) => {
     setTimeout(() => {
-        document.getElementById('footer-rights').innerHTML = `&copy; ${new Date().getFullYear()} Wessel. All rights reserved.`;
         document.getElementById('description').textContent = `A social ${calculateAge()} year old Full Stack Software Developer with a Norwegian touch, eager to learn.`;
         document.getElementById('about').innerHTML = `
             Hei hei!<br> My name is Wessel and I'm a ${calculateAge()} year old guy from the Netherlands. I'm social, hard-working and serious, but always down for a laugh. 
