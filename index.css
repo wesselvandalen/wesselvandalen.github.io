@@ -205,7 +205,7 @@ body {
         align-items: center;
         width: 45rem;
         height: 45rem;
-        margin: 200px 0 0 60px;
+        margin: 50px 0 -20px 60px;
     }
 
     .intro-text-container {
@@ -422,7 +422,7 @@ body {
     }
 
     #about {
-        font-size: 3.5rem;
+        font-size: 3em;
     }
 
     .about-info-container {
@@ -537,6 +537,7 @@ body {
 
 .skill-block-image-container {
     display: flex;
+    width: 100%;
 }
 
 .skill-block-image-container img {
@@ -625,7 +626,7 @@ body {
 
 @media screen and (max-width: 1170px) {
     .tech-container {
-        margin: -900px 0 -200px 0px;
+        margin: -500px 0 -200px 0px;
     }
 
     .tech-content {
@@ -646,7 +647,7 @@ body {
     }
 
     .frontend, .backend, .lead {
-        margin: 25px 0;
+        margin: 50px 0;
     }
 
     .skill-block-title {
@@ -655,7 +656,7 @@ body {
     }
 
     .skill-block-description {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-bottom: 30px;
     }
 
@@ -795,7 +796,7 @@ body {
 
 @media screen and (max-width: 1170px) {
     .projects-container {
-        margin: 1200px 0 75px 0;
+        margin: 2000px 0 75px 0;
     }
 
     .projects-content {
@@ -832,6 +833,7 @@ body {
     }
 
     .prosjekt-element {
+        margin: 300px 0;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -839,6 +841,7 @@ body {
     .prosjekt-bilde-container img {
         width: 100%;
         margin-bottom: 100px;
+        margin-right: 40px;
     }
 
     .prosjekt-bilde-container {
