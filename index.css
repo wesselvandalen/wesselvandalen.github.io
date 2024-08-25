@@ -45,8 +45,9 @@ body {
 
 .introduction, .description {
     font-weight: 500;
+    opacity: .8;
     color: #27272a;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .description {
@@ -56,7 +57,7 @@ body {
 .title {
     display: inline-block;
     line-height: 1;
-    background: linear-gradient(90deg, #4FC3E9 -45%, #5ED3F7 5%, #5ED3F7 30%, #4FC3E9 55%, #4FC3E9 80%);
+    background: linear-gradient(90deg, #18baf5 -45%, #18c1f5 5%, #5ED3F7 30%, #4FC3E9 55%, #12D0F7 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 5rem;
@@ -95,11 +96,12 @@ body {
     width: 22px;
     height: 22px;
     margin-right: 15px;
-    opacity: .8;
+    filter: grayscale(100%);
 }
 
 .intro-social-links img:hover {
-    opacity: 1;
+    filter: none;
+    transform: scale(1.02);
 }
 
 .intro-social-container {
@@ -113,7 +115,7 @@ body {
 }
 
 .form {
-    background: url("assets/photo.png");
+    background: url("assets/image_67225857.JPG");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -125,6 +127,18 @@ body {
 
 .hand {
     width: 25px; height: 25px; margin: 0 5px -4px 0;
+}
+
+.resume-button-a {
+    padding: 0 5px;
+    color: black;
+    opacity: .8;
+    text-decoration: none;
+}
+
+.resume-button-a:hover {
+    cursor: pointer;
+    transform: scale(1.02);
 }
 
 @keyframes animate {
@@ -288,7 +302,7 @@ body {
 }
 
 .about-a {
-    font-weight: 600;
+    font-style: italic;
     color: #27272a;
     text-decoration: none;
 }
@@ -531,7 +545,7 @@ body {
     border-radius: 16px;
     box-shadow: 0 2px 10px #0000001a;
     width: 50%;
-    padding: 5px 20px 20px 20px;
+    padding: 0 20px 15px 20px;
     margin: 10px;
 }
 
@@ -626,7 +640,7 @@ body {
 
 @media screen and (max-width: 1170px) {
     .tech-container {
-        margin: -500px 0 -200px 0px;
+        margin: -500px 0 -200px 0;
     }
 
     .tech-content {
@@ -698,6 +712,8 @@ body {
 }
 
 .prosjekt-dates {
+    font-size: 15px;
+    opacity: .8;
     color: #27272a;
 }
 
@@ -714,7 +730,7 @@ body {
 
 .prosjekt-name {
     font-weight: 700;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     color: #303034;
     text-decoration: none;
 }
