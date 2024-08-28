@@ -540,7 +540,7 @@ body {
 .skill-block {
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
-    background: color-mix(in srgb, #e2e8f0 60%, transparent);
+    background: color-mix(in srgb, #e2e8f0 20%, transparent);
     border: 1px solid color-mix(in srgb, #8cb4e9 40%, transparent);
     border-radius: 16px;
     box-shadow: 0 2px 10px #0000001a;
@@ -697,24 +697,66 @@ body {
 
 .prosjekt-container {
     margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .prosjekt-content {
-    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 30px;
+    margin-top: 100px;
+    width: 55vw;
+}
+
+.prosjekt-element-container {
+    display: flex;
+    justify-content: center;
+}
+
+.prosjekt-tekst-container {
+    width: 100%;
+}
+
+.prosjekt-name-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.small-arrow {
+    width: 30px;
+    height: 30px;
+    rotate: 270deg;
+}
+
+.small-arrow:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .prosjekt-element {
-    width: 100%;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: color-mix(in srgb, #e2e8f0 20%, transparent);
+    border: 1px solid color-mix(in srgb, #8cb4e9 40%, transparent);
+    border-radius: 16px;
+    box-shadow: 0 2px 10px #0000001a;
     display: flex;
     padding: 20px 25px 20px 25px;
-    margin: 100px 0 100px 0;
-    border-radius: 15px;
+    width: 90%;
+    margin: 25px 0;
 }
 
-.prosjekt-dates {
-    font-size: 15px;
-    opacity: .8;
+.prosjekt-info-a {
     color: #27272a;
+    text-decoration: #12D0F7 underline;
+}
+
+.prosjekt-info-a:hover {
+    cursor: pointer;
+    color: black;
 }
 
 .prosjekt-info {
@@ -731,41 +773,31 @@ body {
 .prosjekt-name {
     font-weight: 700;
     font-size: 1.5rem;
+    margin: 0;
     color: #303034;
-    text-decoration: none;
-}
-
-.prosjekt-name:hover {
-    text-decoration: #61DAFB underline;
 }
 
 .projects-content {
     width: 60vw;
 }
 
-.prosjekt-tekst-container {
-    width: 70%;
+.prosjekt-role-container {
+    display: flex;
 }
 
-.prosjekt-bilde-container {
-    float: right;
-    width: 30%;
+.prosjekt-stack-container {
+    margin: 20px 10px -5px 0;
 }
 
-.prosjekt-bilde-container img {
-    width: 60%;
-    border-radius: 15px;
-    float: right;
+.small-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 0;
+    filter: grayscale(10);
 }
 
-.prosjekt-bilde-container img:hover {
-    transform: scale(1.02);
-}
-
-.now-span {
-    color: #bf8dff;
-    padding: 0 5px;
-    border: solid 2px #fbfbfb;
+.small-icon:hover {
+    filter: none;
 }
 
 @media screen and (max-width: 1920px) {
@@ -784,7 +816,7 @@ body {
     }
 
     .projects-content {
-        width: 75vw;
+        width: 80vw;
     }
 
     .prosjekt-content {
@@ -792,11 +824,11 @@ body {
     }
 
     .prosjekt-element {
-        width: 100%;
+        width: 80%;
     }
 
     .prosjekt-tekst-container {
-        width: 65%;
+        width: 100%;
     }
 
     .prosjekt-bilde-container {
@@ -815,16 +847,25 @@ body {
         margin: 2000px 0 75px 0;
     }
 
-    .projects-content {
+    .prosjekt-content {
+        grid-template-columns: 1fr;
         width: 95vw;
+        gap: 0;
     }
 
     .headline h2 {
         font-size: 4rem;
     }
 
-    .project-element {
+    .small-arrow {
+        width: 60px;
+        height: 60px;
+        margin-top: 15px;
+    }
+
+    .prosjekt-element {
         width: 100%;
+        margin: 200px 0 200px 0;
         padding: 30px;
     }
 
@@ -836,32 +877,23 @@ body {
         font-size: 4rem;
     }
 
-    .prosjekt-role {
-        font-size: 2rem;
+    .prosjekt-element-container {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
-    .prosjekt-dates {
-        font-size: 2rem;
+    .prosjekt-role {
+        font-size: 2.5rem;
+    }
+
+    .prosjekt-stack-container img {
+        width: 50px;
+        height: 50px;
+        margin: 20px 20px 0 0;
     }
 
     .prosjekt-info {
         font-size: 2.5rem;
-    }
-
-    .prosjekt-element {
-        margin: 300px 0;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .prosjekt-bilde-container img {
-        width: 100%;
-        margin-bottom: 100px;
-        margin-right: 40px;
-    }
-
-    .prosjekt-bilde-container {
-        width: 100%;
     }
 
     .prosjekt-tekst-container {
