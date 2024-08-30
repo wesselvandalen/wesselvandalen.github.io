@@ -41,3 +41,23 @@
     background-color: rgba(0, 0, 0, 0.1);
     margin: 0 0 40px 0; 
 }
+
+
+@media screen and (max-width: 1920px) {
+    .work-container {
+        height: 100vh;
+    }
+
+    .work-title {
+        margin-top: 5px;
+    }
+    
+    .work-description {
+        margin-top: -30px;
+    }
+
+    .work-blocks {
+        margin-top: 75px;
+    }
+    
+}
