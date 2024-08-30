@@ -41,3 +41,17 @@
 .language-name-span {
     color: #007bff;
 }
+
+@media screen and (max-width: 1920px) {
+    .language-inner-container {
+        width: 100%;
+    }
+
+    .language-number-name-container {
+        width: 100%;
+    }
+
+    .language-name-years-container {
+        width: 80%;
+    }
+}

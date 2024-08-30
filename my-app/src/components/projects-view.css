@@ -32,3 +32,15 @@
 .projects-content {
     max-width: 1400px;
 }
+
+@media screen and (max-width: 1920px) {
+    .projects-view-container {
+        height: 100vh;
+        margin-top: 0;
+        margin-bottom: 1500px;
+    }
+
+    .projects-view-container .projects-view-description {
+        margin-top: -40px;
+    }
+}
