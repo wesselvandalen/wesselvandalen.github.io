@@ -1,0 +1,152 @@
+.main-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.hero h2 {
+    width: 55vw;
+    margin-top: -200px;
+    font-size: 4.5rem;
+    text-align: center;
+    font-weight: 650;
+    color: #27272a;
+}
+
+.hero .highlight {
+    color: #007bff;
+}
+
+.buttons {
+    margin-top: -350px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn svg {
+    width: 22px;
+    height: 22px;
+    rotate: 180deg;
+    margin: 0 0 -5px 8px;
+    transition: transform 0.3s ease; /* Smooth scale transition */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    animation: fall-in 1.2s ease-out forwards; /* Animation for falling effect */
+}
+
+.btn-primary:hover {
+    background-color: #0271e8;
+    cursor: pointer;
+}
+
+.btn-primary:hover, .btn svg {
+    transform: scale(1.02);
+}
+
+.btn-secondary {
+    animation: fall-in 1.5s ease-out forwards; /* Animation for falling effect */
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.btn-secondary:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+@keyframes fall-in {
+    0% {
+        transform: translateY(-100px); /* Start 100px above */
+        opacity: 0; /* Invisible */
+    }
+    100% {
+        transform: translateY(0); /* End at the original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .main-text-container {
+        height: 30vh;
+    }
+
+    .hero h2 {
+        margin-top: 125px;
+        width: 70vw;
+        font-size: 2.875rem;
+    }
+
+    .buttons {
+        margin-top: 75px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+}
+
+/* Image display */
+
+.main-image-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between the images */
+    padding: 20px;
+    margin-top: -100px;
+}
+
+.main-image-content {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    overflow: hidden; /* Ensures that any overflow is hidden */
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}
+
+.first-image {
+    flex: 1; /* This takes 1 part out of the total 3 */
+}
+
+.second-image {
+    flex: 2; /* This takes 2 parts out of the total 3 */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    border-radius: 10px; /* Optional: adds rounded corners to the images */
+}
+
+@media screen and (max-width: 1920px) {
+    .main-image-content {
+        margin-top: -200px;
+        width: 100vw;
+    }
+
+    .image {
+        width: 70%;
+    }
+}

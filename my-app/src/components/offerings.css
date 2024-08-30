@@ -1,0 +1,120 @@
+.offerings-view-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin-top: 400px;
+}
+
+.offerings-view-content {
+    width: 60vw;
+    text-align: center;
+}
+
+.offerings-view-title {
+    font-size: 3.5rem;
+}
+
+.offerings-view-description {
+    font-size: 18px;
+    margin-top: -35px;
+    margin-bottom: 40px;
+}
+
+/* Skill block */
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    margin: 10px 30px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Add some space between the grid items */
+}
+
+.skill-row {
+    display: flex;
+    align-items: flex-start; /* Align items to the start */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white; /* Optional: Add a background color */
+    width: 100%;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: color-mix(in srgb, #e2e8f0 5%, transparent);
+    border: 1px solid color-mix(in srgb, #8cb4e9 5%, transparent);
+    color: #27272a;
+    min-height: 250px; /* Set a minimum height to make sure all blocks are at least this tall */
+    height: 100%; /* Ensure the blocks fill the available height */
+}
+
+.skill-row:hover {
+    animation: subtle-swing 2s infinite;
+    transition: transform 0.2s; /* Smooth transition for the shake effect */
+}
+
+@keyframes subtle-swing {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-1deg); }
+    50% { transform: rotate(1deg); }
+    75% { transform: rotate(-1deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.skill-logo-background {
+    background-color: #F4F7FF;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Space between the icon and text */
+    flex-shrink: 0; /* Prevent the logo background from shrinking */
+}
+
+.skill-logo-background svg {
+    color: #3961FE;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+}
+
+.skill-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+}
+
+.skill-title-container h3 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    font-weight: 550;
+}
+
+.skill-title-container p {
+    font-size: 17px;
+    margin-top: -10px;
+}
+
+.skill-images-container {
+    display: flex;
+    gap: 10px; /* Reduced gap for better spacing */
+    flex-wrap: wrap; /* Allows the icons to wrap if there isn't enough space */
+    margin-top: 10px; /* Space between the description and icons */
+}
+
+.skill-images-container img {
+    width: 25px;
+    height: 25px;
+    padding: 5px; /* Optional: Add some padding to the icons */
+}

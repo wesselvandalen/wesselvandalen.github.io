@@ -1,0 +1,43 @@
+.language-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.language-number-name-container {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.language-name-years-container {
+    flex-direction: column;
+    justify-content: start;
+    width: 60%;
+}
+
+.language-name-years-container .language-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.language-name-years-container .language-years {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: -10px;
+}   
+
+.language-proficiency-container {
+    width: 30%;
+    text-align: right;
+}
+
+.language-proficiency-container .language-proficiency-p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.language-name-span {
+    color: #007bff;
+}

@@ -1,0 +1,92 @@
+.projects-view-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px 0 500px 0;
+}
+
+.projects-view-content {
+    height: 80vh;
+    width: 80vw;
+    text-align: center;
+}
+
+.projects-view-title {
+    font-size: 3.5rem;
+}
+
+.projects-view-description {
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+.projects-container {
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects-content {
+    max-width: 1400px;
+}
+
+.project-block-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1400px; /* Limit the width for better alignment */
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.project-block-img-container {
+    width: 100%; /* Make the image responsive within its container */
+    max-width: 400px; /* Max width for image */
+    margin: 0 40px 0 0;
+}
+
+.project-block-img-container img {
+    object-fit: cover; /* Ensures the image covers its container nicely */
+    border-radius: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.project-block-information {
+    padding: 0;
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.project-block-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.project-block-description {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.project-buttons-container {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    left: 0;
+    bottom: 0;
+}
+
+.btn {
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
