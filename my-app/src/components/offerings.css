@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 60vh;
-    margin-top: 400px;
+    margin-top: 300px;
 }
 
 .offerings-view-content {
@@ -117,4 +117,12 @@
     width: 25px;
     height: 25px;
     padding: 5px; /* Optional: Add some padding to the icons */
+}
+
+@media screen and (max-width: 1920px) {
+
+    .offerings-view-content {
+        width: 80vw;
+    }
+
 }

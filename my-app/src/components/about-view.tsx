@@ -11,7 +11,7 @@ function AboutView() {
     }
 
     return (
-        <div className='about-view-container'>
+        <div className='about-view-container' id='contact'>
             <div className="about-view-content">
                 <div className="about-social-title-container">
                     <div className="about-title-container">

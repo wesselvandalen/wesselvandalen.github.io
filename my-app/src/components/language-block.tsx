@@ -26,6 +26,7 @@ function LanguageBlock(props: any) {
     return (
         <div className="language-inner-container">
             <div className="language-container">
+                
                 <div className="language-number-name-container">
                     <div className="language-number-container">
                         <p>{props.number}</p>
@@ -38,6 +39,7 @@ function LanguageBlock(props: any) {
                 <div className="language-proficiency-container">
                     <p className='language-proficiency-p'>{props.level}</p>
                 </div>
+                
             </div>
         </div>
     );
