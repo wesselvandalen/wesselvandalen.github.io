@@ -63,7 +63,6 @@
 .btn-primary:hover {
     background: linear-gradient(to right, #2c90fc, #0660c0);
     cursor: pointer;
-    transform: scale(1.02);
 }
 
 .btn-primary:hover, .btn svg {
@@ -99,6 +98,10 @@
         margin-bottom: 200px;
     }
 
+    .main-text-container p {
+        margin: -20px 0 0 0;
+    }
+
     .hero h2 {
         margin-top: 0;
         width: 70vw;
@@ -106,7 +109,7 @@
     }
 
     .buttons {
-        margin-top: -220px
+        margin-top: -180px
     }
 
     .btn {
@@ -156,7 +159,7 @@
 
 @media screen and (max-width: 1920px) {
     .main-image-content {
-        margin-top: -75px;
+        margin-top: -85px;
         width: 100vw;
     }
 

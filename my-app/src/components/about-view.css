@@ -145,3 +145,22 @@ footer {
     -webkit-text-fill-color: transparent;
     font-weight: 800;
 }
+
+@media screen and (max-width: 1920px) {
+
+    footer {
+        height: 65vh;
+    }
+
+    .footer-content {
+        width: 85%;
+    }
+
+    .footer-title {
+        margin-top: 10px;
+    }
+
+    .first-footer-content p {
+        margin-top: 0;
+    }
+}

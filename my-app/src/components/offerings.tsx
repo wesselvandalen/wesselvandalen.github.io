@@ -25,6 +25,7 @@ import powershellIcon from '../assets/icons/powershell.png';
 import inteallijIDEAIcon from '../assets/icons/inteallij_idea.png';
 import sql from '../assets/icons/sql.png';
 import vsc from '../assets/icons/vsc.png';
+import adobeExpressIcon from '../assets/icons/adobe_express.png';
 
 function Offerings() {
 
@@ -129,6 +130,7 @@ function Offerings() {
                                 <div className="skill-images-container">
                                     <img src={canvaIcon} alt="Canva" title="Canva"/>
                                     <img src={figmaIcon} alt="Figma" title="Figma"/>
+                                    <img src={adobeExpressIcon} alt="Adobe Express" title="Adobe Express"/>
                                 </div>
                             </div>
                         </div>

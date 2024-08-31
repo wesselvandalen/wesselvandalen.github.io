@@ -42,10 +42,24 @@
 }
 
 @media screen and (max-width: 1920px) {
+
+    .projects-view-content {
+        margin: 0;
+    }
+
+    .projects-content {
+        max-width: none;
+    }
+
+    .projects-container {
+        width: 100%;
+        margin: 100px 0;
+    }
+
     .projects-view-container {
         height: 100vh;
         margin-top: 0;
-        margin-bottom: 1500px;
+        margin-bottom: 400px;
     }
 
     .projects-view-container .projects-view-description {
