@@ -1,3 +1,4 @@
+import LineDivider from './line-divider';
 import WorkBlock from './work-block';
 import './work-view.css';
 
@@ -21,7 +22,9 @@ function WorkView() {
                         type={'Internship'}
                     />
 
-                    <div className="line-divider"></div>
+                    <LineDivider
+                        dark={false}
+                    />
 
                     <WorkBlock
                         key={1}
@@ -34,7 +37,9 @@ function WorkView() {
                         type={'Internship'}
                     />
 
-                    <div className="line-divider"></div>
+                    <LineDivider
+                        dark={false}
+                    />
 
                 </div>
             </div>

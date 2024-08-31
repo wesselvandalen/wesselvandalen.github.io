@@ -1,5 +1,6 @@
 import LanguageBlock from './language-block';
 import './language-view.css';
+import LineDivider from './line-divider';
 
 function LanguageView() { 
 
@@ -22,7 +23,9 @@ function LanguageView() {
                             years={'2004-01-20'}
                         />
 
-                        <div className="line-divider"></div>
+                        <LineDivider
+                            dark={false}
+                        />
 
                         <LanguageBlock
                             key={2}
@@ -33,7 +36,9 @@ function LanguageView() {
                             years={'2015-06-15'}
                         />
 
-                        <div className="line-divider"></div>
+                        <LineDivider
+                            dark={false}
+                        />
 
                         <LanguageBlock
                             key={3}
@@ -44,7 +49,9 @@ function LanguageView() {
                             years={'2019-08-15'} 
                         />
 
-                        <div className="line-divider"></div>
+                        <LineDivider
+                            dark={false}
+                        />
 
                     </div>
                 </div>

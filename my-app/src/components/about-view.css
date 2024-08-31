@@ -1,37 +1,140 @@
-.about-view-container {
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    height: 34vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    color: white;
-    background-color: #111111;
-}
-
-.about-view-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: 55%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1200px;
 }
 
-.about-social-title-container {
-    width: 100%;
+.footer-content {
+    width: 55%;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: .9;
+    margin-bottom: -20px;
+    margin-top: auto;
+}
+
+.footer-title-container {
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-title {
+    margin-top: 10px;
+    margin-bottom: -100px;
+    font-size: 3rem;
+}
+
+.first-footer-row {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.first-footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.first-footer-content p {
+    width: 100%;
+}
+
+.social-icons-container {
+    width: 100%;
+    text-align: right;
+    justify-content:flex-end;
+}
+
+.social-icons-container svg {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    margin-left: 20px;
+}
+
+.social-icons-container a:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+/* Redirect container */
+
+.redirect-container {
+    margin: -30px 0 25px 0;
+}
+
+.redirect-container h3 {
+    font-size: 1.1rem;
+}
+
+.redirect-container a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.redirect-container a:hover {
+    cursor: pointer;
+    color: #ffffffef;
+}
+
+/* 3d footer row */
+
+.third-footer-row {
+    display: flex;
+    margin: -15px 0 22px 0;
     justify-content: space-between;
 }
 
-.about-social-container {
+/* Mail */
+
+.mail-container {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+.mail-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.mail-container svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Second footer row */
+
+.second-footer-row {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    bottom: 0;
+    margin: -5px 0 0 0;
+}
+
+.footer-location-container {
     display: flex;
     gap: 20px;
 }
 
-.about-social-container img {
+.footer-location-container svg {
     width: 20px;
     height: 20px;
-    filter: brightness(0) invert(1);
-}
-
-.about-span {
-    color: #007bff;
+    margin: 16px -10px 0 0;
 }

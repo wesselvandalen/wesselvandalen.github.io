@@ -1,8 +1,5 @@
 import './about-view.css';
-import githubIcon from '../assets/icons/github.png';
-import gmailIcon from '../assets/icons/gmail.png';
-import linkedInIcon from '../assets/icons/linkedin.png';
-import discordIcon from '../assets/icons/discord.png';
+import LineDivider from './line-divider';
 
 function AboutView() {
 
@@ -10,31 +7,88 @@ function AboutView() {
         return new Date().getFullYear();
     }
 
+    function calculateAge(): number {
+        let dob: Date = new Date("01/20/2004");
+        let month_diff: number = Date.now() - dob.getTime();
+        let age_dt: Date = new Date(month_diff);
+        let year: number = age_dt.getUTCFullYear();
+        return Math.abs(year - 1970);
+    }
+
     return (
-        <div className='about-view-container' id='contact'>
-            <div className="about-view-content">
-                <div className="about-social-title-container">
-                    <div className="about-title-container">
-                        <p>I'm <span className='about-span'>Wessel</span>, a 20 year old Full Stack Software Developer specialized in Front end & Design from the Netherlands.</p>
+        <footer id='contact'>
+            <div className="footer-title-container">
+                <h3 className='footer-title'>Interested in hiring me?</h3>
+            </div>
+            <div className="footer-content">
+
+                <div className="first-footer-row">
+                    <div className="first-footer-content">
+                        <p>My name is Wessel Rowdy van Dalen, and I'm a {calculateAge()} year old Full Stack Software Developer who specialized in Front end & design.</p>
                     </div>
-                    <div className="about-social-container">
+                </div>
+
+                <LineDivider
+                    dark={true}
+                />
+
+                <div className="redirect-container">
+                    <h3>Wanna take another look through my portfolio?</h3>
+                    <div className="footer-header-links">
+                        <a href="#home">Home</a>
+                        <a href="#work">Work experience</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#languages">Languages</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <LineDivider
+                    dark={true}
+                />
+
+                <div className="third-footer-row">
+                    <div className="mail-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z" />
+                        </svg>
+                        <a href="mailto:wesselvandalen@gmail.com">Want to discuss something / just have a chat? Send me an email!</a>
+                    </div>
+                    <div className="social-icons-container">
+                        <a href="https://discord.com/users/bjarndal" target='_blank'>
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.9308 1.64145C15.6561 1.05655 14.2892 0.625624 12.8599 0.378812C12.8339 0.374049 12.8079 0.385953 12.7945 0.409761C12.6187 0.722441 12.4239 1.13036 12.2876 1.45098C10.7503 1.22084 9.22099 1.22084 7.71527 1.45098C7.57887 1.12323 7.37707 0.722441 7.20048 0.409761C7.18707 0.386747 7.16107 0.374843 7.13504 0.378812C5.70659 0.624835 4.33963 1.05576 3.06411 1.64145C3.05307 1.64622 3.04361 1.65416 3.03732 1.66447C0.444493 5.5381 -0.265792 9.31653 0.0826501 13.0481C0.0842267 13.0664 0.0944749 13.0838 0.108665 13.0949C1.81934 14.3512 3.47642 15.1139 5.10273 15.6194C5.12876 15.6273 5.15634 15.6178 5.1729 15.5964C5.55761 15.071 5.90054 14.5171 6.19456 13.9346C6.21192 13.9004 6.19535 13.86 6.15989 13.8465C5.61594 13.6401 5.098 13.3886 4.59977 13.1029C4.56037 13.0799 4.55721 13.0235 4.59347 12.9965C4.69831 12.9179 4.80318 12.8362 4.9033 12.7537C4.92141 12.7386 4.94665 12.7354 4.96794 12.7449C8.24107 14.2393 11.7846 14.2393 15.0191 12.7449C15.0404 12.7346 15.0657 12.7378 15.0846 12.7529C15.1847 12.8354 15.2895 12.9179 15.3952 12.9965C15.4314 13.0235 15.4291 13.0799 15.3897 13.1029C14.8914 13.3941 14.3735 13.6401 13.8288 13.8457C13.7933 13.8592 13.7775 13.9004 13.7949 13.9346C14.0952 14.5163 14.4381 15.0702 14.8157 15.5956C14.8315 15.6178 14.8599 15.6273 14.8859 15.6194C16.5201 15.1139 18.1772 14.3512 19.8879 13.0949C19.9028 13.0838 19.9123 13.0671 19.9139 13.0489C20.3309 8.73478 19.2154 4.98734 16.9568 1.66526C16.9513 1.65416 16.9419 1.64622 16.9308 1.64145ZM6.68335 10.776C5.69792 10.776 4.88594 9.87126 4.88594 8.76019C4.88594 7.64912 5.68217 6.74441 6.68335 6.74441C7.69239 6.74441 8.49651 7.65706 8.48073 8.76019C8.48073 9.87126 7.68451 10.776 6.68335 10.776ZM13.329 10.776C12.3435 10.776 11.5316 9.87126 11.5316 8.76019C11.5316 7.64912 12.3278 6.74441 13.329 6.74441C14.338 6.74441 15.1421 7.65706 15.1264 8.76019C15.1264 9.87126 14.338 10.776 13.329 10.776Z" fill="black"/>
+                            </svg>
+                        </a>
                         <a href="https://www.github.com/wesselvandalen/" target='_blank'>
-                            <img src={githubIcon} alt="GitHub"/>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M10.0083 0.166626C4.47396 0.166626 0 4.67357 0 10.2493C0 14.7062 2.86662 18.4789 6.84338 19.8142C7.34058 19.9146 7.5227 19.5973 7.5227 19.3303C7.5227 19.0966 7.50631 18.2954 7.50631 17.4606C4.72225 18.0616 4.14249 16.2587 4.14249 16.2587C3.69508 15.0901 3.03215 14.7898 3.03215 14.7898C2.12092 14.1721 3.09852 14.1721 3.09852 14.1721C4.1093 14.2389 4.63969 15.2071 4.63969 15.2071C5.53432 16.7427 6.97592 16.3088 7.55588 16.0417C7.63865 15.3907 7.90394 14.94 8.18563 14.6896C5.96514 14.4559 3.62891 13.5879 3.62891 9.71499C3.62891 8.61325 4.02634 7.71186 4.65608 7.01082C4.55672 6.76048 4.20866 5.72532 4.75564 4.33985C4.75564 4.33985 5.60069 4.07271 7.5061 5.3748C8.32188 5.1541 9.16317 5.04183 10.0083 5.04088C10.8533 5.04088 11.7148 5.15786 12.5102 5.3748C14.4159 4.07271 15.2609 4.33985 15.2609 4.33985C15.8079 5.72532 15.4596 6.76048 15.3603 7.01082C16.0066 7.71186 16.3876 8.61325 16.3876 9.71499C16.3876 13.5879 14.0514 14.4391 11.8143 14.6896C12.179 15.0067 12.4936 15.6076 12.4936 16.5592C12.4936 17.9113 12.4773 18.9964 12.4773 19.3301C12.4773 19.5973 12.6596 19.9146 13.1566 19.8144C17.1333 18.4787 20 14.7062 20 10.2493C20.0163 4.67357 15.526 0.166626 10.0083 0.166626Z" fill="black"/>
+                            </svg>
                         </a>
                         <a href="https://www.linkedin.com/in/wesselvandalen/" target='_blank'>
-                            <img src={linkedInIcon} alt="LinkedIn"/>
-                        </a>
-                        <a href="mailto:wesselvandalen@gmail.com">
-                            <img src={gmailIcon} alt="Gmail"/>
-                        </a>
-                        <a href="https://www.discordapp.com/users/bjarndal" target='_blank'>
-                            <img src={discordIcon} alt="Discord"/>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 1.32353V16.6765C18 17.0275 17.8606 17.3641 17.6123 17.6123C17.3641 17.8606 17.0275 18 16.6765 18H1.32353C0.972508 18 0.635863 17.8606 0.387653 17.6123C0.139443 17.3641 0 17.0275 0 16.6765L0 1.32353C0 0.972508 0.139443 0.635863 0.387653 0.387653C0.635863 0.139443 0.972508 0 1.32353 0L16.6765 0C17.0275 0 17.3641 0.139443 17.6123 0.387653C17.8606 0.635863 18 0.972508 18 1.32353ZM5.29412 6.88235H2.64706V15.3529H5.29412V6.88235ZM5.53235 3.97059C5.53375 3.77036 5.49569 3.57182 5.42035 3.3863C5.34502 3.20078 5.23387 3.03191 5.09328 2.88935C4.95268 2.74678 4.78537 2.6333 4.60091 2.5554C4.41646 2.47749 4.21846 2.43668 4.01824 2.43529H3.97059C3.5634 2.43529 3.17289 2.59705 2.88497 2.88497C2.59705 3.17289 2.43529 3.5634 2.43529 3.97059C2.43529 4.37777 2.59705 4.76828 2.88497 5.05621C3.17289 5.34413 3.5634 5.50588 3.97059 5.50588C4.17083 5.51081 4.37008 5.47623 4.55696 5.40413C4.74383 5.33202 4.91467 5.2238 5.0597 5.08565C5.20474 4.94749 5.32113 4.78212 5.40223 4.59897C5.48333 4.41582 5.52755 4.21848 5.53235 4.01824V3.97059ZM15.3529 10.2071C15.3529 7.66059 13.7329 6.67059 12.1235 6.67059C11.5966 6.6442 11.0719 6.75644 10.6019 6.9961C10.1318 7.23577 9.73285 7.59448 9.44471 8.03647H9.37059V6.88235H6.88235V15.3529H9.52941V10.8476C9.49115 10.3862 9.63649 9.92835 9.93388 9.57347C10.2313 9.2186 10.6567 8.9954 11.1176 8.95235H11.2182C12.06 8.95235 12.6847 9.48177 12.6847 10.8159V15.3529H15.3318L15.3529 10.2071Z" fill="black"/>
+                            </svg>
                         </a>
                     </div>
                 </div>
-                <p>&copy; {getCurrentYear()} All Rights Reserved.</p>
+
+                <LineDivider
+                    dark={true}
+                />
+
+                <div className="second-footer-row">
+                    <p>&copy; {getCurrentYear()} Wessel van Dalen. All Rights Reserved.</p>
+                    <div className="footer-location-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
+                        </svg>
+                        <p>Houten, Utrecht, Netherlands</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </footer>
     );
 }
 
