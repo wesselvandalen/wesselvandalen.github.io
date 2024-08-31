@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.1c794ff0.css",
-    "main.js": "/static/js/main.e0d4e923.js",
+    "main.css": "/static/css/main.ecae4fbf.css",
+    "main.js": "/static/js/main.4ad6d5b7.js",
     "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/laptop.png": "/static/media/laptop.a3ee1b1c5cb696ac66e0.png",
     "static/media/canva.png": "/static/media/canva.4384eab39ba50bb8cee6.png",
     "static/media/luftan_visual.png": "/static/media/luftan_visual.62bb6650f329be444a53.png",
     "static/media/inteallij_idea.png": "/static/media/inteallij_idea.6f3284f1e457dad76470.png",
     "static/media/azure.png": "/static/media/azure.5046ef5b1dd1f4d74d89.png",
-    "static/media/laptop.png": "/static/media/laptop.ce43f4ebb4b2aad28d29.png",
     "static/media/spring.png": "/static/media/spring.388bedf3157e6741a1d5.png",
-    "static/media/kpnVisual.png": "/static/media/kpnVisual.32551e7c3474fc734f2d.png",
     "static/media/postman.png": "/static/media/postman.f9452c12e038137be6f2.png",
     "static/media/git.png": "/static/media/git.52ffcca1c2260d3a141b.png",
     "static/media/html.png": "/static/media/html.aeb69129de4a762942b2.png",
     "static/media/docker.png": "/static/media/docker.dcda82af5b17fff350fd.png",
     "static/media/salesforce.png": "/static/media/salesforce.cff6ef05d5389c88e991.png",
-    "static/media/huskelisteVisual.png": "/static/media/huskelisteVisual.1fd7ee55c46bc22303f5.png",
     "static/media/css.png": "/static/media/css.4eb3c6ba22605e7b1afa.png",
     "static/media/react.png": "/static/media/react.25ba0935b6c0fc007386.png",
     "static/media/python.png": "/static/media/python.6a5cbc319ab3ddf8ef92.png",
-    "static/media/logo.png": "/static/media/logo.272218566b0ad3d6cc5f.png",
     "static/media/svelte.png": "/static/media/svelte.c6c355448b900669be6c.png",
     "static/media/vsc.png": "/static/media/vsc.c0e134c3bbf4bd018d4c.png",
     "static/media/powershell.png": "/static/media/powershell.ef40e9d87cb09963ddf0.png",
@@ -31,12 +28,12 @@
     "static/media/github.png": "/static/media/github.70f71607abed0c1780a6.png",
     "static/media/figma.png": "/static/media/figma.809e95cfef4058cfd651.png",
     "index.html": "/index.html",
-    "main.1c794ff0.css.map": "/static/css/main.1c794ff0.css.map",
-    "main.e0d4e923.js.map": "/static/js/main.e0d4e923.js.map",
+    "main.ecae4fbf.css.map": "/static/css/main.ecae4fbf.css.map",
+    "main.4ad6d5b7.js.map": "/static/js/main.4ad6d5b7.js.map",
     "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c794ff0.css",
-    "static/js/main.e0d4e923.js"
+    "static/css/main.ecae4fbf.css",
+    "static/js/main.4ad6d5b7.js"
   ]
 }
