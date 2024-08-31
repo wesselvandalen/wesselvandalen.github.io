@@ -7,7 +7,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1200px;
+    margin-top: 200px;
 }
 
 .footer-content {
@@ -137,4 +137,11 @@ footer {
     width: 20px;
     height: 20px;
     margin: 16px -10px 0 0;
+}
+
+.hiring {
+    background: linear-gradient(90deg, rgb(69, 123, 255) -45%, rgb(69, 134, 254) 10%, rgb(122, 200, 239) 25%, rgb(131, 160, 237) 60%, rgb(67, 174, 255) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
 }

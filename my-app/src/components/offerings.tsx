@@ -32,7 +32,7 @@ function Offerings() {
         <div className='offerings-view-container' id="skills">
             <div className="offerings-view-content">
 
-                <h3 className='offerings-view-title'>Explore my skills</h3>
+                <h3 className='offerings-view-title'>Explore My <span className='skills'>Skills</span></h3>
                 <p className='offerings-view-description'>A concise overview of my full stack development skills.</p>
 
                 <div className="skills-container">

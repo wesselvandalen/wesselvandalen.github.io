@@ -6,7 +6,7 @@ function WorkView() {
     return (
         <div className='work-container' id='work'>
             <div className="work-content">
-                <h3 className='work-title'>My Work Experience</h3>
+                <h3 className='work-title'>My <span className='work'>Work</span> Experience</h3>
                 <p className='work-description'>Discover the path I've taken through various roles and industries, shaping my expertise and experience.</p>
 
                 <div className="work-blocks">

@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 200px 0 500px 0;
+    margin: 200px 0 0 0;
 }
 
 .projects-view-content {
@@ -19,10 +19,11 @@
 .projects-view-description {
     font-size: 18px;
     margin-top: -20px;
+    opacity: .8;
 }
 
 .projects-container {
-    margin: 100px 0;
+    margin: 100px 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +32,13 @@
 
 .projects-content {
     max-width: 1400px;
+}
+
+.projects {
+    background: linear-gradient(90deg, rgb(69, 123, 255) -45%, rgb(69, 134, 254) 10%, rgb(122, 200, 239) 25%, rgb(131, 160, 237) 60%, rgb(67, 174, 255) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
 }
 
 @media screen and (max-width: 1920px) {

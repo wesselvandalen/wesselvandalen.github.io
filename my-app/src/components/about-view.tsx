@@ -18,7 +18,7 @@ function AboutView() {
     return (
         <footer id='contact'>
             <div className="footer-title-container">
-                <h3 className='footer-title'>Interested in hiring me?</h3>
+                <h3 className='footer-title'>Interested in <span className='hiring'>hiring</span> me?</h3>
             </div>
             <div className="footer-content">
 

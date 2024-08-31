@@ -17,8 +17,16 @@
 
 .offerings-view-description {
     font-size: 18px;
-    margin-top: -35px;
-    margin-bottom: 40px;
+    margin-top: -15px;
+    margin-bottom: 100px;
+    opacity: .8;
+}
+
+.skills {
+    background: linear-gradient(90deg, rgb(69, 123, 255) -45%, rgb(69, 134, 254) 10%, rgb(122, 200, 239) 25%, rgb(131, 160, 237) 60%, rgb(67, 174, 255) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
 }
 
 /* Skill block */
