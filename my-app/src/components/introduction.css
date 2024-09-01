@@ -171,11 +171,16 @@
 
 @media screen and (max-width: 1920px) {
     .main-image-content {
-        margin-top: -85px;
+        margin-top: -80px;
+        margin-bottom: -50px;
         width: 100vw;
     }
 
     .image {
         width: 70%;
+    }
+
+    .image img {
+        margin-top: 100px;
     }
 }

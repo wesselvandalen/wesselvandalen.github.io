@@ -57,8 +57,8 @@
 
     .projects-view-container {
         height: 100vh;
-        margin-top: 0;
-        margin-bottom: 400px;
+        margin-top: 900px;
+        margin-bottom: 700px;
     }
 
     .projects-view-container .projects-view-description {

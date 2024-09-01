@@ -9,7 +9,7 @@ function ProjectsView() {
     return (
         <div className='projects-view-container' id='projects'>
             <div className="projects-view-content">
-                <h3 className='projects-view-title'>Explore my <span className='projects'>projects</span></h3>
+                <h3 className='projects-view-title'>Explore My <span className='projects'>Projects</span></h3>
                 <p className='projects-view-description'>A selection of my standout projects, showcasing my work.</p>
 
                 <div className="projects-container">
