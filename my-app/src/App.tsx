@@ -6,15 +6,19 @@ import Offerings from './components/offerings';
 import ProjectsView from './components/projects-view';
 import AboutView from './components/about-view';
 import WorkView from './components/work-view';
+import EducationView from './components/education-view';
+import PersonalView from './components/personal-view';
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <Introduction/>
-      <WorkView/>
-      <Offerings/>
+      <PersonalView/>
       <LanguageView/>
+      <EducationView/>
+      <Offerings/>
+      <WorkView/>
       <ProjectsView/>
       <AboutView/>
     </div>

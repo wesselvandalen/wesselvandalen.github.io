@@ -6,9 +6,11 @@ function Header() {
             <div className='header-content'>
                 <ul className="nav-links">
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#personal">About me</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#work">Work experience</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#languages">Languages</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>

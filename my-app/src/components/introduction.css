@@ -135,7 +135,6 @@
 }
 
 .image {
-    overflow: hidden; /* Ensures that any overflow is hidden */
     margin: 0 20px;
     display: flex;
     justify-content: center;

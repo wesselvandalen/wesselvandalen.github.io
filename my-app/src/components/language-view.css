@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     height: 65vh;
-    margin-top: 300px;
+    margin-top: -100px;
     color: #27272a;
     background-color: #fcfcfc;
 }
@@ -32,7 +32,7 @@
 
 .language-title-container p {
     font-size: 18px;
-    margin-top: -20px;
+    margin-top: -30px;
     margin-bottom: 100px;
     opacity: .8;
 }
