@@ -1,8 +1,9 @@
 import './projects-view.css';
 import ProductBlock from './project-block';
-import luftanVisual from '../assets/projects/luftan_visual.png';
-import huskelisteVisual from '../assets/projects/huskelisteVisual.png';
-import kpnVisual from '../assets/projects/kpnVisual.png';
+import luftan from '../assets/projects/luftan.png';
+import huskeliste from '../assets/projects/huskeliste.png';
+import kpn from '../assets/projects/kpn.png';
+import smartfinance from '../assets/projects/smartfinance.png';
 
 function ProjectsView() {
     return (
@@ -16,35 +17,35 @@ function ProjectsView() {
 
                         <ProductBlock
                             key={1}
-                            image={luftanVisual}
+                            image={luftan}
                             name={'Luftan'}
-                            description={"Luftan is a fictional Swedish company I created to showcase my skills in front-end and back-end development, database management, and design. Specializing in aroma diffusers and Scandinavian-inspired scents, Luftan allows users to browse, add products to their cart, and place orders easily. While the interface is simple, the underlying code is complex, providing a rewarding challenge."}
+                            description={`Luftan is a Swedish company specializing in aroma diffusers and Scandinavian-inspired scents. The project includes a full e-commerce platform where users can browse products, add items to their cart, and place orders. I developed the entire site from scratch, covering both front-end and back-end development.`}
                             link={'/'}
                         />
 
-                        {/* <ProductBlock
+                        <ProductBlock
                             key={2}
-                            image={luftanVisual}
+                            image={smartfinance}
                             name={'SmartFinance'}
-                            description={''}
+                            description={`SmartFinance is a web application for Hogeschool Utrecht's 'Bedrijfskunde' students. It helps them practice creating 'jaarrekeningen' (annual financial statements) and provides immediate feedback to prepare for tests and homework.`}
                             link={'/http://159.223.223.166:8080/'}
                         />
 
                         <ProductBlock
                             key={3}
-                            image={kpnVisual}
+                            image={kpn}
                             name={'KPN Reisbewegingen'}
-                            description={''}
+                            description={`KPN Reisbewegingen is a site for KPN employees to log their travel data, which is then compiled into an Excel report. Managers can view departmental statistics, and a leaderboard encourages reducing CO2 emissions.`}
                             link={'/https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/'}
                         />
 
                         <ProductBlock
                             key={4}
-                            image={huskelisteVisual}
+                            image={huskeliste}
                             name={'HuskeListe'}
-                            description={''}
+                            description={`HuskeListe is a simple Norwegian to-do app that allows users to add, cross off, and remove tasks from their lists, helping them stay organized.`}
                             link={'/https://wesselvandalen.github.io/huskeliste/'}
-                        /> */}
+                        />
                             
                     </div>
                 </div>

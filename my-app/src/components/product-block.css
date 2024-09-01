@@ -15,7 +15,7 @@
 
 .project-block-img-container img {
     object-fit: cover; /* Ensures the image covers its container nicely */
-    border-radius: 15px;
+    border-radius: 3px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -38,6 +38,7 @@
 .project-block-description {
     font-size: 18px;
     font-weight: 400;
+    opacity: .8;
 }
 
 .project-buttons-container {
