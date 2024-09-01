@@ -1,0 +1,16 @@
+.design-component-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: black;
+    background-image: url('../assets//background.png');
+    
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.design-component-content {
+    width: 80%;
+}

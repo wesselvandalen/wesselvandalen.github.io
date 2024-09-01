@@ -8,6 +8,7 @@ import AboutView from './components/about-view';
 import WorkView from './components/work-view';
 import EducationView from './components/education-view';
 import PersonalView from './components/personal-view';
+import DesignComponent from './components/design-component';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <PersonalView/>
       <LanguageView/>
       <EducationView/>
+      {/* <DesignComponent/> */}
       <Offerings/>
       <WorkView/>
       <ProjectsView/>
