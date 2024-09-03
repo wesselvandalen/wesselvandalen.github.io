@@ -1,7 +1,14 @@
 import './introduction.css';
 import laptop from '../assets/laptop.png';
+import { useEffect } from 'react';
 
 function Introduction() {
+    useEffect(() => {
+        setTimeout(() => {
+            document.getElementById('home')?.classList.remove('preload');
+        }, 500);
+    }, []);
+
     function calculateAge(): number {
         let dob: Date = new Date("01/20/2004");
         let month_diff: number = Date.now() - dob.getTime();
@@ -11,12 +18,12 @@ function Introduction() {
     }
 
     return (
-        <div id='home'>
+        <div id='home' className="preload">
             <div className="hero">
                 <div className="main-text-container">
                     <h2>
-                        Halla!* I'm <span className="highlight">Wessel</span>, 
-                        a {calculateAge()} year old <br/> Full Stack Software Developer.
+                        Halla!* I'm <span className="highlight">Wessel</span>,
+                        a {calculateAge()} year old <br /> Full Stack Software Developer.
                     </h2>
                     <p>*Halla means Hello in Norwegian.</p>
                 </div>
@@ -34,14 +41,14 @@ function Introduction() {
                         </svg>
                     </a>
                 </div>
-          </div>
-          <div className="main-image-display">
-            <div className="main-image-content">
-                <div className="image">
-                    <img src={laptop} alt="Laptop frame"/>
+            </div>
+            <div className="main-image-display">
+                <div className="main-image-content">
+                    <div className="image">
+                        <img src={laptop} alt="Laptop frame" />
+                    </div>
                 </div>
             </div>
-          </div>
         </div>
     );
 }
