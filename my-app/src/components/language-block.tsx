@@ -32,7 +32,7 @@ function LanguageBlock(props: any) {
                         <p>{props.number}</p>
                     </div>
                     <div className="language-name-years-container">
-                        <p className='language-name'><span className='language-name-span'>{props.spanName}</span>, ({props.name})</p>
+                        <p className='language-name'><span className='language-name-span'>{props.spanName}</span> ({props.name})</p>
                         <p className='language-years'>• Speaking for {numberOfYears}+ years</p>
                     </div>
                 </div>

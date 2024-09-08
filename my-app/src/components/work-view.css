@@ -69,3 +69,11 @@
     }
     
 }
+
+@media screen and (max-width: 1080px) {
+    .work-content {
+        width: 80vw;
+    }
+
+    
+}

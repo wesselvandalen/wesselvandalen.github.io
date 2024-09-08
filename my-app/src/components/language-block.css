@@ -55,3 +55,15 @@
         width: 80%;
     }
 }
+
+@media screen and (max-width: 1080px) {
+    .language-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .language-proficiency-p {
+        width: 60vw;
+        text-align: left;
+    }
+}

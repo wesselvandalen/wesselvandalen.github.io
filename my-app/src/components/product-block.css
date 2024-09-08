@@ -56,3 +56,44 @@
     font-size: 16px;
     font-weight: 500;
 }
+
+@media screen and (max-width: 1080px) {
+    .project-block-container {
+        margin: 50px 0 0 -23px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .project-block-img-container {
+        margin: 0 0 20px 0;
+    }
+
+    .project-block-img-container img {
+        margin: 0;   
+    }
+
+    .project-block-title {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .project-block-information {
+        width: 100%;
+    }
+
+    .project-block-description {
+        width: 100%;
+        font-size: 1.5;
+    }
+
+    .project-buttons-container {
+        width: 100%;
+    }
+
+    .project-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

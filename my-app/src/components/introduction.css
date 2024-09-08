@@ -203,3 +203,26 @@
         margin-top: 100px;
     }
 }
+
+@media screen and (max-width: 1080px) {
+    .main-image-content {
+        width: 100vw;
+    }
+    
+    .hero h2 {
+        width: 90vw;
+        font-size: 2.8rem;
+        margin-bottom: 40px;
+    }
+
+    .hero p {
+        width: 90vw;
+        margin-bottom: 30px;
+    }
+    
+    .image {
+        width: 100vw;
+        margin-top: 20px;
+    }
+
+}

@@ -88,3 +88,46 @@
         width: 80%;
     }
 }
+
+@media screen and (max-width: 1080px) {
+    .education-title {
+        text-align: left;
+    }
+
+    .education-description {
+        text-align: left;
+    }
+
+    .education-containers-content {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .education-main-text-container {
+        width: 100%;
+    }
+
+    .education-main-text-container h3 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    
+    .education-secundary-text-container {
+        width: 100%;
+    }
+
+    .education-main-text-container p {
+        font-size: 1.225rem;
+        width: 100%;
+    }
+
+    .education-secundary-text-container p {
+        font-size: 1.225rem;
+        width: 100%;
+    }
+
+    .education-containers-content a {
+        margin: -30px 0 20px 0;
+    }
+}

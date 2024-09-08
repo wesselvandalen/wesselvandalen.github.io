@@ -23,6 +23,7 @@ function EducationView() {
                         </a>
                     </div>
                 </div>
+                
                 <LineDivider
                     dark={false}
                 />

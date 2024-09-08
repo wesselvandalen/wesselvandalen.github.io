@@ -81,3 +81,44 @@
         width: 300px;
     }
 }
+
+@media screen and (max-width: 1080px) {
+    .personal-container {
+        height: 115vh;
+    }
+
+    .personal-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .personal-image-container {
+        margin: 0;
+    }
+
+    .personal-image-container img {
+        width: 100%;
+    }
+
+    .personal-text-container {
+        width: 100%;
+    }
+
+    .personal-text-container h3 {
+        font-size: 1.875rem;
+    }
+    
+    .quote {
+        font-size: 1.1rem;
+    }
+
+    .icon-div svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .icon-div p {
+        font-size: 1.1rem;
+    }
+}
