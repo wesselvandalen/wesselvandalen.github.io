@@ -29,9 +29,11 @@ function Intro() {
                         </p>
                         <div className="social-links-container">
                             <p>Follow me / have a chat with me:</p>
-                            <a href="https://linkedin.com/in/wesselvandalen/" target='_blank'>LinkedIn</a>
-                            <a href="https://github.com/wesselvandalen/" target='_blank'>GitHub</a>
-                            <a href="mailto:wesselvandalen@gmail.com">Mail me</a>
+                            <div>
+                                <a href="https://linkedin.com/in/wesselvandalen/" target='_blank'>LinkedIn</a>
+                                <a href="https://github.com/wesselvandalen/" target='_blank'>GitHub</a>
+                                <a href="mailto:wesselvandalen@gmail.com">Mail me</a>
+                            </div>
                         </div>
                     </div>
                     <div className="intro-image-wrapper">

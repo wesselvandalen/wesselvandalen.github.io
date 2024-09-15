@@ -28,3 +28,9 @@
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 1080px) {
+    .floating-cursor {
+        margin-right: -100px;
+    }
+}
