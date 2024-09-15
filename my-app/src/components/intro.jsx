@@ -4,7 +4,7 @@ import FloatingCursor from './floating-cursor';
 
 function Intro() {
     
-    // regner ut alderen til meg
+    // regner ut alderen min
     function calculateAge() {
         let dob = new Date("01/20/2004");
         let month_diff = Date.now() - dob.getTime();
@@ -33,6 +33,7 @@ function Intro() {
                                 <a href="https://linkedin.com/in/wesselvandalen/" target='_blank'>LinkedIn</a>
                                 <a href="https://github.com/wesselvandalen/" target='_blank'>GitHub</a>
                                 <a href="mailto:wesselvandalen@gmail.com">Mail me</a>
+                                <a href="https://ivory-marcellina-50.tiiny.site/" target='_blank'>My resume</a>
                             </div>
                         </div>
                     </div>

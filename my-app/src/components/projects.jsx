@@ -1,7 +1,9 @@
 import './projects.css';
 import TitleComponent from './title-component';
-import luftan from '../assets/project_design.png';
+import luftan from '../assets/project_design_luftan.png';
 import huskeliste from '../assets/project_design_huskeliste.png';
+import kpn from '../assets/project_design_kpn.png';
+import smartfinance from '../assets/project_design_smartfinance.png';
 
 function Projects() {
     return (
@@ -67,7 +69,7 @@ function Projects() {
                                 </a>
                             </div>
                             <div className="project-image-container">
-                                <img src="" alt="Project visual image."/>
+                                <img src={smartfinance} alt="Project visual image."/>
                             </div>
                         </div>
                     </div>
@@ -86,7 +88,7 @@ function Projects() {
                                 </a>
                             </div>
                             <div className="project-image-container">
-                                <img src="" alt="Project visual image."/>
+                                <img src={kpn} alt="Project visual image."/>
                             </div>
                         </div>
                     </div>
