@@ -114,4 +114,12 @@
     .project-tekst-container {
         width: 80%;
     }
+
+    .title-role-wrapper {
+        flex-direction: column;
+    }
+
+    .role {
+        margin: -10px 0 15px 0;
+    }
 }

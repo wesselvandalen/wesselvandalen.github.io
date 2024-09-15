@@ -1,7 +1,4 @@
 .skills-wrapper {
-    /* backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    background: color-mix(in srgb, #000 100%, transparent);  */
     background-image: url("../assets/dark_background.jpg");
     background-repeat: repeat;
     display: flex;
@@ -85,5 +82,9 @@
 @media screen and (max-width: 1080px) {
     .skills-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skill-row {
+        margin-bottom: 40px;
     }
 }

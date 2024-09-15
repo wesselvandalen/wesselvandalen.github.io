@@ -30,10 +30,10 @@ function Intro() {
                         <div className="social-links-container">
                             <p>Follow me / have a chat with me:</p>
                             <div>
+                                <a href="https://ivory-marcellina-50.tiiny.site/" target='_blank'>My resume</a>
+                                <a href="mailto:wesselvandalen@gmail.com">Mail me</a>
                                 <a href="https://linkedin.com/in/wesselvandalen/" target='_blank'>LinkedIn</a>
                                 <a href="https://github.com/wesselvandalen/" target='_blank'>GitHub</a>
-                                <a href="mailto:wesselvandalen@gmail.com">Mail me</a>
-                                <a href="https://ivory-marcellina-50.tiiny.site/" target='_blank'>My resume</a>
                             </div>
                         </div>
                     </div>

@@ -145,7 +145,7 @@
 
 @media screen and (max-width: 1080px) {
     .intro-wrapper {
-        margin-bottom: 500px;
+        margin-bottom: 300px;
     }
 
     .intro-content {
@@ -164,11 +164,12 @@
     }
 
     .intro-image-wrapper img {
-        margin: 100px 0 -100px 0;
+        margin-top: 100px;
     }
 
     .intro-title {
         line-height: 1.25;
+        margin-top: 40px;
     }
 
     .social-links-container {
