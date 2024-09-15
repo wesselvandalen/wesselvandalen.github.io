@@ -19,9 +19,3 @@
     font-weight: 400;
     font-size: 16px;
 }
-
-@media screen and (max-width: 1080px) {
-    .title-wrapper {
-        width: 80%;
-    }
-}

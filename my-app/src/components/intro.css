@@ -164,7 +164,7 @@
     }
 
     .intro-image-wrapper img {
-        margin-top: 100px;
+        margin-top: 25px;
     }
 
     .intro-title {
@@ -175,5 +175,6 @@
     .social-links-container {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 }
