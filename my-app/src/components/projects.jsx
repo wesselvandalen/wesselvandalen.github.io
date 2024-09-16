@@ -4,6 +4,7 @@ import luftan from '../assets/project_design_luftan.png';
 import huskeliste from '../assets/project_design_huskeliste.png';
 import kpn from '../assets/project_design_kpn.png';
 import smartfinance from '../assets/project_design_smartfinance.png';
+import candidateportal from '../assets/project_design_mysolution.png';
 
 function Projects() {
     return (
@@ -30,12 +31,25 @@ function Projects() {
                                     <h3 className='role'>Java Spring & React Typescript developer</h3>
                                 </div>
                                 <p className='description'>Luftan is a Swedish company specializing in aroma diffusers and Scandinavian-inspired scents. The project includes a full e-commerce platform where users can browse products, add items to their cart, and place orders. I developed the entire site from scratch, covering both front-end and back-end development.</p>
-                                <a href='/' target='_blank' className='project-button'>
-                                    See project
-                                </a>
                             </div>
                             <div className="project-image-container">
                                 <img src={luftan} alt="Project visual image."/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="project-block">
+                        <div className='line-divider'/>
+                        <div className="project-inner-content">
+                            <div className="project-tekst-container">
+                                <div className="title-role-wrapper">
+                                    <h3 className='title'>Candidate onboaring portal,</h3>
+                                    <h3 className='role'>React Typescript & Salesforce developer</h3>
+                                </div>
+                                <p className='description'>An onboarding portal for candidates of a customer of Mysolution. Mysolution is a company that offers a Salesforce application for recruitment agencies in the field of hiring people. In my internship for my HBO Bachelor IT Software Development study I had to create an onboarding portal for a certain customer of Mysolution, so that the employees of said customer could fill in their credentials (personalia, bank account information, privacy statements etc.) that they would need to hire those candidates.</p>
+                            </div>
+                            <div className="project-image-container">
+                                <img src={candidateportal} alt="Project visual image."/>
                             </div>
                         </div>
                     </div>

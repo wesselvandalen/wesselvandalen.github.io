@@ -1,5 +1,5 @@
 .skills-wrapper {
-    background-image: url("../assets/dark_background.jpg");
+    background-image: url("../assets/dark_background.png");
     background-repeat: repeat;
     display: flex;
     justify-content: center;
@@ -19,6 +19,7 @@
 }
 
 .skills-container {
+    margin-top: 90px;
     margin-bottom: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -40,10 +41,6 @@
     border-radius: 25px;
     color: white;
     height: 100%; 
-}
-
-.skill-row:hover {
-    transform: scale(1.005);
 }
 
 .skill-title-container {
