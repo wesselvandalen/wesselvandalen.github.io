@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.46258235.css",
-    "main.js": "/static/js/main.0f3006e6.js",
+    "main.css": "/static/css/main.a9db67fa.css",
+    "main.js": "/static/js/main.680631a9.js",
     "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
     "static/media/image.png": "/static/media/image.6def61535520aa64ac72.png",
     "static/media/canva.png": "/static/media/canva.4384eab39ba50bb8cee6.png",
@@ -10,14 +10,15 @@
     "static/media/inteallij_idea.png": "/static/media/inteallij_idea.6f3284f1e457dad76470.png",
     "static/media/project_design_smartfinance.png": "/static/media/project_design_smartfinance.d3612cb1e10f30ff72dd.png",
     "static/media/azure.png": "/static/media/azure.5046ef5b1dd1f4d74d89.png",
+    "static/media/dark_background.png": "/static/media/dark_background.59b2827cc08613984185.png",
     "static/media/spring.png": "/static/media/spring.388bedf3157e6741a1d5.png",
     "static/media/background.png": "/static/media/background.b4d180394f626bcb591c.png",
     "static/media/project_design_huskeliste.png": "/static/media/project_design_huskeliste.4df59c2e3896d307f6a0.png",
+    "static/media/project_design_mysolution.png": "/static/media/project_design_mysolution.a9a300f3f77f281a2cd9.png",
     "static/media/postman.png": "/static/media/postman.f9452c12e038137be6f2.png",
     "static/media/adobe_express.png": "/static/media/adobe_express.2663c580c748b0aa7c71.png",
     "static/media/git.png": "/static/media/git.52ffcca1c2260d3a141b.png",
     "static/media/html.png": "/static/media/html.aeb69129de4a762942b2.png",
-    "static/media/dark_background.jpg": "/static/media/dark_background.69c96c52e18eabb4a5b9.jpg",
     "static/media/docker.png": "/static/media/docker.dcda82af5b17fff350fd.png",
     "static/media/salesforce.png": "/static/media/salesforce.cff6ef05d5389c88e991.png",
     "static/media/css.png": "/static/media/css.4eb3c6ba22605e7b1afa.png",
@@ -34,12 +35,12 @@
     "static/media/github.png": "/static/media/github.70f71607abed0c1780a6.png",
     "static/media/figma.png": "/static/media/figma.809e95cfef4058cfd651.png",
     "index.html": "/index.html",
-    "main.46258235.css.map": "/static/css/main.46258235.css.map",
-    "main.0f3006e6.js.map": "/static/js/main.0f3006e6.js.map",
+    "main.a9db67fa.css.map": "/static/css/main.a9db67fa.css.map",
+    "main.680631a9.js.map": "/static/js/main.680631a9.js.map",
     "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46258235.css",
-    "static/js/main.0f3006e6.js"
+    "static/css/main.a9db67fa.css",
+    "static/js/main.680631a9.js"
   ]
 }
