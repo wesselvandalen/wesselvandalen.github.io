@@ -97,7 +97,7 @@ function Skills() {
                     <div className="skill-container">
                         <div className="skill-row">
                             <div className="skill-title-container">
-                                <p className='skill-title-title'>Database</p>
+                                <p className='skill-title-title'>Design</p>
                                 <p className='skill-title-description'>
                                     A keen eye for design principles, I create intuitive and visually appealing layouts that enhance user interaction and accessibility.
                                 </p>

@@ -97,6 +97,10 @@
 }
 
 @media screen and (max-width: 1080px) {
+    .projects-wrapper {
+        margin-top: 50px;
+    }
+
     .project-inner-content {
         flex-direction: column-reverse;
         align-items: center;
@@ -105,6 +109,20 @@
     .project-image-container {
         justify-content: center;
         margin-bottom: 25px;
+    }
+
+    .projects-title-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .projects-inner-title-container {
+        width: 80%;
+    }
+
+    .project-image-container img {
+        width: 310px;
     }
 
     .projects-content {

@@ -9,11 +9,15 @@ function Projects() {
     return (
         <div className='projects-wrapper'>
             <div className="projects-content">
-                <TitleComponent
-                    title={'Projects'}
-                    description={'A selection of my standout projects, showcasing my work.'}
-                    darkmode={false}
-                />
+                <div className="projects-title-container">
+                    <div className="projects-inner-title-container">
+                        <TitleComponent
+                            title={'Projects'}
+                            description={'A selection of my standout projects, showcasing my work.'}
+                            darkmode={false}
+                        />
+                    </div>
+                </div>
 
                 <div className="projects-container">
 
