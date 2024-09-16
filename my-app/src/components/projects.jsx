@@ -43,7 +43,7 @@ function Projects() {
                         <div className="project-inner-content">
                             <div className="project-tekst-container">
                                 <div className="title-role-wrapper">
-                                    <h3 className='title'>Candidate onboaring portal,</h3>
+                                    <h3 className='title'>Candidate onboarding portal,</h3>
                                     <h3 className='role'>React Typescript & Salesforce developer</h3>
                                 </div>
                                 <p className='description'>An onboarding portal for candidates of a customer of Mysolution. Mysolution is a company that offers a Salesforce application for recruitment agencies in the field of hiring people. In my internship for my HBO Bachelor IT Software Development study I had to create an onboarding portal for a certain customer of Mysolution, so that the employees of said customer could fill in their credentials (personalia, bank account information, privacy statements etc.) that they would need to hire those candidates.</p>

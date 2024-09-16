@@ -35,7 +35,7 @@
     transform: translateY(-30px);
     opacity: 0;
     animation: slideIn 1.6s ease-out forwards;
-    animation-delay: 0.5s; /* Delay before the animation starts */
+    animation-delay: 0.5s; 
 }
 
 .intro-job {
@@ -46,7 +46,7 @@
     transform: translateY(-30px);
     opacity: 0;
     animation: slideIn 1.4s ease-out forwards;
-    animation-delay: 0.5s; /* Delay before the animation starts */
+    animation-delay: 0.5s; 
 }
 
 .intro-description {
@@ -57,7 +57,7 @@
     transform: translateY(-30px);
     opacity: 0;
     animation: slideInLowOpacity 1.2s ease-out forwards;
-    animation-delay: 0.5s; /* Delay before the animation starts */
+    animation-delay: 0.5s; 
 }
 
 .intro-image-wrapper {
@@ -74,7 +74,7 @@
     transform: translateY(-30px);
     opacity: 0;
     animation: slideIn 1.8s ease-out forwards;
-    animation-delay: 0.5s; /* Delay before the animation starts */
+    animation-delay: 0.5s; 
 }
 
 .social-links-container {
@@ -83,7 +83,7 @@
     transform: translateY(-30px);
     opacity: 0;
     animation: slideIn 1s ease-out forwards;
-    animation-delay: 0.5s; /* Delay before the animation starts */
+    animation-delay: 0.5s; 
 }
 
 .social-links-container a {
@@ -95,6 +95,16 @@
 
     color: black;
     text-decoration: none;
+}
+
+.intro-a {
+    color: black;
+    text-decoration: underline black;
+}
+
+.intro-a:hover {
+    color: rgb(39, 140, 255);
+    text-decoration: rgb(39, 140, 255) underline;
 }
 
 .social-links-container p {
@@ -168,7 +178,8 @@
     }
 
     .intro-image-wrapper img {
-        margin-top: 50px;
+        margin-top: 175px;
+        margin-bottom: -20px;
     }
 
     .intro-title {

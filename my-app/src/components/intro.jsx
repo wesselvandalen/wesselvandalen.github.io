@@ -23,8 +23,8 @@ function Intro() {
                         <h3 className='intro-title'>Wessel Rowdy van Dalen</h3>
                         <p className='intro-job'>Full Stack Software Engineer / UI UX Designer</p>
                         <p className='intro-description'>
-                            Heisann! I’m a {calculateAge()}-year-old Full Stack Software Engineer from the Netherlands, specializing in front-end design.
-                            I’m passionate about crafting clean, intuitive interfaces and love taking on new design challenges.
+                            Heisann! I’m a {calculateAge()}-year-old Full Stack Software Engineer from the Netherlands, specialized in front-end development.
+                            I'm passionate about web design and full stack development, thanks to my 4-years IT <a className='intro-a' href="https://www.hu.nl/voltijd-opleidingen/hbo-ict" target='_blank'>Software Development Bachelor</a> at Hogeschool Utrecht.
                             I also enjoy nature, dogs, and hope to move to Norway one day.
                         </p>
                         <div className="social-links-container">
