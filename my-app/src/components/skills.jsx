@@ -27,14 +27,34 @@ import inteallijIDEAIcon from '../assets/icons/inteallij_idea.png';
 import sql from '../assets/icons/sql.png';
 import vsc from '../assets/icons/vsc.png';
 import adobeExpressIcon from '../assets/icons/adobe_express.png';
+import { useEffect, useState } from 'react';
+import { getCurrentLanguage } from '../service/language-service';
 
 function Skills() {
+    const [translation, setTranslation] = useState({});
+
+    useEffect(() => {
+        translateSkillsPage();
+    }, [translation]);
+
+    const translateSkillsPage = async () => {
+        const currentLanguage = getCurrentLanguage();
+
+        try {
+          const translations = await import(`../languages/${currentLanguage}.json`);
+          setTranslation(translations);
+        } catch (error) {
+          console.error('Error loading translations:', error);
+        }
+    };
+
+
     return (
         <div className='skills-wrapper'>
             <div className="skills-content">
                 <TitleComponent
-                    title={'Skills'}
-                    description={'A concise overview of my full stack development / designing / team skills.'}
+                    title={translation['skillstitle']}
+                    description={translation['skillsdescription']}
                     darkmode={true}
                 />
 
@@ -44,9 +64,7 @@ function Skills() {
                         <div className="skill-row">
                             <div className="skill-title-container">
                                 <p className='skill-title-title'>Front end</p>
-                                <p className='skill-title-description'>
-                                    Proficient in crafting responsive, user-friendly interfaces using HTML, CSS, and Typescript frameworks like React, ensuring seamless user experiences.
-                                </p>
+                                <p className='skill-title-description'>{translation['frontenddescription']}</p>
                             </div>
                             <div className="skill-images-container">
                                 <img src={reactIcon} alt="React" title="React"/>
@@ -64,9 +82,7 @@ function Skills() {
                         <div className="skill-row">
                             <div className="skill-title-container">
                                 <p className='skill-title-title'>Back end</p>
-                                <p className='skill-title-description'>
-                                    I've built a very solid foundation in back end (especially with Java & Spring), and can easily set up a complex system from scratch.
-                                </p>
+                                <p className='skill-title-description'>{translation['backenddescription']}</p>
                             </div>
                             <div className="skill-images-container">
                                 <img src={javaIcon} alt="Java" title="Java"/>
@@ -81,10 +97,8 @@ function Skills() {
                     <div className="skill-container">
                         <div className="skill-row">
                             <div className="skill-title-container">
-                                <p className='skill-title-title'>Team / presentation</p>
-                                <p className='skill-title-description'>
-                                    Effective communicator and collaborator, I excel in both team environments and presentations, conveying complex ideas clearly to diverse audiences.
-                                </p>
+                                <p className='skill-title-title'>{translation['teampresentationtitle']}</p>
+                                <p className='skill-title-description'>{translation['teampresentationdescription']}</p>
                             </div>
                             <div className="skill-images-container">
                                 <img src={githubLogo} alt="GitHub" title="GitHub"/>
@@ -98,9 +112,7 @@ function Skills() {
                         <div className="skill-row">
                             <div className="skill-title-container">
                                 <p className='skill-title-title'>Design</p>
-                                <p className='skill-title-description'>
-                                    A keen eye for design principles, I create intuitive and visually appealing layouts that enhance user interaction and accessibility.
-                                </p>
+                                <p className='skill-title-description'>{translation['designdescription']}</p>
                             </div>
                             <div className="skill-images-container">
                                 <img src={canvaIcon} alt="Canva" title="Canva"/>
@@ -114,9 +126,7 @@ function Skills() {
                         <div className="skill-row">
                             <div className="skill-title-container">
                                 <p className='skill-title-title'>Database</p>
-                                <p className='skill-title-description'>
-                                    Skilled in designing, managing, and optimizing databases with SQL and NoSQL solutions, ensuring data integrity and efficient querying.
-                                </p>
+                                <p className='skill-title-description'>{translation['databasedescription']}</p>
                             </div>
                             <div className="skill-images-container">
                                 <img src={postgreSQLIcon} alt="PostgreSQL" title="PostgreSQL"/>
@@ -130,9 +140,7 @@ function Skills() {
                         <div className="skill-row">
                             <div className="skill-title-container">
                                 <p className='skill-title-title'>Tools</p>
-                                <p className='skill-title-description'>
-                                    Experienced in leveraging a wide range of development tools and environments, including Git, Docker, and CI/CD pipelines, to streamline workflows.
-                                </p>
+                                <p className='skill-title-description'>{translation['toolsdescription']}</p>
                             </div>
                             <div className="skill-images-container">
                                 <img src={vsc} alt="Visual Studio Code" title="Visual Studio Code"/>

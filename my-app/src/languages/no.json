@@ -1,0 +1,22 @@
+{
+    "introdescription": "Heisann! Jeg er en {age} år gammel Full Stack Software Utvikler fra Nederland, spesialisert i front-end development. Jeg brenner for webdesign og full stack-utvikling, takket være mitt 4-årige IT {bachelorLink} ved Hogeschool Utrecht. Jeg liker også naturen, hunder, og håper å flytte til Norge en dag.",
+    "resumetext": "CV-en min",
+    "mailtext": "Send meg en e-post",
+    "skillstitle": "Ferdigheter",
+    "skillsdescription": "En kortfattet oversikt over mine ferdigheter i full stack utvikling / design / team.",
+    "frontenddescription" : "Dyktig i å lage responsive, brukervennlige grensesnitt ved hjelp av HTML-, CSS- og Typescript-rammeverk som React, noe som sikrer sømløse brukeropplevelser.",
+    "backenddescription": "Jeg har bygget et veldig solid fundament i bakenden (spesielt med Java & Spring), og kan enkelt sette opp et komplekst system fra bunnen av.",
+    "teampresentationtitle": "Lag / presentasjon",
+    "teampresentationdescription": "Effektiv formidler og samarbeidspartner, jeg utmerker meg i både teammiljøer og presentasjoner, og formidler komplekse ideer tydelig til forskjellige målgrupper.",
+    "designdescription": "Jeg har et godt øye for designprinsipper og lager intuitive og visuelt tiltalende layouter som forbedrer brukerinteraksjon og tilgjengelighet.",
+    "databasedescription": "Dyktig i å designe, administrere og optimalisere databaser med SQL- og NoSQL-løsninger, for å sikre dataintegritet og effektiv spørring.",
+    "toolsdescription": "Erfaren i å utnytte et bredt spekter av utviklingsverktøy og miljøer, inkludert Git, Docker og CI/CD pipelines, for å strømlinjeforme arbeidsflyter.",
+    "projectstitle": "Prosjekt",
+    "projectsdescription": "Et utvalg av mine fremstående prosjekter, som viser frem arbeidet mitt.",
+    "luftandescription": "Luftan er et svensk selskap som spesialiserer seg på aromadiffusorer og skandinavisk-inspirerte dufter. Prosjektet inkluderer en full e-handelsplattform der brukere kan bla gjennom produkter, legge til varer i handlekurven og legge inn bestillinger. Jeg utviklet hele siden fra bunnen av, og dekker både front-end og back-end utvikling.",
+    "candidateportaldescription": "En onboarding-portal for kandidater til en kunde av Mysolution. Mysolution er et selskap som tilbyr en Salesforce-applikasjon for rekrutteringsbyråer innen ansettelse av folk. I mitt internship for HBO Bachelor IT Software Development-studiet måtte jeg opprette en onboarding-portal for en bestemt kunde av Mysolution, slik at de ansatte til nevnte kunde kunne fylle ut sin legitimasjon (personalia, bankkontoinformasjon, personvernerklæringer osv.) de må ansette disse kandidatene.",
+    "huskelistedescription": "HuskeListe er en enkel norsk gjøremålsapp som lar brukere legge til, krysse av og fjerne oppgaver fra listene sine, og hjelpe dem med å holde orden.",
+    "smartfinancedescription": "SmartFinance er en nettapplikasjon for Hogeschool Utrechts 'Bedrijfskunde'-studenter. Det hjelper dem å øve seg på å lage 'jaarrekeningen' (årsregnskap) og gir umiddelbar tilbakemelding for å forberede seg til tester og lekser.",
+    "kpndescription": "KPN Reisbewegingen er et nettsted for KPN-ansatte for å logge sine reisedata, som deretter settes sammen til en Excel-rapport. Ledere kan se avdelingsstatistikk, og en ledertavle oppfordrer til å redusere CO2-utslipp.",
+    "seeproject": "Se prosjekt"
+}

@@ -5,16 +5,35 @@ import huskeliste from '../assets/project_design_huskeliste.png';
 import kpn from '../assets/project_design_kpn.png';
 import smartfinance from '../assets/project_design_smartfinance.png';
 import candidateportal from '../assets/project_design_mysolution.png';
+import { useEffect, useState } from 'react';
+import { getCurrentLanguage } from '../service/language-service';
 
 function Projects() {
+    const [translation, setTranslation] = useState({});
+
+    useEffect(() => {
+        translateProjectPage();
+    }, [translation]);
+
+    const translateProjectPage = async () => {
+        const currentLanguage = getCurrentLanguage();
+
+        try {
+          const translations = await import(`../languages/${currentLanguage}.json`);
+          setTranslation(translations);
+        } catch (error) {
+          console.error('Error loading translations:', error);
+        }
+    };
+
     return (
         <div className='projects-wrapper'>
             <div className="projects-content">
                 <div className="projects-title-container">
                     <div className="projects-inner-title-container">
                         <TitleComponent
-                            title={'Projects'}
-                            description={'A selection of my standout projects, showcasing my work.'}
+                            title={translation['projectstitle']}
+                            description={translation['projectsdescription']}
                             darkmode={false}
                         />
                     </div>
@@ -30,7 +49,7 @@ function Projects() {
                                     <h3 className='title'>Luftan,</h3>
                                     <h3 className='role'>Java Spring & React Typescript developer</h3>
                                 </div>
-                                <p className='description'>Luftan is a Swedish company specializing in aroma diffusers and Scandinavian-inspired scents. The project includes a full e-commerce platform where users can browse products, add items to their cart, and place orders. I developed the entire site from scratch, covering both front-end and back-end development.</p>
+                                <p className='description'>{translation['luftandescription']}</p>
                             </div>
                             <div className="project-image-container">
                                 <img src={luftan} alt="Project visual image."/>
@@ -46,7 +65,7 @@ function Projects() {
                                     <h3 className='title'>Candidate onboarding portal,</h3>
                                     <h3 className='role'>React Typescript & Salesforce developer</h3>
                                 </div>
-                                <p className='description'>An onboarding portal for candidates of a customer of Mysolution. Mysolution is a company that offers a Salesforce application for recruitment agencies in the field of hiring people. In my internship for my HBO Bachelor IT Software Development study I had to create an onboarding portal for a certain customer of Mysolution, so that the employees of said customer could fill in their credentials (personalia, bank account information, privacy statements etc.) that they would need to hire those candidates.</p>
+                                <p className='description'>{translation['candidateportaldescription']}</p>
                             </div>
                             <div className="project-image-container">
                                 <img src={candidateportal} alt="Project visual image."/>
@@ -62,9 +81,9 @@ function Projects() {
                                     <h3 className='title'>HuskeListe,</h3>
                                     <h3 className='role'>React Typescript developer</h3>
                                 </div>
-                                <p className='description'>HuskeListe is a simple Norwegian to-do app that allows users to add, cross off, and remove tasks from their lists, helping them stay organized.</p>
+                                <p className='description'>{translation['huskelistedescription']}</p>
                                 <a href='https://wesselvandalen.github.io/huskeliste/' target='_blank' className='project-button'>
-                                    See project
+                                    {translation['seeproject']}
                                 </a>
                             </div>
                             <div className="project-image-container">
@@ -81,9 +100,9 @@ function Projects() {
                                     <h3 className='title'>SmartFinance,</h3>
                                     <h3 className='role'>Java Spring & React Javascript developer</h3>
                                 </div>
-                                <p className='description'>SmartFinance is a web application for Hogeschool Utrecht's 'Bedrijfskunde' students. It helps them practice creating 'jaarrekeningen' (annual financial statements) and provides immediate feedback to prepare for tests and homework.</p>
+                                <p className='description'>{translation['smartfinancedescription']}</p>
                                 <a href='http://159.223.223.166:8080/' target='_blank' className='project-button'>
-                                    See project
+                                    {translation['seeproject']}
                                 </a>
                             </div>
                             <div className="project-image-container">
@@ -100,9 +119,9 @@ function Projects() {
                                     <h3 className='title'>KPN Travelmovements,</h3>
                                     <h3 className='role'>Lit Javascript developer</h3>
                                 </div>
-                                <p className='description'>KPN Reisbewegingen is a site for KPN employees to log their travel data, which is then compiled into an Excel report. Managers can view departmental statistics, and a leaderboard encourages reducing CO2 emissions.</p>
+                                <p className='description'>{translation['kpndescription']}</p>
                                 <a href='https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/' target='_blank' className='project-button'>
-                                    See project
+                                    {translation['seeproject']}
                                 </a>
                             </div>
                             <div className="project-image-container">
