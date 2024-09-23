@@ -67,6 +67,7 @@ function Intro() {
                                 </>
                             )}
                         </p>
+                        <p className='intronorway'>*{translation['intronorway']}</p>
                         <div className="social-links-container">
                             <a href="mailto:wesselvandalen@gmail.com">{translation['mailtext']}</a>
                             <a href="https://github.com/wesselvandalen/" target='_blank'>GitHub</a>

@@ -11,7 +11,7 @@ function TitleComponent(props) {
 
     const styleP = {
         'color': props.darkmode ? 'white' : 'black',
-        'opacity': props.darkmode ? '1' : '.6'
+        'opacity': props.darkmode ? '1' : '.8'
     };
 
     return (

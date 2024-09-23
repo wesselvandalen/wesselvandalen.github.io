@@ -1,5 +1,6 @@
 {
-    "introdescription": "Heisann! I’m a {age}-year-old Full Stack Software Engineer from the Netherlands, specialized in front-end development. I'm passionate about web design and full stack development, thanks to my 4-years IT {bachelorLink} at Hogeschool Utrecht. I also enjoy nature, dogs, and hope to move to Norway one day.",
+    "introdescription": "Heisann!* I’m a {age}-year-old Full Stack Software Engineer from the Netherlands, specialized in front-end development. I'm passionate about web design and full stack development, thanks to my 4-years IT {bachelorLink} at Hogeschool Utrecht. I also enjoy nature, dogs, and hope to move to Norway one day.",
+    "intronorway": "I am excited to expand my horizons into Norway and collaborate with Norwegian enterprises. If you have opportunities or insights regarding relocation to Norway, I would be more than happy to explore potential discussions!",
     "resumetext": "My resume",
     "mailtext": "Mail me",
     "skillstitle": "Skills",
