@@ -18,12 +18,30 @@
     width: 60%;
 }
 
-.intro-title {
-    background: linear-gradient(90deg, 
-    rgb(74, 172, 197) -45%,   /* blue-green (#4AACC5) */
-    rgb(113, 157, 254) 10%,   /* blue-violet (#719DFE) */
-    rgb(212, 136, 248) 25%,   /* pink-purple (#D488F8) */
-    rgb(240, 93, 114) 60%);   /* red-pink (#F05D72) */
+.intro-title { 
+    background: 
+    linear-gradient(90deg, 
+      #e5737f 0%, #e5737f 20%, /* Lighter red background */
+      #e5737f 20%, #FFFFFF 25%, /* Soft transition from red to white */
+      #FFFFFF 21%, #FFFFFF 29%, /* White vertical stripe */
+      #FFFFFF 29%, #2c87e8 32%, /* Soft transition from white to blue */
+      #2c87e8 32%, #2c87e8 39%, /* Dark blue vertical stripe */
+      #2c87e8 39%, #FFFFFF 41%, /* Soft transition from blue to white */
+      #FFFFFF 41%, #FFFFFF 48%, /* White vertical stripe */
+      #FFFFFF 48%, #e5737f 50%, /* Soft transition from white to red */
+      #e5737f 50% 100%), /* Lighter red background */
+    linear-gradient(0deg, 
+      #e5737f 0%, #e5737f 25%, /* Lighter red background */
+      #e5737f 25%, #FFFFFF 26%, /* Soft transition from red to white */
+      #FFFFFF 26%, #FFFFFF 33%, /* White horizontal stripe */
+      #FFFFFF 33%, #2c87e8 36%, /* Soft transition from white to blue */
+      #2c87e8 36%, #2c87e8 42%, /* Dark blue horizontal stripe */
+      #2c87e8 42%, #FFFFFF 44%, /* Soft transition from blue to white */
+      #FFFFFF 44%, #FFFFFF 51%, /* White horizontal stripe */
+      #FFFFFF 51%, #e5737f 53%, /* Soft transition from white to red */
+      #e5737f 53% 100%); /* Lighter red background */
+  
+  
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 650;
