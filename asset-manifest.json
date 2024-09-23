@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ed7e7bf.css",
-    "main.js": "/static/js/main.c4c36544.js",
-    "static/js/26.c581a6b3.chunk.js": "/static/js/26.c581a6b3.chunk.js",
-    "static/js/723.923de621.chunk.js": "/static/js/723.923de621.chunk.js",
-    "static/js/418.d8aa28ec.chunk.js": "/static/js/418.d8aa28ec.chunk.js",
+    "main.css": "/static/css/main.f2c5fb09.css",
+    "main.js": "/static/js/main.46f16682.js",
+    "static/js/26.c2ff22e4.chunk.js": "/static/js/26.c2ff22e4.chunk.js",
+    "static/js/723.5ee68b15.chunk.js": "/static/js/723.5ee68b15.chunk.js",
+    "static/js/418.dddf113d.chunk.js": "/static/js/418.dddf113d.chunk.js",
     "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
     "static/media/image.png": "/static/media/image.6def61535520aa64ac72.png",
     "static/media/canva.png": "/static/media/canva.4384eab39ba50bb8cee6.png",
@@ -38,12 +38,12 @@
     "static/media/github.png": "/static/media/github.70f71607abed0c1780a6.png",
     "static/media/figma.png": "/static/media/figma.809e95cfef4058cfd651.png",
     "index.html": "/index.html",
-    "main.8ed7e7bf.css.map": "/static/css/main.8ed7e7bf.css.map",
-    "main.c4c36544.js.map": "/static/js/main.c4c36544.js.map",
+    "main.f2c5fb09.css.map": "/static/css/main.f2c5fb09.css.map",
+    "main.46f16682.js.map": "/static/js/main.46f16682.js.map",
     "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ed7e7bf.css",
-    "static/js/main.c4c36544.js"
+    "static/css/main.f2c5fb09.css",
+    "static/js/main.46f16682.js"
   ]
 }
