@@ -39,9 +39,7 @@
       #2c87e8 42%, #FFFFFF 44%, /* Soft transition from blue to white */
       #FFFFFF 44%, #FFFFFF 51%, /* White horizontal stripe */
       #FFFFFF 51%, #e5737f 53%, /* Soft transition from white to red */
-      #e5737f 53% 100%); /* Lighter red background */
-  
-  
+      #e5737f 53% 100%); /* Lighter red background */  
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 650;
