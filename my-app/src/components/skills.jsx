@@ -29,6 +29,7 @@ import vsc from '../assets/icons/vsc.png';
 import adobeExpressIcon from '../assets/icons/adobe_express.png';
 import { useEffect, useState } from 'react';
 import { getCurrentLanguage } from '../service/language-service';
+import csharp from '../assets/icons/csharp.png';
 
 function Skills() {
     const [translation, setTranslation] = useState({});
@@ -88,6 +89,7 @@ function Skills() {
                                 <img src={javaIcon} alt="Java" title="Java"/>
                                 <img src={springIcon} alt="Spring" title="Spring"/>
                                 <img src={junit5Icon} alt="JUnit5" title="JUnit5"/>
+                                <img src={csharp} alt="C#" title="C#"/>
                                 <img src={pythonIcon} alt="Python" title="Python"/>
                                 <img src={salesforceIcon} alt="Salesforce" title="Salesforce"/>
                             </div>
