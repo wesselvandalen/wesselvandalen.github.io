@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a84986e3.css",
-    "main.js": "/static/js/main.46f16682.js",
+    "main.js": "/static/js/main.c8fd3572.js",
     "static/js/26.c2ff22e4.chunk.js": "/static/js/26.c2ff22e4.chunk.js",
     "static/js/723.5ee68b15.chunk.js": "/static/js/723.5ee68b15.chunk.js",
     "static/js/418.dddf113d.chunk.js": "/static/js/418.dddf113d.chunk.js",
@@ -22,6 +22,7 @@
     "static/media/adobe_express.png": "/static/media/adobe_express.2663c580c748b0aa7c71.png",
     "static/media/git.png": "/static/media/git.52ffcca1c2260d3a141b.png",
     "static/media/html.png": "/static/media/html.aeb69129de4a762942b2.png",
+    "static/media/csharp.png": "/static/media/csharp.47ef01f9dc01fdb7a5e9.png",
     "static/media/docker.png": "/static/media/docker.dcda82af5b17fff350fd.png",
     "static/media/salesforce.png": "/static/media/salesforce.cff6ef05d5389c88e991.png",
     "static/media/css.png": "/static/media/css.4eb3c6ba22605e7b1afa.png",
@@ -39,11 +40,11 @@
     "static/media/figma.png": "/static/media/figma.809e95cfef4058cfd651.png",
     "index.html": "/index.html",
     "main.a84986e3.css.map": "/static/css/main.a84986e3.css.map",
-    "main.46f16682.js.map": "/static/js/main.46f16682.js.map",
+    "main.c8fd3572.js.map": "/static/js/main.c8fd3572.js.map",
     "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a84986e3.css",
-    "static/js/main.46f16682.js"
+    "static/js/main.c8fd3572.js"
   ]
 }
