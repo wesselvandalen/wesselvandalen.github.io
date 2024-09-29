@@ -1,21 +1,22 @@
 import './projects.css';
-import TitleComponent from './title-component';
-import luftan from '../assets/project_design_luftan.png';
-import huskeliste from '../assets/project_design_huskeliste.png';
-import kpn from '../assets/project_design_kpn.png';
-import smartfinance from '../assets/project_design_smartfinance.png';
-import candidateportal from '../assets/project_design_mysolution.png';
-import { useEffect, useState } from 'react';
+import luftan from '../assets/projects/project_design_luftan.png';
+import candidatePortal from '../assets/projects/project_design_mysolution.png';
+import huskeliste from '../assets/projects/project_design_huskeliste.png';
+import smartfinance from '../assets/projects/project_design_smartfinance.png';
+import kpn from '../assets/projects/project_design_kpn.png';
+import { useState, useEffect } from 'react';
 import { getCurrentLanguage } from '../service/language-service';
+import "animate.css/animate.compat.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function Projects() {
     const [translation, setTranslation] = useState({});
 
     useEffect(() => {
-        translateProjectPage();
+        translateHeaderPage();
     }, [translation]);
 
-    const translateProjectPage = async () => {
+    const translateHeaderPage = async () => {
         const currentLanguage = getCurrentLanguage();
 
         try {
@@ -27,112 +28,108 @@ function Projects() {
     };
 
     return (
-        <div className='projects-wrapper'>
-            <div className="projects-content">
-                <div className="projects-title-container">
-                    <div className="projects-inner-title-container">
-                        <TitleComponent
-                            title={translation['projectstitle']}
-                            description={translation['projectsdescription']}
-                            darkmode={false}
-                        />
+        <>
+            <ScrollAnimation animateIn='fadeIn'>
+                <div className="seksjon">
+                    <div className="container">
+                        <div className="title-component-wrapper">
+                            <div className="title-component">
+                                <h1>{translation['worktitle']}</h1>
+                                <div className="paragraph">
+                                    {translation['workdescription']}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div className="projects-container">
-
-                    <div className="project-block">
-                        <div className='line-divider'/>
-                        <div className="project-inner-content">
-                            <div className="project-tekst-container">
-                                <div className="title-role-wrapper">
-                                    <h3 className='title'>Luftan,</h3>
-                                    <h3 className='role'>Java Spring & React Typescript developer</h3>
+            </ScrollAnimation>
+            <div className="projects-container">
+                <div className="projects-content">
+                    <ScrollAnimation animateIn='fadeIn'>
+                        <div className="project-block">
+                            <div className="project-wrapper">
+                                <div className="project-image">
+                                    <img src={luftan} alt='Luftan' title='Luftan'/>
                                 </div>
-                                <p className='description'>{translation['luftandescription']}</p>
-                            </div>
-                            <div className="project-image-container">
-                                <img src={luftan} alt="Project visual image."/>
+                                <div className="project-text">
+                                    <h1>Luftan</h1>
+                                    <div className="paragraph">
+                                        {translation['luftandescription']}
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </ScrollAnimation>
 
-                    <div className="project-block">
-                        <div className='line-divider'/>
-                        <div className="project-inner-content">
-                            <div className="project-tekst-container">
-                                <div className="title-role-wrapper">
-                                    <h3 className='title'>Candidate onboarding portal,</h3>
-                                    <h3 className='role'>React Typescript & Salesforce developer</h3>
+                    <ScrollAnimation animateIn='fadeIn'>
+                        <div className="project-block">
+                            <div className="project-wrapper">
+                                <div className="project-image">
+                                    <img src={candidatePortal} alt='Candidate onboarding portal' title='Candidate onboarding portal'/>
                                 </div>
-                                <p className='description'>{translation['candidateportaldescription']}</p>
-                            </div>
-                            <div className="project-image-container">
-                                <img src={candidateportal} alt="Project visual image."/>
+                                <div className="project-text">
+                                    <h1>Candidate onboarding portal</h1>
+                                    <div className="paragraph">
+                                        {translation['candidateportaldescription']}
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </ScrollAnimation>
 
-                    <div className="project-block">
-                        <div className='line-divider'/>
-                        <div className="project-inner-content">
-                            <div className="project-tekst-container">
-                                <div className="title-role-wrapper">
-                                    <h3 className='title'>HuskeListe,</h3>
-                                    <h3 className='role'>React Typescript developer</h3>
+                   <ScrollAnimation animateIn='fadeIn'>
+                        <div className="project-block">
+                                <div className="project-wrapper">
+                                    <div className="project-image">
+                                        <img src={huskeliste} alt='HuskeListe' title='HuskeListe'/>
+                                    </div>
+                                    <div className="project-text">
+                                        <h1>HuskeListe</h1>
+                                        <div className="paragraph">
+                                            {translation['huskelistedescription']}
+                                        </div>
+                                        <a className='project-btn' href="https://wesselvandalen.github.io/huskeliste/" target='_blank' rel="noreferrer">{translation['seeproject']}</a>
+                                    </div>
                                 </div>
-                                <p className='description'>{translation['huskelistedescription']}</p>
-                                <a href='https://wesselvandalen.github.io/huskeliste/' target='_blank' className='project-button'>
-                                    {translation['seeproject']}
-                                </a>
                             </div>
-                            <div className="project-image-container">
-                                <img src={huskeliste} alt="Project visual image."/>
+                   </ScrollAnimation>
+
+                    <ScrollAnimation animateIn='fadeIn'>
+                        <div className="project-block">
+                            <div className="project-wrapper">
+                                <div className="project-image">
+                                    <img src={smartfinance} alt='SmartFinance' title='SmartFinance'/>
+                                </div>
+                                <div className="project-text">
+                                    <h1>SmartFinance</h1>
+                                    <div className="paragraph">
+                                        {translation['smartfinancedescription']}
+                                    </div>
+                                    <a className='project-btn' href="http://159.223.223.166:8080/" target='_blank' rel="noreferrer">{translation['seeproject']}</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </ScrollAnimation>
 
+                   <ScrollAnimation animateIn='fadeIn'>
                     <div className="project-block">
-                        <div className='line-divider'/>
-                        <div className="project-inner-content">
-                            <div className="project-tekst-container">
-                                <div className="title-role-wrapper">
-                                    <h3 className='title'>SmartFinance,</h3>
-                                    <h3 className='role'>Java Spring & React Javascript developer</h3>
+                            <div className="project-wrapper">
+                                <div className="project-image">
+                                    <img src={kpn} alt='KPN Travelmovements' title='KPN Travelmovements'/>
                                 </div>
-                                <p className='description'>{translation['smartfinancedescription']}</p>
-                                <a href='http://159.223.223.166:8080/' target='_blank' className='project-button'>
-                                    {translation['seeproject']}
-                                </a>
-                            </div>
-                            <div className="project-image-container">
-                                <img src={smartfinance} alt="Project visual image."/>
+                                <div className="project-text">
+                                    <h1>KPN Travelmovements</h1>
+                                    <div className="paragraph">
+                                        {translation['kpndescription']}
+                                    </div>
+                                    <a className='project-btn' href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target='_blank' rel="noreferrer">{translation['seeproject']}</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div className="project-block">
-                        <div className='line-divider'/>
-                        <div className="project-inner-content">
-                            <div className="project-tekst-container">
-                                <div className="title-role-wrapper">
-                                    <h3 className='title'>KPN Travelmovements,</h3>
-                                    <h3 className='role'>Lit Javascript developer</h3>
-                                </div>
-                                <p className='description'>{translation['kpndescription']}</p>
-                                <a href='https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/' target='_blank' className='project-button'>
-                                    {translation['seeproject']}
-                                </a>
-                            </div>
-                            <div className="project-image-container">
-                                <img src={kpn} alt="Project visual image."/>
-                            </div>
-                        </div>
-                    </div>
-
+                   </ScrollAnimation>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 

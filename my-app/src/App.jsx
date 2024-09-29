@@ -1,18 +1,18 @@
 import './App.css';
-import Intro from './components/intro';
+import Header from './components/header';
+import Home from './components/home';
 import Skills from './components/skills';
+import Feature from './components/feature';
 import Projects from './components/projects';
 
 function App() {
   return (
     <>
-      <div className="app-wrapper">
-        <div className="app-content">
-          <Intro/>
-          <Skills/>
-          <Projects/>
-        </div>
-      </div>
+      <Header/>
+      <Home/>
+      <Feature/>
+      <Skills/>
+      <Projects/>
     </>
   );
 }

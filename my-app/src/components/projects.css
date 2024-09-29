@@ -1,143 +1,112 @@
-.projects-wrapper {
+.title-component-wrapper {
+    margin-top: 300px;
+    width: 90%;
+}
+
+.title-component {
+    margin-left: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 200px;
-    margin-top: 20px;
-}
-
-.projects-content {
-    width: 80%;
-}
-
-.line-divider {
-    background-color: rgb(0, 0, 0);
-    margin: '0 0 40px 0';
-    width: '100%';
-    height: '1px';
-}
-
-.projects-container {
-    margin-top: 120px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
 }
 
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+}
+
 .project-block {
-    width: 100%;
-    margin-bottom: 100px;
+    margin: 50px 0;
+    padding: 0 20px;
 }
 
-.project-inner-content {
-    display: flex;
-    width: 100%;
-}
-
-.title-role-wrapper {
-    display: flex;
-}
-
-.project-tekst-container {
-    width: 60%;
-}
-
-.title {
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1;
-}
-
-.role {
-    color: rgb(39, 140, 255);
-    margin: 26px 0 0 10px;
-    opacity: 1;
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 1;
-}
-
-.description {
-    margin-top: -1px;
-    margin-bottom: 35px;
-    font-weight: 400;
-    font-size: 16px;
-    opacity: .8;
-    line-height: 1;
-}
-
-.project-button {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: 350;
-    background-color: #0071E3;
+.project-btn {
+    color: #222;
     border: none;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    background-color: #fff;
+    border: #222 solid .05px;
 }
 
-.project-button:hover {
-    cursor: pointer;
-    background-color: #178bff;
-
+.project-btn:hover {
+    color: #222;
+    background-color: #fcfaf8;
 }
 
-.project-image-container {
-    width: 40%;
+.project-wrapper {
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
 }
 
-.project-image-container img {
-    border-radius: 25px;
-    width: 350px;
+.project-text {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    display: flex;
+    margin: 20px 0;
+    width: 75%;
 }
 
-@media screen and (max-width: 1080px) {
-    .projects-wrapper {
-        margin-top: 50px;
-    }
+.project-text h1 {
+    letter-spacing: -.4px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    color: #222;
+}
 
-    .project-inner-content {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+.project-text .paragraph {
+    color: #222;
+    margin-bottom: 16px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+}
 
-    .project-image-container {
-        justify-content: center;
-        margin-bottom: 25px;
-    }
+.project-image {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .projects-title-container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+.project-image img {
+    width: 450px;
+}
 
-    .projects-inner-title-container {
-        width: 80%;
-    }
-
-    .project-image-container img {
-        width: 310px;
-    }
-
+@media screen and (max-width: 1920px) {
     .projects-content {
         width: 100%;
     }
+}
 
-    .project-tekst-container {
-        width: 80%;
+@media screen and (max-width: 1080px) {
+    .projects-content {
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .title-role-wrapper {
-        flex-direction: column;
-    }
-
-    .role {
-        margin: -10px 0 15px 0;
+    .project-text {
+        width: 90%;
+        margin-left: -40px;
     }
 }

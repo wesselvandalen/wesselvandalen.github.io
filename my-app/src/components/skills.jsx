@@ -1,5 +1,4 @@
 import './skills.css';
-import TitleComponent from './title-component';
 import reactIcon from '../assets/icons/react.png';
 import litIcon from '../assets/icons/lit.png';
 import svelteIcon from '../assets/icons/svelte.png';
@@ -21,23 +20,23 @@ import postman from '../assets/icons/postman.png';
 import salesforceIcon from '../assets/icons/salesforce.png';
 import githubLogo from '../assets/icons/github.png';
 import gitLogo from '../assets/icons/git.png';
-import pptIcon from '../assets/icons/ppt.png';
 import powershellIcon from '../assets/icons/powershell.png';
 import inteallijIDEAIcon from '../assets/icons/inteallij_idea.png';
-import sql from '../assets/icons/sql.png';
 import vsc from '../assets/icons/vsc.png';
-import adobeExpressIcon from '../assets/icons/adobe_express.png';
 import { useEffect, useState } from 'react';
 import { getCurrentLanguage } from '../service/language-service';
+import csharp from '../assets/icons/csharp.png';
+import "animate.css/animate.compat.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function Skills() {
     const [translation, setTranslation] = useState({});
 
     useEffect(() => {
-        translateSkillsPage();
+        translateHeaderPage();
     }, [translation]);
 
-    const translateSkillsPage = async () => {
+    const translateHeaderPage = async () => {
         const currentLanguage = getCurrentLanguage();
 
         try {
@@ -48,114 +47,99 @@ function Skills() {
         }
     };
 
-
     return (
-        <div className='skills-wrapper'>
-            <div className="skills-content">
-                <TitleComponent
-                    title={translation['skillstitle']}
-                    description={translation['skillsdescription']}
-                    darkmode={true}
-                />
-
-                <div className="skills-container">
-
-                    <div className="skill-container">
-                        <div className="skill-row">
-                            <div className="skill-title-container">
-                                <p className='skill-title-title'>Front end</p>
-                                <p className='skill-title-description'>{translation['frontenddescription']}</p>
-                            </div>
-                            <div className="skill-images-container">
-                                <img src={reactIcon} alt="React" title="React"/>
-                                <img src={litIcon} alt="Lit" title="Lit"/>
-                                <img src={svelteIcon} alt="Svelte" title="Svelte"/>
-                                <img src={typescriptIcon} alt="Typescript" title="Typescript"/>
-                                <img src={javascriptIcon} alt="Javascript" title="Javascript"/>
-                                <img src={htmlIcon} alt="HTML" title="HTML"/>
-                                <img src={cssIcon} alt="CSS" title="CSS"/>
+        <>
+            <ScrollAnimation animateIn="fadeIn">
+                <div className='seksjon'>
+                    <div className="container">
+                        <div className="title-component-wrapper">
+                            <div className="title-component">
+                                <h1>{translation['skillstitle']}</h1>
+                                <div className="paragraph">
+                                    {translation['skillsdescription']}
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </ScrollAnimation>
+            <div className='seksjon skill-section'>
+                <div className="container">
+                    <div className="skills-wrapper">
 
-                    <div className="skill-container">
-                        <div className="skill-row">
-                            <div className="skill-title-container">
-                                <p className='skill-title-title'>Back end</p>
-                                <p className='skill-title-description'>{translation['backenddescription']}</p>
+                        <ScrollAnimation animateIn="fadeIn">
+                            <div className="skill-block">
+                                <div>
+                                    <h3 className='skill-title'>Front end</h3>
+                                    <p className='skill-description'>{translation['frontenddescription']}</p>
+                                </div>
+                                <div className="icon-container">
+                                    <img src={reactIcon} alt='React' title='React'/>
+                                    <img src={litIcon} alt='Lit' title='Lit'/>
+                                    <img src={svelteIcon} alt='Svelte' title='Svelte'/>
+                                    <img src={javascriptIcon} alt='Javascript' title='Javascript'/>
+                                    <img src={typescriptIcon} alt='Typescript' title='Typescript'/>
+                                    <img src={htmlIcon} alt='HTML' title='HTML'/>
+                                    <img src={cssIcon} alt='CSS' title='CSS'/>
+                                    <img src={canvaIcon} alt='Canva' title='Canva'/>
+                                    <img src={figmaIcon} alt='Figma' title='Figma'/>
+                                </div>
                             </div>
-                            <div className="skill-images-container">
-                                <img src={javaIcon} alt="Java" title="Java"/>
-                                <img src={springIcon} alt="Spring" title="Spring"/>
-                                <img src={junit5Icon} alt="JUnit5" title="JUnit5"/>
-                                <img src={pythonIcon} alt="Python" title="Python"/>
-                                <img src={salesforceIcon} alt="Salesforce" title="Salesforce"/>
-                            </div>
-                        </div>
-                    </div>
+                        </ScrollAnimation>
 
-                    <div className="skill-container">
-                        <div className="skill-row">
-                            <div className="skill-title-container">
-                                <p className='skill-title-title'>{translation['teampresentationtitle']}</p>
-                                <p className='skill-title-description'>{translation['teampresentationdescription']}</p>
+                        <ScrollAnimation animateIn="fadeIn">
+                            <div className="skill-block">
+                                <div>
+                                    <h3 className='skill-title'>Back end</h3>
+                                    <p className='skill-description'>{translation['backenddescription']}</p>
+                                </div>
+                                <div className="icon-container">
+                                    <img src={javaIcon} alt='Java' title='Java'/>
+                                    <img src={springIcon} alt='Spring' title='Spring'/>
+                                    <img src={csharp} alt='C#' title='C#'/>
+                                    <img src={pythonIcon} alt='Python' title='Python'/>
+                                    <img src={hibernateIcon} alt='Hibernate' title='Hibernate'/>
+                                    <img src={postgreSQLIcon} alt='PostgreSQL' title='PostgreSQL'/>
+                                </div>
                             </div>
-                            <div className="skill-images-container">
-                                <img src={githubLogo} alt="GitHub" title="GitHub"/>
-                                <img src={gitLogo} alt="Git" title="Git"/>
-                                <img src={pptIcon} alt="Presenting" title="Presenting"/>
-                            </div>
-                        </div>
-                    </div>
+                        </ScrollAnimation>
 
-                    <div className="skill-container">
-                        <div className="skill-row">
-                            <div className="skill-title-container">
-                                <p className='skill-title-title'>Design</p>
-                                <p className='skill-title-description'>{translation['designdescription']}</p>
+                        <ScrollAnimation animateIn="fadeIn">
+                            <div className="skill-block">
+                                <div>
+                                    <h3 className='skill-title'>DevOps & Cloud Tools</h3>
+                                    <p className='skill-description'>{translation['devopsdescription']}</p>
+                                </div>
+                                <div className="icon-container">
+                                    <img src={azureIcon} alt='Azure' title='Azure'/>
+                                    <img src={dockerIcon} alt='Docker' title='Docker'/>
+                                    <img src={powershellIcon} alt='Powershell' title='Powershell'/>
+                                    <img src={gitLogo} alt='Git' title='Git'/>
+                                    <img src={githubLogo} alt='GitHub' title='GitHub'/>
+                                </div>
                             </div>
-                            <div className="skill-images-container">
-                                <img src={canvaIcon} alt="Canva" title="Canva"/>
-                                <img src={figmaIcon} alt="Figma" title="Figma"/>
-                                <img src={adobeExpressIcon} alt="Adobe Express" title="Adobe Express"/>
-                            </div>
-                        </div>
-                    </div>
+                        </ScrollAnimation>
 
-                    <div className="skill-container">
-                        <div className="skill-row">
-                            <div className="skill-title-container">
-                                <p className='skill-title-title'>Database</p>
-                                <p className='skill-title-description'>{translation['databasedescription']}</p>
+                        <ScrollAnimation animateIn="fadeIn">
+                            <div className="skill-block">
+                                <div>
+                                    <h3 className='skill-title'>Testing & Development Environments</h3>
+                                    <p className='skill-description'>{translation['testingdescription']}</p>
+                                </div>
+                                <div className="icon-container">
+                                    <img src={junit5Icon} alt='JUnit5' title='JUnit5'/>
+                                    <img src={postman} alt='Postman' title='Postman'/>
+                                    <img src={salesforceIcon} alt='Salesforce' title='Salesforce'/>
+                                    <img src={inteallijIDEAIcon} alt='Inteallij IDEA' title='Inteallij IDEA'/>
+                                    <img src={vsc} alt='Visual Studio Code' title='Visual Studio Code'/>
+                                </div>
                             </div>
-                            <div className="skill-images-container">
-                                <img src={postgreSQLIcon} alt="PostgreSQL" title="PostgreSQL"/>
-                                <img src={sql} alt="SQL" title="SQL"/>
-                                <img src={hibernateIcon} alt="Hibernate" title="Hibernate"/>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="skill-container">
-                        <div className="skill-row">
-                            <div className="skill-title-container">
-                                <p className='skill-title-title'>Tools</p>
-                                <p className='skill-title-description'>{translation['toolsdescription']}</p>
-                            </div>
-                            <div className="skill-images-container">
-                                <img src={vsc} alt="Visual Studio Code" title="Visual Studio Code"/>
-                                <img src={inteallijIDEAIcon} alt="Inteallij IDEA" title="Inteallij IDEA"/>
-                                <img src={powershellIcon} alt="Powershell" title="Powershell"/>
-                                <img src={azureIcon} alt="Azure" title="Azure"/>
-                                <img src={dockerIcon} alt="Docker" title="Docker"/>
-                                <img src={postman} alt="Postman" title="Postman"/>
-                            </div>
-                        </div>
+                        </ScrollAnimation>
                     </div>
 
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
