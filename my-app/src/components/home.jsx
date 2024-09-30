@@ -1,6 +1,8 @@
 import './home.css';
-import { useState, useEffect } from 'react';
+import bilde from '../assets/IMG_1347.jpg';
+import { useEffect, useState } from 'react';
 import { getCurrentLanguage } from '../service/language-service';
+import norwayFlag from '../assets/flags/no.png';
 
 function Home() {
     const [translation, setTranslation] = useState({});
@@ -28,15 +30,34 @@ function Home() {
         return Math.abs(year - 1970);
     };
 
+    function generateGreeting() {
+        const date = new Date();
+        const hours = date.getHours();
+        if (hours <= 5 && hours >= 0) {
+            return 'God natt!';
+        } else if (hours >= 6 && hours <= 11) {
+            return 'God morgen!';
+        } else if (hours >= 12 && hours <= 17) {
+            return 'God dag!';
+        } else {
+            return 'God kveld!';
+        }
+    }
+
     return (
-        <div className='seksjon'>
-            <div className="container">
-                <div className="seksjon-wrapper">
-                    <div className="tekst-wrapper">
-                        <div className="display">
-                            Wessel van <span className='tekst-span'>Dalen</span>
+        <div className='home-wrapper'>
+            <div className="home-container">
+                <div className="home-content">
+                    <div className="home-image-container">
+                        <img src={bilde} alt='Jeg' title='Jeg'/>
+                    </div>
+                    <div className="home-text-container">
+                        <p className='greeting'>{generateGreeting()}</p>
+                        <h3 className='name'>Wessel Rowdy van Dalen</h3>
+                        <div className='role-container'>
+                            <img src={norwayFlag} alt="Flag of Norway" className='norway-icon'/>
+                            <p className='role'>Full Stack {translation['role']}</p>
                         </div>
-                        <h2 className='role'>Full Stack {translation['role']}</h2>
                         <p className='description'>
                             {translation['description'] && (
                                 <>
@@ -53,7 +74,6 @@ function Home() {
                             )}
                         </p>
                     </div>
-                    <div className="image-wrapper"></div>
                 </div>
             </div>
         </div>

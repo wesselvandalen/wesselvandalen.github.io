@@ -1,6 +1,5 @@
 import './header.css';
 import { setCurrentLanguage } from '../service/language-service';
-import logo from '../assets/dalen_logo.png';
 import { useEffect, useState } from 'react';
 import { getCurrentLanguage } from '../service/language-service';
 import noFlag from '../assets/flags/no.png';
@@ -63,7 +62,7 @@ function Header() {
         <div className='header-wrapper'>
             <div className="header-content">
                 <div className="logo-wrapper">
-                    <img src={logo} alt="Dalen logo" className='logo'/>
+                    {/* <img src={logo} alt="Dalen logo" className='logo'/> */}
                     <span className='logo-span'>Dalen</span>
                 </div>
                 <div className="navigation">

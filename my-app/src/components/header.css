@@ -53,7 +53,7 @@
 }
 
 .navigation a {
-    color: #7c7c7c;
+    color: #222;
     text-decoration: none;
     padding: 16px;
     font-size: 15px;
@@ -71,7 +71,7 @@
 }
 
 .dropdown-content a {
-    color: #7c7c7c;
+    color: #222;
     text-decoration: none;
     padding: 16px;
     font-size: 15px;
@@ -88,7 +88,7 @@
 
 .dropbtn {
     background-color: #fff;
-    color: #7c7c7c;
+    color: #222;
     text-decoration: none;
     padding: 16px;
     font-size: 15px;
