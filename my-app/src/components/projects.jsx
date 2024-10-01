@@ -38,7 +38,112 @@ function Projects() {
 
                     <div className="projects-wrapper">
 
-                        <div className="project-block">
+                        <div className="card">
+                            <div className="image-container">
+                                <img src={luftan} alt='Luftan project visual' title='Luftan project visual'/>
+                                <div className="overlay">
+                                    <p>Side project</p>
+                                </div>
+                            </div>
+                            <div className="content">
+                                <h3>Luftan</h3>
+                                <p>Swedish aroma diffuser E-commerce platform</p>
+                            </div>
+                            <div className="arrow">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <div className="image-container">
+                                <img src={candidatePortal} alt='Luftan project visual' title='Luftan project visual'/>
+                                <div className="overlay">
+                                    <p>9 min read</p>
+                                </div>
+                            </div>
+                            <div className="content">
+                                <h3>Candidate onboarding portal</h3>
+                                <p>Portal for candidates of customer of Mysolution</p>
+                            </div>
+                            <div className="arrow">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <div className="image-container">
+                                <img src={huskeliste} alt='Luftan project visual' title='Luftan project visual'/>
+                                <div className="overlay">
+                                    <p>9 min read</p>
+                                </div>
+                            </div>
+                            <div className="content">
+                                <h3>Candidate onboarding portal</h3>
+                                <p>Hei</p>
+                            </div>
+                            <div className="arrow">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <div className="image-container">
+                                <img src={smartfinance} alt='Luftan project visual' title='Luftan project visual'/>
+                                <div className="overlay">
+                                    <p>9 min read</p>
+                                </div>
+                            </div>
+                            <div className="content">
+                                <h3>Candidate onboarding portal</h3>
+                                <p>Hei</p>
+                            </div>
+                            <div className="arrow">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <div className="image-container">
+                                <img src={kpn} alt='Luftan project visual' title='Luftan project visual'/>
+                                <div className="overlay">
+                                    <p>9 min read</p>
+                                </div>
+                            </div>
+                            <div className="content">
+                                <h3>Candidate onboarding portal</h3>
+                                <p>Hei</p>
+                            </div>
+                            <div className="arrow">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                        
+                        {/* <div className="project-block">
                             <div className="project-inner-block">
                                 <img src={luftan} alt='Luftan project visual' title='Luftan project visual'/>
                                 <div className="project-block-info">
@@ -89,7 +194,7 @@ function Projects() {
                                     <a className='project-btn' href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target='_blank' rel="noreferrer">{translation['seeproject']}</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                     </div>
 

@@ -1,7 +1,7 @@
 import './norway-component.css';
 import skog from '../assets/norway/skog.jpg';
 import preikestolen from '../assets/norway/preikestolen.jpg';
-import lofoten from '../assets/norway/lofoten.jpg';
+import lofoten from '../assets/norway/image2.jpg';
 import { useEffect, useState } from 'react';
 import { getCurrentLanguage } from '../service/language-service';
 
