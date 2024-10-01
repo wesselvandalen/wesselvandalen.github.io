@@ -35,17 +35,14 @@ function NorwayComponent() {
                         <p className='component-description'>
                             {translation['norwaypart2']}
                         </p>
-                        <p className='component-description'>
-                            *I would really love to move to Norway, so if you have someting to help me, please <a href="">reach out to me</a>.
-                        </p>
                     </div>
                     <div className="component-images-wrapper">
                         <div className="component-images-first-row">
                             <img src={preikestolen} alt='Preikestolen' title='Preikestolen'/>
                         </div>
                         <div className="component-images-second-row">
-                            <img src={skog} alt='Skog' title='Skog'/>
                             <img src={lofoten} alt='Lofoten' title='Lofoten'/>
+                            <img src={skog} alt='Skog' title='Skog'/>
                         </div>
                     </div>
                 </div>

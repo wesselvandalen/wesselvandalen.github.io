@@ -2,7 +2,7 @@
     display: flex;   
     justify-content: center;
     align-items: center;
-    margin: 100px 0;
+    margin: 100px 0 400px 0;
 }
 
 .component-content {
@@ -62,7 +62,7 @@
 
 .component-images-second-row {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 13px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -78,5 +78,44 @@
 @media screen and (max-width: 1920px) {
     .component-content {
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .component-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .component-content {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+
+    .component-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        
+        width: 96%;
+    }
+
+    .component-images-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .component-text {
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        align-items: end;
+        width: 100vw;
+        border: green solid 2px;
+        margin-top: 25px;
     }
 }

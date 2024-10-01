@@ -30,6 +30,14 @@ function Home() {
         return Math.abs(year - 1970);
     };
 
+    function calculateYearsExperience() {
+        let dob = new Date("07/01/2023");
+        let month_diff = Date.now() - dob.getTime();
+        let age_dt = new Date(month_diff);
+        let year = age_dt.getUTCFullYear();
+        return Math.abs(year - 1970);
+    }
+
     function generateGreeting() {
         const date = new Date();
         const hours = date.getHours();
@@ -42,17 +50,17 @@ function Home() {
         } else {
             return 'God kveld!';
         }
-    }
+    };
 
     return (
         <div className='home-wrapper'>
             <div className="home-container">
                 <div className="home-content">
                     <div className="home-image-container">
-                        <img src={bilde} alt='Jeg' title='Jeg'/>
+                        <img src={bilde} alt='Me and my dog' title='Me and my dog'/>
                     </div>
                     <div className="home-text-container">
-                        <p className='greeting'>{generateGreeting()}</p>
+                        <p className='greeting'>{generateGreeting()} {translation['iam']}</p>
                         <h3 className='name'>Wessel Rowdy van Dalen</h3>
                         <div className='role-container'>
                             <img src={norwayFlag} alt="Flag of Norway" className='norway-icon'/>
@@ -63,16 +71,22 @@ function Home() {
                                 <>
                                     {translation['description']
                                         .replace('{age}', calculateAge())
+                                        .replace('{experience}', calculateYearsExperience())  
                                         .split('{bachelorLink}')[0]}
                                     <a href="https://www.hu.nl/voltijd-opleidingen/hbo-ict" target="_blank" rel="noreferrer">
                                         Software Development Bachelor
                                     </a>
                                     {translation['description']
                                         .replace('{age}', calculateAge())
+                                        .replace('{experience}', calculateYearsExperience()) 
                                         .split('{bachelorLink}')[1]}
                                 </>
                             )}
                         </p>
+                        <div className="availability">
+                            <div class="blob"></div>
+                            <p>{translation['availability']}</p>
+                        </div>
                     </div>
                 </div>
             </div>

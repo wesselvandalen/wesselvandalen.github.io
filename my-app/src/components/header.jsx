@@ -6,6 +6,7 @@ import noFlag from '../assets/flags/no.png';
 import nlFlag from '../assets/flags/nl.png';
 import enFlag from '../assets/flags/gb.png';
 import seFlag from '../assets/flags/se.png';
+import logo from '../assets/norway-icon.png';
 
 function Header() {
     const [translation, setTranslation] = useState({});
@@ -62,8 +63,10 @@ function Header() {
         <div className='header-wrapper'>
             <div className="header-content">
                 <div className="logo-wrapper">
-                    {/* <img src={logo} alt="Dalen logo" className='logo'/> */}
-                    <span className='logo-span'>Dalen</span>
+                    <a href="/">
+                        <img src={logo} alt="Dalen logo" className='logo'/>
+                    </a>
+                    {/* <span className='logo-span'>Dalen</span> */}
                 </div>
                 <div className="navigation">
                     <a className='nav' href="mailto:wesselvandalen@gmail.com">{translation['email']}</a>

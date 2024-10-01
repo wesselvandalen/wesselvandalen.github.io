@@ -1,0 +1,102 @@
+import './projects.css';
+import { useEffect, useState } from 'react';
+import { getCurrentLanguage } from '../service/language-service';
+import luftan from '../assets/projects/project_design_luftan.png';
+import candidatePortal from '../assets/projects/project_design_mysolution.png';
+import huskeliste from '../assets/projects/project_design_huskeliste.png';
+import smartfinance from '../assets/projects/project_design_smartfinance.png';
+import kpn from '../assets/projects/project_design_kpn.png';
+
+function Projects() {
+    const [translation, setTranslation] = useState({});
+
+    useEffect(() => {
+        translateHeaderPage();
+    }, [translation]);
+
+    const translateHeaderPage = async () => {
+        const currentLanguage = getCurrentLanguage();
+
+        try {
+          const translations = await import(`../languages/${currentLanguage}.json`);
+          setTranslation(translations);
+        } catch (error) {
+          console.error('Error loading translations:', error);
+        }
+    };
+
+    return (
+        <div className='projects-container'>
+            <div className="projects-content">
+                <div className="projects-inner-content">
+
+                    <div className="projects-template-wrapper">
+                        <h3 className='project-title'>{translation['worktitle']}</h3>
+                        <p className='project-description'>{translation['workdescription']}</p>
+                    </div>
+
+
+                    <div className="projects-wrapper">
+
+                        <div className="project-block">
+                            <div className="project-inner-block">
+                                <img src={luftan} alt='Luftan project visual' title='Luftan project visual'/>
+                                <div className="project-block-info">
+                                    <h3 className='project-block-title'>Luftan</h3>
+                                    <p className='project-block-description'>{translation['luftandescription']}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="project-block">
+                            <div className="project-inner-block">
+                                <img src={candidatePortal} alt='Candidate onboarding portal project visual' title='Candidate onboarding portal project visual'/>
+                                <div className="project-block-info">
+                                    <h3 className='project-block-title'>Candidate onboarding portal</h3>
+                                    <p className='project-block-description'>{translation['candidateportaldescription']}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="project-block">
+                            <div className="project-inner-block">
+                                <img src={huskeliste} alt='HuskeListe project visual' title='HuskeListe project visual'/>
+                                <div className="project-block-info">
+                                    <h3 className='project-block-title'>Huskeliste</h3>
+                                    <p className='project-block-description'>{translation['huskelistedescription']}</p>
+                                    <a className='project-btn' href="https://wesselvandalen.github.io/huskeliste/" target='_blank' rel="noreferrer">{translation['seeproject']}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="project-block">
+                            <div className="project-inner-block">
+                                <img src={smartfinance} alt='Smartfinance project visual' title='Smartfinance project visual'/>
+                                <div className="project-block-info">
+                                    <h3 className='project-block-title'>Smartfinance</h3>
+                                    <p className='project-block-description'>{translation['smartfinancedescription']}</p>
+                                    <a className='project-btn' href="http://159.223.223.166:8080/" target='_blank' rel="noreferrer">{translation['seeproject']}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="project-block">
+                            <div className="project-inner-block">
+                                <img src={kpn} alt='KPN project visual' title='KPN project visual'/>
+                                <div className="project-block-info">
+                                    <h3 className='project-block-title'>KPN Travel Movements</h3>
+                                    <p className='project-block-description'>{translation['kpndescription']}</p>
+                                    <a className='project-btn' href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target='_blank' rel="noreferrer">{translation['seeproject']}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Projects;

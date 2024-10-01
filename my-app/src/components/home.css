@@ -6,9 +6,7 @@
 }
 
 .home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 60%;
 }
 
 .home-content {
@@ -16,7 +14,6 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 80%;
 }
 
 .home-image-container {
@@ -27,6 +24,11 @@
     border-radius: 10px;
     width: 500px;
     height: auto;
+
+    transform: translateY(-30px);
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+    animation-delay: 0.5s;
 }
 
 .home-text-container {
@@ -55,14 +57,14 @@
 }
 
 .norway-icon {
-    width: 22px;
+    width: 25px;
     height: auto;
     margin: 7px 5px 0 0;
 }
 
 .role {
     font-weight: 400;
-    color: #5a5a5a;
+    color: #222;
     letter-spacing: -.2px;
     margin-top: 0;
     font-size: 26px;
@@ -84,4 +86,77 @@
 
 .description a:hover {
     text-decoration: underline #222;
+}
+
+.availability {
+    display: flex;
+}
+
+.blob {
+	background: #71e999;
+	border-radius: 50%;
+	margin: 20px 10px 0 3px;
+	height: 10px;
+	width: 10px;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(175, 225, 175, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(175, 225, 175, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(175, 225, 175, 0);
+	}
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    35% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .home-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-image-container {
+        width: 100%;
+    }
+
+    .home-image-container img {
+        
+    }
+
+    .home-text-container {
+        width: 100%;
+    }
+
+    .home-wrapper {
+        margin-bottom: 700px;
+    }
 }
