@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2996a577.css",
+    "main.css": "/static/css/main.502faff3.css",
     "main.js": "/static/js/main.5f1a27cd.js",
     "static/js/26.bbbcaca5.chunk.js": "/static/js/26.bbbcaca5.chunk.js",
     "static/js/723.86da3d56.chunk.js": "/static/js/723.86da3d56.chunk.js",
@@ -40,11 +40,11 @@
     "static/media/figma.png": "/static/media/figma.809e95cfef4058cfd651.png",
     "static/media/norway-icon.png": "/static/media/norway-icon.65625e9f57133afdeef4.png",
     "index.html": "/index.html",
-    "main.2996a577.css.map": "/static/css/main.2996a577.css.map",
+    "main.502faff3.css.map": "/static/css/main.502faff3.css.map",
     "main.5f1a27cd.js.map": "/static/js/main.5f1a27cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.2996a577.css",
+    "static/css/main.502faff3.css",
     "static/js/main.5f1a27cd.js"
   ]
 }
