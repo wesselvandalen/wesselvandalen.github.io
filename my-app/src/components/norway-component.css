@@ -79,6 +79,19 @@
     .component-content {
         width: 90%;
     }
+
+    .component-images-wrapper {
+        width: 350px;
+    }
+
+    .component-images-first-row img {
+        height: 180px;
+    }
+
+    .component-images-second-row img {
+        width: 50%;
+        height: 225px;
+    }
 }
 
 @media screen and (max-width: 1080px) {

@@ -93,6 +93,12 @@
     background-color: rgb(31, 129, 228);
 }
 
+@media screen and (max-width: 1920px) {
+    .projects-content {
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 1080px) {
     .project-inner-block {
         flex-direction: column;

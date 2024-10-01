@@ -93,7 +93,7 @@
 }
 
 .blob {
-	background: #71e999;
+	background: #58e185;
 	border-radius: 50%;
 	margin: 20px 10px 0 3px;
 	height: 10px;
@@ -133,6 +133,44 @@
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .home-image-container img {
+        width: 300px;
+    }
+
+    .home-text-container {
+        width: 65%;
+    }
+
+    .home-container {
+        width: 90%;
+    }
+
+    .greeting {
+        font-size: 24px;
+    }
+
+    .norway-icon {
+        width: 22px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .role {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .availability p {
+        font-size: 16px;
     }
 }
 

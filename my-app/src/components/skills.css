@@ -89,3 +89,23 @@
     width: 20px;
     height: 20px;
 }
+
+@media screen and (max-width: 1920px) {
+    .skills-container {
+        margin-bottom: 300px;
+    }
+
+    .skills-content {
+        width: 90%;
+    }
+
+    .skills-wrapper {
+        gap: 40px;
+        margin-top: 25px;
+    }
+
+    .skill-block {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
