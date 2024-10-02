@@ -38,7 +38,87 @@ function Projects() {
 
                     <div className="projects-wrapper">
 
-                        <div className="card">
+                        <div className="property-card">
+                            <div className="image-container">
+                                <img src={luftan} alt="Cedar Ridge Villas" className="property-image"/>
+                                <span className="rental-badge">For Rent</span>
+                            </div>
+                            <div className="property-details">
+                               <div>
+                                    <h2 className="property-title">Luftan</h2>
+                                    <p className="property-distance">{translation['luftandescription']}</p>
+                               </div>
+                                <a className='project-btn' href="/" target='_blank' rel="noreferrer">
+                                    See project
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="property-card">
+                            <div className="image-container">
+                                <img src={candidatePortal} alt="Candidate onboarding portal" className="property-image"/>
+                                <span className="rental-badge">For Rent</span>
+                            </div>
+                            <div className="property-details">
+                                <div>
+                                    <h2 className="property-title">Candidate onboarding portal</h2>
+                                    <p className="property-distance">{translation['candidateportaldescription']}</p>
+                                </div>
+                                <a className='project-btn' href="/" target='_blank' rel="noreferrer">
+                                    See project
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="property-card">
+                            <div className="image-container">
+                                <img src={huskeliste} alt="Huskeliste" className="property-image"/>
+                                <span className="rental-badge">For Rent</span>
+                            </div>
+                            <div className="property-details">
+                                <div>
+                                    <h2 className="property-title">Huskeliste</h2>
+                                    <p className="property-distance">{translation['huskelistedescription']}</p>
+                                </div>
+                                <a className='project-btn' href="/" target='_blank' rel="noreferrer">
+                                    See project
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="property-card">
+                            <div className="image-container">
+                                <img src={smartfinance} alt="SmartFinance" className="property-image"/>
+                                <span className="rental-badge">For Rent</span>
+                            </div>
+                            <div className="property-details">
+                                <div>
+                                    <h2 className="property-title">SmartFinance</h2>
+                                    <p className="property-distance">{translation['smartfinancedescription']}</p>
+                                </div>
+                                <a className='project-btn' href="/" target='_blank' rel="noreferrer">
+                                    See project
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="property-card">
+                            <div className="image-container">
+                                <img src={kpn} alt="KPN Travel Movements" className="property-image"/>
+                                <span className="rental-badge">For Rent</span>
+                            </div>
+                            <div className="property-details">
+                                <div>
+                                    <h2 className="property-title">KPN Travel Movements</h2>
+                                    <p className="property-distance">{translation['kpndescription']}</p>
+                                </div>
+                                <a className='project-btn' href="/" target='_blank' rel="noreferrer">
+                                    See project
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* <div className="card">
                             <div className="image-container">
                                 <img src={luftan} alt='Luftan project visual' title='Luftan project visual'/>
                                 <div className="overlay">
@@ -141,7 +221,7 @@ function Projects() {
 
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
                         
                         {/* <div className="project-block">
                             <div className="project-inner-block">

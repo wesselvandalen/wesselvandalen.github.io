@@ -1,7 +1,7 @@
 import './norway-component.css';
-import skog from '../assets/norway/skog.jpg';
+import sno from '../assets/norway/sno.jpg';
 import preikestolen from '../assets/norway/preikestolen.jpg';
-import lofoten from '../assets/norway/image2.jpg';
+import hus from '../assets/norway/hus.png';
 import { useEffect, useState } from 'react';
 import { getCurrentLanguage } from '../service/language-service';
 
@@ -9,10 +9,10 @@ function NorwayComponent() {
     const [translation, setTranslation] = useState({});
 
     useEffect(() => {
-        translateHeaderPage();
+        translatePage();
     }, [translation]);
 
-    const translateHeaderPage = async () => {
+    const translatePage = async () => {
         const currentLanguage = getCurrentLanguage();
 
         try {
@@ -27,6 +27,15 @@ function NorwayComponent() {
         <div className='component-container'>
             <div className="component-content">
                 <div className="component-wrapper">
+                    <div className="component-images-wrapper">
+                        <div className="component-images-first-row">
+                            <img src={preikestolen} alt='Jeg som står på Preikestolen' title='Jeg som står på Preikestolen'/>
+                        </div>
+                        <div className="component-images-second-row">
+                            <img src={sno} alt='Lofoten dekket i snø' title='Lofoten dekket i snø'/>
+                            <img src={hus} alt='Typiske norske røde hus' title='Typiske norske røde hus'/>
+                        </div>
+                    </div>
                     <div className="component-text">
                         <h3 className='component-title'>Det er typisk norsk å være god.</h3>
                         <p className='component-description'>
@@ -35,15 +44,9 @@ function NorwayComponent() {
                         <p className='component-description'>
                             {translation['norwaypart2']}
                         </p>
-                    </div>
-                    <div className="component-images-wrapper">
-                        <div className="component-images-first-row">
-                            <img src={preikestolen} alt='Preikestolen' title='Preikestolen'/>
-                        </div>
-                        <div className="component-images-second-row">
-                            <img src={lofoten} alt='Lofoten' title='Lofoten'/>
-                            <img src={skog} alt='Skog' title='Skog'/>
-                        </div>
+                        <p className='component-description'>
+                            *{translation['norwaypart3']}
+                        </p>
                     </div>
                 </div>
             </div>

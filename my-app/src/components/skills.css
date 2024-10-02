@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 400px;
-    background-color: #fcfaf8;
     height: 80vh;
 }
 
@@ -50,14 +49,16 @@
 .skills-wrapper {
     margin-top: 100px;
     display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 100px;
+    flex-wrap: wrap;       /* Allow wrapping of divs */
+    width: 100%;           /* Width of div a */
+    gap: 40px;
 }
 
 .skill-block {
-    width: 400px;
-    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(34, 34, 34, .1);
+    flex: 1;         /* Make all divs take equal space and have a minimum width */
+    border-radius: 30px;
+    background-color: #fff;
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -65,17 +66,18 @@
 }
 
 .skill-block-title {
-    font-size: 28px;
-    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 650;
     letter-spacing: -.4px;
     line-height: 1;
     margin-top: 0;
     margin-bottom: 10px;
-    color: #222;
+    color: #6b6868;
 }
 
 .skill-block-description {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     color: #222;
@@ -84,13 +86,10 @@
 .skill-icons {
     display: flex;
     margin-top: 40px;
-    gap: 5px;
+    gap: 15px;
 }
 
 .skill-icons img {
-    border: rgba(34, 34, 34, .3) solid 1px;
-    border-radius: 50%;
-    padding: 5px;
     width: 20px;
     height: 20px;
 }
@@ -107,10 +106,5 @@
     .skills-wrapper {
         gap: 40px;
         margin-top: 25px;
-    }
-
-    .skill-block {
-        padding-left: 0;
-        padding-right: 0;
     }
 }
