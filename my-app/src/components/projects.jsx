@@ -1,7 +1,7 @@
 import './projects.css';
 import { useEffect, useState } from 'react';
 import { getCurrentLanguage } from '../service/language-service';
-import luftan from '../assets/projects/project_design_luftan.png';
+import luftan from '../assets/projects/luftan_design.png';
 import candidatePortal from '../assets/projects/project_design_mysolution.png';
 import huskeliste from '../assets/projects/project_design_huskeliste.png';
 import smartfinance from '../assets/projects/project_design_smartfinance.png';
@@ -38,7 +38,76 @@ function Projects() {
 
                     <div className="projects-wrapper">
 
-                        <div className="property-card">
+                        <div className="project">
+                            <div className="project-content">
+                                <div className="project-info">
+                                    <h3 className='projects-title'>Luftan</h3>
+                                    <p className='project-description'>{translation['luftandescription']}</p>
+                                    <a className='project-button' href="/" target='_blank'>{translation['seeproject']}</a>
+                                </div>
+                                <div className="project-image">
+                                    <img src={luftan} alt="Luftan design"/>
+                                </div>
+                            </div>
+                            <div className="line-divider"></div>
+                        </div>
+
+                        <div className="project">
+                            <div className="project-content">
+                                <div className="project-info">
+                                    <h3 className='projects-title'>Canidate onboarding portal</h3>
+                                    <p className='project-description'>{translation['candidateportaldescription']}</p>
+                                    <a className='project-button' href="/" target='_blank'>{translation['seeproject']}</a>
+                                </div>
+                                <div className="project-image">
+                                    <img src={luftan} alt="Candidate onboarding portal"/>
+                                </div>
+                            </div>
+                            <div className="line-divider"></div>
+                        </div>
+
+                        <div className="project">
+                            <div className="project-content">
+                                <div className="project-info">
+                                    <h3 className='projects-title'>Huskeliste</h3>
+                                    <p className='project-description'>{translation['huskelistedescription']}</p>
+                                    <a className='project-button' href="/" target='_blank'>{translation['seeproject']}</a>
+                                </div>
+                                <div className="project-image">
+                                    <img src={luftan} alt="Huskeliste"/>
+                                </div>
+                            </div>
+                            <div className="line-divider"></div>
+                        </div>
+
+                        <div className="project">
+                            <div className="project-content">
+                                <div className="project-info">
+                                    <h3 className='projects-title'>Smartfinance</h3>
+                                    <p className='project-description'>{translation['smartfinancedescription']}</p>
+                                    <a className='project-button' href="/" target='_blank'>{translation['seeproject']}</a>
+                                </div>
+                                <div className="project-image">
+                                    <img src={luftan} alt="SmartFinance"/>
+                                </div>
+                            </div>
+                            <div className="line-divider"></div>
+                        </div>
+
+                        <div className="project">
+                            <div className="project-content">
+                                <div className="project-info">
+                                    <h3 className='projects-title'>KPN Travelmovements</h3>
+                                    <p className='project-description'>{translation['kpndescription']}</p>
+                                    <a className='project-button' href="/" target='_blank'>{translation['seeproject']}</a>
+                                </div>
+                                <div className="project-image">
+                                    <img src={luftan} alt="KPN Travel Movements"/>
+                                </div>
+                            </div>
+                            <div className="line-divider"></div>
+                        </div>
+                        {/* <div className="property-card">
                             <div className="image-container">
                                 <img src={luftan} alt="Cedar Ridge Villas" className="property-image"/>
                                 <span className="rental-badge">For Rent</span>
@@ -116,7 +185,7 @@ function Projects() {
                                     See project
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* <div className="card">
                             <div className="image-container">
