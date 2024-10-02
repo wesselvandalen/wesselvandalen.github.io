@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.502faff3.css",
-    "main.js": "/static/js/main.5f1a27cd.js",
-    "static/js/26.bbbcaca5.chunk.js": "/static/js/26.bbbcaca5.chunk.js",
-    "static/js/723.86da3d56.chunk.js": "/static/js/723.86da3d56.chunk.js",
-    "static/js/418.9a78bf46.chunk.js": "/static/js/418.9a78bf46.chunk.js",
+    "main.css": "/static/css/main.dcb13597.css",
+    "main.js": "/static/js/main.e42badc6.js",
+    "static/js/26.0c9872de.chunk.js": "/static/js/26.0c9872de.chunk.js",
+    "static/js/723.d2632b6c.chunk.js": "/static/js/723.d2632b6c.chunk.js",
+    "static/js/418.7588f4ee.chunk.js": "/static/js/418.7588f4ee.chunk.js",
     "static/media/preikestolen.jpg": "/static/media/preikestolen.ad6a1da8b49429b8775e.jpg",
-    "static/media/IMG_1347.jpg": "/static/media/IMG_1347.e1bd373269a843120093.jpg",
     "static/media/canva.png": "/static/media/canva.4384eab39ba50bb8cee6.png",
+    "static/media/hus.png": "/static/media/hus.995c06090e9b18dce297.png",
     "static/media/project_design_kpn.png": "/static/media/project_design_kpn.f2a878194b5cb6e6b6be.png",
-    "static/media/project_design_luftan.png": "/static/media/project_design_luftan.827744eb05294e7c3e7d.png",
     "static/media/inteallij_idea.png": "/static/media/inteallij_idea.6f3284f1e457dad76470.png",
     "static/media/project_design_smartfinance.png": "/static/media/project_design_smartfinance.d3612cb1e10f30ff72dd.png",
     "static/media/azure.png": "/static/media/azure.5046ef5b1dd1f4d74d89.png",
+    "static/media/luftan_design.png": "/static/media/luftan_design.c280f558253cf8ad419d.png",
+    "static/media/lys.jpg": "/static/media/lys.3702365d9b6af287f630.jpg",
     "static/media/spring.png": "/static/media/spring.388bedf3157e6741a1d5.png",
     "static/media/project_design_huskeliste.png": "/static/media/project_design_huskeliste.4df59c2e3896d307f6a0.png",
     "static/media/project_design_mysolution.png": "/static/media/project_design_mysolution.416fd7286c05f47f3c0d.png",
     "static/media/postman.png": "/static/media/postman.f9452c12e038137be6f2.png",
     "static/media/git.png": "/static/media/git.52ffcca1c2260d3a141b.png",
     "static/media/html.png": "/static/media/html.aeb69129de4a762942b2.png",
-    "static/media/skog.jpg": "/static/media/skog.39c7ab262709acdf4acf.jpg",
-    "static/media/lofoten.jpg": "/static/media/lofoten.4d2db537d29b794f8485.jpg",
+    "static/media/sno.jpg": "/static/media/sno.d50391a14e7520dcf28a.jpg",
     "static/media/csharp.png": "/static/media/csharp.47ef01f9dc01fdb7a5e9.png",
     "static/media/docker.png": "/static/media/docker.dcda82af5b17fff350fd.png",
     "static/media/salesforce.png": "/static/media/salesforce.cff6ef05d5389c88e991.png",
@@ -40,11 +40,11 @@
     "static/media/figma.png": "/static/media/figma.809e95cfef4058cfd651.png",
     "static/media/norway-icon.png": "/static/media/norway-icon.65625e9f57133afdeef4.png",
     "index.html": "/index.html",
-    "main.502faff3.css.map": "/static/css/main.502faff3.css.map",
-    "main.5f1a27cd.js.map": "/static/js/main.5f1a27cd.js.map"
+    "main.dcb13597.css.map": "/static/css/main.dcb13597.css.map",
+    "main.e42badc6.js.map": "/static/js/main.e42badc6.js.map"
   },
   "entrypoints": [
-    "static/css/main.502faff3.css",
-    "static/js/main.5f1a27cd.js"
+    "static/css/main.dcb13597.css",
+    "static/js/main.e42badc6.js"
   ]
 }
