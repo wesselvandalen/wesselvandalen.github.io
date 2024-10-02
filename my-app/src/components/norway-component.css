@@ -96,10 +96,12 @@
 
 @media screen and (max-width: 1080px) {
     .component-container {
+        margin-top: 250px;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 500px;
     }
 
     .component-content {
@@ -111,7 +113,7 @@
 
     .component-wrapper {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: start;
         
         width: 96%;
@@ -127,8 +129,7 @@
         justify-content: end;
         flex-direction: column;
         align-items: end;
-        width: 100vw;
-        border: green solid 2px;
+        width: 90%;
         margin-top: 25px;
     }
 }

@@ -57,12 +57,12 @@ function Skills() {
 
                     <div className="skills-wrapper">
 
-                        <div className="skill-block">
-                            <div className="skill-info">
-                                <h3 className='skill-block-title'>Front end</h3>
-                                <p className='skill-block-description'>{translation['frontenddescription']}</p>
+                        <div className="skill-set">
+                            <div className="skill-info-box">
+                                <h3>Front end</h3>
+                                <p>{translation['frontenddescription']}</p>
                             </div>
-                            <div className="skill-icons">
+                            <div className="skill-icons-box right">
                                 <img src={reactIcon} alt='React' title='React'/>
                                 <img src={litIcon} alt='Lit' title='Lit'/>
                                 <img src={svelteIcon} alt='Svelte' title='Svelte'/>
@@ -74,13 +74,9 @@ function Skills() {
                                 <img src={figmaIcon} alt='Figma' title='Figma'/>
                             </div>
                         </div>
-                        
-                        <div className="skill-block">
-                            <div className="skill-info">
-                                <h3 className='skill-block-title'>Back end</h3>
-                                <p className='skill-block-description'>{translation['backenddescription']}</p>
-                            </div>
-                            <div className="skill-icons">
+
+                        <div className="skill-set">
+                            <div className="skill-icons-box left">
                                 <img src={javaIcon} alt='Java' title='Java'/>
                                 <img src={springIcon} alt='Spring' title='Spring'/>
                                 <img src={csharp} alt='C#' title='C#'/>
@@ -89,16 +85,19 @@ function Skills() {
                                 <img src={postgreSQLIcon} alt='PostgreSQL' title='PostgreSQL'/>
                                 <img src={junit5Icon} alt='JUnit5' title='JUnit5'/>
                                 <img src={dockerIcon} alt='Docker' title='Docker'/>
-
+                            </div>
+                            <div className="skill-info-box">
+                                <h3>Back end</h3>
+                                <p>{translation['backenddescription']}</p>
                             </div>
                         </div>
 
-                        <div className="skill-block">
-                            <div className="skill-info">
-                                <h3 className='skill-block-title'>{translation['toolstitle']}</h3>
-                                <p className='skill-block-description'>{translation['toolsdescription']}</p>
+                        <div className="skill-set">
+                            <div className="skill-info-box">
+                                <h3>{translation['toolstitle']}</h3>
+                                <p>{translation['toolsdescription']}</p>
                             </div>
-                            <div className="skill-icons">
+                            <div className="skill-icons-box right">
                                 <img src={postman} alt='Postman' title='Postman'/>
                                 <img src={githubLogo} alt='GitHub' title='GitHub'/>
                                 <img src={gitLogo} alt='Git' title='Git'/>

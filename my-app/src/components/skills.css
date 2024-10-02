@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 400px;
+    margin-bottom: 100px;
     height: 80vh;
 }
 
@@ -49,14 +49,67 @@
 .skills-wrapper {
     margin-top: 100px;
     display: flex;
-    flex-wrap: wrap;       /* Allow wrapping of divs */
-    width: 100%;           /* Width of div a */
+    flex-wrap: wrap;   
+    width: 100%;          
     gap: 40px;
 }
 
+.skill-set {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.skill-info-box {
+    width: 50%;
+}
+
+.skill-info-box h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 650;
+    letter-spacing: -.4px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #6b6868;
+}
+
+.skill-info-box p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #222;
+}
+
+.skill-icons-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 10px;
+}
+
+.left {
+    margin-right: 20px;
+}
+
+.right {
+    margin-left: 20px;
+}
+
+.skill-icons-box img {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid color-mix(in srgb, #8cb4e9 15%, transparent);
+}
+
+/* 
 .skill-block {
     box-shadow: 0 4px 8px rgba(34, 34, 34, .1);
-    flex: 1;         /* Make all divs take equal space and have a minimum width */
+    flex: 1;       
     border-radius: 30px;
     background-color: #fff;
     padding: 32px;
@@ -92,7 +145,7 @@
 .skill-icons img {
     width: 20px;
     height: 20px;
-}
+} */
 
 @media screen and (max-width: 1920px) {
     .skills-container {
