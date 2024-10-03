@@ -63,7 +63,7 @@ function Skills() {
                                 <p>{translation['frontenddescription']}</p>
                             </div>
                             <div className="skill-icons-box right">
-                                <img src={reactIcon} alt='React' title='React'/>
+                            <img src={reactIcon} alt='React' title='React'/>
                                 <img src={litIcon} alt='Lit' title='Lit'/>
                                 <img src={svelteIcon} alt='Svelte' title='Svelte'/>
                                 <img src={javascriptIcon} alt='Javascript' title='Javascript'/>

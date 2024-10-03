@@ -4,6 +4,7 @@ import Header from './components/header';
 import NorwayComponent from './components/norway-component';
 import Skills from './components/skills';
 import Projects from './components/projects';
+import NorwayComponent2 from './components/norway-component2';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Home/>
       <NorwayComponent/>
       <Skills/>
+      <NorwayComponent2/>
       <Projects/>
     </>
   );

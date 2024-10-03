@@ -175,7 +175,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 1000px;
+        margin-top: 325px;
     }
 
     .home-image-wrapper {
@@ -187,7 +187,7 @@
     .form {
         width: 25rem;
         height: 25rem;
-        margin-top: -200px;
+        margin-top: -75px;
         margin-bottom: 25px;
     }
 
@@ -199,6 +199,5 @@
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
-        margin-bottom: 700px;
     }
 }
