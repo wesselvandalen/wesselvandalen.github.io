@@ -74,6 +74,7 @@ function Skills() {
                                 <img src={figmaIcon} alt='Figma' title='Figma'/>
                             </div>
                         </div>
+                        <div className="line-divider"></div>
 
                         <div className="skill-set">
                             <div className="skill-icons-box left">
@@ -91,6 +92,7 @@ function Skills() {
                                 <p>{translation['backenddescription']}</p>
                             </div>
                         </div>
+                        <div className="line-divider"></div>
 
                         <div className="skill-set">
                             <div className="skill-info-box">
@@ -108,6 +110,8 @@ function Skills() {
                                 <img src={salesforceIcon} alt='Salesforce' title='Salesforce'/>
                             </div>
                         </div>
+                        <div className="line-divider"></div>
+
                     </div>
                 </div>
             </div>

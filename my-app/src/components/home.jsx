@@ -1,5 +1,5 @@
 import './home.css';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { getCurrentLanguage } from '../service/language-service';
 
 export default function Home() {

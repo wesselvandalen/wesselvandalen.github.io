@@ -69,7 +69,7 @@ function Projects() {
                                 <div className="project-info">
                                     <h3 className='projects-title'>Huskeliste</h3>
                                     <p className='project-description'>{translation['huskelistedescription']}</p>
-                                    <a className='project-button' href="/" target='_blank'>{translation['seeproject']}</a>
+                                    <a className='project-button' href="https://wesselvandalen.github.io/huskeliste/" target='_blank' rel="noreferrer">{translation['seeproject']}</a>
                                 </div>
                                 <div className="project-image">
                                     <img src={luftan} alt="Huskeliste"/>
@@ -83,7 +83,7 @@ function Projects() {
                                 <div className="project-info">
                                     <h3 className='projects-title'>Smartfinance</h3>
                                     <p className='project-description'>{translation['smartfinancedescription']}</p>
-                                    <a className='project-button' href="/" target='_blank'>{translation['seeproject']}</a>
+                                    <a className='project-button' href="http://159.223.223.166:8080/" target='_blank' rel="noreferrer">{translation['seeproject']}</a>
                                 </div>
                                 <div className="project-image">
                                     <img src={luftan} alt="SmartFinance"/>
@@ -97,7 +97,7 @@ function Projects() {
                                 <div className="project-info">
                                     <h3 className='projects-title'>KPN Travelmovements</h3>
                                     <p className='project-description'>{translation['kpndescription']}</p>
-                                    <a className='project-button' href="/" target='_blank'>{translation['seeproject']}</a>
+                                    <a className='project-button' href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target='_blank' rel="noreferrer">{translation['seeproject']}</a>
                                 </div>
                                 <div className="project-image">
                                     <img src={luftan} alt="KPN Travel Movements"/>

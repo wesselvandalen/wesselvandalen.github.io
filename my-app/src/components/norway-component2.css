@@ -52,6 +52,12 @@
     max-height: 375px;
 }
 
+@media screen and (max-width: 1920px) {
+    .nor-wrapper {
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 1080px) {
     .nor-wrapper {
         display: flex;
