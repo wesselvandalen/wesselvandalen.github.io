@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.dcb13597.css",
-    "main.js": "/static/js/main.e42badc6.js",
-    "static/js/26.0c9872de.chunk.js": "/static/js/26.0c9872de.chunk.js",
-    "static/js/723.d2632b6c.chunk.js": "/static/js/723.d2632b6c.chunk.js",
-    "static/js/418.7588f4ee.chunk.js": "/static/js/418.7588f4ee.chunk.js",
+    "main.css": "/static/css/main.785e2516.css",
+    "main.js": "/static/js/main.cfbce64f.js",
+    "static/js/26.ac948218.chunk.js": "/static/js/26.ac948218.chunk.js",
+    "static/js/723.3d6c315c.chunk.js": "/static/js/723.3d6c315c.chunk.js",
+    "static/js/418.edb51eb9.chunk.js": "/static/js/418.edb51eb9.chunk.js",
     "static/media/preikestolen.jpg": "/static/media/preikestolen.ad6a1da8b49429b8775e.jpg",
+    "static/media/vannbygde.jpg": "/static/media/vannbygde.b84c76feb3b953cee35b.jpg",
     "static/media/canva.png": "/static/media/canva.4384eab39ba50bb8cee6.png",
     "static/media/hus.png": "/static/media/hus.995c06090e9b18dce297.png",
     "static/media/project_design_kpn.png": "/static/media/project_design_kpn.f2a878194b5cb6e6b6be.png",
@@ -40,11 +41,11 @@
     "static/media/figma.png": "/static/media/figma.809e95cfef4058cfd651.png",
     "static/media/norway-icon.png": "/static/media/norway-icon.65625e9f57133afdeef4.png",
     "index.html": "/index.html",
-    "main.dcb13597.css.map": "/static/css/main.dcb13597.css.map",
-    "main.e42badc6.js.map": "/static/js/main.e42badc6.js.map"
+    "main.785e2516.css.map": "/static/css/main.785e2516.css.map",
+    "main.cfbce64f.js.map": "/static/js/main.cfbce64f.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcb13597.css",
-    "static/js/main.e42badc6.js"
+    "static/css/main.785e2516.css",
+    "static/js/main.cfbce64f.js"
   ]
 }
