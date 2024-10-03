@@ -113,7 +113,7 @@
 
 @media screen and (max-width: 1920px) {
     .skills-container {
-        margin-bottom: 300px;
+        margin-bottom: 325px;
     }
 
     .skills-content {
@@ -128,8 +128,12 @@
 
 @media screen and (max-width: 1080px) {
     .skills-container {
-        margin-bottom: 600px;
+        margin-bottom: 375px;
     }
+
+    .skills-template-wrapper {
+        margin-bottom: 10px;
+    } 
 
     .skill-info-box p {
         text-align: justify;
