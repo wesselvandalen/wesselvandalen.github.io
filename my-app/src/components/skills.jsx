@@ -76,7 +76,7 @@ function Skills() {
                         </div>
                         <div className="line-divider"></div>
 
-                        <div className="skill-set">
+                        <div className="skill-set venstre">
                             <div className="skill-icons-box left">
                                 <img src={javaIcon} alt='Java' title='Java'/>
                                 <img src={springIcon} alt='Spring' title='Spring'/>
