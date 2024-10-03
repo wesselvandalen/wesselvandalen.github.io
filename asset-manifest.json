@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.785e2516.css",
-    "main.js": "/static/js/main.cfbce64f.js",
-    "static/js/26.ac948218.chunk.js": "/static/js/26.ac948218.chunk.js",
+    "main.css": "/static/css/main.2e213ad0.css",
+    "main.js": "/static/js/main.1ca6931e.js",
+    "static/js/26.04e81d53.chunk.js": "/static/js/26.04e81d53.chunk.js",
     "static/js/723.3d6c315c.chunk.js": "/static/js/723.3d6c315c.chunk.js",
     "static/js/418.edb51eb9.chunk.js": "/static/js/418.edb51eb9.chunk.js",
     "static/media/preikestolen.jpg": "/static/media/preikestolen.ad6a1da8b49429b8775e.jpg",
     "static/media/vannbygde.jpg": "/static/media/vannbygde.b84c76feb3b953cee35b.jpg",
     "static/media/canva.png": "/static/media/canva.4384eab39ba50bb8cee6.png",
     "static/media/hus.png": "/static/media/hus.995c06090e9b18dce297.png",
-    "static/media/project_design_kpn.png": "/static/media/project_design_kpn.f2a878194b5cb6e6b6be.png",
     "static/media/inteallij_idea.png": "/static/media/inteallij_idea.6f3284f1e457dad76470.png",
-    "static/media/project_design_smartfinance.png": "/static/media/project_design_smartfinance.d3612cb1e10f30ff72dd.png",
+    "static/media/luftan_design.png": "/static/media/luftan_design.6513fc47f392857096ff.png",
     "static/media/azure.png": "/static/media/azure.5046ef5b1dd1f4d74d89.png",
-    "static/media/luftan_design.png": "/static/media/luftan_design.c280f558253cf8ad419d.png",
+    "static/media/smartfinance_design.png": "/static/media/smartfinance_design.530279fdb99246fb13b5.png",
     "static/media/lys.jpg": "/static/media/lys.3702365d9b6af287f630.jpg",
+    "static/media/kpn_design.png": "/static/media/kpn_design.e4c0c472a213749c8156.png",
+    "static/media/candidate_onboarding_portal.png": "/static/media/candidate_onboarding_portal.8c217896f3aeb3b5a995.png",
+    "static/media/huskeliste_design.png": "/static/media/huskeliste_design.4b4d7c0c4c983f084f97.png",
     "static/media/spring.png": "/static/media/spring.388bedf3157e6741a1d5.png",
-    "static/media/project_design_huskeliste.png": "/static/media/project_design_huskeliste.4df59c2e3896d307f6a0.png",
-    "static/media/project_design_mysolution.png": "/static/media/project_design_mysolution.416fd7286c05f47f3c0d.png",
     "static/media/postman.png": "/static/media/postman.f9452c12e038137be6f2.png",
     "static/media/git.png": "/static/media/git.52ffcca1c2260d3a141b.png",
     "static/media/html.png": "/static/media/html.aeb69129de4a762942b2.png",
@@ -41,11 +41,11 @@
     "static/media/figma.png": "/static/media/figma.809e95cfef4058cfd651.png",
     "static/media/norway-icon.png": "/static/media/norway-icon.65625e9f57133afdeef4.png",
     "index.html": "/index.html",
-    "main.785e2516.css.map": "/static/css/main.785e2516.css.map",
-    "main.cfbce64f.js.map": "/static/js/main.cfbce64f.js.map"
+    "main.2e213ad0.css.map": "/static/css/main.2e213ad0.css.map",
+    "main.1ca6931e.js.map": "/static/js/main.1ca6931e.js.map"
   },
   "entrypoints": [
-    "static/css/main.785e2516.css",
-    "static/js/main.cfbce64f.js"
+    "static/css/main.2e213ad0.css",
+    "static/js/main.1ca6931e.js"
   ]
 }
