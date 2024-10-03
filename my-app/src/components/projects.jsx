@@ -2,10 +2,10 @@ import './projects.css';
 import { useEffect, useState } from 'react';
 import { getCurrentLanguage } from '../service/language-service';
 import luftan from '../assets/projects/luftan_design.png';
-import candidatePortal from '../assets/projects/project_design_mysolution.png';
-import huskeliste from '../assets/projects/project_design_huskeliste.png';
-import smartfinance from '../assets/projects/project_design_smartfinance.png';
-import kpn from '../assets/projects/project_design_kpn.png';
+import candidatePortal from '../assets/projects/candidate_onboarding_portal.png';
+import huskeliste from '../assets/projects/huskeliste_design.png';
+import smartfinance from '../assets/projects/smartfinance_design.png';
+import kpn from '../assets/projects/kpn_design.png';
 
 function Projects() {
     const [translation, setTranslation] = useState({});
@@ -58,7 +58,7 @@ function Projects() {
                                     <p className='project-description'>{translation['candidateportaldescription']}</p>
                                 </div>
                                 <div className="project-image">
-                                    <img src={luftan} alt="Candidate onboarding portal"/>
+                                    <img src={candidatePortal} alt="Candidate onboarding portal"/>
                                 </div>
                             </div>
                             <div className="line-divider"></div>
@@ -72,7 +72,7 @@ function Projects() {
                                     <a className='project-button' href="https://wesselvandalen.github.io/huskeliste/" target='_blank' rel="noreferrer">{translation['seeproject']}</a>
                                 </div>
                                 <div className="project-image">
-                                    <img src={luftan} alt="Huskeliste"/>
+                                    <img src={huskeliste} alt="Huskeliste"/>
                                 </div>
                             </div>
                             <div className="line-divider"></div>
@@ -86,7 +86,7 @@ function Projects() {
                                     <a className='project-button' href="http://159.223.223.166:8080/" target='_blank' rel="noreferrer">{translation['seeproject']}</a>
                                 </div>
                                 <div className="project-image">
-                                    <img src={luftan} alt="SmartFinance"/>
+                                    <img src={smartfinance} alt="SmartFinance"/>
                                 </div>
                             </div>
                             <div className="line-divider"></div>
@@ -100,7 +100,7 @@ function Projects() {
                                     <a className='project-button' href="https://hu-sd-sv2fe-studenten-2324.github.io/v2fe-eindopdracht-v2d_peer/" target='_blank' rel="noreferrer">{translation['seeproject']}</a>
                                 </div>
                                 <div className="project-image">
-                                    <img src={luftan} alt="KPN Travel Movements"/>
+                                    <img src={kpn} alt="KPN Travel Movements"/>
                                 </div>
                             </div>
                             <div className="line-divider"></div>

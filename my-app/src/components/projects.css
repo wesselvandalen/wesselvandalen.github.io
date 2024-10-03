@@ -140,6 +140,10 @@
         margin-left: 0;
     }
 
+    .project-image img {
+        margin-bottom: 10px;
+    }
+
     .project-block-title {
         margin-top: 20px;
     }
@@ -156,5 +160,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .last {
+        margin-bottom: -50px;
     }
 }
