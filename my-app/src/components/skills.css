@@ -112,7 +112,8 @@
 
 @media screen and (max-width: 1920px) {
     .skills-container {
-        margin-bottom: 350px;
+        margin-top: 225px;
+        margin-bottom: 275px;
     }
 
     .skills-content {

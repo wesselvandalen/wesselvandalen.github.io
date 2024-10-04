@@ -96,7 +96,7 @@
 
 @media screen and (max-width: 1080px) {
     .component-container {
-        margin-top: 250px;
+        margin-top: 350px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -122,6 +122,7 @@
     .component-images-wrapper {
         display: flex;
         justify-content: center;
+        margin-right: -5px;
     }
 
     .component-text {

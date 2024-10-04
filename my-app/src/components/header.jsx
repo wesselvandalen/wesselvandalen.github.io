@@ -69,9 +69,9 @@ function Header() {
                         </a>
                     </div>
                     <div className="navigation">
-                        <a className='nav' href="#norway">Norway</a>
-                        <a className='nav' href="#skills">Skills</a>
-                        <a className='nav' href="#projects">Projects</a>
+                        <a className='nav' href="#norway">{translation['norway']}</a>
+                        <a className='nav' href="#skills">{translation['skills']}</a>
+                        <a className='nav' href="#projects">{translation['projects']}</a>
                     </div>
                 </div>
 
