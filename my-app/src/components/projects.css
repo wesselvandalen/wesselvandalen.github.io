@@ -99,7 +99,7 @@
     border-radius: 25px;
     background-color: #155fc0;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     text-decoration: none;
     margin-bottom: 20px;
@@ -117,7 +117,7 @@
 
 @media screen and (max-width: 1920px) {
     .projects-container {
-        margin-top: 150px;
+        margin-top: 125px;
     }
 
     .projects-content {

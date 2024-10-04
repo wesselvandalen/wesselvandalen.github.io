@@ -6,23 +6,6 @@
     background-color: #fff;
     margin-bottom: 50px;
 }
-/* 
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -20;
-    height: 100vh;
-}
-
-.video-background video {
-    width: 100%;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    z-index: -20;
-    object-fit: cover;
-}  */
 
 .form {
     background: url("../assets/lys.jpg");
@@ -32,20 +15,6 @@
     width: 20rem;
     height: 30rem;
     border-radius: 20px;
-    /* box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2); */
-    /* animation: animate 5s ease-in-out infinite; */
-}
-
-@keyframes animate {
-    0% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
-    }
-    50% {
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60% ;
-    }
-    100% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
-    }
 }
 
 .home-content {
@@ -85,7 +54,7 @@
     font-weight: 600;
     line-height: 1;
 
-    margin: 10px 0 20px 0;
+    margin: 0 0 10px 0;
 }
 
 .norwegian-colors {
@@ -96,8 +65,6 @@
         #dd2d4a 75%,  /* dyp rød med et hint av murstein */
         #ff4d6d 100%  /* mørk, rik rød */
     );
-
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -106,12 +73,13 @@
     font-weight: 400;
     letter-spacing: -.2px;
     margin-top: 0;
+    margin-bottom: 10px;
     font-size: 20px;
     line-height: 31px;
 }
 
 .description {
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     font-size: 17px;
     font-weight: 400;
     line-height: 26px;
@@ -157,16 +125,6 @@
 
     .home-container {
         width: 1+0%;
-    
-    }
-
-
-    .greeting {
-        font-size: 24px;
-    }
-
-    .norway-icon {
-        width: 22px;
     }
 
     .name {

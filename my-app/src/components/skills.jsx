@@ -110,7 +110,6 @@ function Skills() {
                                 <img src={salesforceIcon} alt='Salesforce' title='Salesforce'/>
                             </div>
                         </div>
-                        <div className="line-divider"></div>
 
                     </div>
                 </div>
