@@ -24,7 +24,7 @@ function NorwayComponent() {
     };
 
     return (
-        <div className='component-container'>
+        <div className='component-container' id='norway'>
             <div className="component-content">
                 <div className="component-wrapper">
                     <div className="component-images-wrapper">

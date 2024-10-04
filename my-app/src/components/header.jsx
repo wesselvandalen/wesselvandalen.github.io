@@ -67,13 +67,11 @@ function Header() {
                         <a href="/">
                             <img src={logo} alt="Dalen logo" className='logo'/>
                         </a>
-                        {/* <span className='logo-span'>Dalen</span> */}
                     </div>
                     <div className="navigation">
-                        <a className='nav' href="mailto:wesselvandalen@gmail.com">{translation['email']}</a>
-                        <a className='nav' href="https://ivory-marcellina-50.tiiny.site/" target='_blank' rel="noreferrer">{translation['cv']}</a>
-                        <a className='nav' href="https://github.com/wesselvandalen/" target='_blank' rel="noreferrer">GitHub</a>
-                        <a className='nav' href="https://linkedin.com/in/wesselvandalen/" target='_blank' rel="noreferrer">LinkedIn</a>
+                        <a className='nav' href="#norway">Norway</a>
+                        <a className='nav' href="#skills">Skills</a>
+                        <a className='nav' href="#projects">Projects</a>
                     </div>
                 </div>
 

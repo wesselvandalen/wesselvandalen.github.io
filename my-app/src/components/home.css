@@ -90,12 +90,14 @@
 
 .norwegian-colors {
     background: linear-gradient(90deg, 
-        #e2e9e0 0%,    /* light snowy white */
-        #b2c9d8 20%,   /* soft icy blue */
-        #c7d7e2 50%,   /* pale sky blue */
-        #9bb9d9 80%,   /* muted gray-blue */
-        #7b9db8 100%   /* cool blue-gray */
+        #ff4d6d 0%,   /* myk, lys rød/rosa */
+        #c9184a 25%,  /* varm, pastellaktig rød */
+        #ff4d6d 50%,  /* klassisk dyp rød */
+        #dd2d4a 75%,  /* dyp rød med et hint av murstein */
+        #ff4d6d 100%  /* mørk, rik rød */
     );
+
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -109,19 +111,25 @@
 }
 
 .description {
-    margin: 0;
+    margin: 0 0 20px 0;
     font-size: 17px;
     font-weight: 400;
     line-height: 26px;
 }
 
 .description a {
-    color: #7b9db8;
+    color: #3897e5;
     text-decoration: none;
 }
 
 .description a:hover {
-    color: #6894b8;
+    color: #2c6ac8;
+}
+
+.social {
+    color: #3897e5;
+    text-decoration: none;
+    margin-right: 30px;
 }
 
 @media screen and (max-width: 1920px) {

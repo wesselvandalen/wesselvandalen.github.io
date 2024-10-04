@@ -26,7 +26,7 @@ function Projects() {
     };
 
     return (
-        <div className='projects-container'>
+        <div className='projects-container' id='projects'>
             <div className="projects-content">
                 <div className="projects-inner-content">
 

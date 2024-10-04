@@ -38,14 +38,6 @@ export default function Home() {
 
     return (
         <div className="home-container">
-            {/* <div className='video-container'>
-                <div className="video-background">
-                    <video ref={videoRef} autoPlay muted loop>
-                        <source src={bakgrunn} type="video/mp4"/>
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div> */}
             <div className="home-content">
                 <div className="home-wrapper">
                     <div className="home-text">
@@ -67,9 +59,16 @@ export default function Home() {
                                             .replace('{experience}', calculateYearsExperience()) 
                                             .split('{bachelorLink}')[1]}
                                     </>
-                                )}
+                                )} <a href="mailto:wesselvandalen@gmail.com" className='description-a' >
+                                    {translation['email']}
+                                </a>
                             </>
                         </p>
+                        <div className="social-icons-container">
+                            <a className='social' href="https://ivory-marcellina-50.tiiny.site/" target='_blank' rel="noreferrer">{translation['cv']}</a>
+                            <a className='social' href="https://github.com/wesselvandalen/" target='_blank' rel="noreferrer">GitHub</a>
+                            <a className='social' href="https://linkedin.com/in/wesselvandalen/" target='_blank' rel="noreferrer">LinkedIn</a>
+                        </div>
                     </div>
                     <div className="home-image-wrapper">
                         <div className="form"></div>

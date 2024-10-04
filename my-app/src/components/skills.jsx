@@ -46,7 +46,7 @@ function Skills() {
     };
 
     return (
-        <div className='skills-container'>
+        <div className='skills-container' id='skills'>
             <div className="skills-content">
                 <div className="skills-inner-content">
 
