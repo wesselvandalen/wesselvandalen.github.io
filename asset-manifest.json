@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.44aa7b91.css",
-    "main.js": "/static/js/main.7e27d55d.js",
-    "static/js/26.04e81d53.chunk.js": "/static/js/26.04e81d53.chunk.js",
-    "static/js/723.3d6c315c.chunk.js": "/static/js/723.3d6c315c.chunk.js",
-    "static/js/418.edb51eb9.chunk.js": "/static/js/418.edb51eb9.chunk.js",
+    "main.css": "/static/css/main.2354d181.css",
+    "main.js": "/static/js/main.2eb687a5.js",
+    "static/js/26.d5760b0a.chunk.js": "/static/js/26.d5760b0a.chunk.js",
+    "static/js/723.6457d91a.chunk.js": "/static/js/723.6457d91a.chunk.js",
+    "static/js/418.d3f32b27.chunk.js": "/static/js/418.d3f32b27.chunk.js",
     "static/media/preikestolen.jpg": "/static/media/preikestolen.ad6a1da8b49429b8775e.jpg",
     "static/media/vannbygde.jpg": "/static/media/vannbygde.b84c76feb3b953cee35b.jpg",
     "static/media/canva.png": "/static/media/canva.4384eab39ba50bb8cee6.png",
@@ -41,11 +41,11 @@
     "static/media/figma.png": "/static/media/figma.809e95cfef4058cfd651.png",
     "static/media/norway-icon.png": "/static/media/norway-icon.65625e9f57133afdeef4.png",
     "index.html": "/index.html",
-    "main.44aa7b91.css.map": "/static/css/main.44aa7b91.css.map",
-    "main.7e27d55d.js.map": "/static/js/main.7e27d55d.js.map"
+    "main.2354d181.css.map": "/static/css/main.2354d181.css.map",
+    "main.2eb687a5.js.map": "/static/js/main.2eb687a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.44aa7b91.css",
-    "static/js/main.7e27d55d.js"
+    "static/css/main.2354d181.css",
+    "static/js/main.2eb687a5.js"
   ]
 }
