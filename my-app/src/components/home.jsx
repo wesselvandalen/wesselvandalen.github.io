@@ -59,9 +59,7 @@ export default function Home() {
                                             .replace('{experience}', calculateYearsExperience()) 
                                             .split('{bachelorLink}')[1]}
                                     </>
-                                )} <a href="mailto:wesselvandalen@gmail.com" className='description-a' >
-                                    {translation['email']}
-                                </a>
+                                )} <a href="mailto:wesselvandalen@gmail.com" className='description-a'>{translation['email']}!</a>
                             </>
                         </p>
                         <div className="social-icons-container">
