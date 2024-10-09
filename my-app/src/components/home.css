@@ -47,6 +47,11 @@
 .home-text {
     width: 50%;
     color: #222;
+
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInLeft .5s ease-out forwards;
+    animation-delay: .3s;
 }
 
 .name {
@@ -103,6 +108,17 @@
 .social:hover {
     color: #2c6ac8;
 
+}
+  
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @media screen and (max-width: 1920px) {
