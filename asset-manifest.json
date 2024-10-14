@@ -1,10 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e8541f87.css",
-    "main.js": "/static/js/main.2da4fcc9.js",
-    "static/js/26.475073cc.chunk.js": "/static/js/26.475073cc.chunk.js",
-    "static/js/723.93b85b22.chunk.js": "/static/js/723.93b85b22.chunk.js",
-    "static/js/418.e47fae67.chunk.js": "/static/js/418.e47fae67.chunk.js",
+    "main.js": "/static/js/main.b4acb8ae.js",
     "static/media/preikestolen.jpg": "/static/media/preikestolen.ad6a1da8b49429b8775e.jpg",
     "static/media/vannbygde.jpg": "/static/media/vannbygde.b84c76feb3b953cee35b.jpg",
     "static/media/canva.png": "/static/media/canva.4384eab39ba50bb8cee6.png",
@@ -32,7 +29,6 @@
     "static/media/svelte.png": "/static/media/svelte.c6c355448b900669be6c.png",
     "static/media/vsc.png": "/static/media/vsc.c0e134c3bbf4bd018d4c.png",
     "static/media/powershell.png": "/static/media/powershell.ef40e9d87cb09963ddf0.png",
-    "static/media/se.png": "/static/media/se.f55ef703e06c4fe223b9.png",
     "static/media/javascript.png": "/static/media/javascript.3104e7978aeec760c95c.png",
     "static/media/hibernate.png": "/static/media/hibernate.86c7cb7737de5147baa5.png",
     "static/media/junit5.png": "/static/media/junit5.e7973e5141d836c92f22.png",
@@ -42,10 +38,10 @@
     "static/media/norway-icon.png": "/static/media/norway-icon.65625e9f57133afdeef4.png",
     "index.html": "/index.html",
     "main.e8541f87.css.map": "/static/css/main.e8541f87.css.map",
-    "main.2da4fcc9.js.map": "/static/js/main.2da4fcc9.js.map"
+    "main.b4acb8ae.js.map": "/static/js/main.b4acb8ae.js.map"
   },
   "entrypoints": [
     "static/css/main.e8541f87.css",
-    "static/js/main.2da4fcc9.js"
+    "static/js/main.b4acb8ae.js"
   ]
 }
