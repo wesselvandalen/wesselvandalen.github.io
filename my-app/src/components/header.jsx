@@ -1,39 +1,16 @@
 import './header.css';
-import { setCurrentLanguage } from '../service/language-service';
-import { useEffect, useState } from 'react';
-import { getCurrentLanguage } from '../service/language-service';
 import noFlag from '../assets/flags/no.png';
 import nlFlag from '../assets/flags/nl.png';
 import enFlag from '../assets/flags/gb.png';
-import seFlag from '../assets/flags/se.png';
 import logo from '../assets/norway-icon.png';
+import { useTranslation } from 'react-i18next';
 
-function Header() {
-    const [translation, setTranslation] = useState({});
-    const [chosenLanguage, setChosenLanguage] = useState('');
-    const [flag, setFlag] = useState(null);
-
-    useEffect(() => {
-        translatePage();
-    }, [translation]);
-
-    const translatePage = async () => {
-        const currentLanguage = getCurrentLanguage();
-        setChosenLanguage(handleChosenLanguage(currentLanguage));
-        setFlag(getFlagByLanguage(currentLanguage));
-
-        try {
-          const translations = await import(`../languages/${currentLanguage}.json`);
-          setTranslation(translations);
-          document.documentElement.lang = currentLanguage;
-        } catch (error) {
-          console.error('Error loading translations:', error);
-        }
-    };
+export default function Header() {
+    const [translation, i18n] = useTranslation("global");
 
     const handleChosenLanguage = (lang) => {
         if (lang === 'no') {
-            return 'Norsk bokmål';
+            return 'Norsk';
         } else if (lang === 'nl') {
             return 'Nederlands';
         } else if (lang === 'en') {
@@ -52,11 +29,13 @@ function Header() {
             return enFlag;
         } else {
             console.error(`The language ${lang} does not exist.`);
+            return enFlag;
         }
     };
 
     const handleLanguageSwitch = (lang) => {
-        setCurrentLanguage(lang);
+        i18n.changeLanguage(lang);
+        localStorage.setItem('lang', lang);
     };
 
     return (
@@ -69,42 +48,36 @@ function Header() {
                         </a>
                     </div>
                     <div className="navigation">
-                        <a className='nav' href="#norway">{translation['norway']}</a>
-                        <a className='nav' href="#skills">{translation['skills']}</a>
-                        <a className='nav' href="#projects">{translation['projects']}</a>
+                        <a className='nav' href="#norway">{translation('norway')}</a>
+                        <a className='nav' href="#skills">{translation('skills')}</a>
+                        <a className='nav' href="#projects">{translation('projects')}</a>
                     </div>
                 </div>
 
                 <div className="dropdown">
-                        <button className="dropbtn">
-                            <img src={flag} alt={`${chosenLanguage} flag`} className='dropdown-flag'/>
-                            {chosenLanguage} 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                            </svg>
-                        </button>
-                        <div className="dropdown-content">
-                            <a href="#" onClick={() => handleLanguageSwitch('no')}>
-                                <img src={noFlag} alt='Norwegian flag'/>
-                                Norsk bokmål
-                            </a>
-                            {/* <a href="#" onClick={() => handleLanguageSwitch('se')}>
-                                <img src={seFlag} alt='Swedish flag'/>
-                                Svenska
-                            </a> */}
-                            <a href="#" onClick={() => handleLanguageSwitch('nl')}>
-                                <img src={nlFlag} alt='Dutch flag'/>
-                                Nederlands
-                            </a>
-                            <a href="#" onClick={() => handleLanguageSwitch('en')}>
-                                <img src={enFlag} alt='English flag'/>
-                                English
-                            </a>
-                        </div>
+                    <button className="dropbtn">
+                        <img src={getFlagByLanguage(i18n.language)} alt={`${handleChosenLanguage(i18n.language)} flag`} className='dropdown-flag'/>
+                        {handleChosenLanguage(i18n.language)} 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <div className="dropdown-content">
+                        <a href="#" onClick={() => handleLanguageSwitch('no')}>
+                            <img src={noFlag} alt='Norwegian flag'/>
+                            Norsk
+                        </a>
+                        <a href="#" onClick={() => handleLanguageSwitch('nl')}>
+                            <img src={nlFlag} alt='Dutch flag'/>
+                            Nederlands
+                        </a>
+                        <a href="#" onClick={() => handleLanguageSwitch('en')}>
+                            <img src={enFlag} alt='English flag'/>
+                            English
+                        </a>
                     </div>
+                </div>
             </div>
         </div>
     );
 }
-
-export default Header;

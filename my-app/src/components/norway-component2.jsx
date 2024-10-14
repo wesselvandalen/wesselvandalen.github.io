@@ -1,25 +1,9 @@
 import './norway-component2.css';
 import image from '../assets/norway/vannbygde.jpg';
-import { useEffect, useState } from 'react';
-import { getCurrentLanguage } from '../service/language-service';
+import { useTranslation } from 'react-i18next';
 
 export default function NorwayComponent2() {
-    const [translation, setTranslation] = useState({});
-
-    useEffect(() => {
-        translatePage();
-    }, [translation]);
-
-    const translatePage = async () => {
-        const currentLanguage = getCurrentLanguage();
-
-        try {
-          const translations = await import(`../languages/${currentLanguage}.json`);
-          setTranslation(translations);
-        } catch (error) {
-          console.error('Error loading translations:', error);
-        }
-    };
+    const [translation, i18n] = useTranslation("global");
 
     return (
         <div className='nor-continer'>
@@ -27,7 +11,7 @@ export default function NorwayComponent2() {
                 <div className="nor-wrapper">
                     <div className="nor-text-info">
                         <h3>Kreativitet møter kode.</h3>
-                        <p>{translation['solutionparagraph']}</p>
+                        <p>{translation('solutionparagraph')}</p>
                     </div>
                     <div className="nor-image-box">
                         <img src={image} alt='Typiske norske hus ved havet' title='Typiske norske hus ved havet'/>

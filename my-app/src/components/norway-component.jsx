@@ -2,26 +2,10 @@ import './norway-component.css';
 import sno from '../assets/norway/sno.jpg';
 import preikestolen from '../assets/norway/preikestolen.jpg';
 import hus from '../assets/norway/hus.png';
-import { useEffect, useState } from 'react';
-import { getCurrentLanguage } from '../service/language-service';
+import { useTranslation } from 'react-i18next';
 
-function NorwayComponent() {
-    const [translation, setTranslation] = useState({});
-
-    useEffect(() => {
-        translatePage();
-    }, [translation]);
-
-    const translatePage = async () => {
-        const currentLanguage = getCurrentLanguage();
-
-        try {
-          const translations = await import(`../languages/${currentLanguage}.json`);
-          setTranslation(translations);
-        } catch (error) {
-          console.error('Error loading translations:', error);
-        }
-    };
+export default function NorwayComponent() {
+    const [translation, i18n] = useTranslation("global");
 
     return (
         <div className='component-container' id='norway'>
@@ -39,13 +23,13 @@ function NorwayComponent() {
                     <div className="component-text">
                         <h3 className='component-title'>Det er typisk norsk å være god.</h3>
                         <p className='component-description'>
-                            {translation['norwaypart1']}
+                            {translation('norwaypart1')}
                         </p>
                         <p className='component-description'>
-                            {translation['norwaypart2']}
+                            {translation('norwaypart2')}
                         </p>
                         <p className='component-description'>
-                            *{translation['norwaypart3']}
+                            *{translation('norwaypart3')}
                         </p>
                     </div>
                 </div>
@@ -53,5 +37,3 @@ function NorwayComponent() {
         </div>
     );
 }
-
-export default NorwayComponent;

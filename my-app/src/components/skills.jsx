@@ -1,6 +1,4 @@
 import './skills.css';
-import { useEffect, useState } from 'react';
-import { getCurrentLanguage } from '../service/language-service';
 import reactIcon from '../assets/icons/react.png';
 import litIcon from '../assets/icons/lit.png';
 import svelteIcon from '../assets/icons/svelte.png';
@@ -26,24 +24,10 @@ import powershellIcon from '../assets/icons/powershell.png';
 import inteallijIDEAIcon from '../assets/icons/inteallij_idea.png';
 import vsc from '../assets/icons/vsc.png';
 import csharp from '../assets/icons/csharp.png';
+import { useTranslation } from 'react-i18next';
 
-function Skills() {
-    const [translation, setTranslation] = useState({});
-
-    useEffect(() => {
-        translateHeaderPage();
-    }, [translation]);
-
-    const translateHeaderPage = async () => {
-        const currentLanguage = getCurrentLanguage();
-
-        try {
-          const translations = await import(`../languages/${currentLanguage}.json`);
-          setTranslation(translations);
-        } catch (error) {
-          console.error('Error loading translations:', error);
-        }
-    };
+export default function Skills() {
+    const [translation, i18n] = useTranslation("global");
 
     return (
         <div className='skills-container' id='skills'>
@@ -51,8 +35,8 @@ function Skills() {
                 <div className="skills-inner-content">
 
                     <div className="skills-template-wrapper">
-                        <h3 className='skill-title'>{translation['skillstitle']}</h3>
-                        <p className='skill-description'>{translation['skillsdescription']}</p>
+                        <h3 className='skill-title'>{translation('skillstitle')}</h3>
+                        <p className='skill-description'>{translation('skillsdescription')}</p>
                     </div>
 
                     <div className="skills-wrapper">
@@ -60,7 +44,7 @@ function Skills() {
                         <div className="skill-set">
                             <div className="skill-info-box">
                                 <h3>Front end</h3>
-                                <p>{translation['frontenddescription']}</p>
+                                <p>{translation('frontenddescription')}</p>
                             </div>
                             <div className="skill-icons-box right">
                             <img src={reactIcon} alt='React' title='React'/>
@@ -89,7 +73,7 @@ function Skills() {
                             </div>
                             <div className="skill-info-box">
                                 <h3>Back end</h3>
-                                <p>{translation['backenddescription']}</p>
+                                <p>{translation('backenddescription')}</p>
                             </div>
                         </div>
                         <div className="line-divider"></div>
@@ -97,7 +81,7 @@ function Skills() {
                         <div className="skill-set">
                             <div className="skill-info-box">
                                 <h3>{translation['toolstitle']}</h3>
-                                <p>{translation['toolsdescription']}</p>
+                                <p>{translation('toolsdescription')}</p>
                             </div>
                             <div className="skill-icons-box right">
                                 <img src={postman} alt='Postman' title='Postman'/>
@@ -117,5 +101,3 @@ function Skills() {
         </div>
     );
 }
-
-export default Skills;

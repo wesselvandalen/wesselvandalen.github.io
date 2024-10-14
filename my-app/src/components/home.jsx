@@ -1,24 +1,8 @@
 import './home.css';
-import { useEffect, useState } from 'react';
-import { getCurrentLanguage } from '../service/language-service';
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
-    const [translation, setTranslation] = useState({});
-
-    useEffect(() => {
-        translatePage();
-    }, [translation]);
-
-    const translatePage = async () => {
-        const currentLanguage = getCurrentLanguage();
-
-        try {
-          const translations = await import(`../languages/${currentLanguage}.json`);
-          setTranslation(translations);
-        } catch (error) {
-          console.error('Error loading translations:', error);
-        }
-    };
+    const [translation, i18n] = useTranslation("global");
 
     function calculateAge() {
         let dob = new Date("01/20/2004");
@@ -42,28 +26,25 @@ export default function Home() {
                 <div className="home-wrapper">
                     <div className="home-text">
                         <h3 className='name'>Wessel van <span className='norwegian-colors'>Dalen</span></h3>
-                        <p className='role'>Full Stack {translation['role']}</p>
+                        <p className='role'>Full Stack {translation('role')}</p>
                         <p className='description'>
                             <>
-                                {translation['description'] && (
-                                    <>
-                                        {translation['description']
-                                            .replace('{age}', calculateAge())
-                                            .replace('{experience}', calculateYearsExperience())  
-                                            .split('{bachelorLink}')[0]}
-                                        <a href="https://www.hu.nl/voltijd-opleidingen/hbo-ict" target="_blank" rel="noreferrer">
-                                            Software Development Bachelor
-                                        </a>
-                                        {translation['description']
-                                            .replace('{age}', calculateAge())
-                                            .replace('{experience}', calculateYearsExperience()) 
-                                            .split('{bachelorLink}')[1]}
-                                    </>
-                                )} <a href="mailto:wesselvandalen@gmail.com" className='description-a'>{translation['email']}!</a>
+                                {translation('description')
+                                    .replace('{age}', calculateAge())
+                                    .replace('{experience}', calculateYearsExperience())
+                                    .split('{bachelorLink}')[0]}
+                                <a href="https://www.hu.nl/voltijd-opleidingen/hbo-ict" target="_blank" rel="noreferrer">
+                                    Software Development Bachelor
+                                </a>
+                                {translation('description')
+                                    .replace('{age}', calculateAge())
+                                    .replace('{experience}', calculateYearsExperience())
+                                    .split('{bachelorLink}')[1]}
+                                 <a href="mailto:wesselvandalen@gmail.com" className='description-a'>{translation('email')}!</a>
                             </>
                         </p>
                         <div className="social-icons-container">
-                            <a className='social' href="https://ivory-marcellina-50.tiiny.site/" target='_blank' rel="noreferrer">{translation['cv']}</a>
+                            <a className='social' href="https://ivory-marcellina-50.tiiny.site/" target='_blank' rel="noreferrer">{translation('cv')}</a>
                             <a className='social' href="https://github.com/wesselvandalen/" target='_blank' rel="noreferrer">GitHub</a>
                             <a className='social' href="https://linkedin.com/in/wesselvandalen/" target='_blank' rel="noreferrer">LinkedIn</a>
                         </div>
