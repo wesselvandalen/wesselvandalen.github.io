@@ -48,7 +48,7 @@ export default function Projects() {
                             <div className="line-divider"></div>
                         </div>
 
-                        <div className="project">
+                        {/* <div className="project">
                             <div className="project-content">
                                 <div className="project-info">
                                     <h3 className='projects-title'>Huskeliste</h3>
@@ -88,7 +88,7 @@ export default function Projects() {
                                 </div>
                             </div>
                             <div className="line-divider"></div>
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>

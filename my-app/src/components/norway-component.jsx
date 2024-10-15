@@ -30,6 +30,7 @@ export default function NorwayComponent() {
                         </p>
                         <p className='component-description'>
                             *{translation('norwaypart3')}
+                            <a className='norway-a' href="mailto:wesselvandalen@gmail.com"> {translation('norwaymail')}</a>!
                         </p>
                     </div>
                 </div>

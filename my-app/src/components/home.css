@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
     margin-bottom: 50px;
 }
 
@@ -64,12 +63,15 @@
 
 .norwegian-colors {
     background: linear-gradient(90deg, 
-        #ff4d6d 0%,   /* myk, lys rød/rosa */
-        #c9184a 25%,  /* varm, pastellaktig rød */
-        #ff4d6d 50%,  /* klassisk dyp rød */
-        #dd2d4a 75%,  /* dyp rød med et hint av murstein */
-        #ff4d6d 100%  /* mørk, rik rød */
-    );
+    #bbdefb 0%,  
+    #90caf9 25%,  
+    #64b5f6 50%,  
+    #42a5f5 75%,  
+    #2196f3 100%  
+);
+
+
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

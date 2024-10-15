@@ -2,7 +2,7 @@
     display: flex;   
     justify-content: center;
     align-items: center;
-    margin: 50px 0 100px 0;
+    margin: 50px 0 0 0;
 }
 
 .component-content {
@@ -38,6 +38,15 @@
     font-weight: 400;
     line-height: 26px;
     color: #222;
+}
+
+.norway-a {
+    color: #3897e5;
+    text-decoration: none;
+}
+
+.norway-a:hover {
+    color: #2c6ac8;
 }
 
 /* */

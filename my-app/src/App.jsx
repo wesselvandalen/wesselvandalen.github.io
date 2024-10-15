@@ -6,7 +6,7 @@ import Skills from './components/skills';
 import Projects from './components/projects';
 import NorwayComponent2 from './components/norway-component2';
 
-function App() {
+export default function App() {
   return (
     <>
       <Header/>
@@ -18,5 +18,3 @@ function App() {
     </>
   );
 }
-
-export default App;

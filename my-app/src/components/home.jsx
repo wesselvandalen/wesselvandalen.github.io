@@ -40,8 +40,7 @@ export default function Home() {
                                     .replace('{age}', calculateAge())
                                     .replace('{experience}', calculateYearsExperience())
                                     .split('{bachelorLink}')[1]}
-                                 <a href="mailto:wesselvandalen@gmail.com" className='description-a'>{translation('email')}!</a>
-                            </>
+                            </> <a href="mailto:wesselvandalen@gmail.com" className='description-a'>{translation('email')}!</a>
                         </p>
                         <div className="social-icons-container">
                             <a className='social' href="https://ivory-marcellina-50.tiiny.site/" target='_blank' rel="noreferrer">{translation('cv')}</a>

@@ -1,9 +1,9 @@
 .projects-container {
-    margin-top: 150px;
+    margin-top: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 400px;
+    margin-bottom: 300px;
 }
 
 .projects-content {
@@ -61,7 +61,7 @@
     justify-content: end;
     align-items: center;
     width: 30%;
-    margin-left: 40px;
+    margin-left: 100px;
 }
 
 .project-image img {
@@ -73,7 +73,8 @@
     justify-content: start;
     flex-direction: column;
     align-items: start;
-    width: 90%;
+    width: 70%;
+    margin-right: 50px;
 }
 
 .projects-title {
@@ -109,6 +110,8 @@
     height: 1px;
     background-color: rgba(000, 000, 000, .1);
     width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .last {
