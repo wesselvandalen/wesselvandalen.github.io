@@ -58,7 +58,7 @@ export default function Skills() {
                                 <img src={figmaIcon} alt='Figma' title='Figma'/>
                             </div>
                         </div>
-                        <div className="line-divider"></div>
+                        <div className="skill-div"></div>
 
                         <div className="skill-set venstre">
                             <div className="skill-icons-box left">
@@ -76,11 +76,11 @@ export default function Skills() {
                                 <p>{translation('backenddescription')}</p>
                             </div>
                         </div>
-                        <div className="line-divider"></div>
+                        <div className="skill-div"></div>
 
                         <div className="skill-set">
                             <div className="skill-info-box">
-                                <h3>{translation['toolstitle']}</h3>
+                                <h3>{translation('toolstitle')}</h3>
                                 <p>{translation('toolsdescription')}</p>
                             </div>
                             <div className="skill-icons-box right">

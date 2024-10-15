@@ -110,10 +110,16 @@
     border: 1px solid color-mix(in srgb, #8cb4e9 15%, transparent);
 }
 
+.skill-div {
+    height: 1px;
+    background-color: rgba(000, 000, 000, .1);
+    width: 100%;
+}
+
 @media screen and (max-width: 1920px) {
     .skills-container {
-        margin-top: 175px;
-        margin-bottom: 200px;
+        margin-top: 300px;
+        margin-bottom: 300px;
     }
 
     .skills-content {
@@ -128,6 +134,7 @@
 
 @media screen and (max-width: 1080px) {
     .skills-container {
+        margin-top: 500px;
         margin-bottom: 375px;
     }
 
