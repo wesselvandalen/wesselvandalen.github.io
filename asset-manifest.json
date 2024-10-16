@@ -1,19 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.a528495a.css",
-    "main.js": "/static/js/main.b651f644.js",
+    "main.css": "/static/css/main.2b8f8b3d.css",
+    "main.js": "/static/js/main.2f2bfbe1.js",
     "static/media/preikestolen.jpg": "/static/media/preikestolen.ad6a1da8b49429b8775e.jpg",
     "static/media/vannbygde.jpg": "/static/media/vannbygde.b84c76feb3b953cee35b.jpg",
     "static/media/canva.png": "/static/media/canva.4384eab39ba50bb8cee6.png",
     "static/media/hus.png": "/static/media/hus.995c06090e9b18dce297.png",
     "static/media/inteallij_idea.png": "/static/media/inteallij_idea.6f3284f1e457dad76470.png",
-    "static/media/luftan_design.png": "/static/media/luftan_design.6513fc47f392857096ff.png",
     "static/media/azure.png": "/static/media/azure.5046ef5b1dd1f4d74d89.png",
-    "static/media/smartfinance_design.png": "/static/media/smartfinance_design.530279fdb99246fb13b5.png",
+    "static/media/luftan_design.png": "/static/media/luftan_design.e63aae9084d8332b70cf.png",
     "static/media/lys.jpg": "/static/media/lys.3702365d9b6af287f630.jpg",
-    "static/media/kpn_design.png": "/static/media/kpn_design.e4c0c472a213749c8156.png",
-    "static/media/candidate_onboarding_portal.png": "/static/media/candidate_onboarding_portal.8c217896f3aeb3b5a995.png",
-    "static/media/huskeliste_design.png": "/static/media/huskeliste_design.4b4d7c0c4c983f084f97.png",
+    "static/media/candidate_onboarding_design.png": "/static/media/candidate_onboarding_design.46e0224bc2f41de32700.png",
     "static/media/spring.png": "/static/media/spring.388bedf3157e6741a1d5.png",
     "static/media/postman.png": "/static/media/postman.f9452c12e038137be6f2.png",
     "static/media/git.png": "/static/media/git.52ffcca1c2260d3a141b.png",
@@ -37,11 +34,11 @@
     "static/media/figma.png": "/static/media/figma.809e95cfef4058cfd651.png",
     "static/media/norway-icon.png": "/static/media/norway-icon.65625e9f57133afdeef4.png",
     "index.html": "/index.html",
-    "main.a528495a.css.map": "/static/css/main.a528495a.css.map",
-    "main.b651f644.js.map": "/static/js/main.b651f644.js.map"
+    "main.2b8f8b3d.css.map": "/static/css/main.2b8f8b3d.css.map",
+    "main.2f2bfbe1.js.map": "/static/js/main.2f2bfbe1.js.map"
   },
   "entrypoints": [
-    "static/css/main.a528495a.css",
-    "static/js/main.b651f644.js"
+    "static/css/main.2b8f8b3d.css",
+    "static/js/main.2f2bfbe1.js"
   ]
 }
