@@ -3,7 +3,7 @@ import image from '../assets/norway/vannbygde.jpg';
 import { useTranslation } from 'react-i18next';
 
 export default function NorwayComponent2() {
-    const [translation, i18n] = useTranslation("global");
+    const [translation] = useTranslation("global");
 
     return (
         <div className='nor-continer'>

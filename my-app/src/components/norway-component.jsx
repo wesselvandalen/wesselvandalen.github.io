@@ -5,7 +5,7 @@ import hus from '../assets/norway/hus.png';
 import { useTranslation } from 'react-i18next';
 
 export default function NorwayComponent() {
-    const [translation, i18n] = useTranslation("global");
+    const [translation] = useTranslation("global");
 
     return (
         <div className='component-container' id='norway'>

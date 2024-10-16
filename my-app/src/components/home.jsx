@@ -2,7 +2,7 @@ import './home.css';
 import { useTranslation } from 'react-i18next';
 
 export default function Home() {
-    const [translation, i18n] = useTranslation("global");
+    const [translation] = useTranslation("global");
 
     function calculateAge() {
         let dob = new Date("01/20/2004");

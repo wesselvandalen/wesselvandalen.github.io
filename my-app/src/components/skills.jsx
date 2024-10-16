@@ -27,7 +27,7 @@ import csharp from '../assets/icons/csharp.png';
 import { useTranslation } from 'react-i18next';
 
 export default function Skills() {
-    const [translation, i18n] = useTranslation("global");
+    const [translation] = useTranslation("global");
 
     return (
         <div className='skills-container' id='skills'>
