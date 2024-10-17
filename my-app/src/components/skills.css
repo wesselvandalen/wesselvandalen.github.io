@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 200px;
-    margin-top: 200px;
+    margin-top: 100px;
     height: 80vh;
 }
 
@@ -118,8 +118,8 @@
 
 @media screen and (max-width: 1920px) {
     .skills-container {
-        margin-top: 300px;
-        margin-bottom: 300px;
+        margin-top: 200px;
+        margin-bottom: 200px;
     }
 
     .skills-content {
@@ -134,7 +134,7 @@
 
 @media screen and (max-width: 1080px) {
     .skills-container {
-        margin-top: 500px;
+        margin-top: 400px;
         margin-bottom: 375px;
     }
 

@@ -1,9 +1,33 @@
 .home-container {
-    height: 60vh;
+    position: relative;
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
     margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Ensure video is behind the content */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Juster alpha-verdien for mørkere eller lysere effekt */
+    z-index: 0; /* Sørg for at overleggen er over videoen, men under innholdet */
 }
 
 .form {
@@ -17,10 +41,20 @@
 }
 
 .home-content {
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 60%;
+}
+
+.home-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
 }
 
 .home-wrapper {
@@ -57,21 +91,18 @@
     font-size: 54px;
     font-weight: 600;
     line-height: 1;
-
+    color: white;
     margin: 0 0 10px 0;
 }
 
 .norwegian-colors {
     background: linear-gradient(90deg, 
-    #bbdefb 0%,  
-    #90caf9 25%,  
-    #64b5f6 50%,  
-    #42a5f5 75%,  
-    #2196f3 100%  
-);
-
-
-
+        #bbdefb 0%,  
+        #90caf9 25%,  
+        #64b5f6 50%,  
+        #42a5f5 75%,  
+        #2196f3 100%  
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -79,6 +110,7 @@
 .role {
     font-weight: 400;
     letter-spacing: -.2px;
+    color: white;
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 20px;
@@ -86,6 +118,7 @@
 }
 
 .description {
+    color: white;
     margin: 0 0 10px 0;
     font-size: 16px;
     font-weight: 400;
@@ -98,7 +131,7 @@
 }
 
 .description a:hover {
-    color: #2c6ac8;
+    color: #58b8f8;
 }
 
 .social {
@@ -108,7 +141,7 @@
 }
 
 .social:hover {
-    color: #2c6ac8;
+    color: #58b8f8; /* #2c6ac8 */
 
 }
   
@@ -124,9 +157,7 @@
 }
 
 @media screen and (max-width: 1920px) {
-    .home-container {
-        height: 80vh;
-    }
+    
 
     .form {
         height: 350px;
@@ -134,6 +165,7 @@
     }
 
     .home-content {
+        margin-top: 30px;
         width: 90%;
     }
 
@@ -156,7 +188,16 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 300px;
+        margin-top: 160px;
+    }
+
+    .home-container {
+        height: 120vh;
+    }
+
+    
+    .background-video {
+        height: 120vh;
     }
 
     .home-image-wrapper {
@@ -167,8 +208,8 @@
 
     .form {
         width: 25rem;
-        height: 25rem;
-        margin-top: -75px;
+        height: 22rem;
+        margin-top: -125px;
         margin-bottom: 25px;
     }
 

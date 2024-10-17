@@ -9,7 +9,6 @@ import NorwayComponent2 from './components/norway-component2';
 export default function App() {
   return (
     <>
-      <Header/>
       <Home/>
       <NorwayComponent/>
       <Skills/>
