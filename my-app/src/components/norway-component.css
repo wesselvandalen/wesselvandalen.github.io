@@ -2,7 +2,7 @@
     display: flex;   
     justify-content: center;
     align-items: center;
-    margin: 50px 0 0 0;
+    margin: 250px 0 0 0;
 }
 
 .component-content {
@@ -85,6 +85,10 @@
 }
 
 @media screen and (max-width: 1920px) {
+    .component-container {
+        margin-top: 100px;
+    }
+
     .component-content {
         width: 90%;
     }
@@ -105,12 +109,11 @@
 
 @media screen and (max-width: 1080px) {
     .component-container {
-        margin-top: 350px;
+        margin-top: 150px;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 400px;
     }
 
     .component-content {
