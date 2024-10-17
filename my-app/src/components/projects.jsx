@@ -21,7 +21,7 @@ export default function Projects() {
                         <div className="project">
                             <div className="project-content">
                                 <div className="project-info">
-                                    <h3 className='projects-title'>Luftan🌿</h3>
+                                    <h3 className='projects-title'>Luftan</h3>
                                     <p className='project-description'>{t('luftandescription')}</p>
                                     {/* <a className='project-button' href="/" target='_blank' rel="noreferrer">{t('seeproject')}</a> */}
                                 </div>
@@ -35,8 +35,9 @@ export default function Projects() {
                         <div className="project">
                             <div className="project-content">
                                 <div className="project-info">
-                                    <h3 className='projects-title'>Canidate onboarding portal📲</h3>
+                                    <h3 className='projects-title'>Canidate onboarding portal</h3>
                                     <p className='project-description'>{t('candidateportaldescription')}</p>
+                                    {/* <a className='project-button' href="/" target='_blank' rel="noreferrer">{t('seeproject')}</a> */}
                                 </div>
                                 <div className="project-image">
                                     <img src={candidatePortal} alt="Candidate onboarding portal"/>

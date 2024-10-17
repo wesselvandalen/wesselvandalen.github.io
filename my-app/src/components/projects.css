@@ -127,8 +127,12 @@
 
 @media screen and (max-width: 1920px) {
     .projects-container {
-        margin-top: 125px;
+        margin-top: 250px;
         margin-bottom: 100px;
+    }
+
+    .project-content {
+        height: 250px;
     }
 
     .projects-content {
