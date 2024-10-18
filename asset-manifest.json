@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.af221c11.css",
-    "main.js": "/static/js/main.9e3f8e4b.js",
-    "static/media/fjell.mp4": "/static/media/fjell.a3a44cf98145681ff07e.mp4",
+    "main.css": "/static/css/main.303381d3.css",
+    "main.js": "/static/js/main.306b347f.js",
     "static/media/preikestolen.jpg": "/static/media/preikestolen.ad6a1da8b49429b8775e.jpg",
+    "static/media/fjell.mp4": "/static/media/fjell.7733e9b6eca358aa21f6.mp4",
     "static/media/vannbygde.jpg": "/static/media/vannbygde.b84c76feb3b953cee35b.jpg",
     "static/media/canva.png": "/static/media/canva.4384eab39ba50bb8cee6.png",
     "static/media/hus.png": "/static/media/hus.995c06090e9b18dce297.png",
+    "static/media/jeg.png": "/static/media/jeg.be30c57d72f6d913efcc.png",
     "static/media/inteallij_idea.png": "/static/media/inteallij_idea.6f3284f1e457dad76470.png",
     "static/media/azure.png": "/static/media/azure.5046ef5b1dd1f4d74d89.png",
     "static/media/luftan_design.png": "/static/media/luftan_design.e63aae9084d8332b70cf.png",
-    "static/media/lys.jpg": "/static/media/lys.3702365d9b6af287f630.jpg",
     "static/media/candidate_onboarding_design.png": "/static/media/candidate_onboarding_design.46e0224bc2f41de32700.png",
     "static/media/spring.png": "/static/media/spring.388bedf3157e6741a1d5.png",
     "static/media/postman.png": "/static/media/postman.f9452c12e038137be6f2.png",
@@ -32,14 +32,14 @@
     "static/media/junit5.png": "/static/media/junit5.e7973e5141d836c92f22.png",
     "static/media/java.png": "/static/media/java.f5dd86c3ef6ef3f85acf.png",
     "static/media/github.png": "/static/media/github.70f71607abed0c1780a6.png",
+    "static/media/norway-icon.png": "/static/media/norway-icon.ec3537d17635bccb2466.png",
     "static/media/figma.png": "/static/media/figma.809e95cfef4058cfd651.png",
-    "static/media/norway-icon.png": "/static/media/norway-icon.65625e9f57133afdeef4.png",
     "index.html": "/index.html",
-    "main.af221c11.css.map": "/static/css/main.af221c11.css.map",
-    "main.9e3f8e4b.js.map": "/static/js/main.9e3f8e4b.js.map"
+    "main.303381d3.css.map": "/static/css/main.303381d3.css.map",
+    "main.306b347f.js.map": "/static/js/main.306b347f.js.map"
   },
   "entrypoints": [
-    "static/css/main.af221c11.css",
-    "static/js/main.9e3f8e4b.js"
+    "static/css/main.303381d3.css",
+    "static/js/main.306b347f.js"
   ]
 }
