@@ -77,7 +77,7 @@
 }
 
 .navigation a:hover {
-    color: #5f5f5f;
+    text-decoration: underline white;
 }
 
 .dropdown-content a {
