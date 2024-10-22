@@ -41,13 +41,13 @@
 }
 
 .norway-a {
-    color: #5a5a5a;
-    font-style: italic;
-    text-decoration: none;
+    color: #1a68c2;
+    text-decoration: underline #1a68c2;
 }
 
 .norway-a:hover {
-    color: #58b8f8;
+    color: #1996fc;
+    text-decoration: underline #1996fc;
 }
 
 /* */

@@ -1,5 +1,5 @@
 import './norway-component2.css';
-import image from '../assets/norway/vannbygde.jpg';
+import image from '../assets/norway/bergen.jpg';
 import { useTranslation } from 'react-i18next';
 
 export default function NorwayComponent2() {
@@ -10,7 +10,7 @@ export default function NorwayComponent2() {
             <div className="nor-content">
                 <div className="nor-wrapper">
                     <div className="nor-text-info">
-                        <h3>Kreativitet møter kode.</h3>
+                        <h3>Design møter funksjonalitet.</h3>
                         <p>{translation('solutionparagraph')}</p>
                     </div>
                     <div className="nor-image-box">

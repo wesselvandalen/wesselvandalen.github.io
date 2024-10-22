@@ -1,6 +1,6 @@
 import './norway-component.css';
 import preikestolen from '../assets/norway/preikestolen.jpg';
-import hus from '../assets/norway/hus.png';
+import hus from '../assets/norway/utsikt.jpg';
 import nedstrand from '../assets/norway/nedstrand.jpg';
 import { useTranslation } from 'react-i18next';
 
@@ -29,8 +29,7 @@ export default function NorwayComponent() {
                             {translation('norwaypart2')}
                         </p>
                         <p className='component-description'>
-                            *{translation('norwaypart3')}
-                            <a className='norway-a' href="mailto:wesselvandalen@gmail.com"> {translation('norwaymail')}</a>!
+                            *{translation('norwaypart3')} <a className='norway-a' href="mailto:wesselvandalen@gmail.com">{translation('norwaymail')}</a>!
                         </p>
                     </div>
                 </div>

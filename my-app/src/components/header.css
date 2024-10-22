@@ -77,7 +77,7 @@
 }
 
 .navigation a:hover {
-    text-decoration: underline #222;
+    color: #1996fc;
 }
 
 .dropdown-content a {
@@ -126,7 +126,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, 1);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 100;
@@ -142,7 +142,7 @@
 }
 
 .dropdown-content a:hover {
-    background-color: rgba(238, 238, 238, 0.5);
+    background-color: rgba(238, 238, 238, 1);
 }
 
 .logo-nav-wrapper {

@@ -26,12 +26,6 @@ export default function Home() {
             <Header/>
             <div className="home-content">
 
-                <div className="container">
-                    <div className="main-wrapper">
-
-                    </div>
-                </div>
-
                 <div className="home-content-wrapper">
                     <div className="home-wrapper">
                         <div className="home-text">
