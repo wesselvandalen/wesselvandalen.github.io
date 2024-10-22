@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.303381d3.css",
-    "main.js": "/static/js/main.306b347f.js",
+    "main.css": "/static/css/main.49b8f47b.css",
+    "main.js": "/static/js/main.8ced0363.js",
     "static/media/preikestolen.jpg": "/static/media/preikestolen.ad6a1da8b49429b8775e.jpg",
-    "static/media/fjell.mp4": "/static/media/fjell.7733e9b6eca358aa21f6.mp4",
     "static/media/vannbygde.jpg": "/static/media/vannbygde.b84c76feb3b953cee35b.jpg",
+    "static/media/nedstrand.jpg": "/static/media/nedstrand.e551770c869a00e4fe68.jpg",
     "static/media/canva.png": "/static/media/canva.4384eab39ba50bb8cee6.png",
     "static/media/hus.png": "/static/media/hus.995c06090e9b18dce297.png",
     "static/media/jeg.png": "/static/media/jeg.be30c57d72f6d913efcc.png",
@@ -16,7 +16,6 @@
     "static/media/postman.png": "/static/media/postman.f9452c12e038137be6f2.png",
     "static/media/git.png": "/static/media/git.52ffcca1c2260d3a141b.png",
     "static/media/html.png": "/static/media/html.aeb69129de4a762942b2.png",
-    "static/media/sno.jpg": "/static/media/sno.d50391a14e7520dcf28a.jpg",
     "static/media/csharp.png": "/static/media/csharp.47ef01f9dc01fdb7a5e9.png",
     "static/media/docker.png": "/static/media/docker.dcda82af5b17fff350fd.png",
     "static/media/salesforce.png": "/static/media/salesforce.cff6ef05d5389c88e991.png",
@@ -32,14 +31,14 @@
     "static/media/junit5.png": "/static/media/junit5.e7973e5141d836c92f22.png",
     "static/media/java.png": "/static/media/java.f5dd86c3ef6ef3f85acf.png",
     "static/media/github.png": "/static/media/github.70f71607abed0c1780a6.png",
-    "static/media/norway-icon.png": "/static/media/norway-icon.ec3537d17635bccb2466.png",
     "static/media/figma.png": "/static/media/figma.809e95cfef4058cfd651.png",
+    "static/media/norway-icon.png": "/static/media/norway-icon.65625e9f57133afdeef4.png",
     "index.html": "/index.html",
-    "main.303381d3.css.map": "/static/css/main.303381d3.css.map",
-    "main.306b347f.js.map": "/static/js/main.306b347f.js.map"
+    "main.49b8f47b.css.map": "/static/css/main.49b8f47b.css.map",
+    "main.8ced0363.js.map": "/static/js/main.8ced0363.js.map"
   },
   "entrypoints": [
-    "static/css/main.303381d3.css",
-    "static/js/main.306b347f.js"
+    "static/css/main.49b8f47b.css",
+    "static/js/main.8ced0363.js"
   ]
 }
