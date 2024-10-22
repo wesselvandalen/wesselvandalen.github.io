@@ -1,6 +1,9 @@
 import './home.css';
 import { useTranslation } from 'react-i18next';
 import Header from './header';
+import linkedIn from '../assets/icons/linkedin.png';
+import gitHub from '../assets/icons/github.png';
+import cv from '../assets/icons/cv.png';
 
 export default function Home() {
     const [translation] = useTranslation("global");
@@ -47,9 +50,18 @@ export default function Home() {
                                 </> <a href="mailto:wesselvandalen@gmail.com" className='description-a'>{translation('email')}!</a>
                             </p>
                             <div className="social-icons-container">
-                                <a className='social' href="https://ivory-marcellina-50.tiiny.site/" target='_blank' rel="noreferrer">{translation('cv')}</a>
-                                <a className='social' href="https://github.com/wesselvandalen/" target='_blank' rel="noreferrer">GitHub</a>
-                                <a className='social' href="https://linkedin.com/in/wesselvandalen/" target='_blank' rel="noreferrer">LinkedIn</a>
+                                <a className='social' href="https://ivory-marcellina-50.tiiny.site/" target='_blank' rel="noreferrer">
+                                    <img src={cv} alt="CV ikon"/>
+                                    {translation('cv')}
+                                </a>
+                                <a className='social' href="https://github.com/wesselvandalen/" target='_blank' rel="noreferrer">
+                                    <img src={gitHub} alt='GitHub ikon'/>
+                                    GitHub
+                                </a>
+                                <a className='social' href="https://linkedin.com/in/wesselvandalen/" target='_blank' rel="noreferrer">
+                                    <img src={linkedIn} alt='LinkedIn ikon'/>
+                                    LinkedIn
+                                </a>
                             </div>
                         </div>
                         <div className="form"></div>
