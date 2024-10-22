@@ -9,11 +9,25 @@ import global_no from './translations/no/global.json';
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 
-const lang = localStorage.getItem('lang') || "en";
+// Returnerer språket fra localStorage, og returnerer 'en' hvis det ikke finnes et språk der.
+function getLanguage() {
+  const language = localStorage.getItem('lang');
+
+  if (language === 'en') {
+    return 'en';
+  } else if (language === 'nl') {
+    return 'nl';
+  } else if (language === 'no') {
+    return 'no';
+  } else {
+    localStorage.setItem('lang', 'en');
+    return 'en';
+  }
+}
 
 i18next.init({
   interpolation: {escapeValue: true},
-  lng: lang,
+  lng: getLanguage(),
   resources: {
     en: {
       global: global_en,

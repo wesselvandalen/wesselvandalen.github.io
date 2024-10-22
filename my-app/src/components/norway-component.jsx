@@ -1,7 +1,7 @@
 import './norway-component.css';
-import sno from '../assets/norway/sno.jpg';
 import preikestolen from '../assets/norway/preikestolen.jpg';
 import hus from '../assets/norway/hus.png';
+import nedstrand from '../assets/norway/nedstrand.jpg';
 import { useTranslation } from 'react-i18next';
 
 export default function NorwayComponent() {
@@ -16,8 +16,8 @@ export default function NorwayComponent() {
                             <img src={preikestolen} alt='Jeg som står på Preikestolen' title='Jeg som står på Preikestolen'/>
                         </div>
                         <div className="component-images-second-row">
-                            <img src={sno} alt='Lofoten dekket i snø' title='Lofoten dekket i snø'/>
                             <img src={hus} alt='Typiske norske røde hus' title='Typiske norske røde hus'/>
+                            <img src={nedstrand} alt='Nedstrand i Rogaland' title='Nedstrand i Rogaland'/>
                         </div>
                     </div>
                     <div className="component-text">

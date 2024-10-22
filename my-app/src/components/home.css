@@ -1,43 +1,36 @@
 .home-container {
     position: relative;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    margin-bottom: 50px;
-    overflow: hidden;
-}
-
-.background-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1; /* Ensure video is behind the content */
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Juster alpha-verdien for mørkere eller lysere effekt */
-    z-index: 0; /* Sørg for at overleggen er over videoen, men under innholdet */
 }
 
 .form {
     background: url("../assets/jeg.png");
-    -webkit-background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    width: 20rem;
-    height: 30rem;
-    border-radius: 20px;
+    background-attachment: scroll;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 432px;
+    min-height: 586px;
+    display: flex;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.main-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
 }
 
 .home-content {
@@ -54,7 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65vh;
+    height: 60vh;
 }
 
 .home-wrapper {
@@ -65,19 +58,8 @@
     flex-direction: row;
 }
 
-.home-image-wrapper {
-    width: 50%;
-    display: flex;
-    justify-content: end;
-}
-
-.home-image-wrapper img {
-    width: 400px;
-    height: auto;
-    border-radius: 10px;
-}
-
 .home-text {
+    margin-left: -25px;
     width: 50%;
     color: #222;
 
@@ -88,46 +70,43 @@
 }
 
 .name {
-    font-size: 54px;
-    font-weight: 600;
-    line-height: 1;
-    color: white;
+    color: #222;
     margin: 0 0 10px 0;
+
+    font-size: 66px;
+    font-weight: 550;
+    line-height: 105%;
 }
 
 .norwegian-colors {
-    background: linear-gradient(90deg, 
-        #bbdefb 0%,  
-        #90caf9 25%,  
-        #64b5f6 50%,  
-        #42a5f5 75%,  
-        #2196f3 100%  
-    );
+    /* background: linear-gradient(135deg, #fff6e5, #ffe2b3, #ffcc99, #ffb37d, #ff9a67);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    color: #4fa6e6;
 }
 
 .role {
     font-weight: 400;
     letter-spacing: -.2px;
-    color: white;
+    color: #222;
     margin-top: 0;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 31px;
 }
 
 .description {
-    color: white;
-    margin: 0 0 10px 0;
+    color: #5a5a5a;
+    margin: 0 0 25px 0;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
 }
 
 .description a {
-    color: #3897e5;
+    color: #5a5a5a;
     text-decoration: none;
+    font-style: italic;
 }
 
 .description a:hover {
@@ -135,7 +114,10 @@
 }
 
 .social {
-    color: #3897e5;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid color-mix(in srgb, #8cb4e9 15%, transparent);
+    color: #5a5a5a;
     text-decoration: none;
     margin-right: 30px;
 }

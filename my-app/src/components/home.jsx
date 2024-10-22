@@ -1,6 +1,5 @@
 import './home.css';
 import { useTranslation } from 'react-i18next';
-import video from '../assets/norway/fjell.mp4';
 import Header from './header';
 
 export default function Home() {
@@ -25,12 +24,14 @@ export default function Home() {
     return (
         <div className="home-container">
             <Header/>
-            <video className="background-video" autoPlay loop muted playsInline>
-                <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            <div className="overlay"></div>
             <div className="home-content">
+
+                <div className="container">
+                    <div className="main-wrapper">
+
+                    </div>
+                </div>
+
                 <div className="home-content-wrapper">
                     <div className="home-wrapper">
                         <div className="home-text">
@@ -57,9 +58,7 @@ export default function Home() {
                                 <a className='social' href="https://linkedin.com/in/wesselvandalen/" target='_blank' rel="noreferrer">LinkedIn</a>
                             </div>
                         </div>
-                        <div className="home-image-wrapper">
-                            <div className="form"></div>
-                        </div>
+                        <div className="form"></div>
                     </div>
                 </div>
             </div>
