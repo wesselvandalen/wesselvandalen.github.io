@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.49b8f47b.css",
-    "main.js": "/static/js/main.8ced0363.js",
+    "main.css": "/static/css/main.4ba1e80e.css",
+    "main.js": "/static/js/main.1de1fd51.js",
     "static/media/preikestolen.jpg": "/static/media/preikestolen.ad6a1da8b49429b8775e.jpg",
-    "static/media/vannbygde.jpg": "/static/media/vannbygde.b84c76feb3b953cee35b.jpg",
+    "static/media/utsikt.jpg": "/static/media/utsikt.3319b92467430606e3ac.jpg",
+    "static/media/bergen.jpg": "/static/media/bergen.946b46e5cc096d610114.jpg",
     "static/media/nedstrand.jpg": "/static/media/nedstrand.e551770c869a00e4fe68.jpg",
     "static/media/canva.png": "/static/media/canva.4384eab39ba50bb8cee6.png",
-    "static/media/hus.png": "/static/media/hus.995c06090e9b18dce297.png",
     "static/media/jeg.png": "/static/media/jeg.be30c57d72f6d913efcc.png",
     "static/media/inteallij_idea.png": "/static/media/inteallij_idea.6f3284f1e457dad76470.png",
     "static/media/azure.png": "/static/media/azure.5046ef5b1dd1f4d74d89.png",
@@ -34,11 +34,11 @@
     "static/media/figma.png": "/static/media/figma.809e95cfef4058cfd651.png",
     "static/media/norway-icon.png": "/static/media/norway-icon.65625e9f57133afdeef4.png",
     "index.html": "/index.html",
-    "main.49b8f47b.css.map": "/static/css/main.49b8f47b.css.map",
-    "main.8ced0363.js.map": "/static/js/main.8ced0363.js.map"
+    "main.4ba1e80e.css.map": "/static/css/main.4ba1e80e.css.map",
+    "main.1de1fd51.js.map": "/static/js/main.1de1fd51.js.map"
   },
   "entrypoints": [
-    "static/css/main.49b8f47b.css",
-    "static/js/main.8ced0363.js"
+    "static/css/main.4ba1e80e.css",
+    "static/js/main.1de1fd51.js"
   ]
 }
