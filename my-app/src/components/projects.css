@@ -178,11 +178,12 @@
     .project-image {
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 90%;
         margin-left: 0;
     }
 
     .project-image img {
+        width: 350px;
         margin-bottom: 10px;
     }
 
@@ -205,6 +206,6 @@
     }
 
     .last {
-        margin-bottom: -250px;
+        margin-bottom: -150px;
     }
 }

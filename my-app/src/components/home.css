@@ -159,24 +159,21 @@
     }
 
     .home-container {
-        height: 120vh;
-    }
-
-    
-    .background-video {
-        height: 120vh;
-    }
-
-    .home-image-wrapper {
-        width: 90%;
-        display: flex;
-        justify-content: center;
+        height: 100vh;
     }
 
     .form {
-        width: 25rem;
-        height: 22rem;
-        margin-top: -125px;
+        background: url("../assets/jeg-mobile.png");
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        width: 20rem;
+        height: 15rem;
+        max-width: 20rem;
+        min-width: 22rem;
+        min-height: 300px;
+        margin-top: -20px;
         margin-bottom: 25px;
     }
 
@@ -188,5 +185,6 @@
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
+        margin-top: -90px;
     }
 }
