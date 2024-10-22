@@ -87,7 +87,7 @@
 
 @media screen and (max-width: 1920px) {
     .component-container {
-        margin-top: 100px;
+        margin-top: 150px;
     }
 
     .component-content {
@@ -127,15 +127,14 @@
     .component-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: start;
-        
-        width: 96%;
+        align-items: center;
+        width: 100%;
     }
 
     .component-images-wrapper {
         display: flex;
         justify-content: center;
-        margin-right: -5px;
+        width: 90%;
     }
 
     .component-text {

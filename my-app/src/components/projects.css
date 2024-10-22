@@ -70,7 +70,7 @@
 }
 
 .project-image img {
-    width: 450px;
+    width: 600px;
     border-radius: 10px;
 }
 
@@ -104,13 +104,18 @@
 .project-button {
     border: none;
     padding: 10px 20px;
-    border-radius: 25px;
+    border-radius: 5px;
     background-color: #155fc0;
     font-weight: 300;
     font-size: 15px;
     color: white;
     text-decoration: none;
     margin-bottom: 20px;
+}
+
+.project-button:hover {
+    background-color: #2572d7;
+    cursor: pointer;
 }
 
 .line-divider {
@@ -139,6 +144,10 @@
         width: 90%;
     }
 
+    .project-image img {
+        width: 500px;
+    }
+
     .last {
         margin-bottom: -325px;
     }
@@ -156,7 +165,7 @@
     }
 
     .line-divider {
-        margin-top: 100px;
+        margin-top: 120px;
     }
 
     .project-info {
