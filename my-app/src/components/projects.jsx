@@ -7,7 +7,7 @@ export default function Projects() {
     const [t] = useTranslation("global");
 
     return (
-        <div className='projects-container' id='projects'>
+        <div className='projects-container' id='work'>
             <div className="projects-content">
                 <div className="projects-inner-content">
 

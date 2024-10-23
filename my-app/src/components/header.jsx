@@ -50,7 +50,7 @@ export default function Header() {
                     <div className="navigation">
                         <a className='nav' href="#norway">{translation('norway')}</a>
                         <a className='nav' href="#skills">{translation('skills')}</a>
-                        <a className='nav' href="#projects">{translation('projects')}</a>
+                        <a className='nav' href="#work">{translation('projects')}</a>
                     </div>
                 </div>
 

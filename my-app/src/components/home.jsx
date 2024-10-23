@@ -4,6 +4,7 @@ import Header from './header';
 import linkedIn from '../assets/icons/linkedin.png';
 import gitHub from '../assets/icons/github.png';
 import cv from '../assets/icons/cv.png';
+import norwegianFlag from '../assets/flags/no.png';
 
 export default function Home() {
     const [translation] = useTranslation("global");
@@ -33,7 +34,8 @@ export default function Home() {
                     <div className="home-wrapper">
                         <div className="home-text">
                             <h3 className='name'>Wessel van <span className='norwegian-colors'>Dalen</span></h3>
-                            <p className='role'>Full Stack {translation('role')}</p>
+                            <p className='role'>Full Stack {translation('role')}<img src={norwegianFlag} alt='Norwegian flag' className='flag' title='Norwegian flag'/></p>
+                            <div className="line"></div>
                             <p className='description'>
                                 <>
                                     {translation('description')
