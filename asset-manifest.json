@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.698c0c06.css",
-    "main.js": "/static/js/main.b2f016da.js",
+    "main.css": "/static/css/main.adbd1c1f.css",
+    "main.js": "/static/js/main.5972c61b.js",
     "static/media/preikestolen.jpg": "/static/media/preikestolen.ad6a1da8b49429b8775e.jpg",
     "static/media/bergen.jpg": "/static/media/bergen.946b46e5cc096d610114.jpg",
     "static/media/nedstrand.jpg": "/static/media/nedstrand.e551770c869a00e4fe68.jpg",
@@ -35,11 +35,11 @@
     "static/media/figma.png": "/static/media/figma.809e95cfef4058cfd651.png",
     "static/media/norway-icon.png": "/static/media/norway-icon.65625e9f57133afdeef4.png",
     "index.html": "/index.html",
-    "main.698c0c06.css.map": "/static/css/main.698c0c06.css.map",
-    "main.b2f016da.js.map": "/static/js/main.b2f016da.js.map"
+    "main.adbd1c1f.css.map": "/static/css/main.adbd1c1f.css.map",
+    "main.5972c61b.js.map": "/static/js/main.5972c61b.js.map"
   },
   "entrypoints": [
-    "static/css/main.698c0c06.css",
-    "static/js/main.b2f016da.js"
+    "static/css/main.adbd1c1f.css",
+    "static/js/main.5972c61b.js"
   ]
 }
