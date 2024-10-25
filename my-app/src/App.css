@@ -12,3 +12,14 @@ body {
   font-family: SF Pro Display, sans-serif;
   background-color: #fdfdfd;
 }
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app-content {
+  width: 100%;
+}

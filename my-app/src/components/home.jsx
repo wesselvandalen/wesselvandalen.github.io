@@ -1,7 +1,10 @@
 import './home.css';
 import { useTranslation } from 'react-i18next';
-import video from '../assets/norway/fjell.mp4';
 import Header from './header';
+import linkedIn from '../assets/icons/linkedin.png';
+import gitHub from '../assets/icons/github.png';
+import cv from '../assets/icons/cv.png';
+import norwegianFlag from '../assets/flags/no.png';
 
 export default function Home() {
     const [translation] = useTranslation("global");
@@ -25,17 +28,14 @@ export default function Home() {
     return (
         <div className="home-container">
             <Header/>
-            <video className="background-video" autoPlay loop muted playsInline>
-                <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            <div className="overlay"></div>
             <div className="home-content">
+
                 <div className="home-content-wrapper">
                     <div className="home-wrapper">
                         <div className="home-text">
                             <h3 className='name'>Wessel van <span className='norwegian-colors'>Dalen</span></h3>
-                            <p className='role'>Full Stack {translation('role')}</p>
+                            <p className='role'>Full Stack {translation('role')}<img src={norwegianFlag} alt='Norwegian flag' className='flag' title='Norwegian flag'/></p>
+                            <div className="line"></div>
                             <p className='description'>
                                 <>
                                     {translation('description')
@@ -52,14 +52,21 @@ export default function Home() {
                                 </> <a href="mailto:wesselvandalen@gmail.com" className='description-a'>{translation('email')}!</a>
                             </p>
                             <div className="social-icons-container">
-                                <a className='social' href="https://ivory-marcellina-50.tiiny.site/" target='_blank' rel="noreferrer">{translation('cv')}</a>
-                                <a className='social' href="https://github.com/wesselvandalen/" target='_blank' rel="noreferrer">GitHub</a>
-                                <a className='social' href="https://linkedin.com/in/wesselvandalen/" target='_blank' rel="noreferrer">LinkedIn</a>
+                                <a className='social' href="https://ivory-marcellina-50.tiiny.site/" target='_blank' rel="noreferrer">
+                                    <img src={cv} alt="CV ikon"/>
+                                    {translation('cv')}
+                                </a>
+                                <a className='social' href="https://github.com/wesselvandalen/" target='_blank' rel="noreferrer">
+                                    <img src={gitHub} alt='GitHub ikon'/>
+                                    GitHub
+                                </a>
+                                <a className='social' href="https://linkedin.com/in/wesselvandalen/" target='_blank' rel="noreferrer">
+                                    <img src={linkedIn} alt='LinkedIn ikon'/>
+                                    LinkedIn
+                                </a>
                             </div>
                         </div>
-                        <div className="home-image-wrapper">
-                            <div className="form"></div>
-                        </div>
+                        <div className="form"></div>
                     </div>
                 </div>
             </div>

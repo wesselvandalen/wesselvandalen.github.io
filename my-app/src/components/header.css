@@ -53,7 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 40px;
+    margin: 0 50px 0 0;
 }
 
 .logo {
@@ -68,7 +68,7 @@
 }
 
 .navigation a {
-    color: #fff;
+    color: #222;
     text-decoration: none;
     padding: 16px;
     font-size: 15px;
@@ -77,11 +77,11 @@
 }
 
 .navigation a:hover {
-    color: #5f5f5f;
+    color: #1996fc;
 }
 
 .dropdown-content a {
-    color: white;
+    color: #222;
     text-decoration: none;
     padding: 16px;
     font-size: 15px;
@@ -97,22 +97,24 @@
 }
 
 .dropbtn {
-    color: #fff;
+    border: 1px solid color-mix(in srgb, #222 15%, transparent);
+    border-radius: 5px;
+    color: #222;
     background-color: transparent;
     text-decoration: none;
-    padding: 16px;
+    padding: 10px 22px;
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
     display: block;
     text-align: left;
-    border: none;
     cursor: pointer;
 }
 
 .dropdown-flag {
-    width: 15px;
+    width: 16px;
     margin: 0 8px 0 0;
+    border-radius: 1px;
 }
 
 .dropbtn svg {
@@ -124,7 +126,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(255, 255, 255, 1);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 100;
@@ -140,7 +142,7 @@
 }
 
 .dropdown-content a:hover {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(238, 238, 238, 1);
 }
 
 .logo-nav-wrapper {

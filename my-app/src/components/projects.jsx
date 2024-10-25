@@ -7,7 +7,7 @@ export default function Projects() {
     const [t] = useTranslation("global");
 
     return (
-        <div className='projects-container' id='projects'>
+        <div className='projects-container' id='work'>
             <div className="projects-content">
                 <div className="projects-inner-content">
 
@@ -23,7 +23,7 @@ export default function Projects() {
                                 <div className="project-info">
                                     <h3 className='projects-title'>Luftan</h3>
                                     <p className='project-description'>{t('luftandescription')}</p>
-                                    {/* <a className='project-button' href="/" target='_blank' rel="noreferrer">{t('seeproject')}</a> */}
+                                    <a className='project-button' href="/" target='_blank' rel="noreferrer">{t('seeproject')}</a>
                                 </div>
                                 <div className="project-image">
                                     <img src={luftan} alt="Luftan design"/>

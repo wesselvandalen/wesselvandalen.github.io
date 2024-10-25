@@ -1,47 +1,40 @@
 .home-container {
     position: relative;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    margin-bottom: 50px;
-    overflow: hidden;
-}
-
-.background-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1; /* Ensure video is behind the content */
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Juster alpha-verdien for mørkere eller lysere effekt */
-    z-index: 0; /* Sørg for at overleggen er over videoen, men under innholdet */
 }
 
 .form {
-    background: url("../assets/lys.jpg");
-    -webkit-background-size: cover;
+    background: url("../assets/jeg.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    width: 20rem;
-    height: 30rem;
-    border-radius: 20px;
+    background-attachment: scroll;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 432px;
+    min-height: 586px;
+    display: flex;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.main-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
 }
 
 .home-content {
-    margin-top: 100px;
+    margin-top: 0;
     position: relative;
     z-index: 1;
     display: flex;
@@ -54,10 +47,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65vh;
+    height: 60vh;
 }
 
 .home-wrapper {
+    margin-top: 50px;
     display: flex;   
     width: 100%;
     justify-content: space-between;
@@ -65,103 +59,95 @@
     flex-direction: row;
 }
 
-.home-image-wrapper {
-    width: 50%;
-    display: flex;
-    justify-content: end;
-}
-
-.home-image-wrapper img {
-    width: 400px;
-    height: auto;
-    border-radius: 10px;
-}
-
 .home-text {
     width: 50%;
     color: #222;
-
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: slideInLeft .5s ease-out forwards;
-    animation-delay: .3s;
 }
 
 .name {
-    font-size: 54px;
-    font-weight: 600;
-    line-height: 1;
-    color: white;
+    color: #222;
+    margin: 0 0 10px 0;
+
+    font-size: 60px;
+    font-weight: 550;
+    line-height: 105%;
+}
+
+.flag {
+    width: 20px;
+    height: auto;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+
+.line {
+    height: 1px;
+    background-color: rgba(11, 101, 156, 0.1);
+    width: 100%;
     margin: 0 0 10px 0;
 }
 
 .norwegian-colors {
-    background: linear-gradient(90deg, 
-        #bbdefb 0%,  
-        #90caf9 25%,  
-        #64b5f6 50%,  
-        #42a5f5 75%,  
-        #2196f3 100%  
-    );
+    /* background: -webkit-linear-gradient(rgb(8, 69, 138), rgb(33, 33, 33));
+    color: transparent;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text; */
 }
 
 .role {
-    font-weight: 400;
+    font-weight: 550;
     letter-spacing: -.2px;
-    color: white;
+    color: #222;
     margin-top: 0;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 31px;
 }
 
 .description {
-    color: white;
-    margin: 0 0 10px 0;
+    color: #5a5a5a;
+    margin: 0 0 15px 0;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
 }
 
 .description a {
-    color: #3897e5;
-    text-decoration: none;
+    color: #1a68c2;
+    text-decoration: underline #1a68c2;
 }
 
 .description a:hover {
-    color: #58b8f8;
+    color: #1996fc;
+    text-decoration: underline #1996fc;
 }
 
 .social {
-    color: #3897e5;
+    color: #5a5a5a;
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 40px;
+    display: flex;
 }
 
 .social:hover {
-    color: #58b8f8; /* #2c6ac8 */
-
+    color: #3284c6; 
 }
-  
-@keyframes slideInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-20%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+
+.social img {
+    width: 16px;
+    height: 16px;
+    margin: 1px 5px 0 0;
+}
+
+.social-icons-container {
+    display: flex;
 }
 
 @media screen and (max-width: 1920px) {
-    
-
     .form {
-        height: 350px;
-        width: 280px;
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 400px;
     }
 
     .home-content {
@@ -170,7 +156,11 @@
     }
 
     .home-text-container {
-        width: 90%;
+        width: 100%;
+    }
+
+    .home-text {
+        width: 55%;
     }
 
     .name {
@@ -179,6 +169,10 @@
 
     .role {
         font-size: 22px;
+    }
+
+    .description {
+        width: 100%;
     }
 }
 
@@ -192,24 +186,21 @@
     }
 
     .home-container {
-        height: 120vh;
-    }
-
-    
-    .background-video {
-        height: 120vh;
-    }
-
-    .home-image-wrapper {
-        width: 90%;
-        display: flex;
-        justify-content: center;
+        height: 100vh;
     }
 
     .form {
-        width: 25rem;
-        height: 22rem;
-        margin-top: -125px;
+        background: url("../assets/jeg-mobile.png");
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        width: 20rem;
+        height: 15rem;
+        max-width: 20rem;
+        min-width: 22rem;
+        min-height: 300px;
+        margin-top: -20px;
         margin-bottom: 25px;
     }
 
@@ -221,5 +212,14 @@
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
+        margin-top: -40px;
+    }
+
+    .social {
+        margin-right: 20px;   
+    }
+
+    .social img {
+        margin: 2px 5px 0 0;
     }
 }
