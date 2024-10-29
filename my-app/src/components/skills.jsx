@@ -1,103 +1,169 @@
-import './skills.css';
-import reactIcon from '../assets/icons/react.png';
-import litIcon from '../assets/icons/lit.png';
-import svelteIcon from '../assets/icons/svelte.png';
-import typescriptIcon from '../assets/icons/typescript.png';
-import javascriptIcon from '../assets/icons/javascript.png';
-import htmlIcon from '../assets/icons/html.png';
-import cssIcon from '../assets/icons/css.png';
-import canvaIcon from '../assets/icons/canva.png';
-import figmaIcon from '../assets/icons/figma.png';
-import javaIcon from '../assets/icons/java.png';
-import springIcon from '../assets/icons/spring.png';
-import azureIcon from '../assets/icons/azure.png';
-import dockerIcon from '../assets/icons/docker.png';
-import hibernateIcon from '../assets/icons/hibernate.png';
-import junit5Icon from '../assets/icons/junit5.png';
-import postgreSQLIcon from '../assets/icons/postgreql.png';
-import pythonIcon from '../assets/icons/python.png';
-import postman from '../assets/icons/postman.png';
-import salesforceIcon from '../assets/icons/salesforce.png';
-import githubLogo from '../assets/icons/github.png';
-import gitLogo from '../assets/icons/git.png';
-import powershellIcon from '../assets/icons/powershell.png';
-import inteallijIDEAIcon from '../assets/icons/inteallij_idea.png';
-import vsc from '../assets/icons/vsc.png';
-import csharp from '../assets/icons/csharp.png';
 import { useTranslation } from 'react-i18next';
+import './skills.css';
+import react from '../assets/icons/react.png';
+import js from '../assets/icons/javascript.png';
+import ts from '../assets/icons/typescript.png';
+import css from '../assets/icons/css.png';
+import html from '../assets/icons/html.png';
+import svelte from '../assets/icons/svelte.png';
+import lit from '../assets/icons/lit.png';
+import java from '../assets/icons/java.png';
+import spring from '../assets/icons/spring.png';
+import cs from '../assets/icons/csharp.png';
+import junit5 from '../assets/icons/junit5.png';
+import salesforce from '../assets/icons/salesforce.png';
+import postgresql from '../assets/icons/postgreql.png';
+import python from '../assets/icons/python.png';
+import hibernate from '../assets/icons/hibernate.png';
+import sql from '../assets/icons/sql.png';
+import snyk from '../assets/icons/snyk.png';
 
 export default function Skills() {
     const [translation] = useTranslation("global");
 
     return (
-        <div className='skills-container' id='skills'>
-            <div className="skills-content">
-                <div className="skills-inner-content">
+        <section className="skill-container vanlig" id="skills">
+            <div className="w-100">
+                <h2 className="component-title up">{translation('skills.skillstitle')}</h2>
 
-                    <div className="skills-template-wrapper">
-                        <h3 className='skill-title'>{translation('skillstitle')}</h3>
-                        <p className='skill-description'>{translation('skillsdescription')}</p>
+                <div className="skill-title">{translation('skills.languages')}</div>
+                <ul className="list1">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                        {translation('skills.dutch')}
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                        {translation('skills.norwegian')}
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                        {translation('skills.english')}
+                    </li>
+                </ul>
+                <div className="skill-title">FRONT END</div>
+                <div className="skills-list">
+                    <div className="skill">
+                        <img src={react} alt='React'/>
+                        <p>React</p>
                     </div>
-
-                    <div className="skills-wrapper">
-
-                        <div className="skill-set">
-                            <div className="skill-info-box">
-                                <h3>Front end</h3>
-                                <p>{translation('frontenddescription')}</p>
-                            </div>
-                            <div className="skill-icons-box right">
-                            <img src={reactIcon} alt='React' title='React'/>
-                                <img src={litIcon} alt='Lit' title='Lit'/>
-                                <img src={svelteIcon} alt='Svelte' title='Svelte'/>
-                                <img src={javascriptIcon} alt='Javascript' title='Javascript'/>
-                                <img src={typescriptIcon} alt='Typescript' title='Typescript'/>
-                                <img src={htmlIcon} alt='HTML' title='HTML'/>
-                                <img src={cssIcon} alt='CSS' title='CSS'/>
-                                <img src={canvaIcon} alt='Canva' title='Canva'/>
-                                <img src={figmaIcon} alt='Figma' title='Figma'/>
-                            </div>
-                        </div>
-                        <div className="skill-div"></div>
-
-                        <div className="skill-set venstre">
-                            <div className="skill-icons-box left">
-                                <img src={javaIcon} alt='Java' title='Java'/>
-                                <img src={springIcon} alt='Spring' title='Spring'/>
-                                <img src={csharp} alt='C#' title='C#'/>
-                                <img src={pythonIcon} alt='Python' title='Python'/>
-                                <img src={hibernateIcon} alt='Hibernate' title='Hibernate'/>
-                                <img src={postgreSQLIcon} alt='PostgreSQL' title='PostgreSQL'/>
-                                <img src={junit5Icon} alt='JUnit5' title='JUnit5'/>
-                                <img src={dockerIcon} alt='Docker' title='Docker'/>
-                            </div>
-                            <div className="skill-info-box">
-                                <h3>Back end</h3>
-                                <p>{translation('backenddescription')}</p>
-                            </div>
-                        </div>
-                        <div className="skill-div"></div>
-
-                        <div className="skill-set">
-                            <div className="skill-info-box">
-                                <h3>{translation('toolstitle')}</h3>
-                                <p>{translation('toolsdescription')}</p>
-                            </div>
-                            <div className="skill-icons-box right">
-                                <img src={postman} alt='Postman' title='Postman'/>
-                                <img src={githubLogo} alt='GitHub' title='GitHub'/>
-                                <img src={gitLogo} alt='Git' title='Git'/>
-                                <img src={powershellIcon} alt='Powershell' title='Powershell'/>
-                                <img src={azureIcon} alt='Azure' title='Azure'/>
-                                <img src={inteallijIDEAIcon} alt='Inteallij IDEA' title='Inteallij IDEA'/>
-                                <img src={vsc} alt='Visual Studio Code' title='Visual Studio Code'/>
-                                <img src={salesforceIcon} alt='Salesforce' title='Salesforce'/>
-                            </div>
-                        </div>
-
+                    <div className="skill">
+                        <img src={lit} alt="Lit"/>
+                        <p>Lit</p>
+                    </div>
+                    <div className="skill">
+                        <img src={svelte} alt="Svelte"/>
+                        <p>Svelte</p>
+                    </div>
+                    <div className="skill">
+                        <img src={js} alt='JavaScript'/>
+                        <p>JavaScript</p>
+                    </div>
+                    <div className="skill">
+                        <img src={ts} alt="TypeScript"/>
+                        <p>TypeScript</p>
+                    </div>
+                    <div className="skill">
+                        <img src={html} alt="HTML"/>
+                        <p>HTML</p>
+                    </div>
+                    <div className="skill">
+                        <img src={css} alt="CSS"/>
+                        <p>CSS</p>
                     </div>
                 </div>
+
+                <div className="skill-title">BACK END</div>
+                <div className="skills-list">
+                    <div className="skill">
+                        <img src={java} alt='Java'/>
+                        <p>Java</p>
+                    </div>
+                    <div className="skill">
+                        <img src={spring} alt='Spring'/>
+                        <p>Spring</p>
+                    </div>
+                    <div className="skill">
+                        <img src={cs} alt="C#"/>
+                        <p>C#</p>
+                    </div>
+                    <div className="skill">
+                        <img src={junit5} alt="JUnit5"/>
+                        <p>JUnit5</p>
+                    </div>
+                    <div className="skill">
+                        <img src={python} alt="Python"/>
+                        <p>Python</p>
+                    </div>
+                    <div className="skill">
+                        <img src={hibernate} alt="Hibernate"/>
+                        <p>Hibernate</p>
+                    </div>
+                    <div className="skill">
+                        <img src={postgresql} alt="PostgreSQL"/>
+                        <p>PostgreSQL</p>
+                    </div>
+                    <div className="skill">
+                        <img src={sql} alt="SQL"/>
+                        <p>SQL</p>
+                    </div>
+                </div>
+
+                <div className="skill-title">DEV OPS</div>
+                <ul className="list1">
+                    <li>    
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                        CI / CD Pipelines
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                        GitHub
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                        Git
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                        Docker
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                        Postman
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                        Azure
+                    </li>
+                </ul>
+
+                <div className="skill-title">SECURITY</div>
+                <ul className="list1">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                        OWASP TOP 10
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                        Authentication & Authorization
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                        Cybersecurity threats (rainbow tables, brute force, timing attacks, injection etc.)
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                        JWT tokens, encryption, encoding and hash (+ salt)
+                    </li>
+                </ul>
+
+                <div className="skill-title">{translation('skills.tools')}</div>
+                <div className="skill-list">
+                    <img src={salesforce} alt="Salesforce"/>
+                    <img src={snyk} alt="Snyk"/>
+                </div>
+
             </div>
-        </div>
+        </section>
     );
 }

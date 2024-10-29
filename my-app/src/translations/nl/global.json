@@ -1,30 +1,61 @@
 {
-    "norway": "Noorwegen",
-    "skills": "Vaardigheden",
-    "projects": "Projecten",
-    "email": "Stuur me een e-mail",
-    "cv": "Mijn CV",
-    "role": "Softwareontwikkelaar en Noorwegen-enthousiast",
-    "description": "Heisann! Ik ben een {age}-jarige Full Stack Softwareontwikkelaar, gespecialisseerd in front-end development. Ik heb een 4-jarige ICT {bachelorLink} gevolgd bij de Hogeschool Utrecht, Nederland. Ik heb over {experience} jaar werkervaring, voornamelijk met React Javascript & Java Spring. Geïnteresseerd?",
-    "iam": "Ik ben",
-    "availability": "Beschikbaar voor freelance, werk op afstand of verhuizing naar Noorwegen.",
-    "norwaypart1": "Noorwegen is voor mij altijd meer geweest dan alleen een plek op de kaart. De adembenemende landschappen, de rijke geschiedenis en de mix van traditie en moderniteit hebben mij gefascineerd. Doordat ik vloeiend Noors spreek, heb ik mijn band met de cultuur verdiept, waardoor elke ervaring—van het verkennen van de fjorden tot het omgaan met de warme gemeenschappen—betekenisvoller is geworden.",
-    "norwaypart2": "Ik ben geïnspireerd door de vriendelijkheid en duurzaamheid van Noorwegen en kijk reikhalzend uit naar de dag dat ik dit buitengewone land mijn thuis kan noemen.",
-    "norwaypart3": "Ik ben enthousiast om mijn professionele horizon in Noorwegen te verbreden en samen te werken met Noorse bedrijven. Als je mogelijkheden of informatie hebt over verhuizing naar Noorwegen, sta ik meer dan",
-    "norwaymail": "open voor verdere gesprekken",
-    "skillstitle": "Mijn vaardigheden",
-    "skillsdescription": "Ontdek de softwarevaardigheden die ik heb om ideeën met eenvoud en precisie tot leven te brengen.",
-    "frontenddescription": "Ik maak nette, gebruiksvriendelijke websites met React en JavaScript, hou van klantfeedback en pas me gemakkelijk aan verschillende frameworks aan.",
-    "backenddescription": " Ik heb uitgebreide ervaring in Java en Spring, bouw applicaties en voer tests uit met JUnit 5 en Mockito, terwijl ik CI/CD-pijplijnen beheer.",
-    "toolstitle": "Tools & Platformen",
-    "toolsdescription": "Ik ben bedreven in Git voor versiebeheer en GitHub voor projectbeheer en pipelines. Ik gebruik Postman voor API-tests en command-line tools voor Git en implementatie op Azure DevOps.",
-    "solutionparagraph": "De combinatie van esthetiek en prestaties zorgt voor oplossingen die er niet alleen goed uitzien, maar ook naadloos werken. Ik geloof dat een goed ontwerp intuïtief en gebruiksvriendelijk moet zijn, en ik werk er hard aan om producten af ​​te leveren die zowel mooi als efficiënt zijn.",
-    "worktitle": "Mijn projecten",
-    "workdescription": "Bekijk alle producten die ik heb gemaakt voor schoolprojecten, stages, bijprojecten en klussen.",
-    "luftandescription": "Luftan is een Zweeds bedrijf gespecialiseerd in geurverspreiders en Scandinavisch geïnspireerde geuren. Het project omvat een volledig e-commerceplatform waar gebruikers door producten kunnen bladeren, items aan hun winkelwagentje kunnen toevoegen en bestellingen kunnen plaatsen. Ik heb de hele site vanaf nul ontwikkeld, waarbij zowel de front-end als de back-end ontwikkeling aan bod kwam.",
-    "candidateportaldescription": "Mysolution is een internationaal bedrijf dat een Salesforce-applicatie aanbiedt voor recruitmentbureaus. Tijdens mijn stage voor mijn HBO Bachelor IT Software Development studie moest ik voor een klant van Mysolution een onboarding portal creëren, zodat de medewerkers van genoemde klant hun inloggegevens (personalia, bankrekeninggegevens, privacyverklaringen etc.) konden invullen. Ook moest ik onderzoek doen naar hoe om te gaan met gevoelige gebruikersgegevens volgens de EU-wetgeving (AVG) en gebruikers om toestemming vragen om hun gegevens op te slaan.",
-    "huskelistedescription": "HuskeListe is een eenvoudige Noorse taken-app waarmee gebruikers taken aan hun lijsten kunnen toevoegen, afstrepen en verwijderen, zodat ze georganiseerd blijven.",
-    "smartfinancedescription": "SmartFinance is een webapplicatie voor studenten Bedrijfskunde van Hogeschool Utrecht. Het helpt hen bij het oefenen met het maken van jaarrekeningen en geeft directe feedback ter voorbereiding op toetsen en huiswerk.",
-    "kpndescription": "KPN Reisbewegingen is een site waar KPN-medewerkers hun reisgegevens kunnen loggen, die vervolgens worden samengevoegd in een Excel-rapport. Managers kunnen afdelingsstatistieken bekijken en een scorebord stimuleert het verminderen van de CO2-uitstoot.",
-    "seeproject": "Bekijk project"
+    "about": {
+        "country": "Nederland",
+        "description": "Full Stack Software Engineer met ervaring als teamleider."
+    },
+    "sidepanel": {
+        "projects": "Projecten",
+        "education": "Opleiding",
+        "skills": "Vaardigheden",
+        "interests": "Interesses"
+    },
+    "projects": {
+        "title": "Projecten",
+        "description": "Bekijk alle producten die ik heb ontwikkeld voor schoolprojecten, stages, persoonlijke projecten en banen.",
+        "mysolution": {
+            "text1": "Mysolution biedt wervings- en uitzendsoftware die sourcing, onboarding, plaatsing en salarisverwerking automatiseert voor bureaus in heel Europa, en HR-operaties optimaliseert vanuit de basis in Houten, Nederland.",
+            "text2": "Het onboardingportaal voor kandidaten, gemaakt voor Mysolution, is een gebruiksvriendelijk platform voor GrowWork-klanten. Het stelt kandidaten in staat om eenvoudig hun gegevens in te dienen, wat zorgt voor een soepele start bij GrowWork. Het stroomlijnt het papierwerk en waarborgt AVG-compliance, waardoor het aanwervingsproces eenvoudiger wordt en de administratieve last voor GrowWork wordt verminderd.",
+            "date": "September 2024 - Januari 2025",
+            "role1": "Full Stack Ontwikkelaar",
+            "role2": "AVG-onderzoeker"
+        },
+        "luftan": {
+            "text1": "Luftan, een Zweeds merk, creëert milieuvriendelijke aromaverspreiders die ruimtes verrijken met kalmerende geuren en duurzaamheid, ontspanning en een verrijkte zintuiglijke ervaring centraal stellen.",
+            "text2": "Het Luftan e-commerce platform is een volledig geïntegreerde SaaS-oplossing waarmee klanten eenvoudig kunnen browsen en een breed scala aan aromaverspreiders en geuren kunnen kopen. Met een gebruiksvriendelijke interface vereenvoudigt het de winkelervaring, met toegang tot gedetailleerde productbeschrijvingen, klantrecensies en persoonlijke aanbevelingen.",
+            "date": "Augustus 2024 - heden",
+            "role1": "Full Stack Ontwikkelaar",
+            "role2": "Teamleider"
+        },
+        "smartfinance": {
+            "text1": "Hogeschool Utrecht is een toonaangevende Nederlandse hogeschool die praktische hbo-opleidingen aanbiedt op het gebied van bedrijfskunde, gezondheid en technologie voor carrièregericht onderwijs.",
+            "text2": "Smart Finance is een innovatieve applicatie voor businessstudenten om jaarlijkse financiële overzichten op te stellen voor oefening en studie. Door het simuleren van reële financiële situaties verdiepen gebruikers hun kennis van boekhoudprincipes, financiële analyse en verslagleggingsnormen.",
+            "date": "Februari 2024 - Juli 2024",
+            "role1": "Scrum master",
+            "role2": "Teamleider",
+            "role3": "Full Stack Ontwikkelaar"
+        }
+    },
+    "education": {
+        "title": "Opleiding",
+        "text1": "Ik heb een vierjarige bachelor Full Stack Software Development gevolgd aan de Hogeschool Utrecht. Ik heb geleerd over Object Georiënteerd Programmeren, Software Architectuur, Beveiliging, Toegankelijkheid en het bespreken van behoeften en wensen met klanten.",
+        "text2": "Hoewel ik me tijdens mijn studie vooral op back-end heb gericht, koos ik in mijn laatste jaren voor een specialisatie in front-end om een breed spectrum in Full Stack Development te verkrijgen."
+    },
+    "skills": {
+        "skillstitle": "Vaardigheden",
+        "languages": "Talen",
+        "dutch": "Nederlands · Moedertaal (C1)",
+        "norwegian": "Noors · Tweetalig (C1)",
+        "english": "Engels · Werkvaardigheid (B2)",
+        "tools": "Tools"
+    },
+    "interests": {
+        "title": "Interesses",
+        "1": "Noors leren / Alles over Noorwegen",
+        "2": "Schaken - 800 elo",
+        "3": "Rock en metal (vooral de band Kvelertak)",
+        "4": "Natuurtochten met mijn hond Rowdy",
+        "5": "Sporten / fitness",
+        "6": "Noorse mythologie",
+        "7": "Cuphead, Outlast, God of War Ragnarök"
+    }
 }

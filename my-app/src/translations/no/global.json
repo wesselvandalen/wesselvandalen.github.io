@@ -1,30 +1,61 @@
 {
-    "norway": "Norge",
-    "skills": "Ferdigheter",
-    "projects": "Prosjekt",
-    "email": "Send meg en e-post",
-    "cv": "CV-en min",
-    "role": "Programvareutvikler og Norge-entusiast",
-    "description": "Heisann! Jeg er en {age} år gammel Full Stack Programvareutvikler, spesialisert i front-end development. Jeg har fulgt et 4-årige IT {bachelorLink} ved Hogeschool Utrecht, Nederland. Jeg har over {experience} års arbeidserfaring, hovedsakelig med React Javascript & Java Spring. Interessert?",
-    "iam": "Jeg er",
-    "availability": "Tilgjengelig for frilans, fjernarbeid eller flytting til Norge.",
-    "norwaypart1": "Norge har alltid vært mer enn bare et sted på kartet for meg. Det fantastiske landskapet, den rike historien og en blanding av tradisjon og modernitet har fengslet meg. Å være flytende i norsk har styrket min tilknytning til kulturen, og gjort hver opplevelse—fra å utforske fjorder til å engasjere seg i de varme samfunnene—mye mer meningsfull.",
-    "norwaypart2": "Jeg er inspirert av Norges vennlighet og bærekraft og venter spent på dagen jeg kan kalle dette ekstraordinære landet mitt hjem.",
-    "norwaypart3": "Jeg er entusiastisk over å utvide mine profesjonelle horisonter i Norge og samarbeide med norske virksomheter. Hvis du har muligheter eller innsikt om relokalisering til Norge, vil jeg veldig gjerne",
-    "norwaymail": "utforske potensielle diskusjoner",
-    "skillstitle": "Mine ferdigheter",
-    "skillsdescription": "Utforsk programvareferdighetene jeg har for å bringe ideer ut i livet med enkelhet og presisjon.",
-    "frontenddescription": "Jeg lager cleane, brukervennlige nettsteder med React og JavaScript, elsker tilbakemeldinger fra kunder og tilpasser meg enkelt til forskjellige frameworks.",
-    "backenddescription": "Jeg har omfattende erfaring i Java og Spring, bygger applikasjoner og utfører tester med JUnit 5 og Mockito, samtidig som jeg administrerer CI/CD-pipelines.",
-    "toolstitle": "Verktøy & Platformer",
-    "toolsdescription": "Jeg er dyktig i Git for versjonskontroll og GitHub for prosjektledelse og pipelines. Jeg bruker Postman for API-testing og commandline-tools for Git og distribusjon på Azure DevOps.",
-    "solutionparagraph": "Kombinasjonen av estetikk og ytelse skaper løsninger som ikke bare ser bra ut, men også fungerer sømløst. Jeg tror på at godt design skal være intuitivt og brukervennlig, og jeg jobber hardt for å levere produkter som er både vakre og effektive.",
-    "worktitle": "Mine prosjekt",
-    "workdescription": "Ta en titt på alle produktene jeg har laget for skoleprosjekt, praksisplasser, sideprosjekter og jobber.",
-    "luftandescription": "Luftan er et svensk selskap som spesialiserer seg på aromadiffusorer og skandinavisk-inspirerte dufter. Prosjektet inkluderer en full e-handelsplattform der brukere kan bla gjennom produkter, legge til varer i handlekurven og legge inn bestillinger. Jeg utviklet hele siden fra bunnen av, og dekker både front-end og back-end utvikling.",
-    "candidateportaldescription": "Mysolution er et internasjonalt selskap som tilbyr en Salesforce-applikasjon for rekrutteringsbyråer. I mitt internship for HBO Bachelor IT Software Development-studiet måtte jeg opprette en onboarding-portal for en kunde av Mysolution, slik at de ansatte til nevnte kunde kunne fylle ut sin legitimasjon (personalia, bankkontoinformasjon, personvernerklæringer osv.). Jeg måtte også forske på hvordan man håndterer sanselig brukerdata i henhold til EU-loven (GDPR) og be brukere om tillatelse til å lagre dataene deres.",
-    "huskelistedescription": "HuskeListe er en enkel norsk gjøremålsapp som lar brukere legge til, krysse av og fjerne oppgaver fra listene sine, og hjelpe dem med å holde orden.",
-    "smartfinancedescription": "SmartFinance er en nettapplikasjon for Hogeschool Utrechts 'Bedrijfskunde'-studenter. Det hjelper dem å øve seg på å lage 'jaarrekeningen' (årsregnskap) og gir umiddelbar tilbakemelding for å forberede seg til tester og lekser.",
-    "kpndescription": "KPN Reisbewegingen er et nettsted for KPN-ansatte for å logge sine reisedata, som deretter settes sammen til en Excel-rapport. Ledere kan se avdelingsstatistikk, og en ledertavle oppfordrer til å redusere CO2-utslipp.",
-    "seeproject": "Se prosjekt"
+    "about": {
+        "country": "Nederland",
+        "description": "Full Stack Software Engineer med erfaring som teamleder."
+    },
+    "sidepanel": {
+        "projects": "Prosjekt",
+        "education": "Utdanning",
+        "skills": "Ferdigheter",
+        "interests": "Interesser"
+    },
+    "projects": {
+        "title": "Prosjekt",
+        "description": "Ta en titt på alle produktene jeg har utviklet for skoleprosjekter, praksisplasser, egne prosjekter og jobber.",
+        "mysolution": {
+            "text1": "Mysolution tilbyr rekrutterings- og bemanningsprogramvare som automatiserer sourcing, onboarding, plassering og lønn for byråer over hele Europa, og optimaliserer HR-operasjoner fra basen i Houten, Nederland.",
+            "text2": "Onboarding-portalen for kandidater, laget for Mysolution, er en brukervennlig plattform for GrowWork-kunder. Den gjør det enkelt for kandidater å sende inn informasjonen sin, og sikrer en smidig start hos GrowWork. Portalen forenkler papirarbeid, sørger for GDPR-samsvar og reduserer administrativt arbeid for GrowWork.",
+            "date": "September 2024 - Januar 2025",
+            "role1": "Full Stack Utvikler",
+            "role2": "GDPR-forsker"
+        },
+        "luftan": {
+            "text1": "Luftan, et svensk merke, lager miljøvennlige aromadiffusere som beriker rom med avslappende dufter, og prioriterer bærekraft, avslapning og en forbedret sensorisk opplevelse.",
+            "text2": "Luftan e-handelsplattformen er en fullt integrert SaaS-løsning som lar kunder enkelt utforske og kjøpe et bredt utvalg av aromadiffusere og dufter. Med et brukervennlig grensesnitt, forenkler den handleopplevelsen, med tilgang til detaljerte produktbeskrivelser, kundeanmeldelser og personlige anbefalinger.",
+            "date": "August 2024 - Nåværende",
+            "role1": "Full Stack Utvikler",
+            "role2": "Teamleder"
+        },
+        "smartfinance": {
+            "text1": "Hogeschool Utrecht er et ledende nederlandsk universitet for anvendt vitenskap som tilbyr praktisk utdanning på bachelornivå innen business, helse og teknologi for karriereforberedelse.",
+            "text2": "Smart Finance er en innovativ applikasjon designet for økonomistudenter for å generere årsregnskap for praksis og læring. Ved å simulere virkelige økonomiske scenarioer, gir appen brukerne dypere forståelse av regnskapsprinsipper, finansiell analyse og rapporteringsstandarder.",
+            "date": "Februar 2024 - Juli 2024",
+            "role1": "Scrum master",
+            "role2": "Teamleder",
+            "role3": "Full Stack Utvikler"
+        }
+    },
+    "education": {
+        "title": "Utdanning",
+        "text1": "Jeg har tatt en fireårig bachelor i Full Stack Software Development ved Hogeschool Utrecht. Jeg lærte om objektorientert programmering, programvarearkitektur, sikkerhet, tilgjengelighet og behovsavklaring med kunder jeg har jobbet med.",
+        "text2": "Selv om jeg studerte mest back-end, bestemte jeg meg for å spesialisere meg i front-end mot slutten av utdanningen for å få et bredt spekter innen fullstack-utvikling."
+    },
+    "skills": {
+        "skillstitle": "Ferdigheter",
+        "languages": "Språk",
+        "dutch": "Nederlandsk · Morsmål (C1)",
+        "norwegian": "Norsk · Tospråklig (C1)",
+        "english": "Engelsk · Arbeidsferdighet (B2)",
+        "tools": "Verktøy"
+    },
+    "interests": {
+        "title": "Interesser",
+        "1": "Lære norsk / Alt om Norge",
+        "2": "Sjakk - 800 elo",
+        "3": "Rock og metal (spesielt bandet Kvelertak)",
+        "4": "Tur i naturen med hunden min Rowdy",
+        "5": "Trening / fitness",
+        "6": "Norrøn mytologi",
+        "7": "Cuphead, Outlast, God of War Ragnarök"
+    }
 }

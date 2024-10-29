@@ -1,0 +1,131 @@
+/* Desktop Sidebar */
+.side-panel-container {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+    background-color: #121211;
+    transition: all 0.3s ease;
+}
+
+.side-panel-name {
+    display: none;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar-toggler-icon {
+    display: none;
+}
+
+.side-panel-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.personal-picture {
+    max-width: 9rem;
+    max-height: 9rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 0.5rem;
+    border-radius: 50%;
+}
+
+.panel-chapters {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-chapters a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.panel-chapters a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Mobile Header */
+@media screen and (max-width: 1080px) {
+    .side-panel-container {
+        display: none;
+    }
+
+    .side-panel-content {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .panel-chapters {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #121211;
+        width: 100%;
+        display: none; /* Hide by default */
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .panel-chapters a {
+        font-size: 18px;
+        margin: 15px 0;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Toggle the visibility of panel-chapters */
+    .panel-chapters.show {
+        display: flex;
+    }
+
+    .navbar-toggler {
+        cursor: pointer;
+        border: none;
+        background: none;
+    }
+
+    .navbar-toggler .navbar-toggler-icon {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        position: relative;
+    }
+
+    .navbar-toggler .navbar-toggler-icon::before,
+    .navbar-toggler .navbar-toggler-icon::after {
+        content: '';
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-toggler .navbar-toggler-icon::before {
+        top: -10px;
+    }
+
+    .navbar-toggler .navbar-toggler-icon::after {
+        top: 10px;
+    }
+}

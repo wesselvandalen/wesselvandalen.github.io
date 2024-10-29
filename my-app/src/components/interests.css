@@ -1,0 +1,38 @@
+.interests-container {
+  height: 100vh;  
+  display: flex;
+  align-items: center;
+  font-family: 'Hanken Grotesk', 'sans-serif';
+}
+
+.interests-container div {
+  width: 100%;
+}
+
+.interests-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 40px 0 0 0;
+}
+
+.interests-container li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+
+  color: rgba(000, 000, 000, .5);
+}
+
+.interests-container li svg {
+  width: 25px;
+  height: 20px;
+  stroke: #555555;
+}
+
+@media screen and (max-width: 1080px) {
+  .interests-container {
+    height: 50vh;
+  }
+}
