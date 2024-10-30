@@ -130,3 +130,13 @@
     width: 80px;
     margin-right: 10px;
 }
+
+@media screen and (max-width: 1080px) {
+    .extra {
+        margin: 10px 0;
+    }
+
+    .skills-list {
+        width: 100%;
+    }
+}

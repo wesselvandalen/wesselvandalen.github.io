@@ -6,6 +6,7 @@ import Projects from './components/projects';
 import Interests from './components/interests';
 import Education from './components/education';
 import Skills from './components/skills';
+import Norway from './components/norway';
 
 export default function App() {
 
@@ -43,6 +44,8 @@ export default function App() {
         <Education/>
         <div className="line-divider"/>
         <Skills/>
+        <div className="line-divider"/>
+        <Norway/>
         {/* <div className="line-divider"/>
         <Interests/> */}
       </div>

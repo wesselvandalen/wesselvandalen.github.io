@@ -1,0 +1,17 @@
+.norway-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.norway-content p {
+    color: rgba(000, 000, 000, .5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.lenke {
+    color: rgba(000, 000, 000, .5);
+    text-decoration: underline black;
+}

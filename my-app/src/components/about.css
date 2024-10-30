@@ -120,11 +120,8 @@
     }
 
     .profile-picture {
-        display: flex;
         max-width: 15rem;
         max-height: 15rem;
-        border: 0.5rem solid rgba(000, 000, 000, 0.15);
-        border-radius: 50%;
         margin-bottom: -50px;
         margin-top: -50px;
     }

@@ -48,6 +48,6 @@ body {
   .vanlig {
     width: 92% !important;
     margin: 0;
-    padding: 0 10px;
+    padding: 0 10px !important;
   }
 }
