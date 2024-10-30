@@ -17,7 +17,10 @@
 }
 
 .profile-picture {
-    display: none;
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 50%;
+    margin-bottom: -75px;
 }
 
 .name-container {
@@ -27,14 +30,13 @@
 }
 
 .name-container h3 {
-    font-family: 'Baron Neue', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 6rem;
     line-height: 5.5rem;
-    font-weight: 500;
+    font-weight: 800;
     text-align: left;
-    letter-spacing: -3px;
     color: #343a40;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     /* margin-top: 0; */
 }
 
@@ -60,7 +62,7 @@
 
 .about-content p {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: rgba(34, 34, 34, .5);
     margin-bottom: 55px;
 }
@@ -82,7 +84,6 @@
     font-size: 1.5rem;
     line-height: 3.5rem;
     margin-right: 1rem;
-
     justify-content: center;
     align-items: center;
 }
@@ -108,8 +109,8 @@
     }
 
     .name-container h3 {
-        font-size: 5rem;
-        letter-spacing: .001cap;
+        font-size: 4.5rem;
+        letter-spacing: -3px;
     }
 }
 

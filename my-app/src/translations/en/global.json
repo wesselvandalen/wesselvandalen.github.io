@@ -1,13 +1,14 @@
 {
     "about": {
         "country": "Netherlands",
-        "description": "Full Stack Software Engineer with experience as Team leader."
+        "description": "Full Stack Software Engineer with experience as a Team Leader. I have a strong passion for Norway and look forward to the opportunity to relocate there."
     },
     "sidepanel": {
+        "about": "About",
         "projects": "Projects",
         "education": "Education",
         "skills": "Skills",
-        "interests": "Interests"
+        "norway": "Norway"
     },
     "projects": {
         "title": "Projects",

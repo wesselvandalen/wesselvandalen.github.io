@@ -14,7 +14,7 @@ export default function About() {
             <div className='about-container vanlig' id="about">
                 <div className="about-content">
                     <div className="name-container">
-                        <img src={picture} alt="Me" className='profile-picture'/>
+                        <img src={picture} alt="Profile picture" className='profile-picture'/>
                         <h3>Wessel Rowdy Dalen</h3>
                         <div className="location-email">
                             <span className='location'>Houten, Utrecht, {translation('about.country')} · </span>

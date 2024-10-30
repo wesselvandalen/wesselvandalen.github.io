@@ -27,8 +27,8 @@
 }
 
 .education-university {
-    font-family: "source-sans-pro", sans-serif;
-    font-weight: 600;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
     color: rgba(34, 34, 34, .9);
     font-size: 1.6rem;
     letter-spacing: .001cm;
@@ -37,7 +37,7 @@
 }
 
 .education-name {
-    font-family: "source-sans-pro", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-weight: 400;
     font-size: 1.3rem;
     letter-spacing: .001cm;

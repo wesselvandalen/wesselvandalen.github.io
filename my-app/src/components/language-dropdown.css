@@ -1,7 +1,7 @@
 .dropdown-content button {
     border: none;
     color: white;
-    background-color: rgba(34, 34, 34, .5);
+    background-color: transparent;
     text-decoration: none;
     padding: 14px 16px;
     min-width: 100px;
@@ -65,8 +65,8 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(14, 14, 14);
-    min-width: 160px;
+    background-color: transparent;
+    min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 100;
 }

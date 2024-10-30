@@ -43,8 +43,8 @@ export default function App() {
         <Education/>
         <div className="line-divider"/>
         <Skills/>
-        <div className="line-divider"/>
-        <Interests/>
+        {/* <div className="line-divider"/>
+        <Interests/> */}
       </div>
     </div>
   );
