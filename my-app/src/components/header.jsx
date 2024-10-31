@@ -17,12 +17,21 @@ export default function Header() {
         setIsOpen(false);
     };
 
-    // Add scroll event listener on mount, and remove it on unmount
     useEffect(() => {
-        window.addEventListener('scroll', closeMenu);
-
+        // Close the menu on scroll, touchmove, or gesturechange
+        const handleScrollOrTouch = () => {
+            closeMenu();
+        };
+    
+        window.addEventListener('scroll', handleScrollOrTouch);
+        window.addEventListener("touchmove", handleScrollOrTouch, false);
+        window.addEventListener('gesturechange', handleScrollOrTouch);
+    
+        // Clean up all event listeners on unmount
         return () => {
-            window.removeEventListener('scroll', closeMenu);
+            window.removeEventListener('scroll', handleScrollOrTouch);
+            window.removeEventListener("touchmove", handleScrollOrTouch);
+            window.removeEventListener('gesturechange', handleScrollOrTouch);
         };
     }, []); // Empty dependency array to register event only once
 
