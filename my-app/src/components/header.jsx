@@ -1,15 +1,36 @@
 import './header.css';
 import { useTranslation } from 'react-i18next';
 import LanguageDropdown from './language-dropdown';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Header() {
     const [translation] = useTranslation("global");
     const [isOpen, setIsOpen] = useState(false);
 
+    // Funksjon for å håndtere menytilstanden
     const changeMenu = () => {
-        setIsOpen(!isOpen)
-    }
+        setIsOpen(!isOpen);
+    };
+
+    // Funksjon for å lukke menyen
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
+    // useEffect for å legge til scroll-event listener
+    useEffect(() => {
+        const handleScroll = () => {
+            if (isOpen) closeMenu(); // Lukk menyen hvis den er åpen
+        };
+
+        // Legger til event listener på vinduet
+        window.addEventListener('scroll', handleScroll);
+
+        // Rydder opp event listener når komponenten unmountes
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [isOpen]);
 
     return (
         <div className='header-container'>
@@ -22,12 +43,12 @@ export default function Header() {
                     </svg>
                 </button>
 
-                <div className="header-list" style={{ 'display': isOpen ? 'flex' : 'none' }}>
-                    <a href="#about">{translation('sidepanel.about')}</a>
-                    <a href="#projects">{translation('sidepanel.projects')}</a>
-                    <a href="#education">{translation('sidepanel.education')}</a>
-                    <a href="#skills">{translation('sidepanel.skills')}</a>
-                    <a href="#norway">{translation('sidepanel.norway')}</a>
+                <div className="header-list" style={{ display: isOpen ? 'flex' : 'none' }}>
+                    <a href="#about" onClick={closeMenu}>{translation('sidepanel.about')}</a>
+                    <a href="#projects" onClick={closeMenu}>{translation('sidepanel.projects')}</a>
+                    <a href="#education" onClick={closeMenu}>{translation('sidepanel.education')}</a>
+                    <a href="#skills" onClick={closeMenu}>{translation('sidepanel.skills')}</a>
+                    <a href="#norway" onClick={closeMenu}>{translation('sidepanel.norway')}</a>
                     <div className="language-dropdown-wrapper">
                         <LanguageDropdown />
                     </div>

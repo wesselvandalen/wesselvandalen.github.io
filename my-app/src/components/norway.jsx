@@ -7,7 +7,7 @@ export default function Norway() {
     return (
         <div className="norway-container vanlig" id='norway'>
             <div className="norway-content">
-                <h2 className="component-title">Norway</h2>
+                <h2 className="component-title">{translation('sidepanel.norway')}</h2>
 
                 <p>{translation('norway.1')}</p>
                 <p>{translation('norway.2')}</p>

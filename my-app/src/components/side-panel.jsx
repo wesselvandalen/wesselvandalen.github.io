@@ -9,13 +9,13 @@ export default function SidePanel() {
     return (
         <div className="side-panel-container">
             <div className="side-panel-content">
-                {/* <a href="#about">
+                <a href="#about">
                     <span className="side-panel-name">Wessel Rowdy Dalen</span>
                     <span>
                         <img src={picture} alt="Me" className='personal-picture'/>
                     </span>
                 </a>
-                 */}
+                
                 <div className="collapse navbar-collapse">
                     <div className="panel-chapters">
                         <a href="#about">{translation('sidepanel.about')}</a>

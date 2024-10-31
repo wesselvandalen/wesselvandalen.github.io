@@ -33,7 +33,7 @@
     font-family: "Roboto", sans-serif;
     font-size: 6rem;
     line-height: 5.5rem;
-    font-weight: 800;
+    font-weight: 700;
     text-align: left;
     color: #343a40;
     margin-bottom: 10px;
@@ -118,7 +118,7 @@
 
 @media screen and (max-width: 1080px) {
     .about-container {
-        height: 120vh;
+        height: 140vh;
     }
 
     .profile-picture {
