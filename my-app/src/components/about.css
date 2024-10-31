@@ -111,6 +111,8 @@
     .name-container h3 {
         font-size: 4.5rem;
         letter-spacing: -3px;
+        margin-top: 80px;
+        margin-bottom: 0;
     }
 }
 
