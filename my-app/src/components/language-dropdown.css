@@ -1,7 +1,7 @@
 .dropdown-content button {
     border: none;
     color: white;
-    background-color: transparent;
+    background-color: var(--theme-color);
     text-decoration: none;
     padding: 14px 16px;
     min-width: 100px;

@@ -76,13 +76,15 @@
     list-style: none;
     margin-left: -45px;
     margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* space between icon and text */
 }
 
 .list1 li {
     display: flex;
     align-items: center;
     font-size: 1rem;
-    margin-bottom: 0.5rem;
     position: relative;
 
     color: rgba(000, 000, 000, .5);
@@ -92,6 +94,7 @@
     width: 25px;
     height: 20px;
     stroke: #555555;
+    flex-shrink: 0; /* prevents icon from shrinking on smaller screens */
 }
 
 .list3 {

@@ -7,30 +7,24 @@ export default function Header() {
     const [translation] = useTranslation("global");
     const [isOpen, setIsOpen] = useState(false);
 
-    // Funksjon for å håndtere menytilstanden
+    // Function to toggle menu state
     const changeMenu = () => {
         setIsOpen(!isOpen);
     };
 
-    // Funksjon for å lukke menyen
+    // Function to close menu
     const closeMenu = () => {
         setIsOpen(false);
     };
 
-    // useEffect for å legge til scroll-event listener
+    // Add scroll event listener on mount, and remove it on unmount
     useEffect(() => {
-        const handleScroll = () => {
-            if (isOpen) closeMenu(); // Lukk menyen hvis den er åpen
-        };
+        window.addEventListener('scroll', closeMenu);
 
-        // Legger til event listener på vinduet
-        window.addEventListener('scroll', handleScroll);
-
-        // Rydder opp event listener når komponenten unmountes
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', closeMenu);
         };
-    }, [isOpen]);
+    }, []); // Empty dependency array to register event only once
 
     return (
         <div className='header-container'>
