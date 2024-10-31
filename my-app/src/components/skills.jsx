@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import './skills.css';
+
 import react from '../assets/icons/react.png';
 import js from '../assets/icons/javascript.png';
 import ts from '../assets/icons/typescript.png';
@@ -32,35 +33,35 @@ export default function Skills() {
             <div className="w-100">
                 <h2 className="component-title up">{translation('skills.skillstitle')}</h2>
 
-                <div className="skill-title">{translation('skills.languages')}</div>
-                <p className='skill-description'>Born and raised with Dutch with English learned at school. Norwegian learned through self-study, friends, games/tv-shows/books/podcasts and vacations.</p>
+                <div className="skill-title">{translation('skills.language.languages')}</div>
+                <p className='skill-description'>{translation('skills.language.description')}</p>
                 <ul className="list3">
                     <li>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                            {translation('skills.dutch')}
+                            {translation('skills.language.dutch')}
                         </div>
                     </li>
                     <li>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                            {translation('skills.norwegian')}
+                            {translation('skills.language.norwegian')}
                         </div>
-                        <a className='extra' href='#about' target='_blank'>
+                        {/* <a className='extra' href='#about' target='_blank'>
                             <img src={norskbevis} alt="Bevis på at jeg klarte norskprøven"/>
                             Direktoratet for høyere utdanning og kompetanse B2 Norsk prøve resultat
-                        </a>
+                        </a> */}
                     </li>
                     <li>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                            {translation('skills.english')}
+                            {translation('skills.language.english')}
                         </div>
                     </li>
                 </ul>
 
                 <div className="skill-title">FRONT END</div>
-                <p className='skill-description'>Specialised in user-friendly, good-looking and accessable websites.</p>
+                <p className='skill-description'>{translation('skills.frontend.description')}</p>
                 <div className="skills-list">
                     <div className="skill">
                         <img src={react} alt='React'/>
@@ -93,7 +94,7 @@ export default function Skills() {
                 </div>
 
                 <div className="skill-title">BACK END</div>
-                <p className='skill-description'>Very skilled in building complex back-end systems incl. databases, especially in Java / likewise languages.</p>
+                <p className='skill-description'>{translation('skills.backend.description')}</p>
                 <div className="skills-list">
                     <div className="skill">
                         <img src={java} alt='Java'/>
@@ -130,7 +131,7 @@ export default function Skills() {
                 </div>
 
                 <div className="skill-title">SECURITY</div>
-                <p className='skill-description'>Deep knowledge about different security aspects - from cybersecurity threats to building own Security Configurations.</p>
+                <p className='skill-description'>{translation('skills.security.description')}</p>
                 <ul className="list1">
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
@@ -150,8 +151,16 @@ export default function Skills() {
                     </li>
                 </ul>
 
-                <div className='skill-title'>TESTING</div> {/* https://testsigma.com/blog/testing-pyramid/ */}
-                <p className='skill-description'>Thaught to test applications throughoug from top to bottom (The Testing Pyramid) to ensure high code quality.</p>
+                <div className='skill-title'>TESTING</div> 
+                <p className='skill-description'>
+                    {translation('skills.testing.description')
+                            .split('{pyramid}')[0]}
+                        <a href="https://testsigma.com/blog/testing-pyramid/" target='_blank' rel='noreferrer' className='lenke'>
+                            (The Testing Pyramid)
+                        </a>
+                        {translation('skills.testing.description')
+                            .split('{pyramid}')[1]}
+                </p>
                 <ul className='list1'>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
@@ -179,8 +188,8 @@ export default function Skills() {
                     </li>
                 </ul>
 
-                <div className="skill-title">{translation('skills.tools')}</div>
-                <p className='skill-description'>Tools I work with / know my way around with.</p>
+                <div className="skill-title">{translation('skills.tools.title')}</div>
+                <p className='skill-description'>{translation('skills.tools.description')}</p>
                 <div className="skills-list">
                     <div className="skill">
                         <img src={salesforce} alt="Salesforce"/>

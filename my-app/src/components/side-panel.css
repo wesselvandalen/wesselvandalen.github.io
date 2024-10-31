@@ -1,4 +1,3 @@
-/* Desktop Sidebar */
 .side-panel-container {
     text-align: center;
     position: fixed;
@@ -8,7 +7,7 @@
     flex-direction: column;
     width: 17rem;
     height: 100vh;
-    background-color: #355d6d;
+    background-color: var(--theme-color);
     transition: all 0.3s ease;
 }
 
@@ -60,72 +59,8 @@
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* Mobile Header */
 @media screen and (max-width: 1080px) {
     .side-panel-container {
         display: none;
-    }
-
-    .side-panel-content {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .panel-chapters {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #121211;
-        width: 100%;
-        display: none; /* Hide by default */
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-    }
-
-    .panel-chapters a {
-        font-size: 18px;
-        margin: 15px 0;
-        color: rgba(255, 255, 255, 0.9);
-    }
-
-    /* Toggle the visibility of panel-chapters */
-    .panel-chapters.show {
-        display: flex;
-    }
-
-    .navbar-toggler {
-        cursor: pointer;
-        border: none;
-        background: none;
-    }
-
-    .navbar-toggler .navbar-toggler-icon {
-        width: 30px;
-        height: 3px;
-        background-color: white;
-        position: relative;
-    }
-
-    .navbar-toggler .navbar-toggler-icon::before,
-    .navbar-toggler .navbar-toggler-icon::after {
-        content: '';
-        width: 30px;
-        height: 3px;
-        background-color: white;
-        position: absolute;
-        left: 0;
-        transition: transform 0.3s ease;
-    }
-
-    .navbar-toggler .navbar-toggler-icon::before {
-        top: -10px;
-    }
-
-    .navbar-toggler .navbar-toggler-icon::after {
-        top: 10px;
     }
 }

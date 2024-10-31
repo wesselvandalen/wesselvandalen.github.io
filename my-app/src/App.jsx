@@ -3,7 +3,6 @@ import { useEffect } from 'react'
 import About from './components/about';
 import SidePanel from './components/side-panel';
 import Projects from './components/projects';
-import Interests from './components/interests';
 import Education from './components/education';
 import Skills from './components/skills';
 import Norway from './components/norway';
@@ -46,8 +45,6 @@ export default function App() {
         <Skills/>
         <div className="line-divider"/>
         <Norway/>
-        {/* <div className="line-divider"/>
-        <Interests/> */}
       </div>
     </div>
   );

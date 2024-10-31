@@ -1,61 +1,77 @@
 {
     "about": {
         "country": "Nederland",
-        "description": "Full Stack Software Engineer met ervaring als teamleider."
+        "description": "Ik ben een Full Stack Software Engineer met ervaring in het leiden van teams en een echte {norway}! Ik ben enthousiast over de kans om mijn vaardigheden naar een Noors team te brengen, of dat nu betekent dat ik verhuis (wat ik graag zou doen!) of op afstand werk. Ik zou graag willen bijdragen en groeien in zo’n inspirerende omgeving.",
+        "anchor": "passie voor Noorwegen"
     },
     "sidepanel": {
+        "about": "Over mij",
         "projects": "Projecten",
         "education": "Opleiding",
         "skills": "Vaardigheden",
-        "interests": "Interesses"
+        "norway": "Noorwegen"
     },
     "projects": {
         "title": "Projecten",
-        "description": "Bekijk alle producten die ik heb ontwikkeld voor schoolprojecten, stages, persoonlijke projecten en banen.",
+        "description": "Bekijk alle producten die ik heb gemaakt voor schoolprojecten, stages, nevenprojecten en banen.",
         "mysolution": {
-            "text1": "Mysolution biedt wervings- en uitzendsoftware die sourcing, onboarding, plaatsing en salarisverwerking automatiseert voor bureaus in heel Europa, en HR-operaties optimaliseert vanuit de basis in Houten, Nederland.",
-            "text2": "Het onboardingportaal voor kandidaten, gemaakt voor Mysolution, is een gebruiksvriendelijk platform voor GrowWork-klanten. Het stelt kandidaten in staat om eenvoudig hun gegevens in te dienen, wat zorgt voor een soepele start bij GrowWork. Het stroomlijnt het papierwerk en waarborgt AVG-compliance, waardoor het aanwervingsproces eenvoudiger wordt en de administratieve last voor GrowWork wordt verminderd.",
-            "date": "September 2024 - Januari 2025",
-            "role1": "Full Stack Ontwikkelaar",
+            "text1": "Mysolution biedt rekruterings- en uitzendsoftware die sourcing, onboarding, plaatsing en salarisadministratie automatiseert voor bureaus in heel Europa, en optimaliseert HR-operaties vanuit de basis in Houten, Nederland.",
+            "text2": "Het onboarding-portaal voor kandidaten, ontwikkeld voor Mysolution, is een gebruiksvriendelijke platform voor GrowWork-klanten. Het stelt kandidaten in staat om eenvoudig hun gegevens in te dienen, zodat ze goed van start kunnen gaan bij GrowWork. Door het papierwerk te vereenvoudigen en te zorgen voor AVG-naleving, biedt het portaal een efficiënte, transparante ervaring voor kandidaten en vermindert het administratief werk voor GrowWork.",
+            "date": "september 2024 - januari 2025",
+            "role1": "Full Stack Developer",
             "role2": "AVG-onderzoeker"
         },
         "luftan": {
-            "text1": "Luftan, een Zweeds merk, creëert milieuvriendelijke aromaverspreiders die ruimtes verrijken met kalmerende geuren en duurzaamheid, ontspanning en een verrijkte zintuiglijke ervaring centraal stellen.",
-            "text2": "Het Luftan e-commerce platform is een volledig geïntegreerde SaaS-oplossing waarmee klanten eenvoudig kunnen browsen en een breed scala aan aromaverspreiders en geuren kunnen kopen. Met een gebruiksvriendelijke interface vereenvoudigt het de winkelervaring, met toegang tot gedetailleerde productbeschrijvingen, klantrecensies en persoonlijke aanbevelingen.",
-            "date": "Augustus 2024 - heden",
-            "role1": "Full Stack Ontwikkelaar",
+            "text1": "Luftan, een Zweeds merk, creëert milieuvriendelijke aromadiffusers die ruimtes verrijken met kalmerende geuren, met de nadruk op duurzaamheid, ontspanning en een verrijkte sensorische ervaring.",
+            "text2": "Het Luftan e-commerce platform is een volledig geïntegreerde SaaS-oplossing die klanten in staat stelt om eenvoudig door een breed scala aan aromadiffusers en geuren te bladeren en deze te kopen. Met een gebruiksvriendelijke interface vereenvoudigt het de winkelervaring en biedt het gedetailleerde productbeschrijvingen, klantbeoordelingen en gepersonaliseerde aanbevelingen.",
+            "date": "augustus 2024 - heden",
+            "role1": "Full Stack Developer",
             "role2": "Teamleider"
         },
         "smartfinance": {
-            "text1": "Hogeschool Utrecht is een toonaangevende Nederlandse hogeschool die praktische hbo-opleidingen aanbiedt op het gebied van bedrijfskunde, gezondheid en technologie voor carrièregericht onderwijs.",
-            "text2": "Smart Finance is een innovatieve applicatie voor businessstudenten om jaarlijkse financiële overzichten op te stellen voor oefening en studie. Door het simuleren van reële financiële situaties verdiepen gebruikers hun kennis van boekhoudprincipes, financiële analyse en verslagleggingsnormen.",
-            "date": "Februari 2024 - Juli 2024",
-            "role1": "Scrum master",
+            "text1": "Hogeschool Utrecht is een vooraanstaande Nederlandse hogeschool die praktische opleidingen op bachelor-niveau aanbiedt op het gebied van bedrijfskunde, gezondheid en technologie, gericht op carrièrevoorbereiding.",
+            "text2": "Smart Finance is een innovatieve applicatie die is ontworpen voor bedrijfskundestudenten om jaarlijkse financiële overzichten te genereren voor praktijk en studie. Door realistische financiële scenario's te simuleren, biedt de app gebruikers een beter begrip van boekhoudprincipes, financiële analyse en verslagleggingsnormen.",
+            "date": "februari 2024 - juli 2024",
+            "role1": "Scrum Master",
             "role2": "Teamleider",
-            "role3": "Full Stack Ontwikkelaar"
+            "role3": "Full Stack Developer"
         }
     },
     "education": {
         "title": "Opleiding",
-        "text1": "Ik heb een vierjarige bachelor Full Stack Software Development gevolgd aan de Hogeschool Utrecht. Ik heb geleerd over Object Georiënteerd Programmeren, Software Architectuur, Beveiliging, Toegankelijkheid en het bespreken van behoeften en wensen met klanten.",
-        "text2": "Hoewel ik me tijdens mijn studie vooral op back-end heb gericht, koos ik in mijn laatste jaren voor een specialisatie in front-end om een breed spectrum in Full Stack Development te verkrijgen."
+        "text1": "Ik heb een 4-jarige bachelor in Full Stack Software Development gevolgd aan de Hogeschool Utrecht. Hier heb ik geleerd over Objectgeoriënteerd Programmeren, Software Architectuur, Veiligheid, Toegankelijkheid en het bespreken van behoeften en wensen met klanten.",
+        "text2": "Hoewel ik me voor het grootste deel op backend heb gefocust, heb ik ervoor gekozen om mij in de laatste jaren te specialiseren in frontend om een volledige Full Stack-vaardigheid te bereiken."
     },
     "skills": {
         "skillstitle": "Vaardigheden",
-        "languages": "Talen",
-        "dutch": "Nederlands · Moedertaal (C1)",
-        "norwegian": "Noors · Tweetalig (C1)",
-        "english": "Engels · Werkvaardigheid (B2)",
-        "tools": "Tools"
+        "language": {
+            "languages": "Talen",
+            "description": "Geboren en opgegroeid met Nederlands en Engels geleerd op school. Noors geleerd via zelfstudie, vrienden, spelletjes/televisie-series/boeken/podcasts en vakanties.",
+            "dutch": "Nederlands · Moedertaal (C1)",
+            "norwegian": "Noors · Tweetalig (C1)",
+            "english": "Engels · Werkvaardig (B2)"
+        },
+        "frontend": {
+            "description": "Gespecialiseerd in gebruiksvriendelijke, mooie en toegankelijke websites."
+        },
+        "backend": {
+            "description": "Zeer ervaren in het bouwen van complexe backend-systemen incl. databases, vooral in Java en soortgelijke talen."
+        },
+        "security": {
+            "description": "Diepgaande kennis over verschillende beveiligingsaspecten – van cybersecurity bedreigingen tot het opstellen van eigen beveiligingsconfiguraties."
+        },
+        "testing": {
+            "description": "Getraind in het grondig testen van applicaties van boven naar beneden {pyramid} voor een hoge codekwaliteit."
+        },
+        "tools": {
+            "title": "Tools",
+            "description": "Tools waar ik mee werk / die ik goed ken."
+        }
     },
-    "interests": {
-        "title": "Interesses",
-        "1": "Noors leren / Alles over Noorwegen",
-        "2": "Schaken - 800 elo",
-        "3": "Rock en metal (vooral de band Kvelertak)",
-        "4": "Natuurtochten met mijn hond Rowdy",
-        "5": "Sporten / fitness",
-        "6": "Noorse mythologie",
-        "7": "Cuphead, Outlast, God of War Ragnarök"
+    "norway": {
+        "1": "Noorwegen is voor mij altijd meer geweest dan slechts een plek op de kaart. De prachtige landschappen, rijke geschiedenis en mix van traditie en moderniteit hebben mij gefascineerd. Vloeiend Noors heeft mijn verbondenheid met de cultuur versterkt, waardoor elke ervaring – van het verkennen van fjorden tot het ontmoeten van warme gemeenschappen – betekenisvoller is geworden.",
+        "2": "Ik ben geïnspireerd door de vriendelijkheid en duurzaamheid van Noorwegen en kijk uit naar de dag dat ik dit buitengewone land mijn thuis kan noemen.",
+        "3": "*Ik ben enthousiast om mijn professionele horizon in Noorwegen te verbreden en samen te werken met Noorse bedrijven. Als u mogelijkheden of inzichten heeft over verhuizen naar Noorwegen, {mail}.",
+        "mail": "ik zou er meer dan blij mee zijn om"
     }
 }

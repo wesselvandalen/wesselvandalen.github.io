@@ -23,11 +23,11 @@ export default function Header() {
                 </button>
 
                 <div className="header-list" style={{ 'display': isOpen ? 'flex' : 'none' }}>
-                    <a href="#about">ABOUT</a>
+                    <a href="#about">{translation('sidepanel.about')}</a>
                     <a href="#projects">{translation('sidepanel.projects')}</a>
                     <a href="#education">{translation('sidepanel.education')}</a>
                     <a href="#skills">{translation('sidepanel.skills')}</a>
-                    {/* <a href="#interests">{translation('sidepanel.interests')}</a> */}
+                    <a href="#norway">{translation('sidepanel.norway')}</a>
                     <div className="language-dropdown-wrapper">
                         <LanguageDropdown />
                     </div>

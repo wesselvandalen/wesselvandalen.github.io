@@ -21,7 +21,17 @@ export default function About() {
                             <a href="mailto:wesselvandalen@gmail.com" className='mail'>wesselvandalen@gmail.com</a>
                         </div>
                     </div>
-                    <p>{translation('about.description')}</p>
+
+                    <p>
+                        {translation('about.description')
+                            .split('{norway}')[0]}
+                        <a href="#norway" className='lenke'>
+                            {translation('about.anchor')}
+                        </a>
+                        {translation('about.description')
+                            .split('{norway}')[1]}
+                    </p>
+
                     <div className="social-icons-container">
                         <a href="https://linkedin.com/in/wesselvandalen/" target='_blank' rel="noreferrer">
                             <img src={linkedIn} alt="LinkedIn"/>
