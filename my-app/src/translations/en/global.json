@@ -48,8 +48,8 @@
             "languages": "Languages",
             "description": "Born and raised with Dutch with English learned at school. Norwegian learned through self-study, friends, games/tv-shows/books/podcasts and vacations.",
             "dutch": "Dutch · Native (C1)",
-            "norwegian": "Norwegian · Bilingual (C1)",
-            "english": "English · Work proficiency (B2)"
+            "norwegian": "Norwegian · Work proficiency (B2)",
+            "english": "English · Bilingual (C1)"
         },
         "frontend": {
             "description": "Specialised in user-friendly, good-looking and accessable websites."

@@ -48,8 +48,8 @@
             "languages": "Språk",
             "description": "Født og oppvokst med nederlandsk og engelsk lært på skolen. Norsk lært gjennom selvstudium, venner, spill/TV-serier/bøker/podkaster og ferier.",
             "dutch": "Nederlandsk · Morsmål (C1)",
-            "norwegian": "Norsk · Tospråklig (C1)",
-            "english": "Engelsk · Arbeidsproff (B2)"
+            "norwegian": "Norsk · Arbeidsproff (B2)",
+            "english": "Engelsk · Tospråklig (C1)"
         },
         "frontend": {
             "description": "Spesialisert i brukervennlige, pene og tilgjengelige nettsider."
