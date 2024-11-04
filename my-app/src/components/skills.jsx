@@ -22,6 +22,10 @@ import docker from '../assets/icons/docker.png';
 import git from '../assets/icons/git.png';
 import postman from '../assets/icons/postman.png';
 import github from '../assets/icons/github.png';
+import intellij from '../assets/icons/intellij.png';
+import vsc from '../assets/icons/vsc.png';
+import commandline from '../assets/icons/commandline.png';
+import swagger from '../assets/icons/swagger.png';
 
 import norskbevis from '../assets/icons/norsk-bevis.png';
 
@@ -214,6 +218,22 @@ export default function Skills() {
                     <div className="skill">
                         <img src={github} alt="GitHub" style={{ filter: 'invert(1)' }}/>
                         <p>GitHub</p>
+                    </div>
+                    <div className="skill">
+                        <img src={vsc} alt="Visual Studio Code"/>
+                        <p>Visual Studio Code</p>
+                    </div>
+                    <div className="skill">
+                        <img src={commandline} alt="Command line"/>
+                        <p>Command line</p>
+                    </div>
+                    <div className="skill">
+                        <img src={intellij} alt="Intellij"/>
+                        <p>Intellij IDEA</p>
+                    </div>
+                    <div className="skill">
+                        <img src={swagger} alt="Swagger"/>
+                        <p>Swagger</p>
                     </div>
                 </div>
 
