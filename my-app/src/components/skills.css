@@ -94,6 +94,7 @@
     width: 25px;
     height: 20px;
     stroke: #555555;
+    opacity: .6;
     flex-shrink: 0; /* prevents icon from shrinking on smaller screens */
 }
 
@@ -119,6 +120,7 @@
     width: 25px;
     height: 20px;
     stroke: #555555;
+    opacity: .6;
 }
 
 .extra {
