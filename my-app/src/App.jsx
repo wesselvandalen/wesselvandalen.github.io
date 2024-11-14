@@ -2,16 +2,14 @@ import './App.css';
 import { useEffect } from 'react'
 import About from './components/about';
 import SidePanel from './components/side-panel';
-import Projects from './components/projects';
+import Projects from './components/work';
 import Education from './components/education';
 import Skills from './components/skills';
-import Norway from './components/norway';
+import Profile from './components/profile';
 
 export default function App() {
 
-  // Sørger for at det er smooth scrolling over hele nettsida
   useEffect(() => {
-    // Velg alle lenker som starter med #
     const anchors = document.querySelectorAll('a[href^="#"]');
     anchors.forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -24,7 +22,6 @@ export default function App() {
       });
     });
 
-    // Cleanup for å unngå minnelekkasjer ved fjerning av event listeners
     return () => {
       anchors.forEach(anchor => {
         anchor.removeEventListener('click', () => {});
@@ -38,13 +35,13 @@ export default function App() {
         <SidePanel/>
         <About/>
         <div className="line-divider"/>
+        <Profile/>
+        <div className="line-divider"/>
         <Projects/>
         <div className="line-divider"/>
         <Education/>
         <div className="line-divider"/>
         <Skills/>
-        <div className="line-divider"/>
-        <Norway/>
       </div>
     </div>
   );

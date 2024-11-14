@@ -10,7 +10,6 @@ export default function SidePanel() {
         <div className="side-panel-container">
             <div className="side-panel-content">
                 <a href="#about">
-                    <span className="side-panel-name">Wessel Rowdy Dalen</span>
                     <span>
                         <img src={picture} alt="Me" className='personal-picture'/>
                     </span>
@@ -18,11 +17,10 @@ export default function SidePanel() {
                 
                 <div className="collapse navbar-collapse">
                     <div className="panel-chapters">
-                        <a href="#about">{translation('sidepanel.about')}</a>
-                        <a href="#projects">{translation('sidepanel.projects')}</a>
-                        <a href="#education">{translation('sidepanel.education')}</a>
-                        <a href="#skills">{translation('sidepanel.skills')}</a>
-                        <a href="#norway">{translation('sidepanel.norway')}</a>
+                        <a href="#profile">{translation('header.profile')}</a>
+                        <a href="#work">{translation('header.work')}</a>
+                        <a href="#education">{translation('header.education')}</a>
+                        <a href="#skills">{translation('header.skills')}</a>
                         <LanguageDropdown/>
                     </div>
                 </div>

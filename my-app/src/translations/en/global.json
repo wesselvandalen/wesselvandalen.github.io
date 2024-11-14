@@ -1,55 +1,44 @@
 {
-    "about": {
-        "country": "Netherlands",
-        "description": "I’m a Full Stack Software Engineer with experience leading teams and a real {norway}! I'm excited about the chance to bring my skills to a Norwegian team, whether that means relocating (which I’d love!) or working remotely. I’d be thrilled to contribute and grow in such an inspiring place.",
-        "anchor": "passion for Norway"
-    },
-    "sidepanel": {
-        "about": "About",
-        "projects": "Projects",
+    "header": {
+        "profile": "Profile",
+        "work": "Work experience",
         "education": "Education",
-        "skills": "Skills",
-        "norway": "Norway"
+        "skills": "Skills"
     },
-    "projects": {
-        "title": "Projects",
-        "description": "Take a look at all the products I've crafted for schoolprojects, internships, side projects and jobs.",
+    "about": {
+        "description": "I'm a {age}-year-old guy from Houten, the Netherlands. I'm capable of both server / back-end development and web / front-end development."
+    },
+    "profile": {
+        "1": "My name is Wessel van Dalen and I'm a Full Stack Software Engineer from the Netherlands. I build websites, servers & databases and discuss needs and wishes with customers. I have studied HBO ICT Software Development (4-years Bachelor degree) at the Hogeschool Utrecht in Utrecht, where I developed a high level of expertise in software engineering.",
+        "2": "I'm interested both in working in the Netherlands and Norway, since I speak both Dutch and Norwegian fluently. I am capable of working in a team both as a developer and a Scrum master / team leader, having been the team lead in all group projects during my study (and getting good feedback about it).",
+        "3": "In my freetime I like to take walks in nature with my dog Rowdy, like to work out at the local gym, play games I like and hang out with friends."
+
+    },
+    "work": {
         "mysolution": {
-            "text1": "Mysolution provides recruitment and staffing software that automates sourcing, onboarding, placement, and payroll for agencies across Europe, optimizing HR operations from its base in Houten, Netherlands.",
-            "text2": "The candidate onboarding portal, created for Mysolution, is a user-friendly platform for GrowWork customers. It enables candidates to easily submit their information, ensuring a smooth start at GrowWork. Streamlining paperwork and ensuring GDPR compliance, the portal simplifies the hiring process, offering an efficient, transparent experience for candidates and reducing administrative work for GrowWork.",
-            "date": "September 2024 - January 2025",
-            "role1": "Full Stack Developer",
-            "role2": "GDPR researcher"
+            "text": "The candidate onboarding portal, created for Mysolution, is a user-friendly platform for GrowWork customers. It enables candidates to easily submit their information, ensuring a smooth start at GrowWork. Streamlining paperwork and ensuring GDPR compliance, the portal simplifies the hiring process, offering an efficient, transparent experience for candidates and reducing administrative work for GrowWork.",
+            "date": "September 2024 - January 2025"
         },
-        "luftan": {
-            "text1": "Luftan, a Swedish brand, creates eco-friendly aroma diffusers that enhance spaces with calming scents, prioritizing sustainability, relaxation, and an enriched sensory experience.",
-            "text2": "The Luftan e-commerce platform is a fully integrated SaaS solution that allows customers to easily browse and purchase a wide range of aroma diffusers and scents. With a user-friendly interface, it simplifies the shopping experience, enabling seamless product exploration and secure order placement. Customers can access detailed product descriptions, customer reviews, and personalized recommendations, making it easy to find the perfect scent for their needs.",
-            "date": "August 2024 - Present",
-            "role1": "Full Stack Developer",
-            "role2": "Team leader"
-        },
-        "smartfinance": {
-            "text1": "Hogeschool Utrecht is a leading Dutch university of applied sciences, offering practical education of Bachelor level in business, health, and technology for career readiness.",
-            "text2": "Smart Finance is an innovative application designed for business students to generate annual financial statements for practice and learning. By simulating real-world financial scenarios, the app enables users to deepen their understanding of accounting principles, financial analysis, and reporting standards. This hands-on approach enhances learning outcomes, equipping students with essential skills for their future careers in finance.",
-            "date": "February 2024 - July 2024",
-            "role1": "Scrum master",
-            "role2": "Team leader",
-            "role3": "Full Stack Developer"
+        "hu": {
+            "text": "Smart Finance is an innovative application designed for business students to generate annual financial statements for practice and learning. By simulating real-world financial scenarios, the app enables users to deepen their understanding of accounting principles, financial analysis, and reporting standards. This hands-on approach enhances learning outcomes, equipping students with essential skills for their future careers in finance.",
+            "date": "February 2024 - July 2024"
         }
     },
     "education": {
-        "title": "Education",
-        "text1": "I've taken a 4-years Bachelor in Full Stack Software Development at the Hogeschool Utrecht. I learned about Object Oriented Programming, Software Architecture, Security, Accessibility & discussing needs and wishes with customers I've worked for.",
-        "text2": "Though having studied Back end practises for most of my time, I've decided in my final years to take a specialization in Front end to have a very concrete spectre in Full Stack Development."
+        "hu": {
+            "date": "August 2022 - July 2026",
+            "li1": "4-year Bachelor's degree",
+            "li2": "Specialization in Front end",
+            "li3": "2 internships & 1 minor"
+        }
     },
     "skills": {
-        "skillstitle": "Skills",
-        "language": {
-            "languages": "Languages",
+        "languages": {
+            "title": "Languages",
             "description": "Born and raised with Dutch with English learned at school. Norwegian learned through self-study, friends, games/tv-shows/books/podcasts and vacations.",
-            "dutch": "Dutch · Native (C1)",
-            "norwegian": "Norwegian · Work proficiency (B2)",
-            "english": "English · Bilingual (C1)"
+            "dutch": "Dutch - Native (C1)",
+            "english": "English - Bilingual (C1)",
+            "norwegian": "Norwegian - Work profiency (B2)"
         },
         "frontend": {
             "description": "Specialised in user-friendly, good-looking and accessable websites."
@@ -60,18 +49,9 @@
         "security": {
             "description": "Deep knowledge about different security aspects - from cybersecurity threats to building own Security Configurations."
         },
-        "testing": {
-            "description": "Thaught to test applications throughoug from top to bottom {pyramid} to ensure high code quality."
-        },
         "tools": {
             "title": "Tools",
             "description": "Tools I work with / know my way around with."
         }
-    },
-    "norway": {
-        "1": "Norway has always been more than just a place on the map for me. Its stunning landscapes, rich history, and blend of tradition and modernity have captivated me. Being fluent in Norwegian has deepened my connection to the culture, making every experience—from exploring fjords to engaging with its warm communities—more meaningful.",
-        "2": "I’m inspired by Norway’s kindness and natural beauty and eagerly await the day I can call this extraordinary country my home.",
-        "3": "*I am very excited to expand my professional horizons in Norway and collaborate with Norwegian enterprises. If you have opportunities or insights regarding relocation to Norway, {mail}.",
-        "mail": "I would be more than happy to dicsuss potiential opportunities."
     }
 }

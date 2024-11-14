@@ -1,77 +1,56 @@
 {
-    "about": {
-        "country": "Nederland",
-        "description": "Jeg er en Full Stack Software Engineer med erfaring i teamledelse og en genuin {norway}! Jeg er begeistret for muligheten til å bringe ferdighetene mine til et norsk team, enten det innebærer å flytte (noe jeg gjerne gjør!) eller jobbe eksternt. Jeg ville vært glad for å bidra og vokse i et så inspirerende miljø.",
-        "anchor": "lidenskap for Norge"
-    },
-    "sidepanel": {
-        "about": "Om meg",
-        "projects": "Prosjekt",
+    "header": {
+        "profile": "Profil",
+        "work": "Arbeidserfaring",
         "education": "Utdanning",
-        "skills": "Ferdigheter",
-        "norway": "Norge"
+        "skills": "Ferdigheter"
     },
-    "projects": {
-        "title": "Prosjekt",
-        "description": "Ta en titt på alle produktene jeg har utviklet for skoleprosjekter, internships, sideprosjekter og jobber.",
+    "about": {
+        "description": "Jeg er en {age} år gammel fyr fra Houten, Nederland. Jeg er i stand til å jobbe med både server / back-end utvikling og web / front-end utvikling."
+    },
+    "profile": {
+        "1": "Mitt navn er Wessel van Dalen, og jeg er en Full Stack Software Engineer fra Nederland. Jeg bygger nettsider, servere og databaser og diskuterer behov og ønsker med kundene. Jeg har studert HBO ICT Software Development (4-årig bachelorgrad) ved Hogeschool Utrecht i Utrecht, hvor jeg utviklet et høyt nivå av kompetanse innen programvareutvikling.",
+        "2": "Jeg er interessert i å jobbe både i Nederland og Norge, ettersom jeg snakker både nederlandsk og norsk flytende. Jeg er i stand til å jobbe i et team både som utvikler og Scrum Master / teamleder, etter å ha vært teamleder i alle gruppeprosjektene under studiene (og fått gode tilbakemeldinger på det).",
+        "3": "På fritiden liker jeg å ta turer i naturen med hunden min Rowdy, trene på det lokale treningssenteret, spille spill jeg liker og henge med venner."
+    },
+    "work": {
         "mysolution": {
-            "text1": "Mysolution tilbyr rekrutterings- og bemanningsprogramvare som automatiserer sourcing, onboarding, plassering og lønn for byråer over hele Europa, og optimaliserer HR-operasjoner fra sin base i Houten, Nederland.",
-            "text2": "Kandidatens onboarding-portal, utviklet for Mysolution, er en brukervennlig plattform for GrowWork-kunder. Den gjør det enkelt for kandidater å sende inn sin informasjon, og sørger for en smidig oppstart hos GrowWork. Ved å forenkle papirarbeidet og sikre GDPR-samsvar, gir portalen en effektiv og transparent opplevelse for kandidater, og reduserer administrativt arbeid for GrowWork.",
-            "date": "september 2024 - januar 2025",
-            "role1": "Full Stack-utvikler",
-            "role2": "GDPR-forsker"
+            "text": "Kandidat-onboardingportalen, laget for Mysolution, er en brukervennlig plattform for GrowWork-kunder. Den gjør det enkelt for kandidater å sende inn informasjon, noe som sikrer en smidig oppstart hos GrowWork. Ved å forenkle papirarbeidet og sikre GDPR-overholdelse, gjør portalen ansettelsesprosessen enklere, gir en effektiv og transparent opplevelse for kandidatene og reduserer administrativt arbeid for GrowWork.",
+            "date": "September 2024 - Januar 2025"
         },
-        "luftan": {
-            "text1": "Luftan, et svensk merke, lager miljøvennlige aroma-diffusorer som beriker rom med beroligende dufter, og prioriterer bærekraft, avslapning og en forbedret sensorisk opplevelse.",
-            "text2": "Luftans e-handelsplattform er en fullstendig integrert SaaS-løsning som lar kunder enkelt bla gjennom og kjøpe et bredt utvalg av aroma-diffusorer og dufter. Med et brukervennlig grensesnitt forenkles shoppingopplevelsen, og kundene får enkel tilgang til detaljerte produktbeskrivelser, kundeanmeldelser og personlige anbefalinger.",
-            "date": "august 2024 - Nåværende",
-            "role1": "Full Stack-utvikler",
-            "role2": "Teamleder"
-        },
-        "smartfinance": {
-            "text1": "Hogeschool Utrecht er et ledende nederlandsk universitet innen anvendt vitenskap, og tilbyr praktisk utdanning på bachelornivå innenfor forretning, helse og teknologi for karriereberedskap.",
-            "text2": "Smart Finance er en innovativ applikasjon designet for forretningsstudenter for å generere årlige finansielle rapporter til praksis og læring. Ved å simulere virkelige finansielle scenarier gir appen brukerne dypere forståelse av regnskapsprinsipper, finansiell analyse og rapporteringsstandarder.",
-            "date": "februar 2024 - juli 2024",
-            "role1": "Scrum Master",
-            "role2": "Teamleder",
-            "role3": "Full Stack-utvikler"
+        "hu": {
+            "text": "Smart Finance er en innovativ applikasjon designet for økonomistudenter for å lage årsregnskap for øvelse og læring. Ved å simulere virkelige økonomiske situasjoner gjør appen det mulig for brukere å utdype sin forståelse av regnskapsprinsipper, finansiell analyse og rapporteringsstandarder. Denne praktiske tilnærmingen forbedrer læringsutbyttet og gir studentene viktige ferdigheter for deres fremtidige karriere i finans.",
+            "date": "Februar 2024 - Juli 2024"
         }
     },
     "education": {
-        "title": "Utdanning",
-        "text1": "Jeg har fullført en 4-årig bachelorgrad i Full Stack-programvareutvikling ved Hogeschool Utrecht. Her lærte jeg om Objektorientert Programmering, Programvarearkitektur, Sikkerhet, Tilgjengelighet og behovsavklaringer med kunder jeg har jobbet for.",
-        "text2": "Selv om jeg studerte back-end-praksis for det meste, valgte jeg å spesialisere meg i front-end i de siste årene for å ha en bredere full stack-kompetanse."
+        "hu": {
+            "date": "August 2022 - Juli 2026",
+            "li1": "4-årig bachelorgrad",
+            "li2": "Spesialisering i Front-end",
+            "li3": "2 praksisplasser og 1 valgfag"
+        }
     },
     "skills": {
-        "skillstitle": "Ferdigheter",
-        "language": {
-            "languages": "Språk",
-            "description": "Født og oppvokst med nederlandsk og engelsk lært på skolen. Norsk lært gjennom selvstudium, venner, spill/TV-serier/bøker/podkaster og ferier.",
-            "dutch": "Nederlandsk · Morsmål (C1)",
-            "norwegian": "Norsk · Arbeidsproff (B2)",
-            "english": "Engelsk · Tospråklig (C1)"
+        "languages": {
+            "title": "Språk",
+            "description": "Født og oppvokst med nederlandsk, engelsk lært på skolen. Norsk lært gjennom selvstudium, venner, spill/tv-serier/bøker/podcaster og ferier.",
+            "dutch": "Nederlandsk - Morsmål (C1)",
+            "english": "Engelsk - Tospråklig (C1)",
+            "norwegian": "Norsk - Arbeidsdyktig (B2)"
         },
         "frontend": {
-            "description": "Spesialisert i brukervennlige, pene og tilgjengelige nettsider."
+            "description": "Spesialisert i brukervennlige, attraktive og tilgjengelige nettsider."
         },
         "backend": {
-            "description": "Veldig dyktig i å bygge komplekse back-end-systemer inkl. databaser, spesielt i Java/tilsvarende språk."
+            "description": "Veldig dyktig i å bygge komplekse back-end systemer inkl. databaser, spesielt i Java / lignende språk."
         },
         "security": {
-            "description": "Dyp kunnskap om ulike sikkerhetsaspekter – fra cybersikkerhetstrusler til å bygge egne sikkerhetskonfigurasjoner."
-        },
-        "testing": {
-            "description": "Opplært til å teste applikasjoner grundig fra topp til bunn {pyramid} for å sikre høy kodekvalitet."
+            "description": "Dyp kunnskap om ulike sikkerhetsaspekter - fra cybersikkerhetstrusler til å bygge egne sikkerhetskonfigurasjoner."
         },
         "tools": {
             "title": "Verktøy",
-            "description": "Verktøyene jeg jobber med / har erfaring med."
+            "description": "Verktøy jeg jobber med / har god kjennskap til."
         }
-    },
-    "norway": {
-        "1": "Norge har alltid vært mer enn bare et sted på kartet for meg. Det imponerende landskapet, rike historie og kombinasjon av tradisjon og modernitet har fascinert meg. Det å være flytende i norsk har styrket min tilknytning til kulturen, noe som gjør enhver opplevelse—fra å utforske fjordene til å engasjere meg med varme lokalsamfunn—enda mer meningsfylt.",
-        "2": "Jeg er inspirert av Norges vennlighet og naturlige skjønnhet og ser frem til den dagen jeg kan kalle dette ekstraordinære landet mitt hjem.",
-        "3": "*Jeg er veldig spent på å utvide mine profesjonelle horisonter i Norge og samarbeide med norske bedrifter. Hvis du har muligheter eller innsikt angående relokasjon til Norge, {mail}.",
-        "mail": "vil jeg være kjempeglad for å diskutere potensielle muligheter."
     }
 }

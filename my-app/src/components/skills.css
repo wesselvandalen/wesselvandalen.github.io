@@ -1,5 +1,5 @@
 .skill-container {
-    padding: 60px 0;
+    padding: 30px 0 60px 0;
     margin-bottom: 50px;
 }
 
@@ -7,9 +7,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    font-family: "Space Grotesk", sans-serif;
     letter-spacing: .001cm;
-    color: rgba(000, 000, 000, .4);
+    color: black;
     font-weight: 600;
     font-size: 1.2rem
 }
@@ -31,7 +30,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: rgba(000, 000, 000, .5);
+    color: black;
 }
 
 .skills-list img {
@@ -99,8 +98,7 @@
 }
 
 .list3 {
-    list-style: none;
-    margin-left: -45px;
+    margin-left: 0;
     margin-top: -5px;
 }
 
@@ -108,7 +106,7 @@
     font-size: 1rem;
     margin-bottom: 0.5rem;
     position: relative;
-    color: rgba(000, 000, 000, .5);
+    color: black;
 }
 
 .list3 li div {
@@ -137,6 +135,10 @@
 }
 
 @media screen and (max-width: 1080px) {
+    .skill-container {
+        height: 160vh;
+    }
+
     .extra {
         margin: 10px 0;
     }

@@ -35,28 +35,20 @@ export default function Skills() {
     return (
         <section className="skill-container vanlig" id="skills">
             <div className="w-100">
-                <h2 className="component-title up">{translation('skills.skillstitle')}</h2>
+                
+                <h3 className='chapter-title'>{translation('header.skills')}</h3>
 
-                <div className="skill-title">{translation('skills.language.languages')}</div>
-                <p className='skill-description'>{translation('skills.language.description')}</p>
+                <div className="skill-title">{translation('skills.languages.title')}</div>
+                <p>{translation('skills.languages.description')}</p>
                 <ul className="list3">
                     <li>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                            {translation('skills.language.dutch')}
-                        </div>
+                        {translation('skills.languages.dutch')}
                     </li>
                     <li>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                            {translation('skills.language.english')}
-                        </div>
+                        {translation('skills.languages.english')}
                     </li>
                     <li>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                            {translation('skills.language.norwegian')}
-                        </div>
+                        {translation('skills.languages.norwegian')}
                         {/* <a className='extra' href='#about' target='_blank'>
                             <img src={norskbevis} alt="Bevis på at jeg klarte norskprøven"/>
                             Direktoratet for høyere utdanning og kompetanse B2 Norsk prøve resultat
@@ -65,7 +57,7 @@ export default function Skills() {
                 </ul>
 
                 <div className="skill-title">FRONT END</div>
-                <p className='skill-description'>{translation('skills.frontend.description')}</p>
+                <p>{translation('skills.frontend.description')}</p>
                 <div className="skills-list">
                     <div className="skill">
                         <img src={react} alt='React'/>
@@ -98,7 +90,7 @@ export default function Skills() {
                 </div>
 
                 <div className="skill-title">BACK END</div>
-                <p className='skill-description'>{translation('skills.backend.description')}</p>
+                <p>{translation('skills.backend.description')}</p>
                 <div className="skills-list">
                     <div className="skill">
                         <img src={java} alt='Java'/>
@@ -135,65 +127,16 @@ export default function Skills() {
                 </div>
 
                 <div className="skill-title">SECURITY</div>
-                <p className='skill-description'>{translation('skills.security.description')}</p>
-                <ul className="list1">
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                        OWASP TOP 10
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                        Authentication & Authorization
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                        Cybersecurity threats (rainbow tables, brute force, timing attacks, injection etc.)
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                        JWT tokens, encryption, encoding and hash (+ salt)
-                    </li>
-                </ul>
-
-                <div className='skill-title'>TESTING</div> 
-                <p className='skill-description'>
-                    {translation('skills.testing.description')
-                            .split('{pyramid}')[0]}
-                        <a href="https://testsigma.com/blog/testing-pyramid/" target='_blank' rel='noreferrer' className='lenke'>
-                            (The Testing Pyramid)
-                        </a>
-                        {translation('skills.testing.description')
-                            .split('{pyramid}')[1]}
-                </p>
-                <ul className='list1'>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                        Continious Integration / Continious Development Pipelines
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                        JUnit5
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                        Unit tests
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                        Mockito
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                        Integration tests
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-                        Test-Driven-Development
-                    </li>
+                <p>{translation('skills.security.description')}</p>
+                <ul className="list3">
+                    <li>OWASP TOP 10</li>
+                    <li>Authentication & Authorization</li>
+                    <li>Cybersecurity threats (rainbow tables, brute force, timing attacks, injection etc.)</li>
+                    <li>JWT tokens, encryption, encoding and hash (+ salt)</li>
                 </ul>
 
                 <div className="skill-title">{translation('skills.tools.title')}</div>
-                <p className='skill-description'>{translation('skills.tools.description')}</p>
+                <p>{translation('skills.tools.description')}</p>
                 <div className="skills-list">
                     <div className="skill">
                         <img src={salesforce} alt="Salesforce"/>

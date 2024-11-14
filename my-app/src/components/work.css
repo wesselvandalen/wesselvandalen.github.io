@@ -2,35 +2,11 @@
     margin-bottom: 0;
 }
 
-.component-title-container {
-    margin-bottom: 50px;
-}
-
 .projects-role {
     margin-bottom: 15px;
 }
 
-.component-title {
-    font-family: "Roboto", sans-serif;
-    font-size: 2.5rem;
-    line-height: 5.5rem;
-    font-weight: 700;
-    letter-spacing: .1px;
-    text-transform: uppercase;
-    color: #343a40;
-    margin: 5px 0 -20px 0;
-}
-
-.component-description {
-    font-size: 1rem;
-    font-weight: 400;
-    color: rgba(000, 000, 000, .5);
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
 .project {
-    font-family: "Space Grotesk", sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,24 +15,26 @@
 }
 
 .project-company {
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 800;
-    color: #343a40;
-    font-size: 1.7rem;
+    color: black;
+    font-size: 1.25rem;
     margin-bottom: 0;
     text-transform: uppercase;
 }
 
 .project-name {
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 350;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    color: rgba(52, 58, 64, .6);
+    color: rgba(51, 51, 51, .6);
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.project-date {
+    color: rgba(51, 51, 51, .6);
+    font-size: 1.1rem;
+    margin: 10px 0;
 }
 
 .project .project-content {
-    width: 75%;
+    width: 100%;
 }
 
 .project .project-info {
@@ -68,10 +46,8 @@
     color: rgba(000, 000, 000, .5);
 }
 
-.project-content p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: rgba(000, 000, 000, .5);
+.project-text {
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -92,7 +68,6 @@ ul.tech-list {
 }
 
 ul.tech-list>li {
-    font-family: 'Hanken Grotesk', 'sans-serif';
     background-color: #e1ecf4;
     border-radius: 4px;
     border: 1px solid transparent;

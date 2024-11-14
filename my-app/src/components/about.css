@@ -4,7 +4,7 @@
     align-items: start;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    margin-top: 100px;
 }
 
 .about-content {
@@ -17,10 +17,31 @@
 }
 
 .profile-picture {
-    max-width: 10rem;
-    max-height: 10rem;
-    border-radius: 50%;
-    margin-bottom: -75px;
+    background: url("../assets/jeg.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    width: 12rem;
+    height: 12rem;
+    max-width: 12rem;
+    max-height: 12rem;
+    min-width: 12rem;
+    max-height: 12rem;
+    box-shadow: 0 5px 5px 5px rgba(0,0,0,0.2);
+    animation: animate 5s ease-in-out infinite;
+    margin-right: 50px;
+}
+
+@keyframes animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60% ;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
+    }
 }
 
 .name-container {
@@ -30,73 +51,41 @@
 }
 
 .name-container h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 6rem;
+    font-size: 4rem;
     line-height: 5.5rem;
     font-weight: 700;
     text-align: left;
     color: #343a40;
-    margin-bottom: 10px;
-    /* margin-top: 0; */
+    margin-bottom: 5px;
+    margin-top: 20px;
 }
 
-.location-email .location {
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: rgba(34, 34, 34, .5);
+.profile-role {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: black;
+    margin: 0;
 }
 
-.mail {
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: rgba(34, 34, 34, .9);
+.profile-description {
+    color: black;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.links-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.lenke {
+    color: black;
     text-decoration: none;
 }
 
-.location-email a:hover {
-    color: #242423;
-    text-decoration: underline #242423;
-}
-
-.about-content p {
-    font-weight: 400;
-    font-size: 1.1rem;
-    color: rgba(34, 34, 34, .5);
-    margin-bottom: 55px;
-}
-
-.social-icons-container {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.social-icons-container a {
-    display: flex;
-    height: 3.5rem;
-    width: 3.5rem;
-    background-color: var(--theme-color);
-    color: #fff;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 3.5rem;
-    margin-right: 1rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-icons-container a:hover {
-    cursor: pointer;
-    background-color: #272727;
-
-}
-
-.social-icons-container a img {
-    width: 25px;
-    height: 25px;
+.lenke:hover {
+    color: rgba(34, 34, 34, 0.6);
 }
 
 @media screen and (max-width: 1920px) {
@@ -105,45 +94,40 @@
     }
 
     .about-container {
-        height: 100vh;
+        margin-top: 65px;
     }
 
     .name-container h3 {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         letter-spacing: -3px;
-        margin-top: 80px;
+        margin-top: 20px;
         margin-bottom: 0;
     }
 }
 
 @media screen and (max-width: 1080px) {
     .about-container {
-        height: 140vh;
+        margin-top: 100px;
     }
 
     .profile-picture {
         max-width: 15rem;
         max-height: 15rem;
-        margin-bottom: -50px;
+        margin-bottom: 0;
         margin-top: -50px;
     }
 
     .name-container h3 {
         font-weight: 600;
-        font-size: 5rem;
-        margin-bottom: 40px;
+        font-size: 3rem;
+        line-height: 50px;
+        margin-bottom: 0;
     }
 
-    .location-email .location {
-        font-size: 1.3rem;
+    .profile-role {
+        font-size: 1.5rem;
+        margin: 10px 0 0 0;
     }
 
-    .mail {
-        font-size: 1.3rem;
-    }
-
-    .about-content p {
-        margin-top: 5px;
-        font-size: 1.1rem;
-    }
+    
 }

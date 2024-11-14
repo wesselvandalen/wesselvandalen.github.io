@@ -7,20 +7,22 @@ export default function Education() {
     return (
         <section className="education-container vanlig" id="education">
             <div className="education-content">
-                <h2 className="component-title">{translation('education.title')}</h2>
-                <div className="education-info-wrapper">
-                    <div className="education-info">
-                        <h3 className="education-university">Hogeschool Utrecht</h3>
-                        <div className="education-name">
-                            HBO ICT Software Development - Bachelor
-                        </div>
-                        <p>{translation('education.text1')}</p>
-                        <p>{translation('education.text2')}</p>
-                    </div>
-                    <div className="project-date">
-                        <span className="text-primary">2022 - 2026</span>
-                    </div>
+
+            <h3 className='chapter-title'>{translation('header.education')}</h3>
+
+            <div className="education-inner-content">
+                <div className="education-block">
+                    <h3>HBO ICT - Software Development</h3>
+                    <p className='education-school'>Hogeschool Utrecht</p>
+                    <p className='education-date'>{translation('education.hu.date')}</p>
+                    <ul>
+                        <li>{translation('education.hu.li1')} (240 ECTS)</li>
+                        <li>{translation('education.hu.li2')}</li>
+                        <li>{translation('education.hu.li3')}</li>
+                    </ul>
                 </div>
+            </div>
+
             </div>
         </section>
     );

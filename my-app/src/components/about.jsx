@@ -1,44 +1,38 @@
 import './about.css';
 import { useTranslation } from 'react-i18next';
 import Header from './header';
-import linkedIn from '../assets/icons/linkedin.png';
-import gitHub from '../assets/icons/github.png';
-import picture from '../assets/jeg.png';
 
 export default function About() {
     const [translation] = useTranslation("global");
+    
+    function calculateAge() {
+        let dob = new Date("01/20/2004");
+        let month_diff = Date.now() - dob.getTime();
+        let age_dt = new Date(month_diff);
+        let year = age_dt.getUTCFullYear();
+        return Math.abs(year - 1970);
+    };
 
     return (
         <>
             <Header/>
-            <div className='about-container vanlig' id="about">
+            <div className='about-container vanlig' id='about'>
                 <div className="about-content">
                     <div className="name-container">
-                        <img src={picture} alt="Profile picture" className='profile-picture'/>
-                        <h3>Wessel Rowdy Dalen</h3>
-                        <div className="location-email">
-                            <span className='location'>Houten, Utrecht, {translation('about.country')} · </span>
-                            <a href="mailto:wesselvandalen@gmail.com" className='mail'>wesselvandalen@gmail.com</a>
-                        </div>
+                        <div className="profile-picture"/>
+                        <h3>Wessel Rowdy van Dalen</h3>
+                        <p className='profile-role'>Full Stack Software Engineer</p>
                     </div>
 
-                    <p>
+                    <p className='profile-description'>
                         {translation('about.description')
-                            .split('{norway}')[0]}
-                        <a href="#norway" className='lenke'>
-                            {translation('about.anchor')}
-                        </a>
-                        {translation('about.description')
-                            .split('{norway}')[1]}
+                            .replace('{age}', calculateAge())}
                     </p>
 
-                    <div className="social-icons-container">
-                        <a href="https://linkedin.com/in/wesselvandalen/" target='_blank' rel="noreferrer">
-                            <img src={linkedIn} alt="LinkedIn"/>
-                        </a>
-                        <a href="https://github.com/wesselvandalen/" target='_blank' rel="noreferrer">
-                            <img src={gitHub} alt="GitHub"/>
-                        </a>
+                    <div className="links-container">
+                        <a href="https://github.com/wesselvandalen/" target='_blank' className='lenke'>GitHub</a>
+                        <a href="https://linkedin.com/in/wesselvandalen/" target='_blank' className='lenke'>LinkedIn</a>
+                        <a href="mailto:wesselvandalen@gmail.com" className='lenke'>wesselvandalen@gmail.com</a>
                     </div>
                 </div> 
             </div>
