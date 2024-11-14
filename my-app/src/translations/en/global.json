@@ -1,30 +1,77 @@
 {
-    "norway": "Norway",
-    "skills": "Skills",
-    "projects": "Work",
-    "email": "Send me an email",
-    "cv": "My resume",
-    "role": "Software Developer and Norway enthousiast",
-    "description": "Heisann! I'm a {age}-year-old Full Stack Software Developer, specialized in front-end development. I've completed a 4-years IT {bachelorLink} at Hogeschool Utrecht, the Netherlands. I have over {experience} years of work experience, mainly with React Javascript & Java Spring. Interested?",
-    "iam": "I am",
-    "availability": "Available for freelance, remote work, or relocation to Norway.",
-    "norwaypart1": "Norway has always been more than just a place on the map for me. Its stunning landscapes, rich history, and blend of tradition and modernity have captivated me. Being fluent in Norwegian has deepened my connection to the culture, making every experience—from exploring fjords to engaging with its warm communities—more meaningful.",
-    "norwaypart2": "I’m inspired by Norway’s kindness and sustainability and eagerly await the day I can call this extraordinary country my home.",
-    "norwaypart3": "I am excited to expand my professional horizons in Norway and collaborate with Norwegian enterprises. If you have opportunities or insights regarding relocation to Norway, I would be more than happy to",
-    "norwaymail": "explore potential discussions",
-    "skillstitle": "My skills",
-    "skillsdescription": "Explore the software skills I have to bring ideas to life with simplicity and precision.",
-    "frontenddescription": "I create clean, user-friendly websites with React and JavaScript, love customer feedback, and adapt easily to different frameworks.",
-    "backenddescription": "I have extensive experience in Java and Spring, building applications and running tests with JUnit 5 and Mockito while managing CI/CD pipelines.",
-    "toolstitle": "Tools & Platforms",
-    "toolsdescription": "I’m skilled in Git for version control and GitHub for project management and pipelines. I use Postman for API testing and command-line tools for Git and Azure DevOps deployment.",
-    "solutionparagraph": "The combination of aesthetics and performance creates solutions that not only look good, but also work seamlessly. I believe that good design should be intuitive and user-friendly, and I work hard to deliver products that are both beautiful and efficient.",
-    "worktitle": "My work",
-    "workdescription": "Take a look at all the products I've crafted for schoolprojects, internships, side projects and jobs.",
-    "luftandescription": "Luftan is a Swedish company specializing in aroma diffusers and Scandinavian-inspired scents. The project includes a full e-commerce platform where users can browse products, add items to their cart, and place orders. I developed the entire site from scratch, covering both front-end and back-end development.",
-    "candidateportaldescription": "Mysolution is an international company that offers a Salesforce application for recruitment agencies. In my internship for my HBO Bachelor IT Software Development study I had to create an onboarding portal for a customer of Mysolution, so that the employees of said customer could fill in their credentials (personalia, bank account information, privacy statements etc.). I also had to do research on how to handle sensetive userdata according to the EU-law (GDPR) and ask users for permission to store their data.",
-    "huskelistedescription": "HuskeListe is a simple Norwegian to-do app that allows users to add, cross off, and remove tasks from their lists, helping them stay organized.",
-    "smartfinancedescription": "SmartFinance is a web application for Hogeschool Utrecht's 'Bedrijfskunde' students. It helps them practice creating 'jaarrekeningen' (annual financial statements) and provides immediate feedback to prepare for tests and homework.",
-    "kpndescription": "KPN Reisbewegingen is a site for KPN employees to log their travel data, which is then compiled into an Excel report. Managers can view departmental statistics, and a leaderboard encourages reducing CO2 emissions.",
-    "seeproject": "See project"
+    "about": {
+        "country": "Netherlands",
+        "description": "I’m a Full Stack Software Engineer with experience leading teams and a real {norway}! I'm excited about the chance to bring my skills to a Norwegian team, whether that means relocating (which I’d love!) or working remotely. I’d be thrilled to contribute and grow in such an inspiring place.",
+        "anchor": "passion for Norway"
+    },
+    "sidepanel": {
+        "about": "About",
+        "projects": "Projects",
+        "education": "Education",
+        "skills": "Skills",
+        "norway": "Norway"
+    },
+    "projects": {
+        "title": "Projects",
+        "description": "Take a look at all the products I've crafted for schoolprojects, internships, side projects and jobs.",
+        "mysolution": {
+            "text1": "Mysolution provides recruitment and staffing software that automates sourcing, onboarding, placement, and payroll for agencies across Europe, optimizing HR operations from its base in Houten, Netherlands.",
+            "text2": "The candidate onboarding portal, created for Mysolution, is a user-friendly platform for GrowWork customers. It enables candidates to easily submit their information, ensuring a smooth start at GrowWork. Streamlining paperwork and ensuring GDPR compliance, the portal simplifies the hiring process, offering an efficient, transparent experience for candidates and reducing administrative work for GrowWork.",
+            "date": "September 2024 - January 2025",
+            "role1": "Full Stack Developer",
+            "role2": "GDPR researcher"
+        },
+        "luftan": {
+            "text1": "Luftan, a Swedish brand, creates eco-friendly aroma diffusers that enhance spaces with calming scents, prioritizing sustainability, relaxation, and an enriched sensory experience.",
+            "text2": "The Luftan e-commerce platform is a fully integrated SaaS solution that allows customers to easily browse and purchase a wide range of aroma diffusers and scents. With a user-friendly interface, it simplifies the shopping experience, enabling seamless product exploration and secure order placement. Customers can access detailed product descriptions, customer reviews, and personalized recommendations, making it easy to find the perfect scent for their needs.",
+            "date": "August 2024 - Present",
+            "role1": "Full Stack Developer",
+            "role2": "Team leader"
+        },
+        "smartfinance": {
+            "text1": "Hogeschool Utrecht is a leading Dutch university of applied sciences, offering practical education of Bachelor level in business, health, and technology for career readiness.",
+            "text2": "Smart Finance is an innovative application designed for business students to generate annual financial statements for practice and learning. By simulating real-world financial scenarios, the app enables users to deepen their understanding of accounting principles, financial analysis, and reporting standards. This hands-on approach enhances learning outcomes, equipping students with essential skills for their future careers in finance.",
+            "date": "February 2024 - July 2024",
+            "role1": "Scrum master",
+            "role2": "Team leader",
+            "role3": "Full Stack Developer"
+        }
+    },
+    "education": {
+        "title": "Education",
+        "text1": "I've taken a 4-years Bachelor in Full Stack Software Development at the Hogeschool Utrecht. I learned about Object Oriented Programming, Software Architecture, Security, Accessibility & discussing needs and wishes with customers I've worked for.",
+        "text2": "Though having studied Back end practises for most of my time, I've decided in my final years to take a specialization in Front end to have a very concrete spectre in Full Stack Development."
+    },
+    "skills": {
+        "skillstitle": "Skills",
+        "language": {
+            "languages": "Languages",
+            "description": "Born and raised with Dutch with English learned at school. Norwegian learned through self-study, friends, games/tv-shows/books/podcasts and vacations.",
+            "dutch": "Dutch · Native (C1)",
+            "norwegian": "Norwegian · Work proficiency (B2)",
+            "english": "English · Bilingual (C1)"
+        },
+        "frontend": {
+            "description": "Specialised in user-friendly, good-looking and accessable websites."
+        },
+        "backend": {
+            "description": "Very skilled in building complex back-end systems incl. databases, especially in Java / likewise languages."
+        },
+        "security": {
+            "description": "Deep knowledge about different security aspects - from cybersecurity threats to building own Security Configurations."
+        },
+        "testing": {
+            "description": "Thaught to test applications throughoug from top to bottom {pyramid} to ensure high code quality."
+        },
+        "tools": {
+            "title": "Tools",
+            "description": "Tools I work with / know my way around with."
+        }
+    },
+    "norway": {
+        "1": "Norway has always been more than just a place on the map for me. Its stunning landscapes, rich history, and blend of tradition and modernity have captivated me. Being fluent in Norwegian has deepened my connection to the culture, making every experience—from exploring fjords to engaging with its warm communities—more meaningful.",
+        "2": "I’m inspired by Norway’s kindness and natural beauty and eagerly await the day I can call this extraordinary country my home.",
+        "3": "*I am very excited to expand my professional horizons in Norway and collaborate with Norwegian enterprises. If you have opportunities or insights regarding relocation to Norway, {mail}.",
+        "mail": "I would be more than happy to dicsuss potiential opportunities."
+    }
 }

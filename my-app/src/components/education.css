@@ -1,0 +1,87 @@
+.education-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.education-content {
+    width: 100%;
+}
+
+.education-info-wrapper {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.education-info-wrapper .project-date {
+    width: 40%;
+    text-align: right;
+    margin-left: 50px;
+    margin-right: 40px;
+    font-size: 1rem;
+    margin-top: 27px;
+    color: rgba(34, 34, 34, .5);
+}
+
+.education-university {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    color: rgba(34, 34, 34, .9);
+    font-size: 1.6rem;
+    letter-spacing: .001cm;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.education-name {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: .001cm;
+    text-transform: uppercase;
+    color: rgba(34, 34, 34, .5);
+}
+
+.education-info p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(000, 000, 000, .5);
+    margin-bottom: 5px;
+}
+
+.vanlig {
+    margin-left: 20rem; 
+    width: 50%;
+}
+
+@media screen and (max-width: 1920px) {
+    .education-info-wrapper .project-date {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .education-container {
+        height: 80vh;
+    }
+
+    .vanlig {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .education-content .education-info-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education-info-wrapper .project-date {
+        width: 100%;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
