@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.67480877.css",
-    "main.js": "/static/js/main.e0c7041c.js",
+    "main.js": "/static/js/main.c186d8a0.js",
     "static/media/jeg.png": "/static/media/jeg.193c27b0ca59cc8e5b45.png",
     "static/media/gb.png": "/static/media/gb.f02a59f2aa9264526cad.png",
     "static/media/norsk-bevis.png": "/static/media/norsk-bevis.035c668c3ad663e8bd46.png",
     "index.html": "/index.html",
     "main.67480877.css.map": "/static/css/main.67480877.css.map",
-    "main.e0c7041c.js.map": "/static/js/main.e0c7041c.js.map"
+    "main.c186d8a0.js.map": "/static/js/main.c186d8a0.js.map"
   },
   "entrypoints": [
     "static/css/main.67480877.css",
-    "static/js/main.e0c7041c.js"
+    "static/js/main.c186d8a0.js"
   ]
 }
