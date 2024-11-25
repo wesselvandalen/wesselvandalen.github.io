@@ -15,7 +15,7 @@ export default function About() {
 
     const handleResumeButton = () => {
         const currentLanguage = localStorage.getItem('lang');
-        const url = 'https://github.com/wesselvandalen/wesselvandalen.github.io/cv.pdf'; 
+        const url = 'https://github.com/wesselvandalen/wesselvandalen.github.io/blob/main/cv.pdf'; 
 
         // Different CV's per language
 
