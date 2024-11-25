@@ -88,6 +88,29 @@
     color: rgba(34, 34, 34, 0.6);
 }
 
+.cv-button {
+    color: rgba(0,0,0,0.7);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    height: 40px;
+    width: 200px;
+    font-size: 15px;
+    border: rgba(0,0,0,0.2) solid 1.5px;
+    font-family: "Hanken Grotesk", 'sans-serif';
+}
+
+.cv-button:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.cv-button svg {
+    width: 18px;
+    height: 18px;
+    margin: 0 5px -3px 0;
+}
+
 @media screen and (max-width: 1920px) {
     .about-content {
         height: 80%;

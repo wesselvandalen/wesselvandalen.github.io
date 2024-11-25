@@ -6,7 +6,8 @@
         "skills": "Ferdigheter"
     },
     "about": {
-        "description": "Jeg er en {age} år gammel fyr fra Houten, Nederland. Jeg er i stand til å jobbe med både server / back-end utvikling og web / front-end utvikling."
+        "description": "Jeg er en {age} år gammel fyr fra Houten, Nederland. Jeg er i stand til å jobbe med både server / back-end utvikling og web / front-end utvikling.",
+        "cv": "Se på min CV"
     },
     "profile": {
         "1": "Mitt navn er Wessel van Dalen, og jeg er en Full Stack Software Engineer fra Nederland. Jeg bygger nettsider, servere og databaser og diskuterer behov og ønsker med kundene. Jeg har studert HBO ICT Software Development (4-årig bachelorgrad) ved Hogeschool Utrecht i Utrecht, hvor jeg utviklet et høyt nivå av kompetanse innen programvareutvikling.",
