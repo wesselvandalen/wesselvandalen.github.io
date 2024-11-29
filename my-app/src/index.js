@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 import { initReactI18next } from 'react-i18next';
@@ -18,6 +19,7 @@ function getLanguage() {
     return lang;
   }
 
+  // English is the standard app language
   localStorage.setItem('lang', 'en');
   return 'en';
 }
@@ -26,15 +28,15 @@ i18next.use(initReactI18next).init({
   interpolation: {escapeValue: true},
   lng: getLanguage(),
   resources: {
-    en: {
-      global: global_en,
-    }, 
     no: {
       global: global_no,
     },
     nl: {
       global: global_nl,
     },
+    en: {
+      global: global_en,
+    }
   }
 });
 

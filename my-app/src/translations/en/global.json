@@ -1,58 +1,34 @@
 {
     "header": {
-        "profile": "Profile",
-        "work": "Work experience",
+        "home": "Home",
+        "about": "About",
+        "stack": "Stack",
         "education": "Education",
-        "skills": "Skills"
+        "work": "Work"
+    },
+    "home": {
+        "role": "Full Stack Software Engineer",
+        "available": "available for work in Norway",
+        "contactme": "Contact me",
+        "or": "or",
+        "copyemail": "Copy email",
+        "location": "Houten, The Netherlands"
     },
     "about": {
-        "description": "I'm a {age}-year-old guy from Houten, the Netherlands. I'm capable of both server / back-end development and web / front-end development.",
-        "cv": "View my resume"
+        "1": "I'm Wessel, a Full Stack Software Engineer passionate about turning ideas into elegant, functional, and impactful digital experiences.",
+        "2": "With {experience} years of experience in Software Development, I take pride in being a positive addition to the team, both with a good spirit and high quality code.",
+        "3": "I'm a very big fan of Norway (and Norwegian), and I would love to explore all possibilities to work in Norway - both remote and (preferably) at the office."
     },
-    "profile": {
-        "1": "My name is Wessel van Dalen and I'm a Full Stack Software Engineer from the Netherlands. I build websites, servers & databases and discuss needs and wishes with customers. I have studied HBO ICT Software Development (4-years Bachelor degree) at the Hogeschool Utrecht in Utrecht, where I developed a high level of expertise in software engineering.",
-        "2": "I'm interested both in working in the Netherlands and Norway, since I speak both Dutch and Norwegian fluently. I am capable of working in a team both as a developer and a Scrum master / team leader, having been the team lead in all group projects during my study (and getting good feedback about it).",
-        "3": "In my freetime I like to take walks in nature with my dog Rowdy, like to work out at the local gym, play games I like and hang out with friends and my girlfriend."
-
+    "stack": {
+        "tools": "Tools"
+    },
+    "education": {
+        "date": "September 2022 - July 2026"
     },
     "work": {
         "mysolution": {
-            "text": "The candidate onboarding portal, created for Mysolution, is a user-friendly platform for GrowWork customers. It enables candidates to easily submit their information, ensuring a smooth start at GrowWork. Streamlining paperwork and ensuring GDPR compliance, the portal simplifies the hiring process, offering an efficient, transparent experience for candidates and reducing administrative work for GrowWork.",
+            "role": "React TS + Java Spring developer",
             "date": "September 2024 - January 2025"
-        },
-        "hu": {
-            "text": "Smart Finance is an innovative application designed for business students to generate annual financial statements for practice and learning. By simulating real-world financial scenarios, the app enables users to deepen their understanding of accounting principles, financial analysis, and reporting standards. This hands-on approach enhances learning outcomes, equipping students with essential skills for their future careers in finance.",
-            "date": "February 2024 - July 2024"
-        }
-    },
-    "education": {
-        "hu": {
-            "date": "August 2022 - July 2026",
-            "li1": "4-year Bachelor's degree",
-            "li2": "Specialization in Front end",
-            "li3": "2 internships & 1 minor"
-        }
-    },
-    "skills": {
-        "languages": {
-            "title": "Languages",
-            "description": "Born and raised with Dutch with English learned at school. Norwegian learned through self-study, friends, games/tv-shows/books/podcasts and vacations.",
-            "dutch": "Dutch - Native (C1)",
-            "english": "English - Bilingual (C1)",
-            "norwegian": "Norwegian - Work profiency (B2)"
-        },
-        "frontend": {
-            "description": "Specialised in user-friendly, good-looking and accessable websites."
-        },
-        "backend": {
-            "description": "Very skilled in building complex back-end systems incl. databases, especially in Java / likewise languages."
-        },
-        "security": {
-            "description": "Deep knowledge about different security aspects - from cybersecurity threats to building own Security Configurations."
-        },
-        "tools": {
-            "title": "Tools",
-            "description": "Tools I work with / know my way around with."
         }
     }
 }

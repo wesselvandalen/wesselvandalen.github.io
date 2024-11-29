@@ -1,65 +1,44 @@
-.side-panel-container {
-    text-align: center;
+.panel-container {
+    flex: none;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
+    width: 65px;
+    will-change: transform;
+    z-index: 1;
+    border-right: 1.5px solid rgba(52, 52, 52, .9);
+}
+
+.panel-nav {
+    background-color: rgba(35, 35, 35);
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.panel-content {
     display: flex;
+    height: 100vh;
     flex-direction: column;
-    width: 17rem;
-    height: 100vh;
-    background-color: var(--theme-color);
-    transition: all 0.3s ease;
-}
-
-.side-panel-name {
-    display: none;
-}
-
-.navbar-toggler {
-    display: none;
-}
-
-.navbar-toggler-icon {
-    display: none;
-}
-
-.side-panel-content {
-    height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    gap: 15px;
 }
 
-.personal-picture {
-    max-width: 9rem;
-    max-height: 9rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
-    margin-bottom: 0.5rem;
-    border-radius: 50%;
+.panel-content a svg {
+    width: 25px;
+    height: 25px;
+    stroke: white;
+    opacity: 0.6;
 }
 
-.panel-chapters {
-    display: flex;
-    flex-direction: column;
+.panel-content a:hover svg {
+    opacity: 1;
 }
 
-.panel-chapters a {
-    font-weight: 400;
-    font-size: 1.1rem;
-    letter-spacing: 0.05rem;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    margin: 10px 0;
-}
-
-.panel-chapters a:hover {
-    color: rgba(0, 0, 0, 0.9);
-}
-
-@media screen and (max-width: 1080px) {
-    .side-panel-container {
+@media screen and (max-width: 980px) {
+    .panel-container {
         display: none;
     }
 }
