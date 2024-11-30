@@ -52,11 +52,11 @@
 }
 
 .stack-grid-block {
-    background-color: #282828;
+    background-color: #fcfcfc; /* 282828 */
     border-radius: 12px;
     padding: 12px;
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,12 +65,12 @@
 
 .stack-grid-block:hover {
     cursor: pointer;
-    background-color: #383838;
+    background-color: #f3f3f3; /* 383838 */
 }
 
 .stack-grid-block img {
-    width: 30%;
-    height: 30%;
+    width: 25%;
+    height: 25%;
 }
 
 .stack-grid-block p {
@@ -82,4 +82,20 @@
     color: #707070;
     margin: 10px 0 0 0;
     text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+    .stack-container {
+        width: 99%;
+    }
+
+    .stack-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px 0;
+    }
+
+    .stack-grid-block {
+        height: 80px;
+        width: 80px;
+    }
 }

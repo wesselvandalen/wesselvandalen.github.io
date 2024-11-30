@@ -7,11 +7,11 @@
     width: 65px;
     will-change: transform;
     z-index: 1;
-    border-right: 1.5px solid rgba(52, 52, 52, .9);
+    border-right: 1.5px solid rgba(0, 0, 0, 0.1);
 }
 
 .panel-nav {
-    background-color: rgba(35, 35, 35);
+    background-color: #fff;
     height: 100%;
     width: 100%;
     opacity: 1;
@@ -29,7 +29,7 @@
 .panel-content a svg {
     width: 25px;
     height: 25px;
-    stroke: white;
+    stroke: black;
     opacity: 0.6;
 }
 

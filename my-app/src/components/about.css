@@ -17,7 +17,7 @@
 .section-title {
     width: 10%;
     text-align: right;
-    color: rgba(237, 237, 237, .6);
+    color: rgba(0, 0, 0, .5);
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -30,7 +30,7 @@
 }
 
 .about-texts p {
-    color: rgba(237,237,237, .9);
+    color: rgba(0, 0, 0, .7);
     font-style: normal;
     font-size: 14px;
     line-height: 1.2em;

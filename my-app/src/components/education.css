@@ -41,7 +41,7 @@
 }
 
 .education-block-contents {
-    color: #707070;
+    color: #292929; /* #707070 */
     text-decoration: none;
     width: 100%;
     padding: 0 12px;
@@ -55,13 +55,14 @@
 
 .education-block-contents:hover {
     cursor: pointer;
-    background-color: #383838;
+    background-color: #f3f3f3; /* #383838 */
 }
 
 .education-block-date {
     margin-top: 12px;
     color: #565656;
     width: 40%;
+    font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -96,7 +97,7 @@
     letter-spacing: 0em;
     line-height: 1.5em;
     text-align: start;
-    color: white;
+    color: black;
     width: 100%;
 }
 
@@ -126,24 +127,39 @@
     letter-spacing: 0em;
     line-height: 1.5em;
     text-align: start;
-    color: rgba(237,237,237, .9);
+    color: rgba(0,0,0, .7);
     width: 100%;
 }
 
 @media screen and (max-width: 980px) {
     .education-content {
-        width: 90%;
+        width: 93%;
+        margin-left: 1px;
     }
 
     .education-block-contents {
         width: 100%;
     }
 
+    .education-list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .education-block-info {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
     .education-block-description {
         width: 100%;
     }
 
     .education-block-date {
-        width: 30%;
+        width: 40%;
+        margin-top: 15px;
     }
 }

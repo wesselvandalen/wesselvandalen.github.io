@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Inter", 'sans-serif';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-    color: #fff;
-    background-color: #232323;
+    background-color: #fff; /* #232323 */
 }
 
 .app-container {
@@ -40,5 +43,4 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
-    
 }

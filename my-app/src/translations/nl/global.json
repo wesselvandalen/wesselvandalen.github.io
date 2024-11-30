@@ -1,15 +1,13 @@
 {
-    "header": {
+    "chapters": {
         "home": "Home",
-        "about": "Over",
-        "stack": "Stack",
+        "about": "Over mij",
         "education": "Opleiding",
-        "work": "Werk",
-        "norway": "Noorwegen"
+        "work": "Werk"
     },
     "home": {
-        "role": "Full Stack Software Engineer",
-        "available": "Beschikbaar voor werk in Noorwegen",
+        "role": "Full Stack Software Developer",
+        "available": "Op zoek naar nieuwe kansen",
         "contactme": "Neem contact op",
         "or": "of",
         "copyemail": "Kopieer e-mail",
@@ -17,26 +15,14 @@
         "location": "Houten, Nederland"
     },
     "about": {
-        "1": "Ik ben Wessel, een Full Stack Software Engineer die gepassioneerd is over het omzetten van ideeën in elegante, functionele en impactvolle digitale ervaringen.",
-        "2": "Met {experience} jaar ervaring in softwareontwikkeling ben ik trots op mijn positieve bijdrage aan het team, zowel met een goede houding als met kwalitatieve code.",
-        "3": "Ik ben een grote fan van Noorwegen (en het Noors), en ik wil graag alle mogelijkheden verkennen om in Noorwegen te werken - zowel op afstand als (bij voorkeur) op kantoor."
+        "1": "Ik ben Wessel, een Full Stack Software Developer die gepassioneerd is over het omzetten van ideeën in elegante, functionele en impactvolle digitale ervaringen.",
+        "2": "Met {experience} jaar ervaring in softwareontwikkeling ben ik een positieve aanvulling op elk team, zowel met een goede sfeer als met hoogwaardige code.",
+        "3": "Ik ben een grote fan van Noorwegen (en Noors), en ik zou graag alle mogelijkheden willen verkennen om in Noorwegen te werken - zowel op afstand als (bij voorkeur) op kantoor."
+    },
+    "education": {
+        "description": "Afgeronde 4-jarige bacheloropleiding met een focus op softwareontwikkeling, inclusief webontwikkeling, databases en systeemontwerp/-architectuur. Gespecialiseerd in webontwikkeling en ontwerp."
     },
     "stack": {
         "tools": "Tools"
-    },
-    "education": {
-        "description": "Een vierjarige bacheloropleiding afgerond met een focus op softwareontwikkeling, waaronder webontwikkeling, databases en systeemontwerp/architectuur. Gespecialiseerd in webontwikkeling en -ontwerp."
-    },
-    "work": {
-        "mysolution": {
-            "role": "React TS + Java Spring ontwikkelaar",
-            "date": "September 2024 - Januari 2025"
-        }
-    },
-    "norway": {
-        "description": "Het land waar ik echt thuishoor.",
-        "1": "Noorwegen heeft altijd een speciale plaats in mijn hart gehad. De afgelopen {learningYears} jaar heb ik Noors geleerd, en met elk nieuw woord voel ik me nog meer verbonden met het land. De taal is niet alleen een communicatiemiddel, maar een deur naar het begrijpen van de rijke cultuur en tradities die Noorwegen zo uniek maken. Ik ben gelukkig genoeg geweest om het te bezoeken, en een van mijn meest gedenkwaardige ervaringen was het wandelen naar Preikestolen – toen ik bovenop stond en uitkeek over de fjorden, voelde ik een diep gevoel van thuishoren dat ik niet helemaal kan beschrijven.",
-        "2": "De cultuur in Noorwegen is iets dat echt met mij resoneert. Ik hou van de balans tussen het moderne leven en het diepe respect voor de natuur, wat zich weerspiegelt in de kalme en bedachtzame manier van leven van de mensen. Het eten is ook iets waar ik van ben gaan houden – of het nu gaat om het genieten van een traditionele Noorse maaltijd of de eenvoud van een goed stuk brood met brunost, de smaken voelen altijd troostend. Elke keer als ik een stukje Noorse cultuur ervaar, val ik steeds meer voor het land.",
-        "3": "Mijn droom is om op een dag naar Noorwegen te verhuizen en het mijn thuis te maken. Het idee om te wonen op een plek waar ik zowel professioneel als persoonlijk kan blijven groeien, omringd door zulke adembenemende landschappen en rijke geschiedenis, is iets waar ik echt gepassioneerd over ben. Ik werk hard om deze droom werkelijkheid te maken en hoop dat ik op een dag snel Noorwegen mijn thuis kan noemen."
     }
 }

@@ -1,41 +1,28 @@
 {
-    "header": {
+    "chapters": {
         "home": "Hjem",
-        "about": "Om",
-        "stack": "Stack",
+        "about": "Om meg",
         "education": "Utdanning",
-        "work": "Jobb",
-        "norway": "Norge"
+        "work": "Arbeid"
     },
     "home": {
-        "role": "Full Stack Software Utvikler",
-        "available": "Tilgjengelig for jobb i Norge",
-        "contactme": "Ta kontakt",
+        "role": "Full Stack Software Developer",
+        "available": "Åpen for nye muligheter",
+        "contactme": "Kontakt meg",
         "or": "eller",
         "copyemail": "Kopier e-post",
+        "copiedmail": "Kopiert",
         "location": "Houten, Nederland"
     },
     "about": {
-        "1": "Jeg heter Wessel, en Full Stack Software Ingeniør som brenner for å gjøre ideer om til elegante, funksjonelle og virkningsfulle digitale opplevelser.",
-        "2": "Med {experience} års erfaring innen Software Development, setter jeg en ære i å være et positivt tilskudd til teamet, både med god ånd og høy kvalitetskode.",
-        "3": "Jeg er en veldig stor fan av Norge (og norsk), og jeg vil gjerne utforske alle muligheter for å jobbe i Norge – både eksternt og (helst) på kontoret."
+        "1": "Jeg heter Wessel, og jeg er en Full Stack Software Developer som brenner for å gjøre ideer om til elegante, funksjonelle og innflytelsesrike digitale opplevelser.",
+        "2": "Med {experience} år erfaring innen programvareutvikling er jeg en positiv tilvekst til teamet, både med godt humør og kode av høy kvalitet.",
+        "3": "Jeg er en stor fan av Norge (og norsk), og jeg ønsker å utforske alle muligheter for å jobbe i Norge – både eksternt og (helst) på kontoret."
+    },
+    "education": {
+        "description": "Fullført en 4-årig bachelorgrad med fokus på programvareutvikling, inkludert webutvikling, databaser og systemdesign/-arkitektur. Spesialisering innen webutvikling og design."
     },
     "stack": {
         "tools": "Verktøy"
-    },
-    "education": {
-        "description": "Fullført en 4-årig bachelorgrad med fokus på programvareutvikling, inkludert webutvikling, databaser og systemdesign/arkitektur. Spesialisert i webutvikling og design."
-    },
-    "work": {
-        "mysolution": {
-            "role": "React TS + Java Spring utvikler",
-            "date": "September 2024 - Januar 2025"
-        }
-    },
-    "norway": {
-        "description": "Landet hvor jeg virkelig hører hjemme.",
-        "1": "Norge har alltid hatt en spesiell plass i mitt hjerte. I løpet av de siste {learningYears} årene har jeg lært norsk, og med hvert nytt ord føler jeg meg enda mer knyttet til landet. Språket er ikke bare et kommunikasjonsverktøy, men en dør til å forstå den rike kulturen og tradisjonene som gjør Norge så unikt. Jeg har vært så heldig å besøke, og en av mine mest minnerike opplevelser var å gå opp til Preikestolen – å stå på toppen og se utover fjordene, følte jeg en dyp følelse av tilhørighet som jeg ikke helt kan beskrive.",
-        "2": "Kulturen i Norge er noe som virkelig resonerer med meg. Jeg elsker balansen mellom det moderne livet og den dype respekten for naturen, noe som reflekteres i folkets rolige og gjennomtenkte måte å leve på. Maten er også noe jeg har kommet til å elske – enten det er å nyte en tradisjonell norsk middag eller enkelheten i et godt stykke brød med brunost, har smakene alltid føltes trøstende. Hver gang jeg opplever et stykke norsk kultur, finner jeg meg selv mer og mer forelsket i landet.",
-        "3": "Min drøm er å en dag flytte til Norge og gjøre det til mitt hjem. Tanken på å bo i et sted hvor jeg kan fortsette å vokse både profesjonelt og personlig, omgitt av slike fantastiske landskap og rik historie, er noe jeg virkelig brenner for. Jeg jobber hardt for å gjøre denne drømmen til virkelighet, og håper at jeg en dag snart vil kunne kalle Norge mitt hjem."
     }
 }
