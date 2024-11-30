@@ -129,3 +129,21 @@
     color: rgba(237,237,237, .9);
     width: 100%;
 }
+
+@media screen and (max-width: 980px) {
+    .education-content {
+        width: 90%;
+    }
+
+    .education-block-contents {
+        width: 100%;
+    }
+
+    .education-block-description {
+        width: 100%;
+    }
+
+    .education-block-date {
+        width: 30%;
+    }
+}

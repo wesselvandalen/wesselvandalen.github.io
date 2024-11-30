@@ -11,7 +11,6 @@ export default function MainPage() {
                 <About />
                 <Education />
                 <Work />
-                {/* <Stack /> */}
             </div>
         </>
     );

@@ -98,3 +98,19 @@
     text-align: start;
     margin-top: -1px;
 }
+
+@media screen and (max-width: 980px) {
+    
+
+    .work-block-right {
+        width: 60%;
+    }
+
+    .work-date {
+        width: 20%;
+    }
+
+    .work-stack {
+        width: 100%;
+    }
+}

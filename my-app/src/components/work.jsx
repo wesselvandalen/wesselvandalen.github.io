@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import './work.css';
 import mysolutionlogo from '../assets/graphics/mysolution.png';
 import nav from '../assets/graphics/image.png';
+import netflix from '../assets/graphics/imagecopy.png';
 
 export default function Work() {
     const [translation] = useTranslation("global");
@@ -14,7 +15,7 @@ export default function Work() {
 
                 <div className="work-stack">
 
-                    <a className="work-block" href='#'>
+                    <div className="work-block">
                         <div className="work-block-right">
                             <img src={mysolutionlogo} alt="Mysolution logo" />
                             <div className="work-block-info">
@@ -23,18 +24,7 @@ export default function Work() {
                             </div>
                         </div>
                         <div className='work-date'>2024 - 2025</div>
-                    </a>
-                    
-                    <a className="work-block" href='#'>
-                        <div className="work-block-right">
-                            <img src={nav} alt="Mysolution logo" />
-                            <div className="work-block-info">
-                                <h2>NAV</h2>
-                                <p>Angular JS developer (senior)</p>
-                            </div>
-                        </div>
-                        <div className='work-date'>2026 - 2028</div>
-                    </a>
+                    </div>
                     
                 </div>
 

@@ -44,4 +44,14 @@
     .section-title {
         display: none;
     }
+
+    .about-texts {
+        width: 95%;
+    }
+
+    .about-content {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+    }
 }

@@ -12,28 +12,24 @@ export default function SidePanel() {
         };
     }, []);
 
-    const handlePath = () => {
+    const handlePath = (hash) => {
         if (window.location.pathname !== '/') {
-            window.location.pathname = '/'; 
+            window.location.pathname = `/`; 
         }
+        window.location.hash = `#${hash}`;
     }
 
     const handleKeyPress = (event) => {
         if (event.key === '1') {
-            handlePath();
-            window.location.hash = '#hash';
+            handlePath('home');
         } else if (event.key === '2') {
-            handlePath();
-            window.location.hash = '#about';
+            handlePath('about');
         } else if (event.key === '3') {
-            handlePath();
-            window.location.hash = '#education';
+            handlePath('education');
         } else if (event.key === '4') {
-            handlePath();
-            window.location.hash = '#stack';
+            handlePath('work');
         } else if (event.key === '5') {
-            handlePath();
-            window.location.hash = '#work';
+            handlePath('stack');
         } else if (event.key === '6') {
             window.location.href = '/norway';
         }
@@ -71,7 +67,7 @@ export default function SidePanel() {
                         </svg>
                     </a>
                     <a href="/norway">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                         </svg>
                     </a>
