@@ -8,7 +8,7 @@ export default function Education() {
         <div className="education-container" id='education'>
             <div className="education-content">
 
-                <p className='section-title'>{translation('header.education')}</p>
+                <p className='section-title'>{translation('chapters.education')}</p>
 
                 <div className="education-list">
 

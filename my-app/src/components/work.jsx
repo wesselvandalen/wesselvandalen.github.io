@@ -11,7 +11,7 @@ export default function Work() {
         <div className="work-container" id='work'>
             <div className="work-content">
                 
-                <p className='section-title'>{translation('header.work')}</p>
+                <p className='section-title'>{translation('chapters.work')}</p>
 
                 <div className="work-stack">
 

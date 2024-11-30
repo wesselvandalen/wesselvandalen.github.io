@@ -1,39 +1,33 @@
 import { useEffect } from 'react';
 import './side-panel.css';
-import norway from '../assets/icons/norway.png';
 
 export default function SidePanel() {
 
     useEffect(() => {
+        const handlePath = (hash) => {
+            window.location.hash = `#${hash}`;
+        }
+    
+        const handleKeyPress = (event) => {
+            if (event.key === '1') {
+                handlePath('home');
+            } else if (event.key === '2') {
+                handlePath('about');
+            } else if (event.key === '3') {
+                handlePath('education');
+            } else if (event.key === '4') {
+                handlePath('work');
+            } else if (event.key === '5') {
+                handlePath('stack');
+            }
+        };
+
         window.addEventListener('keydown', handleKeyPress);
 
         return () => {
             window.removeEventListener('keydown', handleKeyPress);
         };
     }, []);
-
-    const handlePath = (hash) => {
-        if (window.location.pathname !== '/') {
-            window.location.pathname = `/`; 
-        }
-        window.location.hash = `#${hash}`;
-    }
-
-    const handleKeyPress = (event) => {
-        if (event.key === '1') {
-            handlePath('home');
-        } else if (event.key === '2') {
-            handlePath('about');
-        } else if (event.key === '3') {
-            handlePath('education');
-        } else if (event.key === '4') {
-            handlePath('work');
-        } else if (event.key === '5') {
-            handlePath('stack');
-        } else if (event.key === '6') {
-            window.location.href = '/norway';
-        }
-    };
 
     return (
         <div className="panel-container">
@@ -64,11 +58,6 @@ export default function SidePanel() {
                     <a href='#stack'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" />
-                        </svg>
-                    </a>
-                    <a href="/norway">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="size-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                         </svg>
                     </a>
                 </div>
