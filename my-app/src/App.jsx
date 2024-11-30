@@ -1,40 +1,45 @@
 import './App.css';
-import Home from './components/home';
-import About from './components/about';
 import SidePanel from './components/side-panel';
-import Education from './components/education';
+import MainPage from './pages/main-page';
 import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NorwayPage from './pages/norway-page';
 
 export default function App() {
 
-  useEffect(() => {
-    const anchors = document.querySelectorAll('a[href^="#"]');
-    anchors.forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
+  // useEffect(() => {
+  //   const anchors = document.querySelectorAll('a[href^="#"]');
+  //   anchors.forEach(anchor => {
+  //     anchor.addEventListener('click', function (e) {
+  //       e.preventDefault();
+  //       const targetId = this.getAttribute('href');
+  //       const targetElement = document.querySelector(targetId);
+  //       if (targetElement) {
+  //         targetElement.scrollIntoView({ behavior: 'smooth' });
+  //       }
+  //     });
+  //   });
 
-    return () => {
-      anchors.forEach(anchor => {
-        anchor.removeEventListener('click', () => {});
-      });
-    };
-  }, []);
+  //   return () => {
+  //     anchors.forEach(anchor => {
+  //       anchor.removeEventListener('click', () => { });
+  //     });
+  //   };
+  // }, []);
 
   return (
-    <div className="app-container">
-      <div className="app-content">
-        <SidePanel/>
-        <Home/>
-        <About/>
-        <Education/>
+    <Router>
+      <div className="app-container">
+        <div className="app-content">
+          <SidePanel />
+          <div className="app-innhold">
+            <Routes>
+              <Route path="/" element={<MainPage />} />
+              <Route path='/norway' element={<NorwayPage/>} />
+            </Routes>
+          </div>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }

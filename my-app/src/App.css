@@ -16,6 +16,7 @@ body {
     flex-direction: row;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .app-content {
@@ -28,18 +29,16 @@ body {
     width: 100%;
 }
 
-.section-container {
-    width: 50%;
+.app-innhold {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.section-content {
-    width: 100%;
+.main-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
 }

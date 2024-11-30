@@ -37,6 +37,16 @@
     opacity: 1;
 }
 
+.panel-content a img {
+    width: 25px;
+    height: 25px;
+    opacity: .6;
+}
+
+.panel-content a:hover img {
+    opacity: 1;
+}
+
 @media screen and (max-width: 980px) {
     .panel-container {
         display: none;

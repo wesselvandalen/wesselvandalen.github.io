@@ -1,0 +1,131 @@
+.education-container {
+    width: 100%;
+    padding-bottom: 60px;
+    max-width: 540px;
+}
+
+.education-content {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.education-block {
+    border-radius: 12px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    height: min-content;
+    justify-content: flex-start;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.education-inner-block {
+    flex: none;
+    height: auto;
+    min-width: 200px;
+    position: relative;
+    width: 100%;
+}
+
+.education-block-contents {
+    color: #707070;
+    text-decoration: none;
+    width: 100%;
+    padding: 0 12px;
+    border-radius: 12px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-block-contents:hover {
+    cursor: pointer;
+    background-color: #383838;
+}
+
+.education-block-date {
+    margin-top: 12px;
+    color: #565656;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.education-block-info {
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+    height: min-content;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.education-block-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.education-block-name {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 1.5em;
+    text-align: start;
+    color: white;
+    width: 100%;
+}
+
+.education-block-title {
+    width: 100%;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-shrink: 0;
+    color: #707070;
+    transform: none;
+    opacity: 1;
+    margin: -15px 0 0 0;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 1.5em;
+    text-align: start;
+}
+
+.education-block-description {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 1.5em;
+    text-align: start;
+    color: rgba(237,237,237, .9);
+    width: 100%;
+}

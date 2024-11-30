@@ -4,31 +4,39 @@
         "about": "About",
         "stack": "Stack",
         "education": "Education",
-        "work": "Work"
+        "work": "Work",
+        "norway": "Norway"
     },
     "home": {
         "role": "Full Stack Software Engineer",
-        "available": "available for work in Norway",
+        "available": "Looking for new opportunities",
         "contactme": "Contact me",
         "or": "or",
         "copyemail": "Copy email",
+        "copiedmail": "Copied",
         "location": "Houten, The Netherlands"
     },
     "about": {
         "1": "I'm Wessel, a Full Stack Software Engineer passionate about turning ideas into elegant, functional, and impactful digital experiences.",
-        "2": "With {experience} years of experience in Software Development, I take pride in being a positive addition to the team, both with a good spirit and high quality code.",
+        "2": "With {experience} year(s) of experience in Software Development, I take pride in being a positive addition to the team, both with a good spirit and high quality code.",
         "3": "I'm a very big fan of Norway (and Norwegian), and I would love to explore all possibilities to work in Norway - both remote and (preferably) at the office."
     },
     "stack": {
         "tools": "Tools"
     },
     "education": {
-        "date": "September 2022 - July 2026"
+        "description": "Completed a 4-year bachelor's degree with a focus on software development, including web development, databases and system design/architecture. Specialized in web development and design."
     },
     "work": {
         "mysolution": {
             "role": "React TS + Java Spring developer",
             "date": "September 2024 - January 2025"
         }
+    },
+    "norway": {
+        "description": "The country where I truly belong.",
+        "1": "Norway has always held a special place in my heart. Over the past {learningYears} years, I've been learning Norwegian, and with every new word, I feel even more connected to the country. The language is not just a tool for communication but a doorway to understanding the rich culture and traditions that make Norway so unique. I’ve been fortunate enough to visit, and one of my most memorable experiences was hiking up to Preikestolen—standing at the top, looking out over the fjords, I felt a deep sense of belonging that I can’t quite describe.",
+        "2": "The culture in Norway is something that truly resonates with me. I love the balance between modern life and deep respect for nature, which is reflected in the people’s calm and thoughtful way of living. The food, too, is something I’ve come to adore—whether it’s enjoying a traditional norsk middag or the simplicity of a good piece of bread with some brunost, the flavors have always felt comforting. Every time I experience a piece of Norwegian culture, I find myself falling even more in love with the country.",
+        "3": "My dream is to one day move to Norway and make it my home. The idea of living in a place where I can continue to grow professionally and personally, surrounded by such breathtaking landscapes and rich history, is something I’m truly passionate about. I’m working hard towards making this dream a reality and hope that someday soon, I’ll be able to call Norway my home."
     }
 }

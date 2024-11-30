@@ -9,12 +9,14 @@ export default function About() {
         let month_diff = Date.now() - dob.getTime();
         let age_dt = new Date(month_diff);
         let year = age_dt.getUTCFullYear();
-        return Math.abs(year - 1970);
+        const years = Math.abs(year - 1970);
+
+        return years < 1 ? 1 : years;
     }
 
     return (
-        <div className="section-container" id='about'>
-            <div className="section-content">
+        <div className="about-container" id='about'>
+            <div className="about-content">
                 <p className='section-title'>{translation('header.about')}</p>
 
                 <div className="about-texts">
