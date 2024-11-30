@@ -6,7 +6,19 @@
     margin-right: -60px;
 }
 
+@keyframes moveUpFadeOut {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
 .name-title-image {
+    animation: moveUpFadeOut 1s ease-in forwards;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,6 +64,7 @@
     letter-spacing: 0.6px;
     text-align: center;
     text-transform: uppercase;
+    animation: moveUpFadeOut .5s ease-in forwards;
 }
 
 .available {
@@ -59,6 +72,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    animation: moveUpFadeOut .9s ease-in forwards;
 }
 
 .dot-container {
@@ -118,6 +132,7 @@
 /* Socials */
 
 .socials-container {
+    animation: moveUpFadeOut .7s ease-in forwards;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -136,6 +151,7 @@
 /* Mail buttons */
 
 .mail-buttons {
+    animation: moveUpFadeOut .5s ease-in forwards;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -209,10 +225,10 @@
 /* LanguageDropdown */
 
 .dropdown-content button {
-    border: none;
     font-family: "Inter", 'sans-serif';
+    border-radius: 5px;
     color: rgba(0, 0, 0, 0.7);
-    background: color-mix(in srgb, #f0f0f0 5%, transparent);
+    background-color: #f7f7f7;
     border: 1px solid color-mix(in srgb, #e4e4e4 15%, transparent);
     text-decoration: none;
     backdrop-filter: blur(5px);
@@ -233,7 +249,6 @@
 .dropdown-content button:hover {
     cursor: pointer;
     color: #202020;
-    background: color-mix(in srgb, #1d1c1c 30%, transparent);
 }
 
 .dropdown {
@@ -242,6 +257,7 @@
 }
 
 .dropbtn {
+    animation: moveUpFadeOut 1.2s ease-in forwards;
     border: none;
     border-radius: 5px;
     background-color: transparent;
@@ -259,7 +275,6 @@
     letter-spacing: 0.6px;
     text-align: center;
     margin: 30px 0 20px 0;
-
     font-weight: 400;
     letter-spacing: 0.05rem;
 }
@@ -283,7 +298,7 @@
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 100;
-    border-radius: 12px;
+    border-radius: 22px;
 }
 
 .dropdown-content img {
@@ -295,13 +310,27 @@
     display: block;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1100px) {
     
     .home-content {
         margin-right: 0;
     }
+    
+    .dot-container {
+        margin-bottom: -1px;
+    }
+
+    .socials-container {
+        margin-bottom: 20px;
+    }
+
+    .location {
+        width: 50%;
+        line-height: 1.5em;
+    }
 
     .mail-buttons {
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;

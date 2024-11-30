@@ -131,7 +131,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1100px) {
     .education-content {
         width: 93%;
         margin-left: 1px;

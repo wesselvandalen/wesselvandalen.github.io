@@ -4,8 +4,6 @@ import picture from '../assets/meg.png';
 import noFlag from '../assets/flags/no.png';
 import nlFlag from '../assets/flags/nl.png';
 import enFlag from '../assets/flags/en.png';
-import github from '../assets/icons/github.png';
-import linkedin from '../assets/icons/linkedin.png';
 import { useState } from 'react';
 
 export default function Home() {

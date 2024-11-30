@@ -32,8 +32,6 @@ export default function SidePanel() {
     return (
         <div className="panel-container">
             <nav className='panel-nav'>
-                <div className="panel-border" />
-
                 <div className="panel-content">
                     <a href="#home">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="size-6">
