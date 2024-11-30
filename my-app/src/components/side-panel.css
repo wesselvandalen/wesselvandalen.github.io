@@ -26,6 +26,33 @@
     gap: 15px;
 }
 
+.panel-content a {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: 0; 
+    left: 80px; 
+    transform: translateX(-50%);
+    background-color: rgb(92, 92, 92);
+    border: rgb(62, 62, 62) solid 1px;
+    color: #ededed;
+    line-height: 1.125em;
+    letter-spacing: 0em;
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap; 
+}
+
 .panel-content a svg {
     width: 25px;
     height: 25px;
@@ -35,6 +62,24 @@
 
 .panel-content a:hover svg {
     opacity: .8;
+}
+
+.panel-content a:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.knapp {
+    margin: 0 -5px 0 3px;
+    width: 16px;
+    height: 16px;
+    padding: 3px 5px;
+    background-color: #757575;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -2px 0 0 inset;
+    font-size: 10px;
+    text-align: center;
+    color: #ededed;
 }
 
 @media screen and (max-width: 1100px) {

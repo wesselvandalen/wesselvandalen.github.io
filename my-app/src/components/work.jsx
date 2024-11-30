@@ -20,10 +20,32 @@ export default function Work() {
                             <img src={mysolutionlogo} alt="Mysolution logo" />
                             <div className="work-block-info">
                                 <h2>Mysolution</h2>
-                                <p>React TS & Java Spring developer</p>
+                                <p>React Typescript & Java Spring developer</p>
                             </div>
                         </div>
                         <div className='work-date'>2024 - 2025</div>
+                    </div>
+
+                    <div className="work-block">
+                        <div className="work-block-right">
+                            <img src={nav} alt="Mysolution logo" />
+                            <div className="work-block-info">
+                                <h2>NAV</h2>
+                                <p>Java Spring developer</p>
+                            </div>
+                        </div>
+                        <div className='work-date'>2025 - 2027</div>
+                    </div>
+
+                    <div className="work-block">
+                        <div className="work-block-right">
+                            <img src={netflix} alt="Mysolution logo" />
+                            <div className="work-block-info">
+                                <h2>Netflix</h2>
+                                <p>Angular developer & Software Architect</p>
+                            </div>
+                        </div>
+                        <div className='work-date'>2027 - 2028</div>
                     </div>
                     
                 </div>
