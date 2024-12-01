@@ -30,17 +30,21 @@
 }
 
 .about-texts p {
-    color: rgba(237, 237, 237, .9);
-    font-style: normal;
+    color: rgba(126, 126, 126); 
     font-size: 16px;
-    line-height: 1.2em;
+    font-style: normal;
     font-weight: 400;
-    letter-spacing: 0em;
+    letter-spacing: .16px;
+    line-height: 1.5em;
     margin-bottom: 30px;
     margin-top: 18px;
 }
 
 @media screen and (max-width: 1100px) {
+
+    .about-container {
+        width: 96%;
+    }
 
     .about-texts {
         display: flex;

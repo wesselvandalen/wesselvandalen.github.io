@@ -39,11 +39,11 @@ export default function App() {
           <Home />
           <LanguageMenu/>
           <div className="main-content">
-            <About />
+            <About /> 
             <Mountains/>
             <Education />
             <Work />
-            <Stack />
+            <Stack /> 
           </div>
         </div>
       </div>

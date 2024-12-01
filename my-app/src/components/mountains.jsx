@@ -15,7 +15,7 @@ export default function Mountains() {
 
                     <div className="mountain-tile">
                         <div className="mountain-text">
-                            <p className='mountain-name'>Preikestolen</p>
+                            <p className='mountain-name'>Preikestolen, Rogaland, {t('chapters.norway')}</p>
                             <p className='mountain-height'>604 m</p>
                         </div>
                         <img src={preikestolen} alt="Me at Preikestolen" />
