@@ -86,3 +86,21 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+@media screen and (max-width: 1100px) {
+    .dropdown {
+        height: 30px;
+        left: 0;    
+        bottom: 40px;
+        z-index: 40;
+    }
+
+    .dropdown-content {
+        margin-bottom: -50px;
+    }
+
+    .dropbtn {
+        background-color: #181818;
+        margin-left: 15px;
+    }
+}

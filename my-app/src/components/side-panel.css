@@ -84,20 +84,21 @@
 
 @media screen and (max-width: 1100px) {
     .panel-container {
-        border-right: none;
+        /* border-right: none;
         border-top: 1.5px solid rgba(0, 0, 0, 0.1);
-        height: 60px;
-        background-color: #fff;
+        height: 65px;
+        background-color: #111;
         width: 100vw;
-        top: auto;
-        bottom: 0;
+        top: 0;
+        bottom: auto; */
+        display: none;
     }
 
     .panel-content {
         flex-direction: row;
         align-items: start;
-        margin-top: 15px;
-        gap: 50px;
+        margin-top: 20px;
+        gap: 35px;
     }
 
     .panel-content a svg {

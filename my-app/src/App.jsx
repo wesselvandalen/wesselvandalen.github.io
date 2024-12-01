@@ -23,32 +23,11 @@ export default function App() {
         }
       });
     });
-
-    const handlePath = (hash) => {
-      window.location.hash = `#${hash}`;
-    }
-
-    const handleKeyPress = (event) => {
-      if (event.key === '1') {
-        handlePath('home');
-      } else if (event.key === '2') {
-        handlePath('about');
-      } else if (event.key === '3') {
-        handlePath('education');
-      } else if (event.key === '4') {
-        handlePath('work');
-      } else if (event.key === '5') {
-        handlePath('stack');
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyPress);
-
+    
     return () => {
       anchors.forEach(anchor => {
         anchor.removeEventListener('click', () => { });
       });
-      window.removeEventListener('keydown', handleKeyPress);
     };
   }, []);
 

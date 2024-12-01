@@ -238,20 +238,18 @@
         margin-right: 0;
     }
     
-    .dot-container {
-        margin-bottom: -1px;
-    }
-
     .socials-container {
         margin-bottom: 20px;
+        flex-direction: column;
     }
 
-    .location {
-        width: 50%;
-        line-height: 1.5em;
+    .home-main {
+        width: 100%;
     }
 
-    .mail-buttons {
+  
+
+    .buttons-container {
         width: 90%;
         display: flex;
         flex-direction: column;

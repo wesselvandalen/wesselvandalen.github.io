@@ -13,7 +13,6 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
     display: flex;
     flex-direction: column;
-    
 }
 
 .mountain-text {
@@ -48,4 +47,25 @@
     padding: 10px;
     border-radius: 22px;
     opacity: .8;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .mountain-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    .mountains-list {
+        align-items: center;
+        margin-left: 0;
+        width: 97%;
+    }
+
+    .mountain-tile {
+        width: 100%;
+    }
+
 }
