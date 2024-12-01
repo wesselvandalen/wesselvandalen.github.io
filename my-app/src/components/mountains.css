@@ -1,0 +1,51 @@
+.mountains-list {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mountain-tile {
+    background-color: rgb(22, 22, 22);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mountain-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.mountain-name {
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5em;
+    letter-spacing: .16px;
+}
+
+.mountain-height {
+    margin-right: 20px;
+    font-size: 16px;
+    color: #707070;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5em;
+    letter-spacing: .16px;
+}
+
+.mountain-tile img {
+    padding: 10px;
+    border-radius: 22px;
+    opacity: .8;
+}

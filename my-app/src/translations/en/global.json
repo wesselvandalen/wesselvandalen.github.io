@@ -3,19 +3,16 @@
         "home": "Home",
         "about": "About",
         "education": "Education",
-        "work": "Work"
+        "work": "Work",
+        "mountains": "Mountains"
     },
     "home": {
         "role": "Full Stack Software Developer",
-        "available": "Looking for new opportunities",
-        "contactme": "Contact me",
-        "or": "or",
-        "copyemail": "Copy email",
-        "copiedmail": "Copied",
-        "location": "Houten, The Netherlands"
+        "story": "Wessel van Dalen is a full-stack software developer from The Netherlands who enjoys climbing mountains, working out, hanging with friends & girlfriend and learning Norwegian.",
+        "email": "Send me an email"
     },
     "about": {
-        "1": "I'm Wessel, a Full Stack Software Developer passionate about turning ideas into elegant, functional, and impactful digital experiences.",
+        "1": "I'm Wessel, a full-stack software developer passionate about turning ideas into elegant, functional, and impactful digital experiences.",
         "2": "With {experience} year(s) of experience in Software Development, I take pride in being a positive addition to the team, both with a good spirit and high quality code.",
         "3": "I'm a very big fan of Norway (and Norwegian), and I would love to explore all possibilities to work in Norway - both remote and (preferably) at the office."
     },

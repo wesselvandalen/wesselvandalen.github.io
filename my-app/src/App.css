@@ -10,7 +10,7 @@ body {
     padding: 0;
     box-sizing: border-box;
 
-    background-color: #fff; /* #232323 */
+    background-color: #111111; 
 }
 
 .app-container {
@@ -43,4 +43,7 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
 }

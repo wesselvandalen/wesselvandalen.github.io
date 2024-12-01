@@ -1,5 +1,4 @@
 .about-container {
-    padding: 30px 0;
     width: 100%;
     max-width: 540px;
 }
@@ -7,30 +6,31 @@
 .about-content {
     display: flex;
     align-items: start;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 30px;
-    margin-left: 5px;
+    justify-content: start;
+    flex-direction: column;
     width: 100%;
 }
 
 .section-title {
-    width: 10%;
-    text-align: right;
-    color: rgba(0, 0, 0, .5);
-    font-size: 15px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0em;
     line-height: 1.5em;
+    margin-left: 10px;
 }
 
 .about-texts {
-    width: 90%;    
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    width: 100%;    
 }
 
 .about-texts p {
-    color: rgba(0, 0, 0, .7);
+    color: rgba(237, 237, 237, .9);
     font-style: normal;
     font-size: 14px;
     line-height: 1.2em;

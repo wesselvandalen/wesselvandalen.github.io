@@ -22,7 +22,7 @@ import postman from '../assets/icons/postman.png';
 import intellij from '../assets/icons/intellij.png';
 
 export default function Stack() {
-    const [translation] = useTranslation("global");
+    const [t] = useTranslation("global");
 
     return (
         <div className="stack-container" id='stack'>
@@ -32,7 +32,7 @@ export default function Stack() {
                 <div className="stack-list">
 
                     <div className="stack-innhold">
-                        <p className='stack-title'>FRONT END</p>
+                        <p className='stack-title'>Front end</p>
 
                         <div className="stack-grid">
                             <div className="stack-grid-block">
@@ -67,7 +67,7 @@ export default function Stack() {
                     </div>
 
                     <div className="stack-innhold">
-                        <p className='stack-title'>BACK END</p>
+                        <p className='stack-title'>Back end</p>
 
                         <div className="stack-grid">
                             <div className="stack-grid-block">
@@ -98,12 +98,12 @@ export default function Stack() {
                     </div>
 
                     <div className="stack-innhold">
-                        <p className='stack-title'>{translation('stack.tools')}</p>
+                        <p className='stack-title'>{t('stack.tools')}</p>
 
                         <div className="stack-grid">
                             <div className="stack-grid-block">
                                 <img src={vsc} alt="Visual Studio Code" />
-                                <p>VS Code</p>
+                                <p>Visual Studio Code</p>
                             </div>
                             <div className="stack-grid-block">
                                 <img src={azure} alt="Azure" />

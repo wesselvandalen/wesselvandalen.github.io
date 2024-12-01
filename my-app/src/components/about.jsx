@@ -2,7 +2,7 @@ import './about.css';
 import { useTranslation } from 'react-i18next';
 
 export default function About() {
-    const [translation] = useTranslation("global");
+    const [t] = useTranslation("global");
 
     function calculateExperience() {
         let dob = new Date("02/09/2024");
@@ -17,12 +17,12 @@ export default function About() {
     return (
         <div className="about-container" id='about'>
             <div className="about-content">
-                <p className='section-title'>{translation('chapters.about')}</p>
+                <p className='section-title'>{t('chapters.about')}</p>
 
                 <div className="about-texts">
-                    <p>{translation('about.1')}</p>
-                    <p>{translation('about.2').replace('{experience}', calculateExperience())}</p>
-                    <p>{translation('about.3')}</p>
+                    <p>{t('about.1')}</p>
+                    <p>{t('about.2').replace('{experience}', calculateExperience())}</p>
+                    <p>{t('about.3')}</p>
                 </div>
             </div>
         </div>

@@ -1,18 +1,15 @@
 {
     "chapters": {
-        "home": "Home",
+        "home": "Thuis",
         "about": "Over mij",
         "education": "Opleiding",
-        "work": "Werk"
+        "work": "Werk",
+        "mountains": "Bergen"
     },
     "home": {
-        "role": "Full Stack Software Developer",
-        "available": "Op zoek naar nieuwe kansen",
-        "contactme": "Neem contact op",
-        "or": "of",
-        "copyemail": "Kopieer e-mail",
-        "copiedmail": "Gekopieerd",
-        "location": "Houten, Nederland"
+        "role": "Full Stack Software Ontwikkelaar",
+        "story": "Wessel van Dalen is een full-stack software ontwikkelaar uit Nederland die van bergbeklimmen houdt, graag traint in de sportsschool, hangt met vrienden & vriendin en Noors leert.",
+        "email": "Stuur me een e-mail"
     },
     "about": {
         "1": "Ik ben Wessel, een Full Stack Software Developer die gepassioneerd is over het omzetten van ideeën in elegante, functionele en impactvolle digitale ervaringen.",
