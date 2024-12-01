@@ -90,19 +90,7 @@
     max-width: 500px;
 }
 
-@keyframes moveUpFadeOut {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-}
-
 .name-title-image {
-    animation: moveUpFadeOut 1s ease-in forwards;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,6 +101,10 @@
     display: flex;
     align-items: center;
     gap: 5px;
+
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeInUp .8s cubic-bezier(0.5, 0, 0.3, 1) forwards; 
 }
 
 .name-title-image h1 {
@@ -139,6 +131,10 @@
     letter-spacing: .16px;
     line-height: 1.5em;
     margin: -12px 0 10px 0;
+
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeInUp 1.2s cubic-bezier(0.5, 0, 0.3, 1) forwards; 
 }
 
 .story {
@@ -150,6 +146,10 @@
     line-height: 1.5em;
     margin: 3px 0 20px 0;
     text-align: center;
+
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeInUp 1.4s cubic-bezier(0.5, 0, 0.3, 1) forwards; 
 }
 
 /* Socials */
@@ -160,6 +160,10 @@
     align-items: center;
     gap: 20px;
     margin: 10px 0 5px 0;
+    
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeInUp 1.6s cubic-bezier(0.5, 0, 0.3, 1) forwards; 
 }
 
 .social-tile {
@@ -198,6 +202,10 @@
     gap: 20px;
     width: 100%;
     margin-bottom: 10px;
+   
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeInUp 1.7s cubic-bezier(0.5, 0, 0.3, 1) forwards; 
 }
 
 .buttons-container svg {

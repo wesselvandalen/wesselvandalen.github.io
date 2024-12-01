@@ -9,7 +9,7 @@ export default function Mountains() {
         <div className="mountains-container" id='mountains'>
             <div className="mountain-content">
 
-                <p className='section-title'>{t('chapters.mountains')}</p>
+                <p className='section-title mountain-section-title'>{t('chapters.mountains')}</p>
 
                 <div className="mountains-list">
 

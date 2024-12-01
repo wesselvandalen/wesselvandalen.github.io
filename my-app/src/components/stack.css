@@ -14,6 +14,12 @@
     gap: 20px;
 }
 
+.stack-section-title {
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeInUp 3.3s cubic-bezier(0.5, 0, 0.3, 1) forwards;
+}
+
 .stack-list {
     margin-top: -30px;
     display: flex;
@@ -30,6 +36,10 @@
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
     margin: 10px 0;
+
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeInUp 3.5s cubic-bezier(0.5, 0, 0.3, 1) forwards;
 }
 
 .stack-title {

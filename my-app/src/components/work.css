@@ -12,6 +12,12 @@
     justify-content: start;
 }
 
+.work-section-title {
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeInUp 2.9s cubic-bezier(0.5, 0, 0.3, 1) forwards;
+}
+
 .work-stack {
     margin: 10px 0;
     width: 100%;
@@ -32,6 +38,10 @@
     justify-content: space-between;
     text-decoration: none;
     padding: 10px 12px;
+
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeInUp 3.1s cubic-bezier(0.5, 0, 0.3, 1) forwards;
 }
 
 .work-block:hover {

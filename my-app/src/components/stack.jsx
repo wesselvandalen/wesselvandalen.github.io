@@ -27,7 +27,7 @@ export default function Stack() {
     return (
         <div className="stack-container" id='stack'>
             <div className="stack-content">
-                <p className='section-title'>Stack</p>
+                <p className='section-title stack-section-title'>Stack</p>
 
                 <div className="stack-list">
 

@@ -10,6 +10,12 @@
     flex-direction: column;
 }
 
+.education-section-title {
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeInUp 2.5s cubic-bezier(0.5, 0, 0.3, 1) forwards;
+}
+
 .education-list {
     display: flex;
     flex-direction: column;
@@ -30,6 +36,10 @@
     padding: 0;
     position: relative;
     width: 100%;
+
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeInUp 2.7s cubic-bezier(0.5, 0, 0.3, 1) forwards;
 }
 
 .education-inner-block {

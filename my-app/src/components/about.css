@@ -22,11 +22,21 @@
     margin-left: 10px;
 }
 
+.about-section-title {
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeInUp 1.9s cubic-bezier(0.5, 0, 0.3, 1) forwards;
+}
+
 .about-texts {
     margin-left: 10px;
     margin-top: -10px;
     margin-bottom: -10px;
-    width: 100%;    
+    width: 100%; 
+
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeInUp 2s cubic-bezier(0.5, 0, 0.3, 1) forwards;   
 }
 
 .about-texts p {

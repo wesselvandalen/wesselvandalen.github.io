@@ -9,7 +9,7 @@ export default function Work() {
         <div className="work-container" id='work'>
             <div className="work-content">
                 
-                <p className='section-title'>{t('chapters.work')}</p>
+                <p className='section-title work-section-title'>{t('chapters.work')}</p>
 
                 <div className="work-stack">
 

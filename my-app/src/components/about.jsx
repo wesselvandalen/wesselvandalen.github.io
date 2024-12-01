@@ -17,7 +17,7 @@ export default function About() {
     return (
         <div className="about-container" id='about'>
             <div className="about-content">
-                <p className='section-title'>{t('chapters.about')}</p>
+                <p className='section-title about-section-title'>{t('chapters.about')}</p>
 
                 <div className="about-texts">
                     <p>{t('about.1')}</p>
