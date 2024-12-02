@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.32031a7c.css",
-    "main.js": "/static/js/main.b79e67f0.js",
+    "main.css": "/static/css/main.28b1bd9c.css",
+    "main.js": "/static/js/main.e7b7ad88.js",
     "static/media/background.JPG": "/static/media/background.9081421f1789878be934.JPG",
     "static/media/meg.png": "/static/media/meg.c084cd1def5b6273d93d.png",
     "static/media/preikestolen.jpg": "/static/media/preikestolen.f3c656ef1fd78e92d4a9.jpg",
     "static/media/en.png": "/static/media/en.ed962d6224f10e9755c0.png",
     "index.html": "/index.html",
-    "main.32031a7c.css.map": "/static/css/main.32031a7c.css.map",
-    "main.b79e67f0.js.map": "/static/js/main.b79e67f0.js.map"
+    "main.28b1bd9c.css.map": "/static/css/main.28b1bd9c.css.map",
+    "main.e7b7ad88.js.map": "/static/js/main.e7b7ad88.js.map"
   },
   "entrypoints": [
-    "static/css/main.32031a7c.css",
-    "static/js/main.b79e67f0.js"
+    "static/css/main.28b1bd9c.css",
+    "static/js/main.e7b7ad88.js"
   ]
 }
