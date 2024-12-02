@@ -60,7 +60,7 @@ export default function Home() {
                             /wesselvandalen
                         </a>
 
-                        <a href="https:/linkedin.com/in/wesselvandalen" target='_blank' rel="noreferrer" className='social-tile'>
+                        <a href="https://linkedin.com/in/wesselvandalen" target='_blank' rel="noreferrer" className='social-tile'>
                             <img src={linkedin} alt="LinkedIn icon" />
                             /wesselvandalen
                         </a>

@@ -8,6 +8,7 @@ import Work from './components/work';
 import Stack from './components/stack';
 import LanguageMenu from './components/language-menu';
 import Mountains from './components/mountains';
+import Contact from './components/contact';
 
 export default function App() {
 
@@ -44,6 +45,7 @@ export default function App() {
             <Education />
             <Work />
             <Stack /> 
+            <Contact/>
           </div>
         </div>
       </div>

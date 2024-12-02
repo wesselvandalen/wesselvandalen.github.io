@@ -5,7 +5,8 @@
         "education": "Utdanning",
         "work": "Arbeid",
         "mountains": "Fjell",
-        "norway": "Norge"
+        "norway": "Norge",
+        "contact": "Kontakt"
     },
     "home": {
         "role": "Full Stack Software Utvikler",
@@ -22,5 +23,10 @@
     },
     "stack": {
         "tools": "Verktøy"
+    },
+    "contact": {
+        "1": "Interessert i en samtale / vil du bare ha en prat? Det gjør jeg også!",
+        "2": "Send meg en melding / e-post på disse platformene, og jeg skal svare på dem så fort som mulig",
+        "top": "Gå tilbake til toppen"
     }
 }

@@ -5,7 +5,8 @@
         "education": "Education",
         "work": "Work",
         "mountains": "Mountains",
-        "norway": "Norway"
+        "norway": "Norway",
+        "contact": "Contact"
     },
     "home": {
         "role": "Full Stack Software Developer",
@@ -22,5 +23,10 @@
     },
     "stack": {
         "tools": "Tools"
+    },
+    "contact": {
+        "1": "Interested in talking / just wanna have a chat? So do I!",
+        "2": "Send me a message / mail on these platforms, and I'll answer them as soon as possible",
+        "top": "Go back to top"
     }
 }

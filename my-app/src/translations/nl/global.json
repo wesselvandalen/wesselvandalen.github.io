@@ -5,7 +5,8 @@
         "education": "Opleiding",
         "work": "Werk",
         "mountains": "Bergen",
-        "norway": "Noorwegen"
+        "norway": "Noorwegen",
+        "contact": "Contact"
     },
     "home": {
         "role": "Full Stack Software Ontwikkelaar",
@@ -22,5 +23,10 @@
     },
     "stack": {
         "tools": "Tools"
+    },
+    "contact": {
+        "1": "Geïnteresseerd in een gesprek / wil je gewoon chatten? Ik graag ook!",
+        "2": "Stuur me een bericht / e-mail op deze platvormen, en ik zal ze zo snel mogelijk beantwoorden",
+        "top": "Ga terug naar de top"
     }
 }
