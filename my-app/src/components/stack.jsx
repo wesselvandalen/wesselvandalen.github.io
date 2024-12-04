@@ -20,6 +20,7 @@ import docker from '../assets/icons/docker.png';
 import git from '../assets/icons/git.png';
 import postman from '../assets/icons/postman.png';
 import intellij from '../assets/icons/intellij.png';
+import sqlite from '../assets/icons/sqlite.png';
 
 export default function Stack() {
     const [t] = useTranslation("global");
@@ -93,6 +94,10 @@ export default function Stack() {
                             <div className="stack-grid-block">
                                 <img src={postgresql} alt="PostgreSQL" />
                                 <p>PostgreSQL</p>
+                            </div>
+                            <div className="stack-grid-block">
+                                <img src={sqlite} alt="SQLite" />
+                                <p>SQLite</p>
                             </div>
                         </div>
                     </div>
