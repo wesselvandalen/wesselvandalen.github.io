@@ -3,30 +3,29 @@
         "home": "Hjem",
         "about": "Om meg",
         "education": "Utdanning",
-        "work": "Arbeid",
-        "mountains": "Fjell",
-        "norway": "Norge",
-        "contact": "Kontakt"
+        "work": "Arbeidserfaring",
+        "norway": "Norge"
     },
     "home": {
-        "role": "Full Stack Software Utvikler",
-        "story": "Wessel van Dalen er en full-stack software utvikler fra Nederland som elsker å klatre i fjell, trene seg på treningssenteret, henge med venner & kjæresten, og lære seg norsk.",
-        "email": "Send meg en e-post"
+        "intro": "Mitt navn er",
+        "maintext": "En Full Stack Developer som er dyktig i å bygge end-to-end programvareløsninger"
     },
     "about": {
-        "1": "Jeg heter Wessel, og jeg er en Full Stack Software Developer som brenner for å gjøre ideer om til elegante, funksjonelle og innflytelsesrike digitale opplevelser.",
-        "2": "Med {experience} år erfaring innen programvareutvikling er jeg en positiv tilvekst til teamet, både med godt humør og kode av høy kvalitet.",
-        "3": "Jeg er en stor fan av Norge (og norsk), og jeg ønsker å utforske alle muligheter for å jobbe i Norge – både eksternt og (helst) på kontoret."
+        "1": "Jeg er Wessel, en full-stack programvareutvikler med {exp} års erfaring. Jeg er dyktig i å bygge både front-end og back-end av webapplikasjoner, inkludert å lage databaser og integrere programvare på Azure. Jeg sørger for at alle komponentene fungerer sømløst sammen og leverer fullt integrerte, end-to-end løsninger.",
+        "2": "Jeg har vært forelsket i Norge, kulturen og språket siden barndommen, og å flytte dit har alltid vært en drøm for meg. Jeg snakker norsk flytende, og å jobbe i Norge—enten eksternt eller, helst, på kontoret—er min høyeste prioritet. Jeg er spent på å ta de nødvendige stegene for å gjøre denne barndomsdrømmen til virkelighet."
     },
     "education": {
-        "description": "Fullført en 4-årig bachelorgrad med fokus på programvareutvikling, inkludert webutvikling, databaser og systemdesign/-arkitektur. Spesialisering innen webutvikling og design."
+        "description": "Fullførte en 4-årig bachelorgrad med fokus på programvareutvikling, inkludert webutvikling, databaser og systemdesign/arkitektur. Spesialisert innen webutvikling og design."
+    },
+    "work": {
+        "mysolution": {
+            "d1": "Utviklet en fullt tilpassbar webplattform for Mysolution ved hjelp av React, TypeScript og Java Spring, som gjorde det mulig for bedrifter å tilpasse sine nettsider.",
+            "d2": "Bygde en Java Spring-backend for å håndtere trafikk mellom webappen og Salesforce-serveren, og integrerte en SQLite-database for å lagre kundens innstillinger.",
+            "d3": "Implementerte sikker JWT-autentisering, CRUD-operasjoner og fulgte beste praksis for datasikkerhet.",
+            "d4": "Sikret full GDPR-kompatibilitet gjennom omfattende forskning og etterlevelse av personvernregler."
+        }
     },
     "stack": {
-        "tools": "Verktøy"
-    },
-    "contact": {
-        "1": "Interessert i en samtale / vil du bare ha en prat? Det gjør jeg også!",
-        "2": "Send meg en melding / e-post på disse platformene, og jeg skal svare på dem så fort som mulig",
-        "top": "Gå tilbake til toppen"
+        "tools": "Verktøy og Programvare"
     }
 }

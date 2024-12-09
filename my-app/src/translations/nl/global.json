@@ -1,32 +1,31 @@
 {
     "chapters": {
-        "home": "Thuis",
+        "home": "Home",
         "about": "Over mij",
         "education": "Opleiding",
-        "work": "Werk",
-        "mountains": "Bergen",
-        "norway": "Noorwegen",
-        "contact": "Contact"
+        "work": "Werkervaring",
+        "norway": "Noorwegen"
     },
     "home": {
-        "role": "Full Stack Software Ontwikkelaar",
-        "story": "Wessel van Dalen is een full-stack software ontwikkelaar uit Nederland die van bergbeklimmen houdt, graag traint in de sportsschool, hangt met vrienden & vriendin en Noors leert.",
-        "email": "Stuur me een e-mail"
+        "intro": "Mijn naam is",
+        "maintext": "Een Full Stack Developer vaardig in het bouwen van end -to-end softwareoplossingen"
     },
     "about": {
-        "1": "Ik ben Wessel, een Full Stack Software Developer die gepassioneerd is over het omzetten van ideeën in elegante, functionele en impactvolle digitale ervaringen.",
-        "2": "Met {experience} jaar ervaring in softwareontwikkeling ben ik een positieve aanvulling op elk team, zowel met een goede sfeer als met hoogwaardige code.",
-        "3": "Ik ben een grote fan van Noorwegen (en Noors), en ik zou graag alle mogelijkheden willen verkennen om in Noorwegen te werken - zowel op afstand als (bij voorkeur) op kantoor."
+        "1": "Ik ben Wessel, een full-stack softwareontwikkelaar met {exp} jaar ervaring. Ik ben vaardig in het bouwen van zowel de front-end als de back-end van webapplicaties, inclusief het creëren van databases en het integreren van software op Azure. Ik zorg ervoor dat alle componenten naadloos samenwerken en lever volledig geïntegreerde, end-to-end oplossingen.",
+        "2": "Sinds mijn jeugd was ik altijd al verliefd op Noorwegen, inclusief de cultuur en taal, en het verhuizen naar Noorwegen is altijd al een droom van mij geweest. Ik spreek vloeiend Noors, en werken in Noorwegen—of dit nu op afstand is of, bij voorkeur, op kantoor—is mijn hoogste prioriteit. Ik ben enthousiast om de nodige stappen te zetten om deze kinderdroom werkelijkheid te maken."
     },
     "education": {
-        "description": "Afgeronde 4-jarige bacheloropleiding met een focus op softwareontwikkeling, inclusief webontwikkeling, databases en systeemontwerp/-architectuur. Gespecialiseerd in webontwikkeling en ontwerp."
+        "description": "Ronde een 4-jarige bacheloropleiding af met een focus op softwareontwikkeling, inclusief webontwikkeling, databases en systeemontwerp/architectuur. Gespecialiseerd in webontwikkeling en design."
+    },
+    "work": {
+        "mysolution": {
+            "d1": "Ontwikkelde een volledig aanpasbaar webplatform voor Mysolution met React, TypeScript en Java Spring, waarmee bedrijven hun websites konden personaliseren.",
+            "d2": "Bouwde een Java Spring-backend om het verkeer tussen de webapp en de Salesforce-server te verwerken, met een geïntegreerde SQLite-database om klantinstellingen op te slaan.",
+            "d3": "Implementeerde veilige JWT-authenticatie, CRUD-bewerkingen en volgde best practices voor databeveiliging.",
+            "d4": "Zorgde voor volledige naleving van de AVG door uitgebreid onderzoek en naleving van gegevensbeschermingsregelgeving."
+        }
     },
     "stack": {
-        "tools": "Tools"
-    },
-    "contact": {
-        "1": "Geïnteresseerd in een gesprek / wil je gewoon chatten? Ik graag ook!",
-        "2": "Stuur me een bericht / e-mail op deze platformen, en ik zal ze zo snel mogelijk beantwoorden",
-        "top": "Ga terug naar de top"
+        "tools": "Tools en Software"
     }
 }

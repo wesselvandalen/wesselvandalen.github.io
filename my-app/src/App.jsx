@@ -1,14 +1,10 @@
 import './App.css';
-import SidePanel from './components/side-panel';
-import { useEffect } from 'react';
 import Home from './components/home';
 import About from './components/about';
 import Education from './components/education';
 import Work from './components/work';
 import Stack from './components/stack';
-import LanguageMenu from './components/language-menu';
-import Mountains from './components/mountains';
-import Contact from './components/contact';
+import { useEffect } from 'react';
 
 export default function App() {
 
@@ -24,7 +20,7 @@ export default function App() {
         }
       });
     });
-    
+
     return () => {
       anchors.forEach(anchor => {
         anchor.removeEventListener('click', () => { });
@@ -33,19 +29,19 @@ export default function App() {
   }, []);
 
   return (
-    <div className="app-container">
+    <div className="app-container" >
       <div className="app-content">
-        <SidePanel/>
         <div className="app-innhold">
-          <Home />
-          <LanguageMenu/>
           <div className="main-content">
-            <About /> 
-            <Mountains/>
+            <Home />
+            <div className="line" />
+            <About />
+            <div className="line" />
             <Education />
-            <Work />
+            <div className="line" />
+            <Work /> 
+            <div className="line" />
             <Stack /> 
-            <Contact/>
           </div>
         </div>
       </div>

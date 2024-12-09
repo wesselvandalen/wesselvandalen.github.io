@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import './work.css';
-import mysolutionlogo from '../assets/graphics/mysolution.png';
 
 export default function Work() {
     const [t] = useTranslation("global");
@@ -8,21 +7,31 @@ export default function Work() {
     return (
         <div className="work-container" id='work'>
             <div className="work-content">
-                
-                <p className='section-title work-section-title'>{t('chapters.work')}</p>
 
-                <div className="work-stack">
+                <div className="section-title-wrapper">
+                    <p className='section-number'>04</p>
+                    <p className='section-title'>{t('chapters.work')}</p>
+                </div>
 
-                    <a href='https://www.mysolution.com/' target='_blank' rel="noreferrer" className="work-block">
-                        <div className="work-block-right">
-                            <img src={mysolutionlogo} alt="Mysolution logo" />
-                            <div className="work-block-info">
-                                <h2>Mysolution</h2>
-                                <p>React Typescript & Java Spring developer</p>
+                <div className="work-list">
+
+                    <a href='https://www.mysolution.com/en/' target='_blank' rel="noreferrer" className="work-block">
+                        <div className="work-block-top">
+                            <div className="work-block-left">
+                                <h6 className='work-block-role'>React Typescript & Java Spring developer</h6>
+                                <p className='work-block-company'>Mysolution</p>
                             </div>
+                            <p className='work-block-date'>2024 - 2025</p>
                         </div>
-                        <div className='work-date'>2024 - 2025</div>
+                        <ul>
+                            <li>{t('work.mysolution.d1')}</li>
+                            <li>{t('work.mysolution.d2')}</li>
+                            <li>{t('work.mysolution.d3')}</li>
+                            <li>{t('work.mysolution.d4')}</li>
+                        </ul>
                     </a>
+
+                    {/* <div className="line"/> */}
 
                 </div>
 

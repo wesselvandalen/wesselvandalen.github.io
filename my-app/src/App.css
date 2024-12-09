@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
     scroll-behavior: smooth;
@@ -9,8 +9,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    background-color: #111111;
+    background-color: #F5F8FD; /* F5F8FD */
 }
 
 .app-container {
@@ -44,8 +43,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 1200px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin: 0;
+}
+
+.line {
+    height: 1px;
+    background-color: rgba(0, 0, 0, .1);
+    width: 100%;
+    margin: 30px 0;
 }
 
 /* Effects */

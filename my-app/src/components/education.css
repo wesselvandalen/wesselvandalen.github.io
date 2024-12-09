@@ -1,26 +1,25 @@
 .education-container {
     width: 100%;
-    max-width: 540px;
+    margin: 50px 0;
 }
 
 .education-content {
     width: 100%;
     display: flex;
-    justify-content: start;
+    align-items: start;
+    justify-content: space-between;
     flex-direction: column;
-}
-
-.education-section-title {
-    opacity: 0; 
-    transform: translateY(50px); 
-    animation: fadeInUp 2.5s cubic-bezier(0.5, 0, 0.3, 1) forwards;
 }
 
 .education-list {
     display: flex;
     flex-direction: column;
+    align-items: end;
     width: 100%;
+    gap: 20px;
 }
+
+/* Education block */
 
 .education-block {
     border-radius: 12px;
@@ -31,15 +30,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
-    height: min-content;
     justify-content: flex-start;
     padding: 0;
     position: relative;
     width: 100%;
-
-    opacity: 0; 
-    transform: translateY(50px); 
-    animation: fadeInUp 2.7s cubic-bezier(0.5, 0, 0.3, 1) forwards;
 }
 
 .education-inner-block {
@@ -54,7 +48,6 @@
     color: #707070; 
     text-decoration: none;
     width: 100%;
-    padding: 0 12px;
     border-radius: 12px;
     opacity: 1;
     display: flex;
@@ -65,17 +58,6 @@
 
 .education-block-contents:hover {
     cursor: pointer;
-    background-color: #242424;
-}
-
-.education-block-date {
-    margin-top: 12px;
-    color: #565656;
-    width: 40%;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
 }
 
 .education-block-info {
@@ -98,46 +80,57 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
+    margin: 0;
+}
+
+.education-block-date {
+    color: rgb(0, 0, 0);
+    margin: 1px 0 0 0;
+    width: 40%;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0em;
+    line-height: 160%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
 }
 
 .education-block-name {
-    font-size: 15px;
+    font-size: 32px;
+    margin: 0;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0em;
-    line-height: 1.5em;
+    line-height: 160%;
     text-align: start;
-    color: white;
+    color: rgb(0, 0, 0);
     width: 100%;
 }
 
-.education-block-title {
+.education-block-school {
     width: 100%;
-    outline: none;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    flex-shrink: 0;
-    color: #707070;
-    transform: none;
-    opacity: 1;
-    margin: -15px 0 0 0;
-    font-size: 15px;
-    font-style: normal;
+    color: rgb(174, 174, 174);
+    margin: -5px 0 0 0;
+    font-size: 26px;
     font-weight: 400;
+    font-style: normal;
     letter-spacing: 0em;
-    line-height: 1.5em;
-    text-align: start;
+    line-height: 160%;
 }
 
 .education-block-description {
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 0em;
-    line-height: 1.5em;
+    letter-spacing: 0;
+    line-height: 160%;
     text-align: start;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 0, 0);
     width: 100%;
 }
 

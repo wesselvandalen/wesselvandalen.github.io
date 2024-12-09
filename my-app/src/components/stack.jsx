@@ -21,84 +21,90 @@ import git from '../assets/icons/git.png';
 import postman from '../assets/icons/postman.png';
 import intellij from '../assets/icons/intellij.png';
 import sqlite from '../assets/icons/sqlite.png';
+import arc from '../assets/icons/arc.png';
 
 export default function Stack() {
     const [t] = useTranslation("global");
 
+    const frontendskills = [
+        { name: 'React', type: 'library', img: react },
+        { name: 'Svelte', type: 'framework', img: svelte },
+        { name: 'Lit', type: 'framework', img: lit },
+        { name: 'Typescript', type: 'language', img: ts },
+        { name: 'Javascript', type: 'language', img: js },
+        { name: 'HTML', type: 'language', img: html },
+        { name: 'CSS', type: 'language', img: css }
+    ];
+
+    const backendskills = [
+        { name: 'Java', type: 'language', img: java },
+        { name: 'Spring', type: 'framework', img: spring },
+        { name: 'C#', type: 'language', img: cs },
+        { name: 'JUnit5', type: 'framework', img: junit5 },
+        { name: 'Python', type: 'language', img: python },
+        { name: 'PostgreSQL', type: 'database', img: postgresql },
+        { name: 'SQLite', type: 'database', img: sqlite }
+    ];
+
+    const softwareskills = [
+        { name: 'Visual Studio Code', type: 'IDE', img: vsc },
+        { name: 'Azure (DevOps)', type: 'cloud platform', img: azure },
+        { name: 'Postman', type: 'software', img: postman },
+        { name: 'Git', type: 'version control', img: git },
+        { name: 'Docker', type: 'containerization ', img: docker },
+        { name: 'Salesforce', type: 'crm platform', img: salesforce },
+        { name: 'Inteallij IDEA', type: 'IDE', img: intellij },
+        { name: 'Arc', type: 'browser', img: arc }
+    ];
+
     return (
         <div className="stack-container" id='stack'>
             <div className="stack-content">
-                <p className='section-title stack-section-title'>Stack</p>
+
+                <div className="section-title-wrapper">
+                    <p className='section-number'>05</p>
+                    <p className='section-title'>Stack</p>
+                </div>
 
                 <div className="stack-list">
 
                     <div className="stack-innhold">
-                        <p className='stack-title'>Front end</p>
+                        <p className='stack-title'>Front-end / webdevelopment</p>
 
                         <div className="stack-grid">
-                            <div className="stack-grid-block">
-                                <img src={react} alt="React" />
-                                <p>React</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={svelte} alt="Svelte" />
-                                <p>Svelte</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={lit} alt="Lit" />
-                                <p>Lit</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={js} alt="Javascript" />
-                                <p>Javascript</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={ts} alt="Typescript" />
-                                <p>Typescript</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={html} alt="HTML" />
-                                <p>HTML</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={css} alt="CSS" />
-                                <p>CSS</p>
-                            </div>
+
+                            {frontendskills.map(skill => {
+                                return <div className="stack-tile">
+                                    <div className="stack-pic-wrapper">
+                                        <img src={skill.img} alt={skill.name} />
+                                    </div>
+                                    <div className="stack-info">
+                                        <h6>{skill.name}</h6>
+                                        <p>{skill.type}</p>
+                                    </div>
+                                </div>
+                            })}
+
                         </div>
                     </div>
 
                     <div className="stack-innhold">
-                        <p className='stack-title'>Back end</p>
+                        <p className='stack-title'>Back-end / server & database development</p>
 
                         <div className="stack-grid">
-                            <div className="stack-grid-block">
-                                <img src={java} alt="Java" />
-                                <p>Java</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={spring} alt="Spring" />
-                                <p>Spring</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={cs} alt="C#" />
-                                <p>C#</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={junit5} alt="JUnit5" />
-                                <p>JUnit5</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={python} alt="Python" />
-                                <p>Python</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={postgresql} alt="PostgreSQL" />
-                                <p>PostgreSQL</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={sqlite} alt="SQLite" />
-                                <p>SQLite</p>
-                            </div>
+
+                            {backendskills.map(skill => {
+                                return <div className="stack-tile">
+                                    <div className="stack-pic-wrapper">
+                                        <img src={skill.img} alt={skill.name} />
+                                    </div>
+                                    <div className="stack-info">
+                                        <h6>{skill.name}</h6>
+                                        <p>{skill.type}</p>
+                                    </div>
+                                </div>
+                            })}
+
                         </div>
                     </div>
 
@@ -106,34 +112,19 @@ export default function Stack() {
                         <p className='stack-title'>{t('stack.tools')}</p>
 
                         <div className="stack-grid">
-                            <div className="stack-grid-block">
-                                <img src={vsc} alt="Visual Studio Code" />
-                                <p>Visual Studio Code</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={azure} alt="Azure" />
-                                <p>Azure</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={postman} alt="Postman" />
-                                <p>Postman</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={git} alt="Git" />
-                                <p>Git</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={docker} alt="Docker" />
-                                <p>Docker</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={salesforce} alt="Salesforce" />
-                                <p>Salesforce</p>
-                            </div>
-                            <div className="stack-grid-block">
-                                <img src={intellij} alt="Intellij IDEA" />
-                                <p>Intellij IDEA</p>
-                            </div>
+
+                            {softwareskills.map(skill => {
+                                return <div className="stack-tile">
+                                    <div className="stack-pic-wrapper">
+                                        <img src={skill.img} alt={skill.name} />
+                                    </div>
+                                    <div className="stack-info">
+                                        <h6>{skill.name}</h6>
+                                        <p>{skill.type}</p>
+                                    </div>
+                                </div>
+                            })}
+
                         </div>
                     </div>
                 </div>
