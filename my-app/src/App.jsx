@@ -4,6 +4,7 @@ import About from './components/about';
 import Education from './components/education';
 import Work from './components/work';
 import Stack from './components/stack';
+import Contact from './components/contact';
 import { useEffect } from 'react';
 
 export default function App() {
@@ -42,6 +43,8 @@ export default function App() {
             <Work /> 
             <div className="line" />
             <Stack /> 
+            <div className="line" />
+            <Contact/>
           </div>
         </div>
       </div>

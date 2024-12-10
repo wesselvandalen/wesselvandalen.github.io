@@ -4,7 +4,8 @@
         "about": "About me",
         "education": "Education",
         "work": "Work experience",
-        "norway": "Norway"
+        "norway": "Norway",
+        "contact": "Contact"
     },
     "home": {
         "intro": "My name is",
@@ -26,6 +27,11 @@
         }
     },
     "stack": {
-        "tools": "Tools and Software"
+        "tools": "Tools and Software",
+        "security": "Security"
+    },
+    "contact": {
+        "text1": "Interested / just want to chat? So do I!",
+        "text2": "Send me a message on one of these platforms and I'll get back to you as soon as possible."
     }
 }

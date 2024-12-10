@@ -4,7 +4,8 @@
         "about": "Om meg",
         "education": "Utdanning",
         "work": "Arbeidserfaring",
-        "norway": "Norge"
+        "norway": "Norge",
+        "contact": "Kontakt"
     },
     "home": {
         "intro": "Mitt navn er",
@@ -26,6 +27,11 @@
         }
     },
     "stack": {
-        "tools": "Verktøy og Programvare"
+        "tools": "Verktøy og Programvare",
+        "security": "Sikkerhet"
+    },
+    "contact": {
+        "text1": "Interessert / vil du bare ha en prat? Det vil jeg gjerne også!",
+        "text2": "Send meg en melding på en av disse platformene, og så skal jeg ta kontakt med deg så fort som mulig."
     }
 }

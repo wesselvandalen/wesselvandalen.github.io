@@ -22,6 +22,7 @@ import postman from '../assets/icons/postman.png';
 import intellij from '../assets/icons/intellij.png';
 import sqlite from '../assets/icons/sqlite.png';
 import arc from '../assets/icons/arc.png';
+import figma from '../assets/icons/figma.png';
 
 export default function Stack() {
     const [t] = useTranslation("global");
@@ -54,7 +55,8 @@ export default function Stack() {
         { name: 'Docker', type: 'containerization ', img: docker },
         { name: 'Salesforce', type: 'crm platform', img: salesforce },
         { name: 'Inteallij IDEA', type: 'IDE', img: intellij },
-        { name: 'Arc', type: 'browser', img: arc }
+        { name: 'Arc', type: 'browser', img: arc },
+        { name: 'Figma', type: 'Design tool', img: figma }
     ];
 
     return (
@@ -127,8 +129,33 @@ export default function Stack() {
 
                         </div>
                     </div>
-                </div>
 
+
+                    <div className="stack-innhold">
+                        <p className='stack-title'>{t('stack.security')}</p>
+
+                        <ul>
+                            <li>OWASP TOP 10</li>
+                            <li>Authentication & Authorization</li>
+                            <li>Cybersecurity threats (rainbow tables, brute force, timing attacks, injection etc.)</li>
+                            <li>JWT tokens, encryption, encoding and hash (+ salt)</li>
+                        </ul>
+
+                    </div>
+
+                    <div className="stack-innhold">
+                        <p className='stack-title'>Testing</p>
+
+                        <ul>
+                            <li>Continious Integration / Continious Development Pipelines</li>
+                            <li>JUnit5</li>
+                            <li>End-to-end tests</li>
+                            <li>Test-Driven-Development</li>
+                        </ul>
+
+                    </div>
+
+                </div>
             </div>
         </div>
     );

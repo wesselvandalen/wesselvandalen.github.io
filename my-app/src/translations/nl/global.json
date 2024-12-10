@@ -4,7 +4,8 @@
         "about": "Over mij",
         "education": "Opleiding",
         "work": "Werkervaring",
-        "norway": "Noorwegen"
+        "norway": "Noorwegen",
+        "contact": "Contact"
     },
     "home": {
         "intro": "Mijn naam is",
@@ -26,6 +27,11 @@
         }
     },
     "stack": {
-        "tools": "Tools en Software"
+        "tools": "Tools en Software",
+        "security": "Beveiliging"
+    },
+    "contact": {
+        "text1": "Geïnteresseerd / wil je gewoon chatten? Ik graag ook!",
+        "text2": "Stuur me een bericht op een van deze platforms en ik neem zo snel mogelijk contact met je op."
     }
 }

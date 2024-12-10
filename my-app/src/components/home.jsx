@@ -24,6 +24,7 @@ export default function Home() {
                         <a href="#education">{t('chapters.education')}</a>
                         <a href="#work">{t('chapters.work')}</a>
                         <a href="#stack">Stack</a>
+                        <a href="#contact">{t('chapters.contact')}</a>
                     </div>
                 </div>
 

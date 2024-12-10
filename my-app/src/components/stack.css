@@ -129,6 +129,22 @@
     margin: -5px 0 0 0;
 }
 
+/* Stack list */
+
+.stack-innhold ul {
+    margin-left: -20px;
+}
+
+.stack-innhold ul li {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 160%;
+    text-align: start;
+    color: rgb(0, 0, 0);
+}
+
 @media screen and (max-width: 1100px) {
     .stack-container {
         width: 97%;
