@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.b6b563c0.css",
-    "main.js": "/static/js/main.daf30f4e.js",
-    "static/media/background.JPG": "/static/media/background.9081421f1789878be934.JPG",
-    "static/media/meg.png": "/static/media/meg.c084cd1def5b6273d93d.png",
-    "static/media/preikestolen.jpg": "/static/media/preikestolen.f3c656ef1fd78e92d4a9.jpg",
+    "main.css": "/static/css/main.e14cae9f.css",
+    "main.js": "/static/js/main.2877ad47.js",
+    "static/media/cool.mp4": "/static/media/cool.b160329937ec64ca5374.mp4",
+    "static/media/meg.png": "/static/media/meg.8e610a05a5584abb4b5f.png",
+    "static/media/nature.jpg": "/static/media/nature.879a390de3d22e204a1d.jpg",
     "static/media/en.png": "/static/media/en.ed962d6224f10e9755c0.png",
+    "static/media/signature.png": "/static/media/signature.a6acf7c3e9d24bcb3561.png",
     "index.html": "/index.html",
-    "main.b6b563c0.css.map": "/static/css/main.b6b563c0.css.map",
-    "main.daf30f4e.js.map": "/static/js/main.daf30f4e.js.map"
+    "main.e14cae9f.css.map": "/static/css/main.e14cae9f.css.map",
+    "main.2877ad47.js.map": "/static/js/main.2877ad47.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6b563c0.css",
-    "static/js/main.daf30f4e.js"
+    "static/css/main.e14cae9f.css",
+    "static/js/main.2877ad47.js"
   ]
 }
