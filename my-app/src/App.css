@@ -63,6 +63,12 @@ body {
     margin: 30px 0;
 }
 
+@media screen and (max-width: 1100px) {
+    .line {
+        width: 95%;
+    }
+}
+
 /* Effects */
 
 @keyframes fadeInUp {

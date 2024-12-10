@@ -19,12 +19,12 @@ export default function Home() {
                     </div>
                     <div className="header-links">
                         <LanguageMenu/>
-                        <p>|</p>
-                        <a href="#about">{t('chapters.about')}</a>
-                        <a href="#education">{t('chapters.education')}</a>
-                        <a href="#work">{t('chapters.work')}</a>
-                        <a href="#stack">Stack</a>
-                        <a href="#contact">{t('chapters.contact')}</a>
+                        <p className='header-p'>|</p>
+                        <a className='header-link' href="#about">{t('chapters.about')}</a>
+                        <a className='header-link' href="#education">{t('chapters.education')}</a>
+                        <a className='header-link' href="#work">{t('chapters.work')}</a>
+                        <a className='header-link' href="#stack">Stack</a>
+                        <a className='header-link' href="#contact">{t('chapters.contact')}</a>
                     </div>
                 </div>
 

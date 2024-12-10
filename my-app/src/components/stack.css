@@ -132,7 +132,7 @@
 /* Stack list */
 
 .stack-innhold ul {
-    margin-left: -20px;
+    margin: -5px 0 0 -20px;
 }
 
 .stack-innhold ul li {
@@ -147,14 +147,11 @@
 
 @media screen and (max-width: 1100px) {
     .stack-container {
-        width: 97%;
+        width: 95%;
+        margin: 10px 0;
     }
 
-    .stack-grid {
-        gap: 15px 0;
-    }
-
-    .stack-grid-block {
-        width: 78%;
+    .stack-title {
+        font-size: 30px;
     }
 }

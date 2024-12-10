@@ -118,17 +118,22 @@
 @media screen and (max-width: 1100px) {
     .work-container {
         width: 95%;
-    }    
-
-    .work-block-right {
-        width: 85%;
+        margin: 0;
     }
 
-    .work-date {
-        width: 15%;
+    .work-block-top {
+        flex-direction: column;
     }
 
-    .work-stack {
-        width: 95%;
+    .work-block-role {
+        font-size: 30px;
+    }
+
+    .work-block-company {
+        margin: 0 0 -5px 0;
+    }
+
+    .work-block-date {
+        justify-content: start;
     }
 }

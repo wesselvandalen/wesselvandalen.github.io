@@ -11,10 +11,6 @@
     width: 100%;
 }
 
-.contact-innhold {
-    
-}
-
 /* Contact main */
 
 .contact-main {
@@ -95,4 +91,44 @@
     font-weight: 400;
     letter-spacing: 0em;
     line-height: 1.8em;
+}
+
+@media screen and (max-width: 1100px) {
+    .contact-container {
+        margin: 20px 0;
+        width: 95%;
+    }
+
+    .contact-main h2 {
+        width: 95%;
+        text-wrap: wrap;
+    }
+
+    .span-1 {
+        font-size: 32px;
+    }
+
+    .span-2 {
+        font-size: 32px;
+    }
+
+    .span-2 svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact-socials {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-bottom: 20px;
+    }
+
+    .email {
+        font-size: 30px;
+    }
+
+    .dash {
+        display: none;
+    }
 }

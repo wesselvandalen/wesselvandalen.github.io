@@ -75,8 +75,8 @@ export default function Stack() {
 
                         <div className="stack-grid">
 
-                            {frontendskills.map(skill => {
-                                return <div className="stack-tile">
+                            {frontendskills.map((skill, index) => {
+                                return <div className="stack-tile" key={index}>
                                     <div className="stack-pic-wrapper">
                                         <img src={skill.img} alt={skill.name} />
                                     </div>
@@ -95,8 +95,8 @@ export default function Stack() {
 
                         <div className="stack-grid">
 
-                            {backendskills.map(skill => {
-                                return <div className="stack-tile">
+                            {backendskills.map((skill, index) => {
+                                return <div className="stack-tile" key={index}>
                                     <div className="stack-pic-wrapper">
                                         <img src={skill.img} alt={skill.name} />
                                     </div>
@@ -115,8 +115,8 @@ export default function Stack() {
 
                         <div className="stack-grid">
 
-                            {softwareskills.map(skill => {
-                                return <div className="stack-tile">
+                            {softwareskills.map((skill, index) => {
+                                return <div className="stack-tile" key={index}>
                                     <div className="stack-pic-wrapper">
                                         <img src={skill.img} alt={skill.name} />
                                     </div>
