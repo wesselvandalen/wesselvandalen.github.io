@@ -1,0 +1,39 @@
+{
+    "chapters": {
+        "education": "Opleiding",
+        "work": "Werkervaring"
+    },
+    "home": {
+        "role": "Full Stack Software Engineer",
+        "description1": "Ik ben Wessel, een {age}-jarige full-stack softwareontwikkelaar met {exp} jaar ervaring. Ik ben bedreven in het bouwen van zowel de front-end als de back-end van webapplicaties, inclusief het maken van databases en het integreren van software met Azure via CI/CD pipelines. Ik zorg ervoor dat alle componenten naadloos samenwerken en lever volledig geïntegreerde, end-to-end oplossingen.",
+        "description2": "Ik ben sinds mijn jeugd verliefd op Noorwegen, de cultuur en de taal, en daar naartoe verhuizen is een droom die ik altijd heb gehad. Ik spreek vloeiend Noors en werken in Noorwegen—ofwel op afstand of, bij voorkeur, op kantoor—is mijn hoogste prioriteit. Ik ben enthousiast om de nodige stappen te zetten om deze jeugddroom werkelijkheid te maken!"
+    },
+    "education": {
+        "hu": {
+            "description": "Een vierjarige bacheloropleiding afgerond met een focus op softwareontwikkeling, inclusief webontwikkeling, databases en systeemontwerp/-architectuur. Gespecialiseerd in webontwikkeling en design."
+        }
+    },
+    "work": {
+        "mysolution": {
+            "description": "Een volledig aanpasbaar webplatform ontworpen en ontwikkeld met behulp van React, TypeScript en Java Spring, waarbij ik volledige verantwoordelijkheid heb genomen voor het project om GDPR-compliance, veilige JWT-authenticatie, een SQLite-gebaseerde Salesforce-integratie en robuuste backend-ondersteuning voor gepersonaliseerde zakelijke websites te waarborgen."
+        },
+        "nordiskaroma": {
+            "description": "Bouwde een full-stack Noors e-commerceplatform voor Nordisk Aroma met behulp van React, TypeScript en Java Spring, waarbij het Scandinavische erfgoed wordt gepresenteerd door middel van een modern ontwerp. Implementeerde veilige JWT-authenticatie, een PostgreSQL-database en schaalbare REST API's. Een CI/CD-pijplijn opgezet met Test-Driven Development (TDD) om kwaliteit en snelle implementatie te garanderen."
+        }
+    },
+    "stack": {
+        "tools": "Tools en Software",
+        "security": "Beveiliging",
+        "languages": {
+            "title": "Talen",
+            "norwegian": "Noors - Werkvaardigheid en bijna als moedertaal. (C1)",
+            "english": "Engels - Moedertaal. (C2)",
+            "dutch": "Nederlands - Moedertaal. (C2)"
+        }
+    },
+    "footer": {
+        "message1": "Geïnteresseerd / gewoon een praatje maken? Ik ook!",
+        "message2": "Stuur me een {mail}, en ik neem zo snel mogelijk contact met je op!",
+        "mail": "mail"
+    }
+}

@@ -1,0 +1,130 @@
+.work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+.work-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    min-width: 64rem;
+    gap: 20px;
+}
+
+/* Work block */
+
+.work-block {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    width: 100%;
+    max-width: 64rem;
+}
+
+.work-left {
+    height: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.vertical-line {
+    margin: 0 0 0 14px;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.work-left img {
+    border-radius: 50%;
+    margin: 12px 0 0 0;
+    width: 28px;
+    height: 28px;
+    background-color: rgb(30 58 138);
+}
+
+.work-right {
+    border-radius: 12px;
+    padding: .75rem 1rem 0 1rem;
+}
+
+.w-company {
+    margin: 0;
+    font-size: 1.125rem;
+    color: rgb(20, 20, 20);
+    line-height: 1.4em;
+    letter-spacing: 0em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.w-role {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.25rem;
+    color: rgb(156 163 175);
+    font-weight: 400;
+}
+
+.w-description {
+    color: rgb(156 163 175);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.w-link {
+    color: rgb(36, 158, 245);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.w-link:hover {
+    color: rgb(24, 129, 204);
+    text-decoration: underline;
+}
+
+.w-stack-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0 10px 0;
+}
+
+.w-stack-div p {
+    color: rgb(56, 56, 56);
+    background-color: rgba(204, 204, 204, 0.178);
+    font-weight: 400;
+    font-size: .75rem;
+    border-radius: 5%;
+    padding: 1px 6px;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+.w-date-div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.w-date-div svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 0 2px 0;
+    color: rgb(156 163 175);
+}
+
+.w-date {
+    color: rgb(156 163 175);
+    font-size: .875rem;
+    line-height: 1.25rem;
+}

@@ -1,0 +1,39 @@
+{
+    "chapters": {
+        "education": "Education",
+        "work": "Work experience"
+    },
+    "home": {
+        "role": "Full Stack Software Engineer",
+        "description1": "I'm Wessel, a {age}-year-old full-stack software developer with {exp} year(s) of experience. I’m skilled in building both the front-end and back-end of web applications, including creating databases and integrating software to Azure through CI/CD pipelines. I ensure that all components work seamlessly together, delivering fully integrated, end-to-end solutions.",
+        "description2": "I’ve been in love with Norway, its culture and language since childhood, and moving there is a dream I've always had. I speak fluent Norwegian, and working in Norway—whether remotely or, ideally, in-office—is my top priority. I’m excited to take the necessary steps to make this childhood dream a reality!"
+    },
+    "education": {
+        "hu": {
+            "description": "Completed a 4-year bachelor's degree with a focus on software development, including web development, databases and system design/architecture. Specialized in web development and design."
+        }
+    },
+    "work": {
+        "mysolution": {
+            "description": "Designed and developed a fully customizable web platform using React, TypeScript, and Java Spring, taking full ownership of the project to ensure GDPR compliance, secure JWT authentication, a SQLite-backed Salesforce integration, and robust backend support for personalized business websites."
+        },
+        "nordiskaroma": {
+            "description": "Built a full-stack Norwegian e-commerce platform for Nordisk Aroma using React, TypeScript, and Java Spring, showcasing Scandinavian heritage through a modern design. Implemented secure JWT authentication, a PostgreSQL database, and scalable REST APIs. Established a CI/CD pipeline with Test-Driven Development (TDD) to ensure quality and fast deployment."
+        }
+    },
+    "stack": {
+        "tools": "Tools and Software",
+        "security": "Security",
+        "languages": {
+            "title": "Languages",
+            "norwegian": "Norwegian - Work profiency and close to native. (C1)",
+            "english": "English - Native. (C2)",
+            "dutch": "Dutch - Native. (C2)"
+        }
+    },
+    "footer": {
+        "message1": "Interested / just want to chat? So do I!",
+        "message2": "Send me a {mail}, and I'll get back to you as soon as possible!",
+        "mail": "mail"
+    }
+}

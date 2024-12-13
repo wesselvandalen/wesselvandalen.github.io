@@ -1,0 +1,7 @@
+/app/node_modules
+/app/build
+/app/.gitignore
+my-app/.gitignore
+my-app/src/assets/cool.mp4
+my-app/.gitignore
+my-app/src/assets/cool.mp4

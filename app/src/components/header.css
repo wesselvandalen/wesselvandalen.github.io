@@ -1,0 +1,65 @@
+.header-container {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 80;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+}
+
+.header-inner-content {
+    max-width: 64rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header profile */
+
+.header-profile {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 30%;
+    gap: 15px;
+}
+
+.header-profile img {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0;
+}
+
+.h-name {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 550;
+    color: rgb(27, 27, 27);
+    margin: 2px 0 0 0;
+}
+
+.h-role {
+    font-size: .75rem;
+    line-height: 1.25rem;
+    margin: -.125rem 0 0 0;
+    color: rgb(27, 27, 27);
+}
+
+/* Header nav */
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
