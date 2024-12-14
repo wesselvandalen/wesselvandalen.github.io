@@ -130,3 +130,29 @@
     font-size: .875rem;
     line-height: 1.25rem;
 }
+
+@media screen and (max-width: 64rem) {
+    .work-container {
+        width: 95%;
+    }
+
+    .work-block {
+        grid-template-columns: 2% 99%;
+    }
+
+    .w-company {
+        font-size: 20px;
+    }
+
+    .w-description {
+        width: 33%;
+    }
+
+    .w-role {
+        width: 35%;
+    }
+
+    .w-stack-div {
+        width: 35%;
+    }
+}

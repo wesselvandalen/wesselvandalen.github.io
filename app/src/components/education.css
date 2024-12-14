@@ -93,3 +93,21 @@
     font-size: .875rem;
     line-height: 1.25rem;
 }
+
+@media screen and (max-width: 64rem) {
+    .education-container {
+        width: 95%;
+    }
+
+    .education-block {
+        grid-template-columns: 2% 99%;
+    }
+
+    .e-school {
+        font-size: 20px;
+    }
+
+    .e-description {
+        width: 35%;
+    }
+}

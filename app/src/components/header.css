@@ -63,3 +63,18 @@
     align-items: center;
     gap: 30px;
 }
+
+@media screen and (max-width: 64rem) {
+    .header-content {
+        height: 60px;
+    }
+
+    .header-inner-content {
+        padding: 0 10px;
+    }
+
+    .header-profile {
+        gap: 10px;
+        width: 70%;
+    }
+}

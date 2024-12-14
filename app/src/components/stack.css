@@ -138,3 +138,9 @@
     text-align: start;
     color: rgb(156 163 175);
 }
+
+@media screen and (max-width: 64rem) {
+    .stack-container {
+        width: 95%;
+    }
+}

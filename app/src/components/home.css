@@ -134,4 +134,8 @@
     .social-container {
         flex-direction: column;
     }
+
+    .description-me {
+        margin-top: 2px;
+    }
 }

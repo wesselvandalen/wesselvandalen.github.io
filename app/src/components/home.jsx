@@ -2,7 +2,7 @@ import './home.css';
 import { useTranslation } from 'react-i18next';
 import meg from '../assets/fugl.jpg';
 import mail from '../assets/icons/mail.png';
-import jobb from '../assets/graphics/mysolution.png';
+import jobb from '../assets/graphics/skogogsinne.png';
 
 export default function Home() {
     const [t] = useTranslation("global");
@@ -35,7 +35,7 @@ export default function Home() {
                 <div className="role-container">
                     <h2 className='role'>{t('home.role')}</h2>
                     <img src={jobb} alt="Current jobb logo" />
-                    <h2 className='current-jobb'>Mysolution</h2>
+                    <h2 className='current-jobb'>Skog & Sinne</h2>
                 </div>
 
                 <p className='description-me'>Hallaisen! {t('home.description1').replace('{age}', calculateAge()).replace('{exp}', calculateExperience())}</p>
