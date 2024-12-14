@@ -42,7 +42,7 @@ export default function LanguageMenu() {
             <div className="dropdown-content">
                 <button onClick={() => handleLanguageSwitch('no')} >
                     <img src={noFlag} alt='Norwegian flag' />
-                    Norsk bokmål
+                    Norsk
                 </button>
                 <button onClick={() => handleLanguageSwitch('en')} >
                     <img src={enFlag} alt='English flag' />

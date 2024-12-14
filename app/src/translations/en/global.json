@@ -17,8 +17,8 @@
         "mysolution": {
             "description": "Designed and developed a fully customizable web platform using React, TypeScript, and Java Spring, taking full ownership of the project to ensure GDPR compliance, secure JWT authentication, a SQLite-backed Salesforce integration, and robust backend support for personalized business websites."
         },
-        "nordiskaroma": {
-            "description": "Built a full-stack Norwegian e-commerce platform for Nordisk Aroma using React, TypeScript, and Java Spring, showcasing Scandinavian heritage through a modern design. Implemented secure JWT authentication, a PostgreSQL database, and scalable REST APIs. Established a CI/CD pipeline with Test-Driven Development (TDD) to ensure quality and fast deployment."
+        "skogogsinne": {
+            "description": "Built a full-stack Norwegian e-commerce platform for Skog & Sinne using React, TypeScript, and Java Spring, showcasing Scandinavian heritage through a modern design. Implemented secure JWT authentication, a PostgreSQL database, and scalable REST APIs. Established a CI/CD pipeline with Test-Driven Development (TDD) to ensure quality and fast deployment."
         }
     },
     "stack": {

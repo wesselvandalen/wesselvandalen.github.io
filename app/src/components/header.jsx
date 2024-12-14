@@ -1,6 +1,6 @@
 import './header.css';
 import LanguageMenu from './language-menu';
-import meg from '../assets/jeg.jpg';
+import meg from '../assets/fugl.jpg';
 import { useTranslation } from 'react-i18next';
 
 export default function Header() {

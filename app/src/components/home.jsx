@@ -1,6 +1,6 @@
 import './home.css';
 import { useTranslation } from 'react-i18next';
-import meg from '../assets/jeg.jpg';
+import meg from '../assets/fugl.jpg';
 import mail from '../assets/icons/mail.png';
 import jobb from '../assets/graphics/mysolution.png';
 

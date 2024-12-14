@@ -25,6 +25,7 @@ import arc from '../assets/icons/arc.png';
 import figma from '../assets/icons/figma.png';
 import tailwind from '../assets/icons/tailwind.png';
 import github from '../assets/icons/github.png';
+import visualparadigm from '../assets/icons/visualparadigm.png';
 
 export default function Stack() {
     const [t] = useTranslation("global");
@@ -60,7 +61,8 @@ export default function Stack() {
         { name: 'Inteallij IDEA', type: 'IDE', img: intellij },
         { name: 'Arc', type: 'browser', img: arc },
         { name: 'Figma', type: 'Design tool', img: figma },
-        { name: 'GitHub', type: 'Version Control platform', img: github }
+        { name: 'GitHub', type: 'Version Control platform', img: github },
+        { name: 'Visual Paradigm', type: 'Modeling Tool', img: visualparadigm }
     ];
 
     return (

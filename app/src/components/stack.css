@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: start;
     width: 100%;
+    animation: slideUpFadeIn 1.3s ease-out;
 }
 
 .stack-content {
@@ -67,7 +68,7 @@
 
 .stack-pic-wrapper {
     border-radius: 6px;
-    border: dashed rgba(168, 168, 168, 0.5) 1px; 
+    border: dashed rgba(168, 168, 168, 0.4) 1px; 
     padding: 5px;
     inset: 0px;
     flex: none;

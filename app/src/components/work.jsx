@@ -1,14 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import './work.css';
 import mysolution from '../assets/graphics/mysolution.png';
-import nordiskaroma from '../assets/graphics/nordiskaroma.png';
+import skogogsinne from '../assets/graphics/skogogsinne.png';
 
 export default function Work() {
     const [t] = useTranslation("global");
 
     const jobbs = [
         { img: mysolution, name: 'Mysolution', role: 'React Typescript & Java Spring developer, GDPR researcher', stack: ['React', 'Typescript', 'Java', 'Spring', 'SQLite', 'REST', 'Azure (DevOps)', 'Salesforce', 'Agile', 'Scrum', 'Git', "API's", 'OOP', 'Postman', 'Swagger', 'Translations', 'HTTP', 'Auth', 'Maven', 'JWT', 'Hibernate', 'Customer relationship'], link: 'https://www.mysolution.com/en/', date: '2024 - 2025', description: t('work.mysolution.description') },
-        { img: nordiskaroma, name: 'Nordisk Aroma', role: 'React Typescript & Java Spring developer, DevOps Engineer', stack: ['React', 'Typescript', 'Java', 'Spring', 'CI/CD pipeline', 'Test-Driven Development', 'JUnit5', 'Postman', 'REST', 'Git', 'GitHub', "API's", 'OOP', 'Postman', 'Translations', 'HTTP', 'Auth', 'Maven', 'JWT', 'Hibernate'], link: 'link comes soon', date: '2024 - 2025', description: t('work.nordiskaroma.description') }
+        { img: skogogsinne, name: 'Skog & Sinne', role: 'React Typescript & Java Spring developer, DevOps Engineer', stack: ['React', 'Typescript', 'Java', 'Spring', 'CI/CD pipeline', 'Test-Driven Development', 'JUnit5', 'Postman', 'REST', 'Git', 'GitHub', "API's", 'OOP', 'Postman', 'Translations', 'HTTP', 'Auth', 'Maven', 'JWT', 'Hibernate'], link: '', date: '2024 - 2025', description: t('work.skogogsinne.description') }
     ];
 
     return (
