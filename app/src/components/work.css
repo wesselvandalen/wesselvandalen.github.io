@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: start;
     width: 100%;
-    animation: slideUpFadeIn 1.2s ease-out;
     margin-bottom: 30px;
 }
 
@@ -137,11 +136,7 @@
     }
 
     .work-block {
-        grid-template-columns: 2% 99%;
-    }
-
-    .w-company {
-        font-size: 20px;
+        grid-template-columns: 2% 98%;
     }
 
     .w-description {

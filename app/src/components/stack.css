@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: start;
     width: 100%;
-    animation: slideUpFadeIn 1.3s ease-out;
 }
 
 .stack-content {

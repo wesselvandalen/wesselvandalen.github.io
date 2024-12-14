@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: start;
     width: 100%;
-    animation: slideUpFadeIn 1.1s ease-out;
 }
 
 .education-list {
@@ -101,10 +100,6 @@
 
     .education-block {
         grid-template-columns: 2% 99%;
-    }
-
-    .e-school {
-        font-size: 20px;
     }
 
     .e-description {
