@@ -35,7 +35,7 @@
     margin: 0 0 0 14px;
     height: 105%;
     width: 1px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .work-left img {
@@ -48,13 +48,13 @@
 
 .work-right {
     border-radius: 12px;
-    padding: .75rem 1rem 0 1rem;
+    padding: .85rem 1rem 0 1rem;
 }
 
 .w-company {
     margin: 0;
     font-size: 1.125rem;
-    color: rgb(20, 20, 20);
+    color: rgb(243, 243, 243); /* rgb(20, 20, 20) */
     line-height: 1.4em;
     letter-spacing: 0em;
     font-weight: 400;
@@ -65,12 +65,12 @@
     margin: 0;
     font-size: 15px;
     line-height: 1.25rem;
-    color: rgb(156 163 175);
+    color: rgb(151, 153, 156); /* rgb(156 163 175) */
     font-weight: 400;
 }
 
 .w-description {
-    color: rgb(156 163 175);
+    color: rgb(151, 153, 156); /* rgb(156 163 175) */
     font-weight: 400;
     font-size: 15px;
     line-height: 1.5rem;
@@ -101,8 +101,8 @@
 }
 
 .w-stack-div p {
-    color: rgb(56, 56, 56);
-    background-color: rgba(204, 204, 204, 0.178);
+    color: rgb(230, 230, 230); /* rgb(56, 56, 56) */
+    background-color: rgba(243, 229, 229, 0.178); /* rgba(204, 204, 204, 0.178) */
     font-weight: 400;
     font-size: .75rem;
     border-radius: 5%;
@@ -121,11 +121,11 @@
     width: 20px;
     height: 20px;
     margin: 0 0 2px 0;
-    color: rgb(156 163 175);
+    color: rgb(151, 153, 156); /* rgb(156 163 175) */
 }
 
 .w-date {
-    color: rgb(156 163 175);
+    color: rgb(151, 153, 156); /* rgb(156 163 175) */
     font-size: .875rem;
     line-height: 1.25rem;
 }

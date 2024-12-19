@@ -1,14 +1,14 @@
 .dropdown-content button {
-    color: rgb(66, 66, 87);
+    color: rgb(208, 208, 210); /* rgb(66, 66, 87) */
     text-decoration: none;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0em;
     line-height: 1.8em;
-    background-color: #f9fbff;
+    background-color: #0a0a0a; /* f9fbff */
     border: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 4px 10px rgba(247, 247, 247, 0.03); /* (0, 0, 0, 0.03) */
     padding: 14px 16px;
     min-width: 175px;
     display: block;
@@ -35,7 +35,7 @@
     text-align: left;
     cursor: pointer;
     font-size: 14px;
-    color: rgb(27, 27, 27);
+    color: rgb(241, 241, 241); /* rgb(27, 27, 27) */
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
