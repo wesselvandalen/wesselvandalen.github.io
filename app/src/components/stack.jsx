@@ -26,6 +26,7 @@ import figma from '../assets/icons/figma.png';
 import tailwind from '../assets/icons/tailwind.png';
 import github from '../assets/icons/github.png';
 import visualparadigm from '../assets/icons/visualparadigm.png';
+import powershell from '../assets/icons/powershell.png';
 
 export default function Stack() {
     const [t] = useTranslation("global");
@@ -62,7 +63,8 @@ export default function Stack() {
         { name: 'Arc', type: 'browser', img: arc },
         { name: 'Figma', type: 'Design tool', img: figma },
         { name: 'GitHub', type: 'Version Control platform', img: github },
-        { name: 'Visual Paradigm', type: 'Modeling Tool', img: visualparadigm }
+        { name: 'Visual Paradigm', type: 'Modeling Tool', img: visualparadigm },
+        { name: 'Powershell', type: 'Command line', img: powershell }
     ];
 
     return (

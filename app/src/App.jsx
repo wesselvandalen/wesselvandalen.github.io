@@ -14,11 +14,11 @@ export default function App() {
         <Header/>
         <Home/>
         <div className="line"/>
+        <Stack/>
+        <div className="line"/>
         <Education/>
         <div className="line"/>
         <Work/>
-        <div className="line"/>
-        <Stack/>
         <Footer/>
       </div>
     </div>
