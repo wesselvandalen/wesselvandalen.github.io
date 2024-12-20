@@ -10,18 +10,20 @@ import { initReactI18next } from 'react-i18next';
 import global_en from './translations/en/global.json';
 import global_no from './translations/no/global.json';
 import global_nl from './translations/nl/global.json';
+import global_is from './translations/is/global.json';
+import global_dk from './translations/dk/global.json';
 
 function getLanguage() {
   const lang = localStorage.getItem('lang');
 
-  if (lang === 'en' || lang === 'no' || lang === 'nl') {
+  if (lang === 'en' || lang === 'no' || lang === 'nl' || lang === 'is' || lang === 'dk') {
     document.documentElement.lang = lang;
     return lang;
   }
 
-  // Norwegian is the standard app language
-  localStorage.setItem('lang', 'no');
-  return 'no';
+  // English is the standard app language
+  localStorage.setItem('lang', 'en');
+  return 'en';
 }
 
 i18next.use(initReactI18next).init({
@@ -36,6 +38,12 @@ i18next.use(initReactI18next).init({
     },
     en: {
       global: global_en,
+    },
+    dk: {
+      global: global_dk,
+    },
+    is: {
+      global: global_is
     }
   }
 });

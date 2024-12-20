@@ -1,0 +1,39 @@
+{
+    "chapters": {
+        "education": "Uddannelse",
+        "work": "Erhvervserfaring"
+    },
+    "home": {
+        "role": "Full-Stack Softwareingeniør",
+        "description1": "Jeg er Wessel, en {age}-årig full-stack softwareudvikler med {exp} års erfaring. Jeg er dygtig til at bygge både front-end og back-end af webapplikationer, herunder at oprette databaser og integrere software med Azure via CI/CD-pipelines. Jeg sikrer, at alle komponenter fungerer problemfrit sammen og leverer fuldt integrerede end-to-end løsninger.",
+        "description2": "Jeg har været fascineret af Norge, dets kultur og sprog siden barndommen, og at flytte dertil er en drøm, jeg altid har haft. Jeg taler flydende norsk, og at arbejde i Norge—hvad enten det er remote eller helst på kontor—er min højeste prioritet. Jeg er begejstret for at tage de nødvendige skridt for at gøre denne barndomsdrøm til virkelighed!"
+    },
+    "education": {
+        "hu": {
+            "description": "Fuldført en 4-årig bachelorgrad med fokus på softwareudvikling, herunder webudvikling, databaser og systemdesign/arkitektur. Specialiseret i webudvikling og design."
+        }
+    },
+    "work": {
+        "mysolution": {
+            "description": "Designede og udviklede en fuldt tilpasselig webplatform med React, TypeScript og Java Spring, tog fuldt ansvar for projektet for at sikre GDPR-overholdelse, sikker JWT-autentifikation, en SQLite-understøttet Salesforce-integration og robust backend til personlige virksomhedswebsites."
+        },
+        "skogogsinne": {
+            "description": "Byggede en full-stack norsk e-handelsplatform til Skog & Sinne med React, TypeScript og Java Spring, der fremhæver skandinavisk arv gennem et moderne design. Implementerede sikker JWT-autentifikation, en PostgreSQL-database og skalerbare REST API'er. Etablerede en CI/CD-pipeline med testdrevet udvikling (TDD) for at sikre kvalitet og hurtig implementering."
+        }
+    },
+    "stack": {
+        "tools": "Værktøjer og Software",
+        "security": "Sikkerhed",
+        "languages": {
+            "title": "Sprog",
+            "norwegian": "Norsk - Arbejdsdygtighed og tæt på modersmål. (C1)",
+            "english": "Engelsk - Modersmål. (C2)",
+            "dutch": "Hollandsk - Modersmål. (C2)"
+        }
+    },
+    "footer": {
+        "message1": "Interesseret / vil du bare chatte? Det vil jeg også!",
+        "message2": "Send mig en {mail}, så vender jeg tilbage hurtigst muligt!",
+        "mail": "mail"
+    }
+}

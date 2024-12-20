@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import noFlag from '../assets/flags/no.png';
 import nlFlag from '../assets/flags/nl.png';
 import enFlag from '../assets/flags/en.png';
+import dkFlag from '../assets/flags/dk.png';
+import isFlag from '../assets/flags/is.png';
 
 export default function LanguageMenu() {
     const [t, i18n] = useTranslation("global");
@@ -12,6 +14,10 @@ export default function LanguageMenu() {
             return noFlag;
         } else if (lang === 'nl') {
             return nlFlag;
+        } else if (lang === 'dk') {
+            return dkFlag;
+        } else if (lang === 'is') {
+            return isFlag;
         } else {
             return enFlag;
         }
@@ -22,6 +28,10 @@ export default function LanguageMenu() {
             return 'Norsk';
         } else if (lang === 'nl') {
             return 'Nederlands';
+        }  else if (lang === 'dk') {
+            return 'Dansk';
+        }  else if (lang === 'is') {
+            return 'Íslenska';
         } else {
             return 'English';
         }
@@ -51,6 +61,14 @@ export default function LanguageMenu() {
                 <button onClick={() => handleLanguageSwitch('nl')} >
                     <img src={nlFlag} alt='Dutch flag' />
                     Nederlands
+                </button>
+                <button onClick={() => handleLanguageSwitch('dk')} >
+                    <img src={dkFlag} alt='Danish flag' />
+                    Dansk
+                </button>
+                <button onClick={() => handleLanguageSwitch('is')} >
+                    <img src={isFlag} alt='Icelandic flag' />
+                    Íslenska
                 </button>
             </div>
         </div>
