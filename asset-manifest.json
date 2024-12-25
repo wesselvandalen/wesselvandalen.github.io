@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.1cd8d5d0.css",
-    "main.js": "/static/js/main.70982062.js",
+    "main.css": "/static/css/main.b591b5ce.css",
+    "main.js": "/static/js/main.f975f9c1.js",
     "static/media/fugl.jpg": "/static/media/fugl.04adc84d87b27ed31681.jpg",
     "static/media/en.png": "/static/media/en.ed962d6224f10e9755c0.png",
     "index.html": "/index.html",
-    "main.1cd8d5d0.css.map": "/static/css/main.1cd8d5d0.css.map",
-    "main.70982062.js.map": "/static/js/main.70982062.js.map"
+    "main.b591b5ce.css.map": "/static/css/main.b591b5ce.css.map",
+    "main.f975f9c1.js.map": "/static/js/main.f975f9c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cd8d5d0.css",
-    "static/js/main.70982062.js"
+    "static/css/main.b591b5ce.css",
+    "static/js/main.f975f9c1.js"
   ]
 }
