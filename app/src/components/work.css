@@ -101,7 +101,7 @@
 }
 
 .w-stack-div p {
-    color: rgb(230, 230, 230); /* rgb(56, 56, 56) */
+    color: rgba(230, 230, 230, .6); /* rgb(56, 56, 56) */
     background-color: rgba(243, 229, 229, 0.178); /* rgba(204, 204, 204, 0.178) */
     font-weight: 400;
     font-size: .75rem;

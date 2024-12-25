@@ -34,8 +34,6 @@ export default function Home() {
 
                 <div className="role-container">
                     <h2 className='role'>{t('home.role')}</h2>
-                    <img src={jobb} alt="Current jobb logo" />
-                    <h2 className='current-jobb'>Skog & Sinne</h2>
                 </div>
 
                 <p className='description-me'>Hallaisen! {t('home.description1').replace('{age}', calculateAge()).replace('{exp}', calculateExperience())}</p>
