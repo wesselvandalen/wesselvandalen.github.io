@@ -35,7 +35,7 @@ export default function LanguageMenu() {
             return 'Dansk';
         }  else if (lang === 'is') {
             return 'Íslenska';
-        } else if (lang === 'se') {
+        } else if (lang === 'sv') {
             return 'Svenska';
         } else {
             return 'English';
