@@ -81,6 +81,8 @@ export default function Stack() {
                         <li>{t('stack.languages.norwegian')}</li>
                         <li>{t('stack.languages.english')}</li>
                         <li>{t('stack.languages.dutch')}</li>
+                        <li>{t('stack.languages.danish')}</li>
+                        <li>{t('stack.languages.swedish')}</li>
                     </ul>
 
                 </div>

@@ -5,6 +5,7 @@ import nlFlag from '../assets/flags/nl.png';
 import enFlag from '../assets/flags/en.png';
 import dkFlag from '../assets/flags/dk.png';
 import isFlag from '../assets/flags/is.png';
+import svFlag from '../assets/flags/sv.png';
 
 export default function LanguageMenu() {
     const [t, i18n] = useTranslation("global");
@@ -18,6 +19,8 @@ export default function LanguageMenu() {
             return dkFlag;
         } else if (lang === 'is') {
             return isFlag;
+        } else if (lang === 'sv') {
+            return svFlag;
         } else {
             return enFlag;
         }
@@ -32,6 +35,8 @@ export default function LanguageMenu() {
             return 'Dansk';
         }  else if (lang === 'is') {
             return 'Íslenska';
+        } else if (lang === 'se') {
+            return 'Svenska';
         } else {
             return 'English';
         }
@@ -69,6 +74,10 @@ export default function LanguageMenu() {
                 <button onClick={() => handleLanguageSwitch('is')} >
                     <img src={isFlag} alt='Icelandic flag' />
                     Íslenska
+                </button>
+                <button onClick={() => handleLanguageSwitch('sv')} >
+                    <img src={svFlag} alt='Swedish flag' />
+                    Svenska
                 </button>
             </div>
         </div>

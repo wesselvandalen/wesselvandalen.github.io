@@ -1,0 +1,41 @@
+{
+    "chapters": {
+        "education": "Utbildning",
+        "work": "Arbetslivserfarenhet"
+    },
+    "home": {
+        "role": "Fullstack Software Engineer",
+        "description1": "Jag är Wessel, en {age}-årig fullstack utvecklare med {exp} år(s) erfarenhet. Jag är skicklig på att bygga både frontend och backend för webbapplikationer, inklusive att skapa databaser och integrera programvara med Azure genom CI/CD-pipelines. Jag ser till att alla komponenter fungerar sömlöst tillsammans och levererar helt integrerade, end-to-end lösningar.",
+        "description2": "Jag har varit förälskad i Norge, dess kultur och språk sedan barndomen, och att flytta dit har alltid varit en dröm. Jag talar flytande norska, och att arbeta i Norge—oavsett om det är på distans eller, helst, på kontoret—är min högsta prioritet. Jag är exalterad över att ta de nödvändiga stegen för att göra denna barndomsdröm till verklighet!"
+    },
+    "education": {
+        "hu": {
+            "description": "Avslutade en 4-årig kandidatexamen med fokus på programutveckling, inklusive webbprogrammering, databaser och systemdesign/arkitektur. Specialiserade mig på webbprogrammering och design."
+        }
+    },
+    "work": {
+        "mysolution": {
+            "description": "Designade och utvecklade en helt anpassningsbar webbplattform med React, TypeScript och Java Spring, och tog fullt ägandeskap av projektet för att säkerställa GDPR-efterlevnad, säker JWT-autentisering, en SQLite-backad Salesforce-integration och robust backend-stöd för personliga företagswebbplatser."
+        },
+        "skogogsinne": {
+            "description": "Byggde en fullstack norsk e-handelsplattform för Skog & Sinne med React, TypeScript och Java Spring, och visade upp skandinavisk kultur genom en modern design. Implementerade säker JWT-autentisering, en PostgreSQL-databas och skalbara REST-API:er. Etablerade en CI/CD-pipeline med Test-Driven Development (TDD) för att säkerställa kvalitet och snabb distribution."
+        }
+    },
+    "stack": {
+        "tools": "Verktyg och programvara",
+        "security": "Säkerhet",
+        "languages": {
+            "title": "Språk",
+            "norwegian": "Norska - Arbetskompetens och nära modersmål. (C1)",
+            "english": "Engelska - Modersmål. (C2)",
+            "dutch": "Holländska - Modersmål. (C2)",
+            "danish": "Danska - Övre mellanliggande. (B2)",
+            "swedish": "Svenska - Övre mellanliggande. (B2)"
+        }
+    },
+    "footer": {
+        "message1": "Intresserad / bara vill prata? Det vill jag också!",
+        "message2": "Skicka mig ett {mail}, så hör jag av mig så snart som möjligt!",
+        "mail": "mail"
+    }
+}
