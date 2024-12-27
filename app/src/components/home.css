@@ -17,20 +17,21 @@
 /* Home content */
 
 .home-img {
-    border: rgb(57, 54, 54) 4px solid; /* rgb(243, 243, 243) */
+    border: rgb(57, 54, 54) 4px solid;
+    /* rgb(243, 243, 243) */
     border-radius: 50%;
     width: 142px;
     height: 142px;
 }
 
 .name {
-    font-size: 2rem;    
+    font-size: 2rem;
     line-height: 120%;
-    color: rgb(255, 255, 255); /* rgb(0, 0, 0) */
+    color: rgb(255, 255, 255);
     letter-spacing: 0em;
     font-weight: 600;
     font-style: normal;
-    margin: 10px 0;
+    margin: 25px 0 10px 0;
 }
 
 .role-container {
@@ -41,32 +42,63 @@
 }
 
 .role {
-    font-size: 1rem;    
+    font-size: 1rem;
     line-height: 120%;
-    color: rgb(255, 255, 255); /* rgb(0, 0, 0) */
+    color: rgb(255, 255, 255);
+    /* rgb(0, 0, 0) */
     letter-spacing: 0em;
     font-weight: 400;
     font-style: normal;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-.role-container img {
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
+.role img {
+    width: 20px;
+    height: 20px;
 }
 
-.current-jobb {
-    font-size: 1rem;    
-    line-height: 120%;
-    color: rgb(255, 255, 255); /* rgb(0, 0, 0) */
-    letter-spacing: 0em;
-    font-weight: 400;
-    font-style: normal;
+/* Video */
+
+.video-thumbnail-link {
+    display: inline-block;
+    text-decoration: none;
 }
+
+.video-thumbnail {
+    width: 450px;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .video-thumbnail::after {
+    content: '\25B6';
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+} */
+
+/* Description */
 
 .description-me {
     margin: 0 0 10px 0;
-    font-size: 15px;    
+    font-size: 15px;
     line-height: 120%;
     color: rgba(156, 163, 175, 1);
     letter-spacing: 0em;
@@ -76,9 +108,9 @@
 
 .description-norway {
     margin: 0 0 30px 0;
-    font-size: 15px;    
+    font-size: 15px;
     line-height: 120%;
-    color: rgba(156, 163, 175, .7);
+    color: rgb(136, 136, 136);
     letter-spacing: 0em;
     font-weight: 400;
     font-style: normal;
@@ -96,8 +128,9 @@
 .social-container a {
     font-style: normal;
     font-weight: 400;
-    color: rgb(36, 158, 245);
+    /* color: rgb(36, 158, 245); */
     text-decoration: none;
+    color: rgb(136, 136, 136);
     letter-spacing: 0em;
     line-height: 100%;
     font-size: 15px;
