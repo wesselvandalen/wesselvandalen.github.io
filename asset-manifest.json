@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.066bc0e3.css",
+    "main.css": "/static/css/main.9cc67585.css",
     "main.js": "/static/js/main.357529f7.js",
     "static/media/IMG_4044.jpg": "/static/media/IMG_4044.afe96681b9528f94592d.jpg",
     "static/media/norway.png": "/static/media/norway.2456bf565191c9e1de99.png",
     "static/media/netherlands.png": "/static/media/netherlands.03372c6deec549c241db.png",
     "static/media/en.png": "/static/media/en.ed962d6224f10e9755c0.png",
     "index.html": "/index.html",
-    "main.066bc0e3.css.map": "/static/css/main.066bc0e3.css.map",
+    "main.9cc67585.css.map": "/static/css/main.9cc67585.css.map",
     "main.357529f7.js.map": "/static/js/main.357529f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.066bc0e3.css",
+    "static/css/main.9cc67585.css",
     "static/js/main.357529f7.js"
   ]
 }
