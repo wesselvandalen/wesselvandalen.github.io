@@ -1,12 +1,14 @@
 {
     "chapters": {
+        "home": "Home",
         "education": "Opleiding",
         "work": "Werkervaring"
     },
     "home": {
         "role": "Full Stack Software Engineer",
         "description1": "Ik ben Wessel, een {age}-jarige full-stack softwareontwikkelaar met {exp} jaar ervaring. Ik ben bedreven in het bouwen van zowel de front-end als de back-end van webapplicaties, inclusief het maken van databases en het integreren van software met Azure via CI/CD pipelines. Ik zorg ervoor dat alle componenten naadloos samenwerken en lever volledig geïntegreerde, end-to-end oplossingen.",
-        "description2": "Ik ben sinds mijn jeugd verliefd op Noorwegen, de cultuur en de taal, en daar naartoe verhuizen is een droom die ik altijd heb gehad. Ik spreek vloeiend Noors en werken in Noorwegen—ofwel op afstand of, bij voorkeur, op kantoor—is mijn hoogste prioriteit. Ik ben enthousiast om de nodige stappen te zetten om deze jeugddroom werkelijkheid te maken!"
+        "description2": "Ik ben sinds mijn jeugd verliefd op Noorwegen, de cultuur en de taal, en daar naartoe verhuizen is een droom die ik altijd heb gehad. Ik spreek vloeiend Noors en werken in Noorwegen—ofwel op afstand of, bij voorkeur, op kantoor—is mijn hoogste prioriteit. Ik ben enthousiast om de nodige stappen te zetten om deze jeugddroom werkelijkheid te maken!",
+        "call": "Bel me"
     },
     "education": {
         "hu": {
@@ -29,8 +31,8 @@
             "norwegian": "Noors - Werkvaardigheid en bijna als moedertaal. (C1)",
             "english": "Engels - Moedertaal. (C2)",
             "dutch": "Nederlands - Moedertaal. (C2)",
-            "danish": "Deens - Middengevorderd. (B2)",
-            "swedish": "Zweeds - Middengevorderd. (B2)"
+            "danish": "Deens - Middengevorderd. (B1)",
+            "swedish": "Zweeds - Middengevorderd. (B1)"
         }
     },
     "footer": {

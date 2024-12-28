@@ -1,6 +1,5 @@
 import './header.css';
 import LanguageMenu from './language-menu';
-import meg from '../assets/close.jpg';
 import { useTranslation } from 'react-i18next';
 
 export default function Header() {
@@ -11,12 +10,15 @@ export default function Header() {
             <div className="header-content">
                 <div className="header-inner-content">
 
-                    <div className="header-profile">
-                        <img src={meg} alt="Bilde av meg" />
-                        <div className="header-profile-info">
-                            <p className='h-name'>Wessel van Dalen</p>
-                            <p className='h-role'>{t('home.role')}</p>
-                        </div>
+                    <div>
+                        <p className='header-name'>Wessel Rowdy van Dalen</p>
+                    </div>
+
+                    <div className="header-links">
+                        <a href="#home">{t('chapters.home')}</a>
+                        <a href="#stack">Stack</a>
+                        <a href="#education">{t('chapters.education')}</a>
+                        <a href="#work">{t('chapters.work')}</a>
                     </div>
 
                     <div className="header-nav">

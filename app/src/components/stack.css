@@ -14,7 +14,7 @@
     flex-direction: column;
     width: 100%;
     align-items: start;
-    min-width: 64rem;
+    min-width: 1024px;
 }
 
 .stack-innhold {
@@ -27,13 +27,14 @@
 }
 
 .stack-title {
-    color: rgb(255, 255, 255); /* rgb(0, 0, 0) */
-    font-size: 18px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 1.1rem;
+    line-height: 120%;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%;
     letter-spacing: 0em;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 .stack-grid {
@@ -67,7 +68,7 @@
 
 .stack-pic-wrapper {
     border-radius: 6px;
-    border: dashed rgba(232, 227, 227, 0.3) 1px; /* rgba(168, 168, 168, 0.4) */
+    border: dashed rgba(168, 168, 168, 0.3) 1px; 
     padding: 5px;
     inset: 0px;
     flex: none;
@@ -102,7 +103,7 @@
 }
 
 .stack-info h6 {
-    color: rgb(234, 234, 234); /* rgb(20, 20, 20) */
+    color: rgba(0, 0, 0, .8);
     font-size: 15px;
     line-height: 1.4em;
     letter-spacing: 0em;
@@ -112,7 +113,7 @@
 }
 
 .stack-info p {
-    color: rgb(156 163 175);
+    color: rgba(0, 0, 0, .5);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -129,13 +130,13 @@
 }
 
 .stack-innhold ul li {
+    color: rgb(136, 136, 136);
     font-size: 15px;
-    font-style: normal;
+    line-height: 1.4em;
+    letter-spacing: 0em;
     font-weight: 400;
-    letter-spacing: 0;
-    line-height: 160%;
+    font-style: normal;
     text-align: start;
-    color: rgb(156 163 175);
 }
 
 @media screen and (max-width: 64rem) {

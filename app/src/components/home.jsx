@@ -1,10 +1,8 @@
 import './home.css';
 import { useTranslation } from 'react-i18next';
-import meg from '../assets/zoo.jpg';
-import mail from '../assets/icons/mail.png';
-import raccoon from '../assets/icons/raccoon.png';
-import coffee from '../assets/icons/coffee.png';
-import tanabata from '../assets/icons/tanabata.png';
+import meg from '../assets/IMG_4044.jpg';
+import norwayFlag from '../assets/icons/norway.png';
+import netherlandsFlag from '../assets/icons/netherlands.png';
 
 export default function Home() {
     const [t] = useTranslation("global");
@@ -28,53 +26,55 @@ export default function Home() {
     }
 
     return (
-        <div className="home-container">
+        <div className="home-container" id='home'>
             <div className="home-content">
 
                 <div className="video-thumbnail-link">
                     <div className="video-thumbnail">
-                        <img src={meg} alt="YouTube video" className="thumbnail-image" />
+                        <img src={meg} alt="Me" className="thumbnail-image" />
                     </div>
                 </div>
 
-                <h1 className='name'>Wessel van Dalen</h1>
+                <h1 className='name'>Wessel Rowdy van Dalen</h1>
 
                 <div className="role-container">
                     <h2 className='role'>{t('home.role')}
-                        <img src={raccoon} alt="Raccoon icon"/>
-                        <img src={coffee} alt="Coffee icon"/>
-                        <img src={tanabata} alt="Tanabata icon"/>
+                        <img src={norwayFlag} alt="Norway flag" title='Norway flag' />
+                        <img src={netherlandsFlag} alt="Netherlands flag" title='Netherlands flag' />
                     </h2>
                 </div>
 
-                <p className='description-me'>Hallaisen! {t('home.description1').replace('{age}', calculateAge()).replace('{exp}', calculateExperience())}</p>
-                <p className='description-norway'>{t('home.description2')}</p>
+                <p className='description'>Hallaisen! {t('home.description1').replace('{age}', calculateAge()).replace('{exp}', calculateExperience())}</p>
+                <p className='description'>{t('home.description2')}</p>
 
                 <div className="social-container">
-                    <a href="mailto:wesselvandalen@gmail.com" style={{ marginTop: '2px' }}>
-                        <img src={mail} alt="Mail icon" />
-                        wesselvandalen@gmail.com
-                    </a>
-                    <a href="https://github.com/wesselvandalen" target='_blank' rel='noreferrer' style={{ marginTop: '-2px' }}>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-                            <g fill="#f6f0f0"> {/* 181616 */}
-                                <path fillRule="evenodd" clipRule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z" /><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0" />
-                            </g>
+                    <a href="mailto:wesselvandalen@gmail.com">
+                        {t('footer.mail').charAt(0).toUpperCase() + t('footer.mail').slice(1)}
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                         </svg>
-                        /wesselvandalen
+
                     </a>
-                    <a href="https://linkedin.com/in/wesselvandalen" target='_blank' rel='noreferrer' style={{ marginTop: '-2px' }}>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-                            <path fill="#0076b2" d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z" />
-                            <path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 11-10.5 10.49 10.5 10.5 0 0110.5-10.49M50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z" />
+                    <a href="https://github.com/wesselvandalen" target='_blank' rel='noreferrer'>
+                        GitHub
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                         </svg>
-                        /wesselvandalen
+
                     </a>
-                    <a href="tel:0630682063" style={{ marginTop: '-2px' }}>
-                        <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.9996 4V9M14.9996 9L19.9996 9M14.9996 9L20.9996 3M10.2266 13.8631C9.02506 12.6615 8.07627 11.3028 7.38028 9.85323C7.32041 9.72854 7.29048 9.66619 7.26748 9.5873C7.18576 9.30695 7.24446 8.96269 7.41447 8.72526C7.46231 8.65845 7.51947 8.60129 7.63378 8.48698C7.98338 8.13737 8.15819 7.96257 8.27247 7.78679C8.70347 7.1239 8.70347 6.26932 8.27247 5.60643C8.15819 5.43065 7.98338 5.25585 7.63378 4.90624L7.43891 4.71137C6.90747 4.17993 6.64174 3.91421 6.35636 3.76987C5.7888 3.4828 5.11854 3.4828 4.55098 3.76987C4.2656 3.91421 3.99987 4.17993 3.46843 4.71137L3.3108 4.86901C2.78117 5.39863 2.51636 5.66344 2.31411 6.02348C2.08969 6.42298 1.92833 7.04347 1.9297 7.5017C1.93092 7.91464 2.01103 8.19687 2.17124 8.76131C3.03221 11.7947 4.65668 14.6571 7.04466 17.045C9.43264 19.433 12.295 21.0575 15.3284 21.9185C15.8928 22.0787 16.1751 22.1588 16.588 22.16C17.0462 22.1614 17.6667 22 18.0662 21.7756C18.4263 21.5733 18.6911 21.3085 19.2207 20.7789L19.3783 20.6213C19.9098 20.0898 20.1755 19.8241 20.3198 19.5387C20.6069 18.9712 20.6069 18.3009 20.3198 17.7333C20.1755 17.448 19.9098 17.1822 19.3783 16.6508L19.1835 16.4559C18.8339 16.1063 18.6591 15.9315 18.4833 15.8172C17.8204 15.3862 16.9658 15.3862 16.3029 15.8172C16.1271 15.9315 15.9523 16.1063 15.6027 16.4559C15.4884 16.5702 15.4313 16.6274 15.3644 16.6752C15.127 16.8453 14.7828 16.904 14.5024 16.8222C14.4235 16.7992 14.3612 16.7693 14.2365 16.7094C12.7869 16.0134 11.4282 15.0646 10.2266 13.8631Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <a href="https://linkedin.com/in/wesselvandalen" target='_blank' rel='noreferrer'>
+                        LinkedIn
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                         </svg>
-                        +06 30 68 20 63
+
+                    </a>
+                    <a href="tel:0630682063">
+                        {t('home.call')}
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                        </svg>
+
                     </a>
                 </div>
 

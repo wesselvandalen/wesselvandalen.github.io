@@ -1,12 +1,14 @@
 {
     "chapters": {
+        "home": "Hem",
         "education": "Utbildning",
         "work": "Arbetslivserfarenhet"
     },
     "home": {
         "role": "Fullstack Software Engineer",
         "description1": "Jag är Wessel, en {age}-årig fullstack utvecklare med {exp} år(s) erfarenhet. Jag är skicklig på att bygga både frontend och backend för webbapplikationer, inklusive att skapa databaser och integrera programvara med Azure genom CI/CD-pipelines. Jag ser till att alla komponenter fungerar sömlöst tillsammans och levererar helt integrerade, end-to-end lösningar.",
-        "description2": "Jag har varit förälskad i Norge, dess kultur och språk sedan barndomen, och att flytta dit har alltid varit en dröm. Jag talar flytande norska, och att arbeta i Norge—oavsett om det är på distans eller, helst, på kontoret—är min högsta prioritet. Jag är exalterad över att ta de nödvändiga stegen för att göra denna barndomsdröm till verklighet!"
+        "description2": "Jag har varit förälskad i Norge, dess kultur och språk sedan barndomen, och att flytta dit har alltid varit en dröm. Jag talar flytande norska, och att arbeta i Norge—oavsett om det är på distans eller, helst, på kontoret—är min högsta prioritet. Jag är exalterad över att ta de nödvändiga stegen för att göra denna barndomsdröm till verklighet!",
+        "call": "Ring mig"
     },
     "education": {
         "hu": {
@@ -29,8 +31,8 @@
             "norwegian": "Norska - Arbetskompetens och nära modersmål. (C1)",
             "english": "Engelska - Modersmål. (C2)",
             "dutch": "Holländska - Modersmål. (C2)",
-            "danish": "Danska - Övre mellanliggande. (B2)",
-            "swedish": "Svenska - Övre mellanliggande. (B2)"
+            "danish": "Danska - Övre mellanliggande. (B1)",
+            "swedish": "Svenska - Övre mellanliggande. (B1)"
         }
     },
     "footer": {

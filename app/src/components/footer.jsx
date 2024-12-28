@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <div className="footer-container">
 
-            <p className='copyright'>© {new Date().getFullYear()} Wessel van Dalen</p>
+            <p className='copyright'>© {new Date().getFullYear()} Wessel Rowdy van Dalen</p>
             <p className='message'>{t('footer.message1')}</p>
             <p className='message'>
                 {t('footer.message2').split('{mail}')[0]}

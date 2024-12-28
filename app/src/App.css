@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://v1.fontapi.ir/css/SFProDisplay');
 
 :root {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Inter", 'sans-serif';
+    font-family: SF Pro Display, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #000; /* fdfdfd */
+    background-color: #FAFAFC;
 }
 
 .app-container {
@@ -33,31 +33,18 @@ body {
 .line {
     width: 100%;
     margin: 30px 0;
-    background-color: rgba(255, 255, 255, 0.1); /* rgba(0, 0, 0, 0.1) */
+    background-color: rgba(0, 0, 0, 0.1); 
     height: 1px;
 }
 
 .section-title {
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: .007em;
+    line-height: 1.1428571429;
     margin-bottom: 2rem;
     margin-top: 0;
-    color: #fff; /* 000 */
-}
-
-/* Effekter */
-
-@keyframes slideUpFadeIn {
-    0% {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+    color: #1d1d1f; 
 }
 
 @media screen and (max-width: 64rem) {

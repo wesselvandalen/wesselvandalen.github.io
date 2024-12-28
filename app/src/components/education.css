@@ -40,7 +40,7 @@
     margin: 0 0 0 14px;
     height: 100%;
     width: 1px;
-    background-color: rgba(255, 255, 255, 0.3); /* rgba(0, 0, 0, 0.1) */
+    background-color: rgba(0, 0, 0, 0.1); 
 }
 
 .education-right {
@@ -50,7 +50,7 @@
 .e-school {
     margin: 0;
     font-size: 1.125rem;
-    color: rgb(241, 241, 241); /* rgb(20, 20, 20) */ 
+    color: rgb(0, 0, 0);
     line-height: 1.4em;
     letter-spacing: 0em;
     font-weight: 400;
@@ -61,35 +61,23 @@
     margin: 0;
     font-size: 15px;
     line-height: 1.25rem;
-    color: rgb(151, 153, 156); /* rgb(156 163 175) */
+    color: rgb(136, 136, 136);
     font-weight: 400;
 }
 
 .e-description {
-    color: rgb(151, 153, 156); /* rgb(156 163 175) */
+    color: rgb(136, 136, 136);
     font-weight: 400;
     font-size: 15px;
     line-height: 1.5rem;
     margin: 1.4rem 0 1rem 0;
 }
 
-.e-date-div {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.e-date-div svg {
-    width: 20px;
-    height: 20px;
-    margin: 0 0 2px 0;
-    color: rgb(151, 153, 156); /* rgb(156 163 175) */
-}
-
 .e-date {
-    color: rgb(151, 153, 156); /* rgb(156 163 175) */
+    color: rgb(136, 136, 136);
     font-size: .875rem;
     line-height: 1.25rem;
+    margin: 0 0 10px 0;
 }
 
 @media screen and (max-width: 64rem) {

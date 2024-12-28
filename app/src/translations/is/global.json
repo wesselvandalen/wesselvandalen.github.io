@@ -1,12 +1,14 @@
 {
     "chapters": {
+        "home": "Heim",
         "education": "Menntun",
         "work": "Starfsreynsla"
     },
     "home": {
         "role": "Full-Stack Hugbúnaðarverkfræðingur",
         "description1": "Ég er Wessel, {age} ára full-stack hugbúnaðarsérfræðingur með {exp} árs reynslu. Ég hef hæfni í að smíða bæði framenda og bakenda veflausna, þar á meðal að búa til gagnagrunna og samþætta hugbúnað við Azure með CI/CD-pípum. Ég tryggi að allir hlutar virki saman á hnökralausan hátt og skila fullkomlega samþættum lausnum frá upphafi til enda.",
-        "description2": "Ég hef verið heillaður af Noregi, menningu hans og tungumáli frá barnæsku, og að flytja þangað er draumur sem ég hef alltaf haft. Ég tala reiprennandi norsku, og að vinna í Noregi—hvort sem það er fjarvinnsla eða helst á skrifstofu—er mitt aðalmarkmið. Ég er spenntur fyrir því að taka nauðsynleg skref til að gera þennan barnæskudraum að veruleika!"
+        "description2": "Ég hef verið heillaður af Noregi, menningu hans og tungumáli frá barnæsku, og að flytja þangað er draumur sem ég hef alltaf haft. Ég tala reiprennandi norsku, og að vinna í Noregi—hvort sem það er fjarvinnsla eða helst á skrifstofu—er mitt aðalmarkmið. Ég er spenntur fyrir því að taka nauðsynleg skref til að gera þennan barnæskudraum að veruleika!",
+        "call": "Hringdu í mig"
     },
     "education": {
         "hu": {
@@ -29,8 +31,8 @@
             "norwegian": "Norska - Vinnustig og nálægt móðurmáli. (C1)",
             "english": "Enska - Móðurmál. (C2)",
             "dutch": "Hollenska - Móðurmál. (C2)",
-            "danish": "Danska - Millistig. (B2)",
-            "swedish": "Sænska - Millistig. (B2)"
+            "danish": "Danska - Millistig. (B1)",
+            "swedish": "Sænska - Millistig. (B1)"
         }
     },
     "footer": {

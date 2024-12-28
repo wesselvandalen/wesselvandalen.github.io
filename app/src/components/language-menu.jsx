@@ -27,19 +27,7 @@ export default function LanguageMenu() {
     }
 
     const handleChosenLanguage = (lang) => {
-        if (lang === 'no') {
-            return 'Norsk';
-        } else if (lang === 'nl') {
-            return 'Nederlands';
-        }  else if (lang === 'dk') {
-            return 'Dansk';
-        }  else if (lang === 'is') {
-            return 'Íslenska';
-        } else if (lang === 'sv') {
-            return 'Svenska';
-        } else {
-            return 'English';
-        }
+        return lang.toUpperCase();
     }
 
     const handleLanguageSwitch = (lang) => {
@@ -51,7 +39,9 @@ export default function LanguageMenu() {
     return (
         <div className="dropdown">
             <button className="dropbtn">
-                <img src={handleLanguageFlag(i18n.language)} alt={`${i18n.language} flag`} />
+                <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
                 {handleChosenLanguage(i18n.language)}
             </button>
             <div className="dropdown-content">

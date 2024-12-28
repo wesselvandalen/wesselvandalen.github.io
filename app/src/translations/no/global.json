@@ -1,12 +1,14 @@
 {
     "chapters": {
+        "home": "Hjem",
         "education": "Utdanning",
         "work": "Arbeidserfaring"
     },
     "home": {
         "role": "Full Stack Software Ingeniør",
         "description1": "Jeg er Wessel, en {age} år gammel full-stack software ingeniør med {exp} år erfaring. Jeg er dyktig i å bygge både front-end og back-end for webapplikasjoner, inkludert opprettelse av databaser og integrering av programvare med Azure via CI/CD pipelines. Jeg sørger for at alle komponentene fungerer sømløst sammen og leverer fullt integrerte, end-to-end løsninger.",
-        "description2": "Jeg har vært forelsket i Norge, kulturen og språket siden barndommen, og å flytte dit har alltid vært en drøm for meg. Jeg snakker norsk flytende, og å jobbe i Norge—enten eksternt eller, helst, på kontoret—er min høyeste prioritet. Jeg er spent på å ta de nødvendige stegene for å gjøre denne barndomsdrømmen til virkelighet!"
+        "description2": "Jeg har vært forelsket i Norge, kulturen og språket siden barndommen, og å flytte dit har alltid vært en drøm for meg. Jeg snakker norsk flytende, og å jobbe i Norge—enten eksternt eller, helst, på kontoret—er min høyeste prioritet. Jeg er spent på å ta de nødvendige stegene for å gjøre denne barndomsdrømmen til virkelighet!",
+        "call": "Ring meg"
     },
     "education": {
         "hu": {
@@ -29,8 +31,8 @@
             "norwegian": "Norsk - Arbeidskompetanse og nesten som morsmål. (C1)",
             "english": "Engelsk - Morsmål. (C2)",
             "dutch": "Nederlandsk - Morsmål. (C2)",
-            "danish": "Dansk - Upper Intermediate. (B2)",
-            "swedish": "Svensk - Upper Intermediate. (B2)"
+            "danish": "Dansk - Upper Intermediate. (B1)",
+            "swedish": "Svensk - Upper Intermediate. (B1)"
         }
     },
     "footer": {
