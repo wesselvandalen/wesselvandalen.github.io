@@ -77,6 +77,6 @@
 
 @media screen and (max-width: 1000px) {
     .dropdown-content {
-        margin-left: -20px;
+        margin-left: 20px;
     }
 }

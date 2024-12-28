@@ -110,14 +110,6 @@
         width: 95%;
     }
 
-    .work-block {
-        grid-template-columns: 2% 98%;
-    }
-
-    .w-company {
-        font-size: 14px;
-    }
-
     .w-description {
         width: 33%;
     }

@@ -140,6 +140,6 @@
     }
 
     .stack-grid > * {
-        flex: 1 1 calc(50% - 20px); /* Two items per row */
+        flex: 1 1 calc(50% - 30px); /* Two items per row */
     }
 }

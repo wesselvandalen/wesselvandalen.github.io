@@ -72,14 +72,6 @@
         width: 95%;
     }
 
-    .e-school {
-        font-size: 14px;
-    }
-
-    .education-block {
-        grid-template-columns: 2% 99%;
-    }
-
     .e-description {
         width: 35%;
     }

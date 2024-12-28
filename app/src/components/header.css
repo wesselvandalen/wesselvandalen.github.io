@@ -65,16 +65,11 @@
 
 @media screen and (max-width: 1024px) {
     .header-content {
-        height: 60px;
+        height: 40px;
     }
 
     .header-inner-content {
         padding: 0 10px;
-    }
-
-    .header-profile {
-        gap: 10px;
-        width: 70%;
     }
 
     .header-links {
