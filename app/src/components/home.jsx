@@ -35,13 +35,10 @@ export default function Home() {
                     </div>
                 </div>
 
-                <h1 className='name'>Wessel Rowdy van Dalen</h1>
+                <h3 className='name'>Wessel Rowdy van Dalen</h3>
 
                 <div className="role-container">
-                    <h2 className='role'>{t('home.role')}
-                        <img src={norwayFlag} alt="Norway flag" title='Norway flag' />
-                        <img src={netherlandsFlag} alt="Netherlands flag" title='Netherlands flag' />
-                    </h2>
+                    <h2 className='role'>{t('home.role')}</h2>
                 </div>
 
                 <p className='description'>Hallaisen! {t('home.description1').replace('{age}', calculateAge()).replace('{exp}', calculateExperience())}</p>

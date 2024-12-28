@@ -21,9 +21,9 @@ export default function Work() {
 
                     {jobbs.map((jobb, index) => {
                         return <div className="work-block" key={index}>
-                            <div className="work-left">
+                            {/* <div className="work-left">
                                 <img src={jobb.img} alt={`${jobb.name} logo`} />
-                            </div>
+                            </div> */}
                             <div className="work-right">
                                 <h3 className='w-company'>{jobb.name}</h3>
                                 <p className='w-role'>{jobb.role}</p>

@@ -1,23 +1,26 @@
 .dropdown-content button {
-    color: rgb(66, 66, 87);
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);    
     text-decoration: none;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0em;
     line-height: 1.8em;
-    background-color: #fafafa;
+    background-color: #181818;
     border: none;
     box-shadow: 0 4px 10px rgba(8, 8, 8, 0.03);
-    padding: 14px 16px;
-    min-width: 175px;
+    padding: 6px 10px;
+    min-width: 125px;
     display: block;
     text-align: left;
     text-transform: none;
     margin: 0 0 0 -90px;
+    font-family: SF Pro Display, 'sans-serif';
 }
 
 .dropdown-content button:hover {
+    color: white;
     cursor: pointer;
 }
 
@@ -35,9 +38,9 @@
     cursor: pointer;
     font-size: 12px;
     font-weight: 600;
-    letter-spacing: -.01em;
-    color: rgba(0, 0, 0, .8);
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    letter-spacing: .09em;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     line-height: 1;
     margin: 0 0 0 -5px;
 }
@@ -60,7 +63,7 @@
     background-color: transparent;
     min-width: 100px;
     z-index: 100;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .dropdown-content img {

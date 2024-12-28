@@ -1,30 +1,8 @@
 import './language-menu.css';
 import { useTranslation } from 'react-i18next';
-import noFlag from '../assets/flags/no.png';
-import nlFlag from '../assets/flags/nl.png';
-import enFlag from '../assets/flags/en.png';
-import dkFlag from '../assets/flags/dk.png';
-import isFlag from '../assets/flags/is.png';
-import svFlag from '../assets/flags/sv.png';
 
 export default function LanguageMenu() {
     const [t, i18n] = useTranslation("global");
-
-    const handleLanguageFlag = (lang) => {
-        if (lang === 'no') {
-            return noFlag;
-        } else if (lang === 'nl') {
-            return nlFlag;
-        } else if (lang === 'dk') {
-            return dkFlag;
-        } else if (lang === 'is') {
-            return isFlag;
-        } else if (lang === 'sv') {
-            return svFlag;
-        } else {
-            return enFlag;
-        }
-    }
 
     const handleChosenLanguage = (lang) => {
         return lang.toUpperCase();
@@ -45,30 +23,12 @@ export default function LanguageMenu() {
                 {handleChosenLanguage(i18n.language)}
             </button>
             <div className="dropdown-content">
-                <button onClick={() => handleLanguageSwitch('no')} >
-                    <img src={noFlag} alt='Norwegian flag' />
-                    Norsk
-                </button>
-                <button onClick={() => handleLanguageSwitch('en')} >
-                    <img src={enFlag} alt='English flag' />
-                    English
-                </button>
-                <button onClick={() => handleLanguageSwitch('nl')} >
-                    <img src={nlFlag} alt='Dutch flag' />
-                    Nederlands
-                </button>
-                <button onClick={() => handleLanguageSwitch('dk')} >
-                    <img src={dkFlag} alt='Danish flag' />
-                    Dansk
-                </button>
-                <button onClick={() => handleLanguageSwitch('is')} >
-                    <img src={isFlag} alt='Icelandic flag' />
-                    Íslenska
-                </button>
-                <button onClick={() => handleLanguageSwitch('sv')} >
-                    <img src={svFlag} alt='Swedish flag' />
-                    Svenska
-                </button>
+                <button onClick={() => handleLanguageSwitch('no')} style={{ borderTopRightRadius: '5px', borderTopLeftRadius: '5px' }} >Norsk</button>
+                <button onClick={() => handleLanguageSwitch('en')} >English</button>
+                <button onClick={() => handleLanguageSwitch('nl')} >Nederlands</button>
+                <button onClick={() => handleLanguageSwitch('dk')} >Dansk</button>
+                <button onClick={() => handleLanguageSwitch('is')} >Íslenska</button>
+                <button onClick={() => handleLanguageSwitch('sv')} style={{ borderBottomRightRadius: '5px', borderBottomLeftRadius: '5px' }} >Svenska</button>
             </div>
         </div>
     );

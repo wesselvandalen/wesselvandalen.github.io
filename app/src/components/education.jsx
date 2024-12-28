@@ -20,9 +20,6 @@ export default function Education() {
 
                     {educations.map((education, index) => {
                         return <div className="education-block" key={index}>
-                            <div className="education-left">
-                                <img src={education.img} alt={education.imgAlt} />
-                            </div>
                             <div className="education-right">
                                 <h3 className='e-school'>{education.school}</h3>
                                 <p className='e-study'>{education.study}</p>

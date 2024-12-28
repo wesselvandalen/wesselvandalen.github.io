@@ -87,6 +87,27 @@ export default function Stack() {
 
                 </div>
 
+                
+                <div className="stack-innhold">
+                    <p className='stack-title'>{t('stack.tools')}</p>
+
+                    <div className="stack-grid">
+
+                        {softwareskills.map((skill, index) => {
+                            return <div className="stack-tile" key={index}>
+                                <div className="stack-pic-wrapper">
+                                    <img src={skill.img} alt={skill.name} />
+                                </div>
+                                <div className="stack-info">
+                                    <h6>{skill.name}</h6>
+                                    <p>{skill.type}</p>
+                                </div>
+                            </div>
+                        })}
+
+                    </div>
+                </div>
+
                 <div className="stack-innhold">
                     <p className='stack-title'>Front-end / webdevelopment</p>
 
@@ -113,26 +134,6 @@ export default function Stack() {
                     <div className="stack-grid">
 
                         {backendskills.map((skill, index) => {
-                            return <div className="stack-tile" key={index}>
-                                <div className="stack-pic-wrapper">
-                                    <img src={skill.img} alt={skill.name} />
-                                </div>
-                                <div className="stack-info">
-                                    <h6>{skill.name}</h6>
-                                    <p>{skill.type}</p>
-                                </div>
-                            </div>
-                        })}
-
-                    </div>
-                </div>
-
-                <div className="stack-innhold">
-                    <p className='stack-title'>{t('stack.tools')}</p>
-
-                    <div className="stack-grid">
-
-                        {softwareskills.map((skill, index) => {
                             return <div className="stack-tile" key={index}>
                                 <div className="stack-pic-wrapper">
                                     <img src={skill.img} alt={skill.name} />

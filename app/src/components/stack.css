@@ -27,12 +27,10 @@
 }
 
 .stack-title {
-    color: rgba(0, 0, 0, .8);
-    font-size: 1.1rem;
-    line-height: 120%;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0em;
+    font-size: 17px;
+    line-height: 1.4705882353;
+    font-weight: 600;
+    letter-spacing: 0.022em;
     margin-bottom: 15px;
     margin-top: 10px;
 }
@@ -103,22 +101,20 @@
 }
 
 .stack-info h6 {
-    color: rgba(0, 0, 0, .8);
     font-size: 15px;
-    line-height: 1.4em;
-    letter-spacing: 0em;
+    line-height: 1.4705882353;
     font-weight: 400;
-    font-style: normal;
+    letter-spacing: 0.022em;
+    color: rgb(29,29,31);
     margin: 0 0 -2px 0;
 }
 
 .stack-info p {
-    color: rgba(0, 0, 0, .5);
-    font-size: 12px;
-    font-style: normal;
+    font-size: 11px;
+    line-height: 1.3333733333;
     font-weight: 400;
-    line-height: 1.5em;
-    letter-spacing: 0em;
+    letter-spacing: 0.01em;
+    color: rgba(29, 29, 31, 0.726);
     text-transform: uppercase;
     margin: -5px 0 0 0;
 }
@@ -130,12 +126,11 @@
 }
 
 .stack-innhold ul li {
-    color: rgb(136, 136, 136);
-    font-size: 15px;
-    line-height: 1.4em;
-    letter-spacing: 0em;
+    font-size: 16px;
+    line-height: 1.4705882353;
     font-weight: 400;
-    font-style: normal;
+    letter-spacing: 0.022em;
+    color: rgb(29,29,31);
     text-align: start;
 }
 
