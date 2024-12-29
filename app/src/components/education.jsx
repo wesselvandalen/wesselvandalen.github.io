@@ -1,13 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import './education.css';
 
-import hu from '../assets/graphics/hu.png';
-
 export default function Education() {
     const [t] = useTranslation("global");
 
     const educations = [
-        { img: hu, imgAlt: 'Hogeschool Utrecht logo', school: 'Hogeschool Utrecht', study: 'Bachelor Software Development - HBO ICT', description: t('education.hu.description'), date: '2022 - 2026' }
+        { school: 'Hogeschool Utrecht', study: 'Bachelor Software Development - HBO ICT', description: t('education.hu.description'), date: '2022 - 2026' }
     ];
 
     return (
