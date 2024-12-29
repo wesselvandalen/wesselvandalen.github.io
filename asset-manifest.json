@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.0eec7cbf.css",
-    "main.js": "/static/js/main.1b97c4c6.js",
+    "main.js": "/static/js/main.6eb5eebd.js",
     "static/media/IMG_4044.jpg": "/static/media/IMG_4044.9481918727c25862a2f9.jpg",
     "static/media/norway.png": "/static/media/norway.2456bf565191c9e1de99.png",
     "static/media/netherlands.png": "/static/media/netherlands.03372c6deec549c241db.png",
     "index.html": "/index.html",
     "main.0eec7cbf.css.map": "/static/css/main.0eec7cbf.css.map",
-    "main.1b97c4c6.js.map": "/static/js/main.1b97c4c6.js.map"
+    "main.6eb5eebd.js.map": "/static/js/main.6eb5eebd.js.map"
   },
   "entrypoints": [
     "static/css/main.0eec7cbf.css",
-    "static/js/main.1b97c4c6.js"
+    "static/js/main.6eb5eebd.js"
   ]
 }
