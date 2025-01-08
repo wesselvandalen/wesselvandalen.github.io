@@ -59,9 +59,6 @@ body {
 }
 
 @media screen and (max-width: var(--maksimal-brede)) {
-    .app-content {
-        max-width: none;
-    }
     
     .line {
         width: 95%;

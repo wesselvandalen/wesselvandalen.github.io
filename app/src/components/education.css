@@ -10,61 +10,6 @@
     flex-direction: column;
     width: 100%;
     align-items: start;
-    min-width: 1024px;
-}
-
-/* Education block */
-
-.education-block {
-    display: grid;
-    width: 100%;
-    min-width: 1024px;
-}
-
-.education-left img {
-    border-radius: 50%;
-    width: 28px;
-    height: 28px;
-}
-
-.education-right {
-    padding: 0;
-}
-
-.e-school {
-    margin: 0;
-    font-size: 17px;
-    line-height: 1.4705882353;
-    font-weight: 600;
-    letter-spacing: 0.022em;
-}
-
-.e-study {
-    color: rgb(29,29,31);
-    font-size: 16px;
-    line-height: 1.4705882353;
-    font-weight: 400;
-    letter-spacing: 0.022em;
-    font-weight: 400;
-    margin: -2px 0 2px 0;
-}
-
-.e-description {
-    color: rgb(29,29,31);
-    font-size: 16px;
-    line-height: 1.4705882353;
-    font-weight: 400;
-    letter-spacing: 0.022em;
-    margin: 1.4rem 0 1rem 0;
-}
-
-.e-date {
-    color: rgb(29,29,31);
-    font-size: 14px;
-    line-height: 1.4705882353;
-    font-weight: 400;
-    letter-spacing: 0.022em;
-    margin: 0 0 10px 0;
 }
 
 @media screen and (max-width: var(--maksimal-brede)) {

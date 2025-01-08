@@ -9,7 +9,7 @@ export default function Work() {
         {   
             name: 'Mysolution', 
             role: 'React Typescript & Java Spring developer, GDPR researcher', 
-            stack: ['React', 'Typescript', 'HTML', 'CSS', 'Java', 'Spring', 'SQLite', 'REST', 'Azure (DevOps)', 'Salesforce', 'GitHub Gist', 'Agile', 'Scrum', 'Git', "API's", 'OOP', 'Postman', 'Swagger', 'Translations', 'HTTP', 'Auth', 'Maven', 'JWT', 'Hibernate', 'Customer relationships', 'Design patterns', 'ISO 25010', 'OWASP TOP 10'], 
+            stack: ['React', 'Typescript', 'HTML', 'CSS', 'Java', 'Spring', 'SQLite', 'REST', 'Azure (DevOps)', 'Azure Web Service', 'Python', 'GDPR', 'Salesforce', 'GitHub Gist', 'Docker', 'Agile', 'Scrum', 'Git', "API's", 'OOP', 'Postman', 'Swagger', 'Translations', 'HTTP', 'Auth', 'Maven', 'JWT', 'Hibernate', 'Customer relationships', 'Design patterns', 'ISO 25010', 'OWASP TOP 10'], 
             date: '2024 - 2025', 
             description: t('work.mysolution.description') 
         },
