@@ -35,8 +35,8 @@
     visibility: hidden;
     position: absolute;
     top: 0; 
-    left: 80px; 
-    transform: translateX(-50%);
+    left: 100%;
+    transform: translateX(10px); 
     background-color: rgb(92, 92, 92);
     border: rgb(62, 62, 62) solid 1px;
     color: #ededed;
@@ -59,6 +59,13 @@
     height: 25px;
     stroke: black;
     opacity: 0.4;
+}
+
+.panel-content button svg {
+    width: 25px;
+    height: 25px;
+    stroke: black;
+    opacity: 0.8;
 }
 
 .panel-content a:hover svg {
@@ -99,10 +106,21 @@
         align-items: start;
         margin-top: 15px;
         gap: 50px;
+        margin-left: 10px;
     }
 
     .panel-content a svg {
         width: 26px;
         height: 26px;
+    }
+
+    .panel-content button svg {
+        width: 26px;
+        height: 26px;
+        margin: 0 -25px;
+    }
+
+    .tooltip {
+        display: none;
     }
 }

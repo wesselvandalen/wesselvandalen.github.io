@@ -6,7 +6,12 @@ export default function Education() {
     const [t] = useTranslation("global");
 
     const educations = [
-        { school: 'Hogeschool Utrecht', study: 'Bachelor Software Development - HBO ICT', description: t('education.hu.description'), date: '2022 - 2026' }
+        { 
+            school: 'Hogeschool Utrecht',
+            study: 'Bachelor Software Development - HBO ICT', 
+            description: t('education.hu.description'), 
+            date: '2022 - 2026'
+        }
     ];
 
     return (

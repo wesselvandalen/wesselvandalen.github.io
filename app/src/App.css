@@ -58,9 +58,17 @@ body {
     width: 100%;
 }
 
-@media screen and (max-width: var(--maksimal-brede)) {
+@media screen and (max-width: 999px) {
+    .app-container {
+        flex-direction: column; 
+    }
+
+    .app-innhold {
+        width: 95%;
+        margin-left: 5px;
+    }
     
     .line {
-        width: 95%;
+        width: 95%; 
     }
 }
