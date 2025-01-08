@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import './education.css';
+import EducationTile from './education-tile';
 
 export default function Education() {
     const [t] = useTranslation("global");
@@ -17,14 +18,13 @@ export default function Education() {
                 <div className="education-list">
 
                     {educations.map((education, index) => {
-                        return <div className="education-block" key={index}>
-                            <div className="education-right">
-                                <h3 className='e-school'>{education.school}</h3>
-                                <p className='e-study'>{education.study}</p>
-                                <p className='e-date'>{education.date}</p>
-                                <p className='e-description'>{education.description}</p>
-                            </div>
-                        </div>
+                        return <EducationTile
+                            key={index}
+                            study={education.study}
+                            school={education.school}
+                            date={education.date}
+                            description={education.description}
+                        />
                     })}
 
                 </div>

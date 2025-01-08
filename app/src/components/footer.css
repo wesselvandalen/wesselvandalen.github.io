@@ -20,7 +20,7 @@
 .message {
     color: rgb(136, 136, 136);
     font-weight: 400;
-    font-size: .7rem;
+    font-size: 11px;
     line-height: 1.5rem;
     margin: -15px 0 -2px 0;
 }

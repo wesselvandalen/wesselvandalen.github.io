@@ -1,54 +1,53 @@
 .dropdown-content button {
-    color: rgba(255, 255, 255, 0.8);
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);    
-    text-decoration: none;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0em;
-    line-height: 1.8em;
-    background-color: #181818;
+    font-family: "Inter", 'sans-serif';
+    color: rgba(0, 0, 0, 1);
+    background-color: #ffffff;
     border: none;
-    box-shadow: 0 4px 10px rgba(8, 8, 8, 0.03);
-    padding: 6px 10px;
-    min-width: 125px;
+    text-decoration: none;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    padding: 14px 10px;
+    min-width: 175px;
+    line-height: 10px;
     display: block;
     text-align: left;
     text-transform: none;
     margin: 0 0 0 -90px;
-    font-family: SF Pro Display, 'sans-serif';
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.05rem;
 }
 
 .dropdown-content button:hover {
-    color: white;
     cursor: pointer;
+    background-color: #f1f1f1b4;
 }
 
 .dropdown {
-    margin: 0;
+    margin: -40px 0;
 }
 
 .dropbtn {
     border: none;
+    border-radius: 5px;
     background-color: transparent;
     text-decoration: none;
+    padding: 10px 22px;
     align-items: center;
     display: flex;
     text-align: left;
     cursor: pointer;
+    color: white;
+    font-family: 'Inter', 'sans-serif';
     font-size: 12px;
-    font-weight: 600;
-    letter-spacing: .09em;
-    color: rgba(255, 255, 255, 0.8);
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    line-height: 1;
-    margin: 0 0 0 -5px;
-}
-
-.dropbtn svg {
-    width: 13px;
-    margin-right: 4px;
-    margin-top: 0;
+    color: rgb(114, 114, 114);
+    line-height: 0.8;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    margin: 30px 0 20px 0;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
 }
 
 .dropdown-content button img {
@@ -60,10 +59,11 @@
 .dropdown-content {
     display: none;
     position: absolute;
+    left: 150px;
+    bottom: 25%;
     background-color: transparent;
-    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 100;
-    margin-left: 50px;
 }
 
 .dropdown-content img {
@@ -75,7 +75,7 @@
     display: block;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: var(--maksimal-brede)) {
     .dropdown-content {
         margin-left: 20px;
     }

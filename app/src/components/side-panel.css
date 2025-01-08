@@ -1,0 +1,108 @@
+.panel-container {
+    flex: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 65px;
+    will-change: transform;
+    z-index: 1;
+    border-right: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.panel-nav {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.panel-content {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.panel-content a {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: 0; 
+    left: 80px; 
+    transform: translateX(-50%);
+    background-color: rgb(92, 92, 92);
+    border: rgb(62, 62, 62) solid 1px;
+    color: #ededed;
+    line-height: 1.125em;
+    letter-spacing: 0em;
+    font-style: normal;
+    width: fit-content;
+    text-align: left;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap; 
+}
+
+.panel-content a svg {
+    width: 25px;
+    height: 25px;
+    stroke: black;
+    opacity: 0.4;
+}
+
+.panel-content a:hover svg {
+    opacity: .8;
+}
+
+.panel-content a:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.knapp {
+    margin: 0 -5px 0 3px;
+    width: 16px;
+    height: 16px;
+    padding: 3px 5px;
+    background-color: #757575;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -2px 0 0 inset;
+    font-size: 10px;
+    text-align: center;
+    color: #ededed;
+}
+
+@media screen and (max-width: 1100px) {
+    .panel-container {
+        border-right: none;
+        border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+        height: 60px;
+        background-color: #fff;
+        width: 100vw;
+        top: auto;
+        bottom: 0;
+    }
+
+    .panel-content {
+        flex-direction: row;
+        align-items: start;
+        margin-top: 15px;
+        gap: 50px;
+    }
+
+    .panel-content a svg {
+        width: 26px;
+        height: 26px;
+    }
+}

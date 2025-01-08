@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import './stack.css';
+import StackTile from './stack-tile.jsx';
 import react from '../assets/icons/react.png';
 import js from '../assets/icons/javascript.png';
 import ts from '../assets/icons/typescript.png';
@@ -87,22 +88,19 @@ export default function Stack() {
 
                 </div>
 
-                
+
                 <div className="stack-innhold">
                     <p className='stack-title'>{t('stack.tools')}</p>
 
                     <div className="stack-grid">
 
                         {softwareskills.map((skill, index) => {
-                            return <div className="stack-tile" key={index}>
-                                <div className="stack-pic-wrapper">
-                                    <img src={skill.img} alt={skill.name} />
-                                </div>
-                                <div className="stack-info">
-                                    <h6>{skill.name}</h6>
-                                    <p>{skill.type}</p>
-                                </div>
-                            </div>
+                            return <StackTile
+                                key={index}
+                                name={skill.name}
+                                type={skill.type}
+                                img={skill.img}
+                            />
                         })}
 
                     </div>
@@ -114,15 +112,12 @@ export default function Stack() {
                     <div className="stack-grid">
 
                         {frontendskills.map((skill, index) => {
-                            return <div className="stack-tile" key={index}>
-                                <div className="stack-pic-wrapper">
-                                    <img src={skill.img} alt={skill.name} />
-                                </div>
-                                <div className="stack-info">
-                                    <h6>{skill.name}</h6>
-                                    <p>{skill.type}</p>
-                                </div>
-                            </div>
+                            return <StackTile
+                                key={index}
+                                name={skill.name}
+                                type={skill.type}
+                                img={skill.img}
+                            />
                         })}
 
                     </div>
@@ -134,15 +129,12 @@ export default function Stack() {
                     <div className="stack-grid">
 
                         {backendskills.map((skill, index) => {
-                            return <div className="stack-tile" key={index}>
-                                <div className="stack-pic-wrapper">
-                                    <img src={skill.img} alt={skill.name} />
-                                </div>
-                                <div className="stack-info">
-                                    <h6>{skill.name}</h6>
-                                    <p>{skill.type}</p>
-                                </div>
-                            </div>
+                            return <StackTile
+                                key={index}
+                                name={skill.name}
+                                type={skill.type}
+                                img={skill.img}
+                            />
                         })}
 
                     </div>

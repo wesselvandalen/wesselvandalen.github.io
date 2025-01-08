@@ -67,7 +67,7 @@
     margin: 0 0 10px 0;
 }
 
-@media screen and (max-width: 64rem) {
+@media screen and (max-width: var(--maksimal-brede)) {
     .education-container {
         width: 95%;
     }

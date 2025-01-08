@@ -4,6 +4,7 @@
     width: 100%;
     flex-direction: column;
     margin-top: 100px;
+    margin-bottom: -10px;
 }
 
 .home-content {
@@ -18,33 +19,27 @@
 
 .name {
     font-size: 28px;
-    line-height: 1.1428571429;
+    line-height: 1.3em;
     font-weight: 600;
-    letter-spacing: .007em;
+    font-style: normal;
+    letter-spacing: 0em;
     color: rgb(29,29,31);
-    margin: 25px 0 3px 0;
+    margin: 20px 0 3px 0;
 }
 
 .role-container {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: -15px 0 10px 0;
+    margin: -15px 0 5px 0;
 }
 
 .role {
-    font-size: 17px;
-    line-height: 1.4705882353;
-    font-weight: 600;
-    letter-spacing: 0.022em;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.role img {
-    margin-top: -1px;
-    width: 22px;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0em;
 }
 
 /* Video */
@@ -74,11 +69,13 @@
 
 .description {
     margin: 0 0 10px 0;
-    color: rgb(29,29,31);
-    font-size: 16px;
-    line-height: 1.4705882353;
-    font-weight: 400;
-    letter-spacing: 0.022em;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: 1.6em;
+    text-align: start;
+    color: rgb(179, 179, 179);
 }
 
 /* Social container */
@@ -88,7 +85,7 @@
     flex-direction: row;
     align-items: start;
     gap: 20px;
-    margin: 10px 0 0 0;
+    margin: 15px 0 0 0;
 }
 
 .social-container a {
@@ -101,15 +98,53 @@
     gap: 2px;
     display: flex;
     align-items: center;
+    position: relative;
+    display: inline-block;
 }
 
 .social-container svg {
-    width: 14px;
-    height: auto;
+    width: 20px;
+    height: 20px;
+    color: rgb(122, 122, 122);
     margin: 0 0 3px 0;
 }
 
-@media screen and (max-width: 1000px) {
+.social-container img {
+    width: 21px;
+    height: 21px;
+    color: rgb(122, 122, 122);
+    margin: 0 2px 3px 0;
+}
+
+.home-tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: -40px; 
+    left: 10px; 
+    transform: translateX(-50%);
+    background-color: rgb(92, 92, 92);
+    border: rgb(62, 62, 62) solid 1px;
+    color: #ededed;
+    line-height: 1.125em;
+    letter-spacing: 0em;
+    font-style: normal;
+    width: fit-content;
+    text-align: left;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap; 
+}
+
+.social-container a:hover .home-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: var(--maksimal-brede)) {
     .home-content {
         padding: 0 10px;
         width: 95%;

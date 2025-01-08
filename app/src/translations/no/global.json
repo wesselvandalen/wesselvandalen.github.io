@@ -19,8 +19,8 @@
         "mysolution": {
             "description": "Designet og utviklet en fullt tilpassbar webplattform ved hjelp av React, TypeScript og Java Spring, med full prosjektansvar for å sikre GDPR-samsvar, sikker JWT-autentisering, en SQLite-basert Salesforce-integrasjon og robust backend-støtte for personlige bedriftsnettsteder."
         },
-        "skogogsinne": {
-            "description": "Bygget en fullstack norsk e-handelsplattform for Skog & Sinne ved å bruke React, TypeScript og Java Spring, som viser skandinavisk arv gjennom et moderne design. Implementert sikker JWT-autentisering, en PostgreSQL-database og skalerbare REST APIer. Etablerte en CI/CD-pipeline med testdrevet utvikling (TDD) for å sikre kvalitet og rask distribusjon."
+        "hjemvik": {
+            "description": "Utviklet en fullstack e-handelsplattform for Hjemvik, et norsk selskap, ved bruk av React med TypeScript og Java Spring. Fokuserte på å skape et elegant, responsivt design og en sømløs brukeropplevelse, og leverte en skreddersydd løsning for selskapets nettbaserte tilstedeværelse."
         }
     },
     "stack": {

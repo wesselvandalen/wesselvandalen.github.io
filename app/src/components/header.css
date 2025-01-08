@@ -16,7 +16,7 @@
 }
 
 .header-inner-content {
-    max-width: 1024px;
+    max-width: var(--maksimal-brede);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@
 
 .header-name {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 100;
     letter-spacing: -.01em;
     color: rgba(255, 255, 255, 0.8);
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -43,7 +43,7 @@
 
 .header-links a {
     font-size: 14px;
-    font-weight: 400;
+    font-weight:lighter;
     letter-spacing: -.01em;
     color: rgba(255, 255, 255, 0.8);
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -63,7 +63,7 @@
     gap: 30px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: var(--maksimal-brede)) {
     .header-content {
         height: 40px;
     }

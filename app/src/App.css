@@ -1,15 +1,17 @@
-@import url('https://v1.fontapi.ir/css/SFProDisplay');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: SF Pro Display, sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #FAFAFC;
+    background-color: #fff;
+
+    --maksimal-brede: 999px;
 }
 
 .app-container {
@@ -27,7 +29,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    max-width: 64rem;
+    max-width: var(--maksimal-brede);
 }
 
 .line {
@@ -38,16 +40,18 @@ body {
 }
 
 .section-title {
-    font-size: 28px;
-    line-height: 1.1428571429;
-    font-weight: 600;
-    letter-spacing: .007em;
-    color: rgb(29,29,31);
+    font-size: 17px;
+    font-style: normal;
+    line-height: 1.4em;
+    font-weight: 700;
+    letter-spacing: 0em;
+    color: rgba(80, 97, 104, 0.555);
     margin-bottom: 2rem;
+    text-transform: uppercase;
     margin-top: 0;
 }
 
-@media screen and (max-width: 64rem) {
+@media screen and (max-width: var(--maksimal-brede)) {
     .line {
         width: 95%;
     }
