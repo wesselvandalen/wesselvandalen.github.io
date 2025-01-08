@@ -72,6 +72,10 @@
     opacity: .8;
 }
 
+.dropdown:hover svg {
+    opacity: .8;
+}
+
 .panel-content a:hover .tooltip {
     visibility: visible;
     opacity: 1;
