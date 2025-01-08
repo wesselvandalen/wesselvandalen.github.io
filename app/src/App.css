@@ -51,7 +51,18 @@ body {
     margin-top: 0;
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
 @media screen and (max-width: var(--maksimal-brede)) {
+    .app-content {
+        max-width: none;
+    }
+    
     .line {
         width: 95%;
     }

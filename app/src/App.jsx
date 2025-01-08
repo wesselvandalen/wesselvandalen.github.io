@@ -36,11 +36,11 @@ export default function App() {
           <Home />
           <div className="main-content">
             <div className="line"></div>
-            <Stack/>
-            <div className="line"></div>
             <Education />
             <div className="line"></div>
             <Work />
+            <div className="line"></div>
+            <Stack/>
           </div>
         </div>
       </div>
