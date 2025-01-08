@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.b3f30fb8.css",
+    "main.css": "/static/css/main.57e4574d.css",
     "main.js": "/static/js/main.412dd3ff.js",
     "static/media/ossto.png": "/static/media/ossto.95d3159a659edcd4574c.png",
     "index.html": "/index.html",
-    "main.b3f30fb8.css.map": "/static/css/main.b3f30fb8.css.map",
+    "main.57e4574d.css.map": "/static/css/main.57e4574d.css.map",
     "main.412dd3ff.js.map": "/static/js/main.412dd3ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3f30fb8.css",
+    "static/css/main.57e4574d.css",
     "static/js/main.412dd3ff.js"
   ]
 }
