@@ -13,7 +13,7 @@
     align-items: start;
 }
 
-@media screen and (max-width: var(--maksimal-brede)) {
+@media screen and (max-width: 1080px) {
     .education-container {
         width: 95%;
     }

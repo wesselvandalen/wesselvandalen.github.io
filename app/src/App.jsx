@@ -5,6 +5,7 @@ import Education from './components/education';
 import Work from './components/work';
 import Stack from './components/stack';
 import SidePanel from './components/side-panel';
+import Hobbies from './components/hobbies';
 
 export default function App() {
 
@@ -29,18 +30,16 @@ export default function App() {
   }, []);
 
   return (
-    <div className="app-container">
+    <div className="app-container" id='home'>
       <div className="app-content">
         <SidePanel />
         <div className="app-innhold">
           <Home />
           <div className="main-content">
-            <div className="line"></div>
             <Education />
-            <div className="line"></div>
             <Work />
-            <div className="line"></div>
             <Stack/>
+            <Hobbies/>
           </div>
         </div>
       </div>

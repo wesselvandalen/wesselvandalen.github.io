@@ -11,7 +11,7 @@
     padding: 0;
     position: relative;
     text-decoration: none;
-    width: 234px;
+    width: 200px;
 }
 
 .stack-pic-wrapper {
@@ -32,6 +32,7 @@
     display: block;
     object-position: center center;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .stack-info {
@@ -53,10 +54,10 @@
 .stack-info h6 {
     font-size: 14px;
     letter-spacing: 0em;
-    line-height: 24px;
+    line-height: 20px;
     font-weight: 400;
     color: rgba(29, 29, 31, 0.801);
-    margin: 0 0 -14px 0;
+    margin: 0 0 0 0;
 }
 
 .stack-info p {
@@ -66,7 +67,14 @@
     text-transform: uppercase;
     font-style: normal;
     letter-spacing: 0em;
-    line-height: 24px;
+    line-height: 12px;
     text-align: start;
-    margin: 0 0 -2px 0;
+    margin: -8px 0 0 0;
+}
+
+@media screen and (max-width: 1080px) {
+    .stack-info h6 {
+        line-height: 12px;
+        margin-bottom: 4px;
+    }
 }

@@ -71,7 +71,10 @@ export default function Stack() {
     return (
         <div className="stack-container" id='stack'>
 
-            <h3 className='section-title'>Stack</h3>
+            <div className="section-div">
+                <p className='section-title'>{t('chapters.skills')}</p>
+                <div/>
+            </div>
 
             <div className="stack-content">
 

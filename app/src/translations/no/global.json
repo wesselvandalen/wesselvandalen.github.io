@@ -2,25 +2,32 @@
     "chapters": {
         "home": "Hjem",
         "education": "Utdanning",
-        "work": "Arbeidserfaring"
+        "work": "Arbeidserfaring",
+        "skills": "Ferdigheter",
+        "hobbies": "Hobbyer"
     },
     "home": {
-        "role": "Full Stack Software Ingeniør",
-        "description1": "Jeg er Wessel, en {age} år gammel full-stack software ingeniør med {exp} år erfaring. Jeg er dyktig i å bygge både front-end og back-end for webapplikasjoner, inkludert opprettelse av databaser og integrering av programvare med Azure via CI/CD pipelines. Jeg sørger for at alle komponentene fungerer sømløst sammen og leverer fullt integrerte, end-to-end løsninger.",
-        "description2": "Jeg har vært forelsket i Norge, kulturen og språket siden barndommen, og å flytte dit har alltid vært en drøm for meg. Jeg snakker norsk flytende, og å jobbe i Norge—enten eksternt eller, helst, på kontoret—er min høyeste prioritet. Jeg er spent på å ta de nødvendige stegene for å gjøre denne barndomsdrømmen til virkelighet!",
-        "call": "Ring meg"
+        "role": "Full Stack Software Ingeniør som er klar til å omfavne livet og mulighetene i Norge",
+        "description1": "Jeg er Wessel, en {age} år gammel full-stack programvareutvikler med {exp} års erfaring. Jeg er dyktig i å utvikle både front-end og back-end for webapplikasjoner, inkludert å lage databaser og integrere programvare til Azure gjennom CI/CD-pipelines.",
+        "description2": "Jeg har vært forelsket i Norge, dets kultur og språk siden barndommen, og å flytte dit har alltid vært en drøm for meg. Jeg snakker norsk flytende, og det å jobbe i Norge—enten eksternt eller, ideelt sett, på kontor—er min høyeste prioritet. Jeg er spent på å ta de nødvendige stegene for å gjøre denne barndomsdrømmen til virkelighet!",
+        "note": "Hvis du har innsikt i {span}, eller hvis du ønsker å slå av en prat med meg om det, er du alltid velkommen til å {mail} på",
+        "notespannorway": "å flytte til Norge",
+        "notespanmail": "sende meg en e-post"
     },
     "education": {
         "hu": {
-            "description": "Fullførte en 4-årig bachelorgrad med fokus på programvareutvikling, inkludert webutvikling, databaser og systemdesign/-arkitektur. Spesialiserte meg på webutvikling og design."
+            "description1": "Fullført en 4-årig bachelorgrad i programvareutvikling, med fokus på webutvikling, databaser og systemdesign/-arkitektur. Spesialisert i webutvikling og design, med et sterkt grunnlag i designprinsipper, mønstre og objektorientert programmering.",
+            "description2": "Dyktig i å skrive ren, vedlikeholdbar kode og bruke Agile- og Scrum-metodologier for effektiv prosjektstyring. Erfaring med Test-Driven Development (TDD) og implementering av sikre applikasjoner, inkludert JWT-autentisering og overholdelse av ISO 25010 programvarekvalitetsstandarder."
         }
     },
     "work": {
         "mysolution": {
-            "description": "Designet og utviklet en fullt tilpassbar webplattform ved hjelp av React, TypeScript og Java Spring, med full prosjektansvar for å sikre GDPR-samsvar, sikker JWT-autentisering, en SQLite-basert Salesforce-integrasjon og robust backend-støtte for personlige bedriftsnettsteder."
+            "description1": "Designet og utviklet en tilpassbar kandidat on-boarding portal for Mysolution-kunder med en bred stack: React, TypeScript og Java Spring. Leverte en SQLite-støttet Salesforce-integrasjon og skalerbar backendstøtte for tilpassede bedriftsnettsteder, som sikret en sømløs og effektiv brukeropplevelse.",
+            "description2": "Gjorde grundig GDPR-forskning for å sikre full etterlevelse og implementerte sikker JWT-autentisering med et robust brukerrettighetssystem. Fokusert på å bygge en plattform som var både sikker og brukervennlig, og som kunne tilpasses ulike kundeforespørsler. Ansvarlig for hele prosjektet, med teknisk solid og pålitelig løsning."
         },
         "hjemvik": {
-            "description": "Utviklet en fullstack e-handelsplattform for Hjemvik, et norsk selskap, ved bruk av React med TypeScript og Java Spring. Fokuserte på å skape et elegant, responsivt design og en sømløs brukeropplevelse, og leverte en skreddersydd løsning for selskapets nettbaserte tilstedeværelse."
+            "description1": "Utviklet en fullstack e-handelsplattform for Hjemvik, et norsk selskap, med React og TypeScript og Java Spring. Designet en strømlinjeformet, responsiv grensesnitt optimalisert for både desktop og mobil, noe som skapte en visuelt tiltalende og intuitiv shoppingopplevelse.",
+            "description2": "Fokusert på å levere en skreddersydd løsning for Hjemviks online tilstedeværelse, og skapte en brukeropplevelse som kjennes jevn og fremmer kjøp. Hadde full ansvar for både front-end og back-end utvikling, og sørget for at plattformen møtte bedriftens mål med presisjon og oppmerksomhet på detaljer."
         }
     },
     "stack": {
@@ -28,16 +35,21 @@
         "security": "Sikkerhet",
         "languages": {
             "title": "Språk",
-            "norwegian": "Norsk - Arbeidskompetanse og nesten som morsmål. (C1)",
+            "norwegian": "Norsk - Arbeidsspråk og nesten som morsmål. (C1)",
             "english": "Engelsk - Morsmål. (C2)",
             "dutch": "Nederlandsk - Morsmål. (C2)",
-            "danish": "Dansk - Upper Intermediate. (B1)",
-            "swedish": "Svensk - Upper Intermediate. (B1)"
+            "danish": "Dansk - Øvre mellomnivå. (B1)",
+            "swedish": "Svensk - Øvre mellomnivå. (B1)"
         }
     },
-    "footer": {
-        "message1": "Interessert / vil du bare ha en prat? Det vil jeg gjerne også!",
-        "message2": "Send meg en {mail}, så svarer jeg deg så snart som mulig!",
-        "mail": "e-post"
+     "hobbies": {
+        "chess": "Sjakk",
+        "mountains": "Turer i fjellet",
+        "learningnorwegian": "Lære norsk (språk, kultur osv.)",
+        "dogwalks": "På tur med hunden min (Golden Retriever)"
+    },
+    "general": {
+        "mail": "E-post",
+        "norway": "Norge"
     }
 }

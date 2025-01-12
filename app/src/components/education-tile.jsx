@@ -14,7 +14,9 @@ export default function EducationTile(props) {
                     <p className="education-tile-date">{props.date}</p>
                 </div>
 
-                <p className="education-tile-description">{props.description}</p>
+                {props.descriptions.map((description, index) => {
+                    return <p key={index} className="education-tile-description">{description}</p>
+                })}
 
             </div>
         </div>

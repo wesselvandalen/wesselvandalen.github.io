@@ -9,7 +9,7 @@ export default function Education() {
         { 
             school: 'Hogeschool Utrecht',
             study: 'Bachelor Software Development - HBO ICT', 
-            description: t('education.hu.description'), 
+            descriptions: [t('education.hu.description1'), t('education.hu.description2')], 
             date: '2022 - 2026'
         }
     ];
@@ -17,7 +17,10 @@ export default function Education() {
     return (
         <div className="education-container" id='education'>
 
-            <h3 className='section-title'>{t('chapters.education')}</h3>
+            <div className="section-div">
+                <p className='section-title'>{t('chapters.education')}</p>
+                <div/>
+            </div>
 
             <div className="education-content">
                 <div className="education-list">
@@ -28,7 +31,7 @@ export default function Education() {
                             study={education.study}
                             school={education.school}
                             date={education.date}
-                            description={education.description}
+                            descriptions={education.descriptions}
                         />
                     })}
 

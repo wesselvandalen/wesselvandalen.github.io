@@ -14,7 +14,9 @@ export default function WorkTile(props) {
                     <p className="work-tile-date">{props.date}</p>
                 </div>
 
-                <p className="work-tile-description">{props.description}</p>
+                {props.descriptions.map((description, index) => {
+                    return <p key={index} className="work-tile-description">{description}</p>
+                })}
 
                 <div className="work-tile-skills-container">
                     {props.stack.map((skill, index) => {

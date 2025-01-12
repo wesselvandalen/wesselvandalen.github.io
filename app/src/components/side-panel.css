@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 65px;
+    width: 15rem;
     will-change: transform;
     z-index: 1;
     border-right: 1.5px solid rgba(0, 0, 0, 0.1);
@@ -13,88 +13,115 @@
 .panel-nav {
     background-color: #fff;
     height: 100%;
-    width: 100%;
+    width: 88%;
     opacity: 1;
+    margin-left: 15px;
+    padding-right: 10px;
 }
+
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Panel profile */
+
+.panel-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.panel-profile img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: -2px;
+}
+
+.panel-profile p {
+    color: #000;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+/* Panel content */
 
 .panel-content {
     display: flex;
-    height: 100vh;
+    margin-bottom: 10px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: 15px;
 }
 
 .panel-content a {
-    position: relative;
-    display: inline-block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 6px;
+    padding: 6px;
+    border-radius: .375rem;
+    text-decoration: none;
 }
 
-.tooltip {
-    visibility: hidden;
-    position: absolute;
-    top: 0; 
-    left: 100%;
-    transform: translateX(10px); 
-    background-color: rgb(92, 92, 92);
-    border: rgb(62, 62, 62) solid 1px;
-    color: #ededed;
-    line-height: 1.125em;
-    letter-spacing: 0em;
-    font-style: normal;
-    width: fit-content;
-    text-align: left;
-    font-weight: 400;
-    padding: 5px 10px;
-    border-radius: 6px;
-    font-size: 12px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    white-space: nowrap; 
+.panel-content a span {
+    color: #a3a3a3;
+    text-decoration: none;
+    opacity: .85;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
 }
 
 .panel-content a svg {
-    width: 25px;
-    height: 25px;
-    stroke: black;
-    opacity: 0.4;
+    color: #a3a3a3;
+    width: 16px;
+    height: 16px;
+    text-decoration: none;
+    margin: -1px 0 0 0;
+}
+
+.panel-content a img {
+    color: #a3a3a3;
+    width: 16px;
+    height: 16px;
+    text-decoration: none;
+    margin: -2px 0 0 0;
+}
+
+.panel-content a:hover {
+    background-color: #f5f5f5;
+}
+
+.panel-content a:hover,
+.panel-content a:hover span,
+.panel-content a:hover svg {
+    color: #000;
+}
+
+.panel-content a:hover img {
+    filter: brightness(0) invert(0);
 }
 
 .panel-content button svg {
-    width: 25px;
-    height: 25px;
-    stroke: black;
-    opacity: 0.8;
-}
-
-.panel-content a:hover svg {
-    opacity: .8;
-}
-
-.dropdown:hover svg {
-    opacity: .8;
-}
-
-.panel-content a:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-}
-
-.knapp {
-    margin: 0 -5px 0 3px;
+    color: #a3a3a3;
     width: 16px;
     height: 16px;
-    padding: 3px 5px;
-    background-color: #757575;
-    border-radius: 3px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 -2px 0 0 inset;
-    font-size: 10px;
-    text-align: center;
-    color: #ededed;
+    text-decoration: none;
+    margin: -3px 0 0 0;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1080px) {
     .panel-container {
         border-right: none;
         border-top: 1.5px solid rgba(0, 0, 0, 0.1);
@@ -103,28 +130,76 @@
         width: 100vw;
         top: auto;
         bottom: 0;
+        position: fixed;
     }
 
-    .panel-content {
+    .panel-profile {
+        display: none;
+    }
+
+    .panel-chapters a {
+        display: none;
+    }
+
+    .panel-nav .line {
+        display: none;
+    }
+
+    .panel-socials {
+        display: flex;
+        align-items: center;
         flex-direction: row;
-        align-items: start;
-        margin-top: 15px;
-        gap: 50px;
-        margin-left: 10px;
+        margin-top: -20px;
+        margin-left: 35px;
+        width: 65%;
     }
 
-    .panel-content a svg {
-        width: 26px;
-        height: 26px;
+    .panel-socials a svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .panel-socials a img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .panel-socials a span {
+        display: none;
+    }
+
+    .panel-nav.open {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: auto;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        z-index: 20;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+    }
+
+    .hamburger-icon svg {
+        stroke: #000;
+        width: 40px;
+        height: 40px;
+        margin-top: 0;
     }
 
     .panel-content button svg {
-        width: 26px;
-        height: 26px;
-        margin: 0 -25px;
-    }
-
-    .tooltip {
-        display: none;
+        width: 28px;
+        height: 28px;
+        margin: 0 0;
     }
 }

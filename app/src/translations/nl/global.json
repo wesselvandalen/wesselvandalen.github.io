@@ -2,25 +2,32 @@
     "chapters": {
         "home": "Home",
         "education": "Opleiding",
-        "work": "Werkervaring"
+        "work": "Werkervaring",
+        "skills": "Vaardigheden",
+        "hobbies": "Hobbies"
     },
     "home": {
-        "role": "Full Stack Software Engineer",
-        "description1": "Ik ben Wessel, een {age}-jarige full-stack softwareontwikkelaar met {exp} jaar ervaring. Ik ben bedreven in het bouwen van zowel de front-end als de back-end van webapplicaties, inclusief het maken van databases en het integreren van software met Azure via CI/CD pipelines. Ik zorg ervoor dat alle componenten naadloos samenwerken en lever volledig geïntegreerde, end-to-end oplossingen.",
-        "description2": "Ik ben sinds mijn jeugd verliefd op Noorwegen, de cultuur en de taal, en daar naartoe verhuizen is een droom die ik altijd heb gehad. Ik spreek vloeiend Noors en werken in Noorwegen—ofwel op afstand of, bij voorkeur, op kantoor—is mijn hoogste prioriteit. Ik ben enthousiast om de nodige stappen te zetten om deze jeugddroom werkelijkheid te maken!",
-        "call": "Bel me"
+        "role": "Full Stack Software Engineer enthousiast om het leven en kansen in Noorwegen te omarmen",
+        "description1": "Ik ben Wessel, een 25-jarige full-stack softwareontwikkelaar met 5 jaar ervaring. Ik ben gespecialiseerd in het bouwen van zowel front-end als back-end van webapplicaties, inclusief het creëren van databases en integreren van software met Azure via CI/CD-pijplijnen.",
+        "description2": "Ik heb sinds mijn jeugd een liefde voor Noorwegen, de cultuur en de taal. Verhuizen naar Noorwegen is een droom die ik altijd heb gehad. Ik spreek vloeiend Noors en werken in Noorwegen – of dat nu op afstand of, idealiter, op kantoor is – is mijn prioriteit. Ik kijk ernaar uit om de stappen te nemen om deze jeugddroom werkelijkheid te laten worden!",
+        "note": "Als je enig inzicht hebt in {span}, of graag met mij hierover wilt praten, aarzel dan niet om altijd een {mail} te sturen",
+        "notespannorway": "verhuizen naar Noorwegen",
+        "notespanmail": "stuur mij een e-mail"
     },
     "education": {
         "hu": {
-            "description": "Een vierjarige bacheloropleiding afgerond met een focus op softwareontwikkeling, inclusief webontwikkeling, databases en systeemontwerp/-architectuur. Gespecialiseerd in webontwikkeling en design."
+            "description1": "Voltooide een bacheloropleiding van 4 jaar in Software Development, gericht op webontwikkeling, databases en systeemontwerp/architectuur. Gespecialiseerd in webontwikkeling en -ontwerp, met een sterke basis in ontwerpprincipes, patronen en objectgeoriënteerd programmeren.",
+            "description2": "Gevorderd in het schrijven van schoon, onderhoudbaar code en het toepassen van Agile en Scrum-methodologieën voor effectieve projectbeheer. Ervaring in Test-Driven Development (TDD) en het implementeren van veilige toepassingen, inclusief JWT-authenticatie en naleving van ISO 25010 softwarekwaliteitsnormen."
         }
     },
     "work": {
         "mysolution": {
-            "description": "Een volledig aanpasbaar webplatform ontworpen en ontwikkeld met behulp van React, TypeScript en Java Spring, waarbij ik volledige verantwoordelijkheid heb genomen voor het project om GDPR-compliance, veilige JWT-authenticatie, een SQLite-gebaseerde Salesforce-integratie en robuuste backend-ondersteuning voor gepersonaliseerde zakelijke websites te waarborgen."
+            "description1": "Ontwierp en ontwikkelde een aanpasbare kandidaat onboarding portal voor Mysolution-klanten met een brede stack: React, TypeScript en Java Spring. Leverde een SQLite-ondersteunde Salesforce-integratie en schaalbare back-end ondersteuning voor gepersonaliseerde bedrijfswebsites, wat zorgde voor een naadloze en efficiënte gebruikerservaring.",
+            "description2": "Voerde gedetailleerd onderzoek uit naar GDPR-naleving en implementeerde veilige JWT-authenticatie met een robuust gebruikersmachtigingssysteem. Werd georiënteerd op het bouwen van een platform dat zowel veilig als gebruiksvriendelijk was en kon worden aangepast aan diverse klantvereisten. Verantwoordelijk voor het gehele project van begin tot eind, met een technisch solide en betrouwbare oplossing."
         },
         "hjemvik": {
-            "description": "Ontwikkelde een full-stack e-commerceplatform voor Hjemvik, een Noors bedrijf, met behulp van React met TypeScript en Java Spring. Gericht op het creëren van een strak, responsief ontwerp en een naadloze gebruikerservaring, waarmee een op maat gemaakte oplossing voor de online aanwezigheid van het bedrijf werd geleverd."
+            "description1": "Ontwikkelde een full-stack e-commerce platform voor Hjemvik, een Noors bedrijf, met React en TypeScript en Java Spring. Ontwierp een strakke, responsieve interface geoptimaliseerd voor zowel desktop- als mobielgebruik, wat zorgde voor een visueel aantrekkelijke en intuïtieve winkelervaring.",
+            "description2": "Wendde zich tot het leveren van een op maat gemaakte oplossing voor Hjemvik’s online aanwezigheid, het creëren van een gebruikerservaring die soepel verloopt en aankopen stimuleert. Nam volledige verantwoordelijkheid voor zowel front-end als back-endontwikkeling, waarbij het platform de bedrijfsdoelen van het bedrijf nauwkeurig en met oog voor detail bereikte."
         }
     },
     "stack": {
@@ -28,16 +35,21 @@
         "security": "Beveiliging",
         "languages": {
             "title": "Talen",
-            "norwegian": "Noors - Werkvaardigheid en bijna als moedertaal. (C1)",
+            "norwegian": "Noors - Werkproficiëntie en dicht bij moedertaal. (C1)",
             "english": "Engels - Moedertaal. (C2)",
             "dutch": "Nederlands - Moedertaal. (C2)",
-            "danish": "Deens - Middengevorderd. (B1)",
-            "swedish": "Zweeds - Middengevorderd. (B1)"
+            "danish": "Deens - Hoog-gevorderd. (B1)",
+            "swedish": "Zweeds - Hoog-gevorderd. (B1)"
         }
     },
-    "footer": {
-        "message1": "Geïnteresseerd / gewoon een praatje maken? Ik ook!",
-        "message2": "Stuur me een {mail}, en ik neem zo snel mogelijk contact met je op!",
-        "mail": "mail"
+    "hobbies": {
+        "chess": "Schaak",
+        "mountains": "Wandelingen in de bergen",
+        "learningnorwegian": "Noors leren (taal, cultuur enz.)",
+        "dogwalks": "Wandelingen met mijn hond (Golden Retriever)"
+    },
+    "general": {
+        "mail": "E-mail",
+        "norway": "Noorwegen"
     }
 }
