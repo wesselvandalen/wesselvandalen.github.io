@@ -35,6 +35,12 @@ export default function Hobbies() {
                     </div>
                 </div>
 
+                <p className='hobby-tekst'>
+                    {t('hobbies.text').split('{fjellturer}')[0]}
+                    <i>fjellturer</i>
+                    {t('hobbies.text').split('{fjellturer}')[1]}
+                </p>
+
                 <ul className='hobbies-list'>
                     {hobbies.map((hobby, index) => {
                         return <li key={index}>{hobby}</li>
