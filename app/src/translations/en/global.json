@@ -4,7 +4,8 @@
         "education": "Education",
         "work": "Work experience",
         "skills": "Skills",
-        "hobbies": "Hobbies"
+        "hobbies": "Hobbies",
+        "certificates": "Certificates"
     },
     "home": {
         "role": "Full Stack Software Engineer excited to embrace life and opportunity in Norway",

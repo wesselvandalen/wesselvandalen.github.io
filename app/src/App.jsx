@@ -6,6 +6,7 @@ import Work from './components/work';
 import Stack from './components/stack';
 import SidePanel from './components/side-panel';
 import Hobbies from './components/hobbies';
+import Certificates from './components/certificates';
 
 export default function App() {
 
@@ -37,6 +38,7 @@ export default function App() {
           <Home />
           <div className="main-content">
             <Education />
+            {/* <Certificates/> */}
             <Work />
             <Stack/>
             <Hobbies/>
