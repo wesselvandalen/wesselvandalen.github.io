@@ -4,7 +4,8 @@
         "education": "Utdanning",
         "work": "Arbeidserfaring",
         "skills": "Ferdigheter",
-        "hobbies": "Hobbyer"
+        "hobbies": "Hobbyer",
+        "certificates": "Sertifikater"
     },
     "home": {
         "role": "Full Stack Software Ingeniør som er klar til å omfavne livet og mulighetene i Norge",
