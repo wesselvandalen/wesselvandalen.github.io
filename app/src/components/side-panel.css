@@ -124,9 +124,7 @@
 @media screen and (max-width: 1080px) {
     .panel-container {
         border-right: none;
-        border-top: 1.5px solid rgba(0, 0, 0, 0.1);
         height: 60px;
-        background-color: #fff;
         width: 100vw;
         top: auto;
         bottom: 0;
@@ -137,7 +135,7 @@
         display: none;
     }
 
-    .panel-chapters a {
+    .panel-content a {
         display: none;
     }
 
@@ -145,61 +143,7 @@
         display: none;
     }
 
-    .panel-socials {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        margin-top: -20px;
-        margin-left: 35px;
-        width: 65%;
-    }
-
-    .panel-socials a svg {
-        width: 28px;
-        height: 28px;
-    }
-
-    .panel-socials a img {
-        width: 28px;
-        height: 28px;
-    }
-
-    .panel-socials a span {
-        display: none;
-    }
-
-    .panel-nav.open {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: auto;
-        width: 100vw;
-        height: 100vh;
-        background-color: white;
-        z-index: 20;
-        padding: 20px;
-        overflow-y: auto;
-    }
-
-    .hamburger-menu {
-        display: block;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        z-index: 100;
-    }
-
-    .hamburger-icon svg {
-        stroke: #000;
-        width: 40px;
-        height: 40px;
-        margin-top: 0;
-    }
-
-    .panel-content button svg {
-        width: 28px;
-        height: 28px;
-        margin: 0 0;
+    .panel-nav {
+        background-color: transparent;
     }
 }

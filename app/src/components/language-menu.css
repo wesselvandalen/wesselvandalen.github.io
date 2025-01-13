@@ -82,14 +82,20 @@
         bottom: 50px;
     }
 
-    .dropbtn span {
-        display: none;
+    .dropdown {
+        padding: 0 20px 0 10px;
+        width: fit-content;
+        position: fixed;
+        border-radius: 3px;
+        background-color: #fff;
+        bottom: 12px;
+        left: 10px;
+        border: 1px solid color-mix(in srgb, #8cb4e9 15%, transparent);
     }
 
-    .dropdown {
-        position: fixed;
-        bottom: 12px;
-        left: 20px;
+    .dropbtn span {
+        margin-top: -1px;
+        font-size: 13px;
     }
 
     .dropbtn svg {

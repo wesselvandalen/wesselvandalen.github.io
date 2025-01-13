@@ -70,7 +70,7 @@ body {
     flex-grow: 1;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1080px) {
     .app-container {
         flex-direction: column; 
     }
