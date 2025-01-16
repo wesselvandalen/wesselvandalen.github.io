@@ -24,7 +24,7 @@
     line-height: 24px;
     font-style: normal;
     font-weight: 500;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: start;
     margin: 0;
 }
@@ -54,11 +54,11 @@
 .education-tile-description {
     font-size: 14px;
     font-style: normal;
-    font-weight: 500;
     letter-spacing: 0em;
     line-height: 1.6em;
     text-align: start;
-    color: rgb(179, 179, 179);
+    color: var(--tekst-farge);
+    font-weight: 400;
     margin: 20px 0 0 0;
 }
 

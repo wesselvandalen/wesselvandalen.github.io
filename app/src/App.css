@@ -9,9 +9,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fff; 
+    background-color: #000000; 
 
     --maksimal-brede: 649px;
+    --tekst-farge: #a3a3a3;
 }
 
 .app-container {
@@ -35,7 +36,7 @@ body {
 .line {
     width: 100%;
     margin: 5px 0 10px 0;
-    background-color: rgba(0, 0, 0, 0.1); 
+    background-color: rgba(255, 255, 255, 0.1); 
     height: 1px;
 }
 
@@ -59,13 +60,13 @@ body {
     font-size: .875rem;
     line-height: 1.25rem;
     font-weight: 500;
-    color: #a3a3a3;
+    color: #ffffff;
     margin-right: 15px; 
     white-space: nowrap; 
 }
 
 .section-div div {
-    background-color: rgba(0, 0, 0, 0.1); 
+    background-color: rgba(255, 255, 255, 0.1); 
     height: 1px;
     flex-grow: 1;
 }

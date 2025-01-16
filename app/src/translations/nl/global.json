@@ -9,7 +9,7 @@
     },
     "home": {
         "role": "Full Stack Software Engineer enthousiast om het leven en kansen in Noorwegen te omarmen",
-        "description1": "Ik ben Wessel, een {age}-jarige full-stack softwareontwikkelaar met {exp} jaar ervaring. Ik ben gespecialiseerd in het bouwen van zowel front-end als back-end van webapplicaties, inclusief het creëren van databases en integreren van software met Azure via CI/CD-pijplijnen.",
+        "description1": "Ik ben Wessel, een {age}-jarige full-stack softwareontwikkelaar wonend in Nederland met {exp} jaar ervaring. Ik ben gespecialiseerd in het bouwen van zowel front-end als back-end van webapplicaties, inclusief het creëren van databases en integreren van software met Azure via CI/CD-pijplijnen.",
         "description2": "Ik heb sinds mijn jeugd een liefde voor Noorwegen, de cultuur en de taal. Verhuizen naar Noorwegen is een droom die ik altijd heb gehad. Ik spreek vloeiend Noors en werken in Noorwegen – of dat nu op afstand of, idealiter, op kantoor is – is mijn prioriteit. Ik kijk ernaar uit om de stappen te nemen om deze jeugddroom werkelijkheid te laten worden!",
         "note": "Als je enig inzicht hebt in {span}, of graag met mij hierover wilt praten, aarzel dan niet om altijd een {mail} te sturen",
         "notespannorway": "verhuizen naar Noorwegen",
@@ -45,6 +45,7 @@
     },
     "hobbies": {
         "text": "In mijn vrije tijd hou ik ervan om actief te zijn en dingen in de natuur te doen. Ik train in de gym, maak wandelingen met mijn hond, Rowdy (Golden Retriever), en maak {fjellturer} (bergtochten) door heel Noorwegen. In de afbeelding hierboven was ik bijvoorbeeld bij Preikestolen in Rogaland met een vriend van mij. Åja, en ik luister graag naar Rock/metal (vooral van Kvelertak en Ensiferum).",
+        "bodybuilding": "Bodybuilding",
         "chess": "Schaak",
         "mountains": "Wandelingen in de bergen",
         "learningnorwegian": "Noors leren (taal, cultuur enz.)",

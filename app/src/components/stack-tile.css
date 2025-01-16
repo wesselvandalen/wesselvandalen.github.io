@@ -56,14 +56,14 @@
     letter-spacing: 0em;
     line-height: 20px;
     font-weight: 400;
-    color: rgba(29, 29, 31, 0.801);
+    color: rgba(255, 255, 255, 0.801);
     margin: 0 0 0 0;
 }
 
 .stack-info p {
     font-size: 11px;
     font-weight: 400;
-    color: rgb(179, 179, 179);
+    color: rgba(179, 179, 179, 0.635);
     text-transform: uppercase;
     font-style: normal;
     letter-spacing: 0em;

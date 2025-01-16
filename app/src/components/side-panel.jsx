@@ -31,7 +31,7 @@ export default function SidePanel() {
 
                 <div className="panel-profile">
                     <img src={profile} alt="Me" />
-                    <p>Wessel Dalen</p>
+                    <p>Wessel van Dalen</p>
                 </div>
 
                 <div className="line" />

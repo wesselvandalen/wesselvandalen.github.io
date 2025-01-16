@@ -9,7 +9,7 @@
     },
     "home": {
         "role": "Full Stack Software Engineer excited to embrace life and opportunity in Norway",
-        "description1": "I'm Wessel, a {age}-year-old full-stack software developer with {exp} years of experience. I’m skilled in building both the front-end and back-end of web applications, including creating databases and integrating software to Azure through CI/CD pipelines.",
+        "description1": "I'm Wessel, a {age}-year-old full-stack software developer living in the Netherlands with {exp} years of experience. I’m skilled in building both the front-end and back-end of web applications, including creating databases and integrating software to Azure through CI/CD pipelines.",
         "description2": "I’ve been in love with Norway, its culture and language since childhood, and moving there is a dream I've always had. I speak fluent Norwegian, and working in Norway—whether remotely or, ideally, in-office—is my top priority. I’m excited to take the necessary steps to make this childhood dream a reality!",
         "note": "If you have any insights regarding {span}, or would like to have a chat with me about it, feel free to always {mail} on",
         "notespannorway": "moving to Norway",
@@ -45,6 +45,7 @@
     },
     "hobbies": {
         "text": "In my freetime I love to be active, and do things out in nature. I work out at the gym, go for walks with my dog, Rowdy (Golden Retriever), and go for {fjellturer} (mountain walks) throughout all of Norway. In the picture here above for example I was at Preikestolen in Rogaland with a friend of mine. Åja, and I love to listen to Rock / metal (especially from Kvelertak and Ensiferum).",
+        "bodybuilding": "Bodybuilding",
         "chess": "Chess",
         "mountains": "Trips in the mountains",
         "learningnorwegian": "Learning Norwegian (language, culture etc.)",

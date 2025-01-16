@@ -28,7 +28,7 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     transition: box-shadow 0.3s ease;
 }
 
@@ -84,15 +84,30 @@
     font-weight: 600;
     font-style: normal;
     letter-spacing: 0em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin: 10px 0 0 0;
+}
+
+.role-container .flag {
+    width: 20px;
+    height: auto;
+    margin: 0 0 -5px 3px;
+}
+
+.age {
+    font-size: 12px;
+    line-height: 1.3em;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0em;
+    color: white;
+    margin: 0;
 }
 
 .role-container {
     display: flex;
     align-items: center;
-    gap: 10px;
-    width: 65%;
+    width: 50%;
     margin: -10px 0 0 0;
 }
 
@@ -103,11 +118,11 @@
 }
 
 .role {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     font-style: normal;
     font-weight: 500;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -115,11 +130,11 @@
     margin: 0 0 10px 0;
     width: 100%;
     font-style: normal;
-    font-weight: 500;
     font-size: .875rem;
     line-height: 1.25rem;
     text-align: center;
-    color: rgb(179, 179, 179);
+    color: var(--tekst-farge);
+    font-weight: 400;
 }
 
 /* Important note */

@@ -4,6 +4,7 @@ import meg from '../assets/kopi.png';
 import linkedinIcon from '../assets/icons/linkedin.png';
 import githubIcon from '../assets/icons/githubgray.png';
 import stackoverflowIcon from '../assets/icons/stackoverflowgray.png';
+import norwayFlag from '../assets/icons/norwayflag.png';
 
 export default function Home() {
     const [t] = useTranslation("global");
@@ -36,9 +37,9 @@ export default function Home() {
                     </div>
                 </div>
 
-                <h3 className='name'>Wessel Dalen</h3>
+                <h3 className='name'>Wessel Rowdy van Dalen</h3>
                 <div className="role-container">
-                    <h2 className='role'>{t('home.role')}</h2>
+                    <h2 className='role'>{t('home.role')}<img className='flag' src={norwayFlag} alt="Norway flag icon" /></h2>
                 </div>
                 
                 <div className="social-container">

@@ -8,8 +8,8 @@
         "certificates": "Sertifikater"
     },
     "home": {
-        "role": "Full Stack Software Ingeniør som er klar til å omfavne livet og mulighetene i Norge",
-        "description1": "Jeg er Wessel, en {age} år gammel full-stack programvareutvikler med {exp} års erfaring. Jeg er dyktig i å utvikle både front-end og back-end for webapplikasjoner, inkludert å lage databaser og integrere programvare til Azure gjennom CI/CD-pipelines.",
+        "role": "Full-stack programvareutvikler som er klar til å omfavne livet og mulighetene i Norge",
+        "description1": "Jeg er Wessel, en {age} år gammel full-stack programvareutvikler som bor i Nederland med {exp} års erfaring. Jeg er dyktig i å utvikle både front-end og back-end for webapplikasjoner, inkludert å lage databaser og integrere programvare til Azure gjennom CI/CD-pipelines.",
         "description2": "Jeg har vært forelsket i Norge, dets kultur og språk siden barndommen, og å flytte dit har alltid vært en drøm for meg. Jeg snakker norsk flytende, og det å jobbe i Norge—enten eksternt eller, ideelt sett, på kontor—er min høyeste prioritet. Jeg er spent på å ta de nødvendige stegene for å gjøre denne barndomsdrømmen til virkelighet!",
         "note": "Hvis du har innsikt i {span}, eller hvis du ønsker å slå av en prat med meg om det, er du alltid velkommen til å {mail} på",
         "notespannorway": "å flytte til Norge",
@@ -45,6 +45,7 @@
     },
      "hobbies": {
         "text": "I min fritid elsker jeg å være aktiv og gjøre ting ute i naturen. Jeg trener på treningssenteret, går turer med hunden min, Rowdy (Golden Retriever), og drar på {fjellturer} gjennom hele Norge. På bildet over her var jeg for eksempel på Preikestolen i Rogaland med en kompis av meg. Åja, og jeg liker å høre på Rock/metal (spesielt fra Kvelertak og Ensiferum).",
+        "bodybuilding": "Kroppsbygging",
         "chess": "Sjakk",
         "mountains": "Turer i fjellet",
         "learningnorwegian": "Lære norsk (språk, kultur osv.)",
