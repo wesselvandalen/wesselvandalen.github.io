@@ -3,7 +3,7 @@
     align-items: start;
     width: 100%;
     flex-direction: column;
-    margin: 50px 0 0 0;
+    height: 100vh;
 }
 
 .home-content {
@@ -13,185 +13,121 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
+    text-align: left;
 }
 
-/* Image */
+/* Home information */
 
-.video-thumbnail-link {
-    display: inline-block;
-    text-decoration: none;
-}
-
-.video-thumbnail {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-.thumbnail-image {
+.home-information {
+    display: flex;
+    align-items: start;
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    flex-direction: column;
+}
+
+.home-image {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+}   
+
+.home-name {
+    font-family: "Saira Extra Condensed", 'sans-serif';
+    font-size: 6rem;
+    line-height: 5.5rem;
+    font-weight: 650;
+    font-style: normal;
+    letter-spacing: -.025em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #343a40;
+    margin: 25px 0 5px 0;
+}
+
+.home-role {
+    font-family: "Saira Extra Condensed", 'sans-serif';
+    text-transform: uppercase;
+    font-size: 34px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 650;
+    color: #343a40;
+    text-align: start;
+    margin: 0 0 25px 0;
+}
+
+.home-description {
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--tekst-farge);
+    margin: 0 0 5px 0;
 }
 
 /* Social container */
 
 .social-container {
     display: none;
+    width: 100%;
     flex-direction: row;
     align-items: start;
-    gap: 20px;
-    margin: 0 0 20px 0;
+    margin: 15px 0 -5px 0;
 }
 
 .social-container a {
-    color: rgb(29, 29, 31);
+    color: var(--tekst-farge);
     font-size: 15px;
     line-height: 1.4705882353;
     font-weight: 400;
     letter-spacing: 0.022em;
     text-decoration: none;
-    gap: 2px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    display: inline-block;
+    margin-right: 10px;
+    border: rgba(0, 0, 0, .1) solid 1px;
+    padding: 10px;
+    border-radius: 6px;
 }
 
 .social-container svg {
     width: 20px;
     height: 20px;
     color: rgb(122, 122, 122);
-    margin: 0 0 3px 0;
+    margin: 0 0 -5px 0;
 }
 
 .social-container img {
     width: 21px;
     height: 21px;
     color: rgb(122, 122, 122);
-    margin: 0 2px 3px 0;
-}
-
-/* Name, role, description */
-
-.name {
-    font-size: 24px;
-    line-height: 1.3em;
-    font-weight: 600;
-    font-style: normal;
-    letter-spacing: 0em;
-    color: rgb(255, 255, 255);
-    margin: 10px 0 0 0;
-}
-
-.role-container .flag {
-    width: 20px;
-    height: auto;
-    margin: 0 0 -5px 3px;
-}
-
-.age {
-    font-size: 12px;
-    line-height: 1.3em;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0em;
-    color: white;
-    margin: 0;
-}
-
-.role-container {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    margin: -10px 0 0 0;
-}
-
-.role-container img {
-    width: 16px;
-    height: auto;
-    margin: 0 0 -3px 3px;
-}
-
-.role {
-    font-size: 15px;
-    line-height: 24px;
-    font-style: normal;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-.description {
-    margin: 0 0 10px 0;
-    width: 100%;
-    font-style: normal;
-    font-size: .875rem;
-    line-height: 1.25rem;
-    text-align: center;
-    color: var(--tekst-farge);
-    font-weight: 400;
-}
-
-/* Important note */
-
-.important-note {
-    width: 98%;
-    height: 50px;
-    margin: 0;
-    padding: 0 0 0 10px;
-    border-left: 2px solid #0d72c5; 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.highlight {
-    padding: 0 .25rem;
-    background-color: #ffecb3;
-    color: #5a4500;
-    border-radius: 2px;
-}
-
-.important-note p {
-    color: #a3a3a3;
-    font-style: normal;
-    font-weight: 400;
-    font-size: .875rem;
-    line-height: 1.25rem;
-}
-
-.important-note a {
-    text-decoration: none;
-    color: rgb(29, 143, 209);
-}
-
-.important-note a:hover {
-    color: rgb(47, 168, 239);
+    margin: 0 0 -5px 0;
 }
 
 @media screen and (max-width: 1080px) {
+    .home-container {
+        height: fit-content;
+    }
+
     .home-content {
         padding: 0 0;
         width: 95%;
-    }
-
-    .role-container {
-        width: 100%;
     }
 
     .description {
         margin-bottom: 20px;
     }
 
-    .important-note {
-        margin-top: 5px;
-        
-        height: 80px;
+    .home-image {
+        margin-top: 20px;
+    }
+
+    .home-name {
+        font-size: 4rem;
+        line-height: 1em;
+    }
+
+    .home-role {
+        line-height: 1em;
     }
 
     .social-container {

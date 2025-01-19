@@ -80,13 +80,12 @@ export default function Stack() {
 
                 <div className="stack-innhold">
                     <p className='stack-title'>{t('stack.languages.title')}</p>
+                    <p className='stack-description'></p>
 
                     <ul>
                         <li>{t('stack.languages.norwegian')}</li>
                         <li>{t('stack.languages.english')}</li>
                         <li>{t('stack.languages.dutch')}</li>
-                        <li>{t('stack.languages.danish')}</li>
-                        <li>{t('stack.languages.swedish')}</li>
                     </ul>
 
                 </div>
@@ -94,6 +93,7 @@ export default function Stack() {
 
                 <div className="stack-innhold">
                     <p className='stack-title'>{t('stack.tools')}</p>
+                    <p className='stack-description'>{t('stack.toolsandsoftwaredescription')}</p>
 
                     <div className="stack-grid">
 
@@ -111,6 +111,7 @@ export default function Stack() {
 
                 <div className="stack-innhold">
                     <p className='stack-title'>Front-end / webdevelopment</p>
+                    <p className='stack-description'>{t('stack.frontenddescription')}</p>
 
                     <div className="stack-grid">
 
@@ -128,6 +129,7 @@ export default function Stack() {
 
                 <div className="stack-innhold">
                     <p className='stack-title'>Back-end / server & database development</p>
+                    <p className='stack-description'>{t('stack.backenddescription')}</p>
 
                     <div className="stack-grid">
 
@@ -145,6 +147,7 @@ export default function Stack() {
 
                 <div className="stack-innhold">
                     <p className='stack-title'>{t('stack.security')}</p>
+                    <p className='stack-description'>{t('stack.securitydescription')}</p>
 
                     <ul>
                         <li>OWASP TOP 10</li>
@@ -160,6 +163,7 @@ export default function Stack() {
 
                 <div className="stack-innhold">
                     <p className='stack-title'>Testing</p>
+                    <p className='stack-description'>{t('stack.testingdescription')}</p>
 
                     <ul>
                         <li>Continious Integration / Continious Development</li>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     scroll-behavior: smooth;
@@ -9,15 +9,17 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #000000; 
+    background-color: #ffffff ; 
 
-    --maksimal-brede: 649px;
-    --tekst-farge: #a3a3a3;
+    --maksimal-brede: 68rem;
+    --tekst-farge: rgb(88, 88, 88);
+    --main-farge: #000;
 }
 
 .app-container {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
     flex-direction: row;
     width: 100%;
     overflow: hidden;
@@ -26,16 +28,20 @@ body {
 
 .app-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
+}
+
+.app-innhold {
+    margin-left: 20rem;
     max-width: var(--maksimal-brede);
 }
 
 .line {
-    width: 100%;
-    margin: 5px 0 10px 0;
+    width: 80%;
+    margin: 0 0 8px 20px;
     background-color: rgba(255, 255, 255, 0.1); 
     height: 1px;
 }
@@ -51,24 +57,29 @@ body {
 
 .section-div {
     display: flex;
-    align-items: center;
+    align-items: start;
+    flex-direction: column-reverse;
     width: 100%;
-    margin: 30px 0;
+    margin: 10px 0 0 0;
 }
 
 .section-title {
-    font-size: .875rem;
     line-height: 1.25rem;
-    font-weight: 500;
-    color: #ffffff;
+    font-weight: 700;
+    color: #343a40;
+    font-size: 3.5rem;
     margin-right: 15px; 
     white-space: nowrap; 
+    font-family: "Saira Extra Condensed", 'sans-serif';
+    text-transform: uppercase;
 }
 
 .section-div div {
-    background-color: rgba(255, 255, 255, 0.1); 
+    background-color: rgba(0, 0, 0, 0.1); 
     height: 1px;
+    width: 100%;
     flex-grow: 1;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 1080px) {

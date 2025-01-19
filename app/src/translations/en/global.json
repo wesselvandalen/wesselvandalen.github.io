@@ -4,16 +4,13 @@
         "education": "Education",
         "work": "Work experience",
         "skills": "Skills",
-        "hobbies": "Hobbies",
+        "hobbies": "Interests",
         "certificates": "Certificates"
     },
     "home": {
-        "role": "Full Stack Software Engineer excited to embrace life and opportunity in Norway",
+        "role": "Full Stack Software Developer excited to embrace life and opportunity in Norway",
         "description1": "I'm Wessel, a {age}-year-old full-stack software developer living in the Netherlands with {exp} years of experience. I’m skilled in building both the front-end and back-end of web applications, including creating databases and integrating software to Azure through CI/CD pipelines.",
-        "description2": "I’ve been in love with Norway, its culture and language since childhood, and moving there is a dream I've always had. I speak fluent Norwegian, and working in Norway—whether remotely or, ideally, in-office—is my top priority. I’m excited to take the necessary steps to make this childhood dream a reality!",
-        "note": "If you have any insights regarding {span}, or would like to have a chat with me about it, feel free to always {mail} on",
-        "notespannorway": "moving to Norway",
-        "notespanmail": "send me an e-mail"
+        "description2": "I’ve been in love with Norway, its culture and language since childhood, and moving there is a dream I've always had. I speak fluent Norwegian, and working in Norway—whether remotely or, ideally, in-office—is my top priority. I’m excited to take the necessary steps to make this childhood dream a reality!"
     },
     "education": {
         "hu": {
@@ -31,16 +28,22 @@
             "description2": "Focused on delivering a tailored solution for Hjemvik’s online presence, crafting a user experience that feels smooth and encourages purchases. Took full responsibility for both front-end and back-end development, ensuring the platform met the company’s business goals with precision and attention to detail."
         }
     },
+    "certificates": {
+        "no": "No certificates yet, but working hard ;)"
+    },
     "stack": {
         "tools": "Tools and Software",
         "security": "Security",
+        "frontenddescription": "I specialize in modern web development using powerful tools like React, Svelte, and Lit. With expertise in JavaScript, TypeScript, HTML, CSS, and Tailwind, I create responsive, accessible, and visually stunning user interfaces tailored to diverse needs.",
+        "backenddescription": "My back-end expertise includes Java, Python, and C#, with frameworks like Spring and JUnit5. Skilled in managing databases such as PostgreSQL and SQLite, I ensure robust, scalable, and secure server solutions for any project.",
+        "toolsandsoftwaredescription": "Proficient in tools like VS Code, IntelliJ IDEA, and Postman, I streamline workflows with Git, Docker, and Azure. Whether it’s designing in Figma or managing APIs, I leverage advanced platforms like Salesforce and Visual Paradigm.",
+        "securitydescription": "I specialize in secure development with expertise in OWASP Top 10, role-based access control, and cybersecurity threats like injection and brute force attacks. I implement robust solutions using encryption, JWT tokens, API key management, and compliance with GDPR and ISO 25010 standards.",
+        "testingdescription": "I excel in delivering reliable software through Test-Driven Development, end-to-end testing, and CI/CD practices. Using tools like JUnit5, JaCoCo, and GitHub Action Pipelines, I ensure high code quality and robust automated testing for comprehensive coverage.",
         "languages": {
             "title": "Languages",
             "norwegian": "Norwegian - Work profiency and close to native. (C1)",
             "english": "English - Native. (C2)",
-            "dutch": "Dutch - Native. (C2)",
-            "danish": "Danish - Upper intermediate. (B1)",
-            "swedish": "Swedish - Upper intermediate. (B1)"
+            "dutch": "Dutch - Native. (C2)"
         }
     },
     "hobbies": {

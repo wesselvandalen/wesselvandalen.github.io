@@ -4,7 +4,6 @@ import meg from '../assets/kopi.png';
 import linkedinIcon from '../assets/icons/linkedin.png';
 import githubIcon from '../assets/icons/githubgray.png';
 import stackoverflowIcon from '../assets/icons/stackoverflowgray.png';
-import norwayFlag from '../assets/icons/norwayflag.png';
 
 export default function Home() {
     const [t] = useTranslation("global");
@@ -31,15 +30,12 @@ export default function Home() {
         <div className="home-container">
             <div className="home-content">
 
-                <div className="video-thumbnail-link">
-                    <div className="video-thumbnail">
-                        <img src={meg} alt="Me" className="thumbnail-image" />
-                    </div>
-                </div>
-
-                <h3 className='name'>Wessel Rowdy van Dalen</h3>
-                <div className="role-container">
-                    <h2 className='role'>{t('home.role')}<img className='flag' src={norwayFlag} alt="Norway flag icon" /></h2>
+                <div className="home-information">
+                    <img src={meg} alt="A picture of me" className='home-image' />
+                    <h1 className='home-name'>Wessel Rowdy van Dalen</h1>
+                    <p className='home-role'>{t('home.role')}</p>
+                    <p className='home-description'>{t('home.description1').replace('{age}', calculateAge()).replace('{exp}', calculateExperience())}</p>
+                    <p className='home-description'>{t('home.description2')}</p>
                 </div>
                 
                 <div className="social-container">
@@ -57,20 +53,6 @@ export default function Home() {
                     <a href="https://stackoverflow.com/users/24017710/wesseldalen" target='_blank' rel='noreferrer'>
                         <img src={stackoverflowIcon} alt="Stack Overflow icon" />
                     </a>
-                </div>
-
-                <p className='description'>Hallaisen! {t('home.description1').replace('{age}', calculateAge()).replace('{exp}', calculateExperience())}</p>
-                <p className='description'>{t('home.description2')}</p>
-
-                <div className="important-note">
-                    <p>
-                        {t('home.note').split('{span}')[0]}
-                        <span className='highlight'>{t('home.notespannorway')}</span>
-                        {t('home.note').split('{span}')[1].split('{mail}')[0]}
-                        <span className='highlight'>{t('home.notespanmail')}</span>
-                        {t('home.note').split('{mail}')[1]}
-                        <a href="mailto:wesselvandalen@gmail.com"> wesselvandalen@gmail.com</a>
-                    </p>
                 </div>
 
             </div>

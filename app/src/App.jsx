@@ -38,7 +38,7 @@ export default function App() {
           <Home />
           <div className="main-content">
             <Education />
-            {/* <Certificates/> */}
+            <Certificates/>
             <Work />
             <Stack/>
             <Hobbies/>

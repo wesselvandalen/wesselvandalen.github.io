@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
+    margin: 10px 0;
 }
 
 .work-tile-name-role-date-container {
@@ -24,7 +25,7 @@
     line-height: 24px;
     font-style: normal;
     font-weight: 500;
-    color: rgb(255, 255, 255);
+    color: var(--main-farge);
     text-align: start;
     margin: 0;
 }
@@ -36,7 +37,7 @@
     letter-spacing: 0em;
     line-height: 1.6em;
     text-align: start;
-    color: rgb(179, 179, 179);
+    color: var(--main-farge);
     margin: 0;
 }
 
@@ -47,7 +48,7 @@
     letter-spacing: 0em;
     line-height: 1.6em;
     text-align: start;
-    color: rgb(179, 179, 179);
+    color: var(--main-farge);
     margin: -25px 0 0 0;
 }
 
@@ -72,12 +73,13 @@
 }
 
 .work-tile-skills-container p {
+    font-family: "Inter Tight", 'sans-serif';
     font-size: 13px;
     font-weight: 500;
     line-height: 1.5;
-    color: rgb(151, 151, 151);
+    color: var(--tekst-farge);
 
-    background-color: hsla(0, 0%, 5%, 0.881);
+    background-color: hsla(0, 0%, 99%, 0.881);
     border-radius: .375rem;
     padding: 1px 6px;
     margin: 0;

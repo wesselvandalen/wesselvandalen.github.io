@@ -30,6 +30,7 @@ export default function Education() {
                             key={index}
                             study={education.study}
                             school={education.school}
+                            icon={education.icon}
                             date={education.date}
                             descriptions={education.descriptions}
                         />

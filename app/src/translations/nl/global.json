@@ -31,16 +31,22 @@
             "description2": "Wendde zich tot het leveren van een op maat gemaakte oplossing voor Hjemvik’s online aanwezigheid, het creëren van een gebruikerservaring die soepel verloopt en aankopen stimuleert. Nam volledige verantwoordelijkheid voor zowel front-end als back-endontwikkeling, waarbij het platform de bedrijfsdoelen van het bedrijf nauwkeurig en met oog voor detail bereikte."
         }
     },
+    "certificates": {
+        "no": "Nog geen Certificaten behaald, maar ik werk er hard aan ;)"
+    },
     "stack": {
         "tools": "Tools en Software",
         "security": "Beveiliging",
+        "frontenddescription": "Ik ben gespecialiseerd in moderne webontwikkeling met tools zoals React, Svelte en Lit. Met expertise in JavaScript, TypeScript, HTML, CSS en Tailwind ontwerp ik responsieve, toegankelijke en visueel aantrekkelijke gebruikersinterfaces.",
+        "backenddescription": "Mijn back-end expertise omvat Java, Python en C#, met frameworks zoals Spring en JUnit5. Ik ben ervaren in het beheren van databases zoals PostgreSQL en SQLite, en lever robuuste, schaalbare en veilige serveroplossingen.",
+        "toolsandsoftwaredescription": "Bekwaam in tools zoals VS Code, IntelliJ IDEA en Postman optimaliseer ik workflows met Git, Docker en Azure. Of het nu gaat om ontwerpen in Figma of het beheren van API’s, ik gebruik geavanceerde platforms zoals Salesforce en Visual Paradigm.",
+        "securitydescription": "Ik ben gespecialiseerd in veilige ontwikkeling met expertise in OWASP Top 10, rolgebaseerde toegangscontrole en cyberdreigingen zoals injectie en brute force-aanvallen. Ik implementeer robuuste oplossingen met encryptie, JWT-tokens, API-sleutelbeheer en naleving van GDPR- en ISO 25010-normen.",
+        "testingdescription": "Ik lever betrouwbare software door middel van Test-Driven Development, end-to-end testen en CI/CD-praktijken. Met tools zoals JUnit5, JaCoCo en GitHub Action Pipelines garandeer ik hoge codekwaliteit en robuuste geautomatiseerde tests voor volledige dekking.",
         "languages": {
             "title": "Talen",
             "norwegian": "Noors - Werkproficiëntie en dicht bij moedertaal. (C1)",
             "english": "Engels - Moedertaal. (C2)",
-            "dutch": "Nederlands - Moedertaal. (C2)",
-            "danish": "Deens - Hoog-gevorderd. (B1)",
-            "swedish": "Zweeds - Hoog-gevorderd. (B1)"
+            "dutch": "Nederlands - Moedertaal. (C2)"
         }
     },
     "hobbies": {

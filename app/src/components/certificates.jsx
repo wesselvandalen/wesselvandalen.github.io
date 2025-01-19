@@ -13,11 +13,7 @@ export default function Certificates() {
                   </div>
 
                   <div className="certificates-content">
-                        
-                        <p>No certificates yet.</p>
-
-
-
+                        <p>{t('certificates.no')}</p>
                   </div>
             </div>
       );

@@ -31,16 +31,22 @@
             "description2": "Fokusert på å levere en skreddersydd løsning for Hjemviks online tilstedeværelse, og skapte en brukeropplevelse som kjennes jevn og fremmer kjøp. Hadde full ansvar for både front-end og back-end utvikling, og sørget for at plattformen møtte bedriftens mål med presisjon og oppmerksomhet på detaljer."
         }
     },
+    "certificates": {
+        "no": "Ingen nertifikater ennå, men jobber hardt på det ;)"
+    },
     "stack": {
         "tools": "Verktøy og programvare",
         "security": "Sikkerhet",
+        "frontenddescription": "Jeg spesialiserer meg på moderne webutvikling med verktøy som React, Svelte og Lit. Med ekspertise i JavaScript, TypeScript, HTML, CSS og Tailwind lager jeg responsive, tilgjengelige og visuelt imponerende brukergrensesnitt.",
+        "backenddescription": "Min back-end-kompetanse inkluderer Java, Python og C#, med rammeverk som Spring og JUnit5. Jeg er dyktig i å administrere databaser som PostgreSQL og SQLite, og sikrer robuste, skalerbare og sikre serverløsninger.",
+        "toolsandsoftwaredescription": "Dyktig i verktøy som VS Code, IntelliJ IDEA og Postman, effektiviserer jeg arbeidsflyter med Git, Docker og Azure. Enten det er design i Figma eller administrasjon av API-er, bruker jeg avanserte plattformer som Salesforce og Visual Paradigm.",
+        "securitydescription": "Jeg spesialiserer meg på sikker utvikling med ekspertise innen OWASP Top 10, rollebasert tilgangskontroll og cybersikkerhetstrusler som injeksjon og brute force-angrep. Jeg implementerer robuste løsninger med kryptering, JWT-tokens, API-nøkkeladministrasjon og overholdelse av GDPR- og ISO 25010-standarder.",
+        "testingdescription": "Jeg leverer pålitelig programvare gjennom Test-Driven Development, ende-til-ende-testing og CI/CD-praksis. Med verktøy som JUnit5, JaCoCo og GitHub Action Pipelines sikrer jeg høy kodekvalitet og robust automatisert testing for fullstendig dekning.",
         "languages": {
             "title": "Språk",
             "norwegian": "Norsk - Arbeidsspråk og nesten som morsmål. (C1)",
             "english": "Engelsk - Morsmål. (C2)",
-            "dutch": "Nederlandsk - Morsmål. (C2)",
-            "danish": "Dansk - Øvre mellomnivå. (B1)",
-            "swedish": "Svensk - Øvre mellomnivå. (B1)"
+            "dutch": "Nederlandsk - Morsmål. (C2)"
         }
     },
      "hobbies": {
