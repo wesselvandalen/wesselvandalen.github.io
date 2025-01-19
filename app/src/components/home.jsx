@@ -34,7 +34,7 @@ export default function Home() {
                     <img src={meg} alt="A picture of me" className='home-image' />
                     <h1 className='home-name'>Wessel Rowdy van Dalen</h1>
                     <p className='home-role'>{t('home.role')}</p>
-                    <p className='home-description'>{t('home.description1').replace('{age}', calculateAge()).replace('{exp}', calculateExperience())}</p>
+                    <p className='home-description'>Heisann! {t('home.description1').replace('{age}', calculateAge()).replace('{exp}', calculateExperience())}</p>
                     <p className='home-description'>{t('home.description2')}</p>
                 </div>
                 

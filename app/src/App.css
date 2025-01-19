@@ -11,7 +11,7 @@ body {
     box-sizing: border-box;
     background-color: #ffffff ; 
 
-    --maksimal-brede: 68rem;
+    --maksimal-brede: 56rem;
     --tekst-farge: rgb(88, 88, 88);
     --main-farge: #000;
 }

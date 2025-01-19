@@ -96,8 +96,8 @@ export default function SidePanel() {
                             <span>{handleLanguageDisplayText(i18n.language)}</span>
                         </button>
                         <div className="dropdown-content">
-                            <button onClick={() => handleLanguageSwitch('no')} style={{ borderTopRightRadius: '5px', borderTopLeftRadius: '5px' }} >Norsk</button>
-                            <button onClick={() => handleLanguageSwitch('en')} >English</button>
+                            <button onClick={() => handleLanguageSwitch('en')} style={{ borderTopRightRadius: '5px', borderTopLeftRadius: '5px' }} >English</button>
+                            <button onClick={() => handleLanguageSwitch('no')} >Norsk bokmål</button>
                             <button onClick={() => handleLanguageSwitch('nl')} style={{ borderBottomRightRadius: '5px', borderBottomLeftRadius: '5px' }} >Nederlands</button>
                         </div>
                     </div>
