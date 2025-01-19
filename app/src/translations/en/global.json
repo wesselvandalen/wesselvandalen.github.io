@@ -4,13 +4,15 @@
         "education": "Education",
         "work": "Work experience",
         "skills": "Skills",
-        "hobbies": "Interests",
-        "certificates": "Certificates"
+        "interests": "Interests",
+        "certificates": "Certificates",
+        "contact": "Contact",
+        "mail": "E-mail"
     },
     "home": {
-        "role": "Full Stack Software Developer excited to embrace life and opportunity in Norway",
-        "description1": "I'm Wessel, a {age}-year-old full-stack software developer living in the Netherlands with {exp} years of experience. I’m skilled in building both the front-end and back-end of web applications, including creating databases and integrating software to Azure through CI/CD pipelines.",
-        "description2": "I’ve been in love with Norway, its culture and language since childhood, and moving there is a dream I've always had. I speak fluent Norwegian, and working in Norway—whether remotely or, ideally, in-office—is my top priority. I’m excited to take the necessary steps to make this childhood dream a reality!"
+        "role": "Full-Stack Software Developer excited to embrace life and opportunities in Norway",
+        "description1": "I'm Wessel, a {age}-year-old full-stack software developer living in the Netherlands with {exp} years of experience. I’m skilled in building both the front-end and back-end of web applications, including creating databases and integrating software with Azure through CI/CD pipelines.",
+        "description2": "I’ve been in love with Norway, its culture, and its language since childhood, and moving there is a dream I've always had. I speak fluent Norwegian, and working in Norway—whether remotely or, ideally, in-office—is my top priority. I’m excited to take the necessary steps to make this childhood dream a reality!"
     },
     "education": {
         "hu": {
@@ -34,28 +36,27 @@
     "stack": {
         "tools": "Tools and Software",
         "security": "Security",
-        "frontenddescription": "I specialize in modern web development using powerful tools like React, Svelte, and Lit. With expertise in JavaScript, TypeScript, HTML, CSS, and Tailwind, I create responsive, accessible, and visually stunning user interfaces tailored to diverse needs.",
-        "backenddescription": "My back-end expertise includes Java, Python, and C#, with frameworks like Spring and JUnit5. Skilled in managing databases such as PostgreSQL and SQLite, I ensure robust, scalable, and secure server solutions for any project.",
-        "toolsandsoftwaredescription": "Proficient in tools like VS Code, IntelliJ IDEA, and Postman, I streamline workflows with Git, Docker, and Azure. Whether it’s designing in Figma or managing APIs, I leverage advanced platforms like Salesforce and Visual Paradigm.",
-        "securitydescription": "I specialize in secure development with expertise in OWASP Top 10, role-based access control, and cybersecurity threats like injection and brute force attacks. I implement robust solutions using encryption, JWT tokens, API key management, and compliance with GDPR and ISO 25010 standards.",
-        "testingdescription": "I excel in delivering reliable software through Test-Driven Development, end-to-end testing, and CI/CD practices. Using tools like JUnit5, JaCoCo, and GitHub Action Pipelines, I ensure high code quality and robust automated testing for comprehensive coverage.",
+        "frontenddescription": "Having built and designed lots of different web apps, I've been able to explore tons of different frameworks/libraries, and excel at creating beautiful and clean-coded websites in a high tempo.",
+        "backenddescription": "With tons of experience in created Object Oriented Back-end systems connected with SQL databases, I know how to create a high level server with both design principles & -patterns, and optimal and efficient code architecture.",
+        "toolsandsoftwaredescription": "I use a ton of different software and tools throughout my work day, from VSC and InteallIJ IDEA for building apps, to using Postman for testing the API's I've built. I have a very wide knowledge in all these tools, which causes me to work the most efficient and best way possible.",
+        "securitydescription": "Having worked with a lot of differnent security aspects, I know how to build an application according to (amongst others) OWASP TOP 10 and ISO 25010 standards, and handle user input and data with care, so that it's always in the right hands.",
+        "testingdescription": "To make sure all my code works and does what it's expected to do, I've been taught how to properly test code through f.e. JUnit5 end-to-end tests, integrated with a Continious Integration / Continious Development pipeline, checking whether my build fails or not with each adjustment, making sure my code is of the highest quality possible.",
         "languages": {
             "title": "Languages",
-            "norwegian": "Norwegian - Work profiency and close to native. (C1)",
+            "norwegian": "Norwegian - Work proficiency and close to native. (C1)",
             "english": "English - Native. (C2)",
             "dutch": "Dutch - Native. (C2)"
         }
     },
-    "hobbies": {
-        "text": "In my freetime I love to be active, and do things out in nature. I work out at the gym, go for walks with my dog, Rowdy (Golden Retriever), and go for {fjellturer} (mountain walks) throughout all of Norway. In the picture here above for example I was at Preikestolen in Rogaland with a friend of mine. Åja, and I love to listen to Rock / metal (especially from Kvelertak and Ensiferum).",
+    "interests": {
+        "text": "In my free time, I love to be active and do things out in nature. I work out at the gym, go for walks with my dog, Rowdy (Golden Retriever), and go for mountain hikes throughout all of Norway. Åja, and I love to listen to Rock/metal (especially from Kvelertak and Ensiferum).",
         "bodybuilding": "Bodybuilding",
         "chess": "Chess",
         "mountains": "Trips in the mountains",
-        "learningnorwegian": "Learning Norwegian (language, culture etc.)",
+        "learningnorwegian": "Learning Norwegian (language, culture, etc.)",
         "dogwalks": "Walks with my dog (Golden Retriever)"
     },
-    "general": {
-        "mail": "E-mail",
-        "norway": "Norway"
+    "contact": {
+        "tekst": "If you want to have a chat about hiring me/working together, Norway, or any of my interests ;), feel free to always send me a message or email at {mail} or any of these platforms:"
     }
 }

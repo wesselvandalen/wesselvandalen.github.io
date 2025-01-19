@@ -1,48 +1,46 @@
-.hobbies-container {
+.interests-container {
     display: flex;  
     flex-direction: column;
     align-items: start;
     width: 100%;
 }
 
-.hobbies-content {
+.interests-content {
     width: 100%;
 }
 
-.hobby-tekst {
-    width: 100%;
+.interests-tekst {
+    font-size: 14px;
+    line-height: 24px;
     font-style: normal;
     font-weight: 500;
-    font-size: .875rem;
-    line-height: 1.25rem;
-    text-align: start;
-    color: rgb(179, 179, 179);
-    margin: 0 0 20px 0;
+    color: var(--tekst-farge);
+    margin: 0 0 25px 0;
 }
 
-/* Hobby image */
+/* interests image */
 
-.hobby-image img {
+.interests-image img {
     border-radius: 12px;
     max-width: 400px;
     height: auto;
 }
 
-.hobby-image-location-container {
+.interests-image-location-container {
     display: flex;
     align-items: center;
     gap: 2px;
     margin-top: -10px;
 }
 
-.hobby-image-location-container svg {
+.interests-image-location-container svg {
     width: 12px;
     height: 12px;
     color: #a3a3a3;
     margin: -2px 0 0 0;
 }
 
-.hobby-image-location-container p {
+.interests-image-location-container p {
     color: #a3a3a3;
     font-style: normal;
     font-weight: 400;
@@ -52,11 +50,11 @@
 
 /* List */
 
-.hobbies-list {
+.interests-list {
     margin: -5px 0 0 -25px;
 }   
 
-.hobbies-list li {
+.interests-list li {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -68,11 +66,11 @@
 }
 
 @media screen and (max-width: 1080px) {
-    .hobbies-container {
+    .interests-container {
         margin-bottom: 50px;
     }
 
-    .hobby-image img {
+    .interests-image img {
         max-width: 94vw;
     }
 }

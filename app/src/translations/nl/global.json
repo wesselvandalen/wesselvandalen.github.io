@@ -4,61 +4,59 @@
         "education": "Opleiding",
         "work": "Werkervaring",
         "skills": "Vaardigheden",
-        "hobbies": "Interesses",
-        "certificates": "Certificaten"
+        "interests": "Interesses",
+        "certificates": "Certificaten",
+        "contact": "Contact",
+        "mail": "E-mail"
     },
     "home": {
-        "role": "Full Stack Software Engineer enthousiast om het leven en kansen in Noorwegen te omarmen",
-        "description1": "Ik ben Wessel, een {age}-jarige full-stack softwareontwikkelaar wonend in Nederland met {exp} jaar ervaring. Ik ben gespecialiseerd in het bouwen van zowel front-end als back-end van webapplicaties, inclusief het creëren van databases en integreren van software met Azure via CI/CD-pijplijnen.",
-        "description2": "Ik heb sinds mijn jeugd een liefde voor Noorwegen, de cultuur en de taal. Verhuizen naar Noorwegen is een droom die ik altijd heb gehad. Ik spreek vloeiend Noors en werken in Noorwegen – of dat nu op afstand of, idealiter, op kantoor is – is mijn prioriteit. Ik kijk ernaar uit om de stappen te nemen om deze jeugddroom werkelijkheid te laten worden!",
-        "note": "Als je enig inzicht hebt in {span}, of graag met mij hierover wilt praten, aarzel dan niet om altijd een {mail} te sturen",
-        "notespannorway": "verhuizen naar Noorwegen",
-        "notespanmail": "stuur mij een e-mail"
+        "role": "Full-Stack Software Developer enthousiast om het leven en kansen in Noorwegen te omarmen",
+        "description1": "Ik ben Wessel, een {age}-jarige full-stack software developer die in Nederland woont met {exp} jaar ervaring. Ik ben bedreven in het bouwen van zowel front-end als back-end van webtoepassingen, inclusief het maken van databases en het integreren van software met Azure via CI/CD-pipelines.",
+        "description2": "Sinds mijn kindertijd ben ik verliefd op Noorwegen, zijn cultuur en taal, en verhuizen daarheen is een droom die ik altijd heb gehad. Ik spreek vloeiend Noors, en werken in Noorwegen - of het nu op afstand is of, idealiter, op kantoor - is mijn hoogste prioriteit. Ik kijk ernaar uit om de nodige stappen te zetten om deze kinderwens werkelijkheid te maken!"
     },
     "education": {
         "hu": {
-            "description1": "Voltooide een bacheloropleiding van 4 jaar in Software Development, gericht op webontwikkeling, databases en systeemontwerp/architectuur. Gespecialiseerd in webontwikkeling en -ontwerp, met een sterke basis in ontwerpprincipes, patronen en objectgeoriënteerd programmeren.",
-            "description2": "Gevorderd in het schrijven van schoon, onderhoudbaar code en het toepassen van Agile en Scrum-methodologieën voor effectieve projectbeheer. Ervaring in Test-Driven Development (TDD) en het implementeren van veilige toepassingen, inclusief JWT-authenticatie en naleving van ISO 25010 softwarekwaliteitsnormen."
+            "description1": "Voltooid een 4-jarig bachelordiploma in Software Development, gericht op webontwikkeling, databases en systeemontwerp/architectuur. Gespecialiseerd in webontwikkeling en design, met een sterke basis in ontwerpprincipes, patronen en objectgeoriënteerd programmeren.",
+            "description2": "Ervaren in het schrijven van schone, onderhoudbare code en het toepassen van Agile- en Scrum-methodologieën voor effectieve projectmanagement. Ervaren in Test-Driven Development (TDD) en het implementeren van veilige toepassingen, inclusief JWT-authenticatie en het naleven van ISO 25010-softwarekwaliteitsnormen."
         }
     },
     "work": {
         "mysolution": {
-            "description1": "Ontwierp en ontwikkelde een aanpasbare kandidaat onboarding portal voor Mysolution-klanten met een brede stack: React, TypeScript en Java Spring. Leverde een SQLite-ondersteunde Salesforce-integratie en schaalbare back-end ondersteuning voor gepersonaliseerde bedrijfswebsites, wat zorgde voor een naadloze en efficiënte gebruikerservaring.",
-            "description2": "Voerde gedetailleerd onderzoek uit naar GDPR-naleving en implementeerde veilige JWT-authenticatie met een robuust gebruikersmachtigingssysteem. Werd georiënteerd op het bouwen van een platform dat zowel veilig als gebruiksvriendelijk was en kon worden aangepast aan diverse klantvereisten. Verantwoordelijk voor het gehele project van begin tot eind, met een technisch solide en betrouwbare oplossing."
+            "description1": "Ontworpen en ontwikkeld een aanpasbare kandidaat onboarding portal voor Mysolution-klanten met een breed scala aan technologieën: React, TypeScript en Java Spring. Biedde een SQLite-gestuurde Salesforce-integratie en schaalbare backend-ondersteuning voor gepersonaliseerde bedrijfswebsites, waardoor een naadloze en efficiënte gebruikerservaring werd gegarandeerd.",
+            "description2": "Voerde gedetailleerd onderzoek naar GDPR uit om volledige naleving te garanderen en implementeerde veilige JWT-authenticatie met een robuust systeem voor gebruikersrechten. Richtte zich op het bouwen van een platform dat niet alleen veilig, maar ook gebruiksvriendelijk en aanpasbaar is aan diverse klantvereisten. Had de eindverantwoordelijkheid voor het project, wat resulteerde in een technisch solide en betrouwbare oplossing."
         },
         "hjemvik": {
-            "description1": "Ontwikkelde een full-stack e-commerce platform voor Hjemvik, een Noors bedrijf, met React en TypeScript en Java Spring. Ontwierp een strakke, responsieve interface geoptimaliseerd voor zowel desktop- als mobielgebruik, wat zorgde voor een visueel aantrekkelijke en intuïtieve winkelervaring.",
-            "description2": "Wendde zich tot het leveren van een op maat gemaakte oplossing voor Hjemvik’s online aanwezigheid, het creëren van een gebruikerservaring die soepel verloopt en aankopen stimuleert. Nam volledige verantwoordelijkheid voor zowel front-end als back-endontwikkeling, waarbij het platform de bedrijfsdoelen van het bedrijf nauwkeurig en met oog voor detail bereikte."
+            "description1": "Ontwikkelde een full-stack e-commerceplatform voor Hjemvik, een Noorse onderneming, met React met TypeScript en Java Spring. Ontwierp een gestroomlijnd, responsief interface dat geoptimaliseerd is voor zowel desktop als mobiel, waardoor een visueel aantrekkelijke en intuïtieve winkelervaring ontstaat.",
+            "description2": "Richtte zich op het leveren van een op maat gemaakte oplossing voor Hjemvik’s online aanwezigheid, en creëerde een gebruikerservaring die soepel en koopvriendelijk is. Had de volledige verantwoordelijkheid voor zowel front-end als back-end ontwikkeling, waarbij nauwlettend werd toegezien op het behalen van de bedrijfsdoelen van het bedrijf met precisie en aandacht voor detail."
         }
     },
     "certificates": {
-        "no": "Nog geen Certificaten behaald, maar ik werk er hard aan ;)"
+        "no": "Geen certificaten nog, maar werk hard ;)"
     },
     "stack": {
         "tools": "Tools en Software",
         "security": "Beveiliging",
-        "frontenddescription": "Ik ben gespecialiseerd in moderne webontwikkeling met tools zoals React, Svelte en Lit. Met expertise in JavaScript, TypeScript, HTML, CSS en Tailwind ontwerp ik responsieve, toegankelijke en visueel aantrekkelijke gebruikersinterfaces.",
-        "backenddescription": "Mijn back-end expertise omvat Java, Python en C#, met frameworks zoals Spring en JUnit5. Ik ben ervaren in het beheren van databases zoals PostgreSQL en SQLite, en lever robuuste, schaalbare en veilige serveroplossingen.",
-        "toolsandsoftwaredescription": "Bekwaam in tools zoals VS Code, IntelliJ IDEA en Postman optimaliseer ik workflows met Git, Docker en Azure. Of het nu gaat om ontwerpen in Figma of het beheren van API’s, ik gebruik geavanceerde platforms zoals Salesforce en Visual Paradigm.",
-        "securitydescription": "Ik ben gespecialiseerd in veilige ontwikkeling met expertise in OWASP Top 10, rolgebaseerde toegangscontrole en cyberdreigingen zoals injectie en brute force-aanvallen. Ik implementeer robuuste oplossingen met encryptie, JWT-tokens, API-sleutelbeheer en naleving van GDPR- en ISO 25010-normen.",
-        "testingdescription": "Ik lever betrouwbare software door middel van Test-Driven Development, end-to-end testen en CI/CD-praktijken. Met tools zoals JUnit5, JaCoCo en GitHub Action Pipelines garandeer ik hoge codekwaliteit en robuuste geautomatiseerde tests voor volledige dekking.",
+        "frontenddescription": "Met veel ervaring in het bouwen en ontwerpen van verschillende webapps, heb ik een breed scala aan frameworks/libraries verkend en excelleer ik in het maken van mooie en schoongecodeerde websites in een hoog tempo.",
+        "backenddescription": "Met veel ervaring in het bouwen van Object Oriented back-end systemen verbonden met SQL-databases, weet ik hoe ik een hoog niveau server kan creëren met zowel ontwerpprincipes als -patronen, en een optimale en efficiënte codearchitectuur.",
+        "toolsandsoftwaredescription": "Ik gebruik een breed scala aan software en tools gedurende mijn werkdag, van VSC en IntelliJ IDEA voor het bouwen van apps, tot het gebruik van Postman voor het testen van de API's die ik heb gebouwd. Ik heb een brede kennis van al deze tools, waardoor ik het meest efficiënt en effectief kan werken.",
+        "securitydescription": "Met veel ervaring in verschillende beveiligingsaspecten, weet ik hoe ik een toepassing kan bouwen volgens (onder andere) OWASP TOP 10 en ISO 25010-normen, en omgaan met gebruikersinput en -gegevens met zorg, zodat ze altijd in goede handen zijn.",
+        "testingdescription": "Om ervoor te zorgen dat al mijn code werkt en doet wat ervan wordt verwacht, ben ik getraind om code correct te testen via bijvoorbeeld JUnit5 end-to-end tests, geïntegreerd met een Continuous Integration / Continuous Development pipeline, waarmee ik controleer of mijn build mislukt met elke aanpassing, en ervoor zorg dat mijn code van de hoogste kwaliteit is.",
         "languages": {
             "title": "Talen",
-            "norwegian": "Noors - Werkproficiëntie en dicht bij moedertaal. (C1)",
+            "norwegian": "Noors - Werkvaardigheid en bijna moedertaal. (C1)",
             "english": "Engels - Moedertaal. (C2)",
             "dutch": "Nederlands - Moedertaal. (C2)"
         }
     },
-    "hobbies": {
-        "text": "In mijn vrije tijd hou ik ervan om actief te zijn en dingen in de natuur te doen. Ik train in de gym, maak wandelingen met mijn hond, Rowdy (Golden Retriever), en maak {fjellturer} (bergtochten) door heel Noorwegen. In de afbeelding hierboven was ik bijvoorbeeld bij Preikestolen in Rogaland met een vriend van mij. Åja, en ik luister graag naar Rock/metal (vooral van Kvelertak en Ensiferum).",
-        "bodybuilding": "Bodybuilding",
-        "chess": "Schaak",
-        "mountains": "Wandelingen in de bergen",
-        "learningnorwegian": "Noors leren (taal, cultuur enz.)",
+    "interests": {
+        "text": "In mijn vrije tijd ben ik graag actief en buiten in de natuur. Ik train in de sportschool, wandel met mijn hond, Rowdy (Golden Retriever), en ga op bergtochten door heel Noorwegen. Åja, en ik luister graag naar rock/metal (vooral van bands zoals Kvelertak en Ensiferum).",
+        "bodybuilding": "Bodybuilden",
+        "chess": "Schaken",
+        "mountains": "Berg wandelingen",
+        "learningnorwegian": "Noors leren (taal, cultuur, etc.)",
         "dogwalks": "Wandelingen met mijn hond (Golden Retriever)"
     },
-    "general": {
-        "mail": "E-mail",
-        "norway": "Noorwegen"
+    "contact": {
+        "tekst": "Als je wilt praten over het inhuren van mij/het samenwerken, Noorwegen, of een van mijn interesses ;), stuur me gerust een bericht of e-mail naar {mail} of op een van deze platforms:"
     }
 }

@@ -5,8 +5,9 @@ import Education from './components/education';
 import Work from './components/work';
 import Stack from './components/stack';
 import SidePanel from './components/side-panel';
-import Hobbies from './components/hobbies';
+import Interests from './components/interests';
 import Certificates from './components/certificates';
+import Contact from './components/contact';
 
 export default function App() {
 
@@ -41,7 +42,8 @@ export default function App() {
             <Certificates/>
             <Work />
             <Stack/>
-            <Hobbies/>
+            <Interests/>
+            <Contact/>
           </div>
         </div>
       </div>

@@ -4,61 +4,59 @@
         "education": "Utdanning",
         "work": "Arbeidserfaring",
         "skills": "Ferdigheter",
-        "hobbies": "Interesser",
-        "certificates": "Sertifikater"
+        "interests": "Interesser",
+        "certificates": "Sertifikater",
+        "contact": "Kontakt",
+        "mail": "E-post"
     },
     "home": {
-        "role": "Full-stack programvareutvikler som er klar til å omfavne livet og mulighetene i Norge",
-        "description1": "Jeg er Wessel, en {age} år gammel full-stack programvareutvikler som bor i Nederland med {exp} års erfaring. Jeg er dyktig i å utvikle både front-end og back-end for webapplikasjoner, inkludert å lage databaser og integrere programvare til Azure gjennom CI/CD-pipelines.",
-        "description2": "Jeg har vært forelsket i Norge, dets kultur og språk siden barndommen, og å flytte dit har alltid vært en drøm for meg. Jeg snakker norsk flytende, og det å jobbe i Norge—enten eksternt eller, ideelt sett, på kontor—er min høyeste prioritet. Jeg er spent på å ta de nødvendige stegene for å gjøre denne barndomsdrømmen til virkelighet!",
-        "note": "Hvis du har innsikt i {span}, eller hvis du ønsker å slå av en prat med meg om det, er du alltid velkommen til å {mail} på",
-        "notespannorway": "å flytte til Norge",
-        "notespanmail": "sende meg en e-post"
+        "role": "Full-Stack Software Developer entusiastisk til å omfavne livet og mulighetene i Norge",
+        "description1": "Jeg er Wessel, en {age}-år gammel full-stack software developer som bor i Nederland med {exp} års erfaring. Jeg har kompetanse innen både front-end og back-end utvikling av webapplikasjoner, inkludert oppsett av databaser og integrering av programvare med Azure via CI/CD-pipelines.",
+        "description2": "Jeg har hatt en kjærlighet for Norge, dets kultur og språk siden barndommen, og det å flytte dit har alltid vært en drøm. Jeg snakker flytende norsk, og å jobbe i Norge - enten på avstand eller helst på kontoret - er min høyeste prioritet. Jeg ser frem til å ta de nødvendige stegene for å gjøre denne barndomsdrømmen til virkelighet!"
     },
     "education": {
         "hu": {
-            "description1": "Fullført en 4-årig bachelorgrad i programvareutvikling, med fokus på webutvikling, databaser og systemdesign/-arkitektur. Spesialisert i webutvikling og design, med et sterkt grunnlag i designprinsipper, mønstre og objektorientert programmering.",
-            "description2": "Dyktig i å skrive ren, vedlikeholdbar kode og bruke Agile- og Scrum-metodologier for effektiv prosjektstyring. Erfaring med Test-Driven Development (TDD) og implementering av sikre applikasjoner, inkludert JWT-autentisering og overholdelse av ISO 25010 programvarekvalitetsstandarder."
+            "description1": "Fullførte en 4-årig bachelorgrad i Software Development, med fokus på webutvikling, databaser og systemdesign/arkitektur. Spesialisert innen webutvikling og design, med en solid grunnleggende forståelse av designprinsipper, mønstre og objektorientert programmering.",
+            "description2": "Erfaren med å skrive ren, vedlikeholdbar kode og bruke Agile- og Scrum-metodikk for effektiv prosjektstyring. Erfaring med Test-Driven Development (TDD) og implementering av sikre applikasjoner, inkludert JWT-autentisering og etterlevelse av ISO 25010 programvarekvalitetsstandarder."
         }
     },
     "work": {
         "mysolution": {
-            "description1": "Designet og utviklet en tilpassbar kandidat on-boarding portal for Mysolution-kunder med en bred stack: React, TypeScript og Java Spring. Leverte en SQLite-støttet Salesforce-integrasjon og skalerbar backendstøtte for tilpassede bedriftsnettsteder, som sikret en sømløs og effektiv brukeropplevelse.",
-            "description2": "Gjorde grundig GDPR-forskning for å sikre full etterlevelse og implementerte sikker JWT-autentisering med et robust brukerrettighetssystem. Fokusert på å bygge en plattform som var både sikker og brukervennlig, og som kunne tilpasses ulike kundeforespørsler. Ansvarlig for hele prosjektet, med teknisk solid og pålitelig løsning."
+            "description1": "Designet og utviklet en tilpassbar kandidat on-boarding portal for Mysolution-kunder med en bred teknologi-stack: React, TypeScript og Java Spring. Leverte en SQLite-drevet Salesforce-integrasjon og skalerbar back-end støtte for personlige bedriftsnettsteder, for å sikre en sømløs og effektiv brukeropplevelse.",
+            "description2": "Gjorde grundig GDPR-forskning for full etterlevelse og implementerte sikker JWT-autentisering med et robust brukerrettighetssystem. Fokus på å bygge en plattform som ikke bare var trygg, men også brukervennlig og tilpasningsdyktig til ulike kundeforespørsler. Hadde ansvar for hele prosjektet, noe som resulterte i en teknisk solid og pålitelig løsning."
         },
         "hjemvik": {
-            "description1": "Utviklet en fullstack e-handelsplattform for Hjemvik, et norsk selskap, med React og TypeScript og Java Spring. Designet en strømlinjeformet, responsiv grensesnitt optimalisert for både desktop og mobil, noe som skapte en visuelt tiltalende og intuitiv shoppingopplevelse.",
-            "description2": "Fokusert på å levere en skreddersydd løsning for Hjemviks online tilstedeværelse, og skapte en brukeropplevelse som kjennes jevn og fremmer kjøp. Hadde full ansvar for både front-end og back-end utvikling, og sørget for at plattformen møtte bedriftens mål med presisjon og oppmerksomhet på detaljer."
+            "description1": "Utviklet en full-stack e-handelsplattform for Hjemvik, et norsk selskap, med React med TypeScript og Java Spring. Designet et stilrent, responsivt grensesnitt som er optimalisert for både desktop og mobil, for å skape en visuelt tiltalende og intuitiv handleopplevelse.",
+            "description2": "Fokusert på å levere en skreddersydd løsning for Hjemvik’s nettbaserte tilstedeværelse, og skapte en brukeropplevelse som er jevn og oppfordrer til kjøp. Hadde full ansvar for både front-end og back-end utvikling, og sørget for at plattformen møtte selskapets forretningsmål med presisjon og oppmerksomhet på detaljer."
         }
     },
     "certificates": {
-        "no": "Ingen nertifikater ennå, men jobber hardt på det ;)"
+        "no": "Ingen sertifikater enda, men jobber hardt ;)"
     },
     "stack": {
         "tools": "Verktøy og programvare",
         "security": "Sikkerhet",
-        "frontenddescription": "Jeg spesialiserer meg på moderne webutvikling med verktøy som React, Svelte og Lit. Med ekspertise i JavaScript, TypeScript, HTML, CSS og Tailwind lager jeg responsive, tilgjengelige og visuelt imponerende brukergrensesnitt.",
-        "backenddescription": "Min back-end-kompetanse inkluderer Java, Python og C#, med rammeverk som Spring og JUnit5. Jeg er dyktig i å administrere databaser som PostgreSQL og SQLite, og sikrer robuste, skalerbare og sikre serverløsninger.",
-        "toolsandsoftwaredescription": "Dyktig i verktøy som VS Code, IntelliJ IDEA og Postman, effektiviserer jeg arbeidsflyter med Git, Docker og Azure. Enten det er design i Figma eller administrasjon av API-er, bruker jeg avanserte plattformer som Salesforce og Visual Paradigm.",
-        "securitydescription": "Jeg spesialiserer meg på sikker utvikling med ekspertise innen OWASP Top 10, rollebasert tilgangskontroll og cybersikkerhetstrusler som injeksjon og brute force-angrep. Jeg implementerer robuste løsninger med kryptering, JWT-tokens, API-nøkkeladministrasjon og overholdelse av GDPR- og ISO 25010-standarder.",
-        "testingdescription": "Jeg leverer pålitelig programvare gjennom Test-Driven Development, ende-til-ende-testing og CI/CD-praksis. Med verktøy som JUnit5, JaCoCo og GitHub Action Pipelines sikrer jeg høy kodekvalitet og robust automatisert testing for fullstendig dekning.",
+        "frontenddescription": "Med mye erfaring i å bygge og designe forskjellige webapper, har jeg kunnet utforske mange forskjellige rammeverk/biblioteker, og mestrer å lage vakre og godt koded sider i et høyt tempo.",
+        "backenddescription": "Med mye erfaring i å lage objektorienterte back-end systemer koblet til SQL-databaser, vet jeg hvordan jeg lager en høyytende server med både designprinsipper og mønstre, samt optimal og effektiv kodearkitektur.",
+        "toolsandsoftwaredescription": "Jeg bruker mange forskjellige programvare og verktøy i løpet av arbeidsdagen, fra VSC og IntelliJ IDEA for å bygge apper, til å bruke Postman for å teste API'ene jeg har utviklet. Jeg har en bred kunnskap innen alle disse verktøyene, noe som gjør at jeg kan jobbe mest effektivt og på best mulig måte.",
+        "securitydescription": "Med erfaring innen mange forskjellige sikkerhetsaspekter, vet jeg hvordan jeg bygger en applikasjon i henhold til blant annet OWASP TOP 10 og ISO 25010-standarder, og håndterer brukerinput og data med forsiktighet, slik at de alltid er trygge.",
+        "testingdescription": "For å sikre at all koden min fungerer som den skal og gjør det den forventes å gjøre, har jeg blitt opplært i å teste koden ordentlig via for eksempel JUnit5 end-to-end tester, integrert med en Continuous Integration/Continuous Development pipeline, som sjekker om min bygg mislykkes eller ikke med hver justering, og sikrer at koden min er av høyeste kvalitet.",
         "languages": {
             "title": "Språk",
-            "norwegian": "Norsk - Arbeidsspråk og nesten som morsmål. (C1)",
+            "norwegian": "Norsk - Arbeidsevne og nært til morsmål. (C1)",
             "english": "Engelsk - Morsmål. (C2)",
             "dutch": "Nederlandsk - Morsmål. (C2)"
         }
     },
-     "hobbies": {
-        "text": "I min fritid elsker jeg å være aktiv og gjøre ting ute i naturen. Jeg trener på treningssenteret, går turer med hunden min, Rowdy (Golden Retriever), og drar på {fjellturer} gjennom hele Norge. På bildet over her var jeg for eksempel på Preikestolen i Rogaland med en kompis av meg. Åja, og jeg liker å høre på Rock/metal (spesielt fra Kvelertak og Ensiferum).",
-        "bodybuilding": "Kroppsbygging",
+    "interests": {
+        "text": "På fritiden liker jeg å være aktiv og gjøre ting utendørs. Jeg trener på treningssenteret, går turer med hunden min, Rowdy (Golden Retriever), og drar på fjellturer gjennom hele Norge. Åja, jeg elsker å lytte til rock/metal (spesielt fra band som Kvelertak og Ensiferum).",
+        "bodybuilding": "Bodybuilding",
         "chess": "Sjakk",
         "mountains": "Turer i fjellet",
-        "learningnorwegian": "Lære norsk (språk, kultur osv.)",
-        "dogwalks": "På tur med hunden min (Golden Retriever)"
+        "learningnorwegian": "Lære norsk (språk, kultur, etc.)",
+        "dogwalks": "Turer med hunden min (Golden Retriever)"
     },
-    "general": {
-        "mail": "E-post",
-        "norway": "Norge"
+    "contact": {
+        "tekst": "Hvis du vil ha en prat om å ansette meg/arbeide sammen, om Norge eller noen av mine interesser ;), er det bare å sende meg en melding eller e-post til {mail} eller en på av disse plattformene:"
     }
 }
