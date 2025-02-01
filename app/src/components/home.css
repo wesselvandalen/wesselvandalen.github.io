@@ -30,6 +30,8 @@
     width: 124px;
     height: 124px;
     border-radius: 50%;
+    padding: 4px;
+    background-color: aliceblue;
 }   
 
 .home-name {

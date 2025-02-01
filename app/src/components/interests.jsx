@@ -6,12 +6,11 @@ export default function Interests() {
 
     const interests = [
         t('interests.bodybuilding'),
-        t('interests.chess'),
         t('interests.mountains'),
-        'Gaming (Minecraft, Cuphead, Far Cry)',
+        'Gaming (Minecraft, Sackboy, Far Cry)',
         t('interests.learningnorwegian'),
         t('interests.dogwalks'),
-        'Rock & Metal (Kvelertak, Ensiferum)'
+        'Rock & Metal (Kvelertak, Ensiferum, Alestorm)'
     ];
 
     return (
