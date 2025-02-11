@@ -25,9 +25,9 @@
             "description1": "Designed and developed a customizable candidate onboarding portal for Mysolution customers using a wide stack: React, TypeScript, and Java Spring. Delivered a SQLite-backed Salesforce integration and scalable backend support for personalized business websites, ensuring a seamless and efficient user experience.",
             "description2": "Performed detailed GDPR research to ensure full compliance and implemented secure JWT authentication with a robust user permissions system. Focused on building a platform that was not only secure but also user-friendly and adaptable to diverse client requirements. Took end-to-end responsibility for the project, delivering a technically sound and reliable solution."
         },
-        "hjemvik": {
-            "description1": "Developed a full-stack e-commerce platform for Hjemvik, a Norwegian company, using React with TypeScript and Java Spring. Designed a sleek, responsive interface optimized for both desktop and mobile, creating a visually appealing and intuitive shopping experience.",
-            "description2": "Focused on delivering a tailored solution for Hjemvik’s online presence, crafting a user experience that feels smooth and encourages purchases. Took full responsibility for both front-end and back-end development, ensuring the platform met the company’s business goals with precision and attention to detail."
+        "strømlia": {
+            "description1": "Designed and developed an e-commerce platform for Strømlia, a Norwegian Apple reseller, using React JS and Java Spring. Built a seamless and scalable online shopping experience, integrating secure payment processing, dynamic product management, and an intuitive customer interface. Engineered a robust backend with efficient database handling and optimized API performance to support high-traffic demand.",
+            "description2": "Implemented secure authentication and authorization mechanisms, ensuring data protection and compliance with industry standards. Focused on delivering a high-performance, user-friendly platform that showcases Apple products with a sleek and modern UI. Took full ownership of the development process, demonstrating end-to-end Full Stack Software Development expertise."
         }
     },
     "certificates": {

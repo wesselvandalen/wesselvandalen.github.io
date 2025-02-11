@@ -14,11 +14,11 @@ export default function Work() {
             descriptions: [t('work.mysolution.description1'), t('work.mysolution.description2')]
         },
         { 
-            name: 'Hjemvik', 
-            role: 'React Typescript & Java Spring developer, DevOps Engineer', 
-            stack: ['React', 'Typescript', 'HTML', 'CSS', 'Java', 'Spring', 'CI/CD pipeline', 'Test-Driven Development', 'JUnit5', 'Postman', 'REST', 'Git', 'GitHub', "API's", 'Object Oriented Programming', 'Postman', 'Translations', 'HTTP', 'Auth', 'Maven', 'JWT', 'Hibernate'], 
-            date: '2024 - 2025', 
-            descriptions: [t('work.hjemvik.description1'), t('work.hjemvik.description2')]
+            name: 'Strømlia', 
+            role: 'React Javascript & Java Spring developer', 
+            stack: ['React', 'Javascript', 'HTML', 'CSS', 'Java', 'Spring', 'Postman', 'REST', 'Git', 'GitHub', "API's", 'Object Oriented Programming', 'Postman', 'Translations', 'HTTP', 'Auth', 'Maven', 'JWT', 'Hibernate'], 
+            date: '2025 - 2025', 
+            descriptions: [t('work.strømlia.description1'), t('work.strømlia.description2')]
         }
     ];
 

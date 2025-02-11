@@ -25,9 +25,9 @@
             "description1": "Designet og utviklet en tilpassbar kandidat on-boarding portal for Mysolution-kunder med en bred teknologi-stack: React, TypeScript og Java Spring. Leverte en SQLite-drevet Salesforce-integrasjon og skalerbar back-end støtte for personlige bedriftsnettsteder, for å sikre en sømløs og effektiv brukeropplevelse.",
             "description2": "Gjorde grundig GDPR-forskning for full etterlevelse og implementerte sikker JWT-autentisering med et robust brukerrettighetssystem. Fokus på å bygge en plattform som ikke bare var trygg, men også brukervennlig og tilpasningsdyktig til ulike kundeforespørsler. Hadde ansvar for hele prosjektet, noe som resulterte i en teknisk solid og pålitelig løsning."
         },
-        "hjemvik": {
-            "description1": "Utviklet en full-stack e-handelsplattform for Hjemvik, et norsk selskap, med React med TypeScript og Java Spring. Designet et stilrent, responsivt grensesnitt som er optimalisert for både desktop og mobil, for å skape en visuelt tiltalende og intuitiv handleopplevelse.",
-            "description2": "Fokusert på å levere en skreddersydd løsning for Hjemvik’s nettbaserte tilstedeværelse, og skapte en brukeropplevelse som er jevn og oppfordrer til kjøp. Hadde full ansvar for både front-end og back-end utvikling, og sørget for at plattformen møtte selskapets forretningsmål med presisjon og oppmerksomhet på detaljer."
+        "strømlia": {
+            "description1": "Designet og utviklet en e-handelsplattform for Strømlia, en norsk Apple-forhandler, ved bruk av React JS og Java Spring. Bygde en sømløs og skalerbar nettbutikkopplevelse, integrerte sikker betalingsbehandling, dynamisk produktadministrasjon og et intuitivt kundegrensesnitt. Utviklet en solid backend med effektiv databasestyring og optimalisert API-ytelse for å håndtere høy trafikkbelastning.",
+            "description2": "Implementerte sikre autentiserings- og autorisasjonsmekanismer for å sikre databeskyttelse og overholdelse av bransjestandarder. Fokusert på å levere en høytytende, brukervennlig plattform som fremhever Apple-produkter med et stilrent og moderne grensesnitt. Hadde fullt ansvar for utviklingsprosessen og demonstrerte Full Stack Software Development-ekspertise fra start til slutt."
         }
     },
     "certificates": {

@@ -28,6 +28,8 @@ import tailwind from '../assets/icons/tailwind.png';
 import github from '../assets/icons/github.png';
 import visualparadigm from '../assets/icons/visualparadigm.png';
 import powershell from '../assets/icons/powershell.png';
+import vue from '../assets/icons/vue.png';
+import firebase from '../assets/icons/firebase.png';
 
 export default function Stack() {
     const [t] = useTranslation("global");
@@ -40,7 +42,8 @@ export default function Stack() {
         { name: 'Javascript', type: 'language', img: js },
         { name: 'Tailwind', type: 'CSS framework', img: tailwind },
         { name: 'HTML', type: 'language', img: html },
-        { name: 'CSS', type: 'stylesheet language', img: css }
+        { name: 'CSS', type: 'stylesheet language', img: css },
+        { name: 'Vue', type: 'Framework', img: vue }
     ];
 
     const backendskills = [
@@ -55,13 +58,14 @@ export default function Stack() {
 
     const softwareskills = [
         { name: 'Visual Studio Code', type: 'IDE', img: vsc },
-        { name: 'Azure (DevOps)', type: 'cloud platform', img: azure },
+        { name: 'Azure (DevOps)', type: 'Cloud platform', img: azure },
         { name: 'Postman', type: 'API testing tool', img: postman },
-        { name: 'Git', type: 'version control', img: git },
-        { name: 'Docker', type: 'containerization ', img: docker },
-        { name: 'Salesforce', type: 'crm platform', img: salesforce },
+        { name: 'Git', type: 'Version control', img: git },
+        { name: 'Docker', type: 'Containerization ', img: docker },
+        { name: 'Firebase', type: 'Cloud platform', img: firebase },
+        { name: 'Salesforce', type: 'CRM platform', img: salesforce },
         { name: 'Inteallij IDEA', type: 'IDE', img: intellij },
-        { name: 'Arc', type: 'browser', img: arc },
+        { name: 'Arc', type: 'Browser', img: arc },
         { name: 'Figma', type: 'Design tool', img: figma },
         { name: 'GitHub', type: 'Version Control platform', img: github },
         { name: 'Visual Paradigm', type: 'Modeling Tool', img: visualparadigm },
@@ -89,7 +93,6 @@ export default function Stack() {
                     </ul>
 
                 </div>
-
 
                 <div className="stack-innhold">
                     <p className='stack-title'>{t('stack.tools')}</p>
